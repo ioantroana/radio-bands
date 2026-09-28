@@ -2,405 +2,271 @@
  "code": "pl",
  "name": "Poland",
  "region": "Europe",
- "asOf": "2026-01-09",
+ "asOf": "2026-09-28",
  "coverage": "block-level",
  "licensing": "national",
- "summary": "",
+ "summary": "Four national MNOs (Orange, T-Mobile, Plus/Polkomtel, Play/P4). UKE auctioned 3.4-3.8 GHz (4x100 MHz) in 2023 and 700 MHz plus the last 800 MHz block in 2025, and re-arranged 1800 MHz into contiguous blocks in February 2026. 26 GHz is not yet planned for award.",
  "operators": [
   {
-   "id": "orange-polska",
-   "name": "Orange Polska",
+   "id": "orange",
+   "name": "Orange",
+   "legal": "Orange Polska S.A.",
    "color": "#ff7900",
    "aliases": [
-    "Orange Polska S.A."
+    "Orange Polska",
+    "Orange Polska S.A.",
+    "Orange PL"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Shares its RAN with T-Mobile Polska through the NetWorkS! joint venture (from background knowledge, not source-verified here). 800 MHz 2x10 from the 2015/16 auction; 2x10 MHz of 700 MHz won in the March 2025 UKE auction."
   },
   {
-   "id": "t-mobile-polska",
-   "name": "T-Mobile Polska",
+   "id": "t-mobile",
+   "name": "T-Mobile",
+   "legal": "T-Mobile Polska S.A.",
    "color": "#e20074",
    "aliases": [
-    "T-Mobile Polska S.A."
+    "T-Mobile Polska",
+    "T-Mobile Polska S.A.",
+    "T-Mobile PL"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Deutsche Telekom subsidiary. Won 700 MHz block A (703-708/758-763) and the previously unsold 800 MHz block G (816-821/857-862) in the 2024/25 UKE auction."
   },
   {
    "id": "plus",
    "name": "Plus",
-   "color": "#00b262",
+   "legal": "Polkomtel Sp. z o.o.",
+   "color": "#3fae29",
    "aliases": [
-    "Polkomtel Sp. z o.o."
+    "Polkomtel",
+    "Polkomtel Sp. z o.o.",
+    "Plus PL",
+    "Aero2"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Cyfrowy Polsat group. Holds the former Aero2 spectrum (2600 TDD, part of 900 MHz) after Aero2 was merged into Polkomtel."
   },
   {
    "id": "play",
    "name": "Play",
-   "color": "#543083",
+   "legal": "P4 Sp. z o.o.",
+   "color": "#7b2d8e",
    "aliases": [
-    "P4 Sp. z o.o."
+    "P4",
+    "P4 Sp. z o.o.",
+    "Play PL"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Iliad group."
+  },
+  {
+   "id": "pge-systemy",
+   "name": "PGE Systemy",
+   "legal": "PGE Systemy S.A.",
+   "color": "#1f4e9c",
+   "aliases": [
+    "PGE"
+   ],
+   "kind": "private",
+   "notes": "Energy-sector LTE450 network (utility smart-grid use)."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1)",
+   "group": "450",
+   "label": "410–430 MHz (LTE 410/420)",
    "names": [
-    "B1"
+    "B87",
+    "B88"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     420,
+     430
     ],
     "ul": [
-     1920,
-     1980
+     410,
+     420
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "National reservation for Polkomtel in the 420 MHz band (two 2x1.25 MHz reservations, shown combined). Other national 420 MHz reservations are narrowband PTPiREE (energy sector) channels, not drawn.",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2100-mhz,3.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/420-mhz,8.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
    ],
    "blocks": [
     {
-     "op": "orange-polska",
-     "dl": [
-      2110,
-      2125
-     ],
-     "ul": [
-      1920,
-      1935
-     ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2100-mhz,3.html"
-    },
-    {
-     "op": "t-mobile-polska",
-     "dl": [
-      2125,
-      2140
-     ],
-     "ul": [
-      1935,
-      1950
-     ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2100-mhz,3.html"
-    },
-    {
      "op": "plus",
      "dl": [
-      2140,
-      2155
+      422.5,
+      425.0
      ],
      "ul": [
-      1950,
-      1965
+      412.5,
+      415.0
      ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2100-mhz,3.html"
-    },
-    {
-     "op": "play",
-     "dl": [
-      2155,
-      2170
-     ],
-     "ul": [
-      1965,
-      1980
-     ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2100-mhz,3.html"
+     "expiry": "2035-12-31",
+     "notes": "412.50-413.75/422.50-423.75 + 413.75-415.00/423.75-425.00 MHz"
     }
    ]
   },
   {
-   "group": "1800",
-   "label": "1800 MHz (B3)",
+   "group": "450",
+   "label": "450 MHz (LTE450)",
    "names": [
-    "B3"
+    "B31",
+    "B72"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     1805,
-     1880
+     460,
+     470
     ],
     "ul": [
-     1710,
-     1785
+     450,
+     460
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "PGE Systemy LTE450 utility network. UNI-NET also holds a 2x0.0625 MHz narrowband channel (458.46875-458.53125/468.46875-468.53125 MHz), not drawn.",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/450-mhz,7.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
    ],
    "blocks": [
     {
-     "op": "plus",
+     "op": "pge-systemy",
      "dl": [
-      1805.1,
-      1824.9
+      462.5,
+      467.5
      ],
      "ul": [
-      1710.1,
-      1729.9
+      452.5,
+      457.5
      ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
-    },
-    {
-     "op": "play",
-     "dl": [
-      1824.9,
-      1839.9
-     ],
-     "ul": [
-      1729.9,
-      1744.9
-     ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
-    },
-    {
-     "op": "t-mobile-polska",
-     "dl": [
-      1839.9,
-      1852.5
-     ],
-     "ul": [
-      1744.9,
-      1757.5
-     ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
-    },
-    {
-     "op": "plus",
-     "dl": [
-      1852.5,
-      1854.9
-     ],
-     "ul": [
-      1757.5,
-      1759.9
-     ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
-    },
-    {
-     "op": "orange-polska",
-     "dl": [
-      1854.9,
-      1864.9
-     ],
-     "ul": [
-      1759.9,
-      1769.9
-     ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
-    },
-    {
-     "op": "t-mobile-polska",
-     "dl": [
-      1864.9,
-      1872.3
-     ],
-     "ul": [
-      1769.9,
-      1777.3
-     ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
-    },
-    {
-     "op": "plus",
-     "dl": [
-      1872.3,
-      1879.9
-     ],
-     "ul": [
-      1777.3,
-      1784.9
-     ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html"
+     "expiry": "2033-08-08"
     }
    ]
   },
   {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
+   "group": "600",
+   "label": "600 MHz",
    "names": [
-    "B7"
+    "n71"
    ],
-   "status": "assigned",
+   "status": "not-assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2620,
-     2690
+     617,
+     652
     ],
     "ul": [
-     2500,
-     2570
+     663,
+     698
     ]
    },
-   "positions": "verified",
+   "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Not a mobile band in Europe: 470-694 MHz is used for DTT (MUX1-MUX8 national reservations on the UKE list).",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma-tresci/wykaz-rezerwacji-ogolnopolskich,14.html"
    ],
-   "blocks": [
-    {
-     "op": "plus",
-     "dl": [
-      2620,
-      2640
-     ],
-     "ul": [
-      2500,
-      2520
-     ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
-    },
-    {
-     "op": "orange-polska",
-     "dl": [
-      2640,
-      2655
-     ],
-     "ul": [
-      2520,
-      2535
-     ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
-    },
-    {
-     "op": "t-mobile-polska",
-     "dl": [
-      2655,
-      2670
-     ],
-     "ul": [
-      2535,
-      2550
-     ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
-    },
-    {
-     "op": "play",
-     "dl": [
-      2670,
-      2690
-     ],
-     "ul": [
-      2550,
-      2570
-     ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
-    }
-   ]
+   "blocks": [],
+   "holdings": []
   },
   {
-   "group": "900",
-   "label": "900 MHz (B8)",
+   "group": "700",
+   "label": "700 MHz FDD",
    "names": [
-    "B8"
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     925,
-     960
+     758,
+     788
     ],
     "ul": [
-     880,
-     915
+     703,
+     733
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Six 2x5 MHz blocks auctioned by UKE (auction 28 Jan - 25 Mar 2025, results 25 Mar 2025); reservations valid until 31 May 2040. Auction 'scores' (PLN): A 356.0m, B 356.0m, C 356.0m, D 363.12m, E 370.382m, F 356.0m.",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/900-mhz,5.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/700-mhz,10.html",
+    "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
    ],
    "blocks": [
     {
-     "op": "play",
+     "op": "t-mobile",
      "dl": [
-      925.1,
-      930.1
+      758,
+      763
      ],
      "ul": [
-      880.1,
-      885.1
+      703,
+      708
      ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/900-mhz,5.html"
+     "expiry": "2040-05-31",
+     "notes": "Block A"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      763,
+      773
+     ],
+     "ul": [
+      708,
+      718
+     ],
+     "expiry": "2040-05-31",
+     "notes": "Blocks B+C"
     },
     {
      "op": "plus",
      "dl": [
-      930.1,
-      944.1
+      773,
+      778
      ],
      "ul": [
-      885.1,
-      899.1
+      718,
+      723
      ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/900-mhz,5.html"
+     "expiry": "2040-05-31",
+     "notes": "Block D"
     },
     {
-     "op": "t-mobile-polska",
+     "op": "play",
      "dl": [
-      944.1,
-      953.1
+      778,
+      788
      ],
      "ul": [
-      899.1,
-      908.1
+      723,
+      733
      ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/900-mhz,5.html"
-    },
-    {
-     "op": "orange-polska",
-     "dl": [
-      953.1,
-      959.9
-     ],
-     "ul": [
-      908.1,
-      914.9
-     ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/900-mhz,5.html"
+     "expiry": "2040-05-31",
+     "notes": "Blocks E+F"
     }
    ]
   },
@@ -408,7 +274,8 @@
    "group": "800",
    "label": "800 MHz (B20)",
    "names": [
-    "B20"
+    "B20",
+    "n20"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -425,13 +292,15 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Five blocks from the 2015/16 800/2600 auction; block G (816-821/857-862), unsold earlier, went to T-Mobile in the 2025 auction for PLN 425.453m. UKE plans to align all 800 MHz reservations to 31 May 2040.",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/800-mhz,6.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/800-mhz,6.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
    ],
    "blocks": [
     {
-     "op": "orange-polska",
+     "op": "orange",
      "dl": [
       791,
       801
@@ -440,8 +309,7 @@
       832,
       842
      ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/800-mhz,6.html"
+     "expiry": "2031-01-25"
     },
     {
      "op": "play",
@@ -453,109 +321,548 @@
       842,
       847
      ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/800-mhz,6.html"
+     "expiry": "2031-06-23"
     },
     {
-     "op": "t-mobile-polska",
+     "op": "t-mobile",
      "dl": [
-      811,
+      806,
+      816
+     ],
+     "ul": [
+      847,
+      857
+     ],
+     "expiry": "2031-06-23"
+    },
+    {
+     "op": "t-mobile",
+     "dl": [
+      816,
       821
      ],
      "ul": [
-      852,
+      857,
       862
      ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/800-mhz,6.html"
+     "expiry": "2040-05-31",
+     "notes": "Block G, 2025 auction"
     }
    ]
   },
   {
-   "group": "700",
-   "label": "700 MHz (B28)",
+   "group": "850",
+   "label": "850 MHz",
    "names": [
-    "B28"
+    "B5",
+    "B26"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe; no national reservation on the UKE list (the 800 MHz band follows the B20 plan).",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma-tresci/wykaz-rezerwacji-ogolnopolskich,14.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     758,
-     803
+     925,
+     960
     ],
     "ul": [
-     703,
-     748
+     880,
+     915
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "100 kHz guards at 880.0-880.1/925.0-925.1 and 914.9-915.0/959.9-960.0 MHz are not reserved. UKE intends to align all 900 MHz reservations to 31 Dec 2038.",
    "sources": [
-    "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/900-mhz,5.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
    ],
    "blocks": [
     {
-     "op": "t-mobile-polska",
+     "op": "play",
      "dl": [
-      758,
-      763
+      925.1,
+      930.1
      ],
      "ul": [
-      703,
-      708
+      880.1,
+      885.1
      ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
-    },
-    {
-     "op": "orange-polska",
-     "dl": [
-      763,
-      773
-     ],
-     "ul": [
-      708,
-      718
-     ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
+     "expiry": "2038-12-31"
     },
     {
      "op": "plus",
      "dl": [
-      773,
-      778
+      930.1,
+      944.1
      ],
      "ul": [
-      718,
-      723
+      885.1,
+      899.1
      ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
+     "expiry": "2038-12-31",
+     "notes": "Two reservations: 885.1-890.1/930.1-935.1 (ex-Aero2) and 890.1-899.1/935.1-944.1"
+    },
+    {
+     "op": "t-mobile",
+     "dl": [
+      944.1,
+      953.1
+     ],
+     "ul": [
+      899.1,
+      908.1
+     ],
+     "expiry": "2038-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      953.1,
+      959.9
+     ],
+     "ul": [
+      908.1,
+      914.9
+     ],
+     "expiry": "2029-07-06"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no national reservation in 1427-1517 MHz on the UKE list of national reservations (19 Feb 2026).",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma-tresci/wykaz-rezerwacji-ogolnopolskich,14.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe; 1710-1785 MHz is part of the 1800 MHz (B3) band.",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band re-arranged by UKE on 14-15 Feb 2026 so that each operator holds one contiguous block (Plus 30, T-Mobile 20, Orange 10, Play 15 MHz). Expiry dates differ by sub-block; UKE plans to align all 1800 MHz reservations to 31 Dec 2037 (Orange's expires 22 Aug 2027, T-Mobile's and Play's first blocks 31 Dec 2027, so renewals are pending).",
+   "sources": [
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/1800-mhz,4.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://www.telepolis.pl/wiadomosci/uke-1800-mhz-porzadkowanie-pasma-luty-2026"
+   ],
+   "blocks": [
+    {
+     "op": "plus",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "expiry": "2037-12-31",
+     "notes": "Four reservations incl. 0.2 MHz edge slices"
+    },
+    {
+     "op": "plus",
+     "dl": [
+      1825,
+      1835
+     ],
+     "ul": [
+      1730,
+      1740
+     ],
+     "expiry": "2029-09-14"
+    },
+    {
+     "op": "t-mobile",
+     "dl": [
+      1835,
+      1845
+     ],
+     "ul": [
+      1740,
+      1750
+     ],
+     "expiry": "2027-12-31"
+    },
+    {
+     "op": "t-mobile",
+     "dl": [
+      1845,
+      1855
+     ],
+     "ul": [
+      1750,
+      1760
+     ],
+     "expiry": "2029-08-12"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      1855,
+      1865
+     ],
+     "ul": [
+      1760,
+      1770
+     ],
+     "expiry": "2027-08-22"
     },
     {
      "op": "play",
      "dl": [
-      778,
-      788
+      1865,
+      1880
      ],
      "ul": [
-      723,
-      733
+      1770,
+      1785
      ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
+     "expiry": "2027-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1990
+    ],
+    "ul": [
+     1850,
+     1910
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe (1880-1900 MHz is DECT); no national reservation.",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz unpaired TDD",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No national reservation in the 1900-1920 / 2010-2025 MHz unpaired bands on the UKE list of national reservations.",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma-tresci/wykaz-rezerwacji-ogolnopolskich,14.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Each operator holds 2x14.8 MHz plus two 2x0.1 MHz edge slices (shown combined as 2x15 MHz). All renewed until 31 Dec 2037.",
+   "sources": [
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2100-mhz,3.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/konsultacje-i-wyniki-konsultacji/konsultacje-projektu-decyzji-prezesa-uke-dokonujacej-rezerwacji-w-pasmie-2100-mhz-dla-p4-sp-z-o-o-na-kolejny-okres,2207.html"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "dl": [
+      2110,
+      2125
+     ],
+     "ul": [
+      1920,
+      1935
+     ],
+     "expiry": "2037-12-31"
+    },
+    {
+     "op": "t-mobile",
+     "dl": [
+      2125,
+      2140
+     ],
+     "ul": [
+      1935,
+      1950
+     ],
+     "expiry": "2037-12-31"
+    },
+    {
+     "op": "plus",
+     "dl": [
+      2140,
+      2155
+     ],
+     "ul": [
+      1950,
+      1965
+     ],
+     "expiry": "2037-12-31"
+    },
+    {
+     "op": "play",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "expiry": "2037-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile: no national reservation in 2300-2400 MHz on the UKE list.",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma-tresci/wykaz-rezerwacji-ogolnopolskich,14.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "From the 2015/16 800/2600 MHz auction (14 blocks of 2x5 MHz). Valid until 25 Jan 2031; UKE plans to align 2600 MHz to 31 Dec 2039.",
+   "sources": [
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
+   ],
+   "blocks": [
+    {
+     "op": "plus",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "expiry": "2031-01-25"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2640,
+      2655
+     ],
+     "ul": [
+      2520,
+      2535
+     ],
+     "expiry": "2031-01-25"
+    },
+    {
+     "op": "t-mobile",
+     "dl": [
+      2655,
+      2670
+     ],
+     "ul": [
+      2535,
+      2550
+     ],
+     "expiry": "2031-01-25"
+    },
+    {
+     "op": "play",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2031-01-25"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz TDD (B38)",
    "names": [
-    "B38"
+    "B38",
+    "n38",
+    "n41"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -568,9 +875,10 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Whole centre gap held by Polkomtel (formerly Aero2), valid until 31 Dec 2039.",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
    ],
    "blocks": [
     {
@@ -579,14 +887,13 @@
       2570,
       2620
      ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/2600-mhz,2.html"
+     "expiry": "2039-12-31"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
@@ -594,16 +901,17 @@
    "duplex": "tdd",
    "range": {
     "f": [
-     3300,
+     3400,
      3800
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Four 100 MHz blocks awarded in UKE's 2023 3.4-3.8 GHz auction; valid until 30 Nov 2038. Polkomtel's 3400-3500 MHz reservation excludes 33 municipalities (UKE list, note POL.48). Local 3.4-3.6 GHz reservations/permits are listed separately by UKE and not drawn.",
    "sources": [
-    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/3600-mhz,9.html"
+    "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/3600-mhz,9.html",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
    ],
    "blocks": [
     {
@@ -612,8 +920,8 @@
       3400,
       3500
      ],
-     "notes": "Polkomtel Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/3600-mhz,9.html"
+     "expiry": "2038-11-30",
+     "notes": "Excludes 33 municipalities"
     },
     {
      "op": "play",
@@ -621,38 +929,178 @@
       3500,
       3600
      ],
-     "notes": "P4 Sp. z o.o.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/3600-mhz,9.html"
+     "expiry": "2038-11-30"
     },
     {
-     "op": "orange-polska",
+     "op": "orange",
      "f": [
       3600,
       3700
      ],
-     "notes": "Orange Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/3600-mhz,9.html"
+     "expiry": "2038-11-30"
     },
     {
-     "op": "t-mobile-polska",
+     "op": "t-mobile",
      "f": [
       3700,
       3800
      ],
-     "notes": "T-Mobile Polska S.A.",
-     "source": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie-tresci/3600-mhz,9.html"
+     "expiry": "2038-11-30"
     }
    ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile in Poland (no national reservation).",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma-tresci/wykaz-rezerwacji-ogolnopolskich,14.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. UKE ran a third consultation on 26 GHz (Dec 2025 - 30 Jan 2026); Orange, Play and T-Mobile said it is too early (T-Mobile suggested after 2028) and UKE says it is in no hurry. 24.5-26.5 GHz is used for fixed links.",
+   "sources": [
+    "https://www.uke.gov.pl/blog/konsultacje-w-sprawie-kolejnego-pasma-dla-5g-operatorzy-za-wczesnie-na-26-ghz,114.html",
+    "https://www.telepolis.pl/wiadomosci/trzecie-konsultacje-w-sprawie-wykorzystania-pasma-26-ghz",
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile; 40.5-43.5 GHz currently lists fixed-service permits only.",
+   "sources": [
+    "https://bip.uke.gov.pl/dostepnosc-czestotliwosci/informacja-o-zajetosci-widma/",
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; no national reservation.",
+   "sources": [
+    "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "All block edges and expiry dates come from UKE's national reservation pages and the UKE list of national reservations (19 Feb 2026 xlsx). The seed (davwheat) matched UKE for 700/900/2100/2600/3600.",
+  "UKE's 'unified expiry' policy targets: 700/800 MHz 31 May 2040, 900 MHz 31 Dec 2038, 1800/2100 MHz 31 Dec 2037, 2600 MHz 31 Dec 2039, 3600 MHz 30 Nov 2038. Several current reservations still carry earlier dates (e.g. 800 MHz 2031, 1800 MHz 2027/2029); the block-level expiry fields show the dates on the UKE list.",
+  "Totals: Plus 2x30 MHz of 1800 is the largest 1800 holding; Plus also holds 2x2.5 MHz at 420 MHz (group 450). PGE Systemy's LTE450 network is a private utility network.",
+  "Orange and T-Mobile share their radio networks through the NetWorkS! joint venture; this is noted from background knowledge (not verified in this pass)."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Carrier EARFCN/NR-ARFCN details were not compiled.",
+  "NetWorkS! RAN-sharing arrangement: from background knowledge, not source-verified.",
+  "Renewal status of 1800 MHz reservations expiring in Aug/Dec 2027 (Orange, T-Mobile, Play) not checked."
+ ],
+ "changes": [
+  "Operator ids renamed orange-polska -> orange and t-mobile-polska -> t-mobile; display names are the brands Orange/T-Mobile, with the legal names as aliases (fixes the seed's alias problems).",
+  "1800 MHz: replaced the pre-February-2026 fragmented layout with the contiguous blocks from UKE's re-arrangement of 14-15 Feb 2026 (Plus 1710-1740, T-Mobile 1740-1760, Orange 1760-1770, Play 1770-1785 UL).",
+  "800 MHz: added T-Mobile 806-811/847-852 (missing from the seed) and marked 816-821/857-862 as won in the 2025 auction (valid to 2040).",
+  "700 MHz: range trimmed to 703-733/758-788; blocks confirmed against UKE (2025 auction).",
+  "Added expiry dates to all blocks from the UKE reservation list.",
+  "Added 420 MHz (Polkomtel) and 450 MHz (PGE Systemy) entries, and not-assigned entries for 600, 850, 1400, 1700, 1900, 2000tdd, 2300, 4900, 26g, 40g, 47g."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "UKE – national frequency reservations (rezerwacje ogólnopolskie)",
+   "url": "https://bip.uke.gov.pl/rezerwacje-czestotliwosci/rezerwacje-ogolnopolskie/"
+  },
+  {
+   "title": "UKE – list of national reservations with validity dates (19 Feb 2026, xlsx)",
+   "url": "https://bip.uke.gov.pl/download/gfx/bip/pl/defaultaktualnosci/135/14/18/2026-02-19_rezerwacje_cala_pl.xlsx"
+  },
+  {
+   "title": "UKE – results of the auction for seven sub-1 GHz reservations (25 Mar 2025)",
+   "url": "https://bip.uke.gov.pl/przetargi-aukcje-i-konkursy/wyniki-aukcji-na-siedem-rezerwacji-czestotliwosci-z-pasm-ponizej-1-ghz,24.html"
+  },
+  {
+   "title": "UKE – unified reservation expiry dates",
+   "url": "https://www.uke.gov.pl/blog/jeden-termin-dla-wszystkich-ujednolicamy-okresy-obowiazywania-rezerwacji-czestotliwosci,144.html"
+  },
+  {
+   "title": "Telepolis – 1800 MHz band re-arranged (Feb 2026)",
+   "url": "https://www.telepolis.pl/wiadomosci/uke-1800-mhz-porzadkowanie-pasma-luty-2026"
+  },
+  {
+   "title": "UKE – 26 GHz consultation: operators say too early",
+   "url": "https://www.uke.gov.pl/blog/konsultacje-w-sprawie-kolejnego-pasma-dla-5g-operatorzy-za-wczesnie-na-26-ghz,114.html"
+  },
+  {
+   "title": "Telepolis – third 26 GHz consultation",
+   "url": "https://www.telepolis.pl/wiadomosci/trzecie-konsultacje-w-sprawie-wykorzystania-pasma-26-ghz"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (seed, LGPL-3.0)",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]

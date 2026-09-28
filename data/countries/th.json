@@ -1,0 +1,784 @@
+{
+ "code": "th",
+ "name": "Thailand",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "national",
+ "summary": "Two large private operators, AIS and True (merged with dtac in 2023), plus state-owned NT. The June 2025 NBTC auction re-allocated 2100 MHz (AIS), 2300 MHz and 1500 MHz (True); 850 MHz went unsold.",
+ "operators": [
+  {
+   "id": "ais",
+   "name": "AIS",
+   "legal": "Advanced Wireless Network Co., Ltd. (AWN)",
+   "color": "#8dc63f",
+   "aliases": [
+    "Advanced Info Service",
+    "AWN"
+   ],
+   "kind": "mno",
+   "notes": "Licences held by subsidiary AWN. Bought half of NT's 700 MHz (2x5 MHz) in 2023 (valid to March 2036). Won 2100 MHz 1965-1980/2155-2170 in the June 2025 auction."
+  },
+  {
+   "id": "true",
+   "name": "True",
+   "legal": "True Move H Universal Communication (TUC) / DTAC TriNet (DTN)",
+   "color": "#e3001b",
+   "aliases": [
+    "TrueMove H",
+    "dtac",
+    "True Corporation",
+    "TUC",
+    "DTN"
+   ],
+   "kind": "mno",
+   "notes": "True Corporation and Total Access Communication (dtac) merged on 1 March 2023. Licences are held by TUC (ex-True) and DTN (ex-dtac); holdings are combined here. Won 2300 MHz (2300-2370) and 1500 MHz (1452-1472) in June 2025, effective 4 Aug 2025."
+  },
+  {
+   "id": "nt",
+   "name": "NT",
+   "legal": "National Telecom PCL",
+   "color": "#f58220",
+   "aliases": [
+    "National Telecom",
+    "CAT Telecom",
+    "TOT"
+   ],
+   "kind": "mno",
+   "notes": "State operator formed in 2021 by merging CAT Telecom and TOT. Its 850/2100/2300 MHz concession-era spectrum (used through partnerships with True, AIS and dtac) ended in 2025 and was re-auctioned. It keeps 2x5 MHz of 700 MHz and 400 MHz of 26 GHz."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for IMT; UHF used for digital TV.",
+   "sources": [
+    "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28) – 2019 blocks",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Three 2x10 MHz licences allocated in 2019 (licences run to 2035). Positions from Spectrum Tracker's labelled table (single source).",
+   "sources": [
+    "https://www.spectrum-tracker.com/Thailand/AIS",
+    "https://telecomlead.com/5g/5g-spectrum-auction-thailand-fetches-3-21-bn-94083"
+   ],
+   "blocks": [
+    {
+     "op": "true",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "notes": "TrueMove H (TUC), 2019 allocation"
+    },
+    {
+     "op": "true",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "notes": "ex-dtac (DTN), 2019 allocation"
+    },
+    {
+     "op": "ais",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "notes": "AWN, 2019 allocation"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28) – 2020 blocks 733-748",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     788,
+     803
+    ],
+    "ul": [
+     733,
+     748
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "In the Feb 2020 auction CAT (now NT) won 2x10 MHz and AIS won 2x5 MHz. In 2023 NT transferred half of its 700 MHz to AIS with NBTC approval. Positions within 733-748 / 788-803 not confirmed.",
+   "sources": [
+    "https://telecomlead.com/5g/5g-spectrum-auction-thailand-fetches-3-21-bn-94083",
+    "https://totaltele.com/thailands-first-5g-spectrum-auction-raises-3-2-bn/",
+    "https://www.lightreading.com/5g/ais-bolsters-5g-posture-amid-purchase-of-700mhz-spectrum-license-from-nt"
+   ],
+   "holdings": [
+    {
+     "op": "ais",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2x5 MHz won in Feb 2020 + 2x5 MHz bought from NT in 2023"
+    },
+    {
+     "op": "nt",
+     "mhz": 5,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Remaining half of CAT's 2x10 MHz from the 2020 auction"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EU 800 plan not used in Thailand (B5 plan used).",
+   "sources": [
+    "https://www.nationthailand.com/blogs/business/corporate/40051906"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "NT's 850 MHz spectrum (used by True) ended in 2025. The two 2x5 MHz blocks offered in the June 2025 auction (824-834 / 869-879 MHz) got no bids and remain unassigned.",
+   "sources": [
+    "https://www.nationthailand.com/blogs/business/corporate/40051906",
+    "https://www.lightreading.com/5g/thailand-nets-1-26b-from-ais-and-true-in-mid-band-spectrum-sale",
+    "https://developingtelecoms.com/telecom-business/telecom-regulation/18703-ais-and-true-bid-us-1-26b-in-thailand-s-latest-spectrum-auction.html"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   }
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Positions and holders from Spectrum Tracker's labelled table (single source). Consistent with the 2015/2016/2018 auctions (from background knowledge).",
+   "sources": [
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "notes": "Not allocated to mobile"
+    },
+    {
+     "op": "true",
+     "dl": [
+      935,
+      940
+     ],
+     "ul": [
+      890,
+      895
+     ],
+     "notes": "ex-dtac (DTN), won 2018"
+    },
+    {
+     "op": "ais",
+     "dl": [
+      940,
+      950
+     ],
+     "ul": [
+      895,
+      905
+     ],
+     "notes": "AWN, 2016 re-auction"
+    },
+    {
+     "op": "true",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "notes": "TUC, 2015 auction"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1500 MHz L-band SDL",
+   "names": [
+    "n75",
+    "B32"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1452,
+     1507
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "11 x 5 MHz blocks (1452-1507 MHz) offered in June 2025. True won 4. Not yet widely used for mobile.",
+   "sources": [
+    "https://www.lightreading.com/5g/thailand-nets-1-26b-from-ais-and-true-in-mid-band-spectrum-sale",
+    "https://www.nationthailand.com/blogs/business/corporate/40051906",
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [
+    {
+     "op": "true",
+     "f": [
+      1452,
+      1472
+     ],
+     "notes": "4 x 5 MHz won by TUC for THB4.65 billion in June 2025; licence from 4 Aug 2025"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1472,
+      1507
+     ],
+     "notes": "7 unsold 5 MHz blocks"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS plan not used.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts and positions from Spectrum Tracker (single source), with holder attribution from background knowledge of the 2015/2018 auctions. Not source-verified.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [
+    {
+     "op": "true",
+     "dl": [
+      1805,
+      1820
+     ],
+     "ul": [
+      1710,
+      1725
+     ],
+     "notes": "TUC, 2015 auction"
+    },
+    {
+     "op": "ais",
+     "dl": [
+      1820,
+      1840
+     ],
+     "ul": [
+      1725,
+      1745
+     ],
+     "notes": "AWN: 2x15 (2015) + 2x5 (2018)"
+    },
+    {
+     "op": "true",
+     "dl": [
+      1840,
+      1845
+     ],
+     "ul": [
+      1745,
+      1750
+     ],
+     "notes": "ex-dtac (DTN), 2018"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      1845,
+      1880
+     ],
+     "ul": [
+      1750,
+      1785
+     ],
+     "notes": "Unsold in 2018/2020"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz TDD",
+   "names": [
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No assignments.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The band is 4 x 2x15 MHz blocks. 1965-1980 / 2155-2170 MHz (formerly NT/TOT, used by AIS) went to AWN in June 2025 (verified by NBTC results via 3 press sources). Positions of the three 2012 blocks (1920-1965 MHz) are not confirmed.",
+   "sources": [
+    "https://www.lightreading.com/5g/thailand-nets-1-26b-from-ais-and-true-in-mid-band-spectrum-sale",
+    "https://www.nationthailand.com/blogs/business/corporate/40051906",
+    "https://www.kaohooninternational.com/technology/560878",
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "holdings": [
+    {
+     "op": "ais",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2x15 MHz from the 2012 3G auction (to Dec 2027) + 1965-1980/2155-2170 MHz won June 2025 (licence from 4 Aug 2025)"
+    },
+    {
+     "op": "true",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2x15 MHz TUC + 2x15 MHz ex-dtac (DTN), 2012 3G auction licences (to Dec 2027)"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "June 2025 auction.",
+   "sources": [
+    "https://www.lightreading.com/5g/thailand-nets-1-26b-from-ais-and-true-in-mid-band-spectrum-sale",
+    "https://www.kaohooninternational.com/technology/560878",
+    "https://www.nationthailand.com/blogs/business/corporate/40051906"
+   ],
+   "blocks": [
+    {
+     "op": "true",
+     "f": [
+      2300,
+      2370
+     ],
+     "notes": "7 x 10 MHz won by TUC for THB21.77 billion, licence from 4 Aug 2025 (was NT/TOT spectrum used by dtac)"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2370,
+      2400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (n41)",
+   "names": [
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2500,
+     2690
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "All 19 blocks sold in Feb 2020 (AIS 10, True 9; confirmed by telecomlead licence counts). Edges from Spectrum Tracker only.",
+   "sources": [
+    "https://telecomlead.com/5g/5g-spectrum-auction-thailand-fetches-3-21-bn-94083",
+    "https://totaltele.com/thailands-first-5g-spectrum-auction-raises-3-2-bn/",
+    "https://www.spectrum-tracker.com/Thailand/AIS"
+   ],
+   "blocks": [
+    {
+     "op": "ais",
+     "f": [
+      2500,
+      2600
+     ],
+     "notes": "10 x 10 MHz, Feb 2020 auction"
+    },
+    {
+     "op": "true",
+     "f": [
+      2600,
+      2690
+     ],
+     "notes": "9 x 10 MHz, Feb 2020 auction"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3-4.2 GHz",
+   "names": [
+    "n78"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. NBTC's roadmap pointed to a possible 3500 MHz auction around 2026, but none was found by Sep 2026 (web search was limited).",
+   "sources": [
+    "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   }
+  },
+  {
+   "group": "4900",
+   "label": "4.8-5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24300,
+     27000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Feb 2020 auction of 27 x 100 MHz (24.3-27.0 GHz), 26 sold. Block positions not found.",
+   "sources": [
+    "https://telecomlead.com/5g/5g-spectrum-auction-thailand-fetches-3-21-bn-94083",
+    "https://totaltele.com/thailands-first-5g-spectrum-auction-raises-3-2-bn/"
+   ],
+   "holdings": [
+    {
+     "op": "ais",
+     "mhz": 1200,
+     "paired": false,
+     "basis": "exact",
+     "notes": "12 x 100 MHz"
+    },
+    {
+     "op": "true",
+     "mhz": 1000,
+     "paired": false,
+     "basis": "exact",
+     "notes": "True 8 x 100 MHz + ex-dtac 2 x 100 MHz"
+    },
+    {
+     "op": "nt",
+     "mhz": 400,
+     "paired": false,
+     "basis": "exact",
+     "notes": "ex-TOT, 4 x 100 MHz"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Regulator: NBTC (National Broadcasting and Telecommunications Commission).",
+  "True and dtac holdings are combined under 'True' after the 1 March 2023 merger. Licences remain split between TUC and DTN subsidiaries.",
+  "NT's partnership-era spectrum (850 MHz with True, 2100 MHz with AIS, 2300 MHz with dtac) ended in 2025. The 2100 and 2300 MHz ranges were re-auctioned in June 2025 and the 850 MHz blocks went unsold.",
+  "The 3G 2100 MHz licences from the 2012 auction expire in late 2027 (from background knowledge)."
+ ],
+ "missing": [
+  "Exact positions of the 2012 2100 MHz blocks (holdings only).",
+  "700 MHz 733-748 MHz split between AIS and NT; 26 GHz block positions.",
+  "900/1800/2600 MHz edges from a single source (Spectrum Tracker). 1800 MHz holder attribution from background knowledge.",
+  "Whether NT keeps any 850 MHz spectrum after 2025. Whether a 3500 MHz auction was held or scheduled in 2026 (web search budget exhausted).",
+  "Licence expiry dates not compiled systematically.",
+  "EARFCN data not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "Light Reading – Thailand nets $1.26B from AIS and True in mid-band spectrum sale (June 2025)",
+   "url": "https://www.lightreading.com/5g/thailand-nets-1-26b-from-ais-and-true-in-mid-band-spectrum-sale"
+  },
+  {
+   "title": "The Nation – True, AIS secure spectrum in 41.27-billion-baht auction",
+   "url": "https://www.nationthailand.com/blogs/business/corporate/40051906"
+  },
+  {
+   "title": "Kaohoon – NBTC certifies latest spectrum auction",
+   "url": "https://www.kaohooninternational.com/technology/560878"
+  },
+  {
+   "title": "TelecomLead – 5G spectrum auction Thailand fetches $3.21 bn (2020)",
+   "url": "https://telecomlead.com/5g/5g-spectrum-auction-thailand-fetches-3-21-bn-94083"
+  },
+  {
+   "title": "Light Reading – AIS buys 700MHz licence from NT (2023)",
+   "url": "https://www.lightreading.com/5g/ais-bolsters-5g-posture-amid-purchase-of-700mhz-spectrum-license-from-nt"
+  },
+  {
+   "title": "Spectrum Tracker – Thailand",
+   "url": "https://www.spectrum-tracker.com/Thailand/AIS"
+  },
+  {
+   "title": "Developing Telecoms – NBTC spectrum roadmap",
+   "url": "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+  }
+ ]
+}
