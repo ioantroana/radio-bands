@@ -2,128 +2,386 @@
  "code": "bg",
  "name": "Bulgaria",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Three MNOs (A1, Yettel, Vivacom) with equal holdings in most bands: 2x10 MHz at 700 and 800 MHz (2023), 2x11.6 at 900, 2x25 at 1800, 2x20 at 2100 and 2600, and 120 MHz at 3.4-3.8 GHz. 26 GHz was awarded in 2022.",
  "operators": [
   {
    "id": "a1",
-   "name": "A1 Bulgaria",
-   "color": "#e70022",
+   "name": "A1",
+   "legal": "A1 Bulgaria EAD",
+   "color": "#e30613",
    "aliases": [
-    "A1",
-    "A1 Bulgaria"
+    "A1 Bulgaria",
+    "А1 България",
+    "Mtel",
+    "M-Tel"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "A1 Group (Telekom Austria)."
   },
   {
    "id": "yettel",
-   "name": "Yettel Bulgaria",
+   "name": "Yettel",
+   "legal": "Yettel Bulgaria EAD",
    "color": "#b4ff00",
    "aliases": [
-    "Yettel",
-    "Yettel Bulgaria"
+    "Yettel Bulgaria",
+    "Йеттел България",
+    "Telenor Bulgaria",
+    "Globul"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Formerly Telenor Bulgaria (rebranded Yettel in 2022)."
   },
   {
    "id": "vivacom",
-   "name": "Vivacom Bulgaria",
-   "color": "#141317",
+   "name": "Vivacom",
+   "legal": "Vivacom Bulgaria EAD",
+   "color": "#1a1a1a",
    "aliases": [
-    "Vivacom"
+    "Vivacom Bulgaria",
+    "Виваком България",
+    "BTC"
    ],
    "kind": "mno"
   },
   {
    "id": "mod",
-   "name": "Ministry of Defence of Bulgaria",
-   "color": "#01319d",
+   "name": "Ministry of Defence",
+   "color": "#5b6b7c",
    "aliases": [
-    "MoD"
+    "MoD",
+    "МО",
+    "Министерство на отбраната"
    ],
-   "kind": "mno"
+   "kind": "government",
+   "notes": "National-security use in parts of 26 GHz (blocks F and K)."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1)",
+   "group": "600",
+   "label": "600 MHz",
    "names": [
-    "B1"
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a mobile band in Europe; 470-694 MHz is used for DTT.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
+    "https://crc.bg/files/URChS/RChS/Frequency%20Plan%202026_BG_F.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     758,
+     788
     ],
     "ul": [
-     1920,
-     1980
+     703,
+     733
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Three 2x10 MHz permits issued 28 Nov 2023 (CRC decisions 343-345) for 15 years (to 28 Nov 2038). Until 31 Dec 2025 'sanitary zones' around military radars restricted use; CRC wants the remaining national-security spectrum at 700/800 MHz freed for civil use.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+    "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-1_%D0%90%201%20%D0%91%D0%AA%D0%9B%D0%93%D0%90%D0%A0%D0%98%D0%AF%20%D0%95%D0%90%D0%94.-%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(2).pdf",
+    "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-2_%D0%92%D0%98%D0%92%D0%90%D0%9A%D0%9E%D0%9C-%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(2).pdf",
+    "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-3_%D0%99%D0%95%D0%A2%D0%A2%D0%95%D0%9B%20%20%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(1).pdf",
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
    ],
    "blocks": [
     {
-     "op": "yettel",
-     "dl": [
-      2110,
-      2130
-     ],
-     "ul": [
-      1920,
-      1940
-     ],
-     "earfcn": [
-      100
-     ],
-     "notes": "LTE B1 20 MHz nationwide deployment · Indoor and metro deployments use LTE B1 10 MHz (EARFCN 100) + UMTS B1 5 MHz"
-    },
-    {
      "op": "a1",
      "dl": [
-      2130,
-      2150
+      758,
+      768
      ],
      "ul": [
-      1940,
-      1960
+      703,
+      713
      ],
-     "earfcn": [
-      275,
-      300
-     ],
-     "notes": "LTE B1 20 MHz nationwide deployment · Indoor and metro deployments use LTE B1 15 MHz (EARFCN 275) + UMTS B1 5 MHz"
+     "expiry": "2038-11-28",
+     "notes": "Permit 02550; NR only (seed)"
     },
     {
      "op": "vivacom",
      "dl": [
-      2150,
-      2170
+      768,
+      778
      ],
      "ul": [
-      1960,
-      1970
+      713,
+      723
      ],
-     "earfcn": [
-      500
+     "expiry": "2038-11-28",
+     "notes": "Permit 02551"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      778,
+      788
      ],
-     "notes": "LTE B1 20 MHz nationwide deployment · Indoor and metro deployments use LTE B1 10 MHz (EARFCN 500) + UMTS B1 5 MHz"
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2038-11-28",
+     "notes": "Mostly NR only (seed)"
     }
    ]
   },
   {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Three 2x10 MHz permits issued 28 Nov 2023, valid to 28 Nov 2038; military sanitary-zone restrictions applied until 31 Dec 2025.",
+   "sources": [
+    "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-1_%D0%90%201%20%D0%91%D0%AA%D0%9B%D0%93%D0%90%D0%A0%D0%98%D0%AF%20%D0%95%D0%90%D0%94.-%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(2).pdf",
+    "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-2_%D0%92%D0%98%D0%92%D0%90%D0%9A%D0%9E%D0%9C-%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(2).pdf",
+    "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-3_%D0%99%D0%95%D0%A2%D0%A2%D0%95%D0%9B%20%20%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(1).pdf",
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2038-11-28",
+     "notes": "Permit 02553"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2038-11-28",
+     "notes": "Permit 02554"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2038-11-28",
+     "notes": "Permit 02555"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5",
+    "B26"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe (800 MHz follows B20).",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CRC re-arranged the band and added 2x0.4 MHz per operator, giving each 2x11.6 MHz contiguous (CRC policy 2025-2027, fig. 1). 100 kHz guards at both band edges.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      925.1,
+      936.7
+     ],
+     "ul": [
+      880.1,
+      891.7
+     ],
+     "notes": "LTE 4.6 MHz + 3G + 2G nationwide; up to 10 MHz LTE where no 3G (seed)"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      936.7,
+      948.3
+     ],
+     "ul": [
+      891.7,
+      903.3
+     ]
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      948.3,
+      959.9
+     ],
+     "ul": [
+      903.3,
+      914.9
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 90 MHz free. Operators showed interest only in 5+ years; CRC proposes 3x30 MHz blocks and plans a new consultation in 2026.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
    "group": "1800",
-   "label": "1800 MHz (B3/n3)",
+   "label": "1800 MHz (B3)",
    "names": [
     "B3",
     "n3"
@@ -143,8 +401,9 @@
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "CRC: after additional awards in 2022 and 2024 the whole band is assigned, 2x25 MHz to each operator. Block order and edges are from the seed only.",
    "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
    ],
    "blocks": [
@@ -157,9 +416,6 @@
      "ul": [
       1710,
       1735
-     ],
-     "earfcn": [
-      1300
      ]
     },
     {
@@ -171,10 +427,6 @@
      "ul": [
       1735,
       1760
-     ],
-     "earfcn": [
-      1550,
-      1675
      ]
     },
     {
@@ -187,24 +439,164 @@
       1760,
       1785
      ],
-     "earfcn": [
-      1800
-     ],
-     "nrarfcn": [
-      372730
-     ],
-     "notes": "LTE B3 20 MHz, n3 DSS"
+     "notes": "LTE 20 MHz + n3 DSS (seed)"
     }
    ]
   },
   {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1990
+    ],
+    "ul": [
+     1850,
+     1910
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz unpaired TDD",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No terrestrial mobile assignment; not among the bands in CRC's 2025-2027 spectrum policy. (1980-2010/2170-2200 MHz is licensed to EchoStar and Inmarsat for MSS.)",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
+    "https://crc.bg/ords/f?p=723:HOME"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CRC: all 120 MHz assigned equally to the three MNOs (2x20 MHz each); permits expiring 25 Apr 2025 were extended by 10 years to 25 Apr 2035. Block order is from the seed.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "yettel",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "expiry": "2035-04-25"
+    },
+    {
+     "op": "a1",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ],
+     "expiry": "2035-04-25"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "expiry": "2035-04-25"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile: used for PMSE, SAP/SAB and amateur radio; CRC will keep this use until there is demand for wireless broadband.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7/n7)",
+   "label": "2600 MHz FDD (B7)",
    "names": [
     "B7",
     "n7"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
@@ -219,8 +611,9 @@
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Three national 2x20 MHz permits issued in 2021 for 20 years. CRC (fig. 2) confirms 2510-2570/2630-2690 assigned and 2x10 MHz (2500-2510/2620-2630) free, but does not name the operators per block; the order is from the seed.",
    "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
    ],
    "blocks": [
@@ -245,9 +638,7 @@
       2510,
       2530
      ],
-     "earfcn": [
-      2950
-     ]
+     "expiry": "2041"
     },
     {
      "op": "vivacom",
@@ -259,9 +650,7 @@
       2530,
       2550
      ],
-     "earfcn": [
-      3150
-     ]
+     "expiry": "2041"
     },
     {
      "op": "yettel",
@@ -273,253 +662,39 @@
       2550,
       2570
      ],
-     "earfcn": [
-      3350
-     ],
-     "nrarfcn": [
-      534884
-     ],
-     "notes": "LTE B7 20 MHz, n7 DSS in some urban areas"
+     "expiry": "2041",
+     "notes": "LTE 20 MHz, n7 DSS in some urban areas (seed)"
     }
    ]
   },
   {
-   "group": "900",
-   "label": "900 MHz (B8)",
+   "group": "2600",
+   "label": "2600 MHz TDD (B38)",
    "names": [
-    "B8"
+    "B38",
+    "n38"
    ],
-   "status": "assigned",
-   "duplex": "fdd",
+   "status": "not-assigned",
+   "duplex": "tdd",
    "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
+    "f": [
+     2570,
+     2620
     ]
    },
-   "positions": "unverified",
+   "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Not assigned: 50 MHz (10 x 5 MHz) free; CRC plans a consultation in 2026.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
    ],
-   "blocks": [
-    {
-     "op": "a1",
-     "dl": [
-      925.1,
-      936.7
-     ],
-     "ul": [
-      880.1,
-      891.7
-     ],
-     "earfcn": [
-      3515,
-      3536
-     ],
-     "notes": "Nationwide B8 LTE 4.6 MHz (EARFCN 3536), B8 3G and B8 2G deployment · B8 LTE up to 10 MHz (EARFCN 3515) in areas without 3G, B8 2G deployment"
-    },
-    {
-     "op": "vivacom",
-     "dl": [
-      936.7,
-      948.3
-     ],
-     "ul": [
-      891.7,
-      903.3
-     ],
-     "earfcn": [
-      3636
-     ],
-     "notes": "Nationwide B8 LTE 4.6 MHz, B8 3G and B8 2G deployment"
-    },
-    {
-     "op": "yettel",
-     "dl": [
-      948.3,
-      959.9
-     ],
-     "ul": [
-      903.3,
-      914.9
-     ],
-     "earfcn": [
-      3774
-     ],
-     "notes": "Nationwide B8 LTE 4.6 MHz, B8 3G and B8 2G deployment"
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
-    "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
-    "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
-   ],
-   "blocks": [
-    {
-     "op": "a1",
-     "dl": [
-      791,
-      801
-     ],
-     "ul": [
-      832,
-      842
-     ],
-     "earfcn": [
-      6200
-     ],
-     "notes": "Restricted in some areas until the end of 2025",
-     "source": "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
-    },
-    {
-     "op": "vivacom",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300
-     ],
-     "notes": "Restricted in some areas until the end of 2025",
-     "source": "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
-    },
-    {
-     "op": "yettel",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6400
-     ],
-     "notes": "Restricted in some areas until the end of 2025",
-     "source": "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
-    "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
-    "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
-   ],
-   "blocks": [
-    {
-     "op": "a1",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ],
-     "nrarfcn": [
-      152690
-     ],
-     "notes": "NR only · Restricted in some areas until the end of 2025",
-     "source": "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
-    },
-    {
-     "op": "vivacom",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ],
-     "notes": "Restricted in some areas until the end of 2025",
-     "source": "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
-    },
-    {
-     "op": "yettel",
-     "dl": [
-      778,
-      788
-     ],
-     "ul": [
-      723,
-      733
-     ],
-     "earfcn": [
-      9460
-     ],
-     "nrarfcn": [
-      156510
-     ],
-     "notes": "almost always deployed as NR only · Restricted in some areas until the end of 2025",
-     "source": "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
-    }
-   ]
+   "blocks": [],
+   "holdings": []
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
@@ -534,33 +709,25 @@
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "CRC (fig. 3): 360 MHz assigned to the three MNOs as 3x20 MHz in 3440-3500 and 3x100 MHz in 3500-3800 MHz; 3430-3440 MHz free; 3400-3430 MHz shown as occupied (holder not stated, not drawn). The operator order is from the seed. CRC may re-arrange to give contiguous blocks and plans a consultation on the free 10 MHz in 2026.",
    "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
    ],
    "blocks": [
     {
      "op": "unassigned",
      "f": [
-      3400,
-      3430
-     ]
-    },
-    {
-     "op": "unassigned",
-     "f": [
       3430,
       3440
-     ]
+     ],
+     "notes": "Free (CRC)"
     },
     {
      "op": "yettel",
      "f": [
       3440,
       3460
-     ],
-     "nrarfcn": [
-      629988
      ]
     },
     {
@@ -568,9 +735,6 @@
      "f": [
       3460,
       3480
-     ],
-     "nrarfcn": [
-      631392
      ]
     },
     {
@@ -585,9 +749,6 @@
      "f": [
       3500,
       3600
-     ],
-     "nrarfcn": [
-      636576
      ]
     },
     {
@@ -595,9 +756,6 @@
      "f": [
       3600,
       3700
-     ],
-     "nrarfcn": [
-      643296
      ]
     },
     {
@@ -605,20 +763,42 @@
      "f": [
       3700,
       3800
-     ],
-     "nrarfcn": [
-      649920
      ]
     }
    ]
   },
   {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
+    "https://crc.bg/files/URChS/RChS/Frequency%20Plan%202026_BG_F.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
    "group": "26g",
-   "label": "24–29 GHz (n258)",
+   "label": "26 GHz (n258)",
    "names": [
     "n258"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -626,26 +806,29 @@
      27500
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "CRC 2022 procedure: 1,600 MHz awarded to Vivacom, Yettel and A1 (max 3x200 MHz per operator); Yettel's and A1's older fixed-service permits were also converted to allow MFCN use. Layout per CRC policy 2025-2027, fig. 4 (blocks A-P of 200 MHz). A1 has requested future use of 47 MHz in block K and shares block K with national-security networks.",
    "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
    ],
    "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      24250,
+      24300
+     ]
+    },
     {
      "op": "yettel",
      "f": [
       24300,
       24700
      ],
-     "nrarfcn": [
-      2018971,
-      2020699,
-      2022427,
-      2023867
-     ]
+     "notes": "Blocks A-B"
     },
     {
      "op": "unassigned",
@@ -660,7 +843,7 @@
       24745,
       24885
      ],
-     "notes": "In use for microwave backhaul"
+     "notes": "Microwave backhaul (seed)"
     },
     {
      "op": "unassigned",
@@ -674,7 +857,8 @@
      "f": [
       24900,
       25100
-     ]
+     ],
+     "notes": "Block D"
     },
     {
      "op": "unassigned",
@@ -689,7 +873,7 @@
       25219,
       25389
      ],
-     "notes": "In use for microwave backhaul"
+     "notes": "Microwave backhaul (seed)"
     },
     {
      "op": "mod",
@@ -702,20 +886,6 @@
      "op": "unassigned",
      "f": [
       25445,
-      25500
-     ]
-    },
-    {
-     "op": "unassigned",
-     "f": [
-      25500,
-      25700
-     ]
-    },
-    {
-     "op": "unassigned",
-     "f": [
-      25700,
       25753
      ]
     },
@@ -738,14 +908,16 @@
      "f": [
       25900,
       26100
-     ]
+     ],
+     "notes": "Block I"
     },
     {
      "op": "unassigned",
      "f": [
       26100,
       26227
-     ]
+     ],
+     "notes": "A1 has expressed interest"
     },
     {
      "op": "a1",
@@ -753,7 +925,7 @@
       26227,
       26397
      ],
-     "notes": "In use for microwave backhaul"
+     "notes": "Microwave backhaul (seed)"
     },
     {
      "op": "mod",
@@ -768,21 +940,23 @@
       26453,
       26500
      ],
-     "notes": "Requested acquisition by A1"
+     "notes": "A1 requested future use"
     },
     {
      "op": "a1",
      "f": [
       26500,
       26700
-     ]
+     ],
+     "notes": "Block L"
     },
     {
      "op": "vivacom",
      "f": [
       26700,
       27300
-     ]
+     ],
+     "notes": "Blocks M-O"
     },
     {
      "op": "unassigned",
@@ -790,19 +964,109 @@
       27300,
       27500
      ],
-     "notes": "Requested acquisition by Vivacom"
+     "notes": "Block P; future use requested by one operator"
     }
    ]
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. EU Decision 2024/1983 harmonising 40.5-43.5 GHz must be transposed by 31 Dec 2026.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf",
+    "https://crc.bg/files/URChS/RChS/Frequency%20Plan%202026_BG_F.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Main source: CRC 'Regulatory policy for civil radio-spectrum management 2025-2027' (CRC decision 213, 26 June 2025), which gives the current layouts for 900 MHz, 2.6 GHz, 3.6 GHz and 26 GHz and amounts for 1800/2100 MHz.",
+  "The CRC figures for 2.6 GHz and 3.6 GHz do not name operators per block; operator order comes from the davwheat seed (single source), hence 'unverified'.",
+  "3400-3430 MHz is marked 'occupied' in the CRC figure without a holder; it is not drawn.",
+  "26 GHz totals include blocks held under converted fixed-service permits (Yettel/A1) that may be used for MFCN; Yettel 880 MHz, A1 740 MHz, Vivacom 600 MHz, MoD 112 MHz.",
+  "Seed 800/700 MHz notes about restrictions until end-2025 relate to military radar 'sanitary zones' (Council of Ministers decision 699/2023)."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Per-operator block positions at 1800 and 2100 MHz and the operator order at 2.6/3.6 GHz confirmed only by the seed.",
+  "Expiry dates for 900/1800 MHz and 3.6/26 GHz permits (the CRC permit register lists dates per permit number but not per band).",
+  "Holder of 3400-3430 MHz.",
+  "Carrier EARFCN/NR-ARFCN details beyond a few seed notes."
+ ],
+ "changes": [
+  "2100 MHz: fixed the seed's Vivacom uplink 1960-1970 (DL/UL width mismatch) to 1960-1980; CRC confirms 2x20 MHz each; expiry 25 Apr 2035 added.",
+  "900 MHz and 26 GHz marked 'verified' against the CRC policy figures; 1800, 2100, 2600 and 3.6 GHz downgraded to 'unverified' (seed-only positions).",
+  "26 GHz: merged adjacent same-operator blocks and made the 24250-24300 edge a guard band.",
+  "3.6 GHz: removed the seed's 'unassigned' 3400-3430 (CRC says occupied) and kept 3430-3440 as free.",
+  "Operator names shortened to brands (A1, Yettel, Vivacom); MoD set to kind 'government'.",
+  "Added not-assigned entries for 600, 850, 1400, 1700, 1900, 2000tdd, 2300, 2600 TDD, 4900, 40g, 47g."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "CRC – Regulatory policy for radio spectrum management for civil needs 2025-2027",
+   "url": "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/regulatorna_politika_2025-2027.pdf"
+  },
+  {
+   "title": "CRC – 700/800 MHz permit decision, A1 Bulgaria (Nov 2023)",
+   "url": "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-1_%D0%90%201%20%D0%91%D0%AA%D0%9B%D0%93%D0%90%D0%A0%D0%98%D0%AF%20%D0%95%D0%90%D0%94.-%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(2).pdf"
+  },
+  {
+   "title": "CRC – 700/800 MHz permit decision, Vivacom (Nov 2023)",
+   "url": "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-2_%D0%92%D0%98%D0%92%D0%90%D0%9A%D0%9E%D0%9C-%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(2).pdf"
+  },
+  {
+   "title": "CRC – 700/800 MHz permit decision, Yettel (Nov 2023)",
+   "url": "https://crc.bg/files/%D0%92%D0%9E%D0%9F/01-3_%D0%99%D0%95%D0%A2%D0%A2%D0%95%D0%9B%20%20%D0%98%D0%97%D0%94%D0%90%D0%92%D0%90%D0%9D%D0%95%20%D0%9D%D0%90%20%D0%A0%D0%90%D0%97%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95%20%D0%92%20%D0%9E%D0%91%D0%A5%D0%92%D0%90%D0%A2%D0%98%20700%20%D0%98%20800-%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8%202023%20(1).pdf"
+  },
+  {
+   "title": "CRC – public registers (spectrum permits)",
+   "url": "https://crc.bg/ords/f?p=723:HOME"
+  },
+  {
+   "title": "CRC – National radio frequency allocation plan 2026",
+   "url": "https://crc.bg/files/URChS/RChS/Frequency%20Plan%202026_BG_F.pdf"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (seed, LGPL-3.0)",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]
