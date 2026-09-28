@@ -3,7 +3,7 @@
  "name": "Australia",
  "region": "Asia-Pacific",
  "asOf": "2026-09-28",
- "coverage": "positions-verified",
+ "coverage": "holdings-only",
  "licensing": "mixed",
  "summary": "Three MNOs: Telstra, Optus and TPG Telecom (Vodafone). Low bands (700 MHz, and 850/900 MHz since 2024) are national spectrum licences. 1800 MHz, 2 GHz, 2.3 GHz, 3.4-3.8 GHz and 26 GHz are area-based licences whose holdings differ between capitals and regional areas.",
  "operators": [
@@ -1060,7 +1060,8 @@
   "Regulator: ACMA. All data here come from the ACMA Register of Radiocommunications Licences (spectrum-licence dump downloaded 28 Sep 2026), not from press reports.",
   "Licensing is mixed: national spectrum licences in 700/850/900 MHz and 2.5 GHz; area-based spectrum licences elsewhere; apparatus licences in remote areas (not compiled). For area-based bands, a regional-average entry feeds the totals and a city block view is shown excluded from totals.",
   "The 850 MHz expansion and 900 MHz lots from the 2021 auction started on 1 July 2024 (Telstra 814-824 national, Optus 890-915 national, to 2044). Optus also has 1 MHz at 824-825 until 2028.",
-  "800 MHz (825-845) and 1800 MHz spectrum licences expire on 17 June 2028, 2.5 GHz on 30 Sep 2029, 700 MHz on 31 Dec 2029, 2.3 GHz on 24 Jul 2030, 3.4-3.7 GHz on 13 Dec 2030 and 2 GHz on 11 Oct 2032. ACMA's decisions on renewing these expiring licences were not compiled."
+  "800 MHz (825-845) and 1800 MHz spectrum licences expire on 17 June 2028, 2.5 GHz on 30 Sep 2029, 700 MHz on 31 Dec 2029, 2.3 GHz on 24 Jul 2030, 3.4-3.7 GHz on 13 Dec 2030 and 2 GHz on 11 Oct 2032. ACMA's decisions on renewing these expiring licences were not compiled.",
+  "Coverage badge lowered from \"Positions verified\" to \"Holdings only\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "Apparatus-licensed mobile spectrum in regional and remote areas (for example regional 1800/2100 MHz) not included.",

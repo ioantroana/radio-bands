@@ -3,7 +3,7 @@
  "name": "Sweden",
  "region": "Europe",
  "asOf": "2026-09-28",
- "coverage": "holdings-only",
+ "coverage": "partial",
  "licensing": "national",
  "summary": "Three MNOs: Telia, Tre (Hi3G) and Net4Mobility (the Tele2/Telenor spectrum JV), plus Teracom at 2.3 GHz. 900 MHz, 2.1 GHz and 2.6 GHz were re-licensed from 1 Jan 2026 after the 2023 auction, and 1800 MHz was re-auctioned in Nov 2025 for 2028 onwards.",
  "operators": [
@@ -825,7 +825,8 @@
   "The 900 MHz, 2.1 GHz and 2.6 GHz licences from the 2023 auction took effect on 1 Jan 2026, so they are current on the asOf date.",
   "1800 MHz: the Nov 2025 auction re-awarded 1710–1720/1805–1815 (Telia) and 1755–1780/1850–1875 (Net4Mobility) from 2028. It is drawn as a future entry.",
   "Cross-checks: Wikipedia's 5G NR list (citing TeleGeography) gives Tre 100 MHz at 3.5 GHz and 40 MHz TDD at 2.6 GHz, and Net4Mobility 10 MHz (per direction) at 700 MHz. These match PTS.",
-  "The 28 GHz (2009) and 10.5 GHz (2011) block licences are for fixed radio links, not IMT, so they are not drawn. The 28 GHz licences expired at the end of 2024."
+  "The 28 GHz (2009) and 10.5 GHz (2011) block licences are for fixed radio links, not IMT, so they are not drawn. The 28 GHz licences expired at the end of 2024.",
+  "Coverage badge lowered from \"Holdings only\" to \"Partial\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "Block edges for 700, 800, 900, 1800 (current), 2100, 2600 FDD/TDD and 3.5 GHz: PTS decision documents with frequency ranges could not be retrieved, and the web search budget ran out before trade-press or enthusiast sources could be checked.",

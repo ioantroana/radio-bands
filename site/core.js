@@ -247,5 +247,19 @@ export function validateCountry(c) {
 
   for (const o of c.operators) if (!used.has(o.id) && o.kind !== "other") W(`operator ${o.id} holds nothing in any band`);
   if (!Array.isArray(c.sources) || c.sources.length === 0) W(`no country-level sources list`);
+  const implied = impliedCoverage(c);
+  if (COVERAGE_ORDER.indexOf(c.coverage) > COVERAGE_ORDER.indexOf(implied)) E(`coverage "${c.coverage}" is more generous than the data supports ("${implied}")`);
   return { errors, warnings };
+}
+
+// Badge implied by the data: share of current, counted entries with verified positions,
+// and whether any required band's status is unknown.
+export const COVERAGE_ORDER = ["not-compiled", "partial", "holdings-only", "positions-verified", "block-level"];
+export function impliedCoverage(c) {
+  const cur = c.bands.filter((b) => countsInTotals(b) && b.status !== "unknown");
+  const unknownRequired = GROUPS.some((g) => g.required && c.bands.some((b) => b.group === g.id && !b.future && b.status === "unknown") && !c.bands.some((b) => b.group === g.id && !b.future && b.status !== "unknown"));
+  if (!cur.length) return "not-compiled";
+  const ver = cur.filter((b) => b.positions === "verified").length / cur.length;
+  const base = ver === 1 ? "block-level" : ver >= 0.6 ? "positions-verified" : "holdings-only";
+  return unknownRequired ? "partial" : base;
 }

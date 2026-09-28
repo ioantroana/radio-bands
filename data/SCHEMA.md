@@ -150,6 +150,10 @@ Ofcom / mastdatabase convention.
 * `partial` — some required bands could not be compiled (list them in `missing`).
 * `not-compiled` — no usable data.
 
+The validator enforces these with a mechanical rule: `block-level` needs every band counted in the totals
+to be `verified`; `positions-verified` needs at least 60 %; any required band whose only entry has status
+`unknown` makes the country `partial`. A file may claim a lower badge than the rule allows, never a higher one.
+
 ## Rules
 
 * Every band entry needs a source URL. Regulator documents first, then trade press.

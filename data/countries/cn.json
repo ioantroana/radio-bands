@@ -3,7 +3,7 @@
  "name": "China",
  "region": "Asia-Pacific",
  "asOf": "2026-09-28",
- "coverage": "positions-verified",
+ "coverage": "holdings-only",
  "licensing": "national",
  "summary": "Four state-owned operators receive spectrum administratively from MIIT (no auctions). China Telecom and China Unicom share a joint 5G network on 3.5 GHz and 2.1 GHz; China Mobile and China Broadnet co-build 700 MHz and share 2.6 GHz.",
  "operators": [
@@ -896,7 +896,8 @@
   "Network sharing: China Telecom + China Unicom run one shared 5G RAN on 3400–3600 MHz and 1920–1965/2110–2155 MHz; China Mobile + China Broadnet co-build 700 MHz (CBN licence) and share 2.6 GHz. Blocks are shown under the licensee.",
   "3300–3400 MHz is licensed jointly to CT, CU and CBN for indoor 5G; totals count it as one-third each.",
   "China Broadnet's 4.9 GHz: the licence text (as quoted by Wikipedia and 21jingji from MIIT) is 4900–4960 MHz; some provincial and trade sources say 4900–5000 MHz. The licence wording is used here.",
-  "MIIT's April 2024 statistics of licensed bands (the regulator's list) name the bands per operator but not the frequency edges. Edges for 900 (CMCC), 1800, 1.9/2.0 GHz TDD, 2100 and 2300 MHz come from secondary compilations and are marked unverified."
+  "MIIT's April 2024 statistics of licensed bands (the regulator's list) name the bands per operator but not the frequency edges. Edges for 900 (CMCC), 1800, 1.9/2.0 GHz TDD, 2100 and 2300 MHz come from secondary compilations and are marked unverified.",
+  "Coverage badge lowered from \"Positions verified\" to \"Holdings only\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "Regulator-published block edges for 900 (CMCC), 1800, 1900/2000 TDD, 2100 and 2300 MHz: not found in MIIT documents; secondary sources only.",

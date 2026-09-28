@@ -3,7 +3,7 @@
  "name": "Bulgaria",
  "region": "Europe",
  "asOf": "2026-09-28",
- "coverage": "positions-verified",
+ "coverage": "holdings-only",
  "licensing": "national",
  "summary": "Three MNOs (A1, Yettel, Vivacom) with equal holdings in most bands: 2x10 MHz at 700 and 800 MHz (2023), 2x11.6 at 900, 2x25 at 1800, 2x20 at 2100 and 2600, and 120 MHz at 3.4-3.8 GHz. 26 GHz was awarded in 2022.",
  "operators": [
@@ -1024,7 +1024,8 @@
   "The CRC figures for 2.6 GHz and 3.6 GHz do not name operators per block; operator order comes from the davwheat seed (single source), hence 'unverified'.",
   "3400-3430 MHz is marked 'occupied' in the CRC figure without a holder; it is not drawn.",
   "26 GHz totals include blocks held under converted fixed-service permits (Yettel/A1) that may be used for MFCN; Yettel 880 MHz, A1 740 MHz, Vivacom 600 MHz, MoD 112 MHz.",
-  "Seed 800/700 MHz notes about restrictions until end-2025 relate to military radar 'sanitary zones' (Council of Ministers decision 699/2023)."
+  "Seed 800/700 MHz notes about restrictions until end-2025 relate to military radar 'sanitary zones' (Council of Ministers decision 699/2023).",
+  "Coverage badge lowered from \"Positions verified\" to \"Holdings only\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "Per-operator block positions at 1800 and 2100 MHz and the operator order at 2.6/3.6 GHz confirmed only by the seed.",

@@ -3,7 +3,7 @@
  "name": "Portugal",
  "region": "Europe",
  "asOf": "2026-09-28",
- "coverage": "positions-verified",
+ "coverage": "partial",
  "licensing": "national",
  "summary": "Four mobile network operators: MEO (Altice), Vodafone, NOS and DIGI, which bought NOWO in 2024 and launched in Nov 2024. The 2021 5G auction assigned 700 MHz, 3.6 GHz and residual 900/1800/2100/2600 MHz lots. In 2026 ANACOM proposed renewing the incumbents' 800/900/1800/2100/2600 MHz rights; that decision was still in draft on the asOf date.",
  "operators": [
@@ -917,7 +917,8 @@
   "Dense Air: its pre-auction 3.6 GHz licence was revoked at its own request (ANACOM, 23 Jan 2024, effective 14 Jul 2023). ANACOM opened a non-compliance procedure (Jun 2025) over its unused 2021 auction block 3440–3480 MHz. The block is shown as unassigned because ANACOM's Mar 2026 draft proposes giving it to DIGI; no final revocation decision was found.",
   "Renewal: on 29 Jun 2026 ANACOM approved a draft decision (consultation to 27 Aug 2026) to renew MEO, NOS and Vodafone's 800 and 1800 MHz rights to Nov 2041, 2100 MHz to 2041/42, half of 900 MHz to 2042 (the rest to 2033) and 2600 MHz only to 21 Apr 2033. The final decision was not published by the asOf date, so current expiries are shown.",
   "900 MHz: sources disagree on the exact edges (davwheat/ANACOM seed vs spectrum-tracker), so the band is marked unverified.",
-  "The ANACOM website blocks automated access (HTTP 403/503), so regulator pages were read through press coverage that quotes the ANACOM decision texts (pplware, portal5g) and through spectrum-tracker's regulator-derived data."
+  "The ANACOM website blocks automated access (HTTP 403/503), so regulator pages were read through press coverage that quotes the ANACOM decision texts (pplware, portal5g) and through spectrum-tracker's regulator-derived data.",
+  "Coverage badge lowered from \"Positions verified\" to \"Partial\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "900 MHz exact block edges (the ANACOM decision of 14 Jan 2022 could not be retrieved).",

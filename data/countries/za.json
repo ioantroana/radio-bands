@@ -3,7 +3,7 @@
  "name": "South Africa",
  "region": "Middle East & Africa",
  "asOf": "2026-09-28",
- "coverage": "holdings-only",
+ "coverage": "partial",
  "licensing": "national",
  "summary": "Four national MNOs (Vodacom, MTN, Cell C, Telkom) plus Rain and Liquid. In ICASA's first spectrum auction (March 2022, R14.4bn) they bought 700, 800, 2600 and 3500 MHz. Legacy 900/1800/2100 assignments were rearranged under the 2022 RFSAPs. The next auction (750/800 MHz, 1.5, 2.3, 3.3, 3.5 GHz) is planned for the 2026/27 financial year.",
  "operators": [
@@ -930,7 +930,8 @@
   "MTN's affidavit (2024) says Vodacom held 184 MHz and MTN 174 MHz of IMT spectrum. The holdings here give exactly these totals: Vodacom 20+20+24+30+80+10 and MTN 20+20+24+30+40+40.",
   "Vodafone's FY26 20-F shows Vodacom's 900 MHz as '2×118 (2029)', read here as 2×11 with a footnote marker. ICASA's final IMT900 RFSAP gives each incumbent 2×10 MHz after migration, and that matches the affidavit totals, so 2×10 is used.",
   "Spectrum pooling: MTN+Liquid (1800 MHz) and MTN+Cell C (900/1800/2100 MHz) were approved by ICASA on 21 June 2022. Vodacom's High Court challenge was decided in February 2025 (ZAGPPHC 2025/199); the outcome was not verified here.",
-  "As of 2026-09-28 no new IMT auction has been held. ICASA was still appointing auction advisers in February 2026 and aims to auction in FY2026/27."
+  "As of 2026-09-28 no new IMT auction has been held. ICASA was still appointing auction advisers in February 2026 and aims to auction in FY2026/27.",
+  "Coverage badge lowered from \"Holdings only\" to \"Partial\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "1800 MHz: Cell C's and Telkom's 2×12 MHz and all block edges except MTN's are from background knowledge or partial sources.",

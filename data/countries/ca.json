@@ -3,7 +3,7 @@
  "name": "Canada",
  "region": "Americas",
  "asOf": "2026-09-28",
- "coverage": "holdings-only",
+ "coverage": "partial",
  "licensing": "regional",
  "summary": "Three national operators (Rogers, Bell, TELUS — Bell and TELUS share a RAN) plus Vidéotron/Freedom (Quebecor), which took over Freedom Mobile's network and spectrum as the Rogers–Shaw merger remedy in April 2023, and regional carriers (Eastlink, SaskTel, TbayTel, Xplore). All licences are regional (ISED Tier 1–5 service areas), so holdings are shown as population-weighted national averages.",
  "operators": [
@@ -259,7 +259,7 @@
     },
     {
      "op": "telus",
-     "mhz": 4.0,
+     "mhz": 4,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     },
@@ -315,7 +315,7 @@
     },
     {
      "op": "telus",
-     "mhz": 2.0,
+     "mhz": 2,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     },
@@ -832,7 +832,7 @@
     },
     {
      "op": "telus",
-     "mhz": 20.0,
+     "mhz": 20,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     },
@@ -851,7 +851,7 @@
     },
     {
      "op": "eastlink",
-     "mhz": 1.0,
+     "mhz": 1,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     },
@@ -915,13 +915,13 @@
    "holdings": [
     {
      "op": "bell",
-     "mhz": 12.0,
+     "mhz": 12,
      "paired": false,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     },
     {
      "op": "rogers",
-     "mhz": 12.0,
+     "mhz": 12,
      "paired": false,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     },
@@ -1005,7 +1005,7 @@
     },
     {
      "op": "eastlink",
-     "mhz": 2.0,
+     "mhz": 2,
      "paired": false,
      "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
     },
@@ -1017,7 +1017,7 @@
     },
     {
      "op": "other",
-     "mhz": 2.0,
+     "mhz": 2,
      "paired": false,
      "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)",
      "notes": "Sogetel, Comcentric, Broadpoint, Iristel, Valley Fiber, TbayTel etc."
@@ -1070,7 +1070,7 @@
     },
     {
      "op": "rogers",
-     "mhz": 42.0,
+     "mhz": 42,
      "paired": false,
      "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)",
      "notes": "Rogers: 40.5 MHz avg in 2023 + residual"
@@ -1192,7 +1192,8 @@
   "Ownership changes applied to auction results: Shaw → Rogers (3 Apr 2023); Freedom Mobile/Wind → Vidéotron (3 Apr 2023, merger remedy; ISED site data Sep 2026 confirms Vidéotron ltée as licensee of the former Freedom 600/700/AWS-3 licences); Mobilicity (DAVE Wireless) → Rogers (2015); Shaw AWS-1 → Rogers (2013–15); MTS → Bell (2017); Public Mobile → TELUS (2013); Xplornet → Xplore; Bragg = Eastlink.",
   "Cross-checks: Rogers' 2025 annual report (600: 20–40 MHz; 700: 24 MHz; 850: 25 MHz; 2500: 40 MHz FDD; 3500: 60–80 MHz in large centres; 3500+3800: 100 MHz combined) matches the computed averages. TELUS reports 270 MHz gross national average; the computed TELUS total here (incl. PCS estimate, excl. AWS-4/WCS) is ~250 MHz.",
   "3800 MHz: the 3500+3800 cross-band cap of 100 MHz per licensee per Tier 4 area applies for five years from 3800 licence issuance. 3900–3980 MHz and parts of 26/28/38 GHz are reserved for non-competitive local licensing (NCLL).",
-  "Band edges: licences within a band are assigned per service area, so block positions differ between areas; no national block positions are drawn."
+  "Band edges: licences within a band are assigned per service area, so block positions differ between areas; no national block positions are drawn.",
+  "Coverage badge lowered from \"Holdings only\" to \"Partial\" by the atlas-wide rule (block-level = every counted band verified; positions verified ≥ 60%; partial = a required band's status is unknown)."
  ],
  "missing": [
   "PCS 1900: Bell and TELUS amounts are estimates (combined ≈2×34 MHz remainder after Rogers and minor licensees); no source gives their pop-weighted PCS holdings. from background knowledge / derivation, not source-verified.",
