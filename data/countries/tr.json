@@ -1,0 +1,841 @@
+{
+ "code": "tr",
+ "name": "Turkey",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "national",
+ "summary": "Three MNOs: Turkcell, Vodafone and Türk Telekom. The 16 October 2025 5G tender sold 400 MHz (700 MHz + 3.5 GHz) for US$2.945bn and extended all legacy rights to 31 Dec 2042. 5G launched on 1 April 2026. Total operator spectrum is 949.2 MHz.",
+ "operators": [
+  {
+   "id": "turkcell",
+   "name": "Turkcell",
+   "legal": "Turkcell İletişim Hizmetleri A.Ş.",
+   "color": "#ffc20e",
+   "aliases": [
+    "Turkcell TR"
+   ],
+   "kind": "mno",
+   "notes": "Largest spectrum holder: 394.4 MHz after the October 2025 tender (41.6% of operator spectrum). Holds the 2G (1998) and 3G A-type (2009) licences. 4.5G authorisation since Oct 2015. Existing rights run to 2029 and were extended to 31 Dec 2042 in the 5G tender."
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone TR",
+   "legal": "Vodafone Telekomünikasyon A.Ş.",
+   "color": "#e60000",
+   "aliases": [
+    "Vodafone Türkiye",
+    "Vodafone Turkey",
+    "Telsim"
+   ],
+   "kind": "mno",
+   "notes": "Vodafone Group subsidiary (formerly Telsim). Won 100 MHz in the 2025 tender (A2 + B3) for US$627m. All existing holdings were renewed to 2042."
+  },
+  {
+   "id": "turktelekom",
+   "name": "Türk Telekom",
+   "legal": "Türk Telekomünikasyon A.Ş. (mobile: TT Mobil İletişim Hizmetleri A.Ş.)",
+   "color": "#0a3d91",
+   "aliases": [
+    "TT Mobil",
+    "Avea",
+    "Aria",
+    "Aycell"
+   ],
+   "kind": "mno",
+   "notes": "Mobile arm formerly Avea (Aria + Aycell, GSM 1800). Won A3, B2, B7 and B8 (2×10 MHz at 700 plus 120 MHz at 3.5 GHz) for US$1.094bn in the October 2025 tender."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Türkiye. 470–694 MHz is used for terrestrial TV broadcasting.",
+   "sources": [
+    "https://www.btk.gov.tr/milli-frekans-plani"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Tender held 16 Oct 2025: three 2×10 MHz packages (A1–A3), one per operator (Presidential Decision 10208, Resmî Gazete 16 Aug 2025). Turkcell won the first 'right of selection' and says it 'selected the end of the relevant frequency band'. Which end, and the other positions, are not published. Rights valid to 31 Dec 2042; commercial use from 1 Apr 2026 (Turkcell started 31 Mar 2026).",
+   "sources": [
+    "https://www.resmigazete.gov.tr/eskiler/2025/08/20250816-14.pdf",
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed",
+    "https://www.sec.gov/Archives/edgar/data/1071321/000110465926044740/tkc-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Package A1, US$429m"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Package A2"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Package A3"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The whole 2×30 MHz was sold in the 2015 4.5G auction (BTK), 2×10 MHz each. 4.5G/legacy rights originally expired 30 Apr 2029; the 5G tender extended them to 31 Dec 2042.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Remainder of the fully sold 2×30 MHz band",
+     "source": "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Türkiye. Region 1 uses 800 MHz B20 and 900 MHz B8.",
+   "sources": [
+    "https://www.btk.gov.tr/milli-frekans-plani"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Turkcell and Vodafone each hold 2×12.4 MHz: their original GSM 900 assignments plus 2×1.4 MHz each bought in 2015. The 2015 auction offered 2×10.4 MHz. Türk Telekom's 2×7.6 MHz is derived. 4.5G/legacy rights originally expired 30 Apr 2029; the 5G tender extended them to 31 Dec 2042.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 12.4,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 12.4,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 7.6,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Derived: Türk Telekom's pre-2025 total of 175 MHz = 549.2 MHz market total (Turkcell 20-F) − Turkcell 234.4 − Vodafone 139.8 (Vodafone 20-F). The per-band split follows from the 2015 auction package sizes (BTK). Not directly source-verified.",
+     "source": "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4/1.5 GHz L-band",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for IMT. It was not offered in the 2015 or 2025 tenders.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in ITU Region 1. 1710–1785 MHz is used as the B3 uplink.",
+   "sources": [
+    "https://www.btk.gov.tr/milli-frekans-plani"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2×59.8 MHz was auctioned in 2015. Turkcell (2×29.8) and Vodafone (2×10) had no 1800 MHz before that. Türk Telekom (ex-Avea GSM 1800) holds the rest. Turkcell has partly refarmed its block to 5G NR. 4.5G/legacy rights originally expired 30 Apr 2029; the 5G tender extended them to 31 Dec 2042.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 29.8,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 34.9,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Derived: Türk Telekom's pre-2025 total of 175 MHz = 549.2 MHz market total (Turkcell 20-F) − Turkcell 234.4 − Vodafone 139.8 (Vodafone 20-F). The per-band split follows from the 2015 auction package sizes (BTK). Not directly source-verified. Could be up to 2×35.2 MHz.",
+     "source": "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz MSS",
+   "names": [
+    "B2",
+    "n70"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS is not used in Region 1. There is no terrestrial IMT assignment in 1980–2010/2170–2200 MHz.",
+   "sources": [
+    "https://www.btk.gov.tr/milli-frekans-plani"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unpaired 2 GHz spectrum from the 2009 3G licences and the 2015 auction (2100 TDD package). Turkcell 10 MHz, Vodafone 5 MHz. Türk Telekom's 5 MHz is derived. Probably little or no traffic runs on it.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 10,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 5,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 5,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Derived: Türk Telekom's pre-2025 total of 175 MHz = 549.2 MHz market total (Turkcell 20-F) − Turkcell 234.4 − Vodafone 139.8 (Vodafone 20-F). The per-band split follows from the 2015 auction package sizes (BTK). Not directly source-verified.",
+     "source": "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "3G licences from 2009 (Turkcell A-type is the widest), plus 2×10 MHz auctioned in 2015 and won by Turkcell. Turkcell has refarmed most of its block to LTE: 2100 MHz carried 45% of its LTE traffic in 2025. 4.5G/legacy rights originally expired 30 Apr 2029; the 5G tender extended them to 31 Dec 2042.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Derived: Türk Telekom's pre-2025 total of 175 MHz = 549.2 MHz market total (Turkcell 20-F) − Turkcell 234.4 − Vodafone 139.8 (Vodafone 20-F). The per-band split follows from the 2015 auction package sizes (BTK). Not directly source-verified.",
+     "source": "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for IMT. It was not offered in the 2015 or 2025 tenders.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned in 2015: 2×60 MHz FDD and 40 MHz TDD offered, with packages E4 and F4 (25 MHz) unsold. Türk Telekom's 2600 holding is in a separate entry because its FDD/TDD split is not known. 4.5G/legacy rights originally expired 30 Apr 2029; the 5G tender extended them to 31 Dec 2042.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://www.btk.gov.tr/haberler/4-5-g-ihalesi-ankara-da-yapildi"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 25,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "TDD packages from the 2015 auction. 4.5G/legacy rights originally expired 30 Apr 2029; the 5G tender extended them to 31 Dec 2042.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 10,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 10,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz – Türk Telekom (FDD/TDD split unknown)",
+   "names": [
+    "B7",
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "mixed",
+   "range": {
+    "f": [
+     2500,
+     2690
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Türk Telekom's 2600 MHz holding is derived as 35 MHz in total: 160 MHz offered − Turkcell 60 − Vodafone 40 − 25 MHz unsold. The FDD/TDD split is unknown.",
+   "sources": [
+    "https://www.btk.gov.tr/haberler/4-5-g-ihalesi-ankara-da-yapildi",
+    "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "turktelekom",
+     "mhz": 35,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "Derived: Türk Telekom's pre-2025 total of 175 MHz = 549.2 MHz market total (Turkcell 20-F) − Turkcell 234.4 − Vodafone 139.8 (Vodafone 20-F). The per-band split follows from the 2015 auction package sizes (BTK). Not directly source-verified."
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.5 GHz TDD",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Tender held 16 Oct 2025. Packages B1–B3 are 80 MHz each (one per operator) and B4–B8 are 20 MHz each (at most three per operator). 340 MHz was sold in total. Turkcell took the first right of selection and 'selected the end of the band'. Exact edges are not published, and it is not confirmed that the band plan uses 3400–3800 MHz. Rights valid to 31 Dec 2042; commercial use from 1 Apr 2026 (Turkcell started 31 Mar 2026).",
+   "sources": [
+    "https://www.resmigazete.gov.tr/eskiler/2025/08/20250816-14.pdf",
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed",
+    "https://www.btk.gov.tr/haberler/turkiye-yi-iletisimde-ileriye-tasiyacak-5g-ihalesi-tamamlandi",
+    "https://www.sec.gov/Archives/edgar/data/1071321/000110465926044740/tkc-20251231x20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "turkcell",
+     "mhz": 140,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "B1 + B4 + B5 + B6; US$795m"
+    },
+    {
+     "op": "turktelekom",
+     "mhz": 120,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "B2 + B7 + B8"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 80,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042-12-31",
+     "notes": "B3",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. The 5G tender covered only 700 MHz and 3.5 GHz.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "6g",
+   "label": "6 GHz",
+   "names": [
+    "n104"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     5925,
+     7125
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment. The 5G tender covered only 700 MHz and 3.5 GHz.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. mmWave was not included in the October 2025 5G tender, and no award had been announced by BTK as of September 2026.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed",
+    "https://www.resmigazete.gov.tr/eskiler/2025/08/20250816-14.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. It was not included in the 2025 tender.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. It was not included in the 2025 tender.",
+   "sources": [
+    "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Totals: Turkcell 394.4 MHz, which is 41.6% of 949.2 MHz (Turkcell FY2025 20-F). Vodafone 239.8 MHz is the sum of its FY26 20-F table. Türk Telekom 315 MHz is derived as the remainder.",
+  "Turkcell's per-band figures come from its FY2016 20-F: 800 2×10, 900 2×12.4, 1800 2×29.8, 2100 2×30 + 10 TDD, 2600 2×25 + 10 TDD. The FY2025 20-F adds 700 2×10 and 3.5 GHz 140 MHz. These sum to 234.4 + 160 = 394.4 MHz, which matches.",
+  "Vodafone Türkiye's figures come from Vodafone Group's FY26 20-F spectrum table (as of 31 Mar 2026): 700 2×10, 800 2×10, 900 2×12.4, 1800 2×10, 2100 2×15+5, 2600 2×15+10, 3.5 GHz 80. All expire in 2042.",
+  "Türk Telekom does not publish a per-band table in the sources reached. Its figures are derived from market totals and 2015 auction package sizes, and are marked as derived.",
+  "The 5G tender rules: the operator buying the first package in each band chose its position first. Turkcell chose 'the end' of both 700 MHz and 3.5 GHz. Block edges have not been published.",
+  "2015 4.5G auction (26 Aug 2015): 390.4 MHz offered, 365.4 MHz sold for €3.96bn incl. VAT. Turkcell took 8 packages, Avea/Türk Telekom 5, Vodafone 5."
+ ],
+ "missing": [
+  "All block positions: BTK does not publish per-operator frequency edges in the sources reached. Every band is holdings-only.",
+  "Türk Telekom per-band amounts (900, 1800, 2100, 1900–1920 TDD, 2600) are derived, not taken from a Türk Telekom or BTK document.",
+  "3.5 GHz band edges (assumed 3400–3800 MHz) and each operator's position are not confirmed.",
+  "EARFCN/NR-ARFCN not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "BTK – 5G tender completed (EN)",
+   "url": "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+  },
+  {
+   "title": "BTK – 5G ihalesi tamamlandı (TR)",
+   "url": "https://www.btk.gov.tr/haberler/turkiye-yi-iletisimde-ileriye-tasiyacak-5g-ihalesi-tamamlandi"
+  },
+  {
+   "title": "Resmî Gazete 16 Aug 2025 – Presidential Decision 10208 (5G packages and reserve prices)",
+   "url": "https://www.resmigazete.gov.tr/eskiler/2025/08/20250816-14.pdf"
+  },
+  {
+   "title": "Turkcell FY2025 Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/1071321/000110465926044740/tkc-20251231x20f.htm"
+  },
+  {
+   "title": "Turkcell FY2016 Form 20-F (post-4.5G spectrum by band)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1071321/000119312517089488/d349357d20f.htm"
+  },
+  {
+   "title": "Vodafone Group FY26 Form 20-F – spectrum licence table",
+   "url": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+  },
+  {
+   "title": "BTK – 4.5G ihalesi Ankara'da yapıldı (2015)",
+   "url": "https://www.btk.gov.tr/haberler/4-5-g-ihalesi-ankara-da-yapildi"
+  },
+  {
+   "title": "BTK – BTK 4.5G ihalesini onayladı (2015)",
+   "url": "https://www.btk.gov.tr/haberler/btk-4-5g-ihalesini-onayladi"
+  },
+  {
+   "title": "BTK – 4.5G el kitapçığı (band totals of the 2015 auction)",
+   "url": "https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/8e63ada3-7bbe-4729-a9f4-449cae4bb622.pdf"
+  }
+ ]
+}

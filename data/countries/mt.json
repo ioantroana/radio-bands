@@ -1,0 +1,814 @@
+{
+ "code": "mt",
+ "name": "Malta",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "Three MNOs: Epic (ex-Vodafone Malta), GO and Melita. Every mobile licence is published by the MCA with exact frequencies. 700 MHz and 26 GHz remain unassigned for lack of demand.",
+ "operators": [
+  {
+   "id": "epic",
+   "name": "Epic",
+   "legal": "Epic Communications Limited",
+   "color": "#e4002b",
+   "aliases": [
+    "Vodafone Malta"
+   ],
+   "kind": "mno",
+   "notes": "Formerly Vodafone Malta (rebranded Epic in 2020 after the Monaco Telecom acquisition)."
+  },
+  {
+   "id": "go",
+   "name": "GO",
+   "legal": "GO p.l.c.",
+   "color": "#0072ce",
+   "aliases": [
+    "GO Mobile"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "melita",
+   "name": "Melita",
+   "legal": "Melita Limited",
+   "color": "#6f2c91",
+   "aliases": [],
+   "kind": "mno"
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: the sub-700 MHz UHF band is used for DTT (MCA UHF roadmap).",
+   "sources": [
+    "https://www.mca.org.mt/initiatives/radio-spectrum-terrestrial-mobile-and-wireless-broadband-services"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. The MCA says 700 MHz spectrum for 5G 'remains unassigned, due to the lack of market demand' (Annual Plan 2026), although the band was cleared and a framework adopted in 2021 (MCA/D/21-4177).",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf",
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   }
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). Assigned under MCA/D/17-2971: GO and Melita in 2018, Epic in 2020. The GO, Melita and Epic 800 MHz licences are scanned PDFs, so expiry dates were not extracted.",
+   "sources": [
+    "https://mca.org.mt/sites/default/files/pageattachments/04052018GO_licence_800MHz_rev.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/800MHz%20licence_Epic_2020-11-17.pdf",
+    "https://mca.org.mt/sites/default/files/pageattachments/04052018Melita_licence_800MHz_rev.pdf",
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [
+    {
+     "op": "go",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ]
+    },
+    {
+     "op": "epic",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ]
+    },
+    {
+     "op": "melita",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ]
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). Rights extended to 8 Apr 2033 under MCA/D/26-5971 (June 2026), with a new award planned for 2031.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/900MHz_Licence_Melita_2026-01-30_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/900MHz-1800MHz_Licence_GO_2026-01-30_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/900MHz-1800MHz_Licence_Epic_2026-01-30_Rev2026-07_final.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "melita",
+     "dl": [
+      925,
+      930
+     ],
+     "ul": [
+      880,
+      885
+     ],
+     "expiry": "2033-04-08",
+     "notes": "Channel 1"
+    },
+    {
+     "op": "go",
+     "dl": [
+      930,
+      945
+     ],
+     "ul": [
+      885,
+      900
+     ],
+     "expiry": "2033-04-08",
+     "notes": "Channels 2–4"
+    },
+    {
+     "op": "epic",
+     "dl": [
+      945,
+      960
+     ],
+     "ul": [
+      900,
+      915
+     ],
+     "expiry": "2033-04-08",
+     "notes": "Channels 5–7"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. An assignment framework exists (MCA/D/17-2868), but no licences are listed and the MCA says operators use only 800/900/1800/2100/2500/3600 MHz.",
+   "sources": [
+    "https://mca.org.mt/consultations-decisions/assignment-process-15-ghz-band-terrestrial-systems-capable-providing",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf",
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). GO holds channels 1–4 and Epic channels 6–10. Melita holds no 1800 MHz. 1730–1735/1825–1830 and 1760–1785/1855–1880 MHz are not in any licence. Expiry 8 Apr 2033.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/900MHz-1800MHz_Licence_GO_2026-01-30_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/900MHz-1800MHz_Licence_Epic_2026-01-30_Rev2026-07_final.pdf",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Europe"
+   ],
+   "blocks": [
+    {
+     "op": "go",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "expiry": "2033-04-08"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      1825,
+      1830
+     ],
+     "ul": [
+      1730,
+      1735
+     ]
+    },
+    {
+     "op": "epic",
+     "dl": [
+      1830,
+      1855
+     ],
+     "ul": [
+      1735,
+      1760
+     ],
+     "expiry": "2033-04-08"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). Each 2 GHz licence includes a 5 MHz TDD block. Rights are extended to 8 Apr 2033, and the 2 GHz band can only be handed back in full.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2100MHz_Licence%20amendment_Melita_2025_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2100MHz_Licence%20amendment_Epic_2025_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2100MHz_Licence%20amendment_GO_2025_Rev2026-07_final.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      1900,
+      1904.9
+     ]
+    },
+    {
+     "op": "melita",
+     "f": [
+      1904.9,
+      1909.9
+     ],
+     "expiry": "2033-04-08"
+    },
+    {
+     "op": "epic",
+     "f": [
+      1909.9,
+      1914.9
+     ],
+     "expiry": "2033-04-08"
+    },
+    {
+     "op": "go",
+     "f": [
+      1914.9,
+      1919.9
+     ],
+     "expiry": "2033-04-08"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). Each operator holds 2×19.8 MHz, which matches Wikipedia's LTE list. Expiry 8 Apr 2033.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2100MHz_Licence%20amendment_GO_2025_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2100MHz_Licence%20amendment_Melita_2025_Rev2026-07_final.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2100MHz_Licence%20amendment_Epic_2025_Rev2026-07_final.pdf",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Europe"
+   ],
+   "blocks": [
+    {
+     "op": "go",
+     "dl": [
+      2110.3,
+      2130.1
+     ],
+     "ul": [
+      1920.3,
+      1940.1
+     ],
+     "expiry": "2033-04-08"
+    },
+    {
+     "op": "melita",
+     "dl": [
+      2130.1,
+      2149.9
+     ],
+     "ul": [
+      1940.1,
+      1959.9
+     ],
+     "expiry": "2033-04-08"
+    },
+    {
+     "op": "epic",
+     "dl": [
+      2149.9,
+      2169.7
+     ],
+     "ul": [
+      1959.9,
+      1979.7
+     ],
+     "expiry": "2033-04-08"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; no 2.3 GHz MFCN licences are listed by the MCA.",
+   "sources": [
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   }
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). GO holds channels 1–8 (2×40 MHz) and Epic channels 9–14 (2×30 MHz). The 2.5 GHz framework was updated by MCA/D/25-5799. The scanned licences did not give readable expiry dates.",
+   "sources": [
+    "https://mca.org.mt/sites/default/files/pageattachments/04052018GO_licence_2500MHz_rev.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2500MHz_Licence_Epic_2020-11-17.pdf",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Europe"
+   ],
+   "blocks": [
+    {
+     "op": "go",
+     "dl": [
+      2620,
+      2660
+     ],
+     "ul": [
+      2500,
+      2540
+     ]
+    },
+    {
+     "op": "epic",
+     "dl": [
+      2660,
+      2690
+     ],
+     "ul": [
+      2540,
+      2570
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz TDD / FDD-external",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). Epic holds TDD channels 1–5 (2570–2595 MHz), usable for TDD or external FDD downlink. 2595–2620 MHz is not in any licence.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/2500MHz_Licence_Epic_2020-11-17.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "epic",
+     "f": [
+      2570,
+      2595
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2595,
+      2620
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.8 GHz (n78)",
+   "names": [
+    "n78",
+    "B42",
+    "B43"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Edges from the MCA licence annexes (licences page, revised July 2026). Each operator received 100 MHz in 2021 under MCA/D/21-4177, for 15 years (GO to 24 Oct 2036, Epic to 25 Aug 2036). 3400–3500 MHz is not in any MCA mobile licence.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA-L-21-4278_Epic_3600MHz.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA-L-21-4207_Melita_3600MHz.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA-L-21-4277_GO%20plc_3600MHz.pdf",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3500
+     ]
+    },
+    {
+     "op": "epic",
+     "f": [
+      3500,
+      3600
+     ],
+     "expiry": "2036-08-25"
+    },
+    {
+     "op": "melita",
+     "f": [
+      3600,
+      3700
+     ],
+     "notes": "Licence MCA/L/21-4207 (scanned; expiry not extracted, presumably 2036)"
+    },
+    {
+     "op": "go",
+     "f": [
+      3700,
+      3800
+     ],
+     "expiry": "2036-10-24"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. A framework was set in 2021 (MCA/D/21-4177), but the MCA reports no market demand (Annual Plan 2026; MCA/D/26-5971).",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/Response%20to%20Consultation%20and%20Decision_Phase%201.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "42 GHz (n259)",
+   "names": [
+    "n259"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. The MCA will develop a 42 GHz framework by end-2026 under Decision (EU) 2024/1983, although it reports no current demand.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/Response%20to%20Consultation%20and%20Decision_Phase%201.pdf",
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "All edges come from the MCA's published spectrum licences (licence annexes), downloaded 2026-09-28. The 900/1800/2100 licences carry the July 2026 revisions that extend rights to 8 Apr 2033 (MCA/D/26-5971). A new award in these bands is planned for 2031.",
+  "Cross-check: Wikipedia's LTE list gives 2100 MHz 2×19.8 MHz each, 1800 MHz Epic 20+5 and GO 20, 2600 MHz GO 40 and Epic 30, and 800 MHz 2×10 MHz each. These match the licences.",
+  "Unassigned but harmonised: 700 MHz, 1.5 GHz, 26 GHz, 3400–3500 MHz, 1800 MHz 2×30 MHz and 2.6 GHz TDD 2595–2620 MHz.",
+  "Operator colours are approximate brand colours."
+ ],
+ "missing": [
+  "Expiry dates of the 800 MHz and 2.5 GHz licences and of Melita's 3.6 GHz licence: these are scanned PDFs and the dates were not extracted.",
+  "Carrier EARFCN/NR-ARFCN values not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "MCA – Spectrum licensing: licences",
+   "url": "https://www.mca.org.mt/regulatory/authorizations_licensing/spectrum-licensing/licenses"
+  },
+  {
+   "title": "MCA/D/26-5971 – Strategic approach to expiring rights of use (June 2026)",
+   "url": "https://www.mca.org.mt/sites/default/files/pageattachments/Response%20to%20Consultation%20and%20Decision_Phase%201.pdf"
+  },
+  {
+   "title": "MCA Annual Plan 2026",
+   "url": "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+  },
+  {
+   "title": "MCA – Terrestrial mobile and wireless broadband",
+   "url": "https://www.mca.org.mt/initiatives/radio-spectrum-terrestrial-mobile-and-wireless-broadband-services"
+  },
+  {
+   "title": "Wikipedia – List of LTE networks in Europe (cross-check)",
+   "url": "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Europe"
+  }
+ ]
+}

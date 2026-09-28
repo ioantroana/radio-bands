@@ -1,0 +1,1173 @@
+{
+ "code": "es",
+ "name": "Spain",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
+ "licensing": "mixed",
+ "summary": "Four MNOs: MasOrange (Orange + MásMóvil, merged March 2024), Movistar (Telefónica), Vodafone (Zegona-owned) and Digi, which received ex-Xfera spectrum as a merger remedy in Oct 2024. Almost all licences are national; exact edges come from the Ministry's public concession register (RPC).",
+ "operators": [
+  {
+   "id": "movistar",
+   "name": "Movistar",
+   "legal": "Telefónica Móviles España, S.A.U.",
+   "color": "#019df4",
+   "aliases": [
+    "Telefónica",
+    "TME",
+    "O2 (Telefónica)"
+   ],
+   "kind": "mno",
+   "notes": "Bought 20 MHz of 3.5 GHz (3480–3500 MHz) from MasOrange (ex-Xfera); transfer authorised Oct 2024 (RPC concession dated 23/10/2024). Also uses Digi's 20 MHz of 3.5 GHz under the 2024 Telefónica–Digi network-sharing deal (not a licence transfer)."
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone",
+   "legal": "Vodafone España, S.A.",
+   "color": "#e60000",
+   "aliases": [
+    "Vodafone Spain",
+    "Zegona"
+   ],
+   "kind": "mno",
+   "notes": "Owned by Zegona Communications since 2024 (CNMC); still branded Vodafone. Won 2×200 MHz in the Dec 2022 26 GHz auction, but no Vodafone 26 GHz concession appears in the Registro Público de Concesiones as of 2026-09-28."
+  },
+  {
+   "id": "masorange",
+   "name": "MasOrange",
+   "legal": "Orange Espagne, S.A.U. / Xfera Móviles, S.A.U.",
+   "color": "#ff7900",
+   "aliases": [
+    "Orange",
+    "Yoigo",
+    "MásMóvil",
+    "Xfera",
+    "Euskaltel"
+   ],
+   "kind": "mno",
+   "notes": "Joint venture of Orange Espagne and Grupo MásMóvil, merger cleared by the European Commission in Feb 2024 and closed in March 2024. Concessions remain in the names of Orange Espagne S.A.U. and Xfera Móviles S.A.U. Remedy: 60 MHz (2×10 MHz 1800, 2×10 MHz 2100, 20 MHz 3.5 GHz) transferred to Digi (DS Mobile Networks) in Oct 2024; a further 20 MHz of 3.5 GHz sold to Telefónica and 10 MHz (3700–3710 MHz) handed back to stay within the 140 MHz cap."
+  },
+  {
+   "id": "digi",
+   "name": "Digi",
+   "legal": "DS Mobile Networks, S.L.",
+   "color": "#003e7e",
+   "aliases": [
+    "Digi Spain Telecom",
+    "DIGI"
+   ],
+   "kind": "mno",
+   "notes": "Received the MasOrange merger-remedy spectrum (ex-Xfera) via DS Mobile Networks S.L.; RPC concessions dated 23–29 Oct 2024. Must keep the spectrum for 10 years (DPL News). Operates its own sites plus RAN sharing / national roaming with Telefónica."
+  },
+  {
+   "id": "globe",
+   "name": "Globe Operator Telecom",
+   "legal": "Globe Operator Telecom S.L.",
+   "color": "#7a7a7a",
+   "aliases": [],
+   "kind": "regional",
+   "notes": "Holds one regional 26 GHz block (24.9–25.1 GHz) in Castilla y León only (RPC)."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 470–694 MHz remains allocated to DTT in the CNAF; no mobile concessions exist (RPC lists no such band).",
+   "sources": [
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias",
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. Awarded in the July 2021 auction; RPC shows concessions from 01/12/2021 to 01/12/2041 (CNMC notes a possible 40-year term to 2061). The 700 MHz SDL (738–758 MHz) is not assigned.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031",
+    "https://www.adslzone.net/operadores/en-detalle/frecuencias-moviles-espana/"
+   ],
+   "blocks": [
+    {
+     "op": "masorange",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "expiry": "2041-12-01",
+     "notes": "Orange Espagne, two 2×5 MHz concessions (DGZZ-2100605/606)"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "expiry": "2041-12-01",
+     "notes": "DGZZ-2100607"
+    },
+    {
+     "op": "movistar",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2041-12-01",
+     "notes": "DGZZ-2100608"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. Awarded 2011 (in use from 1 Apr 2015); extended to 25/04/2041 under Ley 11/2022.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031",
+    "https://www.cnmc.es/sites/default/files/4842357.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "masorange",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2041-04-25",
+     "notes": "Orange Espagne"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2041-04-25"
+    },
+    {
+     "op": "movistar",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2041-04-25"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe; 850 MHz (B5) is not used for public mobile networks in Spain.",
+   "sources": [
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias",
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. 880–880.1/925–925.1 MHz and 914.9–915/959.9–960 MHz are unassigned guard slivers. Movistar holds 2×14.8 MHz, Orange and Vodafone 2×10 MHz (matches bandaancha and ADSLZone amounts).",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031",
+    "https://www.adslzone.net/operadores/en-detalle/frecuencias-moviles-espana/"
+   ],
+   "blocks": [
+    {
+     "op": "masorange",
+     "dl": [
+      925.1,
+      935.1
+     ],
+     "ul": [
+      880.1,
+      890.1
+     ],
+     "expiry": "2040-12-31",
+     "notes": "Orange Espagne, two 2×5 MHz concessions"
+    },
+    {
+     "op": "movistar",
+     "dl": [
+      935.1,
+      949.9
+     ],
+     "ul": [
+      890.1,
+      904.9
+     ],
+     "expiry": "2040-12-31",
+     "notes": "three concessions"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      949.9,
+      959.9
+     ],
+     "ul": [
+      904.9,
+      914.9
+     ],
+     "expiry": "2035-02-03"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL",
+   "names": [
+    "B32",
+    "n75",
+    "B75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 1452–1492 MHz has never been auctioned in Spain (no RPC concessions).",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://www.adslzone.net/operadores/en-detalle/frecuencias-moviles-espana/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe (1710–1785 MHz is the 1800 MHz uplink).",
+   "sources": [
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. MasOrange holds 2×24.8 MHz (Orange 2×20 + Xfera 2×4.8); Digi's 2×10 MHz came from Xfera's former 2×14.8 MHz in Oct 2024. On Air Switzerland holds a band-wide licence for on-board aircraft service (not a terrestrial network, not drawn).",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/digi-tomado-posesion-frecuencias-moviles-11166",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "dl": [
+      1805,
+      1805.1
+     ],
+     "ul": [
+      1710,
+      1710.1
+     ]
+    },
+    {
+     "op": "movistar",
+     "dl": [
+      1805.1,
+      1825.1
+     ],
+     "ul": [
+      1710.1,
+      1730.1
+     ],
+     "expiry": "2038-07-24"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      1825.1,
+      1845.1
+     ],
+     "ul": [
+      1730.1,
+      1750.1
+     ],
+     "expiry": "2038-07-24"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      1845.1,
+      1855.1
+     ],
+     "ul": [
+      1750.1,
+      1760.1
+     ],
+     "expiry": "2040-12-31",
+     "notes": "DGZZ-2400616, ex-Xfera, transferred 28/10/2024"
+    },
+    {
+     "op": "masorange",
+     "dl": [
+      1855.1,
+      1859.9
+     ],
+     "ul": [
+      1760.1,
+      1764.9
+     ],
+     "expiry": "2040-12-31",
+     "notes": "Xfera Móviles (DGZZ-1104640)"
+    },
+    {
+     "op": "masorange",
+     "dl": [
+      1859.9,
+      1879.9
+     ],
+     "ul": [
+      1764.9,
+      1784.9
+     ],
+     "expiry": "2038-07-24",
+     "notes": "Orange Espagne"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned to MNOs. The four operators asked to give up their unused 5 MHz TDD blocks in Feb 2025, and they no longer appear in the RPC. The July 2026 CNAF (Orden TDF/732/2026) re-allocates 1900–1910 MHz to FRMCS (railways) and 1910–1920 MHz to government drones.",
+   "sources": [
+    "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_setid/2026/07/2026-07-17/20260717_NdP_CNAF_.pdf",
+    "https://bandaancha.eu/articulos/movistar-masorange-vodafone-piden-estado-11462",
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   }
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. MasOrange 2×20 MHz = Xfera 2×5 + Orange 2×15; Digi 2×10 MHz came from Xfera (DGZZ-2400617, 29/10/2024). All concessions run to 18/04/2040.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/digi-tomado-posesion-frecuencias-moviles-11166",
+    "https://www.adslzone.net/operadores/en-detalle/frecuencias-moviles-espana/"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      2110,
+      2120
+     ],
+     "ul": [
+      1920,
+      1930
+     ],
+     "expiry": "2040-04-18"
+    },
+    {
+     "op": "masorange",
+     "dl": [
+      2120,
+      2125
+     ],
+     "ul": [
+      1930,
+      1935
+     ],
+     "expiry": "2040-04-18",
+     "notes": "Xfera Móviles"
+    },
+    {
+     "op": "masorange",
+     "dl": [
+      2125,
+      2140
+     ],
+     "ul": [
+      1935,
+      1950
+     ],
+     "expiry": "2040-04-18",
+     "notes": "Orange Espagne"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2140,
+      2155
+     ],
+     "ul": [
+      1950,
+      1965
+     ],
+     "expiry": "2040-04-18"
+    },
+    {
+     "op": "movistar",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "expiry": "2040-04-18"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 2300–2400 MHz has not been licensed for MFCN in Spain (no RPC category).",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   }
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (national blocks)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. Vodafone's 2540–2555 MHz is national and its 2555–2560 MHz is held in all 19 regions (drawn as national). 2560–2570/2680–2690 MHz is licensed by region and is not drawn here; see the separate '2600 FDD regional block' entry.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+   ],
+   "blocks": [
+    {
+     "op": "movistar",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "expiry": "2040-12-31"
+    },
+    {
+     "op": "masorange",
+     "dl": [
+      2640,
+      2660
+     ],
+     "ul": [
+      2520,
+      2540
+     ],
+     "expiry": "2040-12-31",
+     "notes": "Orange Espagne"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2660,
+      2680
+     ],
+     "ul": [
+      2540,
+      2560
+     ],
+     "expiry": "2040-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD regional block (2560–2570 / 2680–2690)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2680,
+     2690
+    ],
+    "ul": [
+     2560,
+     2570
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Regional 2×10 MHz block, per the RPC: Orange Espagne holds it in 13 regions and Xfera in 3 (Asturias, Galicia, País Vasco), so MasOrange covers 16 of 19 regions (~81% of the population). Telefónica holds it in Madrid and Melilla (~15%) and Telecom Castilla-La Mancha in Castilla-La Mancha (~4%, not drawn). The population weights come from background knowledge (INE 2024) and are approximate.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+   ],
+   "holdings": [
+    {
+     "op": "masorange",
+     "mhz": 8.1,
+     "paired": true,
+     "basis": "population-weighted average over 19 regions (INE 2024 population, approximate)"
+    },
+    {
+     "op": "movistar",
+     "mhz": 1.5,
+     "paired": true,
+     "basis": "population-weighted average over 19 regions (INE 2024 population, approximate)"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (B38)",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. 2570–2575 and 2615–2620 MHz are guard bands. 2595–2605 MHz is licensed by region and is not drawn here (see the regional entry).",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      2570,
+      2575
+     ]
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      2575,
+      2595
+     ],
+     "expiry": "2040-12-31",
+     "notes": "DGZZ-1105546/547"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      2605,
+      2615
+     ],
+     "expiry": "2040-12-31",
+     "notes": "DGZZ-1105545"
+    },
+    {
+     "op": "guard",
+     "f": [
+      2615,
+      2620
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD regional block (2595–2605)",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2595,
+     2605
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Regional 10 MHz block, per the RPC: Xfera (MasOrange) holds it in Madrid, Andalucía, Cataluña, Galicia, País Vasco, Asturias and Castilla-La Mancha (~65% of the population). Aire Networks holds it in Valencia, Extremadura and Melilla (~13%), RDTIB in Baleares, and Ceuta 5G Networks in Ceuta; these are not drawn. It is unassigned in the other 7 regions. The population weights are approximate, from background knowledge.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+   ],
+   "holdings": [
+    {
+     "op": "masorange",
+     "mhz": 6.5,
+     "paired": false,
+     "basis": "population-weighted average over 19 regions (INE 2024 population, approximate)"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.8 GHz (n78)",
+   "names": [
+    "n78",
+    "B42",
+    "B43"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. The band was rearranged in Feb 2022 (Xfera 3420–3500, Telefónica 3500–3600, Orange 3600–3710, Vodafone 3710–3800). After the MasOrange merger, 3460–3480 MHz went to Digi and 3480–3500 MHz to Telefónica (Oct 2024), and Orange's 3700–3710 MHz was returned to the State to meet the 140 MHz cap. Totals now: MasOrange 140, Movistar 120, Vodafone 90, Digi 20 MHz. 3400–3420 MHz is a guard for Defence (NATO) use below 3400 MHz. Movistar's 3590–3600 MHz (ex-Defence, 2021 auction) had radar coexistence limits in some areas.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://www.adslzone.net/noticias/operadores/reorganizacion-oficial-banda-5g-35-ghz/",
+    "https://bandaancha.eu/articulos/asi-queda-banda-3-5-ghz-reordenada-segun-9979",
+    "https://bandaancha.eu/articulos/digi-tomado-posesion-frecuencias-moviles-11166",
+    "https://www.elnacional.cat/oneconomia/es/empresas/telefonica-compra-frecuencias-moviles-masorange-empatando-en-cantidad-espectro-5g_1264788_102.html",
+    "https://theobjective.com/economia/telecomunicaciones/2024-09-27/gobierno-autoriza-masorange-telefonica-frecuencias/"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      3400,
+      3420
+     ],
+     "notes": "Defence guard block"
+    },
+    {
+     "op": "masorange",
+     "f": [
+      3420,
+      3460
+     ],
+     "expiry": "2040-04-18",
+     "notes": "Xfera Móviles"
+    },
+    {
+     "op": "digi",
+     "f": [
+      3460,
+      3480
+     ],
+     "expiry": "2040-04-18",
+     "notes": "DGZZ-2400610, ex-Xfera"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      3480,
+      3500
+     ],
+     "expiry": "2040-04-18",
+     "notes": "DGZZ-2400611, bought from Xfera 2024"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      3500,
+      3540
+     ],
+     "expiry": "2040-04-18"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      3540,
+      3590
+     ],
+     "expiry": "2048-12-06",
+     "notes": "2018 auction"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      3590,
+      3600
+     ],
+     "expiry": "2048-12-04",
+     "notes": "2021 auction (ex-Defence)"
+    },
+    {
+     "op": "masorange",
+     "f": [
+      3600,
+      3640
+     ],
+     "expiry": "2040-12-31",
+     "notes": "Orange Espagne"
+    },
+    {
+     "op": "masorange",
+     "f": [
+      3640,
+      3700
+     ],
+     "expiry": "2048-12-06",
+     "notes": "Orange Espagne, 2018 auction"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3700,
+      3710
+     ],
+     "notes": "returned by MasOrange (spectrum cap)"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      3710,
+      3800
+     ],
+     "expiry": "2048-12-06",
+     "notes": "2018 auction"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.8–4.2 GHz (local/private 5G)",
+   "names": [
+    "n77"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No MNO concessions. The July 2026 CNAF opens 3800–4200 MHz for local 5G: 3800–3920 MHz for local concessions and self-provision, 3920–4120 MHz for electronic news-gathering, plus Defence use; 4020–4120 MHz for self-provision.",
+   "sources": [
+    "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_setid/2026/07/2026-07-17/20260717_NdP_CNAF_.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     3800,
+     4200
+    ]
+   }
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for MFCN in Spain.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact edges from the Ministry's Registro Público de Concesiones (RPC), queried 2026-09-28. 24.25–24.7 GHz is reserved for private and self-provided networks. 14 blocks of 200 MHz sit in 24.7–27.5 GHz; the two lowest are regional. Awarded in the Dec 2022 auction, with concessions from 04/05/2023 to 03/05/2043. Vodafone won 2×200 MHz (27.1–27.5 GHz by elimination), but no Vodafone concession appears in the RPC on 2026-09-28, so it is drawn as unassigned (reason not verified). 25.1–25.7 GHz was unsold.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+   ],
+   "blocks": [
+    {
+     "op": "globe",
+     "f": [
+      24900,
+      25100
+     ],
+     "expiry": "2043-05-03",
+     "notes": "regional: Castilla y León only"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25100,
+      25700
+     ],
+     "notes": "unsold national blocks"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      25700,
+      26700
+     ],
+     "expiry": "2043-05-03"
+    },
+    {
+     "op": "masorange",
+     "f": [
+      26700,
+      27100
+     ],
+     "expiry": "2043-05-03",
+     "notes": "Orange Espagne"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      27100,
+      27500
+     ],
+     "notes": "Vodafone's 2022 blocks do not appear in the RPC in 2026"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no 40/42 GHz MFCN concessions in Spain (the RPC has no such category).",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+    "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Nearly all blocks come from the Ministry's Registro Público de Concesiones (RPC, teleco.serviciosmin.gob.es/RPC_Consulta), queried 2026-09-28 for every band (700, 800, 900, 1800, 2.1, 2.6, 3.5, 26 GHz). The RPC is the regulator's own register; amounts were cross-checked against bandaancha.eu, ADSLZone and the CNMC.",
+  "Licensing is 'mixed' because part of 2.6 GHz (2560–2570/2680–2690 FDD and 2595–2605 TDD) and one 26 GHz block are licensed by autonomous community. The regional blocks are shown as population-weighted averages in separate diagrams.",
+  "MasOrange merger remedy (EC, Feb 2024): Xfera spectrum transferred to Digi (DS Mobile Networks) in Oct 2024: 2×10 MHz 1800 (1750.1–1760.1/1845.1–1855.1), 2×10 MHz 2100 (1920–1930/2110–2120) and 20 MHz 3.5 GHz (3460–3480). Price was EUR 120m. MasOrange also sold 3480–3500 MHz to Telefónica and returned 3700–3710 MHz, ending at the 140 MHz 3.5 GHz cap.",
+  "Conflict: bandaancha (Dec 2024) says MasOrange has '2×30 MHz' at 1800 MHz after the transfer. The RPC shows 2×24.8 MHz (Orange 1764.9–1784.9 plus Xfera 1760.1–1764.9), so the RPC is used. ADSLZone's table (June 2025) swaps the Digi and MasOrange 1800 figures, which is an error.",
+  "Conflict: Vodafone won 2×200 MHz at 26 GHz in Dec 2022 (bandaancha), but the RPC lists no Vodafone 26 GHz concession in Sept 2026. The register is followed, and the block is shown as unassigned.",
+  "Telefónica's use of Digi's 20 MHz of 3.5 GHz (the 2024 RAN-sharing deal) is commercial pooling, not a licence transfer, so it is drawn under Digi.",
+  "Unassigned 2.1 GHz TDD blocks (1900–1920 MHz): renounced by the operators in 2025. The CNAF of July 2026 re-allocates the band to FRMCS and government drones."
+ ],
+ "missing": [
+  "2.6 GHz regional blocks: the population weights (INE 2024) are from background knowledge, not a regulator table. Small regional holders (Telecom CLM, Aire Networks, RDTIB, Ceuta 5G Networks) are not drawn.",
+  "26 GHz: why Vodafone's 2022 blocks are missing from the RPC (hand-back or revocation) could not be verified (web search budget exhausted).",
+  "Carrier EARFCN/NR-ARFCN values not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "MTDFP – Registro Público de Concesiones (RPC) de dominio público radioeléctrico",
+   "url": "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+  },
+  {
+   "title": "MTDFP – Cuadro Nacional de Atribución de Frecuencias (Orden TDF/732/2026)",
+   "url": "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/cuadro-nacional-atribucion-frecuencias"
+  },
+  {
+   "title": "MTDFP – Nota de prensa CNAF, 17 Jul 2026",
+   "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_setid/2026/07/2026-07-17/20260717_NdP_CNAF_.pdf"
+  },
+  {
+   "title": "CNMC – Informe económico sectorial 2025 (ESTAD/CNMC/004/25)",
+   "url": "https://www.cnmc.es/sites/default/files/6028065.pdf"
+  },
+  {
+   "title": "CNMC – INF/DTSA/300/23 ampliación de concesiones",
+   "url": "https://www.cnmc.es/sites/default/files/4842357.pdf"
+  },
+  {
+   "title": "bandaancha.eu – Frecuencias móviles 2G–5G en España",
+   "url": "https://bandaancha.eu/articulos/todas-bandas-frecuencias-2g-3g-4g-5g-10031"
+  },
+  {
+   "title": "bandaancha.eu – Digi toma posesión de sus frecuencias (Dec 2024)",
+   "url": "https://bandaancha.eu/articulos/digi-tomado-posesion-frecuencias-moviles-11166"
+  },
+  {
+   "title": "ADSLZone – Reorganización oficial banda 3,5 GHz (Feb 2022)",
+   "url": "https://www.adslzone.net/noticias/operadores/reorganizacion-oficial-banda-5g-35-ghz/"
+  },
+  {
+   "title": "bandaancha.eu – Operadoras piden devolver la banda TDD 1900–1920 MHz (Aug 2025)",
+   "url": "https://bandaancha.eu/articulos/movistar-masorange-vodafone-piden-estado-11462"
+  },
+  {
+   "title": "The Objective – Gobierno autoriza que MasOrange ceda a Telefónica frecuencias (Sep 2024)",
+   "url": "https://theobjective.com/economia/telecomunicaciones/2024-09-27/gobierno-autoriza-masorange-telefonica-frecuencias/"
+  }
+ ]
+}

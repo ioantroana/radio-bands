@@ -1,0 +1,879 @@
+{
+ "code": "se",
+ "name": "Sweden",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "national",
+ "summary": "Three MNOs: Telia, Tre (Hi3G) and Net4Mobility (the Tele2/Telenor spectrum JV), plus Teracom at 2.3 GHz. 900 MHz, 2.1 GHz and 2.6 GHz were re-licensed from 1 Jan 2026 after the 2023 auction, and 1800 MHz was re-auctioned in Nov 2025 for 2028 onwards.",
+ "operators": [
+  {
+   "id": "telia",
+   "name": "Telia",
+   "legal": "Telia Sverige AB",
+   "color": "#990ae3",
+   "aliases": [
+    "TeliaSonera"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "n4m",
+   "name": "Net4Mobility (Tele2/Telenor)",
+   "legal": "Net4Mobility HB",
+   "color": "#19aaf8",
+   "aliases": [
+    "Tele2",
+    "Telenor",
+    "Net4Mobility"
+   ],
+   "kind": "mno",
+   "notes": "Net4Mobility HB is the spectrum and network joint venture of Tele2 Sverige and Telenor Sverige. It holds the licences both retail brands use."
+  },
+  {
+   "id": "tre",
+   "name": "Tre",
+   "legal": "HI3G Access AB",
+   "color": "#1d1d1b",
+   "aliases": [
+    "3",
+    "Hi3G"
+   ],
+   "kind": "mno",
+   "notes": "Hutchison's Swedish operator (brand Tre / 3). Did not win any 1800 MHz spectrum in the Nov 2025 auction, so its 2×5 MHz at 1800 MHz lapses at the end of 2027."
+  },
+  {
+   "id": "teracom",
+   "name": "Teracom",
+   "legal": "Teracom AB",
+   "color": "#00857c",
+   "aliases": [],
+   "kind": "other",
+   "notes": "State-owned network operator. Holds the national 2300–2380 MHz licence (2021 auction) and the 450 MHz licence (won by Nettett in 2018, transferred to Teracom)."
+  }
+ ],
+ "bands": [
+  {
+   "group": "450",
+   "label": "450 MHz",
+   "names": [
+    "B31",
+    "B72",
+    "B87"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     462.5,
+     467.5
+    ],
+    "ul": [
+     452.5,
+     457.5
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Won by Nettett at the 2018 auction and later transferred to Teracom. Valid until 31 Dec 2044 (PTS).",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [
+    {
+     "op": "teracom",
+     "dl": [
+      462.5,
+      467.5
+     ],
+     "ul": [
+      452.5,
+      457.5
+     ],
+     "expiry": "2044-12-31"
+    }
+   ]
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 470–694 MHz is used for DVB-T/T2 television (PTS frequency plan).",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The 2018 auction gave Telia 2×10 MHz and Net4Mobility 2×5 + 2×5 MHz, valid to 31 Dec 2040. PTS does not publish block edges on its current site. 703–713/758–768 MHz was reserved for TV until mid-2025. In Mar 2026 PTS consulted on limiting it to one licence, after an application from MCF for the SWEN public-safety network (to replace Rakel).",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://pts.se/nyheter-och-pressmeddelanden/samrad-av-beslut-att-begransa-antalet-tillstand-i-delar-av-700-mhz-bandet/",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "holdings": [
+    {
+     "op": "telia",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2040-12-31"
+    },
+    {
+     "op": "n4m",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2040-12-31"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Three 2×10 MHz licences from the 2011 auction, valid to 31 Dec 2035 (PTS). Block positions are not published on the current PTS site.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://frekvensplanen.pts.se/"
+   ],
+   "holdings": [
+    {
+     "op": "tre",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2035-12-31"
+    },
+    {
+     "op": "n4m",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2035-12-31"
+    },
+    {
+     "op": "telia",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2035-12-31"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Re-awarded in the 2023 auction. The new licences run from 1 Jan 2026 to 31 Dec 2048 and replace the old Telia, Tele2, Telenor, Net4Mobility and Hi3G licences that expired on 31 Dec 2025. 873–880/918–925 MHz is RMR/FRMCS (railway).",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/"
+   ],
+   "holdings": [
+    {
+     "op": "telia",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2048-12-31"
+    },
+    {
+     "op": "tre",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2048-12-31"
+    },
+    {
+     "op": "n4m",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2048-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz (L-band)",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. PTS plans to award the 1500 MHz band by auction in early 2028 and consulted on the invitation in Sept 2026.",
+   "sources": [
+    "https://pts.se/radio/auktioner/pagaende-auktioner/",
+    "https://pts.se/nyheter-och-pressmeddelanden/stort-intresse-for-15-ghz-bandet--pts-kommer-utreda-tilldelning/",
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Net4Mobility and Telia each won 2×35 MHz in 2011, and Tre won 2×5 MHz in 2016. Part of each licence (1710–1720/1755–1780 MHz, 2×35 MHz in total, including Tre's block) expires on 31 Dec 2027. The rest expires on 31 Dec 2037. The current block edges are not published on the PTS site.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://pts.se/contentassets/435dd168dfda4aad9e892ad28b459fd7/bilaga-1---allman-inbjudan-del-1-till-ansokan-1800-mhz.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "telia",
+     "mhz": 35,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2027/2037"
+    },
+    {
+     "op": "n4m",
+     "mhz": 35,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2027/2037"
+    },
+    {
+     "op": "tre",
+     "mhz": 5,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2027-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD – parts re-auctioned Nov 2025 (from 2028)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2028-01-01",
+    "label": "from 1 Jan 2028"
+   },
+   "excludeFromTotal": true,
+   "note": "Auction closed 18 Nov 2025; PTS decision 2 Dec 2025. The new licences run 2028–2054, but the placement conditions apply only until 2037. Tre's bid was rejected, so Tre will have no 1800 MHz from 2028. 1720–1755/1815–1850 and 1780–1785/1875–1880 MHz (2×40 MHz) stay with Telia and Net4Mobility under licences to 31 Dec 2037, but their split is not published, so they are not drawn.",
+   "sources": [
+    "https://pts.se/nyheter-och-pressmeddelanden/tva-budgivare-vann-tillstand-i-1800-mhz-bandet.-den-totala-auktionslikviden-uppgar-till-652-190-000-kronor",
+    "https://pts.se/contentassets/43aefaa4b8814095bdbd2b6417bda9e0/beslut-om-tillstand-att-anvanda-radiosandare-i-1800-mhz-bandet.pdf",
+    "https://pts.se/radio/auktioner/genomforda-auktioner/"
+   ],
+   "blocks": [
+    {
+     "op": "telia",
+     "dl": [
+      1805,
+      1815
+     ],
+     "ul": [
+      1710,
+      1720
+     ],
+     "expiry": "2054-12-31",
+     "notes": "SEK 186.34m"
+    },
+    {
+     "op": "n4m",
+     "dl": [
+      1850,
+      1875
+     ],
+     "ul": [
+      1755,
+      1780
+     ],
+     "expiry": "2054-12-31",
+     "notes": "SEK 465.85m"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The PTS frequency plan marks 1900–1920 MHz as MFCN 'blocktillstånd' (block licences), with 1900–1910 MHz also designated for railway mobile radio (FRMCS). No current MNO holder of TDD rights could be identified.",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Re-awarded in the 2023 auction, 2×20 MHz each at SEK 190.5m each. Valid 1 Jan 2026 to 31 Dec 2050.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/"
+   ],
+   "holdings": [
+    {
+     "op": "telia",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    },
+    {
+     "op": "tre",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    },
+    {
+     "op": "n4m",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Teracom won 2300–2380 MHz in the 2021 auction, valid to 31 Dec 2045 (PTS). 2380–2400 MHz is not assigned.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [
+    {
+     "op": "teracom",
+     "f": [
+      2300,
+      2380
+     ],
+     "expiry": "2045-12-31"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2380,
+      2400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Re-awarded in the 2023 auction; valid 1 Jan 2026 to 31 Dec 2050. Block positions are not published on the current PTS site.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/"
+   ],
+   "holdings": [
+    {
+     "op": "telia",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    },
+    {
+     "op": "n4m",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    },
+    {
+     "op": "tre",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Tre holds 40 MHz TDD (2023 auction, valid 2026–2050). Its exact position is not published.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "holdings": [
+    {
+     "op": "tre",
+     "mhz": 40,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2050-12-31"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.8 GHz (n78)",
+   "names": [
+    "n78",
+    "B42",
+    "B43"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "3400–3720 MHz: national licences from the 2021 auction, valid to 31 Dec 2045. Prices: Telia 120 MHz SEK 760m, Net4Mobility 100 MHz SEK 665.5m, Tre 100 MHz SEK 491m. 3720–3800 MHz is for local licences only (property-level, up to 2031). Block edges are not published on the current PTS site.",
+   "sources": [
+    "https://pts.se/radio/auktioner/genomforda-auktioner/",
+    "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "holdings": [
+    {
+     "op": "telia",
+     "mhz": 120,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2045-12-31"
+    },
+    {
+     "op": "n4m",
+     "mhz": 100,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2045-12-31"
+    },
+    {
+     "op": "tre",
+     "mhz": 100,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2045-12-31"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.8–4.2 GHz (local)",
+   "names": [
+    "n77"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No national licences. PTS starts assigning local licences in 3800–3920 and 3990–4130 MHz from 1 Oct 2026.",
+   "sources": [
+    "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     3800,
+     4200
+    ]
+   }
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for MFCN (4200–4400 MHz is aeronautical radio altimeters).",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No national licences. 24.25–25.1(25.25) GHz is available only for local, property-level licences. PTS's 2025 consultation found too little interest to justify a 26 GHz auction in the near term, and 25.1–27.5 GHz is unassigned.",
+   "sources": [
+    "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/",
+    "https://pts.se/nyheter-och-pressmeddelanden/stort-intresse-for-15-ghz-bandet--pts-kommer-utreda-tilldelning/",
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "40/42 GHz (n259)",
+   "names": [
+    "n259"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. PTS's 2025 consultation found limited interest in 40.5–43.5 GHz and no auction is planned in the near term.",
+   "sources": [
+    "https://pts.se/nyheter-och-pressmeddelanden/stort-intresse-for-15-ghz-bandet--pts-kommer-utreda-tilldelning/",
+    "https://pts.se/radio/spektrumforvaltning/konsultation-kring-efterfragan-av-frekvenser-i-15-ghz--26-ghz--och-42-ghz-banden/",
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://frekvensplanen.pts.se/"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Amounts, prices and expiry dates come from PTS's 'Genomförda auktioner' page (updated 2026-05-11). PTS's rebuilt website no longer carries the older decision documents with block edges, so most bands are shown as holdings.",
+  "The 900 MHz, 2.1 GHz and 2.6 GHz licences from the 2023 auction took effect on 1 Jan 2026, so they are current on the asOf date.",
+  "1800 MHz: the Nov 2025 auction re-awarded 1710–1720/1805–1815 (Telia) and 1755–1780/1850–1875 (Net4Mobility) from 2028. It is drawn as a future entry.",
+  "Cross-checks: Wikipedia's 5G NR list (citing TeleGeography) gives Tre 100 MHz at 3.5 GHz and 40 MHz TDD at 2.6 GHz, and Net4Mobility 10 MHz (per direction) at 700 MHz. These match PTS.",
+  "The 28 GHz (2009) and 10.5 GHz (2011) block licences are for fixed radio links, not IMT, so they are not drawn. The 28 GHz licences expired at the end of 2024."
+ ],
+ "missing": [
+  "Block edges for 700, 800, 900, 1800 (current), 2100, 2600 FDD/TDD and 3.5 GHz: PTS decision documents with frequency ranges could not be retrieved, and the web search budget ran out before trade-press or enthusiast sources could be checked.",
+  "1800 MHz from 2028: how the 2037-expiring 1720–1755 and 1780–1785 MHz blocks split between Telia and Net4Mobility is not known.",
+  "1900–1920 MHz TDD: the holder(s) of the block licences shown in the PTS frequency plan were not identified.",
+  "Carrier EARFCN/NR-ARFCN values not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "PTS – Genomförda auktioner",
+   "url": "https://pts.se/radio/auktioner/genomforda-auktioner/"
+  },
+  {
+   "title": "PTS – 1800 MHz auction result (Nov 2025)",
+   "url": "https://pts.se/nyheter-och-pressmeddelanden/tva-budgivare-vann-tillstand-i-1800-mhz-bandet.-den-totala-auktionslikviden-uppgar-till-652-190-000-kronor"
+  },
+  {
+   "title": "PTS – Beslut om tillstånd 1800 MHz (2 Dec 2025)",
+   "url": "https://pts.se/contentassets/43aefaa4b8814095bdbd2b6417bda9e0/beslut-om-tillstand-att-anvanda-radiosandare-i-1800-mhz-bandet.pdf"
+  },
+  {
+   "title": "PTS – Allmän inbjudan del 1, 1800 MHz (June 2024)",
+   "url": "https://pts.se/contentassets/435dd168dfda4aad9e892ad28b459fd7/bilaga-1---allman-inbjudan-del-1-till-ansokan-1800-mhz.pdf"
+  },
+  {
+   "title": "PTS – Frekvensplanen (interactive frequency plan)",
+   "url": "https://frekvensplanen.pts.se/"
+  },
+  {
+   "title": "PTS – Lokala tillstånd 3,7 GHz och 26 GHz",
+   "url": "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/"
+  },
+  {
+   "title": "PTS – Samråd 700 MHz (703–713/758–768 MHz), Mar 2026",
+   "url": "https://pts.se/nyheter-och-pressmeddelanden/samrad-av-beslut-att-begransa-antalet-tillstand-i-delar-av-700-mhz-bandet/"
+  },
+  {
+   "title": "PTS – Pågående auktioner (1500 MHz, 2028)",
+   "url": "https://pts.se/radio/auktioner/pagaende-auktioner/"
+  },
+  {
+   "title": "PTS – Interest in 1.5/26/42 GHz (Oct 2025)",
+   "url": "https://pts.se/nyheter-och-pressmeddelanden/stort-intresse-for-15-ghz-bandet--pts-kommer-utreda-tilldelning/"
+  },
+  {
+   "title": "Wikipedia – List of 5G NR networks (cross-check)",
+   "url": "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+  }
+ ]
+}

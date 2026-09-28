@@ -1,0 +1,1009 @@
+{
+ "code": "za",
+ "name": "South Africa",
+ "region": "Middle East & Africa",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "national",
+ "summary": "Four national MNOs (Vodacom, MTN, Cell C, Telkom) plus Rain and Liquid. In ICASA's first spectrum auction (March 2022, R14.4bn) they bought 700, 800, 2600 and 3500 MHz. Legacy 900/1800/2100 assignments were rearranged under the 2022 RFSAPs. The next auction (750/800 MHz, 1.5, 2.3, 3.3, 3.5 GHz) is planned for the 2026/27 financial year.",
+ "operators": [
+  {
+   "id": "vodacom",
+   "name": "Vodacom",
+   "legal": "Vodacom (Pty) Ltd",
+   "color": "#e60000",
+   "aliases": [
+    "Vodacom SA",
+    "Vodafone"
+   ],
+   "kind": "mno",
+   "notes": "Vodafone Group subsidiary. Legacy spectrum is tied to its operating licence (expires 2029, per Vodafone 20-F); 2022-auction spectrum runs to 2042. Vodacom took a stake in fibre company Maziv (shown as an associate in Vodafone's FY26 20-F); that deal involves no spectrum."
+  },
+  {
+   "id": "mtn",
+   "name": "MTN",
+   "legal": "Mobile Telephone Networks (Pty) Ltd",
+   "color": "#ffcb05",
+   "aliases": [
+    "MTN SA"
+   ],
+   "kind": "mno",
+   "notes": "ICASA approved spectrum pooling with Liquid (1800 MHz) and with Cell C (900/1800/2100 MHz) in June 2022. Vodacom challenged this in the Gauteng High Court (ZAGPPHC 2025/199). Pooled spectrum is shown under each licensee."
+  },
+  {
+   "id": "cellc",
+   "name": "Cell C",
+   "legal": "Cell C Ltd",
+   "color": "#1a1a1a",
+   "aliases": [
+    "Cell C SA"
+   ],
+   "kind": "mno",
+   "notes": "Runs mostly on MTN's (and Vodacom's) networks through roaming and pooling agreements. In the 2022 auction it won 10 MHz at 3.5 GHz; the MTN affidavit (2024) says this assignment was then under dispute."
+  },
+  {
+   "id": "telkom",
+   "name": "Telkom",
+   "legal": "Telkom SA SOC Ltd",
+   "color": "#0098da",
+   "aliases": [
+    "Telkom Mobile",
+    "8ta"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "rain",
+   "name": "Rain",
+   "legal": "Rain (Pty) Ltd",
+   "color": "#e5007e",
+   "aliases": [
+    "rain",
+    "WBS",
+    "Wireless Business Solutions"
+   ],
+   "kind": "mno",
+   "notes": "Formerly WBS/iBurst. Holds 700, 1800, 2600 and 3.6 GHz spectrum. Uses Vodacom's infrastructure through a roaming/sharing arrangement."
+  },
+  {
+   "id": "liquid",
+   "name": "Liquid",
+   "legal": "Liquid Intelligent Technologies SA (Pty) Ltd",
+   "color": "#7b3f98",
+   "aliases": [
+    "Liquid Telecom",
+    "Neotel"
+   ],
+   "kind": "mno",
+   "notes": "Formerly Neotel. Its 1800 MHz spectrum is pooled with MTN's."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in South Africa. 470–694 MHz is kept for terrestrial broadcasting (DTT) under ICASA's RFSAP.",
+   "sources": [
+    "https://www.icasa.org.za/legislation-and-regulations/radio-frequency-spectrum-assignment-plan-for-the-frequency-band-470-to-694mhz"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD (IMT700)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned in March 2022 (lots of 2×10 MHz); licences effective 1 July 2022, valid to 2042. Only 40 MHz (2×20) of the band was offered (MTN affidavit, para 43), and 703–713/758–768 MHz stays unassigned. Block positions come from spectrum-tracker.com only; the amounts match ICASA's results table.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-703-to-733-MHz-and-758-to-788-MHz.pdf",
+    "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds",
+    "https://www.spectrum-tracker.com/South-Africa",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "notes": "Not offered in the 2022 auction"
+    },
+    {
+     "op": "vodacom",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "expiry": "2042",
+     "notes": "Main stage 2022"
+    },
+    {
+     "op": "rain",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2042",
+     "notes": "Opt-in stage 2022 (2×10 MHz for R1.15bn together with its 2600 lot)"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "733–758 MHz (IMT750 centre gap)",
+   "names": [
+    "n67"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     733,
+     758
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not yet assigned. ICASA has a final RFSAP for 733–758 MHz; the next IMT auction (2026/27 financial year) may include '750 MHz' (TechCentral, Feb 2026).",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-733-MHz-to-758-MHz.pdf",
+    "https://techcentral.co.za/icasa-gears-up-for-south-africas-next-big-spectrum-auction/277810/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD (IMT800)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned in 2022: three lots of 2×10 MHz. One lot went unsold and ICASA says it will license it later; the next auction may include 800 MHz. Block positions come from spectrum-tracker.com only.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-791-to-821-MHz-and-832-to-862-MHz.pdf",
+    "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds",
+    "https://www.spectrum-tracker.com/South-Africa"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "notes": "Unsold 2022 lot"
+    },
+    {
+     "op": "mtn",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2042",
+     "notes": "Main stage 2022"
+    },
+    {
+     "op": "telkom",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2042",
+     "notes": "Opt-in stage 2022 (R1.5bn)"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (IMT850, 825–830 / 870–875 MHz)",
+   "names": [
+    "B5",
+    "B26"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     870,
+     875
+    ],
+    "ul": [
+     825,
+     830
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Legacy Neotel/Liquid CDMA assignment at 827.775–832.695 / 872.775–877.695 MHz. ICASA's IMT850 RFSAP moves it to 825–830 / 870–875 MHz and ends CDMA with the analogue TV switch-off. Current use and licensee could not be verified; spectrum-tracker.com still lists Liquid at 827.7–832.7 / 872.7–877.7 MHz.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/radio-frequency-spectrum-assignment-plan-for-the-frequency-band-825-to-830mhz-and-870-to-875-mhz.pdf",
+    "https://www.spectrum-tracker.com/South-Africa"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (IMT900)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Positions follow ICASA's final IMT900 RFSAP (Government Gazette 47788, 20 Dec 2022, Figure 3 'Assignments from 1st April 2023'). The in-band migration finished by 31 March 2024 (MTN affidavit, para 52). 900–905 / 945–950 MHz is 'to be assigned separately' through an ITA. Vodafone's FY26 20-F lists Vodacom as '2×11' here, but that likely includes a footnote marker; ICASA's plan gives 2×10.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-880-MHz-to-915-MHz-and-925-MHz-to-960-MHz.pdf",
+    "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf",
+    "https://www.spectrum-tracker.com/South-Africa"
+   ],
+   "blocks": [
+    {
+     "op": "cellc",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "expiry": "2029"
+    },
+    {
+     "op": "vodacom",
+     "dl": [
+      935,
+      945
+     ],
+     "ul": [
+      890,
+      900
+     ],
+     "expiry": "2029"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      945,
+      950
+     ],
+     "ul": [
+      900,
+      905
+     ],
+     "notes": "To be assigned via a separate ITA"
+    },
+    {
+     "op": "mtn",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "expiry": "2029"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4/1.5 GHz L-band",
+   "names": [
+    "B32",
+    "n75",
+    "n76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. ICASA has a final IMT1500 assignment plan, and the next auction (2026/27) may include 1.5 GHz.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Notice-regarding-the-Final-Radio-Frequency-Assignment-Plan-for-the-IMT1500.pdf",
+    "https://techcentral.co.za/icasa-gears-up-for-south-africas-next-big-spectrum-auction/277810/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in ITU Region 1. 1710–1785 MHz is used as the B3 uplink.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plans-for-IMT-2015-38640.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (IMT1800)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Six assignments of about 2×12 MHz, with small (~200 kHz) guard bands left between them (MTN affidavit, paras 49–53). MTN's block is 1722.7–1734.7 / 1817.7–1829.7 MHz (Gauteng High Court judgment, 2025). MTN pools its block with Liquid's adjacent block (one 20 MHz LTE carrier). Vodacom and Rain hold adjacent blocks.",
+   "sources": [
+    "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf",
+    "https://lawlibrary.org.za/akn/za-gp/judgment/zagpphc/2025/199/eng@2025-02-21",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "vodacom",
+     "mhz": 12,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "mtn",
+     "mhz": 12,
+     "paired": true,
+     "basis": "exact",
+     "notes": "1722.7–1734.7 / 1817.7–1829.7 MHz per court judgment",
+     "source": "https://lawlibrary.org.za/akn/za-gp/judgment/zagpphc/2025/199/eng@2025-02-21"
+    },
+    {
+     "op": "liquid",
+     "mhz": 12,
+     "paired": true,
+     "basis": "exact",
+     "notes": "ICASA pooling approval letter refers to Liquid's and MTN's '2×12 MHz' in IMT1800",
+     "source": "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf"
+    },
+    {
+     "op": "rain",
+     "mhz": 12,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Adjacent to Vodacom (MTN affidavit para 149.2)",
+     "source": "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf"
+    },
+    {
+     "op": "cellc",
+     "mhz": 12,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2×12 MHz from background knowledge, not source-verified. The pooling approval confirms Cell C holds 1800 MHz spectrum.",
+     "source": "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf"
+    },
+    {
+     "op": "telkom",
+     "mhz": 12,
+     "paired": true,
+     "basis": "exact",
+     "notes": "From background knowledge, not source-verified",
+     "source": "https://www.boltontechnical.co.za/blogs/news/spectrum-availability-ownership-and-auctions-in-south-africa"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz MSS",
+   "names": [
+    "B2",
+    "n70"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS 1900 is not used in Region 1. The 2 GHz MSS band (1980–2010/2170–2200) is not assigned for terrestrial IMT.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plans-for-IMT-2015-38640.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unpaired 2 GHz spectrum was historically part of the 3G licences. Vodafone's FY26 20-F says ICASA approved Vodacom's 2100 MHz licence amendment returning its 2100 TDD spectrum. Other holders are not verified.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (IMT2100)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Four 2×15 MHz assignments. MTN is at 1950–1965 / 2140–2155 MHz (court judgment). Cell C's block is adjacent and pooled with MTN's into one 20 MHz LTE carrier (MTN affidavit Figure 5, '15 MHz + 15 MHz').",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://lawlibrary.org.za/akn/za-gp/judgment/zagpphc/2025/199/eng@2025-02-21",
+    "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "vodacom",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029",
+     "source": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+    },
+    {
+     "op": "mtn",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "notes": "1950–1965 / 2140–2155 MHz",
+     "source": "https://lawlibrary.org.za/akn/za-gp/judgment/zagpphc/2025/199/eng@2025-02-21"
+    },
+    {
+     "op": "cellc",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Adjacent to MTN, pooled",
+     "source": "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf"
+    },
+    {
+     "op": "telkom",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Telkom's 2100 amount is from background knowledge, not source-verified",
+     "source": "https://www.boltontechnical.co.za/blogs/news/spectrum-availability-ownership-and-auctions-in-south-africa"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (IMT2300)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "ICASA's final RFSAP makes 2300–2400 MHz exclusive to IMT TDD, with fixed links cleared by 31 March 2023. Unassigned spectrum is to go out through an ITA; the next auction may include 2.3 GHz. Telkom is believed (from background knowledge, not source-verified) to hold part of the band for TD-LTE. Existing holdings could not be verified.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-2300-MHz-to-2400-MHz.pdf",
+    "https://techcentral.co.za/icasa-gears-up-for-south-africas-next-big-spectrum-auction/277810/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (IMT2600)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The whole 2×70 MHz FDD block (140 MHz, MTN affidavit para 43) was sold in the 2022 auction. ICASA's results table counts both directions: Vodacom 80, MTN 40, Rain 20 MHz. Licences run to 2042. Block positions are not published.",
+   "sources": [
+    "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm",
+    "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf",
+    "https://www.connectingafrica.com/5g-networks/mtn-vodacom-spend-big-in-landmark-spectrum-auction"
+   ],
+   "holdings": [
+    {
+     "op": "vodacom",
+     "mhz": 40,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042",
+     "notes": "'80 MHz' in ICASA's results and Vodafone 20-F; Vodacom's largest contiguous assignment"
+    },
+    {
+     "op": "mtn",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042"
+    },
+    {
+     "op": "rain",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2042",
+     "notes": "Opt-in stage"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2570–2620 MHz TDD centre gap",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not part of the 2022 auction. WBS (now Rain) historically held 2550–2565 MHz, and the 2015 RFSAP moved it out. Current use of the centre gap is not verified.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plans-for-IMT-2015-38640.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "3500",
+   "label": "3400–3600 MHz (IMT3500)",
+   "names": [
+    "B42",
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3600
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "ICASA's RFSAP converted the existing licences (Telkom, Liquid) from FDD to TDD and made the assignments contiguous. 86 MHz was sold in 2022. Positions are not published. Total shown: 114 MHz of 200 MHz. Liquid's pre-2022 holding is not included because its size could not be verified.",
+   "sources": [
+    "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds",
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-3400-MHz-to-3600MHz-IMT3500.pdf",
+    "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf",
+    "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "telkom",
+     "mhz": 50,
+     "paired": false,
+     "basis": "exact",
+     "notes": "28 MHz held before 2022 (MTN affidavit) + 22 MHz won in 2022"
+    },
+    {
+     "op": "mtn",
+     "mhz": 40,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042"
+    },
+    {
+     "op": "vodacom",
+     "mhz": 10,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042"
+    },
+    {
+     "op": "cellc",
+     "mhz": 10,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042",
+     "notes": "Won in 2022; described as 'under dispute' in MTN's 2024 affidavit"
+    },
+    {
+     "op": "liquid",
+     "mhz": 4,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2042",
+     "notes": "2022 auction lot only; legacy holding not verified"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3600–3800 MHz (3.6 GHz)",
+   "names": [
+    "n78",
+    "n77"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3600,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Rain holds 3.6 GHz spectrum inherited from WBS (Wikipedia/Rain), used for its 5G FWA network. The amount and edges are not verified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rain_(telecommunications)"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "3500",
+   "label": "3300–3400 MHz (IMT3300)",
+   "names": [
+    "n78"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3400
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. The final RFSAP took effect on 1 April 2023, and ICASA's next auction (2026/27) may include 3.3 GHz.",
+   "sources": [
+    "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-3300-MHz-to-3400-MHz.pdf",
+    "https://techcentral.co.za/icasa-gears-up-for-south-africas-next-big-spectrum-auction/277810/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment, and the band is not in ICASA's planned auctions.",
+   "sources": [
+    "https://tech.africa/icasa-imt-roadmap-spectrum-2030/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "6g",
+   "label": "6 GHz",
+   "names": [
+    "n104"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     5925,
+     7125
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT licences. ICASA plans dynamic spectrum access in 5925–6425 MHz. Whether upper 6 GHz goes to IMT or Wi-Fi was still open in 2026 (TechCentral).",
+   "sources": [
+    "https://techcentral.co.za/icasa-gears-up-for-south-africas-next-big-spectrum-auction/277810/",
+    "https://www.boltontechnical.co.za/blogs/news/spectrum-availability-ownership-and-auctions-in-south-africa"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. ICASA's IMT Roadmap 2026 proposes exclusive geographic areas for 24.25–27.5 GHz; no ITA has been issued.",
+   "sources": [
+    "https://tech.africa/icasa-imt-roadmap-spectrum-2030/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. It is in the IMT Roadmap 2026 (37.5–43.5 GHz) with no ITA yet.",
+   "sources": [
+    "https://tech.africa/icasa-imt-roadmap-spectrum-2030/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. It is in the IMT Roadmap 2026 (47.2–48.2 GHz) with no ITA yet.",
+   "sources": [
+    "https://tech.africa/icasa-imt-roadmap-spectrum-2030/"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "ICASA's March 2022 results table gives both directions for paired bands (e.g. '20 MHz' = 2×10 MHz). Holdings here are stored per direction.",
+  "Only 900 MHz has regulator-published block positions (ICASA RFSAP, Dec 2022). The 700/800 MHz positions come from spectrum-tracker.com alone and are marked unverified.",
+  "MTN's affidavit (2024) says Vodacom held 184 MHz and MTN 174 MHz of IMT spectrum. The holdings here give exactly these totals: Vodacom 20+20+24+30+80+10 and MTN 20+20+24+30+40+40.",
+  "Vodafone's FY26 20-F shows Vodacom's 900 MHz as '2×118 (2029)', read here as 2×11 with a footnote marker. ICASA's final IMT900 RFSAP gives each incumbent 2×10 MHz after migration, and that matches the affidavit totals, so 2×10 is used.",
+  "Spectrum pooling: MTN+Liquid (1800 MHz) and MTN+Cell C (900/1800/2100 MHz) were approved by ICASA on 21 June 2022. Vodacom's High Court challenge was decided in February 2025 (ZAGPPHC 2025/199); the outcome was not verified here.",
+  "As of 2026-09-28 no new IMT auction has been held. ICASA was still appointing auction advisers in February 2026 and aims to auction in FY2026/27."
+ ],
+ "missing": [
+  "1800 MHz: Cell C's and Telkom's 2×12 MHz and all block edges except MTN's are from background knowledge or partial sources.",
+  "2100 MHz: Telkom's 2×15 MHz is not source-verified. Only MTN's block edges are known.",
+  "2300 MHz: Telkom's (and any other) holdings not verified.",
+  "3.5 GHz: Liquid's pre-2022 holding and all block positions are unknown. The status of Cell C's disputed 10 MHz is unverified.",
+  "3.6 GHz: Rain's amount and edges are unknown.",
+  "850 MHz: the current status of Liquid's legacy CDMA assignment is unknown.",
+  "1900–1920 MHz TDD and the 2570–2620 MHz centre gap: holders unknown.",
+  "Outcome of Vodacom v ICASA (spectrum pooling) not verified.",
+  "EARFCN/NR-ARFCN not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "ICASA – auction results (March 2022)",
+   "url": "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds"
+  },
+  {
+   "title": "ICASA – RFSAP IMT900 (Gazette 47788, Dec 2022)",
+   "url": "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-880-MHz-to-915-MHz-and-925-MHz-to-960-MHz.pdf"
+  },
+  {
+   "title": "ICASA – RFSAP IMT700",
+   "url": "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-703-to-733-MHz-and-758-to-788-MHz.pdf"
+  },
+  {
+   "title": "ICASA – RFSAP IMT800",
+   "url": "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-791-to-821-MHz-and-832-to-862-MHz.pdf"
+  },
+  {
+   "title": "ICASA – RFSAP IMT3500",
+   "url": "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-3400-MHz-to-3600MHz-IMT3500.pdf"
+  },
+  {
+   "title": "ICASA – RFSAP IMT2300",
+   "url": "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-2300-MHz-to-2400-MHz.pdf"
+  },
+  {
+   "title": "ICASA – RFSAP IMT3300",
+   "url": "https://www.icasa.org.za/uploads/files/Radio-Frequency-Spectrum-Assignment-Plan-for-the-frequency-band-3300-MHz-to-3400-MHz.pdf"
+  },
+  {
+   "title": "ICASA – RFSAP IMT850",
+   "url": "https://www.icasa.org.za/uploads/files/radio-frequency-spectrum-assignment-plan-for-the-frequency-band-825-to-830mhz-and-870-to-875-mhz.pdf"
+  },
+  {
+   "title": "MTN answering affidavit, Vodacom v ICASA (spectrum pooling), 2024",
+   "url": "https://www.ellipsis.co.za/wp-content/uploads/2024/06/03-Third-respondent-answering-affidavit-NON-CONFIDENTIAL-Vodacom-Pooling-Urgent-Part-A-MTN.pdf"
+  },
+  {
+   "title": "Vodacom v ICASA [2025] ZAGPPHC 199",
+   "url": "https://lawlibrary.org.za/akn/za-gp/judgment/zagpphc/2025/199/eng@2025-02-21"
+  },
+  {
+   "title": "Vodafone Group FY26 Form 20-F – spectrum licence table",
+   "url": "https://www.sec.gov/Archives/edgar/data/839923/000119312526235425/d143190d20f.htm"
+  },
+  {
+   "title": "spectrum-tracker.com – South Africa",
+   "url": "https://www.spectrum-tracker.com/South-Africa"
+  },
+  {
+   "title": "TechCentral – Icasa gears up for next spectrum auction (Feb 2026)",
+   "url": "https://techcentral.co.za/icasa-gears-up-for-south-africas-next-big-spectrum-auction/277810/"
+  },
+  {
+   "title": "ICASA IMT Roadmap 2030 coverage (tech.africa)",
+   "url": "https://tech.africa/icasa-imt-roadmap-spectrum-2030/"
+  },
+  {
+   "title": "Connecting Africa – auction results",
+   "url": "https://www.connectingafrica.com/5g-networks/mtn-vodacom-spend-big-in-landmark-spectrum-auction"
+  }
+ ]
+}

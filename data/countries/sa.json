@@ -1,0 +1,720 @@
+{
+ "code": "sa",
+ "name": "Saudi Arabia",
+ "region": "Middle East & Africa",
+ "asOf": "2026-09-28",
+ "coverage": "partial",
+ "licensing": "national",
+ "summary": "Three MNOs (stc, Mobily, Zain KSA), with Salam (ex-Atheeb) as a fixed/FWA licensee. CST has licensed IMT spectrum through five auctions since 2017. The latest (November 2024: 600, 700 and 3800 MHz) raised the total licensed for mobile networks from 1110 MHz to 1400 MHz. Per-operator holdings in the legacy and 2017–2019 bands are not published.",
+ "operators": [
+  {
+   "id": "stc",
+   "name": "stc",
+   "legal": "Saudi Telecom Company",
+   "color": "#4f008c",
+   "aliases": [
+    "STC",
+    "Saudi Telecom"
+   ],
+   "kind": "mno",
+   "notes": "Incumbent. Won 2×20 MHz at 600 MHz and 100 MHz at 3800 MHz in the November 2024 auction. Also won both 2100 MHz NTN channels (2×30 MHz) in the December 2022 non-terrestrial-network auction."
+  },
+  {
+   "id": "mobily",
+   "name": "Mobily",
+   "legal": "Etihad Etisalat Company",
+   "color": "#00a0df",
+   "aliases": [
+    "Etihad Etisalat"
+   ],
+   "kind": "mno",
+   "notes": "e& owns 28%. Total spectrum is 440 MHz after winning 120 MHz (700 MHz 2×10 + 3800 MHz 100) in the 2024 auction on 15-year licences (e& 2024 integrated report). It won 100 MHz at 3.5 GHz in March 2019 (e& 2019 annual report) and bought 2.6 GHz and '3.7 GHz' spectrum in 2020 (e& 2020 annual report)."
+  },
+  {
+   "id": "zain",
+   "name": "Zain KSA",
+   "legal": "Mobile Telecommunication Company Saudi Arabia",
+   "color": "#6cbe45",
+   "aliases": [
+    "Zain"
+   ],
+   "kind": "mno",
+   "notes": "Won 2×15 MHz at 600 MHz in the 2024 auction."
+  },
+  {
+   "id": "salam",
+   "name": "Salam",
+   "legal": "Etihad Atheeb Telecom (Salam)",
+   "color": "#f28c00",
+   "aliases": [
+    "Atheeb",
+    "GO Telecom"
+   ],
+   "kind": "other",
+   "notes": "Fixed/FWA operator (rebranded from Atheeb/GO). Won 1800 MHz spectrum in the June 2017 auction (CITC). The amount is not verified, so it is not drawn."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz FDD",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "First 600 MHz award in Europe/Middle East/Africa (5th IMT auction, November 2024). All 2×35 MHz was sold: stc '40 MHz', Zain '30 MHz' (CST counts both directions). Positions are not published. The band plan is assumed to be the US 617–652/663–698 layout (n71), since CST offered 2×35 MHz.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/CST-Announces-the-Winners-of-the-Spectrum-Auction-in-the-Frequency-Bands-600-700-3800-MHz-for-Mobile",
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "holdings": [
+    {
+     "op": "stc",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2024 auction"
+    },
+    {
+     "op": "zain",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2024 auction"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz – 2024 auction lot",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Only the 2×10 MHz lot sold in 2024 is shown. Earlier 700 MHz lots (2×30 MHz auctioned in 2017, 2×10 MHz in 2018) are held by stc, Mobily and Zain in amounts not verified; see the next entry.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/CST-Announces-the-Winners-of-the-Spectrum-Auction-in-the-Frequency-Bands-600-700-3800-MHz-for-Mobile",
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2024/eand-integrated-annualreport-en.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "mobily",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "notes": "2024 auction; 15-year licence"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz – 2017/2018 auction lots",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CITC auctioned 700 MHz in June 2017 (2×30 MHz, with 1800 MHz; 140 MHz sold in total to stc, Mobily, Zain and Atheeb) and in February 2018 (2×10 MHz, with 800 and 1800 MHz; 80 MHz sold). Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/Allocation-of-Spectrum-to-enhance-wireless-network-services",
+    "https://www.cst.gov.sa/en/media-center/news/CITC-Announces-the-Results-of-the-Second-Public-Auction-for-the-700-800-1800-MHz-Spectrum-Frequencie",
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Legacy 800 MHz assignments, plus 2×40 MHz offered in the 2018 auction (CST table). In March 2020 CITC temporarily added 40 MHz in the 700/800 MHz bands. Mobily and others use B20. Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT",
+    "https://www.cst.gov.sa/en/media-center/news/CITC-Announces-the-Results-of-the-Second-Public-Auction-for-the-700-800-1800-MHz-Spectrum-Frequencie",
+    "https://www.cst.gov.sa/en/media-center/news/CITC-Provides-Additional-Spectrum-for-Saudi-Telecom-Providers-to-Boost-Mobile-Network-Performance",
+    "https://en.wikipedia.org/wiki/Mobily"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment identified. Saudi Arabia uses 800 MHz B20 and 900 MHz B8.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "GSM/UMTS licences of stc, Mobily and Zain. Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mobily",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. CST's IMT page lists 1500 MHz as 'to be offered'.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in ITU Region 1. 1710–1785 MHz is used as the B3 uplink.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Legacy GSM 1800 assignments, plus 2×46 MHz offered in 2017 and 2×30 MHz offered in 2018 (CST table; not all sold). Holders are stc, Mobily, Zain and Atheeb/Salam. Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT",
+    "https://www.cst.gov.sa/en/media-center/news/Allocation-of-Spectrum-to-enhance-wireless-network-services",
+    "https://www.cst.gov.sa/en/media-center/news/CITC-Announces-the-Results-of-the-Second-Public-Auction-for-the-700-800-1800-MHz-Spectrum-Frequencie",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "n70"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS is not used in Region 1. For the 2 GHz MSS/NTN band, see 'other'.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Status not verified.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "3G licences of stc, Mobily and Zain. Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mobily",
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz TDD",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "100 MHz offered in CST's third auction. stc uses B40 (40 MHz carriers per Wikipedia). Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2500–2690 MHz",
+   "names": [
+    "B7",
+    "B38",
+    "B41",
+    "n41"
+   ],
+   "status": "unknown",
+   "duplex": "mixed",
+   "range": {
+    "f": [
+     2500,
+     2690
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "190 MHz offered in CST's third auction. Mobily uses B7/B41, stc B41 and Zain B7. Mobily bought 2.6 GHz spectrum in 2020 (e& 2020 annual report). Per-operator amounts and positions are not published by CST in the pages reached.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT",
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2020/en-2020-etisalat-group-annual-report.pdf",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "3500",
+   "label": "3800–4000 MHz (2024 auction)",
+   "names": [
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3800,
+     4000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "5th IMT auction (November 2024): all 200 MHz sold, 100 MHz each to stc and Mobily. Positions are not published.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/CST-Announces-the-Winners-of-the-Spectrum-Auction-in-the-Frequency-Bands-600-700-3800-MHz-for-Mobile"
+   ],
+   "holdings": [
+    {
+     "op": "stc",
+     "mhz": 100,
+     "paired": false,
+     "basis": "exact",
+     "notes": "2024 auction"
+    },
+    {
+     "op": "mobily",
+     "mhz": 100,
+     "paired": false,
+     "basis": "exact",
+     "notes": "2024 auction"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3400–3800 MHz (2019 auction)",
+   "names": [
+    "n78"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CST's 4th auction offered 400 MHz at 3500 MHz. Only Mobily's 100 MHz (March 2019, e& 2019 annual report) is confirmed. stc and Zain also run n78 5G, but their amounts are not verified. Mobily's 2020 '3.7 GHz' purchase (e& 2020 annual report) may be part of this entry or additional.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT",
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2019/etisalat-group-annual-report-english-2019.pdf",
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2020/en-2020-etisalat-group-annual-report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "mobily",
+     "mhz": 100,
+     "paired": false,
+     "basis": "exact",
+     "notes": "Acquired March 2019"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment identified; the band is not in CST's list of auctioned bands.",
+   "sources": [
+    "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "6g",
+   "label": "6 GHz",
+   "names": [
+    "n104"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     5925,
+     7125
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT licence. CITC's 2021 outlook made 6.2 GHz of spectrum licence-exempt, including 6 GHz Wi-Fi, and CST has consulted on light licensing for 6 GHz. CST, stc and Nokia trialled 7 GHz for 6G (October 2025).",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/CITCs-new-spectrum-outlook-to-unlock-more-than-23-GHz-of-Spectrum",
+    "https://www.cst.gov.sa/en/media-center/news/CST-Publishes-a-Public-Consultation-on-the-Light-Licensing-Regulations-for-the-6-GHz-Frequency-Band",
+    "https://www.cst.gov.sa/en/media-center/news/N2025103001"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz",
+   "names": [
+    "n258"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CITC's 2021 outlook planned more than 13 GHz of lightly licensed spectrum, which is understood to include mmWave. Whether 26 GHz has been licensed to operators could not be verified.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/CITCs-new-spectrum-outlook-to-unlock-more-than-23-GHz-of-Spectrum",
+    "https://www.cst.gov.sa/en/media-center/news/N2025063001"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No assignment identified.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/N2025063001"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No assignment identified.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/N2025063001"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "other",
+   "label": "2 GHz NTN / MSS (1980–2010 / 2170–2200 MHz)",
+   "names": [
+    "n256",
+    "B65"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2170,
+     2200
+    ],
+    "ul": [
+     1980,
+     2010
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "World-first auction for non-terrestrial networks (A2G and MSS), held from 30 November 2022. stc won both channels, 60 MHz in total. The band edges are assumed to be the 2 GHz MSS band, since CST gave '2100 MHz, 30×2 MHz'.",
+   "sources": [
+    "https://www.cst.gov.sa/en/media-center/news/CST-announces-the-victory-of-STC-in-the-auction-of-frequency-spectrum-for-non-terrestrial-networks"
+   ],
+   "holdings": [
+    {
+     "op": "stc",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Both NTN channels"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "CST reports amounts per auction but, in the pages reached, no per-operator register of frequencies. Only the 2024 auction (600/700/3800), the 2022 NTN auction and Mobily's 2019 3.5 GHz lot are attributed to operators here.",
+  "CST: total licensed IMT spectrum rose from 1110 MHz to 1400 MHz with the 2024 auction. The per-operator totals shown are far below this because legacy holdings are missing.",
+  "Mobily's total after the 2024 auction is 440 MHz (e& 2024 integrated report). Only 220 MHz of it is attributed here by band.",
+  "CST auction list (IMT knowledge page): (1) 700 2×30 + 1800 2×46; (2) 700 2×10 + 800 2×40 + 1800 2×30; (3) 2300 100 MHz + 2600 190 MHz; (4) 3500 400 MHz; (5) 600 2×35 + 700 2×10 + 3800 200 MHz; plus NTN 2100 2×30. Not every offered lot was sold (e.g. 2017: 140 MHz sold; 2018: 80 MHz sold)."
+ ],
+ "missing": [
+  "Per-operator amounts and positions for 700 (2017/18 lots), 800, 900, 1800, 2100, 2300, 2600 and 3400–3800 MHz (stc and Zain) are unknown. These bands are shown as 'unknown' or partial.",
+  "Salam/Atheeb 1800 MHz amount (won in 2017) is unknown.",
+  "Whether 26 GHz or other mmWave spectrum has been licensed to operators is unknown.",
+  "Mobily's 2020 2.6 GHz and '3.7 GHz' acquisitions: amounts unknown.",
+  "Block positions for all bands. EARFCN/NR-ARFCN not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "CST – Winners of the 600/700/3800 MHz auction (Nov 2024)",
+   "url": "https://www.cst.gov.sa/en/media-center/news/CST-Announces-the-Winners-of-the-Spectrum-Auction-in-the-Frequency-Bands-600-700-3800-MHz-for-Mobile"
+  },
+  {
+   "title": "CST – IMT spectrum auctions summary",
+   "url": "https://www.cst.gov.sa/en/knowledge-center/digital-knowledge/frequency-spectrum/IMT"
+  },
+  {
+   "title": "CITC – 700/1800 MHz auction results (June 2017)",
+   "url": "https://www.cst.gov.sa/en/media-center/news/Allocation-of-Spectrum-to-enhance-wireless-network-services"
+  },
+  {
+   "title": "CITC – second auction 700/800/1800 MHz (Feb 2018)",
+   "url": "https://www.cst.gov.sa/en/media-center/news/CITC-Announces-the-Results-of-the-Second-Public-Auction-for-the-700-800-1800-MHz-Spectrum-Frequencie"
+  },
+  {
+   "title": "CITC – temporary 700/800 MHz spectrum (Mar 2020)",
+   "url": "https://www.cst.gov.sa/en/media-center/news/CITC-Provides-Additional-Spectrum-for-Saudi-Telecom-Providers-to-Boost-Mobile-Network-Performance"
+  },
+  {
+   "title": "CST – stc wins NTN 2100 MHz auction",
+   "url": "https://www.cst.gov.sa/en/media-center/news/CST-announces-the-victory-of-STC-in-the-auction-of-frequency-spectrum-for-non-terrestrial-networks"
+  },
+  {
+   "title": "CITC – Spectrum outlook 2021–2023",
+   "url": "https://www.cst.gov.sa/en/media-center/news/CITCs-new-spectrum-outlook-to-unlock-more-than-23-GHz-of-Spectrum"
+  },
+  {
+   "title": "CST – Spectrum Outlook 2025–2027",
+   "url": "https://www.cst.gov.sa/en/media-center/news/N2025063001"
+  },
+  {
+   "title": "e& annual report 2019 (Mobily 3.5 GHz)",
+   "url": "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2019/etisalat-group-annual-report-english-2019.pdf"
+  },
+  {
+   "title": "e& integrated report 2024 (Mobily 440 MHz)",
+   "url": "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2024/eand-integrated-annualreport-en.pdf"
+  }
+ ]
+}
