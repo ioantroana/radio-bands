@@ -2,140 +2,428 @@
  "code": "hu",
  "name": "Hungary",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Three MNOs: Magyar Telekom, Yettel (ex-Telenor) and One (ex-Vodafone, owned by 4iG/Corvinus, which absorbed DIGI's mobile business). NMHH auctioned 700/2100/3600 MHz in 2020 and re-awarded 900/1800 MHz in 2021; the 2100 MHz rights were extended to 2042 in 2026.",
  "operators": [
   {
    "id": "telekom",
    "name": "Magyar Telekom",
+   "legal": "Magyar Telekom Nyrt.",
    "color": "#e20074",
    "aliases": [
     "Telekom",
-    "Telekom Hungary"
+    "Telekom Hungary",
+    "MT"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Deutsche Telekom group. Transferred a 2x5 MHz 2100 MHz block to Yettel (agreement Aug 2024, subject to NMHH approval), leaving each MNO with 2x20 MHz at 2100 MHz."
   },
   {
    "id": "yettel",
-   "name": "Yettel Hungary",
+   "name": "Yettel",
+   "legal": "Yettel Magyarország Zrt. (formerly Telenor Magyarország Zrt.)",
    "color": "#b4ff00",
    "aliases": [
-    "Yettel",
-    "Yettel Magyarország"
+    "Yettel Hungary",
+    "Yettel Magyarország",
+    "Telenor Hungary",
+    "Telenor Magyarország",
+    "Pannon"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Licences were awarded to Telenor Magyarország (2014, 2020, 2021 procedures); the company rebranded to Yettel in 2022."
   },
   {
-   "id": "vodafone",
-   "name": "Vodafone Hungary",
-   "color": "#e51a21",
+   "id": "one",
+   "name": "One",
+   "legal": "One Magyarország Zrt. (formerly Vodafone Magyarország Zrt.)",
+   "color": "#3d2b8f",
    "aliases": [
-    "Vodafone",
-    "Vodafone Magyarország"
+    "One Hungary",
+    "One Magyarország",
+    "Vodafone Hungary",
+    "Vodafone Magyarország",
+    "Digi Hungary",
+    "DIGI Távközlési és Szolgáltató Kft."
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "digi",
-   "name": "Digi Hungary",
-   "color": "#00a6ff",
-   "aliases": [
-    "Digi",
-    "DIGI Távközlési és Szolgáltató Kft.",
-    "Antenna Hungária"
-   ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Vodafone Hungary was acquired by 4iG (51%) and Corvinus (49%) on 31 Jan 2023 and rebranded One on 1 Jan 2025, when 4iG's DIGI Hungary retail mobile business was also folded into the One brand; 4iG planned to merge DIGI, Antenna Hungária and Invitech into One Magyarország Zrt. during H2 2025. The seed noted DIGI's own mobile network was to be shut down in June 2023 (not re-verified). DIGI's 2x5 MHz 1800 MHz right (1725-1730/1820-1825) is shown under One; the transfer of that right has not been confirmed in an NMHH document. Colour chosen for contrast (brand palette not verified)."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "600",
+   "label": "600 MHz",
    "names": [
-    "B1",
-    "n1"
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a mobile band in Europe; 470-694 MHz is used for DTT.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded in NMHH's March 2020 5G auction (HUF 128.5bn in total across 700/2100/3600). 15-year rights (to 2035) extendable once by 5 years. The remaining 2x5 MHz (703-708/758-763) is unassigned; NMHH consulted on awarding it in Sept 2025.",
+   "sources": [
+    "https://nmhh.hu/dokumentum/211268/UF_19180_197_2019_hatarozat_5G_arveres_eredmeny.pdf",
+    "https://nmhh.hu/cikk/211179/Osszesen_mintegy_128_es_fel_milliard_forintot_fizet_a_harom_szolgaltato_az_5Gre_is_hasznalhato_frekvenciakert_az_NMHH_arveresen"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ],
+     "notes": "Unassigned 2x5 MHz"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      763,
+      773
+     ],
+     "ul": [
+      708,
+      718
+     ],
+     "expiry": "2035"
+    },
+    {
+     "op": "one",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "expiry": "2035",
+     "notes": "Won by Vodafone"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      783,
+      788
+     ],
+     "ul": [
+      728,
+      733
+     ],
+     "expiry": "2035",
+     "notes": "Won by Telenor"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20",
+    "n20"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     791,
+     821
     ],
     "ul": [
-     1920,
-     1980
+     832,
+     862
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "From the 2014 NMHH tender (packages A-C). Rights run to 2029 and may be extended by 5 years (NMHH: 'until 2034' including the extension). Telekom and Yettel run a MOCN for B20 outside Budapest (seed data).",
    "sources": [
+    "https://english.nmhh.hu/article/164403/NMHH_Hungary_adds_new_frequencies_to_the_digital_economy",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
    ],
    "blocks": [
     {
-     "op": "telekom",
+     "op": "one",
      "dl": [
-      2110,
-      2135
+      791,
+      801
      ],
      "ul": [
-      1920,
-      1945
+      832,
+      842
      ],
-     "earfcn": [
-      75,
-      100,
-      200
+     "expiry": "2029",
+     "notes": "Package C, won by Vodafone"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      801,
+      811
      ],
-     "notes": "LTE 20 MHz on EARFCN 100 · LTE 15 MHz on EARFCN 75 · LTE 10 MHz on EARFCN 200 · Some NR DSS and NR non-DSS deployments"
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2029",
+     "notes": "Package A"
     },
     {
      "op": "yettel",
      "dl": [
-      2135,
-      2150
+      811,
+      821
      ],
      "ul": [
-      1945,
-      1960
+      852,
+      862
      ],
-     "earfcn": [
-      300
-     ],
-     "nrarfcn": [
-      427970
-     ],
-     "notes": "3G being phased out · NR/LTE DSS 10 MHz"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      2150,
-      2170
-     ],
-     "ul": [
-      1960,
-      1980
-     ],
-     "earfcn": [
-      476,
-      500
-     ],
-     "nrarfcn": [
-      431520
-     ],
-     "notes": "3G being phased out · LTE/NR 15 MHz DSS · Single sites with 20 MHz LTE on EARFCN 500"
+     "expiry": "2029",
+     "notes": "Package B, won by Telenor"
     }
    ]
   },
   {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5",
+    "B26"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe (800 MHz follows B20).",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "NMHH 2021 auction (decision UF/25112-95/2020, 9 Mar 2021) awarded 2022-2037 rights and repositioned the 2014 rights (expiring 2029) next to each winner's new block from April 2022.",
+   "sources": [
+    "https://nmhh.hu/dokumentum/218739/UF_25112_95_2020_900_1800MHz_erdemi_hatarozat.pdf",
+    "https://nmhh.hu/cikk/217525/1502_milliard_forintert_keltek_el_a_2022ben_lejaro_mobilfrekvenciak"
+   ],
+   "blocks": [
+    {
+     "op": "yettel",
+     "dl": [
+      925,
+      938
+     ],
+     "ul": [
+      880,
+      893
+     ],
+     "expiry": "2037-04-09",
+     "notes": "2021 auction (Telenor)"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      938,
+      940
+     ],
+     "ul": [
+      893,
+      895
+     ],
+     "expiry": "2029",
+     "notes": "2014 right, moved from 889.9-891.9/934.9-936.9"
+    },
+    {
+     "op": "one",
+     "dl": [
+      940,
+      949
+     ],
+     "ul": [
+      895,
+      904
+     ],
+     "expiry": "2037-04-09",
+     "notes": "2021 auction (Vodafone)"
+    },
+    {
+     "op": "one",
+     "dl": [
+      949,
+      950
+     ],
+     "ul": [
+      904,
+      905
+     ],
+     "expiry": "2029",
+     "notes": "2014 right, moved from 901.9-902.9"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      950,
+      952
+     ],
+     "ul": [
+      905,
+      907
+     ],
+     "expiry": "2029",
+     "notes": "2014 right, moved from 902.9-904.9/947.9-949.9"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      952,
+      960
+     ],
+     "ul": [
+      907,
+      915
+     ],
+     "expiry": "2037-04-09",
+     "notes": "2021 auction"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. At NMHH's Sept 2025 hearing operators said there is no real demand yet for 1500 MHz.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
    "group": "1800",
-   "label": "1800 MHz (B3/n3)",
+   "label": "1800 MHz (B3)",
    "names": [
     "B3",
     "n3"
@@ -152,62 +440,79 @@
      1785
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2x20 MHz each for Telekom, Telenor (Yettel) and Vodafone (One) from the 2021 auction (2022-2037, extendable 5 years); Telekom 1730-1740 and DIGI 1725-1730 (UL) come from the 2014 tender (to 2029).",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+    "https://nmhh.hu/dokumentum/218739/UF_25112_95_2020_900_1800MHz_erdemi_hatarozat.pdf",
+    "https://english.nmhh.hu/article/164403/NMHH_Hungary_adds_new_frequencies_to_the_digital_economy"
    ],
    "blocks": [
     {
-     "op": "vodafone",
+     "op": "yettel",
      "dl": [
       1805,
-      1825
+      1820
      ],
      "ul": [
       1710,
+      1725
+     ],
+     "expiry": "2037-04-09"
+    },
+    {
+     "op": "one",
+     "dl": [
+      1820,
+      1825
+     ],
+     "ul": [
+      1725,
       1730
      ],
-     "earfcn": [
-      1276,
-      1300
-     ],
-     "notes": "Used for 2G in some areas"
+     "expiry": "2029",
+     "notes": "2014 tender package F, won by DIGI; DIGI now part of 4iG/One"
     },
     {
      "op": "telekom",
      "dl": [
       1825,
-      1855.05
+      1835
      ],
      "ul": [
       1730,
-      1760.05
+      1740
      ],
-     "earfcn": [
-      1500
-     ],
-     "notes": "20 MHz LTE + 10 MHz 2G"
+     "expiry": "2029",
+     "notes": "2014 tender packages D+E"
     },
     {
-     "op": "digi",
+     "op": "telekom",
      "dl": [
-      1855.05,
-      1860
+      1835,
+      1855
      ],
      "ul": [
-      1760.05,
-      1765
+      1740,
+      1760
      ],
-     "earfcn": [
-      1724
-     ],
-     "notes": "3 MHz LTE + 2 MHz 2G · Network to be shut down in June 2023"
+     "expiry": "2037-04-09"
     },
     {
      "op": "yettel",
+     "dl": [
+      1855,
+      1860
+     ],
+     "ul": [
+      1760,
+      1765
+     ],
+     "expiry": "2037-04-09"
+    },
+    {
+     "op": "one",
      "dl": [
       1860,
       1880
@@ -216,18 +521,149 @@
       1765,
       1785
      ],
-     "earfcn": [
-      1850
-     ],
-     "notes": "Standard LTE 20 MHz deployment · In areas with G18, LTE is 15 MHz"
+     "expiry": "2037-04-09",
+     "notes": "Won by Vodafone"
     }
    ]
   },
   {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
+   "group": "1900",
+   "label": "PCS 1900",
    "names": [
-    "B7"
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1990
+    ],
+    "ul": [
+     1850,
+     1910
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz unpaired TDD",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No current assignment for mobile broadband; not among the bands NMHH consulted on in 2025.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Origin: 2004 3G tender gave each operator 2x15 MHz in 1920-1965/2110-2155; the 2020 auction gave Telekom 1970-1980/2160-2170 and Vodafone 1965-1970/2155-2160. Telekom agreed in Aug 2024 to transfer one 2x5 MHz block to Yettel, so each now holds 2x20 MHz ('completely equalised', HWSW). Current block positions after the transfer (and any re-arrangement) were not found in an NMHH document; the seed's layout (Telekom 2110-2135, Yettel 2135-2150, One 2150-2170) predates the transfer.",
+   "sources": [
+    "https://nmhh.hu/dokumentum/190948/savismerteto_2100_mhz.pdf",
+    "https://nmhh.hu/dokumentum/211268/UF_19180_197_2019_hatarozat_5G_arveres_eredmeny.pdf",
+    "https://www.thefastmode.com/technology-solutions/36896-magyar-telekom-sells-frequency-to-yettel-enhancing-4g-and-5g-capacity",
+    "https://www.hwsw.hu/hirek/70367/magyar-telekom-one-magyarorszag-yettel-nmhh-spektrum-spektrumlicenc-2100-mhz-hosszabbitas-hatosagi-szerzodes.html"
+   ],
+   "holdings": [
+    {
+     "op": "telekom",
+     "mhz": 20,
+     "paired": true,
+     "expiry": "2035/2042",
+     "notes": "2x15 (2004-origin, extended to 2042 in 2026) + 2x10 (2020, to 2035) minus 2x5 sold to Yettel"
+    },
+    {
+     "op": "yettel",
+     "mhz": 20,
+     "paired": true,
+     "expiry": "2042",
+     "notes": "2x15 (2004-origin) + 2x5 from Telekom; extended to 2042 in 2026"
+    },
+    {
+     "op": "one",
+     "mhz": 20,
+     "paired": true,
+     "expiry": "2035/2042",
+     "notes": "2x15 (2004-origin; extension to 2042 agreed, One's signature pending in the HWSW report) + 2x5 (2020, 1965-1970/2155-2160)"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile broadband.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -241,11 +677,12 @@
      2570
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2014 tender (packages A, B, G); rights to 2029 with a 5-year extension option.",
    "sources": [
+    "https://english.nmhh.hu/article/164403/NMHH_Hungary_adds_new_frequencies_to_the_digital_economy",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
    ],
    "blocks": [
@@ -259,14 +696,11 @@
       2500,
       2530
      ],
-     "earfcn": [
-      2850,
-      2994
-     ],
-     "notes": "LTE 20 MHz + 10 MHz in a contiguous configuration"
+     "expiry": "2029",
+     "notes": "Package A; 20+10 MHz LTE carriers (seed)"
     },
     {
-     "op": "vodafone",
+     "op": "one",
      "dl": [
       2650,
       2670
@@ -275,9 +709,8 @@
       2530,
       2550
      ],
-     "earfcn": [
-      3150
-     ]
+     "expiry": "2029",
+     "notes": "Package G, won by Vodafone"
     },
     {
      "op": "yettel",
@@ -286,249 +719,22 @@
       2690
      ],
      "ul": [
-      2560,
-      2550
+      2550,
+      2570
      ],
-     "earfcn": [
-      3350
-     ]
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
-   ],
-   "blocks": [
-    {
-     "op": "yettel",
-     "dl": [
-      925,
-      940
-     ],
-     "ul": [
-      880,
-      895
-     ],
-     "earfcn": [
-      3550
-     ],
-     "notes": "Used for 5 MHz GSM and 10 MHz LTE."
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      940,
-      950
-     ],
-     "ul": [
-      895,
-      905
-     ],
-     "notes": "Used mainly for 2G · 3G being phased out · Test LTE deployments"
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      950,
-      960
-     ],
-     "ul": [
-      905,
-      915
-     ],
-     "notes": "Used for 2G"
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "dl": [
-      791,
-      801
-     ],
-     "ul": [
-      832,
-      842
-     ],
-     "earfcn": [
-      6200
-     ]
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300,
-      6350
-     ],
-     "notes": "LTE B20 10 MHz on EARFCN 6300 in Budapest · LTE B20 20 MHz on EARFCN 6350 in the rest of Hungary via MOCN with Yettel · Telekom hosts B20 MOCN in Eastern Hungary"
-    },
-    {
-     "op": "yettel",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6350,
-      6400
-     ],
-     "notes": "LTE B20 10 MHz on EARFCN 6400 in Budapest · LTE B20 20 MHz on EARFCN 6350 in the rest of Hungary via MOCN with Telekom · Yettel hosts B20 MOCN in Western Hungary"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "dl": [
-      758,
-      763
-     ],
-     "ul": [
-      703,
-      708
-     ]
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      763,
-      773
-     ],
-     "ul": [
-      708,
-      718
-     ],
-     "earfcn": [
-      9310
-     ]
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      773,
-      783
-     ],
-     "ul": [
-      718,
-      728
-     ],
-     "earfcn": [
-      9410
-     ],
-     "nrarfcn": [
-      155600
-     ],
-     "notes": "LTE/NR DSS"
-    },
-    {
-     "op": "yettel",
-     "dl": [
-      783,
-      788
-     ],
-     "ul": [
-      728,
-      733
-     ],
-     "earfcn": [
-      9485
-     ]
+     "expiry": "2029",
+     "notes": "Package B, won by Telenor"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz TDD (B38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -536,12 +742,13 @@
      2620
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Vodafone (One) holds 2575-2600 MHz from the 2014 tender (reported unused in the seed). A 15 MHz TDD unit offered in the 2020 auction attracted no bid.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+    "https://english.nmhh.hu/article/164403/NMHH_Hungary_adds_new_frequencies_to_the_digital_economy",
+    "https://nmhh.hu/dokumentum/211268/UF_19180_197_2019_hatarozat_5G_arveres_eredmeny.pdf"
    ],
    "blocks": [
     {
@@ -549,16 +756,16 @@
      "f": [
       2570,
       2575
-     ],
-     "notes": "Unused"
+     ]
     },
     {
-     "op": "vodafone",
+     "op": "one",
      "f": [
       2575,
       2600
      ],
-     "notes": "Unused"
+     "expiry": "2029",
+     "notes": "Package C, won by Vodafone"
     },
     {
      "op": "unassigned",
@@ -566,13 +773,13 @@
       2600,
       2620
      ],
-     "notes": "Unused"
+     "notes": "No bid in the 2020 auction"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.49–3.8 GHz (n78), 2020 auction",
    "names": [
     "n78"
    ],
@@ -580,46 +787,36 @@
    "duplex": "tdd",
    "range": {
     "f": [
-     3400,
+     3490,
      3800
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "All 31 x 10 MHz units offered in 2020 were sold; 15-year rights (to 2035) extendable by 5 years.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+    "https://nmhh.hu/dokumentum/211268/UF_19180_197_2019_hatarozat_5G_arveres_eredmeny.pdf",
+    "https://nmhh.hu/cikk/211179/Osszesen_mintegy_128_es_fel_milliard_forintot_fizet_a_harom_szolgaltato_az_5Gre_is_hasznalhato_frekvenciakert_az_NMHH_arveresen"
    ],
    "blocks": [
     {
-     "op": "unassigned",
+     "op": "one",
      "f": [
-      3400,
-      3410
-     ]
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      3410,
-      3520
-     ]
-    },
-    {
-     "op": "digi",
-     "f": [
-      3520,
+      3490,
       3540
      ],
-     "notes": "Network to be shut down in June 2023"
+     "expiry": "2035",
+     "notes": "Won by Vodafone (5 units)"
     },
     {
      "op": "telekom",
      "f": [
       3540,
       3660
-     ]
+     ],
+     "expiry": "2035",
+     "notes": "12 units"
     },
     {
      "op": "yettel",
@@ -627,21 +824,207 @@
       3660,
       3800
      ],
-     "nrarfcn": [
-      647328
-     ]
+     "expiry": "2035",
+     "notes": "Won by Telenor (14 units)"
     }
    ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.49 GHz (pre-2020 rights)",
+   "names": [
+    "n78",
+    "B42"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3490
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Outside the 2020 auction. The seed shows Vodafone at 3410-3520 and DIGI at 3520-3540 MHz, which conflicts with the 2020 NMHH decision (Vodafone 3490-3540), so the seed layout is not used. Holders of 3400-3490 MHz were not verified.",
+   "sources": [
+    "https://nmhh.hu/dokumentum/211268/UF_19180_197_2019_hatarozat_5G_arveres_eredmeny.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for 5G/MFCN. Existing 26 GHz rights are for fixed (point-to-point/multipoint) links; at NMHH's Sept 2025 hearing all holders said there is no real 5G demand and prefer to keep their microwave licences.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol",
+    "https://nmhh.hu/dokumentum/190940/savismerteto_26_ghz.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; 42 GHz discussed at NMHH's 2025 hearing with no demand expressed.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "700, 800, 900, 1800, 2600 and 3490-3800 MHz edges come from NMHH decisions (UF/19180-197/2019 for the 2020 auction, UF/25112-95/2020 for the 2021 900/1800 auction) and NMHH's 2014 tender results.",
+  "Conflict: the seed's 1800 MHz layout (Vodafone 1805-1825, Telekom 1825-1855, DIGI 1855-1860, Yettel 1860-1880 DL) contradicts NMHH decision UF/25112-95/2020; the regulator layout is used.",
+  "Conflict: the seed's 3.5 GHz layout (Vodafone 3410-3520, DIGI 3520-3540) contradicts the 2020 NMHH decision (Vodafone 3490-3540); the regulator layout is used and 3400-3490 MHz is left as unknown.",
+  "2100 MHz: HWSW (2026) reports each operator's 2100 MHz rights were extended to 2042 (+5 years optional) by administrative contract; Telekom and Yettel had signed, One was expected to sign within days. The 2020-auction blocks (to 2035) are separate rights.",
+  "The 2014-tender rights (800, 2600, parts of 900/1800) expire in 2029 unless extended (NMHH described them as running 'until 2034' including the extension)."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "2100 MHz block positions after the 2024 Telekom-to-Yettel transfer (holdings only).",
+  "Holders of 3400-3490 MHz (rights outside the 2020 auction).",
+  "Confirmation from NMHH that DIGI's 1800 MHz and any 3.5 GHz rights passed to One Magyarország.",
+  "Whether the 2014-tender rights (2029 expiry) have been extended to 2034.",
+  "Yettel Hungary's current ownership was not researched.",
+  "Carrier EARFCN/NR-ARFCN details were not compiled."
+ ],
+ "changes": [
+  "Renamed Vodafone Hungary to One (rebrand 1 Jan 2025) and merged the separate Digi operator into One (DIGI's mobile business folded into One by 4iG).",
+  "1800 MHz: replaced the seed layout with NMHH's 2021 decision layout (Yettel 1710-1725 + 1760-1765, DIGI/One 1725-1730, Telekom 1730-1760, One 1765-1785 UL).",
+  "900 MHz: split into the 2021-auction and relocated 2014 blocks with exact edges (880-895 Yettel, 895-905 One, 905-915 Telekom UL); amounts unchanged from the seed.",
+  "2100 MHz: changed to holdings (2x20 MHz each) after the 2024 Telekom-to-Yettel 2x5 MHz transfer; seed positions dropped.",
+  "2600 MHz FDD: fixed the seed's invalid Yettel uplink [2560,2550] to 2550-2570.",
+  "3.5 GHz: replaced the seed layout with the 2020 auction blocks (One 3490-3540, Telekom 3540-3660, Yettel 3660-3800) and an 'unknown' entry for 3400-3490; removed DIGI's 3520-3540 block.",
+  "700 MHz: confirmed seed positions against NMHH; set 'verified'.",
+  "Added expiry dates and not-assigned entries for 600, 850, 1400, 1700, 1900, 2000tdd, 2300, 4900, 26g, 40g, 47g."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "NMHH decision UF/19180-197/2019 – 2020 auction results (700/2100/3600 MHz)",
+   "url": "https://nmhh.hu/dokumentum/211268/UF_19180_197_2019_hatarozat_5G_arveres_eredmeny.pdf"
+  },
+  {
+   "title": "NMHH – 2020 auction press release",
+   "url": "https://nmhh.hu/cikk/211179/Osszesen_mintegy_128_es_fel_milliard_forintot_fizet_a_harom_szolgaltato_az_5Gre_is_hasznalhato_frekvenciakert_az_NMHH_arveresen"
+  },
+  {
+   "title": "NMHH decision UF/25112-95/2020 – 900/1800 MHz auction results",
+   "url": "https://nmhh.hu/dokumentum/218739/UF_25112_95_2020_900_1800MHz_erdemi_hatarozat.pdf"
+  },
+  {
+   "title": "NMHH – 900/1800 MHz auction press release",
+   "url": "https://nmhh.hu/cikk/217525/1502_milliard_forintert_keltek_el_a_2022ben_lejaro_mobilfrekvenciak"
+  },
+  {
+   "title": "NMHH – 2014 tender results (800/900/1800/2600 MHz)",
+   "url": "https://english.nmhh.hu/article/164403/NMHH_Hungary_adds_new_frequencies_to_the_digital_economy"
+  },
+  {
+   "title": "NMHH – band overview 2100 MHz (2017)",
+   "url": "https://nmhh.hu/dokumentum/190948/savismerteto_2100_mhz.pdf"
+  },
+  {
+   "title": "NMHH – summary of the 16 Sept 2025 public hearing on wireless broadband bands",
+   "url": "https://nmhh.hu/cikk/255457/Osszefoglalo_a_vezeteknelkuli_szelessavu_szolgaltatasok_nyujtasara_hasznalhato_frekvenciasavokkal_kapcsolatban_2025_szeptember_16an_megtartott_nyilvanos_meghallgatasrol"
+  },
+  {
+   "title": "HWSW – 2100 MHz rights extended (2026)",
+   "url": "https://www.hwsw.hu/hirek/70367/magyar-telekom-one-magyarorszag-yettel-nmhh-spektrum-spektrumlicenc-2100-mhz-hosszabbitas-hatosagi-szerzodes.html"
+  },
+  {
+   "title": "The Fast Mode – Magyar Telekom sells 2100 MHz block to Yettel (Aug 2024)",
+   "url": "https://www.thefastmode.com/technology-solutions/36896-magyar-telekom-sells-frequency-to-yettel-enhancing-4g-and-5g-capacity"
+  },
+  {
+   "title": "Wikipedia – One Hungary",
+   "url": "https://en.wikipedia.org/wiki/One_Hungary"
+  },
+  {
+   "title": "Hungarian Conservative – Vodafone/Digi rebrand to One",
+   "url": "https://www.hungarianconservative.com/articles/current/vodafone-digi-invitech-4ig-hungary-rebranding-one-magyarorszag/"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (seed, LGPL-3.0)",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]

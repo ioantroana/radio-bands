@@ -1,0 +1,1445 @@
+{
+ "code": "br",
+ "name": "Brazil",
+ "region": "Americas",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "mixed",
+ "summary": "Three national MNOs (Vivo, Claro, TIM) after Oi's mobile business was split between them in 2022, plus regional operators (Algar, Brisanet, Unifique, Amazônia 5G, iez!, Ligga). Most sub-3 GHz licences are regional, so amounts are population-weighted averages computed from Anatel's per-municipality licence acts; national blocks (700, 2.5, 3.5, 26 GHz) are shown with exact edges in separate position views.",
+ "operators": [
+  {
+   "id": "vivo",
+   "name": "Vivo",
+   "legal": "Telefônica Brasil S.A.",
+   "color": "#660099",
+   "aliases": [
+    "Telefônica Brasil",
+    "Telefonica"
+   ],
+   "kind": "mno",
+   "notes": "Received ~43 MHz (pop-weighted) of Oi Móvel spectrum when Oi's mobile unit (UPI Ativos Móveis) was split between TIM, Vivo and Claro on 20 Apr 2022. A 2022 700 MHz leasing deal with Winity was conditionally approved but Winity then renounced its licence (end-2023)."
+  },
+  {
+   "id": "claro",
+   "name": "Claro",
+   "legal": "Claro S.A.",
+   "color": "#da291c",
+   "aliases": [
+    "Claro Brasil",
+    "América Movil",
+    "Nextel Brasil"
+   ],
+   "kind": "mno",
+   "notes": "América Movil. Absorbed Nextel Brasil (2019). Took Oi customers but essentially no Oi spectrum in the 2022 split (spectrum caps)."
+  },
+  {
+   "id": "tim",
+   "name": "TIM",
+   "legal": "TIM S.A.",
+   "color": "#004691",
+   "aliases": [
+    "TIM Brasil"
+   ],
+   "kind": "mno",
+   "notes": "Received ~49 MHz (pop-weighted) of Oi Móvel spectrum in the 2022 split, including Oi's 2.5 GHz V2 block per Anatel acts."
+  },
+  {
+   "id": "algar",
+   "name": "Algar Telecom",
+   "legal": "Algar Telecom S/A",
+   "color": "#00a19a",
+   "aliases": [
+    "Algar",
+    "CTBC"
+   ],
+   "kind": "regional",
+   "notes": "Regional MNO in PGO sectors 3 (Triângulo Mineiro, MG), 22 (MS), 25 (GO) and 33 (Franca, SP) - about 1.6% of the population."
+  },
+  {
+   "id": "brisanet",
+   "name": "Brisanet",
+   "legal": "Brisanet Serviços de Telecomunicações S.A.",
+   "color": "#f36f21",
+   "aliases": [],
+   "kind": "regional",
+   "notes": "Regional 5G entrant (2021 auction: 3.5 GHz Northeast + Centre-West, 2.3 GHz Northeast); won 700 MHz lots A2/A3 (Northeast, Centre-West) on 4 May 2026."
+  },
+  {
+   "id": "unifique",
+   "name": "Unifique",
+   "legal": "Unifique Telecomunicações S/A",
+   "color": "#00a3e0",
+   "aliases": [
+    "Consórcio 5G Sul"
+   ],
+   "kind": "regional",
+   "notes": "3.5 GHz in SC/RS (Consórcio 5G Sul, 2021). Anatel gave prior consent on 7 Apr 2026 for Unifique to take Ligga's 3.5 GHz block in Paraná (completion not confirmed). Bought 56.4% of the Amazônia 5G consortium (Apr 2026). Won 700 MHz lot A4 (South) in May 2026."
+  },
+  {
+   "id": "amazonia5g",
+   "name": "Amazônia 5G",
+   "legal": "Amazônia Serviços Digitais e Telecomunicações S.A.",
+   "color": "#2e7d32",
+   "aliases": [
+    "Consórcio Amazônia 5G"
+   ],
+   "kind": "regional",
+   "notes": "Took over Sercomtel/Ligga's 3.5 GHz block for São Paulo state + North region (transfer published by Anatel, 2025-26). Won 700 MHz lot A1 (North + São Paulo) in May 2026. Unifique bought a 56.4% controlling stake in Apr 2026."
+  },
+  {
+   "id": "iez",
+   "name": "iez! telecom",
+   "legal": "Cloud2u Indústria e Comércio de Equipamentos Eletroeletrônicos Ltda.",
+   "color": "#e6007e",
+   "aliases": [
+    "Cloud2U"
+   ],
+   "kind": "regional",
+   "notes": "Brand of Cloud2U (Greatek group); 3.5 GHz lot C7 (RJ, ES, MG) in 2021; won 700 MHz lot A5 (RJ, ES, MG) in May 2026."
+  },
+  {
+   "id": "ligga",
+   "name": "Ligga Telecom",
+   "legal": "Ligga Telecomunicações S.A. / Sercomtel S/A",
+   "color": "#ffc20e",
+   "aliases": [
+    "Sercomtel",
+    "Copel Telecom"
+   ],
+   "kind": "regional",
+   "notes": "Sercomtel (Londrina/Tamarana legacy 850/900/1800) and Copel Telecom rebranded Ligga. Sold its São Paulo/North 3.5 GHz block to Amazônia 5G and agreed (Jan 2026) to sell its Paraná 3.5 GHz block to Unifique (Anatel consent Apr 2026)."
+  },
+  {
+   "id": "regional",
+   "name": "Area-split licences",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other",
+   "notes": "Drawing placeholder for a block licensed to different operators in different areas; see the regional-average entry for the split."
+  }
+ ],
+ "bands": [
+  {
+   "group": "450",
+   "label": "450 MHz",
+   "names": [
+    "B31"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     461,
+     468
+    ],
+    "ul": [
+     451,
+     458
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The 450 MHz obligation attached to the 2012 2.5 GHz licences was extinguished (Anatel Act 12,827, Sept 2022); Anatel removed 450 MHz from its auction calendar in Q2 2026.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm",
+    "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Used for broadcast TV. Anatel is debating a future IMT use of 600 MHz (regional operators asked for a share in exchange for 850 MHz, Q2 2026); nothing assigned.",
+   "sources": [
+    "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28) - per operator",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "TIM, Vivo and Claro hold national 2x10 MHz blocks (2014 auction, expire 8 Dec 2029). The 708-718/763-773 MHz block is regional: Algar in its PGO sectors (2014), and since the 4 May 2026 re-auction of the block Winity returned: Amazônia 5G (North + São Paulo), Brisanet (Northeast, Centre-West), Unifique (South), iez! (RJ/ES/MG); new licences to Dec 2044. The 2026 winners are not yet in Anatel's open-data acts, so their averages are computed from the lot areas. 703-708/758-763 is not assigned on a primary basis (secondary use only).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.teleco.com.br/4g_freq.asp",
+    "https://www.gov.br/anatel/pt-br/regulado/outorga/leilao-700-mhz-2026",
+    "https://teletime.com.br/04/05/2026/brisanet-unifique-amazonia-5g-e-iez-vencem-leilao-de-700-mhz/",
+    "https://telesintese.com.br/anatel-adjudica-lotes-do-leilao-de-700-mhz/",
+    "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623"
+   ],
+   "holdings": [
+    {
+     "op": "tim",
+     "mhz": 10.0,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2029-12-08"
+    },
+    {
+     "op": "vivo",
+     "mhz": 10.0,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2029-12-08"
+    },
+    {
+     "op": "claro",
+     "mhz": 10.0,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2029-12-08"
+    },
+    {
+     "op": "brisanet",
+     "mhz": 3.48,
+     "paired": true,
+     "basis": "10 MHz x 34.8% population share (Northeast + Centre-West excl. Algar sectors, IBGE 2022)",
+     "expiry": "2044-12",
+     "notes": "Lots A2+A3, 2026 auction"
+    },
+    {
+     "op": "amazonia5g",
+     "mhz": 3.0,
+     "paired": true,
+     "basis": "10 MHz x 30.0% population share (North + São Paulo excl. sector 33, IBGE 2022)",
+     "expiry": "2044-12",
+     "notes": "Lot A1, 2026 auction"
+    },
+    {
+     "op": "iez",
+     "mhz": 1.88,
+     "paired": true,
+     "basis": "10 MHz x 18.8% population share (RJ, ES, MG excl. sector 3, IBGE 2022)",
+     "expiry": "2044-12",
+     "notes": "Lot A5, 2026 auction"
+    },
+    {
+     "op": "unifique",
+     "mhz": 1.47,
+     "paired": true,
+     "basis": "10 MHz x 14.7% population share (South region, IBGE 2022)",
+     "expiry": "2044-12",
+     "notes": "Lot A4, 2026 auction"
+    },
+    {
+     "op": "algar",
+     "mhz": 0.16,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census); 10 MHz in its 87 municipalities",
+     "expiry": "2029-12-08"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28) - block positions",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Position view (not counted; see the per-operator entry). Edges from Anatel's subfaixa acts (subfaixas 2-9) and Teleco's 700 MHz table. Vivo also holds secondary-use rights in TIM's block (RAN sharing).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.teleco.com.br/4g_freq.asp"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ],
+     "notes": "Subfaixa 1: no primary holder (secondary use by Unifique in a few municipalities)"
+    },
+    {
+     "op": "regional",
+     "dl": [
+      763,
+      773
+     ],
+     "ul": [
+      708,
+      718
+     ],
+     "notes": "Algar (its sectors, 2014) + 2026 regional winners Amazônia 5G, Brisanet, Unifique, iez! (Winity's national 2021 licence was renounced end-2023)",
+     "source": "https://teletime.com.br/04/05/2026/brisanet-unifique-amazonia-5g-e-iez-vencem-leilao-de-700-mhz/"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "expiry": "2029-12-08"
+    },
+    {
+     "op": "vivo",
+     "dl": [
+      783,
+      793
+     ],
+     "ul": [
+      728,
+      738
+     ],
+     "expiry": "2029-12-08"
+    },
+    {
+     "op": "claro",
+     "dl": [
+      793,
+      803
+     ],
+     "ul": [
+      738,
+      748
+     ],
+     "expiry": "2029-12-08"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20/B26 lower)",
+   "names": [
+    "B20",
+    "B26"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     851,
+     869
+    ],
+    "ul": [
+     806,
+     824
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The EU B20 plan is not used (overlaps APT 700 and 850). 806-821/851-866 MHz is SME (trunking) spectrum, historically Nextel (now Claro); Anatel counts it in the sub-1 GHz cap but it is not an SMP licence in the open-data acts and was not compiled.",
+   "sources": [
+    "https://teleco.com.br/areasc.asp"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5) Bands A/B",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Legacy Band A (869-880 + 890-891.5) and Band B (880-890 + 891.5-894) licences, each 2x12.5 MHz per area. Vivo: national except the six Northeast states AL-CE-PB-PE-PI-RN; Claro: Band B in SP, RJ/ES, RS, Centre-West, Northeast + Band A in the North; TIM: Band A in PR/SC and Northeast, Band B in MG and BA/SE. Many terms were extended only to 29 Nov 2028 pending refarming; some TIM/Vivo acts expired in 2023-24 with renewal still under Anatel/TCU review (included here).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/bandac.asp",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm"
+   ],
+   "holdings": [
+    {
+     "op": "vivo",
+     "mhz": 10.34,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2028-11-29"
+    },
+    {
+     "op": "claro",
+     "mhz": 9.06,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2027-2028"
+    },
+    {
+     "op": "tim",
+     "mhz": 5.37,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2027-2028"
+    },
+    {
+     "op": "algar",
+     "mhz": 0.2,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "ligga",
+     "mhz": 0.03,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "notes": "Londrina/Tamarana (ex-Sercomtel)"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8, partial)",
+   "names": [
+    "B8"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     943.5,
+     960
+    ],
+    "ul": [
+     898.5,
+     915
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Only 2x10 MHz is licensed for SMP within this range: extension blocks 898.5-901/943.5-946 and 907.5-910/952.5-955, Band D 910-912.5/955-957.5 and Band E 912.5-915/957.5-960 (901-907.5 is not SMP). Anatel refused to renew most of Vivo's own 900 MHz (Apr 2023, except MG); Vivo's current 900 MHz mostly came from Oi (2022).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/bandac.asp",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm"
+   ],
+   "holdings": [
+    {
+     "op": "tim",
+     "mhz": 3.75,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "claro",
+     "mhz": 2.22,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "vivo",
+     "mhz": 1.22,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2031-2035"
+    },
+    {
+     "op": "algar",
+     "mhz": 0.04,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "ligga",
+     "mhz": 0.01,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4/1.5 GHz L-band",
+   "names": [
+    "n75",
+    "n76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for SMP; no licences in Anatel's SMP acts.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/areasc.asp"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Brazil uses 1710-1785 as B3 uplink and 2110-2170 as B1 downlink; the AWS pairing is not used. No SMP acts.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/areasc.asp"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3) incl. M-band and extensions",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licensed as Bands D (1805-1820), E (1835-1850), M (1850-1860) and 2.5/5 MHz extension blocks (1820-1835, 1860-1880), all by area; the mosaic changed with Oi's 2022 split. Claro's acts that expired in 2026 were renewed by Anatel in Q2 2026 and some TIM acts are in renewal - both included.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.teleco.com.br/3g_freq.asp",
+    "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623"
+   ],
+   "holdings": [
+    {
+     "op": "tim",
+     "mhz": 27.7,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "vivo",
+     "mhz": 24.51,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2031-2032"
+    },
+    {
+     "op": "claro",
+     "mhz": 22.34,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "algar",
+     "mhz": 0.16,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    },
+    {
+     "op": "ligga",
+     "mhz": 0.11,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1990
+    ],
+    "ul": [
+     1850,
+     1910
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The US PCS plan is not used: 1850-1880 is B3 downlink (M-band/extensions) and 1920-1980 is B1 uplink. Vivo's old L-band (1895-1900) was realigned to 2165-2170.",
+   "sources": [
+    "https://teleco.com.br/areasc.asp",
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD",
+   "names": [
+    "B33",
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1885,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "TDD sub-bands 1885-1895 and 2010-2025 exist in Anatel's plan but hold no SMP licences.",
+   "sources": [
+    "https://www.teleco.com.br/3g_freq.asp",
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Sub-bands F (2110-2125), G (2125-2135), H (2135-2145), I (2145-2155), J (2155-2165) and L (2165-2170). Vivo holds J+L nationally (15 MHz) plus ex-Oi blocks; H is essentially unused (tiny Algar holding only). All renewed to Apr 2038 (TCU approved Feb 2025; Claro renewals Q2 2026, included).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+    "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623"
+   ],
+   "holdings": [
+    {
+     "op": "vivo",
+     "mhz": 23.15,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2038-04"
+    },
+    {
+     "op": "claro",
+     "mhz": 22.11,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2038-04"
+    },
+    {
+     "op": "tim",
+     "mhz": 14.34,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2038-04"
+    },
+    {
+     "op": "algar",
+     "mhz": 0.38,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (n40)",
+   "names": [
+    "n40",
+    "B40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2021 5G auction, regional lots: 2300-2350 (50 MHz, lots E) and 2350-2390 (40 MHz, lots F), licences to Dec 2041. 2390-2400 not assigned; the 40 MHz lot for the Northeast was unsold.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/5g_licitacao_result.asp",
+    "https://www.teleco.com.br/5g_freq.asp",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm"
+   ],
+   "holdings": [
+    {
+     "op": "claro",
+     "mhz": 27.13,
+     "paired": false,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "vivo",
+     "mhz": 24.58,
+     "paired": false,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "brisanet",
+     "mhz": 13.46,
+     "paired": false,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "tim",
+     "mhz": 13.42,
+     "paired": false,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "algar",
+     "mhz": 0.64,
+     "paired": false,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2041-12"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz FDD (B7) - per operator",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "National blocks W (Claro), V1+V2 (TIM) and X (Vivo) from the 2012 auction; P (2500-2510/2620-2630) is licensed by area: Vivo ~20%, Claro ~18%, TIM ~9%, Ligue ~2%, Sumicity ~2% of the population. Band X expires 2027 (renewal requested 2024).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.teleco.com.br/4g_freq.asp",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm"
+   ],
+   "holdings": [
+    {
+     "op": "vivo",
+     "mhz": 21.99,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2027-10"
+    },
+    {
+     "op": "claro",
+     "mhz": 21.76,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2027-10"
+    },
+    {
+     "op": "tim",
+     "mhz": 20.88,
+     "paired": true,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census)",
+     "expiry": "2027-10",
+     "notes": "V1 (2012) + V2 (ex-Oi, per Anatel acts) nationally, plus P in some areas"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz FDD (B7) - block positions",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Position view (not counted). Sub-band edges from Anatel acts; P and V1 edges also stated in TIM's 20-F.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm"
+   ],
+   "blocks": [
+    {
+     "op": "regional",
+     "dl": [
+      2620,
+      2630
+     ],
+     "ul": [
+      2500,
+      2510
+     ],
+     "notes": "Band P, area licences (Vivo, Claro, TIM, Ligue, Sumicity)"
+    },
+    {
+     "op": "claro",
+     "dl": [
+      2630,
+      2650
+     ],
+     "ul": [
+      2510,
+      2530
+     ],
+     "notes": "Band W"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "notes": "Bands V1 + V2"
+    },
+    {
+     "op": "vivo",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "notes": "Band X"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz TDD (B38/B41)",
+   "names": [
+    "B38",
+    "n41"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Bands T (2570-2585) and U (2585-2620): no primary SMP holder in Anatel's acts; only local secondary-use authorisations (Brisanet, Algar).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "3500",
+   "label": "3.3-3.7 GHz (n78) - per operator",
+   "names": [
+    "n78",
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3700
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2021 auction: Claro, Vivo, TIM each 100 MHz national (80 MHz lot B + 20 MHz lot D); one 20 MHz lot unsold. One 80 MHz block licensed by region (lots C). Regional shares use IBGE 2022 state populations; Anatel's acts list the 3.5 GHz licences only for ~85% of the population (municipalities cleared/licensed so far), so national licences are shown at their nominal 100 MHz. Band fully cleared of satellite TVRO 2 Dec 2024.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/5g_licitacao_result.asp",
+    "https://www.teleco.com.br/5g_freq.asp",
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+    "https://resources.telegeography.com/5g-progress-report-brazil",
+    "https://teletime.com.br/08/04/2026/anatel-concede-anuencia-para-unifique-assumir-35-ghz-da-ligga/",
+    "https://teletime.com.br/06/04/2026/unifique-compra-participacao-majoritaria-no-consorcio-amazonia-5g/"
+   ],
+   "holdings": [
+    {
+     "op": "claro",
+     "mhz": 100,
+     "paired": false,
+     "basis": "national licence (exact)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "vivo",
+     "mhz": 100,
+     "paired": false,
+     "basis": "national licence (exact)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "tim",
+     "mhz": 100,
+     "paired": false,
+     "basis": "national licence (exact)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "brisanet",
+     "mhz": 27.86,
+     "paired": false,
+     "basis": "80 MHz x 34.8% population share (Northeast + Centre-West excl. Algar sectors)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "amazonia5g",
+     "mhz": 24.02,
+     "paired": false,
+     "basis": "80 MHz x 30.0% population share (São Paulo excl. sector 33 + North)",
+     "expiry": "2041-12",
+     "notes": "Ex-Sercomtel/Ligga lot C2; Anatel acts still list Sercomtel"
+    },
+    {
+     "op": "iez",
+     "mhz": 15.06,
+     "paired": false,
+     "basis": "80 MHz x 18.8% population share (RJ, ES, MG excl. sector 3)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "unifique",
+     "mhz": 7.29,
+     "paired": false,
+     "basis": "80 MHz x 9.1% population share (SC + RS)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "ligga",
+     "mhz": 4.51,
+     "paired": false,
+     "basis": "80 MHz x 5.6% population share (Paraná)",
+     "expiry": "2041-12",
+     "notes": "Sale to Unifique agreed Jan 2026, Anatel prior consent 7 Apr 2026; completion not confirmed"
+    },
+    {
+     "op": "algar",
+     "mhz": 1.27,
+     "paired": false,
+     "basis": "80 MHz x 1.6% population share (Algar sectors)",
+     "expiry": "2041-12"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3-3.7 GHz (n78) - block positions",
+   "names": [
+    "n78",
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3700
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Position view (not counted). National blocks from Anatel acts and Teleco. The regional block is 3600-3680 per Anatel's acts (centre 3640 MHz, 80 MHz); trade press (TeleGeography, Teletime) describes it as 3620-3700 MHz - regulator preferred, conflict noted.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://www.teleco.com.br/5g_freq.asp",
+    "https://resources.telegeography.com/5g-progress-report-brazil"
+   ],
+   "blocks": [
+    {
+     "op": "claro",
+     "f": [
+      3300,
+      3400
+     ],
+     "expiry": "2041-12"
+    },
+    {
+     "op": "vivo",
+     "f": [
+      3400,
+      3500
+     ],
+     "expiry": "2041-12"
+    },
+    {
+     "op": "tim",
+     "f": [
+      3500,
+      3600
+     ],
+     "expiry": "2041-12"
+    },
+    {
+     "op": "regional",
+     "f": [
+      3600,
+      3680
+     ],
+     "notes": "Lots C: Brisanet (NE, CW), Amazônia 5G (SP, North), iez! (RJ/ES/MG), Unifique (SC/RS), Ligga->Unifique (PR), Algar (its sectors)"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3680,
+      3700
+     ],
+     "notes": "Unsold 20 MHz lot (D36)"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Used for fixed point-to-point links (Anatel Res. 723/2020); not assigned to SMP.",
+   "sources": [
+    "https://www.teleco.com.br/freq_no_brasil.asp"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258) - per operator",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24300,
+     27500
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2021 auction in 200 MHz lots: national lots Vivo 600 MHz, Claro 400 MHz (20 years), TIM 200 MHz (10 years, to Dec 2031); TIM also holds 2x200 MHz regional lots in the South, RJ/ES/MG and São Paulo (55% of population), Algar 1000 MHz in its area. 800 MHz of national lots and most regional lots are unsold. Neko won a 10-year 200 MHz lot for São Paulo in 2021 but it does not appear in Anatel's current acts (status unknown).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+    "https://teleco.com.br/5g_licitacao_result.asp",
+    "https://www.teleco.com.br/5g_freq.asp",
+    "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm"
+   ],
+   "holdings": [
+    {
+     "op": "vivo",
+     "mhz": 600.0,
+     "paired": false,
+     "basis": "national licence (exact)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "claro",
+     "mhz": 400.0,
+     "paired": false,
+     "basis": "national licence (exact)",
+     "expiry": "2041-12"
+    },
+    {
+     "op": "tim",
+     "mhz": 420.1,
+     "paired": false,
+     "basis": "200 MHz national + 400 MHz x 55.0% population (regional lots), from Anatel acts",
+     "expiry": "2031-12 / 2041-12"
+    },
+    {
+     "op": "algar",
+     "mhz": 15.91,
+     "paired": false,
+     "basis": "population-weighted national average (Anatel SMP acts per municipality x IBGE 2022 census); 1000 MHz in its area",
+     "expiry": "2041-12"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258) - block positions",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24300,
+     27500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Position view (not counted). Edges from Anatel's 200 MHz sub-band acts (26000_1..10 national, R1..R6 regional).",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+   ],
+   "blocks": [
+    {
+     "op": "vivo",
+     "f": [
+      24300,
+      24900
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      24900,
+      25300
+     ]
+    },
+    {
+     "op": "claro",
+     "f": [
+      25300,
+      25700
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25700,
+      26100
+     ]
+    },
+    {
+     "op": "tim",
+     "f": [
+      26100,
+      26300
+     ],
+     "expiry": "2031-12"
+    },
+    {
+     "op": "regional",
+     "f": [
+      26300,
+      26700
+     ],
+     "notes": "TIM in South, RJ/ES/MG and SP; Algar 26500-26700 in its area"
+    },
+    {
+     "op": "regional",
+     "f": [
+      26700,
+      27500
+     ],
+     "notes": "Algar only (its sectors); unsold elsewhere"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for SMP (37-39.5 GHz is used for fixed links per Res. 723/2020); no SMP acts.",
+   "sources": [
+    "https://www.teleco.com.br/freq_no_brasil.asp",
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; no SMP acts.",
+   "sources": [
+    "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Method: Anatel open data 'Autorizações e Licenciamento do SMP' (ATOS_SMP.csv, file dated 2026-09-27) lists every primary/secondary SMP radio-frequency act per municipality and sub-band. Primary acts were summed per operator and sub-band and weighted by 2022 census population (IBGE). Acts that expired in 2023-2026 but are under renewal (Claro 1.8/2.1 GHz renewed Q2 2026; TIM/Vivo 850 and some TIM 900/1800 pending) are included.",
+  "Figures are MHz per direction for FDD. Pop-weighted totals are approximate and labelled regional-average.",
+  "Anatel's acts file is not fully current for recent changes: it still lists Winity's renounced 700 MHz block and Sercomtel's 3.5 GHz block, and does not yet list the May 2026 700 MHz winners. These were corrected from Anatel's auction page, its Q2 2026 competition report and trade press.",
+  "Oi Móvel: the UPI split closed 20 Apr 2022; per TeleSíntese TIM got 49 MHz and Vivo 43 MHz (pop-weighted) of Oi's 92 MHz, Claro none. Anatel's acts show ex-Oi 900/1800/2100 blocks now with TIM and Vivo, and Oi's 2.5 GHz V2 with TIM.",
+  "Winity: won the national 2x10 MHz 700 MHz lot in 2021; the Vivo leasing deal was approved with conditions but Winity renounced the licence (end-2023; Anatel extinguished it Feb 2024). The block was re-auctioned by region on 4 May 2026 (all lots at the reserve price) to Amazônia 5G, Brisanet, Unifique and iez!; adjudicated 6 May 2026, licences formalised end-May 2026.",
+  "3.5 GHz regional block edges conflict: Anatel acts give centre 3640 MHz / 80 MHz (3600-3680), trade press says 3620-3700 MHz. Regulator data used.",
+  "Unifique's purchase of Ligga's Paraná 3.5 GHz block had Anatel prior consent on 7 Apr 2026 (valid 180 days); completion not confirmed as of asOf, so Paraná is still shown under Ligga.",
+  "850 MHz: Anatel limited renewals to 2028 because of a planned refarming/re-licensing; the future of the band (including regional operators' interest in 600 MHz) is under debate."
+ ],
+ "missing": [
+  "Exact block positions for regionally licensed bands (850, 900, 1800, 2100, 2300, 2.5 GHz P-band) are not drawn - they differ by area; only population-weighted amounts are given.",
+  "800 MHz SME (806-821/851-866, ex-Nextel/Claro) not compiled.",
+  "Neko's 2021 26 GHz regional lot (São Paulo, 200 MHz, 10 years) is absent from Anatel's acts; current status not verified.",
+  "Algar sector population share (1.6%) is taken from Algar's 87 municipalities in the 850 MHz acts; regional 3.5 GHz/700 MHz shares use state populations minus those municipalities.",
+  "EARFCN/NR-ARFCN not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "Anatel - Autorizações e Licenciamento do SMP (open data, ATOS_SMP.csv)",
+   "url": "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+  },
+  {
+   "title": "Anatel - Painel Autorizações e Licenciamentos do SMP",
+   "url": "https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento/autorizacoes-e-licenciamentos-do-smp"
+  },
+  {
+   "title": "IBGE - Censo 2022 população por município (API)",
+   "url": "https://servicodados.ibge.gov.br/api/v3/agregados/4714/periodos/2022/variaveis/93?localidades=N6[all]"
+  },
+  {
+   "title": "Anatel - Relatório de Monitoramento da Competição 2T2026",
+   "url": "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623"
+  },
+  {
+   "title": "Anatel - Leilão das subfaixas 708-718/763-773 MHz (2026)",
+   "url": "https://www.gov.br/anatel/pt-br/regulado/outorga/leilao-700-mhz-2026"
+  },
+  {
+   "title": "Teleco - 5G: resultado da licitação (2021)",
+   "url": "https://teleco.com.br/5g_licitacao_result.asp"
+  },
+  {
+   "title": "Teleco - Frequências de celular 5G",
+   "url": "https://www.teleco.com.br/5g_freq.asp"
+  },
+  {
+   "title": "Teleco - Frequências de celular 4G (700/2500 MHz)",
+   "url": "https://www.teleco.com.br/4g_freq.asp"
+  },
+  {
+   "title": "Teleco - 850/900 MHz",
+   "url": "https://teleco.com.br/bandac.asp"
+  },
+  {
+   "title": "Teleco - Áreas e frequências (caps per UF)",
+   "url": "https://teleco.com.br/areasc.asp"
+  },
+  {
+   "title": "Telefônica Brasil 20-F 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm"
+  },
+  {
+   "title": "TIM S.A. 20-F 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1826168/000129281426001915/timbform20f_2025.htm"
+  },
+  {
+   "title": "Teletime - Brisanet, Unifique, Amazônia 5G e iez! vencem leilão de 700 MHz",
+   "url": "https://teletime.com.br/04/05/2026/brisanet-unifique-amazonia-5g-e-iez-vencem-leilao-de-700-mhz/"
+  },
+  {
+   "title": "TeleSíntese - Anatel adjudica lotes do leilão de 700 MHz",
+   "url": "https://telesintese.com.br/anatel-adjudica-lotes-do-leilao-de-700-mhz/"
+  },
+  {
+   "title": "Teletime - Anatel extingue licença de 700 MHz da Winity",
+   "url": "https://teletime.com.br/22/02/2024/anatel-extingue-licenca-de-700-mhz-da-winity-e-libera-uso-secundario/"
+  },
+  {
+   "title": "Teletime - Anatel concede anuência para Unifique assumir 3,5 GHz da Ligga",
+   "url": "https://teletime.com.br/08/04/2026/anatel-concede-anuencia-para-unifique-assumir-35-ghz-da-ligga/"
+  },
+  {
+   "title": "Teletime - Unifique compra participação majoritária no consórcio Amazônia 5G",
+   "url": "https://teletime.com.br/06/04/2026/unifique-compra-participacao-majoritaria-no-consorcio-amazonia-5g/"
+  },
+  {
+   "title": "TeleSíntese - Divisão da Oi Móvel entre Claro, TIM e Vivo",
+   "url": "https://www.telesintese.com.br/veja-como-ficou-a-divisao-da-oi-movel-entre-claro-tim-e-vivo/"
+  },
+  {
+   "title": "TeleGeography - 5G Progress Report: Brazil",
+   "url": "https://resources.telegeography.com/5g-progress-report-brazil"
+  },
+  {
+   "title": "Mobile Time - iez! é a nova marca da Cloud2U",
+   "url": "https://www.mobiletime.com.br/noticias/13/02/2023/iez-telecom-e-a-nova-marca-da-cloud2u-para-operacao-do-5g/"
+  }
+ ]
+}
