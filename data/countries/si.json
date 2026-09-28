@@ -1,0 +1,978 @@
+{
+  "code": "si",
+  "name": "Slovenia",
+  "region": "Europe",
+  "asOf": "2026-09-28",
+  "coverage": "block-level",
+  "licensing": "national",
+  "summary": "Four MNOs: Telekom Slovenije, A1 Slovenija, Telemach (United Group) and T-2. The 2021 multiband auction (€164m) awarded 700 FDD/SDL, 1500, 2100, 2300, 3.6 GHz and 26 GHz. 800/2600 expire in May 2029 and 900/1800 in Jan 2031, with a re-auction planned for 2028.",
+  "operators": [
+    {
+      "id": "telekom",
+      "name": "Telekom Slovenije",
+      "legal": "Telekom Slovenije d.d.",
+      "color": "#1d4f91",
+      "aliases": [
+        "Telekom",
+        "Mobitel"
+      ],
+      "kind": "mno"
+    },
+    {
+      "id": "a1",
+      "name": "A1 Slovenija",
+      "legal": "A1 Slovenija d.d.",
+      "color": "#da291c",
+      "aliases": [
+        "A1",
+        "Si.mobil"
+      ],
+      "kind": "mno",
+      "notes": "A1 Group; formerly Si.mobil."
+    },
+    {
+      "id": "telemach",
+      "name": "Telemach",
+      "legal": "Telemach d.o.o.",
+      "color": "#00a1e4",
+      "aliases": [
+        "Telemach Slovenija",
+        "Tušmobil"
+      ],
+      "kind": "mno",
+      "notes": "United Group; took over Tušmobil in 2014."
+    },
+    {
+      "id": "t2",
+      "name": "T-2",
+      "legal": "T-2 d.o.o.",
+      "color": "#6cb33f",
+      "aliases": [],
+      "kind": "mno",
+      "notes": "Entered mobile spectrum in the 2021 auction (2100 MHz and 2300 MHz). Covers 55% of the population with 30 Mbit/s (AKOS, Jan 2026 data). It won local 2300 MHz rights in 2024 but did not pay, and AKOS revoked them in Nov 2024."
+    }
+  ],
+  "bands": [
+    {
+      "group": "700",
+      "label": "700 MHz FDD (B28/n28)",
+      "names": [
+        "B28",
+        "n28"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          758,
+          788
+        ],
+        "ul": [
+          703,
+          733
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "From the 2021 multiband auction. AKOS extended the 2021 licences to 20 years on 18 Dec 2023 (to about June 2041). The 733–736/788–791 MHz M2M/PPDR block is not drawn (spectrum-tracker lists BeeIn there; not confirmed by AKOS).",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_2.JPG",
+        "https://www.spectrum-tracker.com/Slovenia"
+      ],
+      "blocks": [
+        {
+          "op": "telekom",
+          "dl": [
+            758,
+            768
+          ],
+          "ul": [
+            703,
+            713
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            768,
+            778
+          ],
+          "ul": [
+            713,
+            723
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            778,
+            788
+          ],
+          "ul": [
+            723,
+            733
+          ],
+          "expiry": "2041"
+        }
+      ]
+    },
+    {
+      "group": "700",
+      "label": "700 MHz SDL (B67/n28 SDL)",
+      "names": [
+        "B67"
+      ],
+      "status": "assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          738,
+          758
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "15 MHz SDL won by Telekom Slovenije in 2021. 753–758 MHz is not assigned.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_2.JPG"
+      ],
+      "blocks": [
+        {
+          "op": "telekom",
+          "f": [
+            738,
+            753
+          ],
+          "expiry": "2041"
+        }
+      ]
+    },
+    {
+      "group": "800",
+      "label": "800 MHz (B20/n20)",
+      "names": [
+        "B20",
+        "n20"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          791,
+          821
+        ],
+        "ul": [
+          832,
+          862
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2014 auction; expires 31 May 2029. AKOS plans to re-auction it in 2028. Edges are from AKOS's Jul 2026 strategy (Slika 2-1). spectrum-tracker instead lists Telekom at 791–801 and A1 at 811–821; AKOS is followed.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": [
+        {
+          "op": "a1",
+          "dl": [
+            791,
+            801
+          ],
+          "ul": [
+            832,
+            842
+          ],
+          "expiry": "2029-05-31"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            801,
+            811
+          ],
+          "ul": [
+            842,
+            852
+          ],
+          "expiry": "2029-05-31"
+        },
+        {
+          "op": "telekom",
+          "dl": [
+            811,
+            821
+          ],
+          "ul": [
+            852,
+            862
+          ],
+          "expiry": "2029-05-31"
+        }
+      ]
+    },
+    {
+      "group": "900",
+      "label": "900 MHz (B8/n8)",
+      "names": [
+        "B8",
+        "n8"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          925,
+          960
+        ],
+        "ul": [
+          880,
+          915
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Expires 4 Jan 2031. The AKOS figure mislabels A1's block as 885–890/930–945 and Telekom's as 890–915/945–960. The figure's 70 MHz total, the 2021 per-operator totals (Telekom 2×15, A1 2×15, Telemach 2×5) and spectrum-tracker (Telekom 900–915, Telemach 880–885) fix A1 at 885–900 MHz.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.spectrum-tracker.com/Slovenia"
+      ],
+      "blocks": [
+        {
+          "op": "telemach",
+          "dl": [
+            925,
+            930
+          ],
+          "ul": [
+            880,
+            885
+          ],
+          "expiry": "2031-01-04"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            930,
+            945
+          ],
+          "ul": [
+            885,
+            900
+          ],
+          "expiry": "2031-01-04"
+        },
+        {
+          "op": "telekom",
+          "dl": [
+            945,
+            960
+          ],
+          "ul": [
+            900,
+            915
+          ],
+          "expiry": "2031-01-04"
+        }
+      ]
+    },
+    {
+      "group": "1400",
+      "label": "1500 MHz SDL (B32/B75/n75)",
+      "names": [
+        "B32",
+        "B75",
+        "n75"
+      ],
+      "status": "assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          1427,
+          1517
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "From the 2021 auction. The AKOS results table prints Telekom as 1432–1452 and A1 as 1472–1512, but its block chart and the 2026 strategy give 1427–1452 (25 MHz) and 1472–1517 (45 MHz), which match the amounts sold.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_2.JPG"
+      ],
+      "blocks": [
+        {
+          "op": "telekom",
+          "f": [
+            1427,
+            1452
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "telemach",
+          "f": [
+            1452,
+            1472
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "a1",
+          "f": [
+            1472,
+            1517
+          ],
+          "expiry": "2041"
+        }
+      ]
+    },
+    {
+      "group": "1800",
+      "label": "1800 MHz (B3/n3)",
+      "names": [
+        "B3",
+        "n3"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1805,
+          1880
+        ],
+        "ul": [
+          1710,
+          1785
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Expires 4 Jan 2031; the next award is planned for the 2028 multiband auction.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": [
+        {
+          "op": "a1",
+          "dl": [
+            1805,
+            1835
+          ],
+          "ul": [
+            1710,
+            1740
+          ],
+          "expiry": "2031-01-04"
+        },
+        {
+          "op": "telekom",
+          "dl": [
+            1835,
+            1860
+          ],
+          "ul": [
+            1740,
+            1765
+          ],
+          "expiry": "2031-01-04"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            1860,
+            1880
+          ],
+          "ul": [
+            1765,
+            1785
+          ],
+          "expiry": "2031-01-04"
+        }
+      ]
+    },
+    {
+      "group": "2100",
+      "label": "2100 MHz (B1/n1)",
+      "names": [
+        "B1",
+        "n1"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2170
+        ],
+        "ul": [
+          1920,
+          1980
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Re-awarded in the 2021 auction and available from 22 Sep 2021.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG",
+        "https://www.akos-rs.si/fileadmin/user_upload/Drazba_rezultati_popravek.PNG"
+      ],
+      "blocks": [
+        {
+          "op": "a1",
+          "dl": [
+            2110,
+            2125
+          ],
+          "ul": [
+            1920,
+            1935
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            2125,
+            2140
+          ],
+          "ul": [
+            1935,
+            1950
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "telekom",
+          "dl": [
+            2140,
+            2160
+          ],
+          "ul": [
+            1950,
+            1970
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "t2",
+          "dl": [
+            2160,
+            2170
+          ],
+          "ul": [
+            1970,
+            1980
+          ],
+          "expiry": "2041"
+        }
+      ]
+    },
+    {
+      "group": "2000tdd",
+      "label": "2 GHz unpaired TDD (B33/B34)",
+      "names": [
+        "B33",
+        "B34"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          1900,
+          1920
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned for mobile networks. It is not in AKOS's table of assigned spectrum (Slika 2-1).",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2300",
+      "label": "2300 MHz (B40/n40)",
+      "names": [
+        "B40",
+        "n40"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2300,
+          2400
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Available from 1 Jan 2022. The 2021 results chart shows T-2 at 2320–2360 and Telemach at 2360–2390; AKOS's 2026 strategy shows 2330–2370 and 2370–2400, with 2300–2330 kept for local use. The 2026 regulator figure is followed.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG",
+        "https://www.akos-rs.si/javna-posvetovanja-in-razpisi/novica/agencija-razveljavila-dodelitev-frekvenc-druzbi-t-2"
+      ],
+      "blocks": [
+        {
+          "op": "unassigned",
+          "f": [
+            2300,
+            2330
+          ],
+          "notes": "Local-use blocks BA1/BA2; AKOS plans a re-offer in 2028"
+        },
+        {
+          "op": "t2",
+          "f": [
+            2330,
+            2370
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "telemach",
+          "f": [
+            2370,
+            2400
+          ],
+          "expiry": "2041"
+        }
+      ]
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz FDD (B7/n7)",
+      "names": [
+        "B7",
+        "n7"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2620,
+          2690
+        ],
+        "ul": [
+          2500,
+          2570
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2014 auction; expires 31 May 2029.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": [
+        {
+          "op": "telekom",
+          "dl": [
+            2620,
+            2655
+          ],
+          "ul": [
+            2500,
+            2535
+          ],
+          "expiry": "2029-05-31"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            2655,
+            2690
+          ],
+          "ul": [
+            2535,
+            2570
+          ],
+          "expiry": "2029-05-31"
+        }
+      ]
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz TDD (B38/n38)",
+      "names": [
+        "B38",
+        "n38"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2570,
+          2620
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "25 MHz each, including the restricted 5 MHz edge pieces.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": [
+        {
+          "op": "telekom",
+          "f": [
+            2570,
+            2595
+          ],
+          "expiry": "2029-05-31"
+        },
+        {
+          "op": "a1",
+          "f": [
+            2595,
+            2620
+          ],
+          "expiry": "2029-05-31"
+        }
+      ]
+    },
+    {
+      "group": "3500",
+      "label": "3.4–3.8 GHz (n78)",
+      "names": [
+        "n78"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          3400,
+          3800
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2021 auction: Telekom 140, Telemach 140 and A1 100 MHz. 3400–3420 MHz is for local use (auctioned in 2023–2026). AKOS is also licensing local networks in 3.8–4.2 GHz.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG"
+      ],
+      "blocks": [
+        {
+          "op": "unassigned",
+          "f": [
+            3400,
+            3420
+          ],
+          "notes": "Local broadband / local-use licences"
+        },
+        {
+          "op": "telekom",
+          "f": [
+            3420,
+            3560
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "telemach",
+          "f": [
+            3560,
+            3700
+          ],
+          "expiry": "2041"
+        },
+        {
+          "op": "a1",
+          "f": [
+            3700,
+            3800
+          ],
+          "expiry": "2041"
+        }
+      ]
+    },
+    {
+      "group": "26g",
+      "label": "26 GHz (n258)",
+      "names": [
+        "n258"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          24250,
+          27500
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2021 auction. 25.1–26.5 GHz is unassigned; AKOS may offer it in the 2028 auction. Below 25.1 GHz is for other uses.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+        "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG"
+      ],
+      "blocks": [
+        {
+          "op": "telemach",
+          "f": [
+            26500,
+            26700
+          ],
+          "expiry": "2041-06-15"
+        },
+        {
+          "op": "a1",
+          "f": [
+            26700,
+            27100
+          ],
+          "expiry": "2041-06-15"
+        },
+        {
+          "op": "telekom",
+          "f": [
+            27100,
+            27500
+          ],
+          "expiry": "2041-06-15"
+        }
+      ]
+    },
+    {
+      "group": "40g",
+      "label": "40 GHz (n259)",
+      "names": [
+        "n259"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          37000,
+          43500
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. AKOS plans to offer 40.5–43.5 GHz (15×200 MHz) in the 2028 multiband auction if there is interest.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "600",
+      "label": "600 MHz (B71/n71)",
+      "names": [
+        "n71"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          617,
+          652
+        ],
+        "ul": [
+          663,
+          698
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in Europe; 470–694 MHz remains allocated to terrestrial broadcasting (DTT) under the EU UHF decision (EU) 2017/899.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "850",
+      "label": "850 MHz (B5)",
+      "names": [
+        "B5",
+        "n5"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          869,
+          894
+        ],
+        "ul": [
+          824,
+          849
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in CEPT/EU; 824–894 MHz overlaps the 800 MHz (B20) and E-GSM/GSM-R plans.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1700",
+      "label": "AWS 1.7/2.1 GHz (B4/B66)",
+      "names": [
+        "B66",
+        "n66"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2155
+        ],
+        "ul": [
+          1710,
+          1755
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "AWS pairing not used in Europe; 1710–1785 MHz is the B3 uplink and 2110–2170 MHz is B1.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1900",
+      "label": "PCS 1900 (B2/B25)",
+      "names": [
+        "B2",
+        "n2"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1930,
+          1995
+        ],
+        "ul": [
+          1850,
+          1915
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "PCS pairing not used in Europe; 1880–1900 MHz is DECT, 1900–1920 MHz unpaired and 1980–2010/2170–2200 MHz is 2 GHz MSS.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "4900",
+      "label": "4.4–5.0 GHz (n79)",
+      "names": [
+        "n79"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          4400,
+          5000
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised for MFCN in the EU; no mobile assignments.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "47g",
+      "label": "47 GHz (n262)",
+      "names": [
+        "n262"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          47200,
+          48200
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "No 47 GHz mobile assignments.",
+      "sources": [
+        "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+      ],
+      "blocks": []
+    }
+  ],
+  "notes": [
+    "No davwheat seed existed for SI; compiled from scratch.",
+    "Primary source: AKOS's consultation draft of the Spectrum Management Strategy 2027–2029 (Jul 2026), Slika 2-1 'Podeljeni spekter – stanje'. It is cross-checked against AKOS's 2021 auction result tables and against spectrum-tracker.",
+    "AKOS extended the 2021 licences (700, 1500, 2100, 2300, 3600 MHz, 26 GHz) to 20 years on 18 Dec 2023. Expiry is shown as 2041; the 26 GHz lots are stated as valid until 15 Jun 2041.",
+    "Conflicts: 800 MHz order (AKOS: A1/Telemach/Telekom, spectrum-tracker: Telekom/Telemach/A1), 900 MHz edge typos in the AKOS figure, 1500 MHz edge typos in the AKOS results table, and 2300 MHz edges moved by 10 MHz between 2021 and 2026. The latest AKOS figure is followed in each case; see the band notes.",
+    "The 2021 auction raised €164,236,603 (A1 €42.4m, T-2 €18.2m, Telekom Slovenije €52.1m, Telemach €51.6m)."
+  ],
+  "missing": [
+    "700 MHz central gap (733–736/788–791 MHz) use not confirmed",
+    "Exact expiry day of the 2021 licences other than 26 GHz",
+    "Corporate changes after 2024 (e.g. any United Group/Telemach or T-2 ownership changes) not verified",
+    "Carrier EARFCN/NR-ARFCN not compiled"
+  ],
+  "changes": [],
+  "sources": [
+    {
+      "title": "AKOS – Strategija upravljanja RF spektra 2027–2029 (posvetovalni dokument, 2026)",
+      "url": "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+    },
+    {
+      "title": "AKOS – Javni razpisi za mobilna omrežja (2021 auction results)",
+      "url": "https://www.akos-rs.si/radijski-spekter/raziscite/javni-razpisi-za-mobilna-omrezja"
+    },
+    {
+      "title": "AKOS – results table (image)",
+      "url": "https://www.akos-rs.si/fileadmin/user_upload/Drazba_rezultati_popravek.PNG"
+    },
+    {
+      "title": "AKOS – results by band (images)",
+      "url": "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG"
+    },
+    {
+      "title": "AKOS – razveljavitev dodelitve T-2 (2024)",
+      "url": "https://www.akos-rs.si/javna-posvetovanja-in-razpisi/novica/agencija-razveljavila-dodelitev-frekvenc-druzbi-t-2"
+    },
+    {
+      "title": "spectrum-tracker – Slovenia",
+      "url": "https://www.spectrum-tracker.com/Slovenia"
+    }
+  ]
+}
