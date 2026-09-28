@@ -1,0 +1,597 @@
+{
+ "code": "ru",
+ "name": "Russia",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "beeline",
+   "name": "Beeline RU",
+   "color": "#ebc842",
+   "aliases": [
+    "Beeline"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "megafon",
+   "name": "MegaFon RU",
+   "color": "#66b660",
+   "aliases": [
+    "MegaFon"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "mts",
+   "name": "MTS RU",
+   "color": "#d9313c",
+   "aliases": [
+    "MTS"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "tele2",
+   "name": "Tele2 RU",
+   "color": "#202228",
+   "aliases": [
+    "Tele2"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "regional",
+   "name": "Regional",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "tele2",
+     "dl": [
+      2110,
+      2125
+     ],
+     "ul": [
+      1920,
+      1935
+     ],
+     "earfcn": [
+      75,
+      100,
+      125
+     ]
+    },
+    {
+     "op": "megafon",
+     "dl": [
+      2125,
+      2140
+     ],
+     "ul": [
+      1935,
+      1950
+     ],
+     "earfcn": [
+      200,
+      225
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      2140,
+      2155
+     ],
+     "ul": [
+      1950,
+      1965
+     ],
+     "earfcn": [
+      350,
+      375,
+      400
+     ]
+    },
+    {
+     "op": "beeline",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "earfcn": [
+      550,
+      525
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3) — allocation in Moscow",
+   "names": [
+    "B3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "beeline",
+     "dl": [
+      1805,
+      1825.2
+     ],
+     "ul": [
+      1710,
+      1730.2
+     ],
+     "earfcn": [
+      1301
+     ]
+    },
+    {
+     "op": "megafon",
+     "dl": [
+      1825.2,
+      1855.2
+     ],
+     "ul": [
+      1730.2,
+      1760.2
+     ],
+     "earfcn": [
+      1602,
+      1458
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      1855.2,
+      1880
+     ],
+     "ul": [
+      1760.2,
+      1785
+     ],
+     "earfcn": [
+      1802,
+      1919
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "megafon",
+     "dl": [
+      2620,
+      2660
+     ],
+     "ul": [
+      2500,
+      2540
+     ],
+     "earfcn": [
+      2850,
+      3048
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      2660,
+      2670
+     ],
+     "ul": [
+      2540,
+      2550
+     ],
+     "earfcn": [
+      3200
+     ]
+    },
+    {
+     "op": "beeline",
+     "dl": [
+      2670,
+      2680
+     ],
+     "ul": [
+      2550,
+      2560
+     ],
+     "earfcn": [
+      3300
+     ]
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      2680,
+      2690
+     ],
+     "ul": [
+      2560,
+      2570
+     ],
+     "earfcn": [
+      3400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8) — allocation in Moscow",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "megafon",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "earfcn": [
+      3500
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      935,
+      939.8
+     ],
+     "ul": [
+      890,
+      894.8
+     ]
+    },
+    {
+     "op": "beeline",
+     "dl": [
+      939.8,
+      949.8
+     ],
+     "ul": [
+      894.8,
+      904.8
+     ],
+     "earfcn": [
+      3621,
+      3648
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      949.8,
+      955
+     ],
+     "ul": [
+      904.8,
+      910
+     ],
+     "earfcn": [
+      3724
+     ]
+    },
+    {
+     "op": "megafon",
+     "dl": [
+      955,
+      958
+     ],
+     "ul": [
+      910,
+      913
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      958,
+      960
+     ],
+     "ul": [
+      913,
+      915
+     ]
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "tele2",
+     "dl": [
+      791,
+      798.5
+     ],
+     "ul": [
+      832,
+      839.5
+     ],
+     "earfcn": [
+      6200,
+      6175
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      798.5,
+      806
+     ],
+     "ul": [
+      839.5,
+      847
+     ],
+     "earfcn": [
+      6275,
+      6262
+     ]
+    },
+    {
+     "op": "megafon",
+     "dl": [
+      806,
+      813.5
+     ],
+     "ul": [
+      847,
+      854.5
+     ],
+     "earfcn": [
+      6338,
+      6350
+     ]
+    },
+    {
+     "op": "beeline",
+     "dl": [
+      813.5,
+      821
+     ],
+     "ul": [
+      854.5,
+      862
+     ],
+     "earfcn": [
+      6413
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "regional",
+     "f": [
+      2570,
+      2595
+     ],
+     "earfcn": [
+      37900
+     ]
+    },
+    {
+     "op": "mts",
+     "f": [
+      2595,
+      2620
+     ],
+     "earfcn": [
+      38100
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+   ],
+   "blocks": [
+    {
+     "op": "tele2",
+     "f": [
+      2300,
+      2400
+     ],
+     "earfcn": [
+      38750,
+      38950,
+      39150,
+      38825,
+      38900,
+      39375,
+      39525,
+      39550,
+      39575,
+      39048,
+      39000,
+      39148,
+      39200,
+      39400,
+      39600
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

@@ -1,0 +1,925 @@
+{
+ "code": "it",
+ "name": "Italy",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "tim",
+   "name": "Tim IT",
+   "color": "#1d19a3",
+   "aliases": [
+    "Tim"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone IT",
+   "color": "#e60000",
+   "aliases": [
+    "Vodafone",
+    "VF",
+    "VF IT"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "windtre",
+   "name": "WindTre",
+   "color": "#ff5700",
+   "aliases": [
+    "WindTre IT"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "iliad",
+   "name": "Iliad IT",
+   "color": "#910000",
+   "aliases": [
+    "Iliad"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "fastweb",
+   "name": "Fastweb IT",
+   "color": "#ffc600",
+   "aliases": [
+    "Fastweb"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "public-safety",
+   "name": "Public Safety",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  },
+  {
+   "id": "fwa",
+   "name": "FWA",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "windtre",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "earfcn": [
+      100
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      2130,
+      2145
+     ],
+     "ul": [
+      1940,
+      1955
+     ],
+     "earfcn": [
+      275,
+      300
+     ],
+     "nrarfcn": [
+      427470
+     ],
+     "notes": "EARFCN 275 is used for 10 or 15 MHz of LTE · EARFCN 300 is used for 10 MHz of LTE · 5G NR operating as DSS n1 on some sites",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "iliad",
+     "dl": [
+      2145,
+      2155
+     ],
+     "ul": [
+      1955,
+      1965
+     ],
+     "earfcn": [
+      400
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "earfcn": [
+      525
+     ],
+     "nrarfcn": [
+      432050,
+      433010
+     ],
+     "notes": "5G NR operating as DSS n1",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "public-safety",
+     "dl": [
+      1805,
+      1810
+     ],
+     "ul": [
+      1710,
+      1715
+     ],
+     "earfcn": [
+      1225
+     ],
+     "notes": "Public Safety",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      1810,
+      1830
+     ],
+     "ul": [
+      1715,
+      1735
+     ],
+     "earfcn": [
+      1350
+     ],
+     "nrarfcn": [
+      365530
+     ],
+     "notes": "5G NR is operating as DSS n3 in some trial sites · Rarely used for DCS",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "iliad",
+     "dl": [
+      1830,
+      1840
+     ],
+     "ul": [
+      1735,
+      1745
+     ],
+     "earfcn": [
+      1500
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "windtre",
+     "dl": [
+      1840,
+      1860
+     ],
+     "ul": [
+      1745,
+      1765
+     ],
+     "earfcn": [
+      1650
+     ],
+     "nrarfcn": [
+      368890,
+      371530
+     ],
+     "notes": "5G NR operating as DSS n3 · Rarely used for DCS",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "earfcn": [
+      1850
+     ],
+     "notes": "Rarely used for DCS",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7/n7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "public-safety",
+     "dl": [
+      2620,
+      2630
+     ],
+     "ul": [
+      2500,
+      2510
+     ],
+     "earfcn": [
+      2800
+     ],
+     "notes": "Public Safety · From September 2020 to March 2022 this block was used by Iliad in some regions",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "iliad",
+     "dl": [
+      2630,
+      2640
+     ],
+     "ul": [
+      2510,
+      2520
+     ],
+     "earfcn": [
+      2900
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2640,
+      2655
+     ],
+     "ul": [
+      2520,
+      2535
+     ],
+     "earfcn": [
+      3025
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      2655,
+      2670
+     ],
+     "ul": [
+      2535,
+      2550
+     ],
+     "earfcn": [
+      3175
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "windtre",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "earfcn": [
+      3350
+     ],
+     "nrarfcn": [
+      535010,
+      537410
+     ],
+     "notes": "5G NR operating as DSS n7 when DCS is deployed",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "iliad",
+     "dl": [
+      925.1,
+      930.1
+     ],
+     "ul": [
+      880.1,
+      885.1
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      930.2,
+      940
+     ],
+     "ul": [
+      885.2,
+      895
+     ],
+     "earfcn": [
+      3526
+     ],
+     "notes": "LTE is operating only on some trial sites",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      940.4,
+      950
+     ],
+     "ul": [
+      895.4,
+      905
+     ],
+     "earfcn": [
+      3676
+     ],
+     "notes": "LTE is operating only on some trial sites",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "windtre",
+     "dl": [
+      950.2,
+      959.8
+     ],
+     "ul": [
+      905.2,
+      914.8
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "windtre",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "iliad",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "earfcn": [
+      9260
+     ],
+     "nrarfcn": [
+      152690
+     ],
+     "notes": "5G NR operating as DSS n28",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "nrarfcn": [
+      154570
+     ],
+     "notes": "Usually is NR only, on some sites is operating as DSS n28",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "nrarfcn": [
+      156510
+     ],
+     "notes": "Started as LTE only, most sites have enabled 5G NR operating as DSS n28, some sites are NR only",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4–1.5 GHz (B32)",
+   "names": [
+    "B32"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1452,
+     1496
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "tim",
+     "f": [
+      1452,
+      1472
+     ],
+     "earfcn": [
+      10020
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      1472,
+      1492
+     ],
+     "earfcn": [
+      10220
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "windtre",
+     "f": [
+      2570,
+      2575
+     ],
+     "notes": "Unused TDD spectrum",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "windtre",
+     "f": [
+      2575,
+      2595
+     ],
+     "earfcn": [
+      37900
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "windtre",
+     "f": [
+      2595,
+      2600
+     ],
+     "notes": "Unused TDD spectrum",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "public-safety",
+     "f": [
+      2600,
+      2620
+     ],
+     "notes": "Public Safety",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "fwa",
+     "f": [
+      3440,
+      3500
+     ],
+     "notes": "FWA",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "public-safety",
+     "f": [
+      3500,
+      3540
+     ],
+     "notes": "Public Safety",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "f": [
+      3540,
+      3560
+     ],
+     "nrarfcn": [
+      636768
+     ],
+     "notes": "In Valle d'Aosta and Provincia Autonoma di Bolzano this block is from 3460 MHz to 3480 MHz",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "windtre",
+     "f": [
+      3560,
+      3620
+     ],
+     "nrarfcn": [
+      638016
+     ],
+     "notes": "In Valle d'Aosta and Provincia Autonoma di Bolzano this block is divided into two block: one of 40 MHz (NRARFCN 636480 and 636576) and one of 20 MHz (NRARFCN 640320 and 640704)",
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "iliad",
+     "f": [
+      3620,
+      3640
+     ],
+     "nrarfcn": [
+      641664
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      3640,
+      3720
+     ],
+     "nrarfcn": [
+      643296,
+      645312
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "f": [
+      3720,
+      3800
+     ],
+     "nrarfcn": [
+      648768,
+      650688
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "24–29 GHz (n257)",
+   "names": [
+    "n257"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     29500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [
+    {
+     "op": "windtre",
+     "f": [
+      26500,
+      26700
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "iliad",
+     "f": [
+      26700,
+      26900
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "tim",
+     "f": [
+      26900,
+      27100
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "fastweb",
+     "f": [
+      27100,
+      27300
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      27300,
+      27500
+     ],
+     "source": "https://lteitaly.it/it/spectrum.php"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

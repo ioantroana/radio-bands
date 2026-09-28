@@ -1,0 +1,579 @@
+{
+ "code": "kr",
+ "name": "South Korea",
+ "region": "Asia-Pacific",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "lg-u",
+   "name": "LG U+",
+   "color": "#c1043d",
+   "aliases": [
+    "LG Uplus"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "skt",
+   "name": "SK Telecom",
+   "color": "#e81133",
+   "aliases": [
+    "SKT"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "kt",
+   "name": "KT",
+   "color": "#04a3bb",
+   "aliases": [
+    "Korea Telecom"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "mois",
+   "name": "Ministry of the Interior and Safety",
+   "color": "#183d62",
+   "aliases": [
+    "MOIS"
+   ],
+   "kind": "mno"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+   ],
+   "blocks": [
+    {
+     "op": "lg-u",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "earfcn": [
+      100
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+    },
+    {
+     "op": "skt",
+     "dl": [
+      2130,
+      2145
+     ],
+     "ul": [
+      1940,
+      1955
+     ],
+     "earfcn": [
+      275
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+    },
+    {
+     "op": "skt",
+     "dl": [
+      2145,
+      2150
+     ],
+     "ul": [
+      1955,
+      1960
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      2150,
+      2165
+     ],
+     "ul": [
+      1960,
+      1975
+     ],
+     "earfcn": [
+      450,
+      475
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      2165,
+      2170
+     ],
+     "ul": [
+      1975,
+      1980
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      1805,
+      1810
+     ],
+     "ul": [
+      1710,
+      1715
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "skt",
+     "dl": [
+      1810,
+      1830
+     ],
+     "ul": [
+      1715,
+      1735
+     ],
+     "earfcn": [
+      1350
+     ],
+     "notes": "1725 – 1730 MHz reserved",
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      1830,
+      1860
+     ],
+     "ul": [
+      1735,
+      1765
+     ],
+     "earfcn": [
+      1550,
+      1650,
+      1694
+     ],
+     "notes": "1740 – 1745 MHz reserved",
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      869,
+      874
+     ],
+     "ul": [
+      824,
+      829
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "skt",
+     "dl": [
+      874,
+      884
+     ],
+     "ul": [
+      829,
+      839
+     ],
+     "earfcn": [
+      2500
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "lg-u",
+     "dl": [
+      884,
+      894
+     ],
+     "ul": [
+      839,
+      849
+     ],
+     "earfcn": [
+      2600
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "skt",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "earfcn": [
+      2850
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "lg-u",
+     "dl": [
+      2640,
+      2660
+     ],
+     "ul": [
+      2520,
+      2540
+     ],
+     "earfcn": [
+      3050
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "skt",
+     "dl": [
+      2660,
+      2670
+     ],
+     "ul": [
+      2540,
+      2550
+     ],
+     "earfcn": [
+      3200
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      949.3
+     ],
+     "ul": [
+      880,
+      904.3
+     ],
+     "notes": "Uplink overlaps with B5 downlink, not allocated for mobile network",
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      949.3,
+      959.3
+     ],
+     "ul": [
+      904.3,
+      914.3
+     ],
+     "earfcn": [
+      3743
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28)",
+   "names": [
+    "B28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      773
+     ],
+     "ul": [
+      703,
+      718
+     ],
+     "notes": "698 – 710, 758 – 771 MHz used for TV broadcast",
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "mois",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "earfcn": [
+      9410
+     ],
+     "notes": "PS-LTE network: https://www.safenet.go.kr/",
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      783,
+      803
+     ],
+     "ul": [
+      728,
+      748
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "lg-u",
+     "f": [
+      3400,
+      3500
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "kt",
+     "f": [
+      3500,
+      3600
+     ],
+     "nrarfcn": [
+      636672
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    },
+    {
+     "op": "skt",
+     "f": [
+      3600,
+      3700
+     ],
+     "nrarfcn": [
+      643392
+     ],
+     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

@@ -1,0 +1,669 @@
+{
+ "code": "lt",
+ "name": "Lithuania",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "tele2-lt",
+   "name": "Tele2 LT",
+   "color": "#000000",
+   "aliases": [
+    "UAB Tele2 Lietuva"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "telia-lt",
+   "name": "Telia LT",
+   "color": "#663989",
+   "aliases": [
+    "AB Telia Lietuva"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "bite-lt",
+   "name": "Bite LT",
+   "color": "#00aa14",
+   "aliases": [
+    "UAB Bite Lietuva"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "ministry-of-defence",
+   "name": "Ministry of Defence",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      2110,
+      2110.3
+     ],
+     "ul": [
+      1920,
+      1920.3
+     ]
+    },
+    {
+     "op": "bite-lt",
+     "dl": [
+      2110.3,
+      2130.1
+     ],
+     "ul": [
+      1920.3,
+      1940.1
+     ],
+     "notes": "UAB Bite Lietuva · 15 MHz Deployed"
+    },
+    {
+     "op": "telia-lt",
+     "dl": [
+      2130.1,
+      2149.9
+     ],
+     "ul": [
+      1940.1,
+      1959.9
+     ],
+     "earfcn": [
+      300
+     ],
+     "notes": "AB Telia Lietuva · 20 MHz Nationwide"
+    },
+    {
+     "op": "tele2-lt",
+     "dl": [
+      2149.9,
+      2169.7
+     ],
+     "ul": [
+      1959.9,
+      1979.7
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2169.7,
+      2170
+     ],
+     "ul": [
+      1979.7,
+      1980
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "telia-lt",
+     "dl": [
+      1805,
+      1830
+     ],
+     "ul": [
+      1710,
+      1735
+     ],
+     "earfcn": [
+      1348
+     ],
+     "notes": "AB Telia Lietuva · 20 MHz Nationwide"
+    },
+    {
+     "op": "tele2-lt",
+     "dl": [
+      1830,
+      1855
+     ],
+     "ul": [
+      1735,
+      1760
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    },
+    {
+     "op": "bite-lt",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "notes": "UAB Bite Lietuva"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "tele2-lt",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    },
+    {
+     "op": "telia-lt",
+     "dl": [
+      2640,
+      2660
+     ],
+     "ul": [
+      2520,
+      2540
+     ],
+     "notes": "AB Telia LT"
+    },
+    {
+     "op": "bite-lt",
+     "dl": [
+      2660,
+      2690
+     ],
+     "ul": [
+      2540,
+      2570
+     ],
+     "notes": "UAB Bite Lietuva"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      925.1
+     ],
+     "ul": [
+      880,
+      880.1
+     ]
+    },
+    {
+     "op": "bite-lt",
+     "dl": [
+      925.1,
+      936.7
+     ],
+     "ul": [
+      880.1,
+      891.7
+     ],
+     "notes": "UAB Bite Lietuva"
+    },
+    {
+     "op": "telia-lt",
+     "dl": [
+      936.7,
+      948.3
+     ],
+     "ul": [
+      891.7,
+      903.3
+     ],
+     "earfcn": [
+      3616
+     ],
+     "notes": "AB Telia Lietuva · 5 MHz Deployment Nationwide"
+    },
+    {
+     "op": "tele2-lt",
+     "dl": [
+      948.3,
+      959.9
+     ],
+     "ul": [
+      903.3,
+      914.9
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      959.9,
+      960
+     ],
+     "ul": [
+      914.9,
+      915
+     ]
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "bite-lt",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "notes": "UAB Bite Lietuva"
+    },
+    {
+     "op": "telia-lt",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "notes": "AB Telia Lietuva"
+    },
+    {
+     "op": "tele2-lt",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "ministry-of-defence",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "notes": "Ministry of Defence · Russian TV interference"
+    },
+    {
+     "op": "telia-lt",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "nrarfcn": [
+      154570
+     ],
+     "notes": "AB Telia Lietuva · 4G/5G (LTE/NR) · Nationwide"
+    },
+    {
+     "op": "bite-lt",
+     "dl": [
+      778,
+      783
+     ],
+     "ul": [
+      723,
+      728
+     ],
+     "notes": "UAB Bite Lietuva"
+    },
+    {
+     "op": "tele2-lt",
+     "dl": [
+      783,
+      788
+     ],
+     "ul": [
+      728,
+      733
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "bite-lt",
+     "f": [
+      2570,
+      2620
+     ],
+     "notes": "UAB Bite Lietuva"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      2300,
+      2310
+     ]
+    },
+    {
+     "op": "bite-lt",
+     "f": [
+      2310,
+      2390
+     ],
+     "notes": "UAB Bite Lietuva"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2390,
+      2400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3300,
+      3400
+     ]
+    },
+    {
+     "op": "tele2-lt",
+     "f": [
+      3400,
+      3500
+     ],
+     "notes": "UAB Tele2 Lietuva"
+    },
+    {
+     "op": "telia-lt",
+     "f": [
+      3500,
+      3600
+     ],
+     "nrarfcn": [
+      634080
+     ],
+     "notes": "AB Telia Lietuva"
+    },
+    {
+     "op": "bite-lt",
+     "f": [
+      3600,
+      3700
+     ],
+     "notes": "UAB Bite Lietuva"
+    },
+    {
+     "op": "ministry-of-defence",
+     "f": [
+      3700,
+      3800
+     ],
+     "notes": "Radijo Rysio Tarnyba"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

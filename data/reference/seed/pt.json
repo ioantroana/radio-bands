@@ -1,0 +1,731 @@
+{
+ "code": "pt",
+ "name": "Portugal",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "meo",
+   "name": "MEO",
+   "color": "#008d8c",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone PT",
+   "color": "#ed0000",
+   "aliases": [
+    "Vodafone"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "nos",
+   "name": "NOS",
+   "color": "#1a1a1a",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "digi",
+   "name": "DIGI PT",
+   "color": "#00a7ff",
+   "aliases": [
+    "DIGI"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "nowo",
+   "name": "NOWO",
+   "color": "#f96d00",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "denseair",
+   "name": "DenseAir",
+   "color": "#c1c1c1",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "vdf",
+   "name": "VDF",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "vdf",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "earfcn": [
+      103
+     ],
+     "notes": "Vodafone",
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ],
+     "earfcn": [
+      300
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "meo",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "earfcn": [
+      500
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
+    "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "vdf",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "earfcn": [
+      1300
+     ],
+     "notes": "Vodafone",
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      1825,
+      1845
+     ],
+     "ul": [
+      1730,
+      1750
+     ],
+     "earfcn": [
+      1500
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "meo",
+     "dl": [
+      1845,
+      1865
+     ],
+     "ul": [
+      1750,
+      1770
+     ],
+     "earfcn": [
+      1700
+     ],
+     "nrarfcn": [
+      371000
+     ],
+     "notes": "Sometimes used for DSS 4G/5G",
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      1865,
+      1880
+     ],
+     "ul": [
+      1770,
+      1785
+     ],
+     "earfcn": [
+      1875
+     ],
+     "notes": "DIGI",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1",
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      2620,
+      2630
+     ],
+     "ul": [
+      2500,
+      2510
+     ],
+     "earfcn": [
+      2800
+     ],
+     "notes": "DIGI",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+    },
+    {
+     "op": "vdf",
+     "dl": [
+      2630,
+      2650
+     ],
+     "ul": [
+      2510,
+      2530
+     ],
+     "earfcn": [
+      2950
+     ],
+     "notes": "Vodafone",
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "earfcn": [
+      3150
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "meo",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "earfcn": [
+      3350
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      925,
+      930
+     ],
+     "ul": [
+      880,
+      885
+     ],
+     "earfcn": [
+      3485
+     ],
+     "notes": "DIGI · 4G EARFCN 3485(3MHz) + 2G ARFCN 975-983(2 MHz)",
+     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+    },
+    {
+     "op": "vdf",
+     "dl": [
+      930,
+      940
+     ],
+     "ul": [
+      885,
+      895
+     ],
+     "earfcn": [
+      3525
+     ],
+     "notes": "Vodafone · 4G EARFCN 3525(5MHz) + 2G ARFCN 1-25(5MHz)",
+     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      940,
+      950
+     ],
+     "ul": [
+      895,
+      905
+     ],
+     "earfcn": [
+      3625
+     ],
+     "notes": "4G EARFCN 3625(5MHz) + 2G ARFCN 50-74(5 MHz)",
+     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+    },
+    {
+     "op": "meo",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "earfcn": [
+      3749
+     ],
+     "notes": "4G EARFCN 3749(5MHz) + 2G ARFCN 76-87, 113-124(5 MHz)",
+     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "meo",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "vdf",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "notes": "Vodafone",
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "meo",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ],
+     "nrarfcn": [
+      152100
+     ],
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      763,
+      768
+     ],
+     "ul": [
+      708,
+      713
+     ],
+     "notes": "Unallocated",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    },
+    {
+     "op": "vdf",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "nrarfcn": [
+      154600
+     ],
+     "notes": "Vodafone · Most common use is 5G NRARFCN 154570(10MHz) · Very few cells use 4G EARFCN 9360(10MHz)",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "nrarfcn": [
+      156600
+     ],
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
+    "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "vdf",
+     "f": [
+      2570,
+      2595
+     ],
+     "earfcn": [
+      37900
+     ],
+     "notes": "Vodafone · 4G EARFCN 37900(20MHz)",
+     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    },
+    {
+     "op": "digi",
+     "f": [
+      2595,
+      2620
+     ],
+     "nrarfcn": [
+      521000
+     ],
+     "notes": "DIGI · 5G NRARFCN 521000(20MHz)",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1",
+    "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "f": [
+      3400,
+      3440
+     ],
+     "notes": "DIGI",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3440,
+      3480
+     ],
+     "notes": "Unallocated",
+     "source": ""
+    },
+    {
+     "op": "digi",
+     "f": [
+      3480,
+      3520
+     ],
+     "notes": "DIGI",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+    },
+    {
+     "op": "vdf",
+     "f": [
+      3520,
+      3610
+     ],
+     "nrarfcn": [
+      637667
+     ],
+     "notes": "Vodafone",
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    },
+    {
+     "op": "nos",
+     "f": [
+      3610,
+      3710
+     ],
+     "nrarfcn": [
+      644000
+     ],
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    },
+    {
+     "op": "meo",
+     "f": [
+      3710,
+      3800
+     ],
+     "nrarfcn": [
+      650333
+     ],
+     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

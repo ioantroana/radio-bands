@@ -1,0 +1,809 @@
+{
+ "code": "bg",
+ "name": "Bulgaria",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "a1",
+   "name": "A1 Bulgaria",
+   "color": "#e70022",
+   "aliases": [
+    "A1",
+    "A1 Bulgaria"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "yettel",
+   "name": "Yettel Bulgaria",
+   "color": "#b4ff00",
+   "aliases": [
+    "Yettel",
+    "Yettel Bulgaria"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vivacom",
+   "name": "Vivacom Bulgaria",
+   "color": "#141317",
+   "aliases": [
+    "Vivacom"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "mod",
+   "name": "Ministry of Defence of Bulgaria",
+   "color": "#01319d",
+   "aliases": [
+    "MoD"
+   ],
+   "kind": "mno"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "yettel",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "earfcn": [
+      100
+     ],
+     "notes": "LTE B1 20 MHz nationwide deployment · Indoor and metro deployments use LTE B1 10 MHz (EARFCN 100) + UMTS B1 5 MHz"
+    },
+    {
+     "op": "a1",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ],
+     "earfcn": [
+      275,
+      300
+     ],
+     "notes": "LTE B1 20 MHz nationwide deployment · Indoor and metro deployments use LTE B1 15 MHz (EARFCN 275) + UMTS B1 5 MHz"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1970
+     ],
+     "earfcn": [
+      500
+     ],
+     "notes": "LTE B1 20 MHz nationwide deployment · Indoor and metro deployments use LTE B1 10 MHz (EARFCN 500) + UMTS B1 5 MHz"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      1805,
+      1830
+     ],
+     "ul": [
+      1710,
+      1735
+     ],
+     "earfcn": [
+      1300
+     ]
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      1830,
+      1855
+     ],
+     "ul": [
+      1735,
+      1760
+     ],
+     "earfcn": [
+      1550,
+      1675
+     ]
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "earfcn": [
+      1800
+     ],
+     "nrarfcn": [
+      372730
+     ],
+     "notes": "LTE B3 20 MHz, n3 DSS"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7/n7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      2620,
+      2630
+     ],
+     "ul": [
+      2500,
+      2510
+     ]
+    },
+    {
+     "op": "a1",
+     "dl": [
+      2630,
+      2650
+     ],
+     "ul": [
+      2510,
+      2530
+     ],
+     "earfcn": [
+      2950
+     ]
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "earfcn": [
+      3150
+     ]
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "earfcn": [
+      3350
+     ],
+     "nrarfcn": [
+      534884
+     ],
+     "notes": "LTE B7 20 MHz, n7 DSS in some urban areas"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      925.1,
+      936.7
+     ],
+     "ul": [
+      880.1,
+      891.7
+     ],
+     "earfcn": [
+      3515,
+      3536
+     ],
+     "notes": "Nationwide B8 LTE 4.6 MHz (EARFCN 3536), B8 3G and B8 2G deployment · B8 LTE up to 10 MHz (EARFCN 3515) in areas without 3G, B8 2G deployment"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      936.7,
+      948.3
+     ],
+     "ul": [
+      891.7,
+      903.3
+     ],
+     "earfcn": [
+      3636
+     ],
+     "notes": "Nationwide B8 LTE 4.6 MHz, B8 3G and B8 2G deployment"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      948.3,
+      959.9
+     ],
+     "ul": [
+      903.3,
+      914.9
+     ],
+     "earfcn": [
+      3774
+     ],
+     "notes": "Nationwide B8 LTE 4.6 MHz, B8 3G and B8 2G deployment"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
+    "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
+    "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "notes": "Restricted in some areas until the end of 2025",
+     "source": "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "notes": "Restricted in some areas until the end of 2025",
+     "source": "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "notes": "Restricted in some areas until the end of 2025",
+     "source": "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
+    "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf",
+    "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "nrarfcn": [
+      152690
+     ],
+     "notes": "NR only · Restricted in some areas until the end of 2025",
+     "source": "https://crc.bg/files/ВОП/01-1_А%201%20БЪЛГАРИЯ%20ЕАД.-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
+    },
+    {
+     "op": "vivacom",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "notes": "Restricted in some areas until the end of 2025",
+     "source": "https://crc.bg/files/ВОП/01-2_ВИВАКОМ-ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(2).pdf"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "nrarfcn": [
+      156510
+     ],
+     "notes": "almost always deployed as NR only · Restricted in some areas until the end of 2025",
+     "source": "https://crc.bg/files/ВОП/01-3_ЙЕТТЕЛ%20%20ИЗДАВАНЕ%20НА%20РАЗРЕШЕНИЕ%20В%20ОБХВАТИ%20700%20И%20800-ноември%202023%20(1).pdf"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3430
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3430,
+      3440
+     ]
+    },
+    {
+     "op": "yettel",
+     "f": [
+      3440,
+      3460
+     ],
+     "nrarfcn": [
+      629988
+     ]
+    },
+    {
+     "op": "a1",
+     "f": [
+      3460,
+      3480
+     ],
+     "nrarfcn": [
+      631392
+     ]
+    },
+    {
+     "op": "vivacom",
+     "f": [
+      3480,
+      3500
+     ]
+    },
+    {
+     "op": "yettel",
+     "f": [
+      3500,
+      3600
+     ],
+     "nrarfcn": [
+      636576
+     ]
+    },
+    {
+     "op": "a1",
+     "f": [
+      3600,
+      3700
+     ],
+     "nrarfcn": [
+      643296
+     ]
+    },
+    {
+     "op": "vivacom",
+     "f": [
+      3700,
+      3800
+     ],
+     "nrarfcn": [
+      649920
+     ]
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "24–29 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/BG"
+   ],
+   "blocks": [
+    {
+     "op": "yettel",
+     "f": [
+      24300,
+      24700
+     ],
+     "nrarfcn": [
+      2018971,
+      2020699,
+      2022427,
+      2023867
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      24700,
+      24745
+     ]
+    },
+    {
+     "op": "yettel",
+     "f": [
+      24745,
+      24885
+     ],
+     "notes": "In use for microwave backhaul"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      24885,
+      24900
+     ]
+    },
+    {
+     "op": "yettel",
+     "f": [
+      24900,
+      25100
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25100,
+      25219
+     ]
+    },
+    {
+     "op": "a1",
+     "f": [
+      25219,
+      25389
+     ],
+     "notes": "In use for microwave backhaul"
+    },
+    {
+     "op": "mod",
+     "f": [
+      25389,
+      25445
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25445,
+      25500
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25500,
+      25700
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25700,
+      25753
+     ]
+    },
+    {
+     "op": "yettel",
+     "f": [
+      25753,
+      25893
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      25893,
+      25900
+     ]
+    },
+    {
+     "op": "a1",
+     "f": [
+      25900,
+      26100
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      26100,
+      26227
+     ]
+    },
+    {
+     "op": "a1",
+     "f": [
+      26227,
+      26397
+     ],
+     "notes": "In use for microwave backhaul"
+    },
+    {
+     "op": "mod",
+     "f": [
+      26397,
+      26453
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      26453,
+      26500
+     ],
+     "notes": "Requested acquisition by A1"
+    },
+    {
+     "op": "a1",
+     "f": [
+      26500,
+      26700
+     ]
+    },
+    {
+     "op": "vivacom",
+     "f": [
+      26700,
+      27300
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      27300,
+      27500
+     ],
+     "notes": "Requested acquisition by Vivacom"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

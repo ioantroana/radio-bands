@@ -1,0 +1,648 @@
+{
+ "code": "hu",
+ "name": "Hungary",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "telekom",
+   "name": "Magyar Telekom",
+   "color": "#e20074",
+   "aliases": [
+    "Telekom",
+    "Telekom Hungary"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "yettel",
+   "name": "Yettel Hungary",
+   "color": "#b4ff00",
+   "aliases": [
+    "Yettel",
+    "Yettel Magyarország"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone Hungary",
+   "color": "#e51a21",
+   "aliases": [
+    "Vodafone",
+    "Vodafone Magyarország"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "digi",
+   "name": "Digi Hungary",
+   "color": "#00a6ff",
+   "aliases": [
+    "Digi",
+    "DIGI Távközlési és Szolgáltató Kft.",
+    "Antenna Hungária"
+   ],
+   "kind": "mno"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "telekom",
+     "dl": [
+      2110,
+      2135
+     ],
+     "ul": [
+      1920,
+      1945
+     ],
+     "earfcn": [
+      75,
+      100,
+      200
+     ],
+     "notes": "LTE 20 MHz on EARFCN 100 · LTE 15 MHz on EARFCN 75 · LTE 10 MHz on EARFCN 200 · Some NR DSS and NR non-DSS deployments"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      2135,
+      2150
+     ],
+     "ul": [
+      1945,
+      1960
+     ],
+     "earfcn": [
+      300
+     ],
+     "nrarfcn": [
+      427970
+     ],
+     "notes": "3G being phased out · NR/LTE DSS 10 MHz"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "earfcn": [
+      476,
+      500
+     ],
+     "nrarfcn": [
+      431520
+     ],
+     "notes": "3G being phased out · LTE/NR 15 MHz DSS · Single sites with 20 MHz LTE on EARFCN 500"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "earfcn": [
+      1276,
+      1300
+     ],
+     "notes": "Used for 2G in some areas"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      1825,
+      1855.05
+     ],
+     "ul": [
+      1730,
+      1760.05
+     ],
+     "earfcn": [
+      1500
+     ],
+     "notes": "20 MHz LTE + 10 MHz 2G"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      1855.05,
+      1860
+     ],
+     "ul": [
+      1760.05,
+      1765
+     ],
+     "earfcn": [
+      1724
+     ],
+     "notes": "3 MHz LTE + 2 MHz 2G · Network to be shut down in June 2023"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "earfcn": [
+      1850
+     ],
+     "notes": "Standard LTE 20 MHz deployment · In areas with G18, LTE is 15 MHz"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "telekom",
+     "dl": [
+      2620,
+      2650
+     ],
+     "ul": [
+      2500,
+      2530
+     ],
+     "earfcn": [
+      2850,
+      2994
+     ],
+     "notes": "LTE 20 MHz + 10 MHz in a contiguous configuration"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "earfcn": [
+      3150
+     ]
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2560,
+      2550
+     ],
+     "earfcn": [
+      3350
+     ]
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "yettel",
+     "dl": [
+      925,
+      940
+     ],
+     "ul": [
+      880,
+      895
+     ],
+     "earfcn": [
+      3550
+     ],
+     "notes": "Used for 5 MHz GSM and 10 MHz LTE."
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      940,
+      950
+     ],
+     "ul": [
+      895,
+      905
+     ],
+     "notes": "Used mainly for 2G · 3G being phased out · Test LTE deployments"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "notes": "Used for 2G"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ]
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300,
+      6350
+     ],
+     "notes": "LTE B20 10 MHz on EARFCN 6300 in Budapest · LTE B20 20 MHz on EARFCN 6350 in the rest of Hungary via MOCN with Yettel · Telekom hosts B20 MOCN in Eastern Hungary"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6350,
+      6400
+     ],
+     "notes": "LTE B20 10 MHz on EARFCN 6400 in Budapest · LTE B20 20 MHz on EARFCN 6350 in the rest of Hungary via MOCN with Telekom · Yettel hosts B20 MOCN in Western Hungary"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ]
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      763,
+      773
+     ],
+     "ul": [
+      708,
+      718
+     ],
+     "earfcn": [
+      9310
+     ]
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "earfcn": [
+      9410
+     ],
+     "nrarfcn": [
+      155600
+     ],
+     "notes": "LTE/NR DSS"
+    },
+    {
+     "op": "yettel",
+     "dl": [
+      783,
+      788
+     ],
+     "ul": [
+      728,
+      733
+     ],
+     "earfcn": [
+      9485
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      2570,
+      2575
+     ],
+     "notes": "Unused"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      2575,
+      2600
+     ],
+     "notes": "Unused"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2600,
+      2620
+     ],
+     "notes": "Unused"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/HU"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3410
+     ]
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      3410,
+      3520
+     ]
+    },
+    {
+     "op": "digi",
+     "f": [
+      3520,
+      3540
+     ],
+     "notes": "Network to be shut down in June 2023"
+    },
+    {
+     "op": "telekom",
+     "f": [
+      3540,
+      3660
+     ]
+    },
+    {
+     "op": "yettel",
+     "f": [
+      3660,
+      3800
+     ],
+     "nrarfcn": [
+      647328
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

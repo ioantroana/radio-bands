@@ -1,0 +1,803 @@
+{
+ "code": "ie",
+ "name": "Ireland",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "eircom",
+   "name": "Eir",
+   "color": "#892ba0",
+   "aliases": [
+    "Eir Ireland",
+    "Eircom",
+    "Meteor",
+    "Meteor Ireland"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone IE",
+   "color": "#e60000",
+   "aliases": [
+    "Vodafone",
+    "VF",
+    "VF IE"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "three",
+   "name": "Three IE",
+   "color": "#ee0088",
+   "aliases": [
+    "3 IE",
+    "Three",
+    "3"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "imagine",
+   "name": "Imagine IE",
+   "color": "#1d428a",
+   "aliases": [
+    "Imagine",
+    "Imagine Communications",
+    "Imagine Communications Ireland"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "airspan",
+   "name": "Airspan IE",
+   "color": "#005b82",
+   "aliases": [
+    "Airspan Networks",
+    "Airspan",
+    "Airspan Networks Ireland"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "state-services",
+   "name": "State services",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+   ],
+   "blocks": [
+    {
+     "op": "three",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "notes": "Three Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ],
+     "notes": "Vodafone Ireland · LTE/NR DSS",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "eircom",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "notes": "Eircom Limited",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+   ],
+   "blocks": [
+    {
+     "op": "three",
+     "dl": [
+      1805,
+      1820
+     ],
+     "ul": [
+      1710,
+      1725
+     ],
+     "earfcn": [
+      1275
+     ],
+     "nrarfcn": [
+      362170
+     ],
+     "notes": "Three Ireland · LTE or NR, no DSS"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      1820,
+      1845
+     ],
+     "ul": [
+      1725,
+      1750
+     ],
+     "earfcn": [
+      1450,
+      1575
+     ],
+     "notes": "Vodafone Ireland"
+    },
+    {
+     "op": "three",
+     "dl": [
+      1845,
+      1865
+     ],
+     "ul": [
+      1750,
+      1770
+     ],
+     "earfcn": [
+      1700
+     ],
+     "notes": "Three Ireland"
+    },
+    {
+     "op": "eircom",
+     "dl": [
+      1865,
+      1880
+     ],
+     "ul": [
+      1770,
+      1785
+     ],
+     "earfcn": [
+      1875
+     ],
+     "notes": "Eircom Limited · LTE/NR DSS"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+   ],
+   "blocks": [
+    {
+     "op": "three",
+     "dl": [
+      2620,
+      2655
+     ],
+     "ul": [
+      2500,
+      2535
+     ],
+     "notes": "Three Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2655,
+      2690
+     ],
+     "ul": [
+      2535,
+      2570
+     ],
+     "notes": "Vodafone Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+   ],
+   "blocks": [
+    {
+     "op": "eircom",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "notes": "Eircom Limited"
+    },
+    {
+     "op": "three",
+     "dl": [
+      935,
+      945
+     ],
+     "ul": [
+      890,
+      900
+     ],
+     "notes": "Three Ireland · 2G operates only on O2 IE's PLMN (272 02)"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      945,
+      955
+     ],
+     "ul": [
+      900,
+      910
+     ],
+     "notes": "Vodafone Ireland"
+    },
+    {
+     "op": "three",
+     "dl": [
+      955,
+      960
+     ],
+     "ul": [
+      910,
+      915
+     ],
+     "notes": "Three Ireland · 2G operates only on O2 IE's PLMN (272 02)"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+   ],
+   "blocks": [
+    {
+     "op": "eircom",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "notes": "Eircom Limited"
+    },
+    {
+     "op": "three",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "notes": "Three Ireland"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "notes": "Vodafone Ireland"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+   ],
+   "blocks": [
+    {
+     "op": "eircom",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "earfcn": [
+      9260
+     ],
+     "notes": "Eircom Limited",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "three",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "notes": "Three Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "notes": "Vodafone Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+   ],
+   "blocks": [
+    {
+     "op": "imagine",
+     "f": [
+      2570,
+      2585
+     ],
+     "notes": "Imagine Communications Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      2585,
+      2615
+     ],
+     "notes": "Vodafone Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2615,
+      2620
+     ],
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+   ],
+   "blocks": [
+    {
+     "op": "eircom",
+     "f": [
+      2300,
+      2360
+     ],
+     "notes": "Eircom Limited",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    },
+    {
+     "op": "imagine",
+     "f": [
+      2360,
+      2400
+     ],
+     "notes": "Imagine Communications Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (B42/B43/n78) — large cities",
+   "names": [
+    "B42",
+    "B43",
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Spectrum allocation visualisation for 3500 MHz within Dublin, Cork, Limerick, Galway, Waterford and their suburbs.",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      3400,
+      3410
+     ],
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "airspan",
+     "f": [
+      3410,
+      3435
+     ],
+     "notes": "Airspan Networks Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "state-services",
+     "f": [
+      3435,
+      3475
+     ],
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      3475,
+      3580
+     ],
+     "nrarfcn": [
+      631968
+     ],
+     "notes": "Vodafone Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "airspan",
+     "f": [
+      3580,
+      3615
+     ],
+     "notes": "Airspan Networks Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "eircom",
+     "f": [
+      3615,
+      3700
+     ],
+     "notes": "Eircom Limited",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "three",
+     "f": [
+      3700,
+      3800
+     ],
+     "nrarfcn": [
+      647424
+     ],
+     "notes": "Three Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (B42/B43/n78) — rural",
+   "names": [
+    "B42",
+    "B43",
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Spectrum allocation visualisation for 3500 MHz within the Border Midlands, West, South West, East and South East regions.",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      3400,
+      3410
+     ],
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "airspan",
+     "f": [
+      3410,
+      3435
+     ],
+     "notes": "Airspan Networks Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "state-services",
+     "f": [
+      3435,
+      3475
+     ],
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "vodafone",
+     "f": [
+      3475,
+      3560
+     ],
+     "notes": "Vodafone Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "imagine",
+     "f": [
+      3560,
+      3620
+     ],
+     "notes": "Imagine Communications Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "eircom",
+     "f": [
+      3620,
+      3700
+     ],
+     "notes": "Eircom Limited",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    },
+    {
+     "op": "three",
+     "f": [
+      3700,
+      3800
+     ],
+     "nrarfcn": [
+      647424
+     ],
+     "notes": "Three Ireland",
+     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

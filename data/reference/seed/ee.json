@@ -1,0 +1,727 @@
+{
+ "code": "ee",
+ "name": "Estonia",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "tele2-eesti-as",
+   "name": "Tele2 Eesti AS",
+   "color": "#00ca6d",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "elisa-eesti-as",
+   "name": "Elisa Eesti AS",
+   "color": "#0019af",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "telia-eesti-as",
+   "name": "Telia Eesti AS",
+   "color": "#990ae3",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "uab-bite-lietuva",
+   "name": "UAB Bite Lietuva",
+   "color": "#5ca733",
+   "aliases": [],
+   "kind": "mno"
+  },
+  {
+   "id": "bite",
+   "name": "Bite",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/2706",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/1988",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/2685"
+   ],
+   "blocks": [
+    {
+     "op": "tele2-eesti-as",
+     "dl": [
+      2110,
+      2140
+     ],
+     "ul": [
+      1920,
+      1950
+     ],
+     "earfcn": [
+      103
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/2706"
+    },
+    {
+     "op": "telia-eesti-as",
+     "dl": [
+      2140,
+      2155
+     ],
+     "ul": [
+      1950,
+      1965
+     ],
+     "earfcn": [
+      399
+     ],
+     "nrarfcn": [
+      430370
+     ],
+     "notes": "NR DSS",
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/1988"
+    },
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "earfcn": [
+      523
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/2685"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/4162",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/4160",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/4163"
+   ],
+   "blocks": [
+    {
+     "op": "telia-eesti-as",
+     "dl": [
+      1805.1,
+      1830.1
+     ],
+     "ul": [
+      1710.1,
+      1735.1
+     ],
+     "earfcn": [
+      1344
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/4162"
+    },
+    {
+     "op": "tele2-eesti-as",
+     "dl": [
+      1830.1,
+      1855.1
+     ],
+     "ul": [
+      1735.1,
+      1760.1
+     ],
+     "earfcn": [
+      1574
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/4160"
+    },
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      1855.1,
+      1879.9
+     ],
+     "ul": [
+      1760.1,
+      1784.9
+     ],
+     "earfcn": [
+      1849
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/4163"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/3882",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/3880",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/9129"
+   ],
+   "blocks": [
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "earfcn": [
+      2850
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/3882"
+    },
+    {
+     "op": "telia-eesti-as",
+     "dl": [
+      2640,
+      2680
+     ],
+     "ul": [
+      2520,
+      2560
+     ],
+     "earfcn": [
+      3050
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/3880"
+    },
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      2680,
+      2690
+     ],
+     "ul": [
+      2560,
+      2570
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/9129"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/1990",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/1984",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/1986"
+   ],
+   "blocks": [
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      925.1,
+      936.7
+     ],
+     "ul": [
+      880.1,
+      891.7
+     ],
+     "earfcn": [
+      3472
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/1990"
+    },
+    {
+     "op": "tele2-eesti-as",
+     "dl": [
+      936.7,
+      948.3
+     ],
+     "ul": [
+      891.7,
+      903.3
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/1984"
+    },
+    {
+     "op": "telia-eesti-as",
+     "dl": [
+      948.3,
+      959.7
+     ],
+     "ul": [
+      903.3,
+      914.7
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/1986"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/4513",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/4487",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/4599"
+   ],
+   "blocks": [
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/4513"
+    },
+    {
+     "op": "telia-eesti-as",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/4487"
+    },
+    {
+     "op": "tele2-eesti-as",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/4599"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13564",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13562",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13566"
+   ],
+   "blocks": [
+    {
+     "op": "tele2-eesti-as",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "nrarfcn": [
+      152690
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13564"
+    },
+    {
+     "op": "elisa-eesti-as",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "nrarfcn": [
+      154570
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13562"
+    },
+    {
+     "op": "telia-eesti-as",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "nrarfcn": [
+      156990,
+      156600
+     ],
+     "notes": "NR DSS",
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13566"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38)",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/9169"
+   ],
+   "blocks": [
+    {
+     "op": "elisa-eesti-as",
+     "f": [
+      2575,
+      2615
+     ],
+     "earfcn": [
+      38098
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/9169"
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD (B39)",
+   "names": [
+    "B39"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1880,
+     1920
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/12838",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/12740",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/12839"
+   ],
+   "blocks": [
+    {
+     "op": "elisa-eesti-as",
+     "f": [
+      1900,
+      1905
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/12838"
+    },
+    {
+     "op": "telia-eesti-as",
+     "f": [
+      1905,
+      1910
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/12740"
+    },
+    {
+     "op": "tele2-eesti-as",
+     "f": [
+      1910,
+      1920
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/12839"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://mtr.ttja.ee/taotluse_tulemus/416486#loa_andmed",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13402"
+   ],
+   "blocks": [
+    {
+     "op": "tele2-eesti-as",
+     "f": [
+      2300,
+      2360
+     ],
+     "earfcn": [
+      38750
+     ],
+     "nrarfcn": [
+      465850
+     ],
+     "source": "https://mtr.ttja.ee/taotluse_tulemus/416486#loa_andmed"
+    },
+    {
+     "op": "bite",
+     "f": [
+      2360,
+      2390
+     ],
+     "notes": "License for non-commercial use on Bite",
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13402"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13215",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13356",
+    "https://jvis.ttja.ee/modules/sideluba/avalik/view/13376"
+   ],
+   "blocks": [
+    {
+     "op": "elisa-eesti-as",
+     "f": [
+      3410,
+      3480
+     ],
+     "nrarfcn": [
+      628416
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13215"
+    },
+    {
+     "op": "telia-eesti-as",
+     "f": [
+      3480,
+      3540
+     ],
+     "nrarfcn": [
+      632352
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13356"
+    },
+    {
+     "op": "tele2-eesti-as",
+     "f": [
+      3540,
+      3600
+     ],
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13376"
+    },
+    {
+     "op": "elisa-eesti-as",
+     "f": [
+      3600,
+      3660
+     ],
+     "notes": "Block usage limited by Russia (Satellite communications)",
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13215"
+    },
+    {
+     "op": "telia-eesti-as",
+     "f": [
+      3660,
+      3730
+     ],
+     "notes": "Block usage limited by Russia (Satellite communications)",
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13356"
+    },
+    {
+     "op": "tele2-eesti-as",
+     "f": [
+      3730,
+      3800
+     ],
+     "notes": "Block usage limited by Russia (Satellite communications)",
+     "source": "https://jvis.ttja.ee/modules/sideluba/avalik/view/13376"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}

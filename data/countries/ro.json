@@ -1,0 +1,773 @@
+{
+ "code": "ro",
+ "name": "Romania",
+ "region": "Europe",
+ "asOf": "2026-01-09",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "",
+ "operators": [
+  {
+   "id": "orange",
+   "name": "Orange Romania",
+   "color": "#ff7900",
+   "aliases": [
+    "Orange",
+    "Orange RO"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vodafone",
+   "name": "Vodafone Romania",
+   "color": "#e51a21",
+   "aliases": [
+    "Vodafone"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "telekom",
+   "name": "Telekom Romania",
+   "color": "#e20074",
+   "aliases": [
+    "Telekom"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "digi",
+   "name": "RCS & RDS",
+   "color": "#00a6ff",
+   "aliases": [
+    "Digi",
+    "Digi Romania"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "snr",
+   "name": "SNR Radiocom",
+   "color": "#009763",
+   "aliases": [
+    "SNR"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vf",
+   "name": "VF",
+   "color": "#9aa0a6",
+   "aliases": [],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      2110.3,
+      2125.3
+     ],
+     "ul": [
+      1920.3,
+      1935.3
+     ],
+     "earfcn": [
+      78,
+      103
+     ],
+     "notes": "B1 3G UMTS was removed in favour of B1 LTE"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      2125.3,
+      2140.1
+     ],
+     "ul": [
+      1935.3,
+      1950.1
+     ],
+     "earfcn": [
+      228,
+      251
+     ],
+     "nrarfcn": [
+      427010
+     ],
+     "notes": "LTE B1 is 10 MHz (251) or 15 MHz (228) · 5G DSS in select areas"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2140.1,
+      2154.9
+     ],
+     "ul": [
+      1950.1,
+      1964.9
+     ],
+     "earfcn": [
+      400
+     ],
+     "nrarfcn": [
+      429424
+     ],
+     "notes": "LTE B1 is 10 MHz where available · 5G NR operating as non-DSS n1"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2154.9,
+      2169.7
+     ],
+     "ul": [
+      1964.9,
+      1979.7
+     ],
+     "earfcn": [
+      498
+     ],
+     "nrarfcn": [
+      431960
+     ],
+     "notes": "LTE B1 is always 10 MHz · 5G NR operating as DSS n1 · 3G is always 5 MHz"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      1805,
+      1835
+     ],
+     "ul": [
+      1710,
+      1740
+     ],
+     "earfcn": [
+      1256,
+      1283,
+      1400
+     ],
+     "notes": "Primary B3 carrier 20 MHz - 1400 · Secondary B3 carrier in a contiguous configuration - usually 10 MHz on 1256, rarely 5 MHz on 1283 with 5 MHz 2G"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      1835,
+      1855
+     ],
+     "ul": [
+      1740,
+      1760
+     ],
+     "earfcn": [
+      1600
+     ]
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "earfcn": [
+      1798
+     ],
+     "notes": "LTE presents as 20 MHz but uses less resource blocks (about 19 MHz in use as 4G) · 2G with no BCCH except on metro lines and cells with no low-band"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B7)",
+   "names": [
+    "B7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "telekom",
+     "dl": [
+      2620,
+      2630
+     ],
+     "ul": [
+      2500,
+      2510
+     ],
+     "notes": "Not deployed anywhere"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2630,
+      2650
+     ],
+     "ul": [
+      2510,
+      2530
+     ],
+     "earfcn": [
+      2950
+     ]
+    },
+    {
+     "op": "digi",
+     "dl": [
+      2650,
+      2690
+     ],
+     "ul": [
+      2530,
+      2570
+     ],
+     "earfcn": [
+      3150,
+      3348
+     ],
+     "notes": "Two 2x20 MHz B7 carrier in a contiguous configuration"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ]
+    },
+    {
+     "op": "digi",
+     "dl": [
+      935,
+      940
+     ],
+     "ul": [
+      890,
+      895
+     ],
+     "earfcn": [
+      3578
+     ],
+     "notes": "B8 3 MHz LTE in the process of being decommissioned in favour of B20 LTE and B8 2G"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      940,
+      950
+     ],
+     "ul": [
+      895,
+      905
+     ],
+     "earfcn": [
+      3650
+     ],
+     "notes": "2G 5 MHz · B8 LTE 5 MHz"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "notes": "B8 3G not always deployed in urban areas"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      791,
+      796
+     ],
+     "ul": [
+      832,
+      837
+     ],
+     "earfcn": [
+      6175
+     ]
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      796,
+      806
+     ],
+     "ul": [
+      837,
+      847
+     ],
+     "earfcn": [
+      6250
+     ]
+    },
+    {
+     "op": "orange",
+     "dl": [
+      806,
+      816
+     ],
+     "ul": [
+      847,
+      857
+     ],
+     "earfcn": [
+      6350
+     ]
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      816,
+      821
+     ],
+     "ul": [
+      857,
+      862
+     ],
+     "earfcn": [
+      6425
+     ]
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28)",
+   "names": [
+    "B28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      773
+     ],
+     "ul": [
+      703,
+      718
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "earfcn": [
+      9410
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      783,
+      788
+     ],
+     "ul": [
+      728,
+      733
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4–1.5 GHz (B32)",
+   "names": [
+    "B32"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1452,
+     1496
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "f": [
+      1452,
+      1492
+     ],
+     "earfcn": [
+      10020,
+      10220
+     ],
+     "notes": "Supplemental downlink (must be aggregated with another carrier) · Deployed as two 20 MHz carriers in a non-contiguous configuration",
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5/2.6 GHz (B38/n41)",
+   "names": [
+    "B38",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "f": [
+      2570,
+      2615
+     ],
+     "earfcn": [
+      37800,
+      37902,
+      37950,
+      38100
+     ],
+     "nrarfcn": [
+      519000
+     ],
+     "notes": "37800 10 MHz and 37950 20 MHz in Huawei areas · 37902 20 MHz and 38100 20 MHz in Nokia and Ericsson areas (contiguous configuration) · n41 40 MHz in some areas"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2615,
+      2620
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3490
+     ]
+    },
+    {
+     "op": "vf",
+     "f": [
+      3490,
+      3530
+     ],
+     "nrarfcn": [
+      634000
+     ]
+    },
+    {
+     "op": "orange",
+     "f": [
+      3530,
+      3645
+     ],
+     "nrarfcn": [
+      636096,
+      639648
+     ],
+     "notes": "Huawei n78 100MHz on 639648 · Ericsson n78 both 100MHz and 80MHz on 636096"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3645,
+      3700
+     ]
+    },
+    {
+     "op": "digi",
+     "f": [
+      3700,
+      3750
+     ],
+     "nrarfcn": [
+      648334
+     ]
+    },
+    {
+     "op": "snr",
+     "f": [
+      3750,
+      3800
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–4.2 GHz (n78) — in 2026",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Band 78 will be refarmed from 2026 onwards.",
+   "sources": [
+    "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "f": [
+      3400,
+      3450
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    },
+    {
+     "op": "vf",
+     "f": [
+      3450,
+      3550
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    },
+    {
+     "op": "orange",
+     "f": [
+      3550,
+      3710
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3710,
+      3800
+     ],
+     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+ ],
+ "missing": [],
+ "changes": [],
+ "sources": [
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data"
+  }
+ ]
+}
