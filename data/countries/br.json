@@ -1350,6 +1350,7 @@
   "Winity: won the national 2x10 MHz 700 MHz lot in 2021; the Vivo leasing deal was approved with conditions but Winity renounced the licence (end-2023; Anatel extinguished it Feb 2024). The block was re-auctioned by region on 4 May 2026 (all lots at the reserve price) to Amazônia 5G, Brisanet, Unifique and iez!; adjudicated 6 May 2026, licences formalised end-May 2026.",
   "3.5 GHz regional block edges conflict: Anatel acts give centre 3640 MHz / 80 MHz (3600-3680), trade press says 3620-3700 MHz. Regulator data used.",
   "Unifique's purchase of Ligga's Paraná 3.5 GHz block had Anatel prior consent on 7 Apr 2026 (valid 180 days); completion not confirmed as of asOf, so Paraná is still shown under Ligga.",
+  "Totals sanity check: Anatel's radio-frequency map, as reported by Teletime (Mar 2022, after the 5G auction and before the Oi split), gave Vivo 864, TIM 834 and Claro 684 MHz, apparently counting regional lots at full size. The population-weighted totals here (Vivo ~907, Claro ~702, TIM ~698 MHz) differ mainly because of TIM's regional 26 GHz lots (weighted here) and the 2022 Oi split.",
   "850 MHz: Anatel limited renewals to 2028 because of a planned refarming/re-licensing; the future of the band (including regional operators' interest in 600 MHz) is under debate."
  ],
  "missing": [
@@ -1436,6 +1437,10 @@
   {
    "title": "TeleGeography - 5G Progress Report: Brazil",
    "url": "https://resources.telegeography.com/5g-progress-report-brazil"
+  },
+  {
+   "title": "Teletime - Veja quais são as operadoras com maior quantidade de espectro (2022)",
+   "url": "https://teletime.com.br/15/03/2022/claro-e-vivo-foram-as-que-mais-ganharam-frequencias-entre-2020-e-2021/"
   },
   {
    "title": "Mobile Time - iez! é a nova marca da Cloud2U",

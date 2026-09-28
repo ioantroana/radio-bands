@@ -1,0 +1,837 @@
+{
+ "code": "ar",
+ "name": "Argentina",
+ "region": "Americas",
+ "asOf": "2026-09-28",
+ "coverage": "partial",
+ "licensing": "mixed",
+ "summary": "Three mobile networks - Claro, Personal and Movistar - but Telecom Argentina (Personal) has owned Movistar (TMA) since Feb 2025; the antitrust tribunal approved the deal in June 2026 on condition of divesting 6 million customers with spectrum, not yet done. 700/AWS/3.5 GHz are national; 850/1900 are licensed in three areas and 900/2.6 GHz by locality.",
+ "operators": [
+  {
+   "id": "personal",
+   "name": "Personal",
+   "legal": "Telecom Argentina S.A.",
+   "color": "#00b5e2",
+   "aliases": [
+    "Telecom Personal",
+    "Personal Móvil"
+   ],
+   "kind": "mno",
+   "notes": "Telecom Argentina's mobile brand. Absorbed Nextel Argentina's 900 MHz and 2.5 GHz rights via the Cablevisión-Telecom merger (2018). Owner of Movistar Argentina (TMA) since 24 Feb 2025."
+  },
+  {
+   "id": "movistar",
+   "name": "Movistar",
+   "legal": "Telefónica Móviles Argentina S.A. (TMA)",
+   "color": "#5bc500",
+   "aliases": [
+    "Telefónica Móviles Argentina",
+    "TMA"
+   ],
+   "kind": "mno",
+   "notes": "Acquired by Telecom Argentina from Telefónica on 24 Feb 2025 and run as a separate network segment. On 17 Jun 2026 the Antitrust Tribunal (ANC) conditioned the deal on divesting at least 6 million mobile customers (4m AMBA, 2m rest of country) with the spectrum needed to serve them, plus 211,400 home-internet lines; as of Aug 2026 no buyer or spectrum package had been chosen."
+  },
+  {
+   "id": "claro",
+   "name": "Claro",
+   "legal": "AMX Argentina S.A.",
+   "color": "#da291c",
+   "aliases": [
+    "CTI Móvil",
+    "América Movil"
+   ],
+   "kind": "mno"
+  }
+ ],
+ "bands": [
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "note": "Broadcast TV; not assigned to mobile. None of the operators' filings list 600 MHz.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm"
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2014 auction (SCMA, 15-year terms; Telefónica reports expiry 2033). Edges from Telecom Argentina's 20-F filings only (single source); amounts cross-checked with Telefónica's (Movistar 2x10) and América Movil's filings.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465919017491/a19-2958_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+   ],
+   "blocks": [
+    {
+     "op": "movistar",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "expiry": "2033"
+    },
+    {
+     "op": "personal",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "notes": "Lot 8, awarded June 2015 (Res. 25/15)"
+    },
+    {
+     "op": "claro",
+     "dl": [
+      778,
+      793
+     ],
+     "ul": [
+      723,
+      738
+     ]
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      793,
+      803
+     ],
+     "ul": [
+      738,
+      748
+     ],
+     "notes": "New-entrant lot 1 (awarded to Arlink S.A. in 2014); current holder/status not verified"
+    }
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "note": "EU 800 plan not used (conflicts with APT 700 and 850). 806-824 MHz was Nextel trunking spectrum; not compiled.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465919017491/a19-2958_120f.htm"
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licensed in three areas (AMBA, Norte, Sur), non-expiring. AMBA: Movistar 2x15, Personal 2x10 (incl. 830.25-834/875.25-879 from 2014). Norte: Personal 2x12.5, Claro 2x12.5. Sur: Movistar 2x12.5, Claro 2x12.5. After Telecom's purchase of TMA, Telecom controls all of 850 MHz in AMBA.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "personal",
+     "mhz": 8.32,
+     "paired": true,
+     "basis": "AMBA 32% / Norte 41% / Sur 27% population shares (approximate, from INDEC 2022 provincial populations - background knowledge, not source-verified)",
+     "expiry": "indefinite"
+    },
+    {
+     "op": "movistar",
+     "mhz": 8.18,
+     "paired": true,
+     "basis": "AMBA 32% / Norte 41% / Sur 27% population shares (approximate, from INDEC 2022 provincial populations - background knowledge, not source-verified)",
+     "expiry": "indefinite"
+    },
+    {
+     "op": "claro",
+     "mhz": 8.5,
+     "paired": true,
+     "basis": "AMBA 32% / Norte 41% / Sur 27% population shares (approximate, from INDEC 2022 provincial populations - background knowledge, not source-verified)",
+     "expiry": "indefinite"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (905-915/950-960)",
+   "names": [
+    "B8"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "905-915/950-960 MHz was allocated to mobile in 2017 (ENACOM Res. 1,033-E/17) and assigned to Nextel (now Telecom/Personal) by locality under a refarming project. The rest of 880-960 is not mobile. América Movil also lists 900 MHz for Claro Argentina - not confirmed, possibly 850 MHz.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465919017491/a19-2958_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "personal",
+     "mhz": 10,
+     "paired": true,
+     "basis": "amount in licensed localities (towns/cities), not population-weighted"
+    }
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "1400",
+   "label": "1.4/1.5 GHz L-band",
+   "names": [
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "note": "Not assigned to mobile; not listed in any operator's filing.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66",
+    "n66"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1710,
+     1770
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2014 auction of 1710-1755/2110-2155 (SCMA, national); 1755-1770/2155-2170 was kept out of the auction. Edges from Telecom Argentina's FY2014 20-F only.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+   ],
+   "blocks": [
+    {
+     "op": "movistar",
+     "dl": [
+      2110,
+      2120
+     ],
+     "ul": [
+      1710,
+      1720
+     ],
+     "expiry": "2033"
+    },
+    {
+     "op": "claro",
+     "dl": [
+      2120,
+      2130
+     ],
+     "ul": [
+      1720,
+      1730
+     ]
+    },
+    {
+     "op": "personal",
+     "dl": [
+      2130,
+      2145
+     ],
+     "ul": [
+      1730,
+      1745
+     ]
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2145,
+      2155
+     ],
+     "ul": [
+      1745,
+      1755
+     ],
+     "notes": "New-entrant lot 1 (Arlink, 2014); current status not verified"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1755,
+      1770
+     ],
+     "notes": "Reserved, not auctioned in 2014"
+    }
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "note": "Not used: Argentina uses PCS 1900 and AWS; 1710-1770 is AWS uplink.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm"
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2)",
+   "names": [
+    "B2",
+    "n2",
+    "B25"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1990
+    ],
+    "ul": [
+     1850,
+     1910
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licensed per area, non-expiring. AMBA: Claro 2x25, Personal 2x15, Movistar 2x10. Norte: Movistar 2x25, Personal 2x12.5, Claro 2x12.5. Sur: Personal 2x25, Movistar 2x12.5, Claro 2x12.5 (holdings plus the 2014 remnant lots). The remaining 2x10 per area was the 2014 new-entrant lot (status not verified).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+   ],
+   "holdings": [
+    {
+     "op": "personal",
+     "mhz": 16.68,
+     "paired": true,
+     "basis": "AMBA 32% / Norte 41% / Sur 27% population shares (approximate, from INDEC 2022 provincial populations - background knowledge, not source-verified)",
+     "expiry": "indefinite"
+    },
+    {
+     "op": "movistar",
+     "mhz": 16.82,
+     "paired": true,
+     "basis": "AMBA 32% / Norte 41% / Sur 27% population shares (approximate, from INDEC 2022 provincial populations - background knowledge, not source-verified)",
+     "expiry": "indefinite"
+    },
+    {
+     "op": "claro",
+     "mhz": 16.5,
+     "paired": true,
+     "basis": "AMBA 32% / Norte 41% / Sur 27% population shares (approximate, from INDEC 2022 provincial populations - background knowledge, not source-verified)",
+     "expiry": "indefinite"
+    }
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD",
+   "names": [
+    "B33",
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "note": "Not assigned to mobile operators.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm"
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "note": "Not used as B1: 2110-2170 is AWS downlink (paired with 1710-1770).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm"
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "note": "No 2.3 GHz mobile assignment in Telecom, Telefónica or América Movil filings (not verified with ENACOM).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Assigned per locality (ENACOM Res. 5,478-E/17, 15 years): Lot A (3 FDD channels) Movistar, Lot B (3 FDD channels) Claro, Lot C (2 FDD + 4 TDD channels) Personal, plus Nextel's refarmed channels 7-12 (2530-2560/2650-2680) now Personal. Amounts are those held in licensed localities (CABA, provincial capitals, Rosario, Mar del Plata, Bahía Blanca...), not population-weighted, so totals overstate. Telefónica reports Movistar's 2x15 covers 65% of the population, expiring 2035. Personal's current 2.5 GHz amounts after the 2018 Cablevisión merger were not re-confirmed.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465919017491/a19-2958_120f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "personal",
+     "mhz": 40,
+     "paired": true,
+     "basis": "amount in licensed localities (Lot C 2x10 + ex-Nextel 2x30), not population-weighted"
+    },
+    {
+     "op": "movistar",
+     "mhz": 15,
+     "paired": true,
+     "basis": "amount in licensed localities (Lot A), ~65% of population",
+     "expiry": "2035"
+    },
+    {
+     "op": "claro",
+     "mhz": 15,
+     "paired": true,
+     "basis": "amount in licensed localities (Lot B), not population-weighted"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz TDD (B38/B41)",
+   "names": [
+    "B38",
+    "B41"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Lot C included 4 TDD channels (40 MHz) for Personal by locality, with an option to trade TDD for 10 MHz FDD; current use not confirmed.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465919017491/a19-2958_120f.htm"
+   ],
+   "holdings": [
+    {
+     "op": "personal",
+     "mhz": 40,
+     "paired": false,
+     "basis": "amount in licensed localities, not population-weighted"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3-3.6 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3600
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Oct 2023 5G auction (ENACOM Res. 1,285/2023): three national 100 MHz lots at US$350m reserve each. Personal won Lot 2 (3400-3500); TMA/Movistar took Lot 3B (3550-3600); Claro holds the remaining lot (3300-3400, by elimination). Lot 3A (3500-3550) appears unsold (not verified). ENACOM Res. 611/2025 cut the per-group cap from 200 to 150 MHz, so Telecom's combined 150 MHz is at the cap. Terms to 2043 (Telefónica).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm",
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+   ],
+   "blocks": [
+    {
+     "op": "claro",
+     "f": [
+      3300,
+      3400
+     ],
+     "notes": "By elimination; América Movil confirms a 3.5 GHz licence"
+    },
+    {
+     "op": "personal",
+     "f": [
+      3400,
+      3500
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3500,
+      3550
+     ],
+     "notes": "Lot 3A - holder not confirmed"
+    },
+    {
+     "op": "movistar",
+     "f": [
+      3550,
+      3600
+     ],
+     "expiry": "2043"
+    }
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "4900",
+   "label": "4.4-5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "note": "Not assigned to mobile operators.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm"
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "note": "No mmWave assignment: none of the three operators' 2025 annual reports lists mmWave spectrum.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "40g",
+   "label": "37-43.5 GHz (n259/n260)",
+   "names": [
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "note": "No mmWave assignment: none of the three operators' 2025 annual reports lists mmWave spectrum.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+   ]
+  },
+  {
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "blocks": [],
+   "holdings": [],
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "note": "No mmWave assignment: none of the three operators' 2025 annual reports lists mmWave spectrum.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
+    "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+   ]
+  }
+ ],
+ "notes": [
+  "ENACOM's website was unreachable while compiling (TLS/503), so no regulator document could be checked; all figures come from the operators' SEC filings (Telecom Argentina 20-F FY2014/FY2018/FY2025, Telefónica S.A. 20-F FY2024, América Movil 20-F FY2025) and Telecom's 2026 6-K reports.",
+  "Area shares used for averages (AMBA/Norte/Sur ~32/41/27% of population) are approximate and from background knowledge, not source-verified.",
+  "Telecom Argentina bought 99.99% of Telefónica Móviles Argentina (TMA) on 24 Feb 2025. The Secretary of Industry and Commerce ordered a hold-separate (Resolution 63/2025, later suspended by the courts). The ANC's Antitrust Tribunal approved it with conditions on 17 Jun 2026 (RESFC-2026-38-APN-TDC#ANC): transfer 6m mobile customers and 'the rights of use of radio spectrum ... necessary for the competitive operation of the divested mobile service'. As of the H1 2026 report (Aug 2026) no buyer or spectrum package had been chosen, so no future-dated entry could be drawn.",
+  "Movistar and Personal are shown separately because they still hold separate licences and run separate networks; both are controlled by Telecom Argentina.",
+  "América Movil's 20-F describes a Nov 2023 ENACOM Res. 2023-1473 award as '2.6 GHz 5G band'; the timing and amount match the 3.5 GHz auction, so it is treated as Claro's 3.5 GHz lot."
+ ],
+ "missing": [
+  "Positions for 850 MHz and PCS 1900 blocks (except the 2014 remnant lots) - holdings only.",
+  "700/AWS/3.5 GHz edges from Telecom Argentina filings only (unverified, one source); Claro's 3.5 GHz edges by elimination.",
+  "Status of the 2014 new-entrant lot (Arlink: 2x10 MHz at 700, AWS and PCS in each area) - not verified; drawn as unassigned.",
+  "Status of 3.5 GHz Lot 3A (3500-3550 MHz) - not verified.",
+  "2.5 GHz: amounts per locality only; Personal's current holdings after the 2018 merger remedies not confirmed; no population weighting.",
+  "Whether Claro holds any 900 MHz (listed by América Movil) - not verified.",
+  "The spectrum to be divested under the June 2026 ANC remedy is not yet defined.",
+  "No regulator (ENACOM) document could be checked; no EARFCN/NR-ARFCN data."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "Telecom Argentina 20-F FY2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm"
+  },
+  {
+   "title": "Telecom Argentina 20-F FY2014 (2014 auction results)",
+   "url": "https://www.sec.gov/Archives/edgar/data/932470/000110465915030112/a15-9291_120f.htm"
+  },
+  {
+   "title": "Telecom Argentina 20-F FY2018 (900 MHz / 2.5 GHz allocations)",
+   "url": "https://www.sec.gov/Archives/edgar/data/932470/000110465919017491/a19-2958_120f.htm"
+  },
+  {
+   "title": "Telefónica S.A. 20-F FY2024 (Movistar Argentina licences)",
+   "url": "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm"
+  },
+  {
+   "title": "América Movil 20-F FY2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+  },
+  {
+   "title": "Telecom Argentina 6-K, 18 Jun 2026 - ANC resolution on TMA",
+   "url": "https://www.sec.gov/Archives/edgar/data/932470/000110465926075467/tm2618138d4_6k.htm"
+  },
+  {
+   "title": "Telecom Argentina 6-K, Aug 2026 - H1 2026 financial statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/932470/000110465926093384/tm2622474d2_6k.htm"
+  }
+ ]
+}
