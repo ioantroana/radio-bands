@@ -309,7 +309,7 @@
       "positions": "verified",
       "future": null,
       "excludeFromTotal": false,
-      "note": "Historic GSM channel blocks, interleaved. RÚ renewed them for 1 Jan 2026 to 31 Dec 2028. O2 received its 882.9–889.9 MHz and small blocks from 8 Sep 2026 after a 2100 MHz swap. Totals: O2 2×14.4, Orange 2×10.2, Slovak Telekom 2×10.2 MHz, which matches RÚ's Jan 2025 table.",
+      "note": "Historic GSM channel blocks, interleaved. RÚ renewed them for 1 Jan 2026 to 31 Dec 2028. O2's rights to 882.9–889.9 MHz and several small pieces start on 8 Sep 2026 (the renewal splits validity by segment). Totals: O2 2×14.4, Orange 2×10.2, Slovak Telekom 2×10.2 MHz, which matches RÚ's Jan 2025 table.",
       "sources": [
         "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531004_h_orange_900-mhz-do_2028.pdf",
         "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531005_h_st_900mhz_do_2028.pdf",
@@ -863,7 +863,7 @@
       "positions": "holdings",
       "future": null,
       "excludeFromTotal": false,
-      "note": "Not assigned. O2 handed back its 2100 MHz TDD in 2018, and Orange and Slovak Telekom did the same in 2018. The band is not among RÚ's mobile bands.",
+      "note": "Not assigned. RÚ decisions show O2 and Slovak Telekom handing back their 2100 MHz TDD assignments in 2018. The band is not among RÚ's mobile bands.",
       "sources": [
         "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2018_o2_zmena-licencie_vzdanie-casti-2100-mhz_tdd.pdf",
         "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
