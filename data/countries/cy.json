@@ -1,0 +1,770 @@
+{
+ "code": "cy",
+ "name": "Cyprus",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "national",
+ "summary": "Four spectrum holders: Cyta, Epic (ex-MTN), PrimeTel and Cablenet. The Department of Electronic Communications (DEC) publishes amounts per operator but not block edges. The 2021 auction added 700 MHz and 3.6 GHz, and 2100 MHz renewals and a 2024 award run to 2029.",
+ "operators": [
+  {
+   "id": "cyta",
+   "name": "Cyta",
+   "legal": "Cyprus Telecommunications Authority (ATHK)",
+   "color": "#0082c8",
+   "aliases": [
+    "Cytamobile-Vodafone",
+    "ΑΤΗΚ"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "epic",
+   "name": "Epic",
+   "legal": "Epic Ltd",
+   "color": "#e4002b",
+   "aliases": [
+    "MTN Cyprus"
+   ],
+   "kind": "mno",
+   "notes": "Formerly MTN Cyprus; rebranded Epic after its acquisition by Monaco Telecom."
+  },
+  {
+   "id": "primetel",
+   "name": "PrimeTel",
+   "legal": "Primetel PLC",
+   "color": "#f7941d",
+   "aliases": [],
+   "kind": "mno",
+   "notes": "Licensed in Feb 2014 for 900/1800/2100 MHz; also holds a 700 MHz/3.6 GHz authorisation (2021)."
+  },
+  {
+   "id": "cablenet",
+   "name": "Cablenet",
+   "legal": "Cablenet Communication Systems PLC",
+   "color": "#6d2077",
+   "aliases": [],
+   "kind": "mno",
+   "notes": "Entered mobile with 800/2600 MHz (June 2019). Also holds 700 MHz/3.6 GHz (2021) and 2×15 MHz at 2100 MHz (1965–1980/2155–2170, awarded by negotiation Aug 2024 as the only qualified bidder)."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 470–694 MHz is used for DTT (Velister Ltd, CYBC and Hellas Sat hold DTT authorisations).",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/register_el/register_el?OpenDocument"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The 2021 auction offered 6 lots of 2×5 MHz: a mandatory 2×5 MHz basic package for each of 4 authorisations plus 2 extra lots, with a 2×10 MHz cap. All four operators hold 700/3600 MHz authorisations valid to Jan/Feb 2041 (DEC register). Cyta's 2×10 MHz comes from Wikipedia/TeleGeography. For the others only the guaranteed 2×5 MHz basic package is shown: one of them probably also won the second extra lot (not verified).",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/D583A496DF510543C22585AE00379B8A/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20700%CE%9CHz%20%CE%BA%CE%B1%CE%B9%203.6GHz%20%28final%29.docx",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 10,
+     "paired": true,
+     "basis": "Wikipedia/TeleGeography (secondary)",
+     "expiry": "2041-01-15"
+    },
+    {
+     "op": "epic",
+     "mhz": 5,
+     "paired": true,
+     "basis": "minimum (basic package)",
+     "expiry": "2041-02-05"
+    },
+    {
+     "op": "cablenet",
+     "mhz": 5,
+     "paired": true,
+     "basis": "minimum (basic package)",
+     "expiry": "2041-02-05"
+    },
+    {
+     "op": "primetel",
+     "mhz": 5,
+     "paired": true,
+     "basis": "minimum (basic package)",
+     "expiry": "2041-02-05"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from the DEC renewal consultation (Table 1/2, Feb 2023); position edges are not published. Cyta and Epic were licensed Sept 2016 and Cablenet June 2019. All are now valid to 21 Jun 2029 (renewal decision THE 4/2023 and DEC register).",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/DFF746160B0258C0C2258A5C0029B5B1?OpenDocument"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "epic",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "cablenet",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from the DEC renewal consultation (Table 1/2, Feb 2023); position edges are not published. Renewed to 21 Jun 2029 (THE 4/2023).",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Europe"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 12.2,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "epic",
+     "mhz": 12.2,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "primetel",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no 1.5 GHz authorisation appears in the DEC register.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/register_el/register_el?OpenDocument"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from the DEC renewal consultation (Table 1/2, Feb 2023); position edges are not published. Each holder has 2×24.8 MHz, renewed to 21 Jun 2029.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Europe"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 24.8,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "epic",
+     "mhz": 24.8,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "primetel",
+     "mhz": 24.8,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no TDD rights are listed in the DEC authorisations or the renewal consultation, which covers only the FDD 2100 MHz band.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   }
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from the DEC renewal consultation (Table 1/2, Feb 2023); position edges are not published. Cablenet's 2×15 MHz is 1965–1980/2155–2170 MHz, per the 2024 tender THE Δ1/2024. The three incumbents share 1920–1965/2110–2155 MHz, with positions not published. All are valid to 21 Jun 2029.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/0F59DA4635797580C2258B2E002E9A5E/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%202100%CE%9CHz%28final%29.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/8142273194119EE6C2258B8700270A26?OpenDocument",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "epic",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "primetel",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "cablenet",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21",
+     "notes": "1965–1980 / 2155–2170 MHz"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no 2.3 GHz authorisation appears in the DEC register.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   }
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from the DEC renewal consultation (Table 1/2, Feb 2023); position edges are not published. 2520–2525/2640–2645 and 2545–2550/2665–2670 MHz are guard blocks (2018 tender), which leaves three 2×20 MHz blocks. Which operator holds which is not published.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/2DFF111CA0315BD5C22584F200508AC3/$file/Contest_Docs_800MHz_2600MHz_2018.doc",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "epic",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "cablenet",
+     "mhz": 20,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from the DEC renewal consultation (Table 1/2, Feb 2023); position edges are not published. 15 MHz TDD each. 2615–2620 MHz is a guard block, and 2570–2575, 2585–2590 and 2600–2605 MHz are restricted blocks.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/2DFF111CA0315BD5C22584F200508AC3/$file/Contest_Docs_800MHz_2600MHz_2018.doc"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 15,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "epic",
+     "mhz": 15,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    },
+    {
+     "op": "cablenet",
+     "mhz": 15,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2029-06-21"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.8 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The 2021 auction offered 400 MHz as 50 MHz lots: a 50 MHz basic package for each of 4 authorisations plus 4 extra lots, with a 100 MHz cap. Valid to Jan/Feb 2041. Cyta's 100 MHz comes from Wikipedia/TeleGeography. For the others only the guaranteed 50 MHz basic package is shown, and further lots may have been won (not verified).",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/D583A496DF510543C22585AE00379B8A/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20700%CE%9CHz%20%CE%BA%CE%B1%CE%B9%203.6GHz%20%28final%29.docx",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "holdings": [
+    {
+     "op": "cyta",
+     "mhz": 100,
+     "paired": false,
+     "basis": "Wikipedia/TeleGeography (secondary)",
+     "expiry": "2041-01-15"
+    },
+    {
+     "op": "epic",
+     "mhz": 50,
+     "paired": false,
+     "basis": "minimum (basic package)",
+     "expiry": "2041-02-05"
+    },
+    {
+     "op": "cablenet",
+     "mhz": 50,
+     "paired": false,
+     "basis": "minimum (basic package)",
+     "expiry": "2041-02-05"
+    },
+    {
+     "op": "primetel",
+     "mhz": 50,
+     "paired": false,
+     "basis": "minimum (basic package)",
+     "expiry": "2041-02-05"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no mmWave authorisation appears in the DEC register (April 2025) or in the tender procedures list.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/tenderprocedures_el/tenderprocedures_el?OpenDocument"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "40/42 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
+    "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/tenderprocedures_el/tenderprocedures_el?OpenDocument"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Spectrum is licensed by the Department of Electronic Communications (DEC), under the Deputy Ministry of Research, Innovation and Digital Policy. OCECPR regulates the market but does not publish spectrum holdings.",
+  "800/900/1800/2100/2600 MHz amounts come from the DEC renewal consultation (Feb 2023, Tables 1–2). The Nov 2023 decision (THE 4/2023) renewed the Cyta, Epic and PrimeTel 900/1800/2100 rights and the Cyta and Epic 800/2600 rights to 21 Jun 2029. The DEC register (April 2025) confirms all these authorisations expire 2029-06-21.",
+  "The 700 MHz and 3.6 GHz holdings are incomplete. DEC's register confirms that all four operators hold 5G authorisations, but the per-operator lot counts from the 2021 auction were not found in a regulator document. Only Cyta's 2×10 MHz and 100 MHz (Wikipedia, citing TeleGeography) are sourced; the other operators are shown with the guaranteed minimum.",
+  "The DEC register lists no mmWave, 1.5 GHz or 2.3 GHz authorisations.",
+  "Operator colours are approximate brand colours."
+ ],
+ "missing": [
+  "Block edges for every band except Cablenet's 2100 MHz block: DEC does not publish positions and none could be found.",
+  "700 MHz and 3.6 GHz: exact amounts for Epic, PrimeTel and Cablenet from the 2021 auction (up to 2×10 MHz and 100 MHz each). The minimums are shown, so the totals are lower bounds.",
+  "Carrier EARFCN/NR-ARFCN values not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "DEC – Μητρώο Εξουσιοδοτήσεων (register of auctioned authorisations, Apr 2025)",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls"
+  },
+  {
+   "title": "DEC – Public consultation on renewal of 800/900/1800/2100/2600 MHz rights (Feb 2023)",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf"
+  },
+  {
+   "title": "DEC – Renewal decision THE 4/2023 (Nov 2023)",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/DFF746160B0258C0C2258A5C0029B5B1?OpenDocument"
+  },
+  {
+   "title": "DEC – Tender THE Δ1/2024 (2100 MHz) documents",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/0F59DA4635797580C2258B2E002E9A5E/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%202100%CE%9CHz%28final%29.pdf"
+  },
+  {
+   "title": "DEC – THE Δ1/2024 award to Cablenet (Aug 2024)",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/8142273194119EE6C2258B8700270A26?OpenDocument"
+  },
+  {
+   "title": "DEC – 700 MHz / 3.6 GHz tender documents (2020)",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/D583A496DF510543C22585AE00379B8A/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20700%CE%9CHz%20%CE%BA%CE%B1%CE%B9%203.6GHz%20%28final%29.docx"
+  },
+  {
+   "title": "DEC – 800/2600 MHz tender documents (2018)",
+   "url": "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/2DFF111CA0315BD5C22584F200508AC3/$file/Contest_Docs_800MHz_2600MHz_2018.doc"
+  },
+  {
+   "title": "Wikipedia – List of 5G NR networks (Cyta 700/3.6 GHz)",
+   "url": "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+  }
+ ]
+}
