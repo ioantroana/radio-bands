@@ -36,7 +36,7 @@
    "id": "drei",
    "name": "Drei",
    "legal": "Hutchison Drei Austria GmbH",
-   "color": "#1f1f1f",
+   "color": "#00a0d2",
    "aliases": [
     "3 AT",
     "H3A",
@@ -83,7 +83,7 @@
    "id": "mass-response",
    "name": "MASS Response",
    "legal": "MASS Response Service GmbH",
-   "color": "#ed7d31",
+   "color": "#2e8b57",
    "aliases": [],
    "kind": "regional"
   }

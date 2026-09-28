@@ -2,176 +2,413 @@
  "code": "it",
  "name": "Italy",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Four mobile network operators: TIM, Fastweb + Vodafone (Swisscom; Vodafone Italia merged into Fastweb on 1 Jan 2026), WindTre and Iliad. Most pre-2018 licences (800/900/1500/1800/2100/2600 MHz and 3.4–3.6 GHz) expire at the end of 2029; the 2018 5G auction spectrum (700 MHz, 3.6–3.8 GHz and 26 GHz) runs to 2037.",
  "operators": [
   {
    "id": "tim",
-   "name": "Tim IT",
-   "color": "#1d19a3",
+   "name": "TIM",
+   "legal": "Telecom Italia S.p.A.",
+   "color": "#004691",
    "aliases": [
-    "Tim"
+    "Tim IT",
+    "Telecom Italia"
    ],
    "kind": "mno"
   },
   {
-   "id": "vodafone",
-   "name": "Vodafone IT",
-   "color": "#e60000",
+   "id": "fastweb-vodafone",
+   "name": "Fastweb + Vodafone",
+   "legal": "Fastweb S.p.A.",
+   "color": "#fdc300",
    "aliases": [
-    "Vodafone",
-    "VF",
-    "VF IT"
+    "Vodafone IT",
+    "Vodafone Italia",
+    "Fastweb IT",
+    "Fastweb",
+    "Vodafone"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Swisscom (via Fastweb) completed the acquisition of Vodafone Italia on 2024-12-31; Vodafone Italia was legally merged into Fastweb S.p.A. on 2026-01-01, so the former Vodafone and Fastweb licences are shown combined. Brands Fastweb and Vodafone continue (Vodafone brand licensed for up to five years)."
   },
   {
    "id": "windtre",
    "name": "WindTre",
-   "color": "#ff5700",
+   "legal": "Wind Tre S.p.A.",
+   "color": "#ff6a13",
    "aliases": [
-    "WindTre IT"
+    "WindTre IT",
+    "Wind Tre"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Owned by CK Hutchison. In 2024 acquired OpNet's (Brightco S.r.l.) 3.4–3.6 GHz and 24.5–26.5 GHz rights (AGCOM opinion 201/24/CONS). Shares RAN with Iliad via the Zefiro Net JV in less dense areas."
   },
   {
    "id": "iliad",
-   "name": "Iliad IT",
-   "color": "#910000",
+   "name": "Iliad",
+   "legal": "Iliad Italia S.p.A.",
+   "color": "#c8102e",
    "aliases": [
-    "Iliad"
+    "Iliad IT"
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "fastweb",
-   "name": "Fastweb IT",
-   "color": "#ffc600",
-   "aliases": [
-    "Fastweb"
-   ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Entered 2018 using remedy spectrum from the Wind/3 Italia merger (900, 1800, 2100, 2600 MHz). Portfolio at end-2025: 2×45 MHz + 220 MHz (iliad Group 2025 annual report)."
   },
   {
    "id": "public-safety",
-   "name": "Public Safety",
+   "name": "Defence / Public Safety",
    "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
-  },
-  {
-   "id": "fwa",
-   "name": "FWA",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "aliases": [
+    "Difesa",
+    "Public Safety"
+   ],
+   "kind": "government"
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
    "names": [
-    "B1",
-    "n1"
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     758,
+     788
     ],
     "ul": [
-     1920,
-     1980
+     703,
+     733
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2018 auction; rights usable from July 2022, expiring 2037-12-31. Positions agree in lteitaly.it and spectrum-tracker; iliad's 2×10 MHz confirmed in its annual report.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "iliad",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "earfcn": [
+      9260
+     ],
+     "nrarfcn": [
+      152690
+     ],
+     "expiry": "2037-12-31"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "nrarfcn": [
+      154570
+     ],
+     "expiry": "2037-12-31"
+    },
+    {
+     "op": "fastweb-vodafone",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "nrarfcn": [
+      156510
+     ],
+     "expiry": "2037-12-31",
+     "notes": "Won by Vodafone Italia in 2018"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz SDL (738–758)",
+   "names": [
+    "B29",
+    "n29"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     738,
+     758
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: lteitaly.it lists no carrier here. From background knowledge (not source-verified): the SDL lots offered in the 2018 auction got no bids.",
    "sources": [
     "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2011 auction; rights expire 2029-12-31.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy"
    ],
    "blocks": [
     {
      "op": "windtre",
      "dl": [
-      2110,
-      2130
+      791,
+      801
      ],
      "ul": [
-      1920,
-      1940
+      832,
+      842
      ],
      "earfcn": [
-      100
+      6200
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     },
     {
      "op": "tim",
      "dl": [
-      2130,
-      2145
+      801,
+      811
      ],
      "ul": [
-      1940,
-      1955
+      842,
+      852
      ],
      "earfcn": [
-      275,
-      300
+      6300
      ],
-     "nrarfcn": [
-      427470
-     ],
-     "notes": "EARFCN 275 is used for 10 or 15 MHz of LTE · EARFCN 300 is used for 10 MHz of LTE · 5G NR operating as DSS n1 on some sites",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     },
+    {
+     "op": "fastweb-vodafone",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Former Vodafone Italia block"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Rights extended to 2029-12-31 (900/2100 extension paid from 2021). Small guard gaps between operators.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
+   ],
+   "blocks": [
     {
      "op": "iliad",
      "dl": [
-      2145,
-      2155
+      925.1,
+      930.1
      ],
      "ul": [
-      1955,
-      1965
+      880.1,
+      885.1
      ],
-     "earfcn": [
-      400
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31",
+     "notes": "Remedy spectrum from the Wind/3 merger"
     },
     {
-     "op": "vodafone",
+     "op": "tim",
      "dl": [
-      2155,
-      2170
+      930.2,
+      940
      ],
      "ul": [
-      1965,
-      1980
+      885.2,
+      895
      ],
      "earfcn": [
-      525
+      3526
      ],
-     "nrarfcn": [
-      432050,
-      433010
+     "expiry": "2029-12-31"
+    },
+    {
+     "op": "fastweb-vodafone",
+     "dl": [
+      940.4,
+      950
      ],
-     "notes": "5G NR operating as DSS n1",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "ul": [
+      895.4,
+      905
+     ],
+     "earfcn": [
+      3676
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Former Vodafone Italia block"
+    },
+    {
+     "op": "windtre",
+     "dl": [
+      950.2,
+      959.8
+     ],
+     "ul": [
+      905.2,
+      914.8
+     ],
+     "expiry": "2029-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band SDL (B32/B75)",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "partially-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "1452–1492 MHz auctioned in 2015; rights expire 2029-12-31. 1427–1452 and 1492–1517 MHz are not assigned to MNOs.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      1427,
+      1452
+     ],
+     "notes": "Not assigned"
+    },
+    {
+     "op": "tim",
+     "f": [
+      1452,
+      1472
+     ],
+     "earfcn": [
+      10020
+     ],
+     "expiry": "2029-12-31"
+    },
+    {
+     "op": "fastweb-vodafone",
+     "f": [
+      1472,
+      1492
+     ],
+     "earfcn": [
+      10220
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Former Vodafone Italia block"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1492,
+      1517
+     ],
+     "notes": "Not assigned"
     }
    ]
   },
   {
    "group": "1800",
-   "label": "1800 MHz (B3/n3)",
+   "label": "1800 MHz (B3)",
    "names": [
     "B3",
     "n3"
@@ -191,9 +428,11 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Rights expire 2029-12-31. 1805–1810/1710–1715 MHz is used for public safety.",
    "sources": [
-    "https://lteitaly.it/it/spectrum.php"
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
    ],
    "blocks": [
     {
@@ -208,9 +447,7 @@
      ],
      "earfcn": [
       1225
-     ],
-     "notes": "Public Safety",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     ]
     },
     {
      "op": "tim",
@@ -225,11 +462,7 @@
      "earfcn": [
       1350
      ],
-     "nrarfcn": [
-      365530
-     ],
-     "notes": "5G NR is operating as DSS n3 in some trial sites · Rarely used for DCS",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     },
     {
      "op": "iliad",
@@ -244,7 +477,7 @@
      "earfcn": [
       1500
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     },
     {
      "op": "windtre",
@@ -260,14 +493,13 @@
       1650
      ],
      "nrarfcn": [
-      368890,
-      371530
+      368890
      ],
-     "notes": "5G NR operating as DSS n3 · Rarely used for DCS",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31",
+     "notes": "NR DSS n3 on some sites"
     },
     {
-     "op": "vodafone",
+     "op": "fastweb-vodafone",
      "dl": [
       1860,
       1880
@@ -279,14 +511,148 @@
      "earfcn": [
       1850
      ],
-     "notes": "Rarely used for DCS",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31",
+     "notes": "Former Vodafone Italia block"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Rights extended to 2029-12-31.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "windtre",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "earfcn": [
+      100
+     ],
+     "expiry": "2029-12-31"
+    },
+    {
+     "op": "tim",
+     "dl": [
+      2130,
+      2145
+     ],
+     "ul": [
+      1940,
+      1955
+     ],
+     "earfcn": [
+      275
+     ],
+     "nrarfcn": [
+      427470
+     ],
+     "expiry": "2029-12-31",
+     "notes": "NR DSS n1 on some sites"
+    },
+    {
+     "op": "iliad",
+     "dl": [
+      2145,
+      2155
+     ],
+     "ul": [
+      1955,
+      1965
+     ],
+     "earfcn": [
+      400
+     ],
+     "expiry": "2029-12-31"
+    },
+    {
+     "op": "fastweb-vodafone",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "earfcn": [
+      525
+     ],
+     "nrarfcn": [
+      432050,
+      433010
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Former Vodafone Italia block; NR DSS n1"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2.3 GHz (B40/n40) – temporary local",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "MIMIT ran a call (deadline 31 Jan 2026) for temporary assignment until end-2029 of up to 20 MHz of 2.3 GHz in the provinces of Milan, Rome, Naples, Palermo, Bologna and Monza-Brianza; iliad was awarded spectrum in Feb 2026 (15 MHz in Rome, 20 MHz elsewhere per lteitaly.it). Local only, so excluded from national totals. The rest of the band is used by other (government) services.",
+   "sources": [
+    "https://www.mimit.gov.it/it/normativa/notifiche-e-avvisi/invito-a-manifestare-interesse-per-lassegnazione-temporanea-di-frequenze-nella-banda-2-3-ghz",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf",
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "holdings": [
+    {
+     "op": "iliad",
+     "mhz": 20,
+     "basis": "local: 6 provinces only (15 MHz in Rome)",
+     "expiry": "2029-12-31",
+     "source": "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7/n7)",
+   "label": "2600 MHz FDD (B7)",
    "names": [
     "B7",
     "n7"
@@ -306,9 +672,11 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2011 auction; rights expire 2029-12-31. 2620–2630/2500–2510 MHz is held by Defence.",
    "sources": [
-    "https://lteitaly.it/it/spectrum.php"
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
    ],
    "blocks": [
     {
@@ -324,8 +692,7 @@
      "earfcn": [
       2800
      ],
-     "notes": "Public Safety · From September 2020 to March 2022 this block was used by Iliad in some regions",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "notes": "Defence; used by iliad in some provinces Sep 2020–Mar 2022"
     },
     {
      "op": "iliad",
@@ -340,10 +707,10 @@
      "earfcn": [
       2900
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     },
     {
-     "op": "vodafone",
+     "op": "fastweb-vodafone",
      "dl": [
       2640,
       2655
@@ -355,7 +722,8 @@
      "earfcn": [
       3025
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31",
+     "notes": "Former Vodafone Italia block"
     },
     {
      "op": "tim",
@@ -370,7 +738,7 @@
      "earfcn": [
       3175
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     },
     {
      "op": "windtre",
@@ -385,309 +753,16 @@
      "earfcn": [
       3350
      ],
-     "nrarfcn": [
-      535010,
-      537410
-     ],
-     "notes": "5G NR operating as DSS n7 when DCS is deployed",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://lteitaly.it/it/spectrum.php"
-   ],
-   "blocks": [
-    {
-     "op": "iliad",
-     "dl": [
-      925.1,
-      930.1
-     ],
-     "ul": [
-      880.1,
-      885.1
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "tim",
-     "dl": [
-      930.2,
-      940
-     ],
-     "ul": [
-      885.2,
-      895
-     ],
-     "earfcn": [
-      3526
-     ],
-     "notes": "LTE is operating only on some trial sites",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      940.4,
-      950
-     ],
-     "ul": [
-      895.4,
-      905
-     ],
-     "earfcn": [
-      3676
-     ],
-     "notes": "LTE is operating only on some trial sites",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "windtre",
-     "dl": [
-      950.2,
-      959.8
-     ],
-     "ul": [
-      905.2,
-      914.8
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://lteitaly.it/it/spectrum.php"
-   ],
-   "blocks": [
-    {
-     "op": "windtre",
-     "dl": [
-      791,
-      801
-     ],
-     "ul": [
-      832,
-      842
-     ],
-     "earfcn": [
-      6200
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "tim",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6400
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://lteitaly.it/it/spectrum.php"
-   ],
-   "blocks": [
-    {
-     "op": "iliad",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ],
-     "earfcn": [
-      9260
-     ],
-     "nrarfcn": [
-      152690
-     ],
-     "notes": "5G NR operating as DSS n28",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "tim",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ],
-     "nrarfcn": [
-      154570
-     ],
-     "notes": "Usually is NR only, on some sites is operating as DSS n28",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      778,
-      788
-     ],
-     "ul": [
-      723,
-      733
-     ],
-     "earfcn": [
-      9460
-     ],
-     "nrarfcn": [
-      156510
-     ],
-     "notes": "Started as LTE only, most sites have enabled 5G NR operating as DSS n28, some sites are NR only",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    }
-   ]
-  },
-  {
-   "group": "1400",
-   "label": "1.4–1.5 GHz (B32)",
-   "names": [
-    "B32"
-   ],
-   "status": "assigned",
-   "duplex": "sdl",
-   "range": {
-    "f": [
-     1452,
-     1496
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://lteitaly.it/it/spectrum.php"
-   ],
-   "blocks": [
-    {
-     "op": "tim",
-     "f": [
-      1452,
-      1472
-     ],
-     "earfcn": [
-      10020
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      1472,
-      1492
-     ],
-     "earfcn": [
-      10220
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz TDD (B38/n38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -700,39 +775,23 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "WindTre holds 2570–2600 MHz (the former Wind and 3 Italia 15 MHz blocks); it uses 20 MHz for NR. 2600–2620 MHz is Defence/public safety. Expiry 2029-12-31.",
    "sources": [
-    "https://lteitaly.it/it/spectrum.php"
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy"
    ],
    "blocks": [
     {
      "op": "windtre",
      "f": [
       2570,
-      2575
-     ],
-     "notes": "Unused TDD spectrum",
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "windtre",
-     "f": [
-      2575,
-      2595
-     ],
-     "earfcn": [
-      37900
-     ],
-     "source": "https://lteitaly.it/it/spectrum.php"
-    },
-    {
-     "op": "windtre",
-     "f": [
-      2595,
       2600
      ],
-     "notes": "Unused TDD spectrum",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "nrarfcn": [
+      516030,
+      517210
+     ],
+     "expiry": "2029-12-31"
     },
     {
      "op": "public-safety",
@@ -740,16 +799,19 @@
       2600,
       2620
      ],
-     "notes": "Public Safety",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "earfcn": [
+      38150
+     ]
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
-    "n78"
+    "n78",
+    "B42",
+    "B43"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -762,28 +824,53 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "3.4–3.6 GHz: former regional WiMAX rights (2008), extended to 2029-12-31 and defragmented (AGCOM 201/24/CONS figure 1, 'Resto d'Italia'). 3.6–3.8 GHz: 2018 5G auction, expiry 2037-12-31. In Bolzano and Valle d'Aosta the 3.4–3.6 GHz blocks differ (TIM at 3460–3480, Fastweb at 3480–3500 in Bolzano, and at 3540–3580/3600). Fastweb's 3560–3600 MHz was used by WindTre's network under the 2019 Fastweb–WindTre 5G sharing deal.",
    "sources": [
-    "https://lteitaly.it/it/spectrum.php"
+    "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_201-24-CONS_pubblicabile_0.pdf",
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
    ],
    "blocks": [
     {
-     "op": "fwa",
+     "op": "public-safety",
+     "f": [
+      3400,
+      3437
+     ],
+     "notes": "Defence"
+    },
+    {
+     "op": "guard",
+     "f": [
+      3437,
+      3440
+     ]
+    },
+    {
+     "op": "windtre",
      "f": [
       3440,
       3500
      ],
-     "notes": "FWA",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31",
+     "notes": "Acquired from OpNet/Brightco (AGCOM opinion 201/24/CONS, June 2024)",
+     "source": "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_201-24-CONS_pubblicabile_0.pdf"
     },
     {
      "op": "public-safety",
      "f": [
       3500,
-      3540
+      3537
      ],
-     "notes": "Public Safety",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "notes": "Defence"
+    },
+    {
+     "op": "guard",
+     "f": [
+      3537,
+      3540
+     ]
     },
     {
      "op": "tim",
@@ -794,20 +881,29 @@
      "nrarfcn": [
       636768
      ],
-     "notes": "In Valle d'Aosta and Provincia Autonoma di Bolzano this block is from 3460 MHz to 3480 MHz",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2029-12-31",
+     "source": "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_201-24-CONS_pubblicabile_0.pdf"
+    },
+    {
+     "op": "fastweb-vodafone",
+     "f": [
+      3560,
+      3600
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Former Fastweb block",
+     "source": "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_201-24-CONS_pubblicabile_0.pdf"
     },
     {
      "op": "windtre",
      "f": [
-      3560,
+      3600,
       3620
      ],
      "nrarfcn": [
       638016
      ],
-     "notes": "In Valle d'Aosta and Provincia Autonoma di Bolzano this block is divided into two block: one of 40 MHz (NRARFCN 636480 and 636576) and one of 20 MHz (NRARFCN 640320 and 640704)",
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31"
     },
     {
      "op": "iliad",
@@ -818,10 +914,10 @@
      "nrarfcn": [
       641664
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31"
     },
     {
-     "op": "vodafone",
+     "op": "fastweb-vodafone",
      "f": [
       3640,
       3720
@@ -830,7 +926,8 @@
       643296,
       645312
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31",
+     "notes": "Won by Vodafone Italia in 2018"
     },
     {
      "op": "tim",
@@ -842,39 +939,75 @@
       648768,
       650688
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31"
     }
    ]
   },
   {
-   "group": "26g",
-   "label": "24–29 GHz (n257)",
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
    "names": [
-    "n257"
+    "n79"
    ],
-   "status": "assigned",
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile; not harmonised for MFCN in the EU.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n257/n258)",
+   "names": [
+    "n257",
+    "n258"
+   ],
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
      24250,
-     29500
+     27500
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "26.5–27.5 GHz sold in the 2018 auction as five 200 MHz blocks (expiry 2037-12-31). iliad's 26.7–26.9 GHz (leased to Open Fiber) and Fastweb's 27.1–27.3 GHz (leased to Eolo) are confirmed by AGCOM; the others follow lteitaly.it and spectrum-tracker. 24.25–26.5 GHz is not assigned for 5G: 24.5–26.5 GHz carries legacy regional FDD WLL rights (valid to 2026-12-31), of which OpNet's were transferred to WindTre in 2024.",
    "sources": [
-    "https://lteitaly.it/it/spectrum.php"
+    "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_287-24-CONS_pubblicabile.pdf",
+    "https://www.agcom.it/sites/default/files/migration/delibera/Delibera%20310-23-CONS.pdf",
+    "https://lteitaly.it/it/spectrum.php",
+    "https://www.spectrum-tracker.com/Italy",
+    "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
    ],
    "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      24250,
+      26500
+     ],
+     "notes": "Not assigned for 5G (legacy WLL fixed links)"
+    },
     {
      "op": "windtre",
      "f": [
       26500,
       26700
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31"
     },
     {
      "op": "iliad",
@@ -882,7 +1015,8 @@
       26700,
       26900
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31",
+     "source": "https://www.agcom.it/sites/default/files/migration/delibera/Delibera%20310-23-CONS.pdf"
     },
     {
      "op": "tim",
@@ -890,36 +1024,226 @@
       26900,
       27100
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31"
     },
     {
-     "op": "fastweb",
+     "op": "fastweb-vodafone",
      "f": [
       27100,
       27300
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31",
+     "notes": "Former Fastweb block, leased to Eolo for FWA",
+     "source": "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_287-24-CONS_pubblicabile.pdf"
     },
     {
-     "op": "vodafone",
+     "op": "fastweb-vodafone",
      "f": [
       27300,
       27500
      ],
-     "source": "https://lteitaly.it/it/spectrum.php"
+     "expiry": "2037-12-31",
+     "notes": "Won by Vodafone Italia in 2018"
     }
    ]
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile; no award announced.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; no award announced.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Used for broadcasting (UHF DTT) in Europe; not an IMT band here.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe (overlaps the 800 MHz B20 band).",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe (overlaps B1/B3).",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 / 2010–2025 MHz TDD",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile use today: lteitaly.it lists no carrier. The status of the old UMTS-TDD blocks in the 2000 licences was not checked.",
+   "sources": [
+    "https://lteitaly.it/it/spectrum.php"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Fastweb + Vodafone: Swisscom completed the Vodafone Italia deal on 2024-12-31. Vodafone Italia was legally merged into Fastweb S.p.A. on 2026-01-01 (Wikipedia), so the former Vodafone and Fastweb holdings are one operator here.",
+  "3.4–3.6 GHz: AGCOM 201/24/CONS (June 2024) gave MIMIT a favourable opinion on the transfer of OpNet's (Brightco S.r.l.) 3.4–3.6 GHz and 24.5–26.5 GHz rights to WindTre. It is shown as completed because lteitaly.it lists the block as OpNet/WindTre. No MIMIT completion notice was found.",
+  "Regional variants in 3.4–3.6 GHz (Bolzano, Valle d'Aosta) are described in the band note; the diagram shows the layout for the rest of Italy.",
+  "2.3 GHz: the temporary local award (Feb 2026, to end-2029) is excluded from totals because it covers only six provinces.",
+  "Defence/public-safety blocks (1800, 2600 FDD/TDD, 3.4–3.6 GHz) are shown as a government operator.",
+  "Sanity check: iliad totals 2×45 MHz + 220 MHz excluding 2.3 GHz, matching its 2025 annual report."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "700 MHz SDL (738–758): 'no bids in 2018' is from background knowledge, not source-verified.",
+  "No check of whether MIMIT has started renewing the licences that expire in 2029.",
+  "2.3 GHz: exact frequencies and any other assignees of the Feb 2026 temporary award were not found.",
+  "1900–1920 MHz (UMTS TDD) licence status not checked.",
+  "No MIMIT document confirming completion of the OpNet→WindTre transfer."
+ ],
+ "changes": [
+  "Merged Vodafone IT and Fastweb IT into one operator 'Fastweb + Vodafone' (legal merger 2026-01-01).",
+  "3.4–3.8 GHz rebuilt from AGCOM 201/24/CONS: added Defence 3400–3437, guard bands, and WindTre 3440–3500 (ex-OpNet, was 'FWA'). Split the seed's WindTre 3560–3620 into Fastweb 3560–3600 (now Fastweb + Vodafone) and WindTre 3600–3620.",
+  "700 MHz range corrected to 703–733/758–788; added a not-assigned 700 SDL entry.",
+  "1.5 GHz range widened to 1427–1517 MHz with the unassigned parts shown.",
+  "2600 TDD: merged WindTre's three seed blocks into one 2570–2600 MHz block.",
+  "26 GHz: confirmed iliad and Fastweb positions from AGCOM 310/23 and 287/24; showed 24.25–26.5 GHz as unassigned for 5G.",
+  "Added the 2.3 GHz temporary local assignment to iliad (Feb 2026) and not-assigned entries for all missing required groups.",
+  "Added expiry dates (2029-12-31 or 2037-12-31) and a public-safety operator marked as government."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
-   "url": "https://github.com/davwheat/mobile-spectrum-data"
+   "title": "LTE Italy – Spettro italiano (assignments and ARFCNs)",
+   "url": "https://lteitaly.it/it/spectrum.php"
+  },
+  {
+   "title": "Spectrum-Tracker – Italy",
+   "url": "https://www.spectrum-tracker.com/Italy"
+  },
+  {
+   "title": "iliad Group 2025 Annual Financial Report (Italy spectrum portfolio)",
+   "url": "https://www.iliad.fr/media/Annual_Financial_Report_iliad_Group_2025_beac554bcf.pdf"
+  },
+  {
+   "title": "AGCOM Delibera 201/24/CONS – transfer of OpNet 3.4–3.6 GHz and 24.5–26.5 GHz rights to Wind Tre",
+   "url": "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_201-24-CONS_pubblicabile_0.pdf"
+  },
+  {
+   "title": "AGCOM Delibera 287/24/CONS – lease of Fastweb 26 GHz block to Eolo",
+   "url": "https://www.agcom.it/sites/default/files/provvedimenti/delibera/2024/Delibera_287-24-CONS_pubblicabile.pdf"
+  },
+  {
+   "title": "AGCOM Delibera 310/23/CONS – lease of iliad 26 GHz block to Open Fiber",
+   "url": "https://www.agcom.it/sites/default/files/migration/delibera/Delibera%20310-23-CONS.pdf"
+  },
+  {
+   "title": "MIMIT – call for temporary 2.3 GHz assignment",
+   "url": "https://www.mimit.gov.it/it/normativa/notifiche-e-avvisi/invito-a-manifestare-interesse-per-lassegnazione-temporanea-di-frequenze-nella-banda-2-3-ghz"
+  },
+  {
+   "title": "Wikipedia – Fastweb (Vodafone Italia acquisition and merger)",
+   "url": "https://en.wikipedia.org/wiki/Fastweb_(telecommunications_company)"
   }
  ]
 }
