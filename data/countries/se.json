@@ -712,7 +712,7 @@
    "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "No national licences. PTS starts assigning local licences in 3800–3920 and 3990–4130 MHz from 1 Oct 2026.",
+   "note": "No national licences. PTS proposes assigning local licences in 3800–3920 and 3990–4130 MHz from 1 Oct 2026.",
    "sources": [
     "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/"
    ],

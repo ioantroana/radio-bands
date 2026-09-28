@@ -50,7 +50,7 @@
     "VodafoneThree"
    ],
    "kind": "mno",
-   "notes": "Merger of Vodafone UK and Three UK completed 31 May 2025 (Vodafone 51% / CK Hutchison 49%). Licences remain in the names of Vodafone Ltd, Hutchison 3G UK Ltd and UK Broadband Ltd; both Vodafone and Three brands continue. Vodafone's 1400/2100/2.6 TDD/3.4 GHz spectrum partly transferred to O2 as a merger commitment."
+   "notes": "Merger of Vodafone UK and Three UK completed 31 May 2025 (initially Vodafone 51% / CK Hutchison 49%). Vodafone bought out CK Hutchison's 49% for £4.3bn, completed 30 Jul 2026, and now owns 100%."
   },
   {
    "id": "sal",
@@ -1630,6 +1630,10 @@
   {
    "title": "davwheat/mobile-spectrum-data (LGPL-3.0), seed",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
+  },
+  {
+   "title": "Vodafone – Vodafone takes full ownership of VodafoneThree (30 Jul 2026)",
+   "url": "https://www.vodafone.com/news/newsroom/corporate-and-financial/vodafone-takes-full-ownership-of-vodafonethree"
   }
  ]
 }

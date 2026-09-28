@@ -95,7 +95,8 @@
     "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/D583A496DF510543C22585AE00379B8A/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20700%CE%9CHz%20%CE%BA%CE%B1%CE%B9%203.6GHz%20%28final%29.docx",
     "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
     "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
-    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks",
+    "https://www.operatorwatch.com/2022/01/cyprus-is-hoping-for-5g-to-gain-ground.html"
    ],
    "holdings": [
     {
@@ -107,10 +108,11 @@
     },
     {
      "op": "epic",
-     "mhz": 5,
+     "mhz": 10,
      "paired": true,
      "basis": "minimum (basic package)",
-     "expiry": "2041-02-05"
+     "expiry": "2041-02-05",
+     "notes": "2×10 MHz (Operator Watch; spectrum-tracker 703–713/758–768)"
     },
     {
      "op": "cablenet",
@@ -594,12 +596,14 @@
    "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "The 2021 auction offered 400 MHz as 50 MHz lots: a 50 MHz basic package for each of 4 authorisations plus 4 extra lots, with a 100 MHz cap. Valid to Jan/Feb 2041. Cyta's 100 MHz comes from Wikipedia/TeleGeography. For the others only the guaranteed 50 MHz basic package is shown, and further lots may have been won (not verified).",
+   "note": "The 2021 auction offered 400 MHz as 50 MHz lots: a 50 MHz basic package for each of 4 authorisations plus 4 extra lots, with a 100 MHz cap. Valid to Jan/Feb 2041. Cyta's 100 MHz comes from Wikipedia/TeleGeography. For the others only the guaranteed 50 MHz basic package is shown, and further lots may have been won (not verified). Conflict: Operator Watch gives Cablenet and PrimeTel 50 MHz each; spectrum-tracker and Cyprus Profile (all 460 MHz sold) imply 100 MHz each. 50 MHz kept as a lower bound.",
    "sources": [
     "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/D583A496DF510543C22585AE00379B8A/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%B1%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CE%91%CE%B4%CE%B5%CE%B9%CE%BF%CE%B4%CF%8C%CF%84%CE%B7%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CE%AC%CF%83%CE%BC%CE%B1%CF%84%CE%BF%CF%82%20700%CE%9CHz%20%CE%BA%CE%B1%CE%B9%203.6GHz%20%28final%29.docx",
     "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/95D50BF4066D2139C225850E003A5329/$file/%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%20%CE%95%CE%BE%CE%BF%CF%85%CF%83%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%20%CF%80%CE%BF%CF%85%20%CE%AD%CF%87%CE%BF%CF%85%CE%BD%20%CF%87%CE%BF%CF%81%CE%B7%CE%B3%CE%B7%CE%B8%CE%B5%CE%AF%20%CE%BC%CE%AD%CF%83%CF%89%20%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%BA%CE%B1%CF%83%CE%B9%CF%8E%CE%BD%20%CE%94%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CE%BF%CF%8D%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B9%CE%B1%CF%80%CF%81%CE%B1%CE%B3%CE%BC%CE%AC%CF%84%CE%B5%CF%85%CF%83%CE%B7%CF%82_4_2025.xls",
     "https://dec.dmrid.gov.cy/dmrid/DEC/ws_dec.nsf/All/ECD84F05C4141BC1C225894B002E0A44/$file/%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF%20%CE%94%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%B1%CF%82%20%CE%94%CE%B9%CE%B1%CE%B2%CE%BF%CF%8D%CE%BB%CE%B5%CF%85%CF%83%CE%B7%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%91%CE%BD%CE%B1%CE%BD%CE%AD%CF%89%CF%83%CE%B7%20%CE%95%CE%BE%CE%BF%CF%85%CE%B4%CE%B9%CE%BF%CE%B4%CE%BF%CF%84%CE%AE%CF%83%CE%B5%CF%89%CE%BD%28800%2C900%2C1800%2C2100%2C2600%29_final.pdf",
-    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks",
+    "https://www.operatorwatch.com/2022/01/cyprus-is-hoping-for-5g-to-gain-ground.html",
+    "https://www.cyprusprofile.com/articles/5g-bidding-process-wraps-first-licences-january-2021"
    ],
    "holdings": [
     {
@@ -611,10 +615,11 @@
     },
     {
      "op": "epic",
-     "mhz": 50,
+     "mhz": 100,
      "paired": false,
      "basis": "minimum (basic package)",
-     "expiry": "2041-02-05"
+     "expiry": "2041-02-05",
+     "notes": "100 MHz (Operator Watch; spectrum-tracker 3700–3800)"
     },
     {
      "op": "cablenet",
@@ -725,7 +730,8 @@
   "800/900/1800/2100/2600 MHz amounts come from the DEC renewal consultation (Feb 2023, Tables 1–2). The Nov 2023 decision (THE 4/2023) renewed the Cyta, Epic and PrimeTel 900/1800/2100 rights and the Cyta and Epic 800/2600 rights to 21 Jun 2029. The DEC register (April 2025) confirms all these authorisations expire 2029-06-21.",
   "The 700 MHz and 3.6 GHz holdings are incomplete. DEC's register confirms that all four operators hold 5G authorisations, but the per-operator lot counts from the 2021 auction were not found in a regulator document. Only Cyta's 2×10 MHz and 100 MHz (Wikipedia, citing TeleGeography) are sourced; the other operators are shown with the guaranteed minimum.",
   "The DEC register lists no mmWave, 1.5 GHz or 2.3 GHz authorisations.",
-  "Operator colours are approximate brand colours."
+  "Operator colours are approximate brand colours.",
+  "Corrected after independent verification (2026-09-28): Epic holds 2×10 MHz at 700 MHz and 100 MHz at 3.6 GHz (Operator Watch + spectrum-tracker), not the guaranteed minimums."
  ],
  "missing": [
   "Block edges for every band except Cablenet's 2100 MHz block: DEC does not publish positions and none could be found.",

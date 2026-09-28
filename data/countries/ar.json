@@ -639,11 +639,13 @@
      3600
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "Oct 2023 5G auction (ENACOM Res. 1,285/2023): three national 100 MHz lots at US$350m reserve each. Personal won Lot 2 (3400-3500); TMA/Movistar took Lot 3B (3550-3600); Claro holds the remaining lot (3300-3400, by elimination). Lot 3A (3500-3550) appears unsold (not verified). ENACOM Res. 611/2025 cut the per-group cap from 200 to 150 MHz, so Telecom's combined 150 MHz is at the cap. Terms to 2043 (Telefónica).",
+   "note": "Oct 2023 5G auction: ENACOM states Lot 1 3300–3400 Claro, Lot 2 3400–3500 Telecom (Personal), Lot 3B 3550–3600 Telefónica (Movistar); one 50 MHz lot unsold. ENACOM Res. 611/2025 cut the per-group cap from 200 to 150 MHz, so Telecom's combined 150 MHz is at the cap. Terms to 2043.",
    "sources": [
+    "https://www.enacom.gob.ar/institucional/el-estado-argentino-licito-la-banda-5g-por-mas-de-875-millones-de-dolares_n4578",
+    "https://dplnews.com/subasta-5g-argentina-claro-personal-movistar-espectro/",
     "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm",
     "https://www.sec.gov/Archives/edgar/data/814052/000081405225000036/tef-20241231.htm",
     "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
@@ -655,14 +657,15 @@
       3300,
       3400
      ],
-     "notes": "By elimination; América Movil confirms a 3.5 GHz licence"
+     "notes": "Lot 1 (US$350.05m)"
     },
     {
      "op": "personal",
      "f": [
       3400,
       3500
-     ]
+     ],
+     "notes": "Lot 2 (US$350.03m)"
     },
     {
      "op": "unassigned",
@@ -670,7 +673,7 @@
       3500,
       3550
      ],
-     "notes": "Lot 3A - holder not confirmed"
+     "notes": "Lot 3A — unsold"
     },
     {
      "op": "movistar",
@@ -791,7 +794,8 @@
   "Area shares used for averages (AMBA/Norte/Sur ~32/41/27% of population) are approximate and from background knowledge, not source-verified.",
   "Telecom Argentina bought 99.99% of Telefónica Móviles Argentina (TMA) on 24 Feb 2025. The Secretary of Industry and Commerce ordered a hold-separate (Resolution 63/2025, later suspended by the courts). The ANC's Antitrust Tribunal approved it with conditions on 17 Jun 2026 (RESFC-2026-38-APN-TDC#ANC): transfer 6m mobile customers and 'the rights of use of radio spectrum ... necessary for the competitive operation of the divested mobile service'. As of the H1 2026 report (Aug 2026) no buyer or spectrum package had been chosen, so no future-dated entry could be drawn.",
   "Movistar and Personal are shown separately because they still hold separate licences and run separate networks; both are controlled by Telecom Argentina.",
-  "América Movil's 20-F describes a Nov 2023 ENACOM Res. 2023-1473 award as '2.6 GHz 5G band'; the timing and amount match the 3.5 GHz auction, so it is treated as Claro's 3.5 GHz lot."
+  "América Movil's 20-F describes a Nov 2023 ENACOM Res. 2023-1473 award as '2.6 GHz 5G band'; the timing and amount match the 3.5 GHz auction, so it is treated as Claro's 3.5 GHz lot.",
+  "Corrected after independent verification (2026-09-28): 3.5 GHz edges confirmed by ENACOM's own announcement plus DPL News; upgraded to verified."
  ],
  "missing": [
   "Positions for 850 MHz and PCS 1900 blocks (except the 2014 remnant lots) - holdings only.",

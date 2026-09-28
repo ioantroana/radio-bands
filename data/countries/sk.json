@@ -1,1417 +1,1418 @@
 {
-  "code": "sk",
-  "name": "Slovakia",
-  "region": "Europe",
-  "asOf": "2026-09-28",
-  "coverage": "positions-verified",
-  "licensing": "national",
-  "summary": "Four MNOs: Orange, Slovak Telekom, O2 (PPF) and 4ka (SWAN). The record €506m auction in Jul 2025 re-awarded 800/900/2600 MHz from 2029, 2100 MHz from 8 Sep 2026 and new 1500 MHz SDL. 3.6 GHz was re-arranged into four 100 MHz blocks in Sep 2025.",
-  "operators": [
+ "code": "sk",
+ "name": "Slovakia",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
+ "licensing": "national",
+ "summary": "Four MNOs: Orange, Slovak Telekom, O2 (PPF) and 4ka (SWAN). The record €506m auction in Jul 2025 re-awarded 800/900/2600 MHz from 2029, 2100 MHz from 8 Sep 2026 and new 1500 MHz SDL. 3.6 GHz was re-arranged into four 100 MHz blocks in Sep 2025.",
+ "operators": [
+  {
+   "id": "orange",
+   "name": "Orange",
+   "legal": "Orange Slovensko, a.s.",
+   "color": "#ff7900",
+   "aliases": [
+    "Orange Slovensko",
+    "Orange SK"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "telekom",
+   "name": "Slovak Telekom",
+   "legal": "Slovak Telekom, a.s.",
+   "color": "#e20074",
+   "aliases": [
+    "Telekom",
+    "ST"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "o2",
+   "name": "O2",
+   "legal": "O2 Slovakia, s.r.o.",
+   "color": "#0019a5",
+   "aliases": [
+    "O2 Slovakia",
+    "O2 SK"
+   ],
+   "kind": "mno",
+   "notes": "PPF Telecom Group. From background knowledge: e& (Emirates Telecommunications) bought a controlling stake in PPF Telecom's CEE operators, including O2 Slovakia. O2 and Slovak Telekom have shared their networks outside Bratislava and Košice since 2023 (RÚ, Jan 2025)."
+  },
+  {
+   "id": "4ka",
+   "name": "4ka",
+   "legal": "SWAN, a.s.",
+   "color": "#00a3e0",
+   "aliases": [
+    "SWAN",
+    "SWAN Mobile",
+    "Štvorka"
+   ],
+   "kind": "mno",
+   "notes": "4th MNO; entered with 1800 MHz won in 2014. SWAN and SWAN Mobile merged in 2022. It won its first sub-1 GHz spectrum (900 MHz, from 2029) plus 1500, 2100 and 2600 MHz in the Jul 2025 auction. Uses national roaming on Orange."
+  }
+ ],
+ "bands": [
+  {
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "From the Nov 2020 auction; licences run to 31 Dec 2040.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-700-mhz/2010591001-o2-slovakia-s_r_o_700-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-700-mhz/2010591002-orange-slovensko-a_s_700-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-700-mhz/2010591003-slovak-telekom-a_s_700-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": [
     {
-      "id": "orange",
-      "name": "Orange",
-      "legal": "Orange Slovensko, a.s.",
-      "color": "#ff7900",
-      "aliases": [
-        "Orange Slovensko",
-        "Orange SK"
-      ],
-      "kind": "mno"
+     "op": "o2",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "expiry": "2040-12-31",
+     "notes": "€32.0m (2020)"
     },
     {
-      "id": "telekom",
-      "name": "Slovak Telekom",
-      "legal": "Slovak Telekom, a.s.",
-      "color": "#e20074",
-      "aliases": [
-        "Telekom",
-        "ST"
-      ],
-      "kind": "mno"
+     "op": "telekom",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "expiry": "2040-12-31"
     },
     {
-      "id": "o2",
-      "name": "O2",
-      "legal": "O2 Slovakia, s.r.o.",
-      "color": "#0019a5",
-      "aliases": [
-        "O2 Slovakia",
-        "O2 SK"
-      ],
-      "kind": "mno",
-      "notes": "PPF Telecom Group. From background knowledge, not source-verified: e& (Emirates Telecommunications) bought a controlling stake in PPF Telecom's CEE operators, including O2 Slovakia. O2 and Slovak Telekom have shared their networks outside Bratislava and Košice since 2023 (RÚ, Jan 2025)."
-    },
-    {
-      "id": "4ka",
-      "name": "4ka",
-      "legal": "SWAN, a.s.",
-      "color": "#00a3e0",
-      "aliases": [
-        "SWAN",
-        "SWAN Mobile",
-        "Štvorka"
-      ],
-      "kind": "mno",
-      "notes": "4th MNO; entered with 1800 MHz won in 2014. SWAN and SWAN Mobile merged in 2022. It won its first sub-1 GHz spectrum (900 MHz, from 2029) plus 1500, 2100 and 2600 MHz in the Jul 2025 auction. Uses national roaming on Orange."
+     "op": "orange",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2040-12-31",
+     "notes": "€33.6m (2020)"
     }
-  ],
-  "bands": [
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz SDL (738–758 MHz)",
+   "names": [
+    "n28"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     738,
+     758
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. RÚ's list of mobile bands (700, 800, 900, 1500, 1800, 2100, 2600, 3600 MHz) does not include 700 MHz SDL.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20/n20)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "From the 2013 auction. RÚ confirms 2×10 MHz each; the current edges come from spectrum-tracker only, because RÚ's 2013/14 decisions are scanned. The 2025 auction gave the same three blocks to the same operators from 2029 (see future entry).",
+   "sources": [
+    "https://www.spectrum-tracker.com/Slovakia",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": [
     {
-      "group": "700",
-      "label": "700 MHz FDD (B28/n28)",
-      "names": [
-        "B28",
-        "n28"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          758,
-          788
-        ],
-        "ul": [
-          703,
-          733
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "From the Nov 2020 auction; licences run to 31 Dec 2040.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-700-mhz/2010591001-o2-slovakia-s_r_o_700-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-700-mhz/2010591002-orange-slovensko-a_s_700-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-700-mhz/2010591003-slovak-telekom-a_s_700-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "o2",
-          "dl": [
-            758,
-            768
-          ],
-          "ul": [
-            703,
-            713
-          ],
-          "expiry": "2040-12-31",
-          "notes": "€32.0m (2020)"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            768,
-            778
-          ],
-          "ul": [
-            713,
-            723
-          ],
-          "expiry": "2040-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            778,
-            788
-          ],
-          "ul": [
-            723,
-            733
-          ],
-          "expiry": "2040-12-31",
-          "notes": "€33.6m (2020)"
-        }
-      ]
+     "op": "telekom",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2028-12-31"
     },
     {
-      "group": "700",
-      "label": "700 MHz SDL (738–758 MHz)",
-      "names": [
-        "n28"
-      ],
-      "status": "not-assigned",
-      "duplex": "sdl",
-      "range": {
-        "f": [
-          738,
-          758
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not assigned. RÚ's list of mobile bands (700, 800, 900, 1500, 1800, 2100, 2600, 3600 MHz) does not include 700 MHz SDL.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
+     "op": "orange",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2028-12-31"
     },
     {
-      "group": "800",
-      "label": "800 MHz (B20/n20)",
-      "names": [
-        "B20",
-        "n20"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          791,
-          821
-        ],
-        "ul": [
-          832,
-          862
-        ]
-      },
-      "positions": "unverified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "From the 2013 auction. RÚ confirms 2×10 MHz each; the current edges come from spectrum-tracker only, because RÚ's 2013/14 decisions are scanned. The 2025 auction gave the same three blocks to the same operators from 2029 (see future entry).",
-      "sources": [
-        "https://www.spectrum-tracker.com/Slovakia",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "telekom",
-          "dl": [
-            791,
-            801
-          ],
-          "ul": [
-            832,
-            842
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            801,
-            811
-          ],
-          "ul": [
-            842,
-            852
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            811,
-            821
-          ],
-          "ul": [
-            852,
-            862
-          ],
-          "expiry": "2028-12-31"
-        }
-      ]
-    },
-    {
-      "group": "800",
-      "label": "800 MHz (B20/n20) from 2029",
-      "names": [
-        "B20",
-        "n20"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          791,
-          821
-        ],
-        "ul": [
-          832,
-          862
-        ]
-      },
-      "positions": "verified",
-      "future": {
-        "from": "2029-01-01",
-        "label": "from 1 Jan 2029 (2025 auction)"
-      },
-      "excludeFromTotal": true,
-      "note": "",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-800-mhz/2510591006_st-a_s_800-mhz_oprava.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "telekom",
-          "dl": [
-            791,
-            801
-          ],
-          "ul": [
-            832,
-            842
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€69.7m"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            801,
-            811
-          ],
-          "ul": [
-            842,
-            852
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€69.7m"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            811,
-            821
-          ],
-          "ul": [
-            852,
-            862
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€71.4m"
-        }
-      ]
-    },
-    {
-      "group": "900",
-      "label": "900 MHz (B8/n8)",
-      "names": [
-        "B8",
-        "n8"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          925,
-          960
-        ],
-        "ul": [
-          880,
-          915
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Historic GSM channel blocks, interleaved. RÚ renewed them for 1 Jan 2026 to 31 Dec 2028. O2's rights to 882.9–889.9 MHz and several small pieces start on 8 Sep 2026 (the renewal splits validity by segment). Totals: O2 2×14.4, Orange 2×10.2, Slovak Telekom 2×10.2 MHz, which matches RÚ's Jan 2025 table.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531004_h_orange_900-mhz-do_2028.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531005_h_st_900mhz_do_2028.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531006_h_o2_do-2028.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "o2",
-          "dl": [
-            925.0,
-            935.1
-          ],
-          "ul": [
-            880.0,
-            890.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            953.1,
-            953.9
-          ],
-          "ul": [
-            908.1,
-            908.9
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            954.5,
-            955.3
-          ],
-          "ul": [
-            909.5,
-            910.3
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            955.9,
-            956.7
-          ],
-          "ul": [
-            910.9,
-            911.7
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            957.3,
-            958.1
-          ],
-          "ul": [
-            912.3,
-            913.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            958.7,
-            959.5
-          ],
-          "ul": [
-            913.7,
-            914.5
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            959.7,
-            960.0
-          ],
-          "ul": [
-            914.7,
-            915.0
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            935.1,
-            941.1
-          ],
-          "ul": [
-            890.1,
-            896.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            947.1,
-            950.1
-          ],
-          "ul": [
-            902.1,
-            905.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            953.9,
-            954.3
-          ],
-          "ul": [
-            908.9,
-            909.3
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            957.1,
-            957.3
-          ],
-          "ul": [
-            912.1,
-            912.3
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            958.1,
-            958.7
-          ],
-          "ul": [
-            913.1,
-            913.7
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            941.1,
-            947.1
-          ],
-          "ul": [
-            896.1,
-            902.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            950.1,
-            953.1
-          ],
-          "ul": [
-            905.1,
-            908.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            954.3,
-            954.5
-          ],
-          "ul": [
-            909.3,
-            909.5
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            955.3,
-            955.9
-          ],
-          "ul": [
-            910.3,
-            910.9
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            956.7,
-            957.1
-          ],
-          "ul": [
-            911.7,
-            912.1
-          ],
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "unassigned",
-          "dl": [
-            959.5,
-            959.7
-          ],
-          "ul": [
-            914.5,
-            914.7
-          ]
-        }
-      ]
-    },
-    {
-      "group": "900",
-      "label": "900 MHz (B8/n8) from 2029",
-      "names": [
-        "B8",
-        "n8"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          925,
-          960
-        ],
-        "ul": [
-          880,
-          915
-        ]
-      },
-      "positions": "verified",
-      "future": {
-        "from": "2029-01-01",
-        "label": "from 1 Jan 2029 (2025 auction)"
-      },
-      "excludeFromTotal": true,
-      "note": "",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2510531001_swan-a_s_900-mhz.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "orange",
-          "dl": [
-            925,
-            935
-          ],
-          "ul": [
-            880,
-            890
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€34.0m"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            935,
-            945
-          ],
-          "ul": [
-            890,
-            900
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€36.0m"
-        },
-        {
-          "op": "4ka",
-          "dl": [
-            945,
-            950
-          ],
-          "ul": [
-            900,
-            905
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€17.1m; 4ka's first sub-1 GHz spectrum"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            950,
-            960
-          ],
-          "ul": [
-            905,
-            915
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€35.7m"
-        }
-      ]
-    },
-    {
-      "group": "1400",
-      "label": "1500 MHz SDL (B32/B75/n75)",
-      "names": [
-        "B32",
-        "B75",
-        "n75"
-      ],
-      "status": "assigned",
-      "duplex": "sdl",
-      "range": {
-        "f": [
-          1427,
-          1517
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Awarded in the Jul 2025 auction and usable at once. 1427–1432 and 1512–1517 MHz are not assigned. RÚ gives the term as 1 Jan 2029–31 Dec 2048 for the auction generally; the exact 1500 MHz expiry was not confirmed.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1500-mhz/2510671001_swan-a_s_1500-mhz.pdf",
-        "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
-      ],
-      "blocks": [
-        {
-          "op": "4ka",
-          "f": [
-            1432,
-            1452
-          ],
-          "notes": "€6.0m"
-        },
-        {
-          "op": "orange",
-          "f": [
-            1452,
-            1472
-          ],
-          "notes": "€6.03m"
-        },
-        {
-          "op": "o2",
-          "f": [
-            1472,
-            1492
-          ],
-          "notes": "€6.03m"
-        },
-        {
-          "op": "telekom",
-          "f": [
-            1492,
-            1512
-          ],
-          "notes": "€6.0m"
-        }
-      ]
-    },
-    {
-      "group": "1800",
-      "label": "1800 MHz (B3/n3)",
-      "names": [
-        "B3",
-        "n3"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          1805,
-          1880
-        ],
-        "ul": [
-          1710,
-          1785
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Rights renewed to 31 Dec 2040. The band became contiguous on 8 Sep 2026: Orange 2×20, 4ka 2×18, Slovak Telekom 2×18.2 and O2 2×18.8 MHz, which matches RÚ's Jan 2025 totals.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2310541004_o2-slovakia_obnova-1800-mhz_hromadne.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2310541006_orange_obnova-1800-mhz-urceni-podmienok.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2210541010_st_1800_mhz-obnova-prav_hromadne.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2310541002_swan-hromadne_obnova-prav.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "orange",
-          "dl": [
-            1805,
-            1825
-          ],
-          "ul": [
-            1710,
-            1730
-          ],
-          "expiry": "2040-12-31"
-        },
-        {
-          "op": "4ka",
-          "dl": [
-            1825,
-            1843
-          ],
-          "ul": [
-            1730,
-            1748
-          ],
-          "expiry": "2040-12-31"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            1843,
-            1861.2
-          ],
-          "ul": [
-            1748,
-            1766.2
-          ],
-          "expiry": "2040-12-31"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            1861.2,
-            1880
-          ],
-          "ul": [
-            1766.2,
-            1785
-          ],
-          "expiry": "2040-12-31"
-        }
-      ]
-    },
-    {
-      "group": "2100",
-      "label": "2100 MHz (B1/n1)",
-      "names": [
-        "B1",
-        "n1"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          2110,
-          2170
-        ],
-        "ul": [
-          1920,
-          1980
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Jul 2025 auction; these licences run from 8 Sep 2026 to 31 Dec 2048. Before that O2, Orange and Slovak Telekom each held 2×20 MHz.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2610571002_orange-a_s_2100-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2610571001_st-a_s_2100-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2610571000_o2-a_s_2100-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2510571001_swan-a_s_2100-mhz.pdf",
-        "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "orange",
-          "dl": [
-            2110,
-            2125
-          ],
-          "ul": [
-            1920,
-            1935
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€23.4m"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            2125,
-            2145
-          ],
-          "ul": [
-            1935,
-            1955
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€30.0m"
-        },
-        {
-          "op": "o2",
-          "dl": [
-            2145,
-            2160
-          ],
-          "ul": [
-            1955,
-            1970
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€22.8m"
-        },
-        {
-          "op": "4ka",
-          "dl": [
-            2160,
-            2170
-          ],
-          "ul": [
-            1970,
-            1980
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€15.6m"
-        }
-      ]
-    },
-    {
-      "group": "2000tdd",
-      "label": "2 GHz unpaired TDD (B33/B34)",
-      "names": [
-        "B33",
-        "B34"
-      ],
-      "status": "not-assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          1900,
-          1920
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not assigned. RÚ decisions show O2 and Slovak Telekom handing back their 2100 MHz TDD assignments in 2018. The band is not among RÚ's mobile bands.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2018_o2_zmena-licencie_vzdanie-casti-2100-mhz_tdd.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "2300",
-      "label": "2300 MHz (B40/n40)",
-      "names": [
-        "B40",
-        "n40"
-      ],
-      "status": "not-assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          2300,
-          2400
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not assigned for public mobile networks. RÚ mentions it only as a potential capacity band.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "2600",
-      "label": "2600 MHz FDD (B7/n7)",
-      "names": [
-        "B7",
-        "n7"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          2620,
-          2690
-        ],
-        "ul": [
-          2500,
-          2570
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "From the 2013 auction. RÚ gives the amounts (Orange 2×30, Slovak Telekom 2×40 MHz). spectrum-tracker implies Orange at 2500–2530/2620–2650 and Slovak Telekom at 2530–2570/2650–2690, but its labelling is garbled, so edges are not drawn.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf",
-        "https://www.spectrum-tracker.com/Slovakia"
-      ],
-      "holdings": [
-        {
-          "op": "telekom",
-          "mhz": 40,
-          "paired": true,
-          "basis": "exact",
-          "expiry": "2028-12-31"
-        },
-        {
-          "op": "orange",
-          "mhz": 30,
-          "paired": true,
-          "basis": "exact",
-          "expiry": "2028-12-31"
-        }
-      ]
-    },
-    {
-      "group": "2600",
-      "label": "2600 MHz FDD (B7/n7) from 2029",
-      "names": [
-        "B7",
-        "n7"
-      ],
-      "status": "assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          2620,
-          2690
-        ],
-        "ul": [
-          2500,
-          2570
-        ]
-      },
-      "positions": "verified",
-      "future": {
-        "from": "2029-01-01",
-        "label": "from 1 Jan 2029 (2025 auction)"
-      },
-      "excludeFromTotal": true,
-      "note": "",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2600-mhz/2510691003_st-a_s_2600-mhz_fdd.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "o2",
-          "dl": [
-            2620,
-            2640
-          ],
-          "ul": [
-            2500,
-            2520
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€13.2m"
-        },
-        {
-          "op": "4ka",
-          "dl": [
-            2640,
-            2650
-          ],
-          "ul": [
-            2520,
-            2530
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€6.7m"
-        },
-        {
-          "op": "telekom",
-          "dl": [
-            2650,
-            2670
-          ],
-          "ul": [
-            2530,
-            2550
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€13.2m"
-        },
-        {
-          "op": "orange",
-          "dl": [
-            2670,
-            2690
-          ],
-          "ul": [
-            2550,
-            2570
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€13.2m"
-        }
-      ]
-    },
-    {
-      "group": "2600",
-      "label": "2600 MHz TDD (B38/n38)",
-      "names": [
-        "B38",
-        "n38"
-      ],
-      "status": "assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          2570,
-          2620
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "RÚ's Jan 2025 table puts all 50 MHz of the TDD part with Slovak Telekom.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "telekom",
-          "f": [
-            2570,
-            2620
-          ],
-          "expiry": "2028-12-31"
-        }
-      ]
-    },
-    {
-      "group": "2600",
-      "label": "2600 MHz TDD (B38/n38) from 2029",
-      "names": [
-        "B38",
-        "n38"
-      ],
-      "status": "assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          2570,
-          2620
-        ]
-      },
-      "positions": "verified",
-      "future": {
-        "from": "2029-01-01",
-        "label": "from 1 Jan 2029 (2025 auction)"
-      },
-      "excludeFromTotal": true,
-      "note": "",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2600-mhz/2510691004_st-a_s_2600-mhz_tdd_oprava.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "guard",
-          "f": [
-            2570,
-            2575
-          ]
-        },
-        {
-          "op": "telekom",
-          "f": [
-            2575,
-            2615
-          ],
-          "expiry": "2048-12-31",
-          "notes": "€10.2m"
-        },
-        {
-          "op": "guard",
-          "f": [
-            2615,
-            2620
-          ]
-        }
-      ]
-    },
-    {
-      "group": "3500",
-      "label": "3.4–3.8 GHz (n78)",
-      "names": [
-        "n78",
-        "B42",
-        "B43"
-      ],
-      "status": "assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          3400,
-          3800
-        ]
-      },
-      "positions": "verified",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Re-arranged into four 100 MHz blocks from 1 Sep 2025 to 31 Dec 2045. Frame B applies until 2028 and Frame A from 2029. Local 3.7 GHz district licences (Slovanet, Amtel and others) were earlier regional rights and are not drawn.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591002_h_swan.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591004_h_orange.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591003_h_o2.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591005_h_slovak-telekom.pdf",
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": [
-        {
-          "op": "4ka",
-          "f": [
-            3400,
-            3500
-          ],
-          "expiry": "2045-12-31",
-          "notes": "90 MHz plus 3400–3410 MHz without protection (former guard)"
-        },
-        {
-          "op": "orange",
-          "f": [
-            3500,
-            3600
-          ],
-          "expiry": "2045-12-31"
-        },
-        {
-          "op": "o2",
-          "f": [
-            3600,
-            3700
-          ],
-          "expiry": "2045-12-31"
-        },
-        {
-          "op": "telekom",
-          "f": [
-            3700,
-            3800
-          ],
-          "expiry": "2045-12-31"
-        }
-      ]
-    },
-    {
-      "group": "26g",
-      "label": "26 GHz (n258)",
-      "names": [
-        "n258"
-      ],
-      "status": "not-assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          24250,
-          27500
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "No national 26 GHz mobile assignment found. RÚ's Jan 2025 assessment names 26 GHz only as a future ultra-high-capacity band, and the Jul 2025 auction did not include it.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf",
-        "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "40g",
-      "label": "40 GHz (n259/n260)",
-      "names": [
-        "n259",
-        "n260"
-      ],
-      "status": "not-assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          37000,
-          43500
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not assigned.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "600",
-      "label": "600 MHz (B71/n71)",
-      "names": [
-        "n71"
-      ],
-      "status": "not-assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          617,
-          652
-        ],
-        "ul": [
-          663,
-          698
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not harmonised in Europe; 470–694 MHz remains allocated to terrestrial broadcasting (DTT) under the EU UHF decision (EU) 2017/899.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "850",
-      "label": "850 MHz (B5)",
-      "names": [
-        "B5",
-        "n5"
-      ],
-      "status": "not-assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          869,
-          894
-        ],
-        "ul": [
-          824,
-          849
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not harmonised in CEPT/EU; 824–894 MHz overlaps the 800 MHz (B20) and E-GSM/GSM-R plans.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "1700",
-      "label": "AWS 1.7/2.1 GHz (B4/B66)",
-      "names": [
-        "B66",
-        "n66"
-      ],
-      "status": "not-assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          2110,
-          2155
-        ],
-        "ul": [
-          1710,
-          1755
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "AWS pairing not used in Europe; 1710–1785 MHz is the B3 uplink and 2110–2170 MHz is B1.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "1900",
-      "label": "PCS 1900 (B2/B25)",
-      "names": [
-        "B2",
-        "n2"
-      ],
-      "status": "not-assigned",
-      "duplex": "fdd",
-      "range": {
-        "dl": [
-          1930,
-          1995
-        ],
-        "ul": [
-          1850,
-          1915
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "PCS pairing not used in Europe; 1880–1900 MHz is DECT, 1900–1920 MHz unpaired and 1980–2010/2170–2200 MHz is 2 GHz MSS.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "4900",
-      "label": "4.4–5.0 GHz (n79)",
-      "names": [
-        "n79"
-      ],
-      "status": "not-assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          4400,
-          5000
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "Not harmonised for MFCN in the EU; no mobile assignments.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
-    },
-    {
-      "group": "47g",
-      "label": "47 GHz (n262)",
-      "names": [
-        "n262"
-      ],
-      "status": "not-assigned",
-      "duplex": "tdd",
-      "range": {
-        "f": [
-          47200,
-          48200
-        ]
-      },
-      "positions": "holdings",
-      "future": null,
-      "excludeFromTotal": false,
-      "note": "No 47 GHz mobile assignments.",
-      "sources": [
-        "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-      ],
-      "blocks": []
+     "op": "o2",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2028-12-31"
     }
-  ],
-  "notes": [
-    "No davwheat seed existed for SK; compiled from scratch, mostly from RÚ's individual-licence decisions.",
-    "Jul 2025 multiband auction (ended 9 Jul 2025, €506,073,499.99) covered 800, 900, 1500, 2100, 2600 FDD and 2600 TDD. Terms run 1 Jan 2029–31 Dec 2048, except 1500 MHz (immediate) and 2100 MHz (from 8 Sep 2026). The 2029 layouts are separate future entries.",
-    "RÚ's Jan 2025 market assessment (Table 2) gives holdings as sums of both directions: O2 246.4, Orange 300.4, Slovak Telekom 366.8 and SWAN 136 MHz, before the 2025 auction. The current totals here differ because of the 2100 re-award and the 1500 MHz SDL.",
-    "900 MHz stays fragmented (100–200 kHz GSM-era pieces) until 2029, and is drawn from RÚ's 2024 renewal decisions.",
-    "Current 800 MHz edges come from spectrum-tracker only; they match the 2029 layout RÚ awarded.",
-    "Orange provides national roaming to 4ka (2G/3G/4G), which RÚ reports as 5 MHz of 900 and 10 MHz of 2100."
-  ],
-  "missing": [
-    "Current (to 2028) 800 MHz and 2600 MHz FDD block edges: RÚ's 2013/2014 decisions are image scans and could not be read; 2600 FDD is shown as holdings only",
-    "Exact 1500 MHz licence expiry",
-    "26 GHz status in 2026 not re-checked (no RÚ 26 GHz tender found)",
-    "Carrier EARFCN/NR-ARFCN not compiled"
-  ],
-  "changes": [],
-  "sources": [
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20/n20) from 2029",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2029-01-01",
+    "label": "from 1 Jan 2029 (2025 auction)"
+   },
+   "excludeFromTotal": true,
+   "note": "",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-800-mhz/2510591006_st-a_s_800-mhz_oprava.pdf"
+   ],
+   "blocks": [
     {
-      "title": "RÚ – Výsledky elektronickej aukcie 2025",
-      "url": "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf"
+     "op": "telekom",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€69.7m"
     },
     {
-      "title": "RÚ – tlačová správa: aukcia 2025",
-      "url": "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
+     "op": "orange",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€69.7m"
     },
     {
-      "title": "RÚ – Posúdenie situácie na mobilnom trhu (Jan 2025)",
-      "url": "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
-    },
-    {
-      "title": "RÚ – zoznam rozhodnutí, výberové konania",
-      "url": "https://www.teleoff.gov.sk/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/"
-    },
-    {
-      "title": "spectrum-tracker – Slovakia",
-      "url": "https://www.spectrum-tracker.com/Slovakia"
+     "op": "o2",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€71.4m"
     }
-  ]
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8/n8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Historic GSM channel blocks, interleaved. RÚ renewed them for 1 Jan 2026 to 31 Dec 2028. O2's rights to 882.9–889.9 MHz and several small pieces start on 8 Sep 2026 (the renewal splits validity by segment). Totals: O2 2×14.4, Orange 2×10.2, Slovak Telekom 2×10.2 MHz, which matches RÚ's Jan 2025 table.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531004_h_orange_900-mhz-do_2028.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531005_h_st_900mhz_do_2028.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2410531006_h_o2_do-2028.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "o2",
+     "dl": [
+      925.0,
+      935.1
+     ],
+     "ul": [
+      880.0,
+      890.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      953.1,
+      953.9
+     ],
+     "ul": [
+      908.1,
+      908.9
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      954.5,
+      955.3
+     ],
+     "ul": [
+      909.5,
+      910.3
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      955.9,
+      956.7
+     ],
+     "ul": [
+      910.9,
+      911.7
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      957.3,
+      958.1
+     ],
+     "ul": [
+      912.3,
+      913.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      958.7,
+      959.5
+     ],
+     "ul": [
+      913.7,
+      914.5
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      959.7,
+      960.0
+     ],
+     "ul": [
+      914.7,
+      915.0
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      935.1,
+      941.1
+     ],
+     "ul": [
+      890.1,
+      896.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      947.1,
+      950.1
+     ],
+     "ul": [
+      902.1,
+      905.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      953.9,
+      954.3
+     ],
+     "ul": [
+      908.9,
+      909.3
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      957.1,
+      957.3
+     ],
+     "ul": [
+      912.1,
+      912.3
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      958.1,
+      958.7
+     ],
+     "ul": [
+      913.1,
+      913.7
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      941.1,
+      947.1
+     ],
+     "ul": [
+      896.1,
+      902.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      950.1,
+      953.1
+     ],
+     "ul": [
+      905.1,
+      908.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      954.3,
+      954.5
+     ],
+     "ul": [
+      909.3,
+      909.5
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      955.3,
+      955.9
+     ],
+     "ul": [
+      910.3,
+      910.9
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      956.7,
+      957.1
+     ],
+     "ul": [
+      911.7,
+      912.1
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      959.5,
+      959.7
+     ],
+     "ul": [
+      914.5,
+      914.7
+     ]
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8/n8) from 2029",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2029-01-01",
+    "label": "from 1 Jan 2029 (2025 auction)"
+   },
+   "excludeFromTotal": true,
+   "note": "",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2510531001_swan-a_s_900-mhz.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€34.0m"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      935,
+      945
+     ],
+     "ul": [
+      890,
+      900
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€36.0m"
+    },
+    {
+     "op": "4ka",
+     "dl": [
+      945,
+      950
+     ],
+     "ul": [
+      900,
+      905
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€17.1m; 4ka's first sub-1 GHz spectrum"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€35.7m"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1500 MHz SDL (B32/B75/n75)",
+   "names": [
+    "B32",
+    "B75",
+    "n75"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded in the Jul 2025 auction and usable at once. 1427–1432 and 1512–1517 MHz are not assigned. RÚ gives the term as 1 Jan 2029–31 Dec 2048 for the auction generally; the exact 1500 MHz expiry was not confirmed.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1500-mhz/2510671001_swan-a_s_1500-mhz.pdf",
+    "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
+   ],
+   "blocks": [
+    {
+     "op": "4ka",
+     "f": [
+      1432,
+      1452
+     ],
+     "notes": "€6.0m"
+    },
+    {
+     "op": "orange",
+     "f": [
+      1452,
+      1472
+     ],
+     "notes": "€6.03m"
+    },
+    {
+     "op": "o2",
+     "f": [
+      1472,
+      1492
+     ],
+     "notes": "€6.03m"
+    },
+    {
+     "op": "telekom",
+     "f": [
+      1492,
+      1512
+     ],
+     "notes": "€6.0m"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Rights renewed to 31 Dec 2040. The band became contiguous on 8 Sep 2026: Orange 2×20, 4ka 2×18, Slovak Telekom 2×18.2 and O2 2×18.8 MHz, which matches RÚ's Jan 2025 totals.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2310541004_o2-slovakia_obnova-1800-mhz_hromadne.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2310541006_orange_obnova-1800-mhz-urceni-podmienok.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2210541010_st_1800_mhz-obnova-prav_hromadne.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-1800-mhz/2310541002_swan-hromadne_obnova-prav.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "expiry": "2040-12-31"
+    },
+    {
+     "op": "4ka",
+     "dl": [
+      1825,
+      1843
+     ],
+     "ul": [
+      1730,
+      1748
+     ],
+     "expiry": "2040-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      1843,
+      1861.2
+     ],
+     "ul": [
+      1748,
+      1766.2
+     ],
+     "expiry": "2040-12-31"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      1861.2,
+      1880
+     ],
+     "ul": [
+      1766.2,
+      1785
+     ],
+     "expiry": "2040-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Jul 2025 auction; these licences run from 8 Sep 2026 to 31 Dec 2048. Before that O2, Orange and Slovak Telekom each held 2×20 MHz.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2610571002_orange-a_s_2100-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2610571001_st-a_s_2100-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2610571000_o2-a_s_2100-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2100-mhz/2510571001_swan-a_s_2100-mhz.pdf",
+    "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "dl": [
+      2110,
+      2125
+     ],
+     "ul": [
+      1920,
+      1935
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€23.4m"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      2125,
+      2145
+     ],
+     "ul": [
+      1935,
+      1955
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€30.0m"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      2145,
+      2160
+     ],
+     "ul": [
+      1955,
+      1970
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€22.8m"
+    },
+    {
+     "op": "4ka",
+     "dl": [
+      2160,
+      2170
+     ],
+     "ul": [
+      1970,
+      1980
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€15.6m"
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz unpaired TDD (B33/B34)",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. RÚ decisions show O2 and Slovak Telekom handing back their 2100 MHz TDD assignments in 2018. The band is not among RÚ's mobile bands.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-900-mhz/2018_o2_zmena-licencie_vzdanie-casti-2100-mhz_tdd.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40/n40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for public mobile networks. RÚ mentions it only as a potential capacity band.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (B7/n7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "From the 2013 auction. RÚ gives the amounts (Orange 2×30, Slovak Telekom 2×40 MHz). spectrum-tracker implies Orange at 2500–2530/2620–2650 and Slovak Telekom at 2530–2570/2650–2690, but its labelling is garbled, so edges are not drawn.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf",
+    "https://www.spectrum-tracker.com/Slovakia"
+   ],
+   "holdings": [
+    {
+     "op": "telekom",
+     "mhz": 40,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "orange",
+     "mhz": 30,
+     "paired": true,
+     "basis": "exact",
+     "expiry": "2028-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (B7/n7) from 2029",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2029-01-01",
+    "label": "from 1 Jan 2029 (2025 auction)"
+   },
+   "excludeFromTotal": true,
+   "note": "",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2600-mhz/2510691003_st-a_s_2600-mhz_fdd.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "o2",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€13.2m"
+    },
+    {
+     "op": "4ka",
+     "dl": [
+      2640,
+      2650
+     ],
+     "ul": [
+      2520,
+      2530
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€6.7m"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€13.2m"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€13.2m"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (B38/n38)",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "RÚ's Jan 2025 table puts all 50 MHz of the TDD part with Slovak Telekom.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "telekom",
+     "f": [
+      2570,
+      2620
+     ],
+     "expiry": "2028-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (B38/n38) from 2029",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2029-01-01",
+    "label": "from 1 Jan 2029 (2025 auction)"
+   },
+   "excludeFromTotal": true,
+   "note": "",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-2600-mhz/2510691004_st-a_s_2600-mhz_tdd_oprava.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      2570,
+      2575
+     ]
+    },
+    {
+     "op": "telekom",
+     "f": [
+      2575,
+      2615
+     ],
+     "expiry": "2048-12-31",
+     "notes": "€10.2m"
+    },
+    {
+     "op": "guard",
+     "f": [
+      2615,
+      2620
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.8 GHz (n78)",
+   "names": [
+    "n78",
+    "B42",
+    "B43"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Re-arranged into four 100 MHz blocks from 1 Sep 2025 to 31 Dec 2045. Frame B applies until 2028 and Frame A from 2029. Local 3.7 GHz district licences (Slovanet, Amtel and others) were earlier regional rights and are not drawn.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591002_h_swan.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591004_h_orange.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591003_h_o2.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591005_h_slovak-telekom.pdf",
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "4ka",
+     "f": [
+      3400,
+      3500
+     ],
+     "expiry": "2045-12-31",
+     "notes": "90 MHz plus 3400–3410 MHz without protection (former guard)"
+    },
+    {
+     "op": "orange",
+     "f": [
+      3500,
+      3600
+     ],
+     "expiry": "2045-12-31"
+    },
+    {
+     "op": "o2",
+     "f": [
+      3600,
+      3700
+     ],
+     "expiry": "2045-12-31"
+    },
+    {
+     "op": "telekom",
+     "f": [
+      3700,
+      3800
+     ],
+     "expiry": "2045-12-31"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No national 26 GHz mobile assignment found. RÚ's Jan 2025 assessment names 26 GHz only as a future ultra-high-capacity band, and the Jul 2025 auction did not include it.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf",
+    "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71/n71)",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe; 470–694 MHz remains allocated to terrestrial broadcasting (DTT) under the EU UHF decision (EU) 2017/899.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in CEPT/EU; 824–894 MHz overlaps the 800 MHz (B20) and E-GSM/GSM-R plans.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B66",
+    "n66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS pairing not used in Europe; 1710–1785 MHz is the B3 uplink and 2110–2170 MHz is B1.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "n2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1995
+    ],
+    "ul": [
+     1850,
+     1915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS pairing not used in Europe; 1880–1900 MHz is DECT, 1900–1920 MHz unpaired and 1980–2010/2170–2200 MHz is 2 GHz MSS.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for MFCN in the EU; no mobile assignments.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No 47 GHz mobile assignments.",
+   "sources": [
+    "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+   ],
+   "blocks": []
+  }
+ ],
+ "notes": [
+  "No davwheat seed existed for SK; compiled from scratch, mostly from RÚ's individual-licence decisions.",
+  "Jul 2025 multiband auction (ended 9 Jul 2025, €506,073,499.99) covered 800, 900, 1500, 2100, 2600 FDD and 2600 TDD. Terms run 1 Jan 2029–31 Dec 2048, except 1500 MHz (immediate) and 2100 MHz (from 8 Sep 2026). The 2029 layouts are separate future entries.",
+  "RÚ's Jan 2025 market assessment (Table 2) gives holdings as sums of both directions: O2 246.4, Orange 300.4, Slovak Telekom 366.8 and SWAN 136 MHz, before the 2025 auction. The current totals here differ because of the 2100 re-award and the 1500 MHz SDL.",
+  "900 MHz stays fragmented (100–200 kHz GSM-era pieces) until 2029, and is drawn from RÚ's 2024 renewal decisions.",
+  "Current 800 MHz edges come from spectrum-tracker only; they match the 2029 layout RÚ awarded.",
+  "Orange provides national roaming to 4ka (2G/3G/4G), which RÚ reports as 5 MHz of 900 and 10 MHz of 2100.",
+  "O2 Slovakia's owner is e& PPF Telecom Group (e& controlling stake confirmed by the verifier)."
+ ],
+ "missing": [
+  "Current (to 2028) 800 MHz and 2600 MHz FDD block edges: RÚ's 2013/2014 decisions are image scans and could not be read; 2600 FDD is shown as holdings only",
+  "Exact 1500 MHz licence expiry",
+  "26 GHz status in 2026 not re-checked (no RÚ 26 GHz tender found)",
+  "Carrier EARFCN/NR-ARFCN not compiled"
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "RÚ – Výsledky elektronickej aukcie 2025",
+   "url": "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf"
+  },
+  {
+   "title": "RÚ – tlačová správa: aukcia 2025",
+   "url": "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
+  },
+  {
+   "title": "RÚ – Posúdenie situácie na mobilnom trhu (Jan 2025)",
+   "url": "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf"
+  },
+  {
+   "title": "RÚ – zoznam rozhodnutí, výberové konania",
+   "url": "https://www.teleoff.gov.sk/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/"
+  },
+  {
+   "title": "spectrum-tracker – Slovakia",
+   "url": "https://www.spectrum-tracker.com/Slovakia"
+  }
+ ]
 }

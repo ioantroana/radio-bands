@@ -5,7 +5,7 @@
  "asOf": "2026-09-28",
  "coverage": "positions-verified",
  "licensing": "national",
- "summary": "Three MNOs: Magyar Telekom, Yettel (ex-Telenor) and One (ex-Vodafone, owned by 4iG/Corvinus, which absorbed DIGI's mobile business). NMHH auctioned 700/2100/3600 MHz in 2020 and re-awarded 900/1800 MHz in 2021; the 2100 MHz rights were extended to 2042 in 2026.",
+ "summary": "Three MNOs: Magyar Telekom, Yettel (ex-Telenor) and One (ex-Vodafone, owned by the 4iG group, which absorbed DIGI's mobile business). NMHH auctioned 700/2100/3600 MHz in 2020 and re-awarded 900/1800 MHz in 2021; the 2100 MHz rights were extended to 2042 in 2026.",
  "operators": [
   {
    "id": "telekom",
@@ -49,7 +49,7 @@
     "DIGI Távközlési és Szolgáltató Kft."
    ],
    "kind": "mno",
-   "notes": "Vodafone Hungary was acquired by 4iG (51%) and Corvinus (49%) on 31 Jan 2023 and rebranded One on 1 Jan 2025, when 4iG's DIGI Hungary retail mobile business was also folded into the One brand; 4iG planned to merge DIGI, Antenna Hungária and Invitech into One Magyarország Zrt. during H2 2025. The seed noted DIGI's own mobile network was to be shut down in June 2023 (not re-verified). DIGI's 2x5 MHz 1800 MHz right (1725-1730/1820-1825) is shown under One; the transfer of that right has not been confirmed in an NMHH document. Colour chosen for contrast (brand palette not verified)."
+   "notes": "Vodafone Hungary was acquired by 4iG (51%) and Corvinus (49%) on 31 Jan 2023 and rebranded One on 1 Jan 2025, when 4iG's DIGI Hungary retail mobile business was also folded into the One brand; 4iG planned to merge DIGI, Antenna Hungária and Invitech into One Magyarország Zrt. during H2 2025. The seed noted DIGI's own mobile network was to be shut down in June 2023 (not re-verified). DIGI's 2x5 MHz 1800 MHz right (1725-1730/1820-1825) is shown under One; the transfer of that right has not been confirmed in an NMHH document. Colour chosen for contrast (brand palette not verified). In May 2025 a share swap made 4iG Távközlési Holding Zrt. (4iG 62.1% / Corvinus 37.9%) the sole owner of One Magyarország Zrt."
   }
  ],
  "bands": [

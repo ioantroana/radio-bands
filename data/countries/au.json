@@ -823,7 +823,7 @@
    "positions": "regional-average",
    "future": null,
    "excludeFromTotal": false,
-   "note": "Area-based licences from the 2018 3.6 GHz auction, the 2023 3.4/3.7 GHz auction (3.7 GHz licences from 19 Jan 2024 to 2044) and earlier 3.4 GHz licences. Other capitals differ: Brisbane has Telstra 3575-3625 + 3720-3780, TPG 3625-3665 + 3780-3800, Optus 3665-3720. 3.8-4.0 GHz is area-wide licensed (AWL) for local and private networks and is not included. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "note": "Area-based licences from the 2018 3.6 GHz auction, the 2023 3.4/3.7 GHz auction (3.7 GHz licences from 19 Jan 2024 to 2044) and earlier 3.4 GHz licences. 3.8-4.0 GHz is area-wide licensed (AWL) for local and private networks and is not included. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026). Brisbane (ACMA register): Optus 3475–3542.5, Telstra 3542.5–3605 + 3725–3800, TPG 3605–3665 + 3700–3725, Dense Air 3665–3700 MHz.",
    "sources": [
     "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
     "https://www.acma.gov.au/auction-summary-34-ghz-and-37-ghz-bands-2023"

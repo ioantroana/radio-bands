@@ -42,8 +42,8 @@
     "Telefónica México",
     "Pegaso"
    ],
-   "kind": "mno",
-   "notes": "Moved its customers onto AT&T's radio network (2019 agreement) and has been returning spectrum; by Dec 2020 IFT counted only PCS and a sliver of 850 MHz for it. Holdings after 2021 not verified."
+   "kind": "other",
+   "notes": "MVNO on AT&T's network since 2019; Telefónica returned 100% of its spectrum by 2022. Telefónica agreed to sell Movistar México to Melisa Acquisition (OXIO and Newfoundland Capital), announced 8 Apr 2026 (~US$450m); completion not confirmed."
   },
   {
    "id": "altan",
@@ -176,9 +176,10 @@
    "positions": "regional-average",
    "future": null,
    "excludeFromTotal": false,
-   "note": "Licensed in nine cellular regions (Regiones Celulares 1–9): Telcel holds the incumbent B-side in all regions, AT&T the other side (ex-Iusacell/Unefon/Telefónica). IFT's Dec 2020 table counts only 39.38 MHz (both directions) of the 50 MHz band as concessioned, with none listed as available.",
+   "note": "Licensed in nine cellular regions (Regiones Celulares 1–9): Telcel holds the incumbent B-side in all regions, AT&T the other side (ex-Iusacell/Unefon/Telefónica). IFT's Dec 2020 table counts only 39.38 MHz (both directions) of the 50 MHz band as concessioned, with none listed as available. Telefónica/Movistar returned all of its spectrum by 2022, so its Dec 2020 holding is not counted.",
    "sources": [
-    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.itmastersmag.com/transformacion-digital/telefonica-contenta-de-haber-devuelto-espectro-en-mexico/"
    ],
    "holdings": [
     {
@@ -192,13 +193,6 @@
      "mhz": 8.47,
      "paired": true,
      "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
-    },
-    {
-     "op": "movistar",
-     "mhz": 0.47,
-     "paired": true,
-     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)",
-     "notes": "Dec 2020 figure; may since have been returned"
     }
    ]
   },
@@ -365,19 +359,13 @@
    "positions": "regional-average",
    "future": null,
    "excludeFromTotal": false,
-   "note": "Licensed by region (Licitación 20, 2010, and earlier). IFT Dec 2020 (both directions): Telefónica 43.31, AT&T 32.10, Telcel 28.40 MHz; G block (1910–1915/1990–1995) offered in IFT-10 and not sold. IFT counts 113.81 of 130 MHz.",
+   "note": "Licensed by region (Licitación 20, 2010, and earlier). IFT Dec 2020 (both directions): Telefónica 43.31, AT&T 32.10, Telcel 28.40 MHz; G block (1910–1915/1990–1995) offered in IFT-10 and not sold. IFT counts 113.81 of 130 MHz. Telefónica/Movistar returned all of its spectrum by 2022, so its Dec 2020 holding is not counted.",
    "sources": [
     "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
-    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf",
+    "https://www.itmastersmag.com/transformacion-digital/telefonica-contenta-de-haber-devuelto-espectro-en-mexico/"
    ],
    "holdings": [
-    {
-     "op": "movistar",
-     "mhz": 21.66,
-     "paired": true,
-     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)",
-     "notes": "Dec 2020; Telefónica has been returning spectrum — current holding not verified"
-    },
     {
      "op": "att",
      "mhz": 16.05,
@@ -473,7 +461,8 @@
     "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/publicacionderesultadosppoift-7vf.pdf",
     "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/reporte-rondadesobrecerradoetapadeasignacion.pdf",
     "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
-    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf",
+    "https://dplnews.com/espectro-devuelto-por-telefonica-mexico-podria-licitarse-en-2023/"
    ],
    "blocks": [
     {
@@ -502,7 +491,7 @@
      "source": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/reporte-rondadesobrecerradoetapadeasignacion.pdf"
     },
     {
-     "op": "att",
+     "op": "unassigned",
      "dl": [
       2670,
       2690
@@ -511,7 +500,8 @@
       2550,
       2570
      ],
-     "notes": "IFT-7 blocks F3–F4, won by Pegaso PCS (Telefónica); counted for AT&T by IFT in Dec 2020 (transfer inferred)"
+     "notes": "IFT-7 blocks F3–F4, won by Telefónica (Pegaso PCS) in 2018 and returned to the IFT by 2022; offered in the cancelled IFT-12 auction.",
+     "source": "https://dplnews.com/espectro-devuelto-por-telefonica-mexico-podria-licitarse-en-2023/"
     }
    ]
   },
@@ -662,7 +652,8 @@
   "Regulator: the IFT (autonomous regulator since 2013) was dissolved under the Dec 2024 constitutional reform and the Ley en Materia de Telecomunicaciones y Radiodifusión (DOF 16 Jul 2025); the Comisión Reguladora de Telecomunicaciones (CRT, attached to the Agencia de Transformación Digital y Telecomunicaciones) took over on 17 Oct 2025. The IFT website is now a read-only archive.",
   "The IFT-12 auction (600 MHz, 800 MHz, L-band, 2.5 GHz etc.) was cancelled on 16 Jan 2025 at the ATDT's request. As of Sep 2026 the CRT has consulted on a 2.3 GHz private-network tender and a rural-coverage spectrum tender (consultation 24 Sep–21 Oct 2026), but no mobile auction has been held.",
   "Holdings are the IFT's own population-weighted national averages as of the IFT-10 bases (Dec 2020, 'Tabla 9', figures given both directions — halved here to per-direction), updated with the IFT-10 results (Oct 2021). Licences for 850 MHz, 800 MHz and PCS are regional (nine cellular regions or smaller ABS areas); AWS and 2.5 GHz are essentially national.",
-  "IFT Tabla 9 total (both directions): Telcel 180.96 MHz, AT&T 182.23, Altán 90, Telefónica 44.25, TV Zac 0.65; plus 45.1 MHz offered in IFT-10 and 211 MHz available (600 MHz, L-band, 3.3 GHz)."
+  "IFT Tabla 9 total (both directions): Telcel 180.96 MHz, AT&T 182.23, Altán 90, Telefónica 44.25, TV Zac 0.65; plus 45.1 MHz offered in IFT-10 and 211 MHz available (600 MHz, L-band, 3.3 GHz).",
+  "Corrected after independent verification (2026-09-28): Movistar holds no spectrum (all returned by 2022); the 2.5 GHz F3–F4 blocks are unassigned, not AT&T's (DPL News, Oct 2022; IFT-10 Tabla 9). Movistar sale to Melisa Acquisition announced Apr 2026."
  ],
  "missing": [
   "Changes after Oct 2021 are not reflected except where noted: in particular Telefónica/Movistar's spectrum returns after Dec 2020 (its PCS and 850 MHz holdings may now be zero) and any transfers between AT&T and Telcel could not be verified — the IFT/CRT concession registry and statistics portal (bit.ift.org.mx) were not usable.",
