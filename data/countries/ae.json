@@ -1,0 +1,513 @@
+{
+ "code": "ae",
+ "name": "United Arab Emirates",
+ "region": "Middle East & Africa",
+ "asOf": "2026-09-28",
+ "coverage": "not-compiled",
+ "licensing": "national",
+ "summary": "Two MNOs, e& (Etisalat) and du (EITC). TDRA assigns spectrum administratively and publishes no auctions or per-operator register. Only the bands each operator uses are listed here.",
+ "operators": [
+  {
+   "id": "eand",
+   "name": "e&",
+   "legal": "Emirates Telecommunications Group Company PJSC (e& UAE)",
+   "color": "#e00800",
+   "aliases": [
+    "Etisalat",
+    "Etisalat by e&",
+    "e& UAE"
+   ],
+   "kind": "mno",
+   "notes": "Rebranded from Etisalat in 2022. Its reports describe a live 5G mmWave deployment (2023) and 6 GHz trials (2022–23)."
+  },
+  {
+   "id": "du",
+   "name": "du",
+   "legal": "Emirates Integrated Telecommunications Company PJSC (EITC)",
+   "color": "#00a9ce",
+   "aliases": [
+    "EITC",
+    "Virgin Mobile UAE (du sub-brand)"
+   ],
+   "kind": "mno"
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment identified. 470–694 MHz is used for broadcasting in Region 1.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Whether 700 MHz has been assigned to e& and/or du is not verified. TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "du uses B20 (Wikipedia LTE list: CA_3A_20A); e& also lists B20 in its carrier aggregation combinations. TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment identified (Region 1 band plan).",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "GSM/UMTS 900 used by both operators. TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1400",
+   "label": "1.4/1.5 GHz L-band",
+   "names": [
+    "B32",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment identified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in ITU Region 1.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "LTE B3 used by both operators (Wikipedia LTE list). TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "n70"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used in Region 1.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "UMTS/LTE used by both operators. TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz TDD",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "du uses B40 (Wikipedia LTE list, 20 MHz carrier). TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz",
+   "names": [
+    "B7",
+    "B38",
+    "B41"
+   ],
+   "status": "unknown",
+   "duplex": "mixed",
+   "range": {
+    "f": [
+     2500,
+     2690
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "e& uses B7 (Wikipedia LTE list). TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "3500",
+   "label": "3.3–3.8 GHz",
+   "names": [
+    "n78"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Both operators run 5G NR in the 3.5 GHz range (e& since 2019). TDRA assigns spectrum administratively and does not publish per-operator holdings in the sources reached. No per-operator amounts could be verified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/",
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2025/eand-integrated-annualreporten.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignment identified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "6g",
+   "label": "6 GHz",
+   "names": [
+    "n104"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     5925,
+     7125
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "e& ran the 'first trial of the 6GHz spectrum in UAE' (2022) and reached 10 Gbps on 6 GHz (2023). No licensed assignment verified.",
+   "sources": [
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2022/integrated-report-en-2022-1.pdf",
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2023/integrated-reporten-2023.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "24–29 GHz mmWave",
+   "names": [
+    "n257",
+    "n258"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     29500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "e& reports a live 5G mmWave deployment (a site with over 10 km coverage, 2023), which implies an mmWave assignment. The band (26 or 28 GHz) and amount are not verified.",
+   "sources": [
+    "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2023/integrated-reporten-2023.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No assignment identified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No assignment identified.",
+   "sources": [
+    "https://www.tdra.gov.ae/en/"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "No per-operator spectrum amounts or positions could be sourced. TDRA's website, e& integrated reports 2019–2025 and du's investor pages (unreachable) were checked. Band entries show only which bands are in use, where a source says so.",
+  "The LTE band usage comes from Wikipedia's 'List of LTE networks in Asia', which is dated (2012–2016 launches)."
+ ],
+ "missing": [
+  "All per-operator holdings (700, 800, 900, 1800, 2100, 2300, 2600, 3.5 GHz, mmWave) are unknown. TDRA assignments are administrative and unpublished.",
+  "Which mmWave band e& uses and how much; whether du holds mmWave.",
+  "Whether 700 MHz and 6 GHz (IMT or Wi-Fi) are assigned.",
+  "du's annual report was not reachable (investor site returned errors)."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "TDRA",
+   "url": "https://www.tdra.gov.ae/en/"
+  },
+  {
+   "title": "Wikipedia – List of LTE networks in Asia",
+   "url": "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+  },
+  {
+   "title": "e& integrated report 2022 (6 GHz trial)",
+   "url": "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2022/integrated-report-en-2022-1.pdf"
+  },
+  {
+   "title": "e& integrated report 2023 (mmWave deployment, 6 GHz)",
+   "url": "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2023/integrated-reporten-2023.pdf"
+  },
+  {
+   "title": "e& integrated annual report 2025",
+   "url": "https://www.eand.com/content/dam/eand/assets/docs/annual-report/2025/eand-integrated-annualreporten.pdf"
+  }
+ ]
+}
