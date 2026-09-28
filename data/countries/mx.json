@@ -1,0 +1,721 @@
+{
+ "code": "mx",
+ "name": "Mexico",
+ "region": "Americas",
+ "asOf": "2026-09-28",
+ "coverage": "partial",
+ "licensing": "mixed",
+ "summary": "Two network operators, Telcel (América Móvil, preponderant) and AT&T México, plus Movistar (Telefónica), which runs on AT&T's radio network and has been returning spectrum, and the state-backed wholesale 700 MHz network Altán Redes. The IFT was replaced by the Comisión Reguladora de Telecomunicaciones (CRT) in October 2025; no mobile spectrum auction has been completed since IFT-10 (2021).",
+ "operators": [
+  {
+   "id": "telcel",
+   "name": "Telcel",
+   "legal": "Radiomóvil Dipsa, S.A. de C.V. (América Móvil)",
+   "color": "#0b3d91",
+   "aliases": [
+    "América Móvil",
+    "AMX"
+   ],
+   "kind": "mno",
+   "notes": "Declared preponderant economic agent (AEP) in telecoms since 2014."
+  },
+  {
+   "id": "att",
+   "name": "AT&T México",
+   "legal": "AT&T Comunicaciones Digitales, S. de R.L. de C.V.",
+   "color": "#00a8e0",
+   "aliases": [
+    "AT&T",
+    "Unefon",
+    "Iusacell",
+    "Nextel"
+   ],
+   "kind": "mno",
+   "notes": "Formed 2015 from Iusacell/Unefon and Nextel México. Hosts Movistar's traffic under the 2019 AT&T–Telefónica access agreement."
+  },
+  {
+   "id": "movistar",
+   "name": "Movistar",
+   "legal": "Pegaso PCS, S.A. de C.V. (Telefónica)",
+   "color": "#5bc500",
+   "aliases": [
+    "Telefónica México",
+    "Pegaso"
+   ],
+   "kind": "mno",
+   "notes": "Moved its customers onto AT&T's radio network (2019 agreement) and has been returning spectrum; by Dec 2020 IFT counted only PCS and a sliver of 850 MHz for it. Holdings after 2021 not verified."
+  },
+  {
+   "id": "altan",
+   "name": "Altán Redes",
+   "legal": "Altán Redes, S.A.P.I. de C.V. (Red Compartida)",
+   "color": "#f26722",
+   "aliases": [
+    "Red Compartida"
+   ],
+   "kind": "other",
+   "notes": "Wholesale-only national shared network on 700 MHz (concession from 2017). Went through concurso mercantil from 2021; the federal government became majority owner. Ownership details after 2023 not verified."
+  },
+  {
+   "id": "other",
+   "name": "Other",
+   "color": "#9aa0a6",
+   "aliases": [
+    "TV Zac"
+   ],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz (n71)",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unassigned: IFT counted 2×35 MHz available (Dec 2020). The IFT-12 auction that would have offered it was cancelled in Jan 2025; the CRT's 2026 annual band programme again lists 600 MHz for 5G access.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2024/4/acuerdodecancelacion.pdf",
+    "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+   ],
+   "holdings": [],
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   }
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Whole APT FDD allocation (2×45 MHz) is held nationally by the wholesale Red Compartida; IFT counts Altán with 90 MHz in the 700 MHz band.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "altan",
+     "dl": [
+      758,
+      803
+     ],
+     "ul": [
+      703,
+      748
+     ],
+     "notes": "National concession for the Red Compartida (2017); IFT Tabla 9: 90 MHz."
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (EU B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EU 800 MHz plan not used; 814–824/859–869 MHz (B26 extension) is shown under 850.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz cellular (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licensed in nine cellular regions (Regiones Celulares 1–9): Telcel holds the incumbent B-side in all regions, AT&T the other side (ex-Iusacell/Unefon/Telefónica). IFT's Dec 2020 table counts only 39.38 MHz (both directions) of the 50 MHz band as concessioned, with none listed as available.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "telcel",
+     "mhz": 10.76,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
+    },
+    {
+     "op": "att",
+     "mhz": 8.47,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
+    },
+    {
+     "op": "movistar",
+     "mhz": 0.47,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)",
+     "notes": "Dec 2020 figure; may since have been returned"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "800 MHz SMR/B26 extension (814–824/859–869)",
+   "names": [
+    "B26",
+    "n26"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     859,
+     869
+    ],
+    "ul": [
+     814,
+     824
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Ex-Nextel iDEN band, licensed by area (ABS). AT&T held 3.2 MHz (both directions, pop-weighted) in Dec 2020 and won blocks A1 (regions 1–4) and A9.01 in IFT-10 (2021, ≈4.8 MHz pop-weighted); the other 36 IFT-10 blocks were not sold.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 4.0,
+     "paired": true,
+     "basis": "IFT Tabla 9 (1.6) + IFT-10 blocks A1 and A9.01 (≈2.4), pop-weighted"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Mexico (not in IFT's list of mobile bands).",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz L-band",
+   "names": [
+    "B75",
+    "B76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unassigned: IFT counted 91 MHz of L-band available (Dec 2020); offered in the cancelled IFT-12.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2024/4/acuerdodecancelacion.pdf"
+   ],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS (1710–1780/2110–2180)",
+   "names": [
+    "B4",
+    "B66",
+    "n66"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2180
+    ],
+    "ul": [
+     1710,
+     1780
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Mostly national concessions (Licitación 21, 2010; IFT-3, 2016: AT&T 1 national + regional A blocks, Telcel 1 national + regional A blocks plus G and J blocks). IFT Dec 2020: Telcel 80 MHz, AT&T 50 MHz (both directions). 1755–1760/2155–2160 was offered in IFT-10 and not sold.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/espectro/2015/3/resultadosdelaterceraetapa-presentaciondelasofertaseconomicas.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/espectro/2015/3/basesdelicitacionift-31.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "telcel",
+     "mhz": 40,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
+    },
+    {
+     "op": "att",
+     "mhz": 25,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used: 1710–1780 MHz is the AWS uplink.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 incl. G block (B2/B25)",
+   "names": [
+    "B2",
+    "B25",
+    "n25"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1995
+    ],
+    "ul": [
+     1850,
+     1915
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licensed by region (Licitación 20, 2010, and earlier). IFT Dec 2020 (both directions): Telefónica 43.31, AT&T 32.10, Telcel 28.40 MHz; G block (1910–1915/1990–1995) offered in IFT-10 and not sold. IFT counts 113.81 of 130 MHz.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "movistar",
+     "mhz": 21.66,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)",
+     "notes": "Dec 2020; Telefónica has been returning spectrum — current holding not verified"
+    },
+    {
+     "op": "att",
+     "mhz": 16.05,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
+    },
+    {
+     "op": "telcel",
+     "mhz": 14.2,
+     "paired": true,
+     "basis": "IFT pop-weighted national average (IFT-10 Bases, Tabla 9, Dec 2020)"
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz unpaired TDD",
+   "names": [
+    "B33",
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No unpaired 1.9/2 GHz TDD assignments; 2 GHz MSS/ATC handled in separate tenders (IFT-9, IFT-13).",
+   "sources": [
+    "https://www.ift.org.mx/espectro-radioelectrico/licitaciones/telecomunicaciones"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "B1 not used: 2110–2170 MHz is AWS downlink and 1920–1980 MHz overlaps PCS.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignment. The CRT consulted (Jun–Jul 2026) on a first 'redes inteligentes' tender of up to 40 MHz in the upper 2.3 GHz band for private industrial networks.",
+   "sources": [
+    "https://www.gob.mx/crt/prensa/consulta-publica-fortalecio-el-diseno-de-la-primera-licitacion-de-redes-inteligentes-en-mexico?idiom=es"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "IFT-7 (2018) sold F1–F4 (2530–2570/2650–2690, 2×10 each): F1–F2 to AT&T, F3–F4 to Telefónica (Pegaso). IFT's Dec 2020 table gives AT&T 80 MHz and Telefónica 0 in 2.5 GHz, implying F3–F4 passed to AT&T (inferred). 2500–2530/2620–2650 is Telcel's (existing holdings plus block C1 won in IFT-10, 2021); TV Zac holds it in part of Zacatecas (0.65 MHz pop-weighted).",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/publicacionderesultadosppoift-7vf.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/reporte-rondadesobrecerradoetapadeasignacion.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "telcel",
+     "dl": [
+      2620,
+      2650
+     ],
+     "ul": [
+      2500,
+      2530
+     ],
+     "notes": "IFT: 51.05 MHz pop-weighted (Dec 2020) + IFT-10 block C1 (8.3 MHz). Not held in part of Zacatecas (TV Zac)."
+    },
+    {
+     "op": "att",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "notes": "IFT-7 blocks F1–F2 (2018)",
+     "source": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/reporte-rondadesobrecerradoetapadeasignacion.pdf"
+    },
+    {
+     "op": "att",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "notes": "IFT-7 blocks F3–F4, won by Pegaso PCS (Telefónica); counted for AT&T by IFT in Dec 2020 (transfer inferred)"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz TDD (B41/n41)",
+   "names": [
+    "B41",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "IFT-7 (2018): T1 2575–2595 and T2 2595–2615 MHz (20 MHz each) both won by AT&T; 2570–2575 and 2615–2620 are guard bands.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/publicacionderesultadosppoift-7vf.pdf",
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/reporte-rondadesobrecerradoetapadeasignacion.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      2570,
+      2575
+     ]
+    },
+    {
+     "op": "att",
+     "f": [
+      2575,
+      2615
+     ],
+     "notes": "IFT-7 blocks T1–T2"
+    },
+    {
+     "op": "guard",
+     "f": [
+      2615,
+      2620
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3–3.6 GHz (n77/n78)",
+   "names": [
+    "n78",
+    "n77",
+    "B42"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3600
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "IFT's Dec 2020 mobile-spectrum table counted only the 3.3 GHz band (3300–3400 MHz) with 50 MHz available and unassigned; 3.4–3.6 GHz legacy fixed-wireless concessions were not counted. Telcel and AT&T are reported to run 5G NR in 3.5 GHz, but their assignments could not be verified from regulator documents.",
+   "sources": [
+    "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not identified for IMT in Mexico.",
+   "sources": [
+    "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258",
+    "n257"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mmWave IMT assignments; not in the CRT 2026 annual band programme.",
+   "sources": [
+    "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz (n259/n260)",
+   "names": [
+    "n260",
+    "n259"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignments; the CRT 2026 annual programme lists 37 GHz for fixed wireless service.",
+   "sources": [
+    "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT assignments or plans.",
+   "sources": [
+    "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+   ],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Regulator: the IFT (autonomous regulator since 2013) was dissolved under the Dec 2024 constitutional reform and the Ley en Materia de Telecomunicaciones y Radiodifusión (DOF 16 Jul 2025); the Comisión Reguladora de Telecomunicaciones (CRT, attached to the Agencia de Transformación Digital y Telecomunicaciones) took over on 17 Oct 2025. The IFT website is now a read-only archive.",
+  "The IFT-12 auction (600 MHz, 800 MHz, L-band, 2.5 GHz etc.) was cancelled on 16 Jan 2025 at the ATDT's request. As of Sep 2026 the CRT has consulted on a 2.3 GHz private-network tender and a rural-coverage spectrum tender (consultation 24 Sep–21 Oct 2026), but no mobile auction has been held.",
+  "Holdings are the IFT's own population-weighted national averages as of the IFT-10 bases (Dec 2020, 'Tabla 9', figures given both directions — halved here to per-direction), updated with the IFT-10 results (Oct 2021). Licences for 850 MHz, 800 MHz and PCS are regional (nine cellular regions or smaller ABS areas); AWS and 2.5 GHz are essentially national.",
+  "IFT Tabla 9 total (both directions): Telcel 180.96 MHz, AT&T 182.23, Altán 90, Telefónica 44.25, TV Zac 0.65; plus 45.1 MHz offered in IFT-10 and 211 MHz available (600 MHz, L-band, 3.3 GHz)."
+ ],
+ "missing": [
+  "Changes after Oct 2021 are not reflected except where noted: in particular Telefónica/Movistar's spectrum returns after Dec 2020 (its PCS and 850 MHz holdings may now be zero) and any transfers between AT&T and Telcel could not be verified — the IFT/CRT concession registry and statistics portal (bit.ift.org.mx) were not usable.",
+  "2.5 GHz FDD: transfer of IFT-7 blocks F3–F4 from Telefónica to AT&T is inferred from IFT's Dec 2020 holdings table, not from a transfer resolution.",
+  "3.3–3.6 GHz: Telcel/AT&T 5G assignments (reported 2021–2024) not verified; entry left as 'unknown'.",
+  "Regional detail (which region each 850/PCS block belongs to) not compiled; only IFT's national pop-weighted figures are used.",
+  "Altán Redes ownership/restructuring after 2023 and Telefónica México's corporate status in 2026 not verified.",
+  "No EARFCN/NR-ARFCN data compiled."
+ ],
+ "sources": [
+  {
+   "title": "IFT – Bases de Licitación IFT-10 (Tabla 9: spectrum holdings by operator, pop-weighted)",
+   "url": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+  },
+  {
+   "title": "IFT – IFT-10 final results (2021)",
+   "url": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/reportefinalderesultadosdelppoift-10.pdf"
+  },
+  {
+   "title": "IFT – IFT-7 results and 2.5 GHz band scheme (2018)",
+   "url": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/publicacionderesultadosppoift-7vf.pdf"
+  },
+  {
+   "title": "IFT – IFT-7 assignment round report",
+   "url": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2018/7/reporte-rondadesobrecerradoetapadeasignacion.pdf"
+  },
+  {
+   "title": "IFT – IFT-3 AWS results (2016)",
+   "url": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/espectro/2015/3/resultadosdelaterceraetapa-presentaciondelasofertaseconomicas.pdf"
+  },
+  {
+   "title": "IFT – Acuerdo de cancelación de la Licitación IFT-12 (Jan 2025)",
+   "url": "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2024/4/acuerdodecancelacion.pdf"
+  },
+  {
+   "title": "IFT – Licitaciones de telecomunicaciones (archive)",
+   "url": "https://www.ift.org.mx/espectro-radioelectrico/licitaciones/telecomunicaciones"
+  },
+  {
+   "title": "CRT – Programa Anual de Uso y Aprovechamiento de Bandas 2026",
+   "url": "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+  },
+  {
+   "title": "CRT – consulta licitación de redes inteligentes (2.3 GHz)",
+   "url": "https://www.gob.mx/crt/prensa/consulta-publica-fortalecio-el-diseno-de-la-primera-licitacion-de-redes-inteligentes-en-mexico?idiom=es"
+  },
+  {
+   "title": "CRT – consulta de espectro para cobertura rural (Sep 2026)",
+   "url": "https://www.gob.mx/crt/prensa/crt-abre-consulta-historica-de-espectro-para-cobertura-rural?idiom=es"
+  },
+  {
+   "title": "Wikipedia (es) – Instituto Federal de Telecomunicaciones (dissolution dates)",
+   "url": "https://es.wikipedia.org/wiki/Instituto_Federal_de_Telecomunicaciones"
+  }
+ ]
+}
