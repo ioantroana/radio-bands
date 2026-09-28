@@ -1,0 +1,1511 @@
+{
+ "code": "us",
+ "name": "United States",
+ "region": "Americas",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "regional",
+ "summary": "Three national MNOs (T-Mobile, AT&T, Verizon) after T-Mobile absorbed UScellular's wireless business (2025) and EchoStar sold its terrestrial spectrum to AT&T (closed July 2026) and SpaceX (pending), leaving Boost Mobile as a hybrid MVNO. Licences are geographic (CMA/BTA/MTA/EA/PEA/county), so figures are FCC population-weighted averages adjusted for transactions closed by 2026-09-28.",
+ "operators": [
+  {
+   "id": "att",
+   "name": "AT&T",
+   "legal": "AT&T Mobility / New Cingular Wireless PCS, LLC",
+   "color": "#00a8e0",
+   "aliases": [
+    "AT&T Mobility",
+    "FirstNet (Built with AT&T)",
+    "Cricket Wireless"
+   ],
+   "kind": "mno",
+   "notes": "Operates FirstNet (Band 14, licensed to the First Responder Network Authority) under a 25-year contract from 2017. Bought UScellular/Array 3.45 GHz + Lower 700 MHz licences (closed 2026-01-13) and EchoStar's 3.45 GHz + 600 MHz licences (FCC approval 2026-05-12, closed 2026-07-28)."
+  },
+  {
+   "id": "verizon",
+   "name": "Verizon",
+   "legal": "Cellco Partnership d/b/a Verizon Wireless",
+   "color": "#d52b1e",
+   "aliases": [
+    "Verizon Wireless",
+    "Cellco"
+   ],
+   "kind": "mno",
+   "notes": "Bought Array (ex-UScellular) cellular/AWS/PCS licences for $1.0bn (FCC approval 2026, closed 2026-06-01). Largest winner of AWS-3 Auction 113 (June 2026, 82 licences, $3.16bn gross); those licences not yet reflected."
+  },
+  {
+   "id": "tmobile",
+   "name": "T-Mobile",
+   "legal": "T-Mobile License LLC (T-Mobile US, Inc.)",
+   "color": "#e20074",
+   "aliases": [
+    "T-Mobile US",
+    "Sprint (merged 2020-04-01)",
+    "Metro by T-Mobile",
+    "Mint Mobile",
+    "UScellular (wireless ops acquired 2025-08-01)"
+   ],
+   "kind": "mno",
+   "notes": "Merged with Sprint 2020-04-01 (BRS/EBS 2.5 GHz, PCS G block). Acquired UScellular's wireless operations and ~30% of its spectrum (600 MHz, 2.5 GHz, 24 GHz and most 700 A/AWS/PCS) on 2025-08-01, plus further Array 700/600 MHz licences in May 2026. Sold its 3.45 GHz licences (SoniqWave swap 2024; N77 License Co/Columbia Capital 2025). Swapped its 800 MHz SMR licences to Grain for $2.9bn + Grain's 600 MHz licences (closed 2026-08-10). Acquires Comcast's 600 MHz licences in stages (accelerated portion closed 2026-06-02; rest targeted 1H 2028; already leased)."
+  },
+  {
+   "id": "echostar",
+   "name": "EchoStar (Boost Mobile)",
+   "legal": "EchoStar Corporation (DISH Network subsidiaries; Northstar/SNR for AWS-3)",
+   "color": "#f7941d",
+   "aliases": [
+    "DISH Wireless",
+    "Boost Mobile",
+    "Boost Infinite"
+   ],
+   "kind": "mno",
+   "notes": "Sold all 3.45 GHz and 600 MHz licences to AT&T (closed 2026-07-28); Boost is becoming a hybrid MVNO on AT&T. AWS-4, H-block and unpaired AWS-3 (1695-1710) licences were transferred to a trust on 2026-05-22 pending the Spectrum Acquisition Closing with SpaceX (targeted 2027-11-30). Retains Lower 700 E, paired AWS-3, CBRS PALs and mmWave."
+  },
+  {
+   "id": "array",
+   "name": "Array (ex-UScellular)",
+   "legal": "Array Digital Infrastructure, Inc. (formerly United States Cellular Corporation)",
+   "color": "#1f3f8f",
+   "aliases": [
+    "UScellular",
+    "U.S. Cellular"
+   ],
+   "kind": "other",
+   "notes": "Wireless operations sold to T-Mobile 2025-08-01; now a tower company holding residual spectrum (mainly C-band, CBRS, 28/37/39 GHz) that it seeks to monetise. TDS made a take-private proposal on 2026-05-07."
+  },
+  {
+   "id": "grain",
+   "name": "Grain (NewLevel)",
+   "legal": "NEWLEVEL IV, L.P. / Grain Management, LLC",
+   "color": "#8c6d3f",
+   "aliases": [
+    "Grain Management"
+   ],
+   "kind": "other",
+   "notes": "Acquired T-Mobile's 800 MHz SMR (B26) licences 2026-08-10; plans leasing incl. direct-to-device."
+  },
+  {
+   "id": "spacex",
+   "name": "SpaceX (Starlink)",
+   "legal": "Space Exploration Holdings, LLC",
+   "color": "#3c3c3c",
+   "aliases": [
+    "Starlink Direct to Cell"
+   ],
+   "kind": "other",
+   "notes": "Buying EchoStar's AWS-4, H-block and unpaired AWS-3 licences (FCC approval 2026-05-12; licences held in trust since 2026-05-22; acquisition closing targeted 2027-11-30). Won 2 licences in Auction 113."
+  },
+  {
+   "id": "comcast",
+   "name": "Comcast (Xfinity Mobile)",
+   "legal": "Comcast OTR1, LLC",
+   "color": "#7b2fd0",
+   "aliases": [
+    "Xfinity Mobile"
+   ],
+   "kind": "other",
+   "notes": "MVNO on Verizon. Holds CBRS PALs; its 600 MHz licences are leased to and being sold to T-Mobile (partial close 2026-06-02, rest 1H 2028)."
+  },
+  {
+   "id": "charter",
+   "name": "Charter (Spectrum Mobile)",
+   "legal": "Charter Communications",
+   "color": "#0b2e59",
+   "aliases": [
+    "Spectrum Mobile"
+   ],
+   "kind": "other",
+   "notes": "MVNO on Verizon; holds CBRS PALs used for offload. Merger with Cox announced 2025."
+  },
+  {
+   "id": "other",
+   "name": "Others",
+   "color": "#9aa0a6",
+   "aliases": [
+    "regional carriers",
+    "Columbia Capital / N77 License Co",
+    "EBS licensees"
+   ],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz (n71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 1002 (2017), PEA licences, 5+5 MHz blocks. Pop-weighted average MHz per direction.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf",
+    "https://about.att.com/story/2026/echostar-spectrum.html",
+    "https://docs.fcc.gov/public/attachments/DA-26-653A1.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000101/tmus-20260630.htm",
+    "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000035/ad-20260331.htm"
+   ],
+   "holdings": [
+    {
+     "op": "tmobile",
+     "mhz": 16.8,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array 600 MHz (2025-08 / 2026-05) and Grain 600 MHz (10 MHz in 212 counties, ~15% pop, 2026-08-10) (estimate)",
+     "paired": true,
+     "source": "https://docs.fcc.gov/public/attachments/DA-26-653A1.pdf"
+    },
+    {
+     "op": "att",
+     "mhz": 8.9,
+     "basis": "FCC CMR 2024 EchoStar 600 MHz holding (17.8 MHz total) transferred to AT&T 2026-07-28",
+     "paired": true,
+     "notes": "EchoStar's 10-40 MHz (≈2x10 nationwide) 600 MHz; AT&T's network does not support n71 yet.",
+     "source": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf"
+    },
+    {
+     "op": "other",
+     "mhz": 8.0,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Grain's 600 MHz moved to T-Mobile (estimate)",
+     "paired": true,
+     "notes": "Mainly Comcast (leased to T-Mobile, sale in stages to 2028), plus smaller Auction 1002 winners."
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "Lower 700 MHz A/B/C (B12/B17)",
+   "names": [
+    "B12",
+    "B17",
+    "n12"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     728,
+     746
+    ],
+    "ul": [
+     698,
+     716
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CMR's 700 MHz column (70 MHz) split here as: Lower A/B/C paired, Upper C paired and Lower D/E unpaired; the split of AT&T's 29.6 MHz between paired and D/E is an estimate.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-25-1006A1.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000035/ad-20260331.htm"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 11.7,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array Lower 700 B/C to AT&T (2026-01-13; ≤24 MHz in 12% of pop) (estimate)",
+     "paired": true,
+     "notes": "B/C blocks (B17) in most CMAs.",
+     "source": "https://docs.fcc.gov/public/attachments/DA-25-1006A1.pdf"
+    },
+    {
+     "op": "tmobile",
+     "mhz": 5.75,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array 700 A to T-Mobile (2025-08-01, 2026-05-05) (estimate)",
+     "paired": true,
+     "notes": "A block (B12)."
+    },
+    {
+     "op": "other",
+     "mhz": 0.55,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "Upper 700 MHz C (B13)",
+   "names": [
+    "B13",
+    "n13"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     746,
+     757
+    ],
+    "ul": [
+     776,
+     787
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 73 (2008), Upper C block (746-757/776-787) held by Verizon almost nationwide.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "verizon",
+     "mhz": 10.85,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (21.7 MHz total, near-nationwide REAG licences)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "Lower 700 MHz D/E SDL (B29)",
+   "names": [
+    "B29"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     716,
+     728
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 7.4,
+     "basis": "D block nationwide (ex-Qualcomm) + E block in 5 metro areas; estimate derived from FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "notes": "Used as supplemental downlink."
+    },
+    {
+     "op": "echostar",
+     "mhz": 4.6,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (E block outside the AT&T metros)"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz Band 14 (FirstNet)",
+   "names": [
+    "B14",
+    "n14"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     768
+    ],
+    "ul": [
+     788,
+     798
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Single nationwide public-safety broadband licence (47 CFR 27 Subpart N / Public Law 112-96). Not included in the FCC spectrum screen. Licence expiry: 10-year FirstNet licence renewed in 2022 (expiry year from background knowledge, not source-verified).",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-27",
+    "https://www.firstnet.gov/about"
+   ],
+   "blocks": [
+    {
+     "op": "att",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      788,
+      798
+     ],
+     "expiry": "2032",
+     "notes": "Nationwide licence held by the First Responder Network Authority (FirstNet); AT&T builds and operates it (25-year contract from 2017) and may use spare capacity commercially."
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (EU B20 / Japan B18/B19)",
+   "names": [],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band 20/18/19 plans are not used in the US; 806-824/851-869 MHz is public safety and SMR (see 850 group, B26 SMR).",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-B/section-2.106"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "Cellular 850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CMA licences (A/B blocks, 2x12.5). The CMR figures sum to 52.7 MHz for a 50 MHz band (partnership interests attributed to several holders), so amounts were scaled.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-486A1.pdf",
+    "https://investors.arrayinc.com/news/news-details/2026/Array-completes-sale-of-select-spectrum-assets-to-Verizon-for-1-0-billion/default.aspx"
+   ],
+   "holdings": [
+    {
+     "op": "verizon",
+     "mhz": 12.5,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array cellular licences to Verizon (2026-06-01); scaled to 25 MHz (estimate)",
+     "paired": true
+    },
+    {
+     "op": "att",
+     "mhz": 11.7,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (23.5 MHz total)",
+     "paired": true
+    },
+    {
+     "op": "other",
+     "mhz": 0.8,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (rural carriers)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "800 MHz ESMR (B26)",
+   "names": [
+    "B26",
+    "n26"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     862,
+     869
+    ],
+    "ul": [
+     817,
+     824
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Ex-Nextel/Sprint ESMR licences (4.85-14 MHz by market). T-Mobile swapped them to Grain for $2.9bn + Grain's 600 MHz licences; Grain plans leasing (incl. D2D).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-653A1.pdf",
+    "https://investor.t-mobile.com/news-releases/news-release-details/t-mobile-completes-sale-800-mhz-spectrum-portfolio-grain"
+   ],
+   "holdings": [
+    {
+     "op": "grain",
+     "mhz": 6.9,
+     "basis": "FCC CMR 2024 T-Mobile SMR holding (13.8 MHz total) transferred to Grain 2026-08-10",
+     "paired": true,
+     "source": "https://investor.t-mobile.com/news-releases/news-release-details/t-mobile-completes-sale-800-mhz-spectrum-portfolio-grain"
+    },
+    {
+     "op": "other",
+     "mhz": 0.1,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (0.5 MHz total, rounded down to fit)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band 8 not used in the US. 896-901/935-940 MHz holds 3+3 MHz private broadband licences (B106/n106, mainly Anterix, for utilities); not public mobile.",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-B/section-2.106"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "1400",
+   "label": "L-band 1.4-1.5 GHz",
+   "names": [],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Used for aeronautical mobile telemetry (1435-1525 MHz) and MSS (1525-1559 MHz, Ligado); no terrestrial IMT licences.",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-B/section-2.106"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS-1 (B4/B66)",
+   "names": [
+    "B4",
+    "B66",
+    "n66"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 66 (2006); CMA/EA/REAG licences.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-486A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "tmobile",
+     "mhz": 18.75,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array AWS-1 to T-Mobile (2025-08-01) (estimate)",
+     "paired": true
+    },
+    {
+     "op": "verizon",
+     "mhz": 18.45,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array AWS-1 to Verizon (2026-06-01) (estimate)",
+     "paired": true
+    },
+    {
+     "op": "att",
+     "mhz": 7.05,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    },
+    {
+     "op": "other",
+     "mhz": 0.55,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS-3 paired (B66/n66)",
+   "names": [
+    "B66",
+    "n66",
+    "B70"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2155,
+     2180
+    ],
+    "ul": [
+     1755,
+     1780
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 97 (2015). ~2 MHz per direction (pop-weighted) was unlicensed (defaulted DE licences) and re-auctioned in Auction 113 (ended 2026-06-23, $3.57bn net): Verizon 82 licences ($3.16bn), T-Mobile 102 ($278m), AT&T 10 ($121m), SpaceX 2, others 3. Auction 113 licences are not included (grant status as of 2026-09-28 not confirmed).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-633A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-633A2.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-486A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 10.2,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    },
+    {
+     "op": "verizon",
+     "mhz": 6.55,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array AWS-3 to Verizon (2026-06-01) (estimate)",
+     "paired": true
+    },
+    {
+     "op": "echostar",
+     "mhz": 3.3,
+     "basis": "estimate: CMR EchoStar AWS-3 21.1 MHz total minus ~15 MHz unpaired",
+     "paired": true,
+     "notes": "Northstar/SNR licences; remain with EchoStar."
+    },
+    {
+     "op": "tmobile",
+     "mhz": 1.65,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    },
+    {
+     "op": "other",
+     "mhz": 1.4,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS-3 unpaired 1695-1710 (uplink, n70/B70)",
+   "names": [
+    "B70",
+    "n70"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1695,
+     1710
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Uplink-only block (drawn as SDL).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+   ],
+   "holdings": [
+    {
+     "op": "echostar",
+     "mhz": 14.5,
+     "basis": "≈15 MHz nationwide per EchoStar/SpaceX filings; CMR EchoStar AWS-3 21.1 MHz total",
+     "notes": "Transferred to trust 2026-05-22 pending sale to SpaceX (closing targeted 2027-11-30). Uplink only (paired with AWS-4/H-block downlink in n70).",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS-3 unpaired 1695-1710 — after SpaceX closing",
+   "names": [
+    "n70"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1695,
+     1710
+    ]
+   },
+   "positions": "regional-average",
+   "future": {
+    "from": "2027-11-30",
+    "label": "SpaceX closing targeted 30 Nov 2027"
+   },
+   "excludeFromTotal": true,
+   "note": "FCC approved 2026-05-12; licences held in trust since 2026-05-22.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+   ],
+   "holdings": [
+    {
+     "op": "spacex",
+     "mhz": 14.5,
+     "basis": "≈15 MHz nationwide per EchoStar/SpaceX filings"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band 3 not used in the US: 1710-1780 MHz is AWS uplink, 1805-1880 MHz is federal/fixed; the 1.8 GHz plan is not harmonised in Region 2.",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-B/section-2.106"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "B25",
+    "n2",
+    "n25"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1995
+    ],
+    "ul": [
+     1850,
+     1915
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctions 4/5/11/22/35/58 (1995-2005), MTA/BTA licences; G block 2011 (Sprint).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-486A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "tmobile",
+     "mhz": 33.65,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array PCS to T-Mobile (2025-08-01) (estimate)",
+     "paired": true,
+     "notes": "Includes the ex-Sprint G block (1910-1915/1990-1995)."
+    },
+    {
+     "op": "att",
+     "mhz": 18.8,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    },
+    {
+     "op": "verizon",
+     "mhz": 11.35,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array PCS to Verizon (2026-06-01) (estimate)",
+     "paired": true
+    },
+    {
+     "op": "other",
+     "mhz": 1.05,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "H block (B25/n70)",
+   "names": [
+    "B25",
+    "n70"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1995,
+     2000
+    ],
+    "ul": [
+     1915,
+     1920
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Used by EchoStar as part of n70 downlink (1995-2020).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+   ],
+   "holdings": [
+    {
+     "op": "echostar",
+     "mhz": 5,
+     "basis": "all 176 EA licences (nationwide, Auction 96, 2014)",
+     "paired": true,
+     "notes": "In trust since 2026-05-22 pending SpaceX closing."
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "2 GHz AWS-4 (B23/n70/B66 ext.)",
+   "names": [
+    "B23",
+    "n70",
+    "B66"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2180,
+     2200
+    ],
+    "ul": [
+     2000,
+     2020
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "CMR: 39.9 MHz pop-weighted total.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+   ],
+   "holdings": [
+    {
+     "op": "echostar",
+     "mhz": 20,
+     "basis": "nationwide licences (ex-DBSD/TerreStar 2 GHz MSS)",
+     "paired": true,
+     "notes": "2000-2020 authorised for downlink since 2019 (n70 DL 1995-2020 with 1695-1710 UL); in trust since 2026-05-22 pending SpaceX closing."
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "H block — after SpaceX closing",
+   "names": [
+    "B25",
+    "n70"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1995,
+     2000
+    ],
+    "ul": [
+     1915,
+     1920
+    ]
+   },
+   "positions": "regional-average",
+   "future": {
+    "from": "2027-11-30",
+    "label": "SpaceX closing targeted 30 Nov 2027"
+   },
+   "excludeFromTotal": true,
+   "note": "For Starlink direct-to-cell; EchoStar/Boost get commercial access.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+   ],
+   "holdings": [
+    {
+     "op": "spacex",
+     "mhz": 5,
+     "basis": "all 176 EA licences (nationwide)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "2 GHz AWS-4 — after SpaceX closing",
+   "names": [
+    "B23",
+    "n70"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2180,
+     2200
+    ],
+    "ul": [
+     2000,
+     2020
+    ]
+   },
+   "positions": "regional-average",
+   "future": {
+    "from": "2027-11-30",
+    "label": "SpaceX closing targeted 30 Nov 2027"
+   },
+   "excludeFromTotal": true,
+   "note": "For Starlink direct-to-cell.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm",
+    "https://ir.echostar.com/news-releases/news-release-details/echostar-announces-spectrum-sale-and-commercial-agreement-spacex"
+   ],
+   "holdings": [
+    {
+     "op": "spacex",
+     "mhz": 20,
+     "basis": "nationwide licences",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD (B33/B34/B39)",
+   "names": [],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used in the US: 1920-1930 MHz is unlicensed PCS (DECT), 2010-2025 MHz part of the 2 GHz MSS/AWS-4 plan.",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-B/section-2.106"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band 1 plan not used in the US (1920-1980 MHz overlaps PCS/AWS-4 uplinks); 2110-2155/2155-2180 MHz DL is AWS (see 1700 group).",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-2/subpart-B/section-2.106"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "2300",
+   "label": "WCS 2.3 GHz (B30)",
+   "names": [
+    "B30",
+    "n30"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2350,
+     2360
+    ],
+    "ul": [
+     2305,
+     2315
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 9.8,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (19.6 MHz total)",
+     "paired": true,
+     "notes": "AT&T also holds most C/D blocks (2315-2320/2345-2350), unusable for mobile because of SDARS/aero-telemetry limits."
+    },
+    {
+     "op": "other",
+     "mhz": 0.1,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "BRS/EBS 2.5 GHz (B41/n41)",
+   "names": [
+    "B41",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2496,
+     2690
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "tmobile",
+     "mhz": 175.1,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for Array EBS (0.1) to T-Mobile (estimate)",
+     "notes": "BRS 65.0 + EBS 110.1 (owned and long-term leases from educational licensees; ex-Sprint/Clearwire; Auction 108 2022)."
+    },
+    {
+     "op": "other",
+     "mhz": 7.1,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (EBS licensees, WISPs)"
+    },
+    {
+     "op": "verizon",
+     "mhz": 0.9,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.45 GHz (n77)",
+   "names": [
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3450,
+     3550
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 110 (2021-22), PEA licences, 10 MHz blocks; 40 MHz per-licensee cap expired 2026-01-04.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf",
+    "https://about.att.com/story/2026/echostar-spectrum.html",
+    "https://docs.fcc.gov/public/attachments/DA-25-1006A1.pdf",
+    "https://insidetowers.com/t-mobile-sells-3-45-ghz-spectrum/"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 74.5,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for EchoStar 3.45 GHz (30.8) to AT&T 2026-07-28 and Array 3.45 GHz (3.8) 2026-01-13 (estimate)",
+     "notes": "Also leases additional 3.45 GHz (e.g. from FTC Management Group); FCC order notes up to 100 MHz in some markets.",
+     "source": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf"
+    },
+    {
+     "op": "other",
+     "mhz": 25.0,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024), adjusted for T-Mobile's 11.9 MHz sold to N77 License Co/Columbia Capital and SoniqWave (estimate)",
+     "notes": "Columbia Capital entities (N77 License Co), SoniqWave, others; some leased to AT&T.",
+     "source": "https://insidetowers.com/t-mobile-sells-3-45-ghz-spectrum/"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "CBRS 3.55-3.7 GHz (PAL, n48)",
+   "names": [
+    "B48",
+    "n48"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3550,
+     3700
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 105 (2020): 7x10 MHz PALs per county in 3550-3650 MHz, 10-year licences (expire 2030); rest GAA shared via SAS. Only the four largest PAL holders are shown; other ~220 winners (utilities, WISPs, enterprises) omitted.",
+   "sources": [
+    "https://www.rcrwireless.com/20200914/analyst-angle/the-sunday-brief-market-by-market-cbrs-auction-105-results-is-more-sharing-in-the-works",
+    "https://www.fierce-network.com/regulatory/cbrs-3-5-ghz-auction-concludes-raising-4-58b"
+   ],
+   "holdings": [
+    {
+     "op": "verizon",
+     "mhz": 15,
+     "basis": "estimate: 557 PALs in 157 counties (46% of pop, avg 3.5 PALs = 35 MHz) → ~15-16 MHz pop-weighted"
+    },
+    {
+     "op": "echostar",
+     "mhz": 12,
+     "basis": "rough estimate: $913m spend at ~$0.22/MHz-pop; 5,492 PALs, avg 18 MHz per county, 88% pop — not source-verified"
+    },
+    {
+     "op": "comcast",
+     "mhz": 4,
+     "basis": "rough estimate: 830 PALs in 305 counties, $459m spend — not source-verified"
+    },
+    {
+     "op": "charter",
+     "mhz": 3.5,
+     "basis": "rough estimate: 210 PALs in 106 counties, $464m spend — not source-verified"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "C-band 3.7-3.98 GHz (n77)",
+   "names": [
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3700,
+     3980
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 107 (2021), PEA licences: A block 3700-3800 (5x20), B 3800-3880 (4x20), C 3880-3980 (5x20). Upper C-band 3.98-4.2 GHz: auction required by the 2025 budget law (One Big Beautiful Bill Act) — not yet held (from background knowledge, not source-verified).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000035/ad-20260331.htm"
+   ],
+   "holdings": [
+    {
+     "op": "verizon",
+     "mhz": 160.1,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "att",
+     "mhz": 79.6,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "tmobile",
+     "mhz": 27.2,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "array",
+     "mhz": 4.9,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024) (retained by Array)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000035/ad-20260331.htm"
+    },
+    {
+     "op": "other",
+     "mhz": 7.0,
+     "basis": "FCC 2024 Communications Marketplace Report Fig. II.B.14 (pop-weighted, June 2024)"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "4.4-4.94 GHz federal; 4940-4990 MHz public-safety band (Part 90 Subpart Y, nationwide band manager to FirstNet Authority per 2024 FCC decision — background knowledge). No commercial IMT licences.",
+   "sources": [
+    "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-90/subpart-Y"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "24 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     25250
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 102 (2019), PEA licences, 100 MHz blocks in 24.25-24.45 and 24.75-25.25 GHz (range drawn 24.25-25.25).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "tmobile",
+     "mhz": 361,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024) + Array 24 GHz (26) to T-Mobile 2025-08-01",
+     "source": "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+    },
+    {
+     "op": "att",
+     "mhz": 254,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "other",
+     "mhz": 60,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "echostar",
+     "mhz": 17,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "verizon",
+     "mhz": 7,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "28 GHz (n261)",
+   "names": [
+    "n261",
+    "n257"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     27500,
+     28350
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 101 (2019), county licences, 2x425 MHz blocks.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "verizon",
+     "mhz": 618,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "tmobile",
+     "mhz": 123,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "other",
+     "mhz": 56,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "echostar",
+     "mhz": 29,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "array",
+     "mhz": 22,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024) (retained by Array)"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "Upper 37 GHz (n260)",
+   "names": [
+    "n260"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37600,
+     38600
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 103 (2020), PEA licences, 100 MHz blocks. Lower 37 GHz (37.0-37.6) not licensed (shared federal/non-federal).",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "verizon",
+     "mhz": 975,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "other",
+     "mhz": 9,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "echostar",
+     "mhz": 8,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "att",
+     "mhz": 4,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "array",
+     "mhz": 4,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "39 GHz (n260)",
+   "names": [
+    "n260"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     38600,
+     40000
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EchoStar 0.4 MHz omitted (CMR row sums to 1400.4). Auction 103 (2020) plus incumbent (ex-FiberTower/Straight Path) rationalised licences.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "att",
+     "mhz": 784,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "tmobile",
+     "mhz": 321,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "other",
+     "mhz": 145,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "verizon",
+     "mhz": 124,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "array",
+     "mhz": 26,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    }
+   ]
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 103 (2020), PEA licences, 100 MHz blocks.",
+   "sources": [
+    "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "echostar",
+     "mhz": 609,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "tmobile",
+     "mhz": 381,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    },
+    {
+     "op": "other",
+     "mhz": 10,
+     "basis": "FCC CMR 2024 Fig. II.B.16 (pop-weighted, June 2024)"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Licensing is geographic (CMA, BTA/MTA, EA, REAG, PEA, county). All holdings are population-weighted national averages in MHz per direction for FDD. Base data: FCC 2024 Communications Marketplace Report (FCC 24-136), Figs. II.B.14/II.B.16, staff estimates as of June 2024 (regulator source). Adjustments for later transactions are this file's estimates, using the pop-weighted holdings of the seller and the scope stated in the FCC approval orders.",
+  "Transactions reflected (closed by 2026-09-28): T-Mobile/UScellular wireless ops + 600/700A/AWS/PCS/2.5/24 GHz (2025-08-01); T-Mobile 3.45 GHz sales to SoniqWave and N77 License Co (2024-25); AT&T/Array 3.45 GHz + Lower 700 (2026-01-13); Array 700/600 MHz to T-Mobile (May 2026); Verizon/Array cellular, AWS, PCS (2026-06-01); T-Mobile/Comcast 600 MHz accelerated tranche (2026-06-02, amount not quantified); AT&T/EchoStar 3.45 GHz + 600 MHz (2026-07-28); T-Mobile/Grain 800 MHz for 600 MHz swap (2026-08-10).",
+  "Pending: EchoStar AWS-4, H-block and unpaired AWS-3 to SpaceX — FCC approved 2026-05-12, licences in trust since 2026-05-22, closing targeted 2027-11-30 (future entries). Comcast 600 MHz remainder to T-Mobile targeted 1H 2028 (already leased to T-Mobile). Auction 113 (AWS-3 re-auction) licences: winners announced 2026-06-26, not added.",
+  "Upper C-band (3.98-4.2 GHz): auction required by 2025 legislation, not yet held (background knowledge, not source-verified).",
+  "Cross-check: PolicyTracker gives Verizon 279 MHz pop-weighted excluding mmWave (matches CMR 278.9) and AT&T 375 MHz after the EchoStar deal. This file gives AT&T ≈ 338 MHz sub-6 GHz incl. FirstNet B14 (≈318 without), Verizon ≈ 280 excl. CBRS, T-Mobile ≈ 356 — the gap likely reflects leased 3.45 GHz and different band scopes; FCC figures preferred.",
+  "FCC DA 26-470 (AT&T-EchoStar): post-transaction AT&T holds ≥1/3 of below-1-GHz spectrum in 354 CMAs (~65% of pop) and up to 100 MHz of 3.45 GHz in some markets.",
+  "The FCC CMR attributes partnership spectrum to multiple holders; cellular (850) amounts were scaled to the 25 MHz per-direction band size.",
+  "T-Mobile's 2025 license swaps with AT&T (PCS/AWS/700/600/2.5 GHz, many markets) and Verizon (Kentucky) rationalise holdings market by market and are not modelled."
+ ],
+ "missing": [
+  "Exact block positions: not compiled (licences vary by market); holdings only.",
+  "Post-June-2024 amounts are estimates: splits of UScellular/Array spectrum between T-Mobile, AT&T and Verizon approximated from the FCC orders' scope, not from ULS MHz-pop calculations.",
+  "CBRS PAL pop-weighted holdings are rough estimates (Verizon derived from coverage; EchoStar, Comcast, Charter not source-verified); other PAL holders omitted.",
+  "Auction 113 (AWS-3) winning licences not added: per-licence MHz-pops and grant status not confirmed.",
+  "Comcast 600 MHz holdings (leased to T-Mobile) not separated from 'Others'.",
+  "Split of AT&T's 700 MHz holding between paired B/C and D/E SDL is estimated.",
+  "No EARFCN/NR-ARFCN data compiled.",
+  "Upper C-band status and 4.9 GHz band-manager details from background knowledge, not source-verified."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "FCC 2024 Communications Marketplace Report (FCC 24-136), Figs. II.B.13-16 spectrum holdings",
+   "url": "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  },
+  {
+   "title": "FCC DA 26-470 – AT&T/EchoStar 3.45 GHz & 600 MHz order (2026-05-12)",
+   "url": "https://docs.fcc.gov/public/attachments/DA-26-470A1.pdf"
+  },
+  {
+   "title": "AT&T – closes acquisition of EchoStar spectrum licences (2026-07-28)",
+   "url": "https://about.att.com/story/2026/echostar-spectrum.html"
+  },
+  {
+   "title": "FCC DA 25-1006 – AT&T/UScellular 3.45 GHz & 700 MHz order",
+   "url": "https://docs.fcc.gov/public/attachments/DA-25-1006A1.pdf"
+  },
+  {
+   "title": "FCC DA 26-486 – Verizon/Array cellular, AWS, PCS order",
+   "url": "https://docs.fcc.gov/public/attachments/DA-26-486A1.pdf"
+  },
+  {
+   "title": "Array – sale of spectrum to Verizon completed (2026-06-01)",
+   "url": "https://investors.arrayinc.com/news/news-details/2026/Array-completes-sale-of-select-spectrum-assets-to-Verizon-for-1-0-billion/default.aspx"
+  },
+  {
+   "title": "Array Digital Infrastructure 10-Q Q1 2026 (spectrum sales table)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000821130/000082113026000035/ad-20260331.htm"
+  },
+  {
+   "title": "FCC DA 25-605 – T-Mobile/UScellular order",
+   "url": "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+  },
+  {
+   "title": "FCC DA 26-653 – T-Mobile/Grain 800/600 MHz order",
+   "url": "https://docs.fcc.gov/public/attachments/DA-26-653A1.pdf"
+  },
+  {
+   "title": "T-Mobile – completes sale of 800 MHz to Grain (2026-08-11)",
+   "url": "https://investor.t-mobile.com/news-releases/news-release-details/t-mobile-completes-sale-800-mhz-spectrum-portfolio-grain"
+  },
+  {
+   "title": "T-Mobile 10-Q Q2 2026 (Comcast 600 MHz, Grain, Auction 113)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369926000101/tmus-20260630.htm"
+  },
+  {
+   "title": "EchoStar 10-Q Q2 2026 (SpaceX trust transfer, AT&T sale)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+  },
+  {
+   "title": "FCC DA 26-633 – Auction 113 (AWS-3) closing PN and bidder summary",
+   "url": "https://docs.fcc.gov/public/attachments/DA-26-633A1.pdf"
+  },
+  {
+   "title": "PolicyTracker – AT&T becomes second-largest spectrum holder after EchoStar trade",
+   "url": "https://www.policytracker.com/blog/spectrum-snapshot-att-becomes-the-second-largest-spectrum-holder-in-the-us-after-echostar-trade/"
+  },
+  {
+   "title": "RCR Wireless – CBRS Auction 105 market-by-market results",
+   "url": "https://www.rcrwireless.com/20200914/analyst-angle/the-sunday-brief-market-by-market-cbrs-auction-105-results-is-more-sharing-in-the-works"
+  },
+  {
+   "title": "Inside Towers – T-Mobile sells 3.45 GHz spectrum",
+   "url": "https://insidetowers.com/t-mobile-sells-3-45-ghz-spectrum/"
+  }
+ ]
+}

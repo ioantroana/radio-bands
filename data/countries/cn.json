@@ -1,0 +1,955 @@
+{
+ "code": "cn",
+ "name": "China",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
+ "licensing": "national",
+ "summary": "Four state-owned operators receive spectrum administratively from MIIT (no auctions). China Telecom and China Unicom share a joint 5G network on 3.5 GHz and 2.1 GHz; China Mobile and China Broadnet co-build 700 MHz and share 2.6 GHz.",
+ "operators": [
+  {
+   "id": "cmcc",
+   "name": "China Mobile",
+   "legal": "China Mobile Communications Group Co., Ltd.",
+   "color": "#00a0e9",
+   "aliases": [
+    "CMCC",
+    "中国移动"
+   ],
+   "kind": "mno",
+   "notes": "Co-builds and operates China Broadnet's 700 MHz network (2021 agreement); shares 2.6 GHz with CBN."
+  },
+  {
+   "id": "ct",
+   "name": "China Telecom",
+   "legal": "China Telecommunications Corporation",
+   "color": "#1c3f94",
+   "aliases": [
+    "中国电信"
+   ],
+   "kind": "mno",
+   "notes": "Shares its 5G RAN with China Unicom (3.5 GHz and 2.1 GHz co-build since 2019)."
+  },
+  {
+   "id": "cu",
+   "name": "China Unicom",
+   "legal": "China United Network Communications Group Co., Ltd.",
+   "color": "#e60012",
+   "aliases": [
+    "中国联通"
+   ],
+   "kind": "mno",
+   "notes": "5G co-build with China Telecom."
+  },
+  {
+   "id": "cbn",
+   "name": "China Broadnet",
+   "legal": "China Broadnet Mobile Network Co., Ltd. (中广电移动网络有限公司)",
+   "color": "#8e44ad",
+   "aliases": [
+    "CBN",
+    "China Broadcast Network",
+    "中国广电"
+   ],
+   "kind": "mno",
+   "notes": "Fourth licensee (5G licence June 2019). Spectrum licences transferred from China Broadcasting Network Corp. to its mobile subsidiary on 2022-05-30. Network built with China Mobile."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in China: 470–698 MHz is used for broadcasting; the digital dividend given to mobile is 700 MHz (B28). No operator holds 600 MHz (MIIT licensed-band statistics).",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Broadnet licence 703–733/758–788 MHz (reissued to China Broadnet Mobile Network Co. on 2022-05-30). China Mobile co-invests and shares the network but the licence is CBN's.",
+   "sources": [
+    "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%B9%BF%E7%94%B5%E7%A7%BB%E5%8A%A8",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://lmtw.com/mzw/content/detail/id/205477"
+   ],
+   "blocks": [
+    {
+     "op": "cbn",
+     "dl": [
+      758,
+      788
+     ],
+     "ul": [
+      703,
+      733
+     ],
+     "notes": "Licensed to China Broadnet (中广电移动); network co-built 1:1 with China Mobile, which operates and shares it (CMCC holds no 700 MHz licence of its own).",
+     "source": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%B9%BF%E7%94%B5%E7%A7%BB%E5%8A%A8"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      788,
+      803
+     ],
+     "ul": [
+      733,
+      748
+     ],
+     "notes": "Remainder of APT 700 plan, not licensed to a public mobile operator."
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (EU B20 / Japan B18/19/26)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band 20 is not used in China. China Telecom's '800 MHz' CDMA/LTE/5G spectrum is 3GPP Band 5 and is shown under 850 MHz.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz FDD (B5/n5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     880
+    ],
+    "ul": [
+     824,
+     835
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Telecom holds 2×11 MHz at 824–835/869–880 MHz; the upper part of B5 overlaps China's 900 MHz (E-GSM) plan. MIIT approved 5G re-farming in August 2023.",
+   "sources": [
+    "https://finance.sina.com.cn/tech/roll/2023-08-17/doc-imzhnwtx3103409.shtml",
+    "https://www.21ic.com/a/958427.html",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html"
+   ],
+   "blocks": [
+    {
+     "op": "ct",
+     "dl": [
+      869,
+      880
+     ],
+     "ul": [
+      824,
+      835
+     ],
+     "notes": "Ex-CDMA spectrum (awarded 2008); MIIT approved re-farming for 5G in Aug 2023."
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD (B8/n8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Unicom edges confirmed by the MIIT re-farming approval; China Mobile's 889–904/934–949 MHz from secondary sources only.",
+   "sources": [
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "http://en.c114.com.cn/575/a1214415.html",
+    "https://news.qq.com/rain/a/20241231A08WAH00",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      930
+     ],
+     "ul": [
+      880,
+      885
+     ]
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      930,
+      934
+     ],
+     "ul": [
+      885,
+      889
+     ],
+     "notes": "Used by GSM-R (China Railway), not a public mobile licence (from background knowledge, not source-verified)."
+    },
+    {
+     "op": "cmcc",
+     "dl": [
+      934,
+      949
+     ],
+     "ul": [
+      889,
+      904
+     ],
+     "notes": "GSM/LTE/NB-IoT; MIIT allowed 5G re-farming of CMCC's sub-3 GHz bands on 2024-12-31.",
+     "source": "https://www.cnblogs.com/guoqiang5277/articles/17622364.html"
+    },
+    {
+     "op": "cu",
+     "dl": [
+      949,
+      960
+     ],
+     "ul": [
+      904,
+      915
+     ],
+     "notes": "MIIT approved re-farming for 5G in Nov 2022 (edges confirmed in the approval).",
+     "source": "http://en.c114.com.cn/575/a1214415.html"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4/1.5 GHz",
+   "names": [
+    "B32",
+    "B75",
+    "B76"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No public mobile operator holds 1400–1500 MHz spectrum (MIIT licensed-band statistics list none). 1447–1467 MHz is used for government/private TD-LTE networks (from background knowledge, not source-verified).",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in China; 1710–1785 MHz is the Band 3 uplink.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "All three incumbents confirmed as 1700/1800 MHz licensees by MIIT (April 2024 statistics); block edges from secondary sources.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://tech.sina.cn/csj/2020-01-06/doc-iihnzhha0718024.d.html"
+   ],
+   "blocks": [
+    {
+     "op": "cmcc",
+     "dl": [
+      1805,
+      1830
+     ],
+     "ul": [
+      1710,
+      1735
+     ],
+     "notes": "GSM/LTE"
+    },
+    {
+     "op": "cu",
+     "dl": [
+      1830,
+      1860
+     ],
+     "ul": [
+      1735,
+      1765
+     ],
+     "notes": "GSM/LTE"
+    },
+    {
+     "op": "ct",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "notes": "LTE"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz AWS-4",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS/AWS-4 band plans not used in China; 1880–1920 MHz is TDD (B39) and 1980–2010/2170–2200 MHz is MSS.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9 GHz TDD (B39)",
+   "names": [
+    "B39"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1880,
+     1920
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Mobile's F band. MIIT lists CMCC as the only 1900 MHz TDD licensee; secondary sources give 1885–1915 MHz in use.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://lmtw.com/mzw/content/detail/id/201677"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      1880,
+      1885
+     ],
+     "notes": "Not used by CMCC (reported as ceded/guard)"
+    },
+    {
+     "op": "cmcc",
+     "f": [
+      1885,
+      1915
+     ],
+     "notes": "TD-LTE 'F band'; LTE anchor for 5G NSA"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1915,
+      1920
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz TDD (B34)",
+   "names": [
+    "B34"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2010,
+     2025
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Mobile holds 2010–2025 MHz (MIIT lists CMCC as the 2000 MHz TDD licensee).",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html"
+   ],
+   "blocks": [
+    {
+     "op": "cmcc",
+     "f": [
+      2010,
+      2025
+     ],
+     "notes": "Ex-TD-SCDMA 'A band', TD-LTE"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Telecom 2×20 MHz and China Unicom 2×25 MHz, contiguous 2×45 MHz used for a shared 5G carrier since MIIT's 2021 n1 technical rules. Edges from secondary sources; amounts confirmed by press.",
+   "sources": [
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://finance.sina.com.cn/tech/2021-03-05/doc-ikftssaq1598342.shtml",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [
+    {
+     "op": "ct",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "notes": "Ex-3G spectrum; used for shared CT/CU 5G (2021 MIIT n1 rules)"
+    },
+    {
+     "op": "cu",
+     "dl": [
+      2130,
+      2155
+     ],
+     "ul": [
+      1940,
+      1965
+     ],
+     "notes": "Ex-WCDMA; shared CT/CU 5G"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz TDD (B40/n40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Indoor TD-LTE band. MIIT lists CMCC and CU as 2300 MHz licensees.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html"
+   ],
+   "blocks": [
+    {
+     "op": "cu",
+     "f": [
+      2300,
+      2320
+     ],
+     "notes": "TD-LTE (indoor)"
+    },
+    {
+     "op": "cmcc",
+     "f": [
+      2320,
+      2370
+     ],
+     "notes": "TD-LTE 'E band', indoor use"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2370,
+      2390
+     ],
+     "notes": "Assigned to China Telecom for TD-LTE in 2013, but MIIT's April 2024 list no longer shows China Telecom in 2300 MHz; status unclear."
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2390,
+      2400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz TDD (B41/n41)",
+   "names": [
+    "B41",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2496,
+     2690
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Mobile holds 2515–2675 MHz (160 MHz) since the December 2018 5G allocation.",
+   "sources": [
+    "https://gxt.hunan.gov.cn/gxt/wxd_ycl/hyzx_ycl/kpyd_ycl/202109/t20210907_20534448.html",
+    "https://lmtw.com/mzw/content/detail/id/205477",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      2496,
+      2515
+     ]
+    },
+    {
+     "op": "cmcc",
+     "f": [
+      2515,
+      2675
+     ],
+     "notes": "160 MHz: 2515–2615 MHz 5G NR, 2615–2675 MHz TD-LTE. Includes 2555–2575 (ex-CU) and 2635–2655 (ex-CT) re-assigned to CMCC in Dec 2018. Shared with China Broadnet under the 2021 co-build agreement."
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2675,
+      2690
+     ]
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.5 GHz TDD (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3600
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Telecom 3400–3500 MHz and China Unicom 3500–3600 MHz (December 2018 5G allocation; 10-year licences issued 2020). The two operators run a jointly-built, shared network across the whole 200 MHz, but each licence is 100 MHz.",
+   "sources": [
+    "https://gxt.hunan.gov.cn/gxt/wxd_ycl/hyzx_ycl/kpyd_ycl/202109/t20210907_20534448.html",
+    "https://lmtw.com/mzw/content/detail/id/205477",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [
+    {
+     "op": "ct",
+     "f": [
+      3400,
+      3500
+     ],
+     "notes": "Co-built and shared with China Unicom (single 200 MHz shared RAN)"
+    },
+    {
+     "op": "cu",
+     "f": [
+      3500,
+      3600
+     ],
+     "notes": "Co-built and shared with China Telecom"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3 GHz TDD, shared indoor (n78/n77)",
+   "names": [
+    "n78",
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "3300–3400 MHz is licensed jointly to China Telecom, China Unicom and China Broadnet for 5G indoor coverage. Shown as a nominal one-third share each so that totals count the 100 MHz once.",
+   "sources": [
+    "https://gxt.hunan.gov.cn/gxt/wxd_ycl/hyzx_ycl/kpyd_ycl/202109/t20210907_20534448.html",
+    "https://lmtw.com/mzw/content/detail/id/205477",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%B9%BF%E7%94%B5%E7%A7%BB%E5%8A%A8",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "holdings": [
+    {
+     "op": "ct",
+     "mhz": 33.33,
+     "paired": false,
+     "basis": "nominal 1/3 of 100 MHz shared licence"
+    },
+    {
+     "op": "cu",
+     "mhz": 33.33,
+     "paired": false,
+     "basis": "nominal 1/3 of 100 MHz shared licence"
+    },
+    {
+     "op": "cbn",
+     "mhz": 33.34,
+     "paired": false,
+     "basis": "nominal 1/3 of 100 MHz shared licence"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.9 GHz TDD (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "China Mobile 4800–4900 MHz (2018); China Broadnet 4900–4960 MHz.",
+   "sources": [
+    "https://gxt.hunan.gov.cn/gxt/wxd_ycl/hyzx_ycl/kpyd_ycl/202109/t20210907_20534448.html",
+    "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%B9%BF%E7%94%B5%E7%A7%BB%E5%8A%A8",
+    "https://www.c-fol.net/news/1_202001/20200106150526.html",
+    "https://www.cnblogs.com/guoqiang5277/articles/17622364.html",
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      4400,
+      4800
+     ],
+     "notes": "Not assigned to public mobile operators"
+    },
+    {
+     "op": "cmcc",
+     "f": [
+      4800,
+      4900
+     ]
+    },
+    {
+     "op": "cbn",
+     "f": [
+      4900,
+      4960
+     ],
+     "notes": "Trial licence Jan 2020; commercial licence reissued to China Broadnet Mobile 2022-05-30 for 4900–4960 MHz."
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      4960,
+      5000
+     ],
+     "notes": "Some sources say CBN holds 4900–5000 MHz; the licence wording quoted from MIIT is 4900–4960 MHz."
+    }
+   ]
+  },
+  {
+   "group": "6g",
+   "label": "Upper 6 GHz (n104)",
+   "names": [
+    "n104"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     6425,
+     7125
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No operator licence. 6425–7125 MHz is designated for IMT (MIIT 2023 allocation-table revision; from background knowledge, not source-verified). In May 2026 MIIT granted a 6G trial-frequency licence for 6425–7125 MHz to the IMT-2030 (6G) Promotion Group, not to operators.",
+   "sources": [
+    "https://www.ithome.com/0/947/480.htm"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No commercial licences. MIIT granted the first 26 GHz 5G mmWave trial frequencies to operators (incl. China Mobile) in January 2025 for the Harbin Asian Winter Games; commercial assignment not yet made.",
+   "sources": [
+    "https://www.chinanews.com.cn/cj/2025/01-24/10359573.shtml",
+    "https://www.g6gconference.com/index/Details/index.html?id=1035"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24750,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; only trial/R&D use reported (39 GHz discussed as a secondary mmWave band).",
+   "sources": [
+    "https://www.g6gconference.com/index/Details/index.html?id=1035"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not identified or assigned for IMT in China.",
+   "sources": [
+    "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "All spectrum is assigned administratively by MIIT; there are no auctions. MIIT issued 10-year 5G licences for the mid-band 5G spectrum in 2020, and has since allowed re-farming of 2G/3G/4G bands for 5G (China Unicom 900 MHz Nov 2022, China Telecom 800 MHz Aug 2023, China Mobile sub-3 GHz Dec 2024).",
+  "Network sharing: China Telecom + China Unicom run one shared 5G RAN on 3400–3600 MHz and 1920–1965/2110–2155 MHz; China Mobile + China Broadnet co-build 700 MHz (CBN licence) and share 2.6 GHz. Blocks are shown under the licensee.",
+  "3300–3400 MHz is licensed jointly to CT, CU and CBN for indoor 5G; totals count it as one-third each.",
+  "China Broadnet's 4.9 GHz: the licence text (as quoted by Wikipedia and 21jingji from MIIT) is 4900–4960 MHz; some provincial and trade sources say 4900–5000 MHz. The licence wording is used here.",
+  "MIIT's April 2024 statistics of licensed bands (the regulator's list) name the bands per operator but not the frequency edges. Edges for 900 (CMCC), 1800, 1.9/2.0 GHz TDD, 2100 and 2300 MHz come from secondary compilations and are marked unverified."
+ ],
+ "missing": [
+  "Regulator-published block edges for 900 (CMCC), 1800, 1900/2000 TDD, 2100 and 2300 MHz: not found in MIIT documents; secondary sources only.",
+  "China Telecom's 2370–2390 MHz (2013 TD-LTE assignment): no longer on MIIT's April 2024 list; whether it was formally returned could not be confirmed.",
+  "900 MHz 885–889/930–934 MHz GSM-R use and 1447–1467 MHz private TD-LTE: from background knowledge, not source-verified.",
+  "MIIT 2023 designation of 6425–7125 MHz for IMT: from background knowledge, not source-verified (the 2026 6G trial licence is sourced).",
+  "EARFCN/NR-ARFCN data not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "MIIT – 已向四家基础电信运营企业许可的公众移动通信频段统计 (licensed bands per operator, April 2024)",
+   "url": "https://www.miit.gov.cn/jgsj/wgj/kpzs/art/2021/art_9105abf8095d49bd9065c1b6ebb06d2a.html"
+  },
+  {
+   "title": "Hunan Provincial Dept of Industry & IT – 中国移动、联通、电信和广电频谱划分",
+   "url": "https://gxt.hunan.gov.cn/gxt/wxd_ycl/hyzx_ycl/kpyd_ycl/202109/t20210907_20534448.html"
+  },
+  {
+   "title": "流媒体网 – 移动、电信、联通、广电频谱划分 附5G频谱分配历程",
+   "url": "https://lmtw.com/mzw/content/detail/id/205477"
+  },
+  {
+   "title": "cnblogs – 中国各大通讯公司频率划分 (compilation)",
+   "url": "https://www.cnblogs.com/guoqiang5277/articles/17622364.html"
+  },
+  {
+   "title": "Wikipedia (zh) – 中广电移动 (quotes the 2022-05-30 MIIT licence)",
+   "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%B9%BF%E7%94%B5%E7%A7%BB%E5%8A%A8"
+  },
+  {
+   "title": "Sina – MIIT approves China Telecom 800 MHz re-farming (Aug 2023)",
+   "url": "https://finance.sina.com.cn/tech/roll/2023-08-17/doc-imzhnwtx3103409.shtml"
+  },
+  {
+   "title": "C114 – MIIT approves China Unicom 900 MHz re-farming (Nov 2022)",
+   "url": "http://en.c114.com.cn/575/a1214415.html"
+  },
+  {
+   "title": "Tencent News – MIIT allows China Mobile to re-farm sub-3 GHz bands for 5G (Dec 2024)",
+   "url": "https://news.qq.com/rain/a/20241231A08WAH00"
+  },
+  {
+   "title": "Sina – MIIT 2.1 GHz 5G technical rules; CT 20 MHz + CU 25 MHz (Mar 2021)",
+   "url": "https://finance.sina.com.cn/tech/2021-03-05/doc-ikftssaq1598342.shtml"
+  },
+  {
+   "title": "China News – first 26 GHz trial frequencies approved for operators (Jan 2025)",
+   "url": "https://www.chinanews.com.cn/cj/2025/01-24/10359573.shtml"
+  },
+  {
+   "title": "IT之家 – MIIT approves 6 GHz 6G trial frequency licence (May 2026)",
+   "url": "https://www.ithome.com/0/947/480.htm"
+  }
+ ]
+}
