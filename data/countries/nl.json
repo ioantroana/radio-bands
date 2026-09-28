@@ -1,0 +1,983 @@
+{
+ "code": "nl",
+ "name": "Netherlands",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "Three national MNOs (KPN, VodafoneZiggo, Odido). 700/1400/2100 were auctioned in 2020 and 3.5 GHz in 2024 (licences to end-2040); 800/900/1800/2600 licences from 2010-2012 expire in 2029-2030. 26 GHz is not assigned.",
+ "operators": [
+  {
+   "id": "kpn",
+   "name": "KPN",
+   "legal": "KPN B.V.",
+   "color": "#00c300",
+   "aliases": [
+    "KPN Mobile"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "vodafoneziggo",
+   "name": "VodafoneZiggo",
+   "legal": "Vodafone Libertel B.V.",
+   "color": "#e60000",
+   "aliases": [
+    "Vodafone",
+    "Ziggo 4"
+   ],
+   "kind": "mno",
+   "notes": "Vodafone NL and Ziggo (incl. Ziggo 4 2.6 GHz spectrum) combined in the VodafoneZiggo JV (Vodafone/Liberty Global), 31 Dec 2016."
+  },
+  {
+   "id": "odido",
+   "name": "Odido",
+   "legal": "Odido Netherlands B.V.",
+   "color": "#7a4dc7",
+   "aliases": [
+    "T-Mobile Netherlands",
+    "Tele2 Nederland"
+   ],
+   "kind": "mno",
+   "notes": "Formerly T-Mobile Netherlands; merged with Tele2 NL on 2 Jan 2019; sold by Deutsche Telekom to Apax/Warburg Pincus in 2022 and rebranded Odido in Sep 2023."
+  }
+ ],
+ "bands": [
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Multiband auction Jun-Jul 2020 (700/1400/2100, EUR 1.23bn total); licences 28 Jul 2020 - 31 Dec 2040.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2020-41318.html",
+    "https://www.rdi.nl/actueel/nieuws/2020/07/21/kpn-t-mobile-en-vodafoneziggo-verwerven-frequenties-via-multibandveiling",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "vodafoneziggo",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots K1-K2"
+    },
+    {
+     "op": "kpn",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots K3-K4"
+    },
+    {
+     "op": "odido",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots K5-K6"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Multiband auction Oct-Dec 2012. Expiry 31 Dec 2029 per spectrum-tracker.com (not confirmed in a regulator document).",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-211.html",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "odido",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2029-12-31",
+     "notes": "won by Tele2 in 2012; Tele2 NL merged into T-Mobile NL (now Odido) in 2019"
+    },
+    {
+     "op": "vodafoneziggo",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2029-12-31"
+    },
+    {
+     "op": "kpn",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2029-12-31"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2012 multiband auction; licences 26 Feb 2013 - 25 Feb 2030 (Staatscourant 2013-1525).",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-211.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-1525.html",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "vodafoneziggo",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "expiry": "2030-02-25"
+    },
+    {
+     "op": "kpn",
+     "dl": [
+      935,
+      945
+     ],
+     "ul": [
+      890,
+      900
+     ],
+     "expiry": "2030-02-25"
+    },
+    {
+     "op": "odido",
+     "dl": [
+      945,
+      960
+     ],
+     "ul": [
+      900,
+      915
+     ],
+     "expiry": "2030-02-25"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2012 multiband auction; licences to 25 Feb 2030. 1780-1785/1875-1880 MHz was not part of the awarded lots.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-211.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-1525.html",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "kpn",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "expiry": "2030-02-25"
+    },
+    {
+     "op": "vodafoneziggo",
+     "dl": [
+      1825,
+      1845
+     ],
+     "ul": [
+      1730,
+      1750
+     ],
+     "expiry": "2030-02-25"
+    },
+    {
+     "op": "odido",
+     "dl": [
+      1845,
+      1875
+     ],
+     "ul": [
+      1750,
+      1780
+     ],
+     "expiry": "2030-02-25"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      1875,
+      1880
+     ],
+     "ul": [
+      1780,
+      1785
+     ],
+     "notes": "not awarded in 2012 auction"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Re-auctioned in the 2020 multiband auction; new plan in force from early 2021 (transition licences), valid to 31 Dec 2040.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2020-41318.html",
+    "https://www.rdi.nl/actueel/nieuws/2020/07/21/kpn-t-mobile-en-vodafoneziggo-verwerven-frequenties-via-multibandveiling",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "vodafoneziggo",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots M1-M4"
+    },
+    {
+     "op": "odido",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots M5-M8"
+    },
+    {
+     "op": "kpn",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots M9-M12"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2.6 GHz auction April 2010; licences in 2x5 MHz lots from 11 May 2010, valid to 11 May 2030. The Dutch plan pairs 2500-2565 with 2620-2685 MHz; 2685-2690 is a separate unpaired licence (Odido, ex Tele2), not drawn. Edges checked against the individual Staatscourant licences (sampled lots) and spectrum-tracker.com.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2010-7248.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2010-7501.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2010-7191.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2010-7235.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2010-7237.html",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2010-7240.html",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "vodafoneziggo",
+     "dl": [
+      2620,
+      2650
+     ],
+     "ul": [
+      2500,
+      2530
+     ],
+     "expiry": "2030-05-11",
+     "notes": "Vodafone 2x10 + ex-Ziggo 4 2x20 (VodafoneZiggo JV 2016)"
+    },
+    {
+     "op": "odido",
+     "dl": [
+      2650,
+      2655
+     ],
+     "ul": [
+      2530,
+      2535
+     ],
+     "expiry": "2030-05-11",
+     "notes": "ex T-Mobile"
+    },
+    {
+     "op": "kpn",
+     "dl": [
+      2655,
+      2665
+     ],
+     "ul": [
+      2535,
+      2545
+     ],
+     "expiry": "2030-05-11"
+    },
+    {
+     "op": "odido",
+     "dl": [
+      2665,
+      2685
+     ],
+     "ul": [
+      2545,
+      2565
+     ],
+     "expiry": "2030-05-11",
+     "notes": "ex Tele2"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2685,
+      2690
+     ],
+     "ul": [
+      2565,
+      2570
+     ],
+     "notes": "2565-2570 is part of the unpaired allocation (see TDD); 2685-2690 is an unpaired 5 MHz licence held by Odido (ex Tele2)"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz unpaired (2565-2620)",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2565,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded in the 2012 multiband auction. Expiry per spectrum-tracker.com. spectrum-tracker draws Odido at 2570-2590 and extends Odido FDD to 2570; the regulator lots (2565-2590 unpaired) are used here.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-211.html",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "odido",
+     "f": [
+      2565,
+      2590
+     ],
+     "expiry": "2029-12-31",
+     "notes": "lot G, won by T-Mobile in 2012 auction"
+    },
+    {
+     "op": "kpn",
+     "f": [
+      2590,
+      2620
+     ],
+     "expiry": "2029-12-31",
+     "notes": "lots G+H, 2012 auction"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz SDL (1427-1517)",
+   "names": [
+    "B32",
+    "B75",
+    "n75"
+   ],
+   "status": "partially-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Only the 40 MHz core band (1452-1492) was auctioned in 2020; the 1427-1452 and 1492-1517 extension bands are not assigned.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2020-41318.html",
+    "https://www.rdi.nl/actueel/nieuws/2020/07/21/kpn-t-mobile-en-vodafoneziggo-verwerven-frequenties-via-multibandveiling",
+    "https://www.spectrum-tracker.com/Netherlands"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      1427,
+      1452
+     ],
+     "notes": "extension band, not awarded"
+    },
+    {
+     "op": "vodafoneziggo",
+     "f": [
+      1452,
+      1467
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots L1-L3"
+    },
+    {
+     "op": "kpn",
+     "f": [
+      1467,
+      1482
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots L4-L6"
+    },
+    {
+     "op": "odido",
+     "f": [
+      1482,
+      1492
+     ],
+     "expiry": "2040-12-31",
+     "notes": "lots L7-L8"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1492,
+      1517
+     ],
+     "notes": "extension band, not awarded"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4-3.8 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "5G auction 25 Jun - 1 Jul 2024 (EUR 174.4m): 15 licences in 3450-3750 MHz, each winner 60 + 4x10 MHz. Licences valid to 31 Dec 2040. The remaining parts of the band stay available for local use. 3.8-4.2 GHz and 26 GHz demand was studied in 2025.",
+   "sources": [
+    "https://www.rdi.nl/actueel/nieuws/2024/07/01/kpn-odido-en-vodafoneziggo-verwerven-frequenties-via-5g-veiling",
+    "https://zoek.officielebekendmakingen.nl/stcrt-2024-23967.html",
+    "https://www.spectrum-tracker.com/Netherlands",
+    "https://www.rdi.nl/onderwerpen/technologische-ontwikkelingen/dossier-5g/frequenties"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3450
+     ],
+     "notes": "not for national MNOs; local/other use"
+    },
+    {
+     "op": "vodafoneziggo",
+     "f": [
+      3450,
+      3550
+     ],
+     "expiry": "2040-12-31",
+     "notes": "licensee Vodafone Libertel B.V.; EUR 57.5m"
+    },
+    {
+     "op": "odido",
+     "f": [
+      3550,
+      3650
+     ],
+     "expiry": "2040-12-31",
+     "notes": "EUR 58.4m"
+    },
+    {
+     "op": "kpn",
+     "f": [
+      3650,
+      3750
+     ],
+     "expiry": "2040-12-31",
+     "notes": "EUR 58.4m"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3750,
+      3800
+     ],
+     "notes": "not for national MNOs; local/other use"
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz unpaired (B33/B34)",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     2025
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "T-Mobile (now Odido) won the unpaired 2 GHz lot F (1900-1904.9 and 2010-2019.7 MHz) in the 2012 auction. Not known to be used for public mobile; whether the licence is still in force in 2026 was not verified, so it is excluded from totals.",
+   "sources": [
+    "https://zoek.officielebekendmakingen.nl/stcrt-2013-211.html"
+   ],
+   "blocks": [
+    {
+     "op": "odido",
+     "f": [
+      1900,
+      1904.9
+     ],
+     "notes": "lot F (2012 auction, T-Mobile); current validity not re-checked"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1904.9,
+      2010
+     ],
+     "notes": "1904.9-1920 unassigned; 1920-2010 outside the unpaired bands"
+    },
+    {
+     "op": "odido",
+     "f": [
+      2010,
+      2019.7
+     ],
+     "notes": "lot F (2012 auction, T-Mobile); current validity not re-checked"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for public mobile communication in the Netherlands.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. Policy still under development; the Ministry published a study on demand for 3.8-4.2 GHz and 26 GHz in May 2025. No auction scheduled as of Sep 2026.",
+   "sources": [
+    "https://www.rijksoverheid.nl/documenten/2025/05/09/behoefte-aan-en-maatschappelijke-waarde-van-frequentiebanden-3-8-4-2-ghz-en-26-ghz",
+    "https://www.rdi.nl/onderwerpen/technologische-ontwikkelingen/dossier-5g/frequenties"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe (ITU Region 1): 470-694 MHz remains allocated to DTT/PMSE; future use on the WRC-31 agenda.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Europe: 824-849/869-894 MHz overlaps the EU 800 MHz (B20) and 900 MHz (B8) plans.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS (1710-1780/2110-2200) is not used in Europe; 1710-1785 is part of the 1800 MHz (B3) plan and 2110-2170 of the 2100 MHz (B1) plan.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS 1900 is not used in Europe; 1850-1910 MHz overlaps the B3 downlink and the B1/B33 plans.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "n79 is not harmonised for mobile in Europe; 4.4-5.0 GHz is used by defence/government systems.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. 40.5-43.5 GHz harmonised in the EU by Decision (EU) 2024/1983 but no national award yet.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/",
+    "https://eur-lex.europa.eu/eli/dec_impl/2024/1983/oj"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47.2-48.2 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; 47.2-48.2 GHz is not harmonised for IMT in the EU.",
+   "sources": [
+    "https://wetten.overheid.nl/BWBR0035791/"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   }
+  }
+ ],
+ "notes": [
+  "Regulator: Rijksinspectie Digitale Infrastructuur (RDI, formerly Agentschap Telecom); licences published in the Staatscourant.",
+  "Tele2 NL spectrum (800 MHz 791-801, 2600 FDD 2545-2565, unpaired 2685-2690) passed to T-Mobile NL (now Odido) with the 2019 merger.",
+  "2600 MHz: spectrum-tracker.com draws Odido FDD up to 2570 and TDD from 2570; the 2012 auction result places the unpaired lot at 2565-2590 (Odido) and 2590-2620 (KPN), and the 2010 licences pair 2500-2565 with 2620-2685. Regulator documents preferred.",
+  "Licences in 800/900/1800 (2029-2030) and 2600 (2030) expire soon; the award procedure for their successors was not found in sources checked."
+ ],
+ "missing": [
+  "Policy/decision on renewal or re-auction of the 800/900/1800/2600 MHz licences expiring 2029-2030 not found.",
+  "800 MHz and unpaired 2600 MHz expiry (31 Dec 2029) from spectrum-tracker.com only.",
+  "Current validity of Odido's unpaired 2 GHz licence (lot F, 2012) not verified.",
+  "EARFCN/NR-ARFCN carrier details not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "Staatscourant 2020-41318 - Verlening vergunningen multibandveiling (700/1400/2100)",
+   "url": "https://zoek.officielebekendmakingen.nl/stcrt-2020-41318.html"
+  },
+  {
+   "title": "RDI - Uitslag Multibandveiling 2020",
+   "url": "https://www.rdi.nl/actueel/nieuws/2020/07/21/kpn-t-mobile-en-vodafoneziggo-verwerven-frequenties-via-multibandveiling"
+  },
+  {
+   "title": "RDI - KPN, Odido en VodafoneZiggo verwerven frequenties via 5G-veiling (3.5 GHz, 2024)",
+   "url": "https://www.rdi.nl/actueel/nieuws/2024/07/01/kpn-odido-en-vodafoneziggo-verwerven-frequenties-via-5g-veiling"
+  },
+  {
+   "title": "Staatscourant 2024-23967 - 3,5 GHz vergunningen",
+   "url": "https://zoek.officielebekendmakingen.nl/stcrt-2024-23967.html"
+  },
+  {
+   "title": "Staatscourant 2013-211 - Verlening vergunningen multibandveiling 2012 (800/900/1800/2100/2600 unpaired)",
+   "url": "https://zoek.officielebekendmakingen.nl/stcrt-2013-211.html"
+  },
+  {
+   "title": "Staatscourant 2013-1525 - Wijzigingsbesluiten multibandvergunningen (validity to 25 Feb 2030)",
+   "url": "https://zoek.officielebekendmakingen.nl/stcrt-2013-1525.html"
+  },
+  {
+   "title": "Staatscourant 2010 - 2.6 GHz licences (e.g. stcrt-2010-7191)",
+   "url": "https://zoek.officielebekendmakingen.nl/stcrt-2010-7191.html"
+  },
+  {
+   "title": "Rijksoverheid - Behoefte aan 3,8-4,2 GHz en 26 GHz (2025)",
+   "url": "https://www.rijksoverheid.nl/documenten/2025/05/09/behoefte-aan-en-maatschappelijke-waarde-van-frequentiebanden-3-8-4-2-ghz-en-26-ghz"
+  },
+  {
+   "title": "spectrum-tracker.com - Netherlands (cross-check)",
+   "url": "https://www.spectrum-tracker.com/Netherlands"
+  }
+ ]
+}

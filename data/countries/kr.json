@@ -2,24 +2,16 @@
  "code": "kr",
  "name": "South Korea",
  "region": "Asia-Pacific",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
  "licensing": "national",
- "summary": "",
+ "summary": "Three national MNOs (SK Telecom, KT, LG U+) with nationwide licences from MSIT. All 370 MHz of 3G/LTE spectrum expiring in 2026 was re-allocated to the incumbents (5-year terms, 3 years for 2.6 GHz and 20 MHz of 1.8 GHz), on condition of 5G SA by end-2026. There is no mmWave: every 28 GHz licence has been revoked or cancelled.",
  "operators": [
-  {
-   "id": "lg-u",
-   "name": "LG U+",
-   "color": "#c1043d",
-   "aliases": [
-    "LG Uplus"
-   ],
-   "kind": "mno"
-  },
   {
    "id": "skt",
    "name": "SK Telecom",
-   "color": "#e81133",
+   "legal": "SK Telecom Co., Ltd.",
+   "color": "#ea002c",
    "aliases": [
     "SKT"
    ],
@@ -28,127 +20,325 @@
   {
    "id": "kt",
    "name": "KT",
-   "color": "#04a3bb",
+   "legal": "KT Corporation",
+   "color": "#231f20",
    "aliases": [
-    "Korea Telecom"
+    "Korea Telecom",
+    "KT Corp"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Lost its 2×5 MHz 800 MHz block (recovered by the government June 2020) and its 28 GHz licence (Dec 2022)."
+  },
+  {
+   "id": "lg-u",
+   "name": "LG U+",
+   "legal": "LG Uplus Corp.",
+   "color": "#e6007e",
+   "aliases": [
+    "LG Uplus",
+    "LGU+"
+   ],
+   "kind": "mno",
+   "notes": "Returned its 1.8 GHz 2G spectrum in June 2021 and won 3.40–3.42 GHz in 2022."
   },
   {
    "id": "mois",
-   "name": "Ministry of the Interior and Safety",
+   "name": "Ministry of the Interior and Safety (Safe-Net)",
    "color": "#183d62",
    "aliases": [
-    "MOIS"
+    "MOIS",
+    "PS-LTE"
    ],
-   "kind": "mno"
+   "kind": "government",
+   "notes": "Nationwide PS-LTE public-safety network in 700 MHz, shared with LTE-R (railway) and LTE-Maritime."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "600",
+   "label": "600 MHz",
    "names": [
-    "B1",
-    "n1"
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used for mobile in Korea: 470–698 MHz is terrestrial TV (incl. UHD), no 600 MHz IMT plan.",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Only the 2×10 MHz public-safety block (718–728/773–783 MHz, Safe-Net PS-LTE, shared with LTE-R railway and LTE-Maritime) is in use. The 2×20 MHz commercial block 728–748/783–803 MHz was not sold in the 2016 auction and is still unassigned; parts of the lower band are used for UHD TV.",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640",
+    "https://github.com/davwheat/mobile-spectrum-data"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      758,
+      773
+     ],
+     "ul": [
+      703,
+      718
+     ],
+     "notes": "Lower part used for UHD TV broadcasting (698–710 / 758–771 MHz) and guard bands"
+    },
+    {
+     "op": "mois",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "earfcn": [
+      9410
+     ],
+     "notes": "PS-LTE (Safe-Net), shared with LTE-R and LTE-M"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      783,
+      803
+     ],
+     "ul": [
+      728,
+      748
+     ],
+     "notes": "Commercial 2×20 MHz block, unsold in the 2016 auction; no re-auction scheduled"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Europe-style 800 MHz (B20) is not used in Korea; Korea's cellular 800 MHz band is B5, shown under 850 MHz.",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     869,
+     894
     ],
     "ul": [
-     1920,
-     1980
+     824,
+     849
     ]
    },
-   "positions": "verified",
+   "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "SK Telecom and LG U+ each hold 2×10 MHz (MSIT: '800 MHz 20 MHz' each). Both blocks expired June 2026 and were re-allocated for 5 years under MSIT's Dec 2025 plan. KT's 2×5 MHz 800 MHz block was recovered by the government in June 2020 after it went unused, and has not been re-assigned.",
    "sources": [
-    "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.techm.kr/news/articleView.html?idxno=147229",
+    "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04450966625642968",
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
    ],
    "blocks": [
     {
+     "op": "unassigned",
+     "dl": [
+      869,
+      874
+     ],
+     "ul": [
+      824,
+      829
+     ],
+     "notes": "Ex-KT 2×5 MHz (recovered June 2020); position from spectrummap.kr via davwheat"
+    },
+    {
+     "op": "skt",
+     "dl": [
+      874,
+      884
+     ],
+     "ul": [
+      829,
+      839
+     ],
+     "earfcn": [
+      2500
+     ],
+     "expiry": "2031-06",
+     "notes": "Re-allocated under MSIT's Dec 2025 plan for 5 years"
+    },
+    {
      "op": "lg-u",
      "dl": [
-      2110,
-      2130
+      884,
+      894
      ],
      "ul": [
-      1920,
-      1940
+      839,
+      849
      ],
      "earfcn": [
-      100
+      2600
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
-    },
-    {
-     "op": "skt",
-     "dl": [
-      2130,
-      2145
-     ],
-     "ul": [
-      1940,
-      1955
-     ],
-     "earfcn": [
-      275
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
-    },
-    {
-     "op": "skt",
-     "dl": [
-      2145,
-      2150
-     ],
-     "ul": [
-      1955,
-      1960
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
-    },
-    {
-     "op": "kt",
-     "dl": [
-      2150,
-      2165
-     ],
-     "ul": [
-      1960,
-      1975
-     ],
-     "earfcn": [
-      450,
-      475
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
-    },
-    {
-     "op": "kt",
-     "dl": [
-      2165,
-      2170
-     ],
-     "ul": [
-      1975,
-      1980
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioUseConditionDiagramView.do?menuNo=20601"
+     "expiry": "2031-06",
+     "notes": "Re-allocated under MSIT's Dec 2025 plan for 5 years"
     }
    ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "KT holds 2×10 MHz (MSIT: '900 MHz 20 MHz'); it expired June 2026 and was re-allocated for 5 years. The lower part of B8 is not used for mobile because its uplink overlaps Korea's B5 downlink. The odd 949.3 MHz edge comes from spectrummap.kr (via davwheat), not a second source.",
+   "sources": [
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.techm.kr/news/articleView.html?idxno=147229",
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      949.3
+     ],
+     "ul": [
+      880,
+      904.3
+     ],
+     "notes": "Not allocated for mobile (uplink overlaps B5 downlink)"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      949.3,
+      959.3
+     ],
+     "ul": [
+      904.3,
+      914.3
+     ],
+     "earfcn": [
+      3743
+     ],
+     "expiry": "2031-06",
+     "notes": "Re-allocated under MSIT's Dec 2025 plan for 5 years"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4–1.5 GHz",
+   "names": [
+    "B32",
+    "B75",
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No L-band/1.5 GHz IMT assignment in Korea.",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS is not used in Korea; 1710–1785 MHz is the uplink of B3 (see 1800 MHz).",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [],
+   "holdings": []
   },
   {
    "group": "1800",
    "label": "1800 MHz (B3)",
    "names": [
-    "B3"
+    "B3",
+    "n3"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -162,12 +352,16 @@
      1785
     ]
    },
-   "positions": "verified",
+   "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "MSIT counts SK Telecom at 35 MHz and KT at 55 MHz in this band (90 MHz in total). That matches the drawn blocks (2×20 and 2×30) less 5 MHz of reserved uplink in each (1725–1730 and 1740–1745 MHz, per spectrummap.kr). The page's totals therefore overstate each by 5 MHz. All 90 MHz expired Dec 2026 and was re-allocated under MSIT's Dec 2025 plan. One 20 MHz block (which operator is not stated in the sources) has a 3-year term (to 2029); the rest has a 5-year term (to 2031). LG U+'s former 2G block (in 1860–1880 MHz) was returned when 2G shut down in June 2021.",
    "sources": [
-    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.techm.kr/news/articleView.html?idxno=147229",
+    "https://www.ajunews.com/view/20251210112941737",
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640",
+    "https://www.ajunews.com/view/20201228125541465"
    ],
    "blocks": [
     {
@@ -179,8 +373,7 @@
      "ul": [
       1710,
       1715
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     ]
     },
     {
      "op": "skt",
@@ -195,8 +388,8 @@
      "earfcn": [
       1350
      ],
-     "notes": "1725 – 1730 MHz reserved",
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2031-12",
+     "notes": "Uplink 1725–1730 MHz reserved (MSIT counts 35 MHz)"
     },
     {
      "op": "kt",
@@ -213,8 +406,8 @@
       1650,
       1694
      ],
-     "notes": "1740 – 1745 MHz reserved",
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2031-12",
+     "notes": "Uplink 1740–1745 MHz reserved (MSIT counts 55 MHz). A 20 MHz part has a 3-year term to Dec 2029 (likely KT's 2016-auction block; unconfirmed)"
     },
     {
      "op": "unassigned",
@@ -226,83 +419,180 @@
       1765,
       1785
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "notes": "Incl. LG U+'s ex-2G block, returned June 2021"
     }
    ]
   },
   {
-   "group": "850",
-   "label": "850 MHz (B5)",
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz",
    "names": [
-    "B5"
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS 1900 is not used in Korea; Korean PCS was realigned into 1800 MHz (B3).",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD",
+   "names": [
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No unpaired 2 GHz TDD assignment in Korea.",
+   "sources": [
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     869,
-     894
+     2110,
+     2170
     ],
     "ul": [
-     824,
-     849
+     1920,
+     1980
     ]
    },
-   "positions": "verified",
+   "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Each operator holds 2×20 MHz (MSIT: 40 MHz each, 120 MHz in total). All of it expired Dec 2026 and was re-allocated for 5 years (MSIT, Dec 2025). SKT and KT each keep a 2×5 MHz 3G (WCDMA) block, which may be refarmed to LTE/5G. Operators may shorten the term of one 2.1 GHz or 2.6 GHz block.",
    "sources": [
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.techm.kr/news/articleView.html?idxno=147229",
+    "https://zdnet.co.kr/view/?no=20250630132752",
     "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
    ],
    "blocks": [
     {
-     "op": "unassigned",
+     "op": "lg-u",
      "dl": [
-      869,
-      874
+      2110,
+      2130
      ],
      "ul": [
-      824,
-      829
+      1920,
+      1940
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "earfcn": [
+      100
+     ],
+     "expiry": "2031-12"
     },
     {
      "op": "skt",
      "dl": [
-      874,
-      884
+      2130,
+      2145
      ],
      "ul": [
-      829,
-      839
+      1940,
+      1955
      ],
      "earfcn": [
-      2500
+      275
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2031-12"
     },
     {
-     "op": "lg-u",
+     "op": "skt",
      "dl": [
-      884,
-      894
+      2145,
+      2150
      ],
      "ul": [
-      839,
-      849
+      1955,
+      1960
+     ],
+     "expiry": "2031-12",
+     "notes": "3G (WCDMA) block"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      2150,
+      2165
+     ],
+     "ul": [
+      1960,
+      1975
      ],
      "earfcn": [
-      2600
+      450,
+      475
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2031-12"
+    },
+    {
+     "op": "kt",
+     "dl": [
+      2165,
+      2170
+     ],
+     "ul": [
+      1975,
+      1980
+     ],
+     "expiry": "2031-12",
+     "notes": "3G (WCDMA) block"
     }
    ]
   },
   {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Former WiBro band. KT and SK Telecom ended WiBro and returned the spectrum; MSIT has named 2.3 GHz as a candidate for future 5G supply, but nothing is scheduled.",
+   "sources": [
+    "https://www.ajunews.com/view/20240201142423103"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
+   "label": "2.6 GHz FDD (B7)",
    "names": [
     "B7"
    ],
@@ -318,11 +608,14 @@
      2570
     ]
    },
-   "positions": "verified",
+   "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "SK Telecom holds 60 MHz (2×20 D block from the 2016 auction plus 2×10 E block) and LG U+ holds 40 MHz (2×20 from 2013). All 100 MHz was re-allocated from Dec 2026 with a 3-year term (to 2029), so MSIT can re-plan it for 6G after WRC-27.",
    "sources": [
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.techm.kr/news/articleView.html?idxno=147229",
+    "https://www.ajunews.com/view/20251210112941737",
     "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
    ],
    "blocks": [
@@ -339,7 +632,7 @@
      "earfcn": [
       2850
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2029-12"
     },
     {
      "op": "lg-u",
@@ -354,7 +647,7 @@
      "earfcn": [
       3050
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2029-12"
     },
     {
      "op": "skt",
@@ -369,7 +662,7 @@
      "earfcn": [
       3200
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "expiry": "2029-12"
     },
     {
      "op": "unassigned",
@@ -380,165 +673,51 @@
      "ul": [
       2550,
       2570
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "dl": [
-      925,
-      949.3
-     ],
-     "ul": [
-      880,
-      904.3
-     ],
-     "notes": "Uplink overlaps with B5 downlink, not allocated for mobile network",
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-    },
-    {
-     "op": "kt",
-     "dl": [
-      949.3,
-      959.3
-     ],
-     "ul": [
-      904.3,
-      914.3
-     ],
-     "earfcn": [
-      3743
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28)",
-   "names": [
-    "B28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "dl": [
-      758,
-      773
-     ],
-     "ul": [
-      703,
-      718
-     ],
-     "notes": "698 – 710, 758 – 771 MHz used for TV broadcast",
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-    },
-    {
-     "op": "mois",
-     "dl": [
-      773,
-      783
-     ],
-     "ul": [
-      718,
-      728
-     ],
-     "earfcn": [
-      9410
-     ],
-     "notes": "PS-LTE network: https://www.safenet.go.kr/",
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
-    },
-    {
-     "op": "unassigned",
-     "dl": [
-      783,
-      803
-     ],
-     "ul": [
-      728,
-      748
-     ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     ]
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.5 GHz (n78)",
    "names": [
-    "n78"
+    "n78",
+    "n77"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
      3400,
-     3800
+     4000
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2018 auction: LG U+ 3.42–3.50, KT 3.50–3.60, SKT 3.60–3.70 GHz. In 2022 LG U+ was the only bidder for 3.40–3.42 GHz (minimum price KRW 152.1bn). SKT's 2022 request for 3.70–3.72 GHz was not granted. MSIT accepts that more 5G spectrum is needed (3.7–4.0 GHz is the candidate) but will set a supply plan only once operator demand is clear; no auction is scheduled.",
    "sources": [
-    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+    "https://zdnet.co.kr/view/?no=20220602112357",
+    "https://www.mobileworldlive.com/featured-content/top-three/south-korea-completes-5g-auction/",
+    "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640",
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418"
    ],
    "blocks": [
     {
      "op": "lg-u",
      "f": [
       3400,
+      3420
+     ],
+     "notes": "Added Nov 2022 (single-bidder auction)"
+    },
+    {
+     "op": "lg-u",
+     "f": [
+      3420,
       3500
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "notes": "2018 auction"
     },
     {
      "op": "kt",
@@ -549,7 +728,7 @@
      "nrarfcn": [
       636672
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "notes": "2018 auction"
     },
     {
      "op": "skt",
@@ -560,17 +739,169 @@
      "nrarfcn": [
       643392
      ],
-     "source": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+     "notes": "2018 auction"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3700,
+      4000
+     ],
+     "notes": "3.7–4.0 GHz: candidate for more 5G; no auction scheduled"
     }
    ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No MNO assignment. 4.72–4.82 GHz is used for e-Um 5G (private/local 5G) licences (from background knowledge, not source-verified).",
+   "sources": [
+    "https://zdnet.co.kr/view/?no=20220602112357"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "28 GHz (n257)",
+   "names": [
+    "n257"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     26500,
+     29500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "All 28 GHz licences are gone. The 2018 awards (KT 26.5–27.3, LG U+ 27.3–28.1, SKT 28.1–28.9 GHz; positions from background knowledge) were revoked for missed rollout: KT and LG U+ in Dec 2022, SKT in May 2023. The new-entrant 28 GHz licence won by Stage X in Jan 2024 was cancelled on 31 July 2024. 28.9–29.5 GHz is used for e-Um 5G (private 5G).",
+   "sources": [
+    "https://www.lightreading.com/5g/korean-govt-falls-for-5g-fallacy-over-28ghz",
+    "https://www.lightreading.com/regulatory-politics/south-korea-to-revoke-license-of-fourth-mobile-carrier-over-funding-issue",
+    "https://www.etoday.co.kr/news/view/2386014"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz (n259/n260)",
+   "names": [
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No 37–43.5 GHz IMT assignment in Korea.",
+   "sources": [
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.etoday.co.kr/news/view/2386014"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No 47 GHz IMT assignment in Korea.",
+   "sources": [
+    "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418",
+    "https://www.etoday.co.kr/news/view/2386014"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); every band re-checked against MSIT announcements and Korean press.",
+  "Amounts per operator and band (800 MHz SKT/LGU+ 20 MHz each, 900 MHz KT 20, 1.8 GHz SKT 35/KT 55, 2.1 GHz 40 each, 2.6 GHz SKT 60/LGU+ 40) are from MSIT's 2025 re-allocation decision. Block edges below 3 GHz come only from spectrummap.kr (via davwheat), which now needs a login, so those bands are marked 'unverified'.",
+  "2026 re-allocation (MSIT, 30 Jun 2025 and 10 Dec 2025): all 370 MHz expiring June 2026 (800/900 MHz) and Dec 2026 (1.8/2.1/2.6 GHz) went back to the incumbents. SKT has 155 MHz, KT 115 MHz, LG U+ 100 MHz. The price is about KRW 3.1tn, falling to about KRW 2.9tn with 10,000 or 20,000+ indoor 5G sites. Terms are 5 years, except 3 years for 2.6 GHz (100 MHz) and 1.8 GHz (20 MHz). Operators must connect all 5G sites to SA cores by end-2026. 3G blocks may be refarmed.",
+  "1.8 GHz is asymmetric: MSIT's 35/55 MHz figures are 5 MHz below the drawn 2×20/2×30 blocks because of reserved uplink slices. This page's totals overstate SKT and KT by 5 MHz each.",
+  "Expiry dates are derived from the 2026 expiry months (June for 800/900 MHz, December for 1.8/2.1/2.6 GHz) plus the MSIT terms. The exact end dates were not seen in a primary document.",
+  "3.5 GHz licences from the 2018 auction run to end-Nov 2028; LG U+'s 3.40–3.42 GHz block is aligned to the same date (from background knowledge, not source-verified)."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Block edges for 700/850/900/1800/2100/2600 MHz could not be checked against a second source: spectrummap.kr (MSIT's radio map) now requires a login. Kept as 'unverified'.",
+  "Which operator's 1.8 GHz 20 MHz block has the 3-year term was not stated in the sources seen; MSIT's attachment (.hwp) was not readable.",
+  "Formal completion of the June 2026 re-grant of 800/900 MHz was not seen in a separate announcement; it is assumed under the Dec 2025 plan.",
+  "e-Um 5G (private 5G) bands 4.72–4.82 GHz and 28.9–29.5 GHz: from background knowledge, not source-verified.",
+  "2018 28 GHz block positions (KT/LGU+/SKT): from background knowledge, not source-verified (licences revoked anyway).",
+  "3.5 GHz licence end date (Nov 2028): from background knowledge, not source-verified."
+ ],
+ "changes": [
+  "Operators: KT colour changed to its current black brand colour; LG U+ id kept (lg-u); MOIS kind set to government.",
+  "850 MHz: SKT and LG U+ blocks re-allocated to 2031; the gap is noted as ex-KT (recovered 2020).",
+  "900/1800/2100 MHz: expiries added from the 2026 re-allocation; 1.8 GHz notes explain the MSIT 35/55 MHz asymmetry; 3G blocks labelled.",
+  "2.6 GHz: 3-year term (to 2029) added.",
+  "3.5 GHz: LG U+ split into 3.40–3.42 (2022) and 3.42–3.50 (2018) GHz; 3.7–4.0 GHz shown as unassigned; range widened to 3.4–4.0 GHz; positions verified via ZDNet Korea and 2018 auction reports.",
+  "Added not-assigned entries for 600, 800 (B20), 1400, 1700, 1900, 2000tdd, 2300 (ex-WiBro), 4900, 26g (28 GHz revoked; Stage X cancelled), 40g and 47g.",
+  "Positions for sub-3 GHz bands downgraded from 'verified' to 'unverified' (single source)."
+ ],
  "sources": [
+  {
+   "title": "MSIT – Detailed policy on re-allocation of mobile spectrum (10 Dec 2025), korea.kr briefing",
+   "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418"
+  },
+  {
+   "title": "MSIT – press release: 이동통신주파수 재할당 세부정책방안 확정",
+   "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&nttSeqNo=3179641&bbsSeqNo=94&mId=113&mPid=112"
+  },
+  {
+   "title": "TechM – per-operator re-allocation amounts (SKT 155 / KT 115 / LGU+ 100 MHz)",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=147229"
+  },
+  {
+   "title": "Aju News – re-allocation price cut 14.8%, 3/5-year terms",
+   "url": "https://www.ajunews.com/view/20251210112941737"
+  },
+  {
+   "title": "ZDNet Korea – 3.4 GHz additional allocation history (2022)",
+   "url": "https://zdnet.co.kr/view/?no=20220602112357"
+  },
+  {
+   "title": "eToday – Stage X 28 GHz selection cancelled (2024)",
+   "url": "https://www.etoday.co.kr/news/view/2386014"
+  },
+  {
+   "title": "Light Reading – Korean 28 GHz licences revoked",
+   "url": "https://www.lightreading.com/5g/korean-govt-falls-for-5g-fallacy-over-28ghz"
+  },
+  {
+   "title": "eDaily – KT 800 MHz recovered",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04450966625642968"
+  },
+  {
+   "title": "spectrummap.kr (전파누리) band usage diagram (via davwheat)",
+   "url": "https://spectrummap.kr/radioInfo/radioDivideUsingCondition.do?menuNo=300640"
+  },
   {
    "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
