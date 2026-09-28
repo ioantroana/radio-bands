@@ -2,417 +2,138 @@
  "code": "pt",
  "name": "Portugal",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Four mobile network operators: MEO (Altice), Vodafone, NOS and DIGI, which bought NOWO in 2024 and launched in Nov 2024. The 2021 5G auction assigned 700 MHz, 3.6 GHz and residual 900/1800/2100/2600 MHz lots. In 2026 ANACOM proposed renewing the incumbents' 800/900/1800/2100/2600 MHz rights; that decision was still in draft on the asOf date.",
  "operators": [
   {
    "id": "meo",
    "name": "MEO",
-   "color": "#008d8c",
-   "aliases": [],
+   "legal": "MEO – Serviços de Comunicações e Multimédia, S.A.",
+   "color": "#00a19a",
+   "aliases": [
+    "Altice Portugal"
+   ],
    "kind": "mno"
   },
   {
    "id": "vodafone",
-   "name": "Vodafone PT",
-   "color": "#ed0000",
+   "name": "Vodafone",
+   "legal": "Vodafone Portugal – Comunicações Pessoais, S.A.",
+   "color": "#e60000",
    "aliases": [
-    "Vodafone"
+    "Vodafone PT",
+    "VDF"
    ],
    "kind": "mno"
   },
   {
    "id": "nos",
    "name": "NOS",
+   "legal": "NOS Comunicações, S.A.",
    "color": "#1a1a1a",
    "aliases": [],
    "kind": "mno"
   },
   {
    "id": "digi",
-   "name": "DIGI PT",
-   "color": "#00a7ff",
+   "name": "DIGI",
+   "legal": "DIGI Portugal, Lda. (formerly Dixarobil Telecom)",
+   "color": "#1e73be",
    "aliases": [
-    "DIGI"
+    "DIGI PT",
+    "Dixarobil",
+    "NOWO"
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "nowo",
-   "name": "NOWO",
-   "color": "#f96d00",
-   "aliases": [],
-   "kind": "mno"
-  },
-  {
-   "id": "denseair",
-   "name": "DenseAir",
-   "color": "#c1c1c1",
-   "aliases": [],
-   "kind": "mno"
-  },
-  {
-   "id": "vdf",
-   "name": "VDF",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "kind": "mno",
+   "notes": "Won spectrum in the 2021 5G auction as Dixarobil and launched commercially in Nov 2024. Bought NOWO (Cabonitel) in 2024, and ANACOM approved the transfer of NOWO's 1800 MHz, 2.6 GHz FDD and 3.6 GHz rights to DIGI (3.6 GHz approved 21 Jan 2025)."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
    "names": [
-    "B1",
-    "n1"
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     758,
+     788
     ],
     "ul": [
-     1920,
-     1980
+     703,
+     733
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2021 5G auction (ANACOM decision 23 Nov 2021). 708–713/763–768 MHz was not sold. Rights run to 2041.",
    "sources": [
-    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/",
+    "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/",
+    "https://www.anacom.pt/render.jsp?contentId=1710769",
+    "https://www.spectrum-tracker.com/Portugal/MEO"
    ],
    "blocks": [
     {
-     "op": "vdf",
-     "dl": [
-      2110,
-      2130
-     ],
-     "ul": [
-      1920,
-      1940
-     ],
-     "earfcn": [
-      103
-     ],
-     "notes": "Vodafone",
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-    },
-    {
-     "op": "nos",
-     "dl": [
-      2130,
-      2150
-     ],
-     "ul": [
-      1940,
-      1960
-     ],
-     "earfcn": [
-      300
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-    },
-    {
      "op": "meo",
      "dl": [
-      2150,
-      2170
+      758,
+      763
      ],
      "ul": [
-      1960,
-      1980
+      703,
+      708
      ],
-     "earfcn": [
-      500
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-    }
-   ]
-  },
-  {
-   "group": "1800",
-   "label": "1800 MHz (B3/n3)",
-   "names": [
-    "B3",
-    "n3"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
-    "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
-   ],
-   "blocks": [
-    {
-     "op": "vdf",
-     "dl": [
-      1805,
-      1825
-     ],
-     "ul": [
-      1710,
-      1730
-     ],
-     "earfcn": [
-      1300
-     ],
-     "notes": "Vodafone",
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "expiry": "2041"
     },
     {
-     "op": "nos",
+     "op": "unassigned",
      "dl": [
-      1825,
-      1845
+      763,
+      768
      ],
      "ul": [
-      1730,
-      1750
+      708,
+      713
      ],
-     "earfcn": [
-      1500
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "notes": "Unsold in the 2021 auction"
     },
     {
-     "op": "meo",
+     "op": "vodafone",
      "dl": [
-      1845,
-      1865
+      768,
+      778
      ],
      "ul": [
-      1750,
-      1770
-     ],
-     "earfcn": [
-      1700
+      713,
+      723
      ],
      "nrarfcn": [
-      371000
-     ],
-     "notes": "Sometimes used for DSS 4G/5G",
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-    },
-    {
-     "op": "digi",
-     "dl": [
-      1865,
-      1880
-     ],
-     "ul": [
-      1770,
-      1785
+      154570
      ],
      "earfcn": [
-      1875
+      9360
      ],
-     "notes": "DIGI",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
-   "names": [
-    "B7"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     2620,
-     2690
-    ],
-    "ul": [
-     2500,
-     2570
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1",
-    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-   ],
-   "blocks": [
-    {
-     "op": "digi",
-     "dl": [
-      2620,
-      2630
-     ],
-     "ul": [
-      2500,
-      2510
-     ],
-     "earfcn": [
-      2800
-     ],
-     "notes": "DIGI",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
-    },
-    {
-     "op": "vdf",
-     "dl": [
-      2630,
-      2650
-     ],
-     "ul": [
-      2510,
-      2530
-     ],
-     "earfcn": [
-      2950
-     ],
-     "notes": "Vodafone",
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "expiry": "2041"
     },
     {
      "op": "nos",
      "dl": [
-      2650,
-      2670
+      778,
+      788
      ],
      "ul": [
-      2530,
-      2550
+      723,
+      733
      ],
-     "earfcn": [
-      3150
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-    },
-    {
-     "op": "meo",
-     "dl": [
-      2670,
-      2690
-     ],
-     "ul": [
-      2550,
-      2570
-     ],
-     "earfcn": [
-      3350
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
-   ],
-   "blocks": [
-    {
-     "op": "digi",
-     "dl": [
-      925,
-      930
-     ],
-     "ul": [
-      880,
-      885
-     ],
-     "earfcn": [
-      3485
-     ],
-     "notes": "DIGI · 4G EARFCN 3485(3MHz) + 2G ARFCN 975-983(2 MHz)",
-     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
-    },
-    {
-     "op": "vdf",
-     "dl": [
-      930,
-      940
-     ],
-     "ul": [
-      885,
-      895
-     ],
-     "earfcn": [
-      3525
-     ],
-     "notes": "Vodafone · 4G EARFCN 3525(5MHz) + 2G ARFCN 1-25(5MHz)",
-     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
-    },
-    {
-     "op": "nos",
-     "dl": [
-      940,
-      950
-     ],
-     "ul": [
-      895,
-      905
-     ],
-     "earfcn": [
-      3625
-     ],
-     "notes": "4G EARFCN 3625(5MHz) + 2G ARFCN 50-74(5 MHz)",
-     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
-    },
-    {
-     "op": "meo",
-     "dl": [
-      950,
-      960
-     ],
-     "ul": [
-      905,
-      915
-     ],
-     "earfcn": [
-      3749
-     ],
-     "notes": "4G EARFCN 3749(5MHz) + 2G ARFCN 76-87, 113-124(5 MHz)",
-     "source": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+     "expiry": "2041"
     }
    ]
   },
@@ -437,9 +158,11 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2011 multiband auction; rights expire in March 2027. ANACOM's draft decision of 29 Jun 2026 proposes renewal to 30 Nov 2041 (consultation closed 27 Aug 2026; final decision pending on the asOf date).",
    "sources": [
-    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
+    "https://www.spectrum-tracker.com/Portugal/MEO",
+    "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/anacom-propoe-renovacao-de-licencas-da-meo-nos-e-vodafone-ate-2041-42-mas-limita-algumas-faixas-a-2033-apritel-diz-que-e-uma-decisao-errada"
    ],
    "blocks": [
     {
@@ -452,13 +175,10 @@
       832,
       842
      ],
-     "earfcn": [
-      6200
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "expiry": "2027-03-09"
     },
     {
-     "op": "vdf",
+     "op": "vodafone",
      "dl": [
       801,
       811
@@ -467,11 +187,7 @@
       842,
       852
      ],
-     "earfcn": [
-      6300
-     ],
-     "notes": "Vodafone",
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "expiry": "2027-03-09"
     },
     {
      "op": "nos",
@@ -483,109 +199,391 @@
       852,
       862
      ],
-     "earfcn": [
-      6400
-     ],
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "expiry": "2027-03-09"
     }
    ]
   },
   {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
+   "group": "900",
+   "label": "900 MHz (B8)",
    "names": [
-    "B28",
-    "n28"
+    "B8"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     758,
-     803
+     925,
+     960
     ],
     "ul": [
-     703,
-     748
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Exact positions set by ANACOM's decision of 14 Jan 2022, which ratified the operators' agreement after the 5G auction (DIGI 2×5 MHz new; MEO and NOS each added 2×2 MHz). The blocks shown follow the davwheat seed, which cites that decision; the PDF could not be retrieved (ANACOM blocks automated access). spectrum-tracker gives slightly different edges with guard gaps (DIGI 880–885, Vodafone 885–890 + 890.1–895.1, NOS 898.1–905.9, MEO 905.9–913.9 UL, without the 2×2 MHz lots). Draft 2026 renewal: half the band to 2042, the rest to 2033.",
+   "sources": [
+    "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE",
+    "https://isportal.berec.europa.eu/view-doc/approval-of-the-exact-location-of-spectrum-in-the-900-mhz-band",
+    "https://www.spectrum-tracker.com/Portugal/MEO",
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      925,
+      930
+     ],
+     "ul": [
+      880,
+      885
+     ],
+     "earfcn": [
+      3485
+     ],
+     "notes": "Won by Dixarobil in 2021; LTE 3 MHz + GSM"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      930,
+      940
+     ],
+     "ul": [
+      885,
+      895
+     ],
+     "earfcn": [
+      3525
+     ]
+    },
+    {
+     "op": "nos",
+     "dl": [
+      940,
+      950
+     ],
+     "ul": [
+      895,
+      905
+     ],
+     "earfcn": [
+      3625
+     ]
+    },
+    {
+     "op": "meo",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "earfcn": [
+      3749
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band",
+   "names": [
+    "B32",
+    "B75"
+   ],
+   "status": "unknown",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No MNO assignment was found. One ANACOM text lists '1500 MHz (SDL)' among bands with rights expiring in 2027, which could not be checked (ANACOM site blocked). Shown as unknown.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1712067"
+   ],
+   "positions": "holdings",
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Incumbent rights expire partly in 2027 and partly in 2033. The 2026 draft renewal proposes extending all of them to 2041. DIGI holds 1865–1875 (ex-NOWO, 2021 auction) and 1875–1880 (Dixarobil, 2021 auction).",
    "sources": [
-    "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/",
+    "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/",
+    "https://www.spectrum-tracker.com/Portugal/MEO",
+    "https://www.telecompaper.com/news/nowo-gets-regulator-nod-for-spectrum-transfer-to-digi--1523632"
    ],
    "blocks": [
     {
-     "op": "meo",
+     "op": "vodafone",
      "dl": [
-      758,
-      763
+      1805,
+      1825
      ],
      "ul": [
-      703,
-      708
-     ],
-     "nrarfcn": [
-      152100
-     ],
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
-    },
-    {
-     "op": "unassigned",
-     "dl": [
-      763,
-      768
-     ],
-     "ul": [
-      708,
-      713
-     ],
-     "notes": "Unallocated",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
-    },
-    {
-     "op": "vdf",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ],
-     "nrarfcn": [
-      154600
-     ],
-     "notes": "Vodafone · Most common use is 5G NRARFCN 154570(10MHz) · Very few cells use 4G EARFCN 9360(10MHz)",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+      1710,
+      1730
+     ]
     },
     {
      "op": "nos",
      "dl": [
-      778,
-      788
+      1825,
+      1845
      ],
      "ul": [
-      723,
-      733
+      1730,
+      1750
+     ]
+    },
+    {
+     "op": "meo",
+     "dl": [
+      1845,
+      1865
      ],
-     "nrarfcn": [
-      156600
+     "ul": [
+      1750,
+      1770
+     ]
+    },
+    {
+     "op": "digi",
+     "dl": [
+      1865,
+      1875
      ],
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+     "ul": [
+      1770,
+      1780
+     ],
+     "notes": "Won by NOWO in 2021; transferred to DIGI (ANACOM, 2025)"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      1875,
+      1880
+     ],
+     "ul": [
+      1780,
+      1785
+     ],
+     "notes": "Won by Dixarobil in 2021"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Original UMTS rights (2×19.8 MHz each, NOS 2×14.8 MHz + 2×5 MHz won in 2021) expire in 2033. The draft 2026 renewal proposes 2041. Edges from spectrum-tracker (regulator data); NOS's 2021 block edges are confirmed by the ANACOM auction decision text. The operator order follows the davwheat/ANACOM seed.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Portugal/MEO",
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/",
+    "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/",
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      2110.3,
+      2130.1
+     ],
+     "ul": [
+      1920.3,
+      1940.1
+     ],
+     "expiry": "2033"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      2130.1,
+      2144.9
+     ],
+     "ul": [
+      1940.1,
+      1954.9
+     ],
+     "expiry": "2033"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      2144.9,
+      2149.9
+     ],
+     "ul": [
+      1954.9,
+      1959.9
+     ],
+     "notes": "Won in the 2021 5G auction",
+     "source": "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/"
+    },
+    {
+     "op": "meo",
+     "dl": [
+      2149.9,
+      2169.7
+     ],
+     "ul": [
+      1959.9,
+      1979.7
+     ],
+     "expiry": "2033"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz FDD (B7)",
    "names": [
-    "B38"
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Incumbent 2×20 MHz blocks from the 2011 auction expire in March 2027; the draft 2026 decision proposes renewal only to 21 Apr 2033. DIGI's blocks come from the 2021 auction (Dixarobil 2500–2505, ex-NOWO 2505–2510).",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/",
+    "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/",
+    "https://www.spectrum-tracker.com/Portugal/MEO"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      2620,
+      2625
+     ],
+     "ul": [
+      2500,
+      2505
+     ],
+     "notes": "Won by Dixarobil in 2021"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      2625,
+      2630
+     ],
+     "ul": [
+      2505,
+      2510
+     ],
+     "notes": "Won by NOWO in 2021; transferred to DIGI"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      2630,
+      2650
+     ],
+     "ul": [
+      2510,
+      2530
+     ],
+     "expiry": "2027-03-09"
+    },
+    {
+     "op": "nos",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "expiry": "2027-03-09"
+    },
+    {
+     "op": "meo",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2027-03-09"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (B38/n38)",
+   "names": [
+    "B38",
+    "n38"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -598,14 +596,16 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Vodafone's 25 MHz is from the 2011 auction (expires 2027). DIGI's 2595–2620 MHz was won by Dixarobil in 2021.",
    "sources": [
     "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1",
-    "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/",
+    "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/",
+    "https://www.spectrum-tracker.com/Portugal/MEO"
    ],
    "blocks": [
     {
-     "op": "vdf",
+     "op": "vodafone",
      "f": [
       2570,
       2595
@@ -613,8 +613,7 @@
      "earfcn": [
       37900
      ],
-     "notes": "Vodafone · 4G EARFCN 37900(20MHz)",
-     "source": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+     "expiry": "2027-03-09"
     },
     {
      "op": "digi",
@@ -625,14 +624,13 @@
      "nrarfcn": [
       521000
      ],
-     "notes": "DIGI · 5G NRARFCN 521000(20MHz)",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+     "notes": "Won by Dixarobil in 2021"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
@@ -640,17 +638,23 @@
    "duplex": "tdd",
    "range": {
     "f": [
-     3300,
+     3400,
      3800
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2021 5G auction. Dense Air won 3440–3480 MHz but never launched; ANACOM revoked its older pre-auction 3.6 GHz licence in Jan 2024 and opened a non-compliance procedure over the auction block in Jun 2025. ANACOM's draft of 24 Mar 2026 would move DIGI's ex-NOWO block from 3480–3520 to 3440–3480 so DIGI has 80 MHz contiguous, which implies 3440–3480 is now free. The final decision was not found, so the current layout is shown.",
    "sources": [
-    "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1",
-    "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+    "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/",
+    "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/",
+    "https://www.anacom.pt/render.jsp?contentId=1710769",
+    "https://www.spectrum-tracker.com/Portugal/MEO",
+    "https://www.anacom.pt/render.jsp?contentId=1802807",
+    "https://www.anacom.pt/render.jsp?contentId=1830802",
+    "https://dinheirovivo.dn.pt/anacom-retira-licenca-5g-a-dense-air-e-desbloqueia-espetro-a-nowo-e-digi",
+    "https://eco.sapo.pt/2025/06/24/anacom-abre-processo-contra-dense-air-por-esta-nao-ter-usado-as-licencas-5g/"
    ],
    "blocks": [
     {
@@ -659,8 +663,7 @@
       3400,
       3440
      ],
-     "notes": "DIGI",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+     "notes": "Won by Dixarobil in 2021"
     },
     {
      "op": "unassigned",
@@ -668,8 +671,7 @@
       3440,
       3480
      ],
-     "notes": "Unallocated",
-     "source": ""
+     "notes": "Dense Air's 2021 block; revocation procedure opened Jun 2025. ANACOM's Mar 2026 draft proposes moving DIGI here"
     },
     {
      "op": "digi",
@@ -677,55 +679,322 @@
       3480,
       3520
      ],
-     "notes": "DIGI",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1802215&languageId=1"
+     "notes": "Won by NOWO in 2021; transferred to DIGI (ANACOM, 21 Jan 2025). Proposed move to 3440–3480"
     },
     {
-     "op": "vdf",
+     "op": "vodafone",
      "f": [
       3520,
       3610
-     ],
-     "nrarfcn": [
-      637667
-     ],
-     "notes": "Vodafone",
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+     ]
     },
     {
      "op": "nos",
      "f": [
       3610,
       3710
-     ],
-     "nrarfcn": [
-      644000
-     ],
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+     ]
     },
     {
      "op": "meo",
      "f": [
       3710,
       3800
-     ],
-     "nrarfcn": [
-      650333
-     ],
-     "source": "https://www.anacom.pt/render.jsp?contentId=1712329&languageId=1"
+     ]
     }
    ]
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. ANACOM consulted on the 26 GHz band after the 5G auction and is considering a model that may reserve part of it for verticals; no award had been made by the asOf date.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1712067"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; no award announced.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1712067"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; no award announced.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?contentId=1712067"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; not harmonised for MFCN in the EU.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2300",
+   "label": "2.3 GHz (B40)",
+   "names": [
+    "B40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned to mobile operators.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "UHF broadcasting (DTT); not an IMT band in Europe.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe (overlaps the 800 MHz B20 band).",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No current mobile use found. The status of the legacy UMTS-TDD blocks in the 2000 licences was not checked.",
+   "sources": [
+    "https://www.anacom.pt/render.jsp?categoryId=150463"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "NOWO: DIGI Portugal bought Cabonitel/NOWO in 2024. ANACOM approved the transfer of NOWO's 3.6 GHz rights (21 Jan 2025) and its 1800 MHz (2×10) and 2.6 GHz (2×5) rights to DIGI.",
+  "Dense Air: its pre-auction 3.6 GHz licence was revoked at its own request (ANACOM, 23 Jan 2024, effective 14 Jul 2023). ANACOM opened a non-compliance procedure (Jun 2025) over its unused 2021 auction block 3440–3480 MHz. The block is shown as unassigned because ANACOM's Mar 2026 draft proposes giving it to DIGI; no final revocation decision was found.",
+  "Renewal: on 29 Jun 2026 ANACOM approved a draft decision (consultation to 27 Aug 2026) to renew MEO, NOS and Vodafone's 800 and 1800 MHz rights to Nov 2041, 2100 MHz to 2041/42, half of 900 MHz to 2042 (the rest to 2033) and 2600 MHz only to 21 Apr 2033. The final decision was not published by the asOf date, so current expiries are shown.",
+  "900 MHz: sources disagree on the exact edges (davwheat/ANACOM seed vs spectrum-tracker), so the band is marked unverified.",
+  "The ANACOM website blocks automated access (HTTP 403/503), so regulator pages were read through press coverage that quotes the ANACOM decision texts (pplware, portal5g) and through spectrum-tracker's regulator-derived data."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "900 MHz exact block edges (the ANACOM decision of 14 Jan 2022 could not be retrieved).",
+  "1.5 GHz: whether any SDL rights exist (one ANACOM reference to '1500 MHz (SDL)' could not be checked).",
+  "Final ANACOM decisions on Dense Air's revocation, DIGI's 3.6 GHz re-assignment, and the 2026 licence renewals.",
+  "Exact 700 MHz and 3.6 GHz expiry dates (shown as 2041 per spectrum-tracker).",
+  "Legacy UMTS-TDD (1900–1920 MHz) status not checked."
+ ],
+ "changes": [
+  "Merged the seed's 'vdf' and unused 'vodafone' operators into one 'vodafone' operator; removed the unused NOWO and Dense Air operators (NOWO spectrum is under DIGI).",
+  "700 MHz range corrected to 703–733/758–788.",
+  "900 MHz downgraded to unverified (spectrum-tracker shows different edges).",
+  "1800 MHz and 2600 FDD: split DIGI's blocks into the ex-NOWO and Dixarobil parts.",
+  "2100 MHz: replaced the seed's 20/20/20 layout with 2×19.8 MHz edges (1920.3–1979.7) and the NOS 2×5 MHz 2021 block.",
+  "3.6 GHz: kept 3440–3480 unassigned and documented the Dense Air revocation and DIGI's proposed move.",
+  "Added expiries, renewal notes and not-assigned entries for all missing required groups (26/40/47 GHz, 4.9 GHz, 2.3 GHz, 600, 850, AWS, PCS, 2 GHz TDD); 1.5 GHz marked unknown."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
-   "url": "https://github.com/davwheat/mobile-spectrum-data"
+   "title": "pplware – 5G: frequências adquiridas por cada operador (quotes ANACOM auction decision)",
+   "url": "https://pplware.sapo.pt/internet/5g-afinal-quais-as-frequencias-adquiridas-por-cada-operador/"
+  },
+  {
+   "title": "Portal 5G – ANACOM aprova atribuição de DUF do leilão 5G",
+   "url": "https://portal5g.pt/noticias/anacom-aprova-atribuicao-de-direitos-de-utilizacao-de-frequencias-do-leilao-5g/"
+  },
+  {
+   "title": "ANACOM – aprovação da atribuição de DUF do leilão 5G",
+   "url": "https://www.anacom.pt/render.jsp?contentId=1710769"
+  },
+  {
+   "title": "Spectrum-Tracker – Portugal",
+   "url": "https://www.spectrum-tracker.com/Portugal/MEO"
+  },
+  {
+   "title": "ANACOM – Mobile spectrum assignments (seed source)",
+   "url": "https://www.anacom.pt/render.jsp?categoryId=383094&languageId=1"
+  },
+  {
+   "title": "ANACOM – 900 MHz exact location decision (14 Jan 2022)",
+   "url": "https://www.anacom.pt/streaming/Dec14012022Espectro900MHz_traducao.pdf?contentId=1714909&field=ATTACHED_FILE"
+  },
+  {
+   "title": "ANACOM – transfer of NOWO 3.6 GHz rights to DIGI",
+   "url": "https://www.anacom.pt/render.jsp?contentId=1802807"
+  },
+  {
+   "title": "Telecompaper – Nowo gets regulator nod for spectrum transfer to Digi",
+   "url": "https://www.telecompaper.com/news/nowo-gets-regulator-nod-for-spectrum-transfer-to-digi--1523632"
+  },
+  {
+   "title": "Telecompaper – Digi completes acquisition of Nowo",
+   "url": "https://www.telecompaper.com/news/digi-completes-acquisition-of-nowo-in-portugal--1517085"
+  },
+  {
+   "title": "ANACOM – consultation on amending DIGI's 3.6 GHz assignment (Mar 2026)",
+   "url": "https://www.anacom.pt/render.jsp?contentId=1830802"
+  },
+  {
+   "title": "Dinheiro Vivo – Anacom retira licença 5G à Dense Air",
+   "url": "https://dinheirovivo.dn.pt/anacom-retira-licenca-5g-a-dense-air-e-desbloqueia-espetro-a-nowo-e-digi"
+  },
+  {
+   "title": "ECO – Anacom abre processo contra Dense Air (Jun 2025)",
+   "url": "https://eco.sapo.pt/2025/06/24/anacom-abre-processo-contra-dense-air-por-esta-nao-ter-usado-as-licencas-5g/"
+  },
+  {
+   "title": "Tek Sapo – ANACOM propõe renovação de licenças até 2041-42 (Jul 2026)",
+   "url": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/anacom-propoe-renovacao-de-licencas-da-meo-nos-e-vodafone-ate-2041-42-mas-limita-algumas-faixas-a-2033-apritel-diz-que-e-uma-decisao-errada"
+  },
+  {
+   "title": "European Commission – Portugal regulator proposes to renew mobile spectrum rights",
+   "url": "https://digital-strategy.ec.europa.eu/en/miscellaneous/portugal-regulator-proposes-renew-mobile-spectrum-rights-meo-nos-and-vodafone"
+  },
+  {
+   "title": "ANACOM – consulta pública sobre a faixa dos 26 GHz",
+   "url": "https://www.anacom.pt/render.jsp?contentId=1712067"
   }
  ]
 }
