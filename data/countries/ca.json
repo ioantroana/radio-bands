@@ -302,13 +302,13 @@
    "holdings": [
     {
      "op": "videotron",
-     "mhz": 4.2,
+     "mhz": 4.19,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     },
     {
      "op": "bell",
-     "mhz": 3.2,
+     "mhz": 3.17,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
      "notes": "incl. ex-MTS C1 in Manitoba"
@@ -321,13 +321,13 @@
     },
     {
      "op": "eastlink",
-     "mhz": 0.5,
+     "mhz": 0.46,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     },
     {
      "op": "sasktel",
-     "mhz": 0.2,
+     "mhz": 0.15,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     }
@@ -520,27 +520,27 @@
    "holdings": [
     {
      "op": "rogers",
-     "mhz": 16.1,
+     "mhz": 16.05,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
      "notes": "own A block + ex-Shaw + ex-Mobilicity; Rogers AR: 2×20 in BC/AB, 2×15 S. Ontario (+2×5 GTA), 2×10 elsewhere"
     },
     {
      "op": "videotron",
-     "mhz": 11.7,
+     "mhz": 11.71,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
      "notes": "own + ex-Wind/Freedom"
     },
     {
      "op": "telus",
-     "mhz": 8.1,
+     "mhz": 8.06,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     },
     {
      "op": "bell",
-     "mhz": 6.9,
+     "mhz": 6.85,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
      "notes": "incl. ex-MTS"
@@ -553,13 +553,13 @@
     },
     {
      "op": "sasktel",
-     "mhz": 0.5,
+     "mhz": 0.49,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     },
     {
      "op": "other",
-     "mhz": 0.1,
+     "mhz": 0.04,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
     }
@@ -596,26 +596,26 @@
    "holdings": [
     {
      "op": "videotron",
-     "mhz": 12.6,
+     "mhz": 12.56,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
      "notes": "own QC/E. Ontario + ex-Freedom"
     },
     {
      "op": "telus",
-     "mhz": 8.5,
+     "mhz": 8.48,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     },
     {
      "op": "bell",
-     "mhz": 2.6,
+     "mhz": 2.57,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     },
     {
      "op": "eastlink",
-     "mhz": 1.4,
+     "mhz": 1.39,
      "paired": true,
      "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
     }
