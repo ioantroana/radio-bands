@@ -2,407 +2,59 @@
  "code": "ru",
  "name": "Russia",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
- "licensing": "national",
- "summary": "",
+ "asOf": "2026-09-28",
+ "coverage": "partial",
+ "licensing": "mixed",
+ "summary": "Four national MNOs: MTS, MegaFon, Beeline (VimpelCom) and T2 (Rostelecom group, formerly Tele2). 800/2100/2600 MHz FDD licences are federal; 900/1800 MHz and TDD bands are licensed by region. Commercial 5G launched on 11 Sep 2026, after the GKRCh allocated 4.63–4.99 GHz (90 MHz each) and allowed NR on LTE frequencies.",
  "operators": [
   {
    "id": "beeline",
-   "name": "Beeline RU",
-   "color": "#ebc842",
+   "name": "Beeline",
+   "legal": "PJSC VimpelCom",
+   "color": "#f5c400",
    "aliases": [
-    "Beeline"
+    "Beeline RU",
+    "VimpelCom"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "VEON sold VimpelCom to Russian management in 2023."
   },
   {
    "id": "megafon",
-   "name": "MegaFon RU",
-   "color": "#66b660",
+   "name": "MegaFon",
+   "legal": "PJSC MegaFon",
+   "color": "#00b956",
    "aliases": [
-    "MegaFon"
+    "MegaFon RU"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Also holds the 2.6 GHz spectrum of Scartel (Yota)."
   },
   {
    "id": "mts",
-   "name": "MTS RU",
-   "color": "#d9313c",
+   "name": "MTS",
+   "legal": "PJSC MTS",
+   "color": "#e30611",
    "aliases": [
-    "MTS"
+    "MTS RU"
    ],
    "kind": "mno"
   },
   {
-   "id": "tele2",
-   "name": "Tele2 RU",
-   "color": "#202228",
+   "id": "t2",
+   "name": "T2",
+   "legal": "T2 Mobile LLC (Rostelecom group)",
+   "color": "#3a3a3a",
    "aliases": [
+    "Tele2 RU",
+    "Tele2 Russia",
     "Tele2"
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "regional",
-   "name": "Regional",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "kind": "mno",
+   "notes": "Tele2 Russia rebranded as T2 in 2024. Wholly owned by Rostelecom, whose mobile spectrum (800/2600 MHz etc.) it uses."
   }
  ],
  "bands": [
-  {
-   "group": "2100",
-   "label": "2100 MHz (B1)",
-   "names": [
-    "B1"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     2110,
-     2170
-    ],
-    "ul": [
-     1920,
-     1980
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
-   ],
-   "blocks": [
-    {
-     "op": "tele2",
-     "dl": [
-      2110,
-      2125
-     ],
-     "ul": [
-      1920,
-      1935
-     ],
-     "earfcn": [
-      75,
-      100,
-      125
-     ]
-    },
-    {
-     "op": "megafon",
-     "dl": [
-      2125,
-      2140
-     ],
-     "ul": [
-      1935,
-      1950
-     ],
-     "earfcn": [
-      200,
-      225
-     ]
-    },
-    {
-     "op": "mts",
-     "dl": [
-      2140,
-      2155
-     ],
-     "ul": [
-      1950,
-      1965
-     ],
-     "earfcn": [
-      350,
-      375,
-      400
-     ]
-    },
-    {
-     "op": "beeline",
-     "dl": [
-      2155,
-      2170
-     ],
-     "ul": [
-      1965,
-      1980
-     ],
-     "earfcn": [
-      550,
-      525
-     ]
-    }
-   ]
-  },
-  {
-   "group": "1800",
-   "label": "1800 MHz (B3) — allocation in Moscow",
-   "names": [
-    "B3"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
-   ],
-   "blocks": [
-    {
-     "op": "beeline",
-     "dl": [
-      1805,
-      1825.2
-     ],
-     "ul": [
-      1710,
-      1730.2
-     ],
-     "earfcn": [
-      1301
-     ]
-    },
-    {
-     "op": "megafon",
-     "dl": [
-      1825.2,
-      1855.2
-     ],
-     "ul": [
-      1730.2,
-      1760.2
-     ],
-     "earfcn": [
-      1602,
-      1458
-     ]
-    },
-    {
-     "op": "mts",
-     "dl": [
-      1855.2,
-      1880
-     ],
-     "ul": [
-      1760.2,
-      1785
-     ],
-     "earfcn": [
-      1802,
-      1919
-     ]
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
-   "names": [
-    "B7"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     2620,
-     2690
-    ],
-    "ul": [
-     2500,
-     2570
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
-   ],
-   "blocks": [
-    {
-     "op": "megafon",
-     "dl": [
-      2620,
-      2660
-     ],
-     "ul": [
-      2500,
-      2540
-     ],
-     "earfcn": [
-      2850,
-      3048
-     ]
-    },
-    {
-     "op": "mts",
-     "dl": [
-      2660,
-      2670
-     ],
-     "ul": [
-      2540,
-      2550
-     ],
-     "earfcn": [
-      3200
-     ]
-    },
-    {
-     "op": "beeline",
-     "dl": [
-      2670,
-      2680
-     ],
-     "ul": [
-      2550,
-      2560
-     ],
-     "earfcn": [
-      3300
-     ]
-    },
-    {
-     "op": "tele2",
-     "dl": [
-      2680,
-      2690
-     ],
-     "ul": [
-      2560,
-      2570
-     ],
-     "earfcn": [
-      3400
-     ]
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8) — allocation in Moscow",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
-   ],
-   "blocks": [
-    {
-     "op": "megafon",
-     "dl": [
-      925,
-      935
-     ],
-     "ul": [
-      880,
-      890
-     ],
-     "earfcn": [
-      3500
-     ]
-    },
-    {
-     "op": "mts",
-     "dl": [
-      935,
-      939.8
-     ],
-     "ul": [
-      890,
-      894.8
-     ]
-    },
-    {
-     "op": "beeline",
-     "dl": [
-      939.8,
-      949.8
-     ],
-     "ul": [
-      894.8,
-      904.8
-     ],
-     "earfcn": [
-      3621,
-      3648
-     ]
-    },
-    {
-     "op": "mts",
-     "dl": [
-      949.8,
-      955
-     ],
-     "ul": [
-      904.8,
-      910
-     ],
-     "earfcn": [
-      3724
-     ]
-    },
-    {
-     "op": "megafon",
-     "dl": [
-      955,
-      958
-     ],
-     "ul": [
-      910,
-      913
-     ]
-    },
-    {
-     "op": "mts",
-     "dl": [
-      958,
-      960
-     ],
-     "ul": [
-      913,
-      915
-     ]
-    }
-   ]
-  },
   {
    "group": "800",
    "label": "800 MHz (B20)",
@@ -424,13 +76,15 @@
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Federal (nationwide) licences from the 2012 LTE tender: four lots of 2×7.5 MHz. Rostelecom's lot is used by T2. Edges agree in the davwheat seed and spectrum-tracker; no regulator document was checked.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU",
+    "https://www.spectrum-tracker.com/Russia/MTS",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
    ],
    "blocks": [
     {
-     "op": "tele2",
+     "op": "t2",
      "dl": [
       791,
       798.5
@@ -439,10 +93,7 @@
       832,
       839.5
      ],
-     "earfcn": [
-      6200,
-      6175
-     ]
+     "notes": "Rostelecom licence, used by T2"
     },
     {
      "op": "mts",
@@ -453,10 +104,6 @@
      "ul": [
       839.5,
       847
-     ],
-     "earfcn": [
-      6275,
-      6262
      ]
     },
     {
@@ -468,10 +115,6 @@
      "ul": [
       847,
       854.5
-     ],
-     "earfcn": [
-      6338,
-      6350
      ]
     },
     {
@@ -483,16 +126,262 @@
      "ul": [
       854.5,
       862
+     ]
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8) – regional",
+   "names": [
+    "B8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "900 MHz is licensed region by region. No national or population-weighted averages were found, so the Moscow allocation from the davwheat seed is shown as a proxy. spectrum-tracker gives different amounts (Beeline 10, MegaFon 12, MTS 13). T2 holds 900 MHz in many regions but not in Moscow.",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU",
+    "https://www.spectrum-tracker.com/Russia/MTS",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": [
+    {
+     "op": "megafon",
+     "mhz": 13,
+     "paired": true,
+     "basis": "Moscow allocation (proxy, not an average)"
+    },
+    {
+     "op": "mts",
+     "mhz": 12,
+     "paired": true,
+     "basis": "Moscow allocation (proxy, not an average)"
+    },
+    {
+     "op": "beeline",
+     "mhz": 10,
+     "paired": true,
+     "basis": "Moscow allocation (proxy, not an average)"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3) – regional",
+   "names": [
+    "B3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "1800 MHz is licensed region by region and is technology-neutral. The Moscow allocation from the davwheat seed (Beeline 1805–1825.2, MegaFon 1825.2–1855.2, MTS 1855.2–1880 DL) is shown as a proxy. spectrum-tracker gives a different, apparently non-Moscow layout (T2 2×30 + 2×30, MegaFon 2×15). T2 holds 1800 MHz in most other regions.",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU",
+    "https://www.spectrum-tracker.com/Russia/MTS",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": [
+    {
+     "op": "beeline",
+     "mhz": 20.2,
+     "paired": true,
+     "basis": "Moscow allocation (proxy, not an average)"
+    },
+    {
+     "op": "megafon",
+     "mhz": 30,
+     "paired": true,
+     "basis": "Moscow allocation (proxy, not an average)"
+    },
+    {
+     "op": "mts",
+     "mhz": 24.8,
+     "paired": true,
+     "basis": "Moscow allocation (proxy, not an average)"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Federal 3G licences (2007 for MTS, MegaFon and Beeline; T2 via Rostelecom), 2×15 MHz each. Technology neutrality lets the operators run 5G NR here: after the 31 Aug 2026 GKRCh decision, MTS switched on 5G NR on its 2100 MHz LTE frequencies in 16 cities on 11 Sep 2026. The operator order follows the davwheat seed; spectrum-tracker has the same edges.",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU",
+    "https://www.spectrum-tracker.com/Russia/MTS",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia",
+    "https://moskva.mts.ru/about/media-centr/soobshheniya-kompanii/novosti-mts-v-rossii-i-mire/2026-09-11/zapusk-5g-v-rossii-mts-otkryla-abonentam-skorostnuyu-gigabitnuyu-set-v-pyati-gorodah-i-vklyuchila-5g-na-chastotah-lte"
+   ],
+   "blocks": [
+    {
+     "op": "t2",
+     "dl": [
+      2110,
+      2125
      ],
-     "earfcn": [
-      6413
+     "ul": [
+      1920,
+      1935
+     ]
+    },
+    {
+     "op": "megafon",
+     "dl": [
+      2125,
+      2140
+     ],
+     "ul": [
+      1935,
+      1950
+     ]
+    },
+    {
+     "op": "mts",
+     "dl": [
+      2140,
+      2155
+     ],
+     "ul": [
+      1950,
+      1965
+     ]
+    },
+    {
+     "op": "beeline",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
      ]
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Federal licences from the 2012 LTE tender (2×10 MHz each for MTS, MegaFon, Beeline and Rostelecom/T2). MegaFon also holds Scartel/Yota's spectrum, for 2×40 MHz in total. Beeline and MTS share frequencies (10+10 MHz) under a network-sharing agreement.",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU",
+    "https://www.spectrum-tracker.com/Russia/MTS",
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [
+    {
+     "op": "megafon",
+     "dl": [
+      2620,
+      2660
+     ],
+     "ul": [
+      2500,
+      2540
+     ],
+     "notes": "Includes Scartel (Yota) spectrum"
+    },
+    {
+     "op": "mts",
+     "dl": [
+      2660,
+      2670
+     ],
+     "ul": [
+      2540,
+      2550
+     ]
+    },
+    {
+     "op": "beeline",
+     "dl": [
+      2670,
+      2680
+     ],
+     "ul": [
+      2550,
+      2560
+     ]
+    },
+    {
+     "op": "t2",
+     "dl": [
+      2680,
+      2690
+     ],
+     "ul": [
+      2560,
+      2570
+     ],
+     "notes": "Rostelecom licence, used by T2"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (B38) – regional",
    "names": [
     "B38"
    ],
@@ -504,43 +393,34 @@
      2620
     ]
    },
-   "positions": "unverified",
+   "positions": "regional-average",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Wikipedia lists MegaFon and MTS each with a 20 MHz carrier plus 5 MHz in B38. The licences are regional (e.g. Moscow), and the seed puts MTS at 2595–2620 MHz. Amounts are the maximum regional holding, not averages.",
    "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
    ],
-   "blocks": [
+   "holdings": [
     {
-     "op": "regional",
-     "f": [
-      2570,
-      2595
-     ],
-     "earfcn": [
-      37900
-     ]
+     "op": "megafon",
+     "mhz": 25,
+     "basis": "Moscow and selected regions (maximum, not average)"
     },
     {
      "op": "mts",
-     "f": [
-      2595,
-      2620
-     ],
-     "earfcn": [
-      38100
-     ]
+     "mhz": 25,
+     "basis": "Moscow and selected regions (maximum, not average)"
     }
    ]
   },
   {
    "group": "2300",
-   "label": "2300 MHz (B40)",
+   "label": "2300 MHz (B40) – regional",
    "names": [
     "B40"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -548,50 +428,389 @@
      2400
     ]
    },
-   "positions": "unverified",
+   "positions": "regional-average",
    "future": null,
-   "excludeFromTotal": false,
-   "note": "",
+   "excludeFromTotal": true,
+   "note": "Wikipedia lists T2 with an LTE B40 network (Apr 2021, bandwidth unknown), and the seed shows T2 with 2300–2400 MHz. These are regional rights (Rostelecom group) and the amount per region is unknown, so the entry is excluded from totals.",
    "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
    ],
-   "blocks": [
+   "holdings": [
     {
-     "op": "tele2",
-     "f": [
-      2300,
-      2400
-     ],
-     "earfcn": [
-      38750,
-      38950,
-      39150,
-      38825,
-      38900,
-      39375,
-      39525,
-      39550,
-      39575,
-      39048,
-      39000,
-      39148,
-      39200,
-      39400,
-      39600
-     ]
+     "op": "t2",
+     "mhz": 100,
+     "basis": "seed value; regional only, amount per region unknown"
     }
    ]
+  },
+  {
+   "group": "450",
+   "label": "450 MHz (B31) – regional",
+   "names": [
+    "B31"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     462.5,
+     467.5
+    ],
+    "ul": [
+     452.5,
+     457.5
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "T2 (Rostelecom group) runs LTE 450 in some regions on former Skylink CDMA-450 spectrum. Excluded from totals because regional coverage is unknown.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "holdings": [
+    {
+     "op": "t2",
+     "mhz": 5,
+     "paired": true,
+     "basis": "selected regions only (former Skylink)"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.63–4.99 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "On 31 Aug 2026 the GKRCh (State Radio Frequency Commission) allocated 4.63–4.99 GHz for 5G to the 'big four', 90 MHz each (Wikipedia; 360 MHz ÷ 4). Commercial 5G launched on 11 Sep 2026. MTS has 4.9 GHz networks in Moscow, St Petersburg, Novosibirsk, Yekaterinburg and Ufa; T2 plans to build on 4.63–4.99 GHz in million-plus cities through 2031. Block positions and geographic scope were not published in the sources found. 4.4–4.63 GHz is not assigned to operators.",
+   "sources": [
+    "https://moskva.mts.ru/about/media-centr/soobshheniya-kompanii/novosti-mts-v-rossii-i-mire/2026-09-11/zapusk-5g-v-rossii-mts-otkryla-abonentam-skorostnuyu-gigabitnuyu-set-v-pyati-gorodah-i-vklyuchila-5g-na-chastotah-lte",
+    "https://msk.t2.ru/about/news-list/2026/09/11/t2-zapustil-realnuyu-set-5g-v-rossii",
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "holdings": [
+    {
+     "op": "mts",
+     "mhz": 90,
+     "basis": "GKRCh decision 31 Aug 2026"
+    },
+    {
+     "op": "megafon",
+     "mhz": 90,
+     "basis": "GKRCh decision 31 Aug 2026"
+    },
+    {
+     "op": "beeline",
+     "mhz": 90,
+     "basis": "GKRCh decision 31 Aug 2026"
+    },
+    {
+     "op": "t2",
+     "mhz": 90,
+     "basis": "GKRCh decision 31 Aug 2026"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–3.8 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned to mobile operators. Russia chose 4.4–4.99 GHz for mid-band 5G because 3.4–3.8 GHz is used by government and satellite services (background knowledge, not source-verified; the 2026 GKRCh decision covered only 4.63–4.99 GHz and LTE re-use).",
+   "sources": [
+    "https://moskva.mts.ru/about/media-centr/soobshheniya-kompanii/novosti-mts-v-rossii-i-mire/2026-09-11/zapusk-5g-v-rossii-mts-otkryla-abonentam-skorostnuyu-gigabitnuyu-set-v-pyati-gorodah-i-vklyuchila-5g-na-chastotah-lte",
+    "https://msk.t2.ru/about/news-list/2026/09/11/t2-zapustil-realnuyu-set-5g-v-rossii"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "24.25–27.5 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "unknown",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "In 2020 the GKRCh opened 24.25–24.65 GHz for 5G without an auction; MegaFon and Rostelecom got test assignments, and MTS received Russia's first mmWave 5G licence (Jul 2020, TeleGeography headlines). Whether these rights are still valid or used commercially in 2026 could not be confirmed (sources paywalled).",
+   "sources": [
+    "https://www.commsupdate.com/articles/2020/07/29/mts-awarded-russias-first-mmwave-5g-licence/",
+    "https://www.commsupdate.com/articles/2020/03/20/24ghz-mmwave-5g-spectrum-available-without-auction-megafonrostelecom-receive-test-mmwave-band/"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignment found.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignment found.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz (B28)",
+   "names": [
+    "B28"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: the 694–790 MHz range is still used for digital terrestrial TV. B28 appears in Wikipedia's LTE table only because B20 carriers in 791–803 MHz fall inside B28's DL range.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "UHF broadcasting (DTT); not an IMT band here.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used for LTE/NR by the national MNOs (overlaps B20/B8 plans).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz L-band",
+   "names": [
+    "B32",
+    "B75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignment found.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Russia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Russia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz TDD",
+   "names": [
+    "B33"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No LTE/NR use found. The legacy UMTS-TDD status was not checked.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Licensing is mixed. 800 MHz, 2600 MHz FDD and 2100 MHz are federal licences, drawn with exact (unverified) blocks. 900/1800 MHz and the TDD bands are regional; with no published national averages, the Moscow allocation is shown as a proxy and labelled as such.",
+  "5G: GKRCh decision of 31 Aug 2026 (4.63–4.99 GHz to the big four plus technology neutrality for LTE bands); commercial launch 11 Sep 2026 (MTS and T2 press releases). The 90 MHz per operator figure comes from Wikipedia's 5G NR list.",
+  "Conflicts: spectrum-tracker's Russia data (updated Oct 2024) disagrees with the davwheat seed for 900 and 1800 MHz. It seems to mix regions, so the seed's Moscow values were kept and the conflict is noted in each band.",
+  "No Roskomnadzor/GKRCh register was accessible; all positions are from secondary sources."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Regulator (GKRCh/Roskomnadzor) documents for any band; all positions are unverified.",
+  "Population-weighted national averages for 900 MHz, 1800 MHz, 2300 MHz and 2600 TDD holdings.",
+  "Exact block positions and regional scope of the 4.63–4.99 GHz allocations.",
+  "Status in 2026 of the 24.25–24.65 GHz mmWave licences (MTS, MegaFon/Rostelecom).",
+  "3.4–3.8 GHz: 'not assigned' is from background knowledge.",
+  "Regional MNOs (e.g. Motiv, Tattelecom, Vainakh Telecom) are not modelled."
+ ],
+ "changes": [
+  "Renamed Tele2 RU to T2 (2024 rebrand), dropped the 'RU' suffix from names and removed the generic 'Regional' operator.",
+  "900 and 1800 MHz changed from Moscow block diagrams to regional-average holdings labelled as Moscow proxies.",
+  "2600 TDD: replaced 'Regional' 2570–2595 + MTS 2595–2620 with MegaFon 25 / MTS 25 MHz regional holdings.",
+  "2300 MHz: T2 kept, but as a regional holding excluded from totals.",
+  "Added 4.63–4.99 GHz 5G allocations (GKRCh, 31 Aug 2026), 450 MHz (T2, regional) and not-assigned or unknown entries for all missing required groups."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
-   "url": "https://github.com/davwheat/mobile-spectrum-data"
+   "title": "MTS – launch of 5G in Russia (11 Sep 2026), citing the GKRCh decision of 31 Aug 2026",
+   "url": "https://moskva.mts.ru/about/media-centr/soobshheniya-kompanii/novosti-mts-v-rossii-i-mire/2026-09-11/zapusk-5g-v-rossii-mts-otkryla-abonentam-skorostnuyu-gigabitnuyu-set-v-pyati-gorodah-i-vklyuchila-5g-na-chastotah-lte"
+  },
+  {
+   "title": "T2 – T2 launches a real 5G network in Russia (11 Sep 2026)",
+   "url": "https://msk.t2.ru/about/news-list/2026/09/11/t2-zapustil-realnuyu-set-5g-v-rossii"
+  },
+  {
+   "title": "Wikipedia – List of 5G NR networks (Russia)",
+   "url": "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+  },
+  {
+   "title": "Wikipedia – List of LTE networks in Asia (Russia)",
+   "url": "https://en.wikipedia.org/wiki/List_of_LTE_networks_in_Asia"
+  },
+  {
+   "title": "Spectrum-Tracker – Russia",
+   "url": "https://www.spectrum-tracker.com/Russia/MTS"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data – RU (LGPL-3.0)",
+   "url": "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RU"
+  },
+  {
+   "title": "TeleGeography – MTS awarded Russia's first mmWave 5G licence (2020)",
+   "url": "https://www.commsupdate.com/articles/2020/07/29/mts-awarded-russias-first-mmwave-5g-licence/"
   }
  ]
 }
