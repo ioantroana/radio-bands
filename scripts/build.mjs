@@ -26,5 +26,22 @@ fs.writeFileSync("dist/totals.json", JSON.stringify(totals, null, 1));
 const core = fs.readFileSync("site/core.js", "utf8").replace(/^export /gm, "");
 const app = fs.readFileSync("site/app.js", "utf8");
 const html = fs.readFileSync("site/template.html", "utf8").replace("/*CORE*/", () => core).replace("/*APP*/", () => app);
-fs.writeFileSync("dist/index.html", html);
+// A full document for static hosting (Vercel); the bare fragment is what the Artifact publisher wraps itself.
+const doc = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f5f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1215" media="(prefers-color-scheme: dark)">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+${html.replace(/^<meta charset="utf-8">\n/, "")}
+</body>
+</html>
+`;
+fs.writeFileSync("dist/index.html", doc);
+fs.mkdirSync("build", { recursive: true });
+fs.writeFileSync("build/artifact.html", html);
 console.log(`built ${countries.length} countries, ${(fs.statSync("dist/spectrum.json").size / 1024).toFixed(0)} KB data`);

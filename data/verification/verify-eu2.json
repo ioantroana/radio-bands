@@ -1,0 +1,1421 @@
+[
+ {
+  "country": "fr",
+  "band": "3500",
+  "operator": "sfr/bouygues/free/orange",
+  "field": "blocks",
+  "claimed": "SFR 3490-3570, Bouygues 3570-3640, Free 3640-3710, Orange 3710-3800",
+  "found": "Arcep chart 'A partir du 8 fevrier 2025': 80/70/70/90 MHz in SFR, Bouygues, Free, Orange order from 3490 to 3800; spectrum-tracker gives identical edges",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+   "https://www.spectrum-tracker.com/France"
+  ],
+  "note": "Arcep PDF read as rendered image (colour legend). Largest-MHz entry for FR."
+ },
+ {
+  "country": "fr",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Orange 1805-1825, SFR 1825-1845, Free 1845-1860, Bouygues 1860-1880 (+UL)",
+  "found": "Arcep chart 20/20/15/20 in Orange, SFR, Free, Bouygues order; spectrum-tracker same edges",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+   "https://www.spectrum-tracker.com/France"
+  ],
+  "note": ""
+ },
+ {
+  "country": "fr",
+  "band": "700",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "SFR 758-763, Orange 763-773, Bouygues 773-778, Free 778-788",
+  "found": "Arcep chart 5/10/5/10 SFR, Orange, Bouygues, Free",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "fr",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned (4 experimental authorisations at 30 Jun 2025)",
+  "found": "Arcep 2030 consultation: 26 GHz window for experiments open since Jan 2019, 4 experimental authorisations in force at 30 Jun 2025; no operator authorisation in Arcep's per-operator licence table",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+   "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "fr",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Arcep 2030 consultation discusses 42 GHz (Decision (EU) 2024/1983) as a future band; Arcep per-operator table lists no 40/42 GHz rights",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+   "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "fr",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No 47 GHz right in Arcep per-operator licence table",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "fr",
+  "band": "corporate",
+  "operator": "sfr",
+  "field": "notes",
+  "claimed": "6 Jun 2026 protocol by Bouygues/Iliad/Orange to buy and split SFR (EUR 20.35bn), closing not before H2 2027",
+  "found": "fr.wikipedia SFR: 6 Jun 2026 protocol signed with Altice France, EUR 20.35bn, split 42/31/27%, dismantling targeted H2 2027",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/SFR"
+  ],
+  "note": "AdlC review date (15 Jul 2026) not checked."
+ },
+ {
+  "country": "be",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Digi(Citymesh) 3430-3480, Telenet 3480-3580, Proximus 3580-3600 (ex-NRB), Orange 3600-3700, Proximus 3700-3800",
+  "found": "BIPT decision table 2: Citymesh 3430-3480, Telenet 3480-3580, NRB 3580-3600, Orange 3600-3700, Proximus 3700-3800; BIPT 16 Apr 2024 decision approves NRB->Proximus transfer of 3580-3600; spectrum-tracker same edges",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/9ca995354937f90bd4436b040a50c41908c89719/spec-11-decisions-autorisation-3600mhz-orange-fr.pdf",
+   "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/477eb64bcbfb6dbcba1537badb2c226ba4a2c276/decision-demande-cession-droits-utilisation-bande-3600-mhz-nrb-proximus-2024-04-16.pdf",
+   "https://www.spectrum-tracker.com/Belgium"
+  ],
+  "note": "Largest-MHz entry for BE."
+ },
+ {
+  "country": "be",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Proximus 1805-1830, Orange 1830-1845, Digi 1845-1860, Telenet 1860-1880",
+  "found": "spectrum-tracker identical; BIPT lease decision lists Citymesh 1750-1765/1845-1860",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Belgium",
+   "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "be",
+  "band": "700",
+  "operator": "digi",
+  "field": "blocks",
+  "claimed": "758-763/703-708",
+  "found": "BIPT lease decision: 703-708/758-763 MHz, valid to 31 Aug 2042",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "be",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; BIPT 6 Jan 2026 found no immediate demand, re-consult by 2029",
+  "found": "BIPT communication of 6 Jan 2026: consultations did not show immediate demand; only one operator potentially interested, not at proposed price; re-consult 'au plus tard en 2029'",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/704244b899f138e6486551f4b4f96cef48db2870/communication-bande-26-ghz.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "be",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No 40/42 GHz rights in BIPT auction results or spectrum-tracker; no source explicitly states status",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://www.bipt.be/operators/results-of-the-2022-multi-band-auction",
+   "https://www.spectrum-tracker.com/Belgium"
+  ],
+  "note": "Absence claim; nothing contradicts it."
+ },
+ {
+  "country": "be",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "As 40g",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://www.spectrum-tracker.com/Belgium"
+  ],
+  "note": "Absence claim; nothing contradicts it."
+ },
+ {
+  "country": "be",
+  "band": "corporate",
+  "operator": "digi",
+  "field": "notes",
+  "claimed": "Citymesh Mobile rights leased to Digi Communications Belgium (BIPT 3 Jun 2025); Citymesh Mobile to become 100% Digi subsidiary",
+  "found": "BIPT decision 3 Jun 2025 approves lease of all Citymesh Mobile rights to Digi Communications Belgium; Citymesh Mobile and InSky to become 100% Digi subsidiaries",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+  ],
+  "note": "Orange Belgium/VOO (2023) note still flagged as background knowledge; not checked."
+ },
+ {
+  "country": "nl",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "VodafoneZiggo 3450-3550, Odido 3550-3650, KPN 3650-3750",
+  "found": "Staatscourant 2024-23967 licences: Vodafone Libertel 3450-3460/3460-3470/3470-3530/3530-3540/3540-3550; Odido 3550-3560/.../3570-3630/3630-3640/3640-3650; KPN 3650-3660/.../3690-3750; spectrum-tracker same",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://zoek.officielebekendmakingen.nl/stcrt-2024-23967.html",
+   "https://www.spectrum-tracker.com/Netherlands"
+  ],
+  "note": "Largest-MHz entry for NL."
+ },
+ {
+  "country": "nl",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "KPN 1805-1825, VodafoneZiggo 1825-1845, Odido 1845-1875",
+  "found": "spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Netherlands"
+  ],
+  "note": ""
+ },
+ {
+  "country": "nl",
+  "band": "700",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "VodafoneZiggo 758-768, KPN 768-778, Odido 778-788",
+  "found": "spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Netherlands"
+  ],
+  "note": ""
+ },
+ {
+  "country": "nl",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; policy under development; May 2025 demand study",
+  "found": "RDI 5G dossier: 26 GHz policy still in development; Rijksoverheid page for the May 2025 study exists; no 26 GHz licence on spectrum-tracker",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.rdi.nl/onderwerpen/technologische-ontwikkelingen/dossier-5g/frequenties",
+   "https://www.rijksoverheid.nl/documenten/2025/05/09/behoefte-aan-en-maatschappelijke-waarde-van-frequentiebanden-3-8-4-2-ghz-en-26-ghz"
+  ],
+  "note": "'No auction scheduled as of Sep 2026' not separately confirmed."
+ },
+ {
+  "country": "nl",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No source states status; absent from spectrum-tracker",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://www.spectrum-tracker.com/Netherlands"
+  ],
+  "note": "Absence claim."
+ },
+ {
+  "country": "nl",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "As 40g",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://www.spectrum-tracker.com/Netherlands"
+  ],
+  "note": "Absence claim."
+ },
+ {
+  "country": "nl",
+  "band": "corporate",
+  "operator": "odido",
+  "field": "notes",
+  "claimed": "Apax/Warburg Pincus owned since 2022, rebranded Odido Sep 2023",
+  "found": "nl.wikipedia Odido: Apax and Warburg Pincus joint owners since March 2022; IPO only discussed; no ownership change in 2026",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://nl.wikipedia.org/wiki/Odido"
+  ],
+  "note": ""
+ },
+ {
+  "country": "lu",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "POST 3420-3530, Orange 3540-3650, Tango 3650-3750",
+  "found": "ILR list 27 May 2026: POST 3420-3530, Orange 3540-3650, Proximus Luxembourg 3650-3750 (3 Aug 2020, 15 years)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf"
+  ],
+  "note": "spectrum-tracker (Sep 2024) additionally shows Luxembourg Online at 3530-3540 and omits Orange; ILR (regulator) wins, file correct. Largest-MHz entry for LU."
+ },
+ {
+  "country": "lu",
+  "band": "1800",
+  "operator": "tango",
+  "field": "blocks",
+  "claimed": "1830-1855/1735-1760",
+  "found": "ILR list prints Proximus 1735-1760 paired with '1849,9-1864,9' (apparent typo; overlaps POST 1855-1880); spectrum-tracker gives 1830-1855",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf",
+   "https://www.spectrum-tracker.com/Luxembourg"
+  ],
+  "note": "Keep file value; optionally note the ILR typo."
+ },
+ {
+  "country": "lu",
+  "band": "2600",
+  "operator": "tango",
+  "field": "blocks",
+  "claimed": "2660-2680/2540-2560 (2x20)",
+  "found": "ILR: Proximus 2540-2560/2660-2680 only; spectrum-tracker additionally shows Proximus 2560-2570/2680-2690",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf",
+   "https://www.spectrum-tracker.com/Luxembourg"
+  ],
+  "note": "Regulator list wins; file correct."
+ },
+ {
+  "country": "lu",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "ILR list (May 2026) contains no 26 GHz right",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "lu",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No 40 GHz right in ILR list",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "lu",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No 47 GHz right in ILR list",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "lu",
+  "band": "corporate",
+  "operator": "tango",
+  "field": "legal",
+  "claimed": "Proximus Luxembourg S.A.",
+  "found": "ILR list names Proximus Luxembourg S.A., Orange Communications Luxembourg S.A., Entreprise des Postes & Telecommunications, Luxembourg Online S.A.",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.ilr.lu/wp-content/uploads/frequences-radioelectriques/ilr-fre-list-20260527_com-el_droits-it-individuels-existants.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "es",
+  "band": "26g",
+  "operator": "globe/movistar/masorange",
+  "field": "blocks",
+  "claimed": "Globe 24900-25100 (CyL), Movistar 25700-26700, MasOrange 26700-27100; Vodafone none",
+  "found": "RPC queried 2026-09-28: DGZZ-2300319 Globe 24.9-25.1 GHz Castilla y Leon; DGZZ-2300320..324 Telefonica 25.7-25.9, 25.9-26.1, 26.1-26.3, 26.3-26.5, 26.5-26.7; DGZZ-2300329/330 Orange Espagne 26.7-26.9, 26.9-27.1; only 8 concessions, no Vodafone",
+  "verdict": "confirmed",
+  "sources": [
+   "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+   "https://www.spectrum-tracker.com/Spain"
+  ],
+  "note": "spectrum-tracker (Jan 2025) instead shows MasOrange 26100-26300, Vodafone 26300-26500, Movistar 26500-27500 - conflicts with the register; regulator wins. Reference numbers DGZZ-2300325..328 are missing from the register sequence, consistent with renounced/cancelled concessions (Vodafone). Largest-MHz entry (Movistar 1000 MHz)."
+ },
+ {
+  "country": "es",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Xfera 3420-3460, Digi 3460-3480, Movistar 3480-3600, Orange 3600-3700, unassigned 3700-3710, Vodafone 3710-3800",
+  "found": "RPC: M ZZ-0020008 Xfera 3420-3460; DGZZ-2400610 DS Mobile Networks 3460-3480; DGZZ-2400611 TME 3480-3500; M ZZ-0020007 TME 3500-3540; DGZZ-1800456..465 TME 3540-3590; DGZZ-2100247 TME 3590-3600; DGZZ-1601426 Orange 3600-3640; DGZZ-1800444..455 Orange 3640-3700; DGZZ-1800466..483 Vodafone 3710-3800. Expiries match. spectrum-tracker agrees",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx",
+   "https://www.spectrum-tracker.com/Spain"
+  ],
+  "note": ""
+ },
+ {
+  "country": "es",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Movistar 1805.1-1825.1, Vodafone -1845.1, Digi -1855.1, MasOrange 1855.1-1879.9",
+  "found": "spectrum-tracker identical (MasOrange 24.8)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Spain"
+  ],
+  "note": ""
+ },
+ {
+  "country": "es",
+  "band": "2100",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Digi 2110-2120, MasOrange 2120-2140, Vodafone 2140-2155, Movistar 2155-2170",
+  "found": "spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Spain"
+  ],
+  "note": ""
+ },
+ {
+  "country": "es",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "RPC service list has no 40/42 GHz category (only up to 26 GHz)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+  ],
+  "note": ""
+ },
+ {
+  "country": "es",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "RPC has no 47 GHz category",
+  "verdict": "confirmed",
+  "sources": [
+   "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+  ],
+  "note": ""
+ },
+ {
+  "country": "es",
+  "band": "corporate",
+  "operator": "masorange",
+  "field": "notes",
+  "claimed": "'Joint venture of Orange Espagne and Grupo MasMovil'",
+  "found": "Orange completed purchase of the remaining 50% from Lorca (KKR/Cinven/Providence) on 8 Jun 2026 (EUR 4.25-4.3bn; EC cleared 10 Apr 2026); MasOrange is now a 100% Orange subsidiary",
+  "verdict": "conflict",
+  "sources": [
+   "https://es.wikipedia.org/wiki/MasOrange",
+   "https://theobjective.com/economia/2026-06-08/orange-compra-masorange-4300-millones/"
+  ],
+  "note": "Update operator note."
+ },
+ {
+  "country": "es",
+  "band": "corporate",
+  "operator": "vodafone",
+  "field": "notes",
+  "claimed": "Owned by Zegona since 2024",
+  "found": "Consistent with RPC holder 'Vodafone Espana, S.A.' (ownership not re-checked beyond file)",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://teleco.serviciosmin.gob.es/RPC_Consulta/FrmConsulta.aspx"
+  ],
+  "note": ""
+ },
+ {
+  "country": "se",
+  "band": "3500",
+  "operator": "all",
+  "field": "holdings",
+  "claimed": "Telia 120, Net4Mobility 100, Tre 100 MHz",
+  "found": "PTS: Hi3G 100 MHz (SEK 491.25m), Net4Mobility 100 MHz (SEK 665.5m), Telia 120 MHz (SEK 760.25m), valid to 31 Dec 2045",
+  "verdict": "confirmed",
+  "sources": [
+   "https://pts.se/radio/auktioner/genomforda-auktioner/"
+  ],
+  "note": "spectrum-tracker gives positions Tre 3400-3500, Telia 3500-3620, N4M 3620-3720 (single non-regulator source: could be drawn as 'unverified'). Largest-MHz entry."
+ },
+ {
+  "country": "se",
+  "band": "1800",
+  "operator": "n4m",
+  "field": "holdings",
+  "claimed": "2x35 MHz (Telia 35, N4M 35, Tre 5)",
+  "found": "PTS: Net4Mobility and Telia each 2x35 MHz from 2011 auction, Hi3G 2x5 from 2016",
+  "verdict": "confirmed",
+  "sources": [
+   "https://pts.se/radio/auktioner/genomforda-auktioner/"
+  ],
+  "note": "spectrum-tracker shows N4M 2x30 + 5 unallocated - conflicts with PTS; regulator wins, file correct."
+ },
+ {
+  "country": "se",
+  "band": "2600",
+  "operator": "all",
+  "field": "holdings",
+  "claimed": "Telia 2x30, N4M 2x30, Tre 2x10 + 40 TDD",
+  "found": "PTS: Telia 2x30, Net4Mobility 2x30, Hi3G 2x10 + 40 MHz TDD (2026-2050)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://pts.se/radio/auktioner/genomforda-auktioner/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "se",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; local licences only in 24.25-25.25 GHz",
+  "found": "PTS: 24.25-25.25 GHz available for local licences; 2025 consultation found interest in 26/42 GHz too limited to justify an auction in the near term",
+  "verdict": "confirmed",
+  "sources": [
+   "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/",
+   "https://pts.se/nyheter-och-pressmeddelanden/stort-intresse-for-15-ghz-bandet--pts-kommer-utreda-tilldelning/"
+  ],
+  "note": "File says '24.25-25.1(25.25) GHz'; PTS page says 24.25-25.25 GHz."
+ },
+ {
+  "country": "se",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "PTS: 42 GHz interest insufficient for near-term auction",
+  "verdict": "confirmed",
+  "sources": [
+   "https://pts.se/nyheter-och-pressmeddelanden/stort-intresse-for-15-ghz-bandet--pts-kommer-utreda-tilldelning/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "se",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No source found stating status",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://frekvensplanen.pts.se/"
+  ],
+  "note": "Absence claim."
+ },
+ {
+  "country": "se",
+  "band": "3500",
+  "operator": "-",
+  "field": "note (3.8-4.2 GHz local)",
+  "claimed": "PTS starts assigning local licences in 3800-3920/3990-4130 MHz from 1 Oct 2026",
+  "found": "PTS page: PTS *proposes* making 3800-3920/3990-4130 MHz available from 1 Oct 2026; proposal sent for comment mid-Aug 2026",
+  "verdict": "conflict",
+  "sources": [
+   "https://pts.se/tillstand-och-anmalan/radio/lokala-tillstand-37-ghz--och-26-ghz-banden/"
+  ],
+  "note": "Wording only: say 'proposes (remiss Aug 2026) to open ... from 1 Oct 2026'."
+ },
+ {
+  "country": "se",
+  "band": "corporate",
+  "operator": "all",
+  "field": "names",
+  "claimed": "Telia, Net4Mobility (Tele2/Telenor), Tre (Hi3G), Teracom",
+  "found": "PTS lists Telia Sverige AB, Net4Mobility HB, Hi3G Access AB, Teracom (2.3 GHz) as licensees (page updated 2026-05-11)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://pts.se/radio/auktioner/genomforda-auktioner/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mt",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Epic 3500-3600, Melita 3600-3700, GO 3700-3800",
+  "found": "MCA licence annexes: Epic MCA/L/21-4278 3500-3600; Melita MCA/L/21-4207 3600-3700 (scanned, read visually); GO MCA/L/21-4277 3700-3800; spectrum-tracker same",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.mca.org.mt/sites/default/files/pageattachments/MCA-L-21-4278_Epic_3600MHz.pdf",
+   "https://www.mca.org.mt/sites/default/files/pageattachments/MCA-L-21-4207_Melita_3600MHz.pdf",
+   "https://www.mca.org.mt/sites/default/files/pageattachments/MCA-L-21-4277_GO%20plc_3600MHz.pdf",
+   "https://www.spectrum-tracker.com/Malta"
+  ],
+  "note": "Largest-MHz entry."
+ },
+ {
+  "country": "mt",
+  "band": "1800",
+  "operator": "go",
+  "field": "blocks",
+  "claimed": "1805-1825/1710-1730, expiry 8 Apr 2033",
+  "found": "GO licence (rev. 2026-07): channels 1-4 1710-1730/1805-1825; expiry 8 Apr 2033 (original 26 Aug 2026)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.mca.org.mt/sites/default/files/pageattachments/900MHz-1800MHz_Licence_GO_2026-01-30_Rev2026-07_final.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mt",
+  "band": "2600",
+  "operator": "go/epic",
+  "field": "blocks",
+  "claimed": "GO 2620-2660, Epic 2660-2690 (+UL)",
+  "found": "spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Malta"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mt",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned (no demand)",
+  "found": "MCA Annual Plan 2026: 700 MHz and 26 GHz 'remains unassigned, due to the lack of market demand'",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mt",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; 42 GHz framework planned",
+  "found": "MCA Annual Plan 2026 lists 'Making available spectrum in the 42 GHz band' (consultation/decision)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mt",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Not mentioned in MCA Annual Plan 2026",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://www.mca.org.mt/sites/default/files/pageattachments/MCA%20Annual%20Plan%202026.pdf"
+  ],
+  "note": "Absence claim."
+ },
+ {
+  "country": "mt",
+  "band": "corporate",
+  "operator": "epic",
+  "field": "notes",
+  "claimed": "Formerly Vodafone Malta, Monaco Telecom",
+  "found": "Wikipedia Epic (telecommunications): owned by Monaco Telecom",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Epic_(telecommunications)"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cy",
+  "band": "3500",
+  "operator": "epic",
+  "field": "holdings",
+  "claimed": "50 MHz",
+  "found": "Operator Watch: 'Cyta and Epic acquired a 2x10 MHz block in the 700 MHz and 100 MHz in the 3.6 GHz'; spectrum-tracker: Epic 3700-3800 (100 MHz)",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.operatorwatch.com/2022/01/cyprus-is-hoping-for-5g-to-gain-ground.html",
+   "https://www.spectrum-tracker.com/Cyprus"
+  ],
+  "note": "Two independent sources give Epic 100 MHz. Fix: epic mhz 100."
+ },
+ {
+  "country": "cy",
+  "band": "3500",
+  "operator": "cyta",
+  "field": "holdings",
+  "claimed": "100 MHz",
+  "found": "Operator Watch 100 MHz; spectrum-tracker 3500-3600; Wikipedia 100 MHz",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.operatorwatch.com/2022/01/cyprus-is-hoping-for-5g-to-gain-ground.html",
+   "https://www.spectrum-tracker.com/Cyprus",
+   "https://en.wikipedia.org/wiki/List_of_5G_NR_networks"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cy",
+  "band": "3500",
+  "operator": "cablenet/primetel",
+  "field": "holdings",
+  "claimed": "50 MHz each",
+  "found": "Operator Watch: 50 MHz each. spectrum-tracker: 100 MHz each (Cablenet 3400-3500, Primetel 3600-3700). cyprusprofile (Dec 2020) says 'the entire radio spectrum (460 MHz) ... sold', which implies 400 MHz at 3.6 GHz, i.e. 100 MHz each",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.operatorwatch.com/2022/01/cyprus-is-hoping-for-5g-to-gain-ground.html",
+   "https://www.spectrum-tracker.com/Cyprus",
+   "https://www.cyprusprofile.com/articles/5g-bidding-process-wraps-first-licences-january-2021"
+  ],
+  "note": "Unresolved between sources; no regulator result found. Keep 50 (guaranteed basic package) but add a note that ST and 'all 460 MHz sold' suggest 100 MHz each."
+ },
+ {
+  "country": "cy",
+  "band": "700",
+  "operator": "epic",
+  "field": "holdings",
+  "claimed": "2x5 MHz",
+  "found": "Operator Watch: Epic 2x10 MHz; spectrum-tracker: Epic 703-713/758-768 (2x10). Tender (THE D1/2020) offered 6x2x5 MHz, all 60 MHz sold",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.operatorwatch.com/2022/01/cyprus-is-hoping-for-5g-to-gain-ground.html",
+   "https://www.spectrum-tracker.com/Cyprus",
+   "https://www.cyprusprofile.com/articles/5g-bidding-process-wraps-first-licences-january-2021"
+  ],
+  "note": "Fix: epic mhz 10 (then 700 totals 10+10+5+5 = 2x30, matching the full band)."
+ },
+ {
+  "country": "cy",
+  "band": "1800",
+  "operator": "all",
+  "field": "holdings",
+  "claimed": "24.8 MHz each (Cyta, Epic, PrimeTel)",
+  "found": "spectrum-tracker: Cyta 1805.2-1830, Epic 1830.2-1855, Primetel 1855.2-1880 (24.8 each)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Cyprus"
+  ],
+  "note": "Positions from ST could upgrade this entry to 'unverified'."
+ },
+ {
+  "country": "cy",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "DEC register (Apr 2025) lists only 700/800/900/1800/2100/2600/3600 MHz mobile authorisations; tender list has no mmWave procedure",
+  "verdict": "confirmed",
+  "sources": [
+   "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/tenderprocedures_el/tenderprocedures_el?OpenDocument"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cy",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Same DEC register: no 40 GHz authorisation",
+  "verdict": "confirmed",
+  "sources": [
+   "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/tenderprocedures_el/tenderprocedures_el?OpenDocument"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cy",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Same DEC register: no 47 GHz authorisation",
+  "verdict": "confirmed",
+  "sources": [
+   "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/tenderprocedures_el/tenderprocedures_el?OpenDocument"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cy",
+  "band": "corporate",
+  "operator": "epic",
+  "field": "notes",
+  "claimed": "Formerly MTN Cyprus, Monaco Telecom",
+  "found": "Wikipedia Epic (Cyprus): MTN 2007-2019, owned by Monaco Telecom; DEC register names 'epic ltd'",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Epic_(Cyprus)"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cz",
+  "band": "3500",
+  "operator": "poda/vodafone",
+  "field": "blocks",
+  "claimed": "PODA 3600-3640; Vodafone 3540-3600",
+  "found": "CTU post-refarming table (2021) had PODA 3600-3640, but Lupa.cz reports Vodafone bought 3600-3640 MHz from PODA in early 2023 (Vodafone now has a 100 MHz block 3540-3640); the file's own cited Lupa article (10 Jul 2023) says PODA 'gave up C-band activities' and Vodafone acquired its 40 MHz; gsmweb.cz marks 3600-3640 'drive PODA' (formerly PODA); spectrum-tracker shows Vodafone 3540-3640",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.lupa.cz/aktuality/vodafone-koupil-od-firmy-poda-mobilni-5g-frekvence-3600-az-3640-mhz/",
+   "https://www.lupa.cz/aktuality/prazakuv-kaprain-se-zbavil-5g-frekvence-3-5-ghz-ziskal-ji-t-mobile/",
+   "https://gsmweb.cz/clanky/freq2.htm",
+   "https://www.spectrum-tracker.com/Czech-Republic",
+   "https://ctu.gov.cz/refarming-3600/rozhodnuti"
+  ],
+  "note": "Fix: change block {op:'poda', f:[3600,3640]} to op 'vodafone' (note: bought from PODA, 2023); drop PODA operator. Vodafone total 100 MHz."
+ },
+ {
+  "country": "cz",
+  "band": "3500",
+  "operator": "tmobile/o2",
+  "field": "blocks",
+  "claimed": "T-Mobile 3400-3540; O2 3640-3800",
+  "found": "CTU table: Incrate 3400-3480, T-Mobile 3480-3540, O2 3640-3700, Nordic 3700-3800; Lupa: T-Mobile bought Incrate's 80 MHz (140 MHz total); Lupa 10 Jul 2024: Nordic's 3.7 GHz assignment transferred before sale to O2; spectrum-tracker T-Mobile 3400-3540",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://ctu.gov.cz/refarming-3600/rozhodnuti",
+   "https://www.lupa.cz/aktuality/nordic-telecom-prodan-o2/",
+   "https://www.spectrum-tracker.com/Czech-Republic"
+  ],
+  "note": "spectrum-tracker (Oct 2024) still shows Nordic at 3700-3800. Largest-MHz entry."
+ },
+ {
+  "country": "cz",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "O2 1805.1-1832.9, T-Mobile 1832.9-1852.9, Vodafone 1852.9-1879.9",
+  "found": "spectrum-tracker identical totals/edges",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Czech-Republic"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cz",
+  "band": "700",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "O2 758-768, T-Mobile 768-778, Vodafone 778-788",
+  "found": "spectrum-tracker identical; gsmweb confirms band",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Czech-Republic"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cz",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; 24.25-27.5 GHz individual authorisations, 26.5-27.3 GHz for 5G/campus",
+  "found": "CTU PVRS-2: 26.5-27.3 GHz for mobile-terminal networks (channels from lower edge), 24.25-25.1 and 27.3-27.5 GHz FWA; no national assignment",
+  "verdict": "confirmed",
+  "sources": [
+   "https://ctu.gov.cz/sites/default/files/obsah/pvrs/PVRS-2%20clean.pdf"
+  ],
+  "note": "'Opened 1 Jul 2026' and 'national award ~2032' not confirmed in what I read (the cited press release is from Aug 2020)."
+ },
+ {
+  "country": "cz",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Cited CTU 13 Aug 2026 document is about 800/1800/2600 MHz and does not mention 40 GHz",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+  ],
+  "note": "Cited source does not support the claim; replace with a band-plan source (e.g. PVRS for 40.5-43.5 GHz) or note as unverified."
+ },
+ {
+  "country": "cz",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Same cited document does not mention 47 GHz",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+  ],
+  "note": "As 40g."
+ },
+ {
+  "country": "cz",
+  "band": "corporate",
+  "operator": "poda",
+  "field": "operator",
+  "claimed": "PODA listed as a current 3.5 GHz licensee",
+  "found": "PODA sold its 3600-3640 MHz to Vodafone in 2023",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.lupa.cz/aktuality/vodafone-koupil-od-firmy-poda-mobilni-5g-frekvence-3600-az-3640-mhz/"
+  ],
+  "note": "Remove PODA from operators (or mark former). CTU's 13 Aug 2026 document lists only O2, T-Mobile, Vodafone as 800/1800/2600 holders."
+ },
+ {
+  "country": "sk",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "4ka 3400-3500, Orange 3500-3600, O2 3600-3700, Telekom 3700-3800",
+  "found": "RU decisions 2510591002 (SWAN) 3400-3500, 2510591004 (Orange) 3500-3600, 2510591003 (O2) 3600-3700, 2510591005 (Slovak Telekom) 3700-3800",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591002_h_swan.pdf",
+   "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591004_h_orange.pdf",
+   "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591003_h_o2.pdf",
+   "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/zoznam-rozhodnuti-oblasti-spravy-frekvencneho-spektra/vyberove-konania/frekvencne-pasmo-3600-mhz/cele-sr/2510591005_h_slovak-telekom.pdf"
+  ],
+  "note": "spectrum-tracker (Jul 2025, pre-rearrangement) shows 4ka 3410-3500; RU wins. teleoff.gov.sk serves an incomplete TLS chain; fetched after adding Sectigo's intermediate from its AIA URL. Largest-MHz entry."
+ },
+ {
+  "country": "sk",
+  "band": "2100",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Orange 2110-2125, Telekom 2125-2145, O2 2145-2160, 4ka 2160-2170 (from 8 Sep 2026)",
+  "found": "RU auction results: Orange C1-C3 1920-1935/2110-2125, ST C4-C7 1935-1955/2125-2145, O2 C8-C10 1955-1970/2145-2160, SWAN C11-C12 1970-1980/2160-2170; press release: 2100 available from 8 Sep 2026; spectrum-tracker same",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf",
+   "https://www.spectrum-tracker.com/Slovakia"
+  ],
+  "note": ""
+ },
+ {
+  "country": "sk",
+  "band": "1400",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "4ka 1432-1452, Orange 1452-1472, O2 1472-1492, Telekom 1492-1512",
+  "found": "RU auction results table E1-E8 identical",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.teleoff.gov.sk/files/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane/vysledky-elektronickej-aukcie.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "sk",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "RU Jan 2025 market assessment mentions 26 GHz only as a future ultra-high-capacity band; Jul 2025 auction covered 800/900/1500/2100/2600 only",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.teleoff.gov.sk/files/urad/odbory-oddelenia/odbor-spravy-frekvencneho-spektra/konzultacne-miesto/2025_aukcia/posudenie-situacie-trhu.pdf",
+   "https://www.teleoff.gov.sk/urad/aktuality/tlacove-spravy/urad-uspesne-ukoncil-aukciu-mobilnych-frekvencii-rekordnym-vynosom-vsetky-frekvencie-su-predane.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "sk",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No source states it explicitly",
+  "verdict": "unverifiable",
+  "sources": [],
+  "note": "Absence claim."
+ },
+ {
+  "country": "sk",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No source states it explicitly",
+  "verdict": "unverifiable",
+  "sources": [],
+  "note": "Absence claim."
+ },
+ {
+  "country": "sk",
+  "band": "corporate",
+  "operator": "o2",
+  "field": "notes",
+  "claimed": "e& bought control of PPF Telecom's CEE operators incl. O2 Slovakia (flagged 'background knowledge, not source-verified')",
+  "found": "e& completed acquisition of controlling stake (50%+1) in PPF Telecom's Bulgaria, Hungary, Serbia, Slovakia units (2024); group now named 'e& PPF Telecom Group'; O2 Slovakia also completed purchase of UPC Broadband Slovakia (fixed) in 2026",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://en.wikipedia.org/wiki/E%26_PPF_Telecom_Group",
+   "https://www.ppf.eu/en/press-release/e-ppf-telecom-group-subsidiary-o2-slovakia-acquires-upc-broadband-in-slovakia"
+  ],
+  "note": "Remove the 'not source-verified' caveat and name the group 'e& PPF Telecom Group'."
+ },
+ {
+  "country": "si",
+  "band": "26g",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Telemach 26500-26700, A1 26700-27100, Telekom 27100-27500",
+  "found": "AKOS strategy 2027-2029 Slika 2-1 and AKOS 2021 results image (BG01 Telemach, BG02-03 A1, BG04-05 Telekom); spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+   "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG",
+   "https://www.spectrum-tracker.com/Slovenia"
+  ],
+  "note": "Largest-MHz entry (Telekom/A1 400 MHz)."
+ },
+ {
+  "country": "si",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Telekom 3420-3560, Telemach 3560-3700, A1 3700-3800",
+  "found": "AKOS Slika 2-1 and 2021 results image (BF01-BF14 Telekom, BF15-BF28 Telemach, BF29-BF38 A1); spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+   "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG",
+   "https://www.spectrum-tracker.com/Slovenia"
+  ],
+  "note": ""
+ },
+ {
+  "country": "si",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "A1 1805-1835, Telekom 1835-1860, Telemach 1860-1880",
+  "found": "AKOS Slika 2-1 identical; spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+   "https://www.spectrum-tracker.com/Slovenia"
+  ],
+  "note": ""
+ },
+ {
+  "country": "si",
+  "band": "2300",
+  "operator": "t2/telemach",
+  "field": "blocks",
+  "claimed": "T-2 2330-2370, Telemach 2370-2400",
+  "found": "AKOS 2026 Slika 2-1: 2300-2320 local BA1, 2320-2330 local BA2, T-2 2330-2370, Telemach 2370-2400. AKOS 2021 results image and spectrum-tracker: T-2 2320-2360, Telemach 2360-2390",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf",
+   "https://www.akos-rs.si/fileadmin/user_upload/REZULTATI_DRAZBE_3.JPG",
+   "https://www.spectrum-tracker.com/Slovenia"
+  ],
+  "note": "Already disclosed in file notes; latest regulator figure followed. OK."
+ },
+ {
+  "country": "si",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; may be offered in 2028",
+  "found": "AKOS strategy: 2025 demand survey for 42 GHz and 25.1-26.5 GHz found no interest; 40.5-43.5 GHz planned for 2028 multiband auction",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "si",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Not in AKOS Slika 2-1 of assigned spectrum",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Radijski_spekter/Novice_2026/SURS_Strategija_upravljanja_radiofrekvencnega_spektra_za_obdobje_2027-2029_-_posvetovalni_dokument.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "si",
+  "band": "corporate",
+  "operator": "telemach",
+  "field": "notes",
+  "claimed": "United Group",
+  "found": "decodetv (28 Aug 2026): United Group still owns Telemach Slovenia; only Bosnia/Montenegro/Serbian assets being sold",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.decodetv.com/2026/08/28/united-group-posts-strong-growth-amid-asset-sales/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "hr",
+  "band": "26g",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Telemach 26500-26700, A1 26700-26900, HT 26900-27300, EOLO 27300-27500",
+  "found": "HAKOM database: identical, all to 2036; spectrum-tracker identical",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+   "https://www.spectrum-tracker.com/Croatia"
+  ],
+  "note": "Largest-MHz entry (HT 400 MHz)."
+ },
+ {
+  "country": "hr",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "HT 3480-3600, Telemach 3600-3700, A1 3700-3800",
+  "found": "HAKOM database identical (2036); spectrum-tracker identical, 3400-3480 regional",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+   "https://www.spectrum-tracker.com/Croatia"
+  ],
+  "note": ""
+ },
+ {
+  "country": "hr",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "HT 1805-1835, Telemach 1835-1855, A1 1855-1880",
+  "found": "HAKOM database identical (2039)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+  ],
+  "note": ""
+ },
+ {
+  "country": "hr",
+  "band": "2600",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Telemach 2620-2640, HT 2640-2665, A1 2665-2690",
+  "found": "HAKOM database identical",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+  ],
+  "note": ""
+ },
+ {
+  "country": "hr",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "HAKOM national assignment database lists nothing above 27.5 GHz",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+  ],
+  "note": ""
+ },
+ {
+  "country": "hr",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "HAKOM database lists nothing above 27.5 GHz",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+  ],
+  "note": ""
+ },
+ {
+  "country": "hr",
+  "band": "corporate",
+  "operator": "telemach",
+  "field": "notes",
+  "claimed": "United Group, formerly Tele2 Croatia",
+  "found": "HAKOM names Telemach Hrvatska d.o.o.; decodetv Aug 2026: United Group still owns Telemach Croatia",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+   "https://www.decodetv.com/2026/08/28/united-group-posts-strong-growth-amid-asset-sales/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "gr",
+  "band": "26g",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Nova 26500-26700, COSMOTE 26700-27100, Vodafone 27100-27500",
+  "found": "EETT: COSMOTE 26.7-27.1, WIND 26.5-26.7, VODAFONE 27.1-27.5 GHz (16/12/2020-15/12/2035); FWA rights 24.5-26.1 GHz separate",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+   "https://www.spectrum-tracker.com/Greece"
+  ],
+  "note": "spectrum-tracker identical (it additionally draws the FWA blocks). Largest-MHz entry."
+ },
+ {
+  "country": "gr",
+  "band": "3500",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Vodafone 3410-3450 & 3600-3700, COSMOTE 3450-3600, Nova 3700-3800",
+  "found": "EETT: COSMOTE 3450-3470 (geo-restricted), 3470-3540, 3540-3600 (shared with OTE to 30-04-2029); WIND 3700-3800; VODAFONE 3410-3420 (indoor + geo-restricted), 3420-3450 (geo-restricted), 3600-3700; all to 15/12/2035",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+  ],
+  "note": "spectrum-tracker shows 3400-3410 unallocated and Vodafone 3410-3450, consistent."
+ },
+ {
+  "country": "gr",
+  "band": "1800",
+  "operator": "all",
+  "field": "blocks",
+  "claimed": "Nova 1805-1820, Vodafone 1820-1845, COSMOTE 1845-1880",
+  "found": "EETT: WIND 1805-1820, VODAFONE 1820-1830 (to 2027) and 1830-1845, COSMOTE 1845-1855 (to 2027) and 1855-1880",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+   "https://www.spectrum-tracker.com/Greece"
+  ],
+  "note": ""
+ },
+ {
+  "country": "gr",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "EETT competitive-rights page lists no 40 GHz right",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "gr",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "EETT page lists no 47 GHz right",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "gr",
+  "band": "corporate",
+  "operator": "nova",
+  "field": "notes",
+  "claimed": "United Group bought WIND Hellas 2022, merged with Nova; EETT still names licensee WIND",
+  "found": "EETT tables still say WIND; decodetv Aug 2026: Nova Greece owned by United Group (strongest performer)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+   "https://www.decodetv.com/2026/08/28/united-group-posts-strong-growth-amid-asset-sales/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "3500",
+  "operator": "all",
+  "field": "holdings",
+  "claimed": "Turkcell 140, Turk Telekom 120, Vodafone 80 MHz",
+  "found": "BTK: Turkcell A1,B1,B4,B5,B6; Turk Telekom A3,B2,B7,B8; Vodafone A2,B3 (B1-B3 80 MHz, B4-B8 20 MHz per file/Resmi Gazete) = 140/120/80; spectrum-tracker: TT 3460-3580, Vodafone 3580-3660, Turkcell 3660-3800, 3400-3460 unallocated",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed",
+   "https://www.spectrum-tracker.com/Turkey"
+  ],
+  "note": "Positions exist in one non-regulator source only, so 'holdings' is correct (could be 'unverified' blocks). Largest-MHz entry."
+ },
+ {
+  "country": "tr",
+  "band": "2100",
+  "operator": "all",
+  "field": "holdings",
+  "claimed": "Turkcell 30, Vodafone 15, Turk Telekom 15",
+  "found": "spectrum-tracker: Turkcell 20+10, Vodafone 15, TT 15",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Turkey"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "700",
+  "operator": "all",
+  "field": "holdings",
+  "claimed": "10 each",
+  "found": "spectrum-tracker: Turkcell 703-713, Vodafone 713-723, TT 723-733 (2x10 each); BTK: A1-A3 one package each",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.spectrum-tracker.com/Turkey",
+   "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "BTK: tender covered 400 MHz in 700 MHz and 3.5 GHz only",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "40g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "BTK tender scope 700 MHz + 3.5 GHz only",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "BTK tender scope 700 MHz + 3.5 GHz only",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "corporate",
+  "operator": "all",
+  "field": "names",
+  "claimed": "Turkcell, Vodafone TR, Turk Telekom (TT Mobil)",
+  "found": "BTK names Turkcell Iletisim Hizmetleri A.S., TTMobil Iletisim Hizmetleri A.S., Vodafone Telekomunikasyon A.S. as bidders/winners (Oct 2025)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.btk.gov.tr/en/news/5g-tender-to-propel-turkey-forward-in-communications-completed"
+  ],
+  "note": ""
+ },
+ {
+  "country": "tr",
+  "band": "26g/40g/47g",
+  "operator": "-",
+  "field": "positions",
+  "claimed": "positions: null on not-assigned entries",
+  "found": "Other files use 'holdings' for not-assigned entries; validator passes",
+  "verdict": "confirmed",
+  "sources": [],
+  "note": "Cosmetic: consider 'holdings' for consistency."
+ },
+ {
+  "country": "se",
+  "band": "coverage",
+  "operator": "-",
+  "field": "badge",
+  "claimed": "partial",
+  "found": "9 of 11 current entries are 'holdings'; only 2000tdd is 'unknown'",
+  "verdict": "conflict",
+  "sources": [],
+  "note": "Badge: 'holdings-only' describes the file better; 'partial' is defensible only because 2000tdd holder is unknown. Low priority."
+ },
+ {
+  "country": "cz",
+  "band": "coverage",
+  "operator": "-",
+  "field": "badge",
+  "claimed": "positions-verified",
+  "found": "After the PODA fix all edges still come from CTU/Lupa/gsmweb (>=2 sources); badge OK",
+  "verdict": "confirmed",
+  "sources": [],
+  "note": ""
+ },
+ {
+  "country": "cy",
+  "band": "coverage",
+  "operator": "-",
+  "field": "badge",
+  "claimed": "holdings-only",
+  "found": "Correct; 1800/2600/3.5 positions available from spectrum-tracker only (one source)",
+  "verdict": "confirmed",
+  "sources": [],
+  "note": ""
+ }
+]

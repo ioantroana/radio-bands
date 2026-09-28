@@ -82,14 +82,29 @@ button:hover { border-color: var(--accent); }
 .hlmsg { flex-basis: 100%; font-size: 13px; color: var(--ink-2); min-height: 0; }
 .hlmsg:empty { display: none; }
 .hlmsg b { color: var(--marker); }
+.tools { order: 9; display: flex; gap: 6px; }
+#hlToggle { display: none; }
 @media (max-width: 640px) {
-  .bar .wrap { gap: 8px; }
-  .brand { flex-basis: 100%; flex-direction: row; align-items: baseline; gap: 8px; }
-  .ctl { flex: 1 1 40%; }
-  .ctl.hlc { flex-basis: 100%; }
+  html { scroll-padding-top: 112px; }
+  .bar .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; padding-block: 8px; align-items: center; }
+  .brand { min-width: 0; }
+  .tools { justify-self: end; }
+  .ctl.hlc, .hlmsg { grid-column: 1 / -1; }
+  .brand b { font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brand span { font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tools { order: 0; }
+  #hlToggle { display: inline-block; font-size: 13px; }
+  #hlToggle[aria-expanded="true"] { background: var(--accent-soft); border-color: var(--accent); }
+  .ctl { min-width: 0; }
+  .ctl label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  select, input[type="text"], button { min-height: 40px; font-size: 16px; }
+  #hlToggle, #themeBtn { min-height: 36px; font-size: 13px; }
+  .ctl.hlc { flex-basis: 100%; display: none; }
+  .bar.find .ctl.hlc { display: flex; }
   .hl input { flex: 1; width: auto; min-width: 0; }
-  html { scroll-padding-top: 210px; }
+  .hlmsg { font-size: 12.5px; }
 }
+
 
 /* ---------- country head ---------- */
 main { padding-block: 22px 60px; display: flex; flex-direction: column; gap: 26px; }
@@ -133,6 +148,7 @@ td.n, th.n { text-align: right; font-family: var(--mono); font-size: 13px; white
 .totals td.n.total { font-weight: 600; color: var(--ink); }
 .totals td.zero { color: var(--ink-3); }
 .tbar { height: 4px; border-radius: 2px; margin-top: 4px; margin-left: auto; }
+.phtot { display: none; }
 .foot { font-size: 12.5px; color: var(--ink-3); margin: 0; }
 
 /* ---------- band blocks ---------- */
@@ -200,21 +216,68 @@ details.alloct[open] > summary { margin-bottom: 8px; }
 .err { padding: 18px; border-radius: 10px; background: var(--bad-soft); color: var(--bad); }
 footer { color: var(--ink-3); font-size: 12.5px; }
 footer p { margin: 0 0 6px; max-width: 95ch; }
-@media (max-width: 640px) { section.card { padding: 14px; } .diag { min-width: 560px; } }
+@media (max-width: 640px) {
+  main { padding-block: 16px 48px; gap: 16px; }
+  section.card { padding: 14px 12px; border-radius: 8px; }
+  section h2 { font-size: 21px; }
+  .sech p { font-size: 12.5px; }
+  .summary { font-size: 14px; }
+  .band { scroll-margin-top: 118px; }
+  .naitem { scroll-margin-top: 118px; }
+  .bandh h3 { font-size: 18px; }
+  .chip { padding: 7px 10px; font-size: 13.5px; }
+  .diag { min-width: 0; padding-right: 18px; }
+  .drow { grid-template-columns: 26px 1fr; gap: 4px; }
+  .dlab { font-size: 10px; }
+  .edges { margin-left: 30px; height: 50px; }
+  .blk { font-size: 11px; }
+  .blk small { font-size: 9.5px; }
+  /* totals: sticky operator column, tighter cells */
+  /* totals become one card per operator: name + total, then the buckets */
+  table.totals thead { display: none; }
+  table.totals, table.totals tbody { display: block; }
+  table.totals tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 10px; padding: 10px 2px; border-bottom: 1px solid var(--line); }
+  table.totals tr.grp { display: block; border: 0; padding: 12px 0 0; }
+  table.totals tr.grp th { display: block; padding: 0; border: 0; white-space: normal; }
+  table.totals td { display: block; border: 0; padding: 0; text-align: left; }
+  table.totals td:first-child { grid-column: 1 / -1; }
+  table.totals td.total { display: none; }
+  table.totals td.n { font-size: 12.5px; }
+  table.totals td[data-l]::before { content: attr(data-l); display: block; font: 600 10px/1.3 var(--sans); text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); }
+  .opcell .phtot { display: inline; margin-left: auto; font: 600 15px var(--mono); }
+  .totals .opcell { font-size: 15px; }
+  /* allocation table becomes a list of cards */
+  table.alloc thead { display: none; }
+  table.alloc, table.alloc tbody { display: block; }
+  table.alloc tr { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; padding: 11px 6px; border-bottom: 1px solid var(--line); }
+  table.alloc td { display: block; border: 0; padding: 0; text-align: left; white-space: normal; }
+  table.alloc td.n { text-align: left; font-size: 13px; }
+  table.alloc td:first-child { grid-column: 1 / -1; font-size: 15px; }
+  table.alloc td[data-l]::before { content: attr(data-l); display: block; font: 600 10px/1.3 var(--sans); text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); margin-bottom: 1px; }
+  table.alloc td:empty { display: none; }
+  table.alloc td.notes { grid-column: 1 / -1; min-width: 0; max-width: none; }
+  table.alloc td.arf { max-width: none; }
+  /* overview: drop secondary columns */
+  .ov th:nth-child(3), .ov td:nth-child(3), .ov th:nth-child(6), .ov td:nth-child(6) { display: none; }
+  .nalist { grid-template-columns: 1fr; }
+}
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
 
 <header class="bar">
   <div class="wrap">
     <div class="brand"><b>Mobile Spectrum Atlas</b><span id="asof">loading…</span></div>
+    <div class="tools">
+      <button id="hlToggle" type="button" aria-expanded="false" aria-controls="hlc">Find ARFCN</button>
+      <button id="themeBtn" type="button" title="Switch light / dark theme" aria-label="Switch theme">◐</button>
+    </div>
     <div class="ctl"><label for="region">Region</label><select id="region"></select></div>
     <div class="ctl"><label for="country">Country</label><select id="country"></select></div>
-    <div class="ctl hlc"><label for="hlv">Highlight EARFCN / NR-ARFCN / MHz</label>
+    <div class="ctl hlc" id="hlc"><label for="hlv">Highlight EARFCN / NR-ARFCN / MHz</label>
       <div class="hl">
         <select id="hlk" aria-label="Value type"><option value="earfcn">EARFCN</option><option value="nr">NR-ARFCN</option><option value="mhz">MHz</option></select>
         <input id="hlv" type="text" inputmode="decimal" placeholder="e.g. 1300" autocomplete="off">
         <button id="hlclear" type="button" title="Clear highlight">Clear</button>
-        <button id="themeBtn" type="button" title="Switch light / dark theme" aria-label="Switch theme">◐</button>
       </div>
     </div>
     <div class="hlmsg" id="hlmsg" aria-live="polite"></div>

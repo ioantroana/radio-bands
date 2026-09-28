@@ -52,6 +52,18 @@ function init() {
   $("#hlv").addEventListener("input", runHighlight);
   $("#hlclear").addEventListener("click", () => { $("#hlv").value = ""; runHighlight(); });
   window.addEventListener("hashchange", fromHash);
+  const bar = $(".bar"), tog = $("#hlToggle");
+  tog.addEventListener("click", () => {
+    const open = !bar.classList.contains("find");
+    bar.classList.toggle("find", open);
+    tog.setAttribute("aria-expanded", String(open));
+    if (open) $("#hlv").focus();
+  });
+  let rt;
+  window.addEventListener("resize", () => {
+    clearTimeout(rt);
+    rt = setTimeout(() => { if (COUNTRY && Math.abs(measureTrack() - TRACK_PX) > 40) { const y = scrollY; render(COUNTRY); scrollTo(0, y); } }, 200);
+  });
   fromHash();
 }
 
@@ -77,8 +89,16 @@ function go(cc) {
 }
 
 // ---------- render country ----------
+// Width of a diagram track in px; label density depends on it.
+let TRACK_PX = 800;
+function measureTrack() {
+  const w = document.querySelector("#main")?.clientWidth || 1000;
+  return w <= 640 ? Math.max(240, w - 24 - 30 - 10) : Math.max(620, w - 36 - 40);
+}
+
 function render(c) {
   COUNTRY = c;
+  TRACK_PX = measureTrack();
   store.set("country", c.code);
   if ($("#region").value && $("#region").value !== c.region) $("#region").value = c.region;
   fillCountries();
@@ -132,7 +152,7 @@ function render(c) {
   const anyApprox = rows.some((o) => t[o.id].approx);
   html.push(`<section class="card"><div class="sech"><h2>Spectrum totals</h2><p>MHz held today. Paired spectrum counts both directions (2×10 MHz = 20 MHz). Scheduled changes are excluded.</p></div>
   <div class="scroll"><table class="totals"><thead><tr><th>Operator</th>${TOTAL_COLS.map((k) => `<th class="n">${k.label}</th>`).join("")}</tr></thead><tbody>
-  ${rows.map((o, ix) => { const r = t[o.id]; return `${ix === mnoRows.length && ix > 0 ? `<tr><th colspan="7" style="padding-top:14px">Other licensees (regional, private, government)</th></tr>` : ""}<tr><td><span class="opcell"><span class="sw" style="background:${o.color}"></span>${esc(o.name)}${r.approx ? " ≈" : ""}</span></td>${TOTAL_COLS.map((k) => `<td class="n${k.id === "total" ? " total" : ""}${r[k.id] ? "" : " zero"}">${fmtW(r[k.id])}${k.id === "total" ? `<div class="tbar" style="width:${(r.total / max) * 100}%;background:${o.color}"></div>` : ""}</td>`).join("")}</tr>`; }).join("")}
+  ${rows.map((o, ix) => { const r = t[o.id]; return `${ix === mnoRows.length && ix > 0 ? `<tr class="grp"><th colspan="7" style="padding-top:14px">Other licensees (regional, private, government)</th></tr>` : ""}<tr><td><span class="opcell"><span class="sw" style="background:${o.color}"></span>${esc(o.name)}${r.approx ? " ≈" : ""}<b class="phtot">${fmtW(r.total)} MHz</b></span></td>${TOTAL_COLS.map((k) => `<td data-l="${k.label}" class="n${k.id === "total" ? " total" : ""}${r[k.id] ? "" : " zero"}">${fmtW(r[k.id])}${k.id === "total" ? `<div class="tbar" style="width:${(r.total / max) * 100}%;background:${o.color}"></div>` : ""}</td>`).join("")}</tr>`; }).join("")}
   </tbody></table></div>
   ${anyApprox ? `<p class="foot">≈ includes population-weighted or national averages for regionally licensed bands; see each band for the basis.</p>` : ""}
   ${rows.length === 0 ? `<p class="foot">No holdings compiled yet.</p>` : ""}
@@ -140,7 +160,7 @@ function render(c) {
 
   // legend + bands
   html.push(`<section class="card"><div class="sech"><h2>Band allocations</h2><p>Each diagram is to scale within its band. Click a block or a table row to link the two.</p></div>
-    <div class="legend"><span><i class="lk solid"></i>Exact position, verified</span><span><i class="lk dashed"></i>Position not verified or amount only</span><span><i class="lk free"></i>Unassigned</span><span class="tag avg">avg</span><span>Regional licences, averaged</span></div>
+    <div class="legend"><span><i class="lk solid"></i>Exact position, verified</span><span><i class="lk dashed"></i>Position not verified or amount only</span><span><i class="lk free"></i>Unassigned</span><span><span class="tag avg">avg</span> Regional licences, averaged</span></div>
     ${current.map((b) => bandHTML(b, opById)).join("") || `<p class="foot">No assigned bands compiled.</p>`}
   </section>`);
 
@@ -217,7 +237,8 @@ function bandHTML(b, opById) {
       const mhz = fmtW(seg[1] - seg[0]);
       const col = o?.color || "#999";
       const dashed = it.hold || b.positions === "unverified";
-      const inner = w >= 9 ? `${esc(name)}<small>${it.hold && it.k.paired ? "2×" : ""}${mhz}</small>` : w >= 4.5 ? `<small>${mhz}</small>` : "";
+      const px = (w / 100) * TRACK_PX;
+      const inner = px >= 58 ? `${esc(name)}<small>${it.hold && it.k.paired ? "2×" : ""}${mhz}</small>` : px >= 24 ? `<small>${mhz}</small>` : "";
       const style = special ? "" : dashed ? `background:color-mix(in srgb, ${col} 55%, var(--surface));color:${textColor(col) === "#fff" ? "var(--ink)" : "#111"};border-color:${col}` : `background:${col};color:${textColor(col)}`;
       const title = `${special ? name : o?.name || it.k.op}: ${fmt(seg[0])}–${fmt(seg[1])} MHz (${mhz} MHz)${it.hold ? " — amount only, position not verified" : ""}`;
       return `<div class="blk${special ? " " + it.k.op : ""}${dashed ? " dash" : ""}${it.hold ? " hold" : ""}" data-b="${b._id}" data-i="${it.i}" style="left:${pct(seg[0])}%;width:${w}%;${style}" title="${esc(title)}">${inner}</div>`;
@@ -242,10 +263,9 @@ function bandHTML(b, opById) {
       dl = `${fmt(k.f[0])}–${fmt(k.f[1])}`; wid = fmtW(k.f[1] - k.f[0]);
     }
     const notes = [k.notes, k.source && !(b.sources || []).includes(k.source) ? `<a href="${esc(k.source)}" target="_blank" rel="noopener">source</a>` : ""].filter(Boolean);
-    return `<tr data-b="${b._id}" data-i="${it.i}"><td><span class="opcell"><span class="sw" style="background:${special ? "var(--unassigned)" : o?.color || "#999"}"></span>${esc(nm)}</span></td>
-      <td class="n">${dl}</td><td class="n">${ul}</td><td class="n">${wid}</td>
-      <td class="arf">${(k.earfcn || []).join(", ")}</td><td class="arf">${(k.nrarfcn || []).join(", ")}</td>
-      <td class="n">${esc(k.expiry || "")}</td><td class="notes">${notes.map((n) => (n.startsWith("<a") ? n : esc(n))).join(" · ")}</td></tr>`;
+    return `<tr data-b="${b._id}" data-i="${it.i}"><td><span class="opcell"><span class="sw" style="background:${special ? "var(--unassigned)" : o?.color || "#999"}"></span>${esc(nm)}</span></td><td class="n" data-l="${it.hold ? "Position" : k.f ? "Frequency" : "Downlink"}">${dl}</td><td class="n" data-l="Uplink">${ul}</td><td class="n" data-l="Width (MHz)">${wid}</td>
+<td class="arf" data-l="EARFCN">${(k.earfcn || []).join(", ")}</td><td class="arf" data-l="NR-ARFCN">${(k.nrarfcn || []).join(", ")}</td>
+<td class="n" data-l="Expiry">${esc(k.expiry || "")}</td><td class="notes">${notes.map((n) => (n.startsWith("<a") ? n : esc(n))).join(" · ")}</td></tr>`;
   }).join("");
   const hasUL = items.some((it) => it.ul);
   const table = `<details class="alloct" open><summary>Allocation table (${items.length})</summary><div class="scroll"><table class="alloc"><thead><tr><th>Operator</th><th class="n">${r.f ? "Frequency" : "Downlink"} (MHz)</th><th class="n">${hasUL ? "Uplink (MHz)" : ""}</th><th class="n">Width (MHz)</th><th>EARFCN</th><th>NR-ARFCN</th><th class="n">Expiry</th><th>Notes</th></tr></thead><tbody>${trs}</tbody></table></div></details>`;
@@ -272,7 +292,7 @@ function edgeLabels(rr, items, key) {
   const sorted = [...pts].filter((x) => x >= rr[0] - 1e-6 && x <= rr[1] + 1e-6).sort((a, b) => a - b);
   const out = [];
   let last = -99;
-  const minGap = 2.1; // % of track width between labels
+  const minGap = (13 / TRACK_PX) * 100; // keep ~13px between vertical labels
   sorted.forEach((x, i) => {
     const p = ((x - rr[0]) / span) * 100;
     const isEnd = i === 0 || i === sorted.length - 1;

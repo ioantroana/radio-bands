@@ -1,0 +1,1153 @@
+[
+ {
+  "country": "us",
+  "band": "26g (24 GHz)",
+  "operator": "all",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "T-Mobile 361 (335+26 Array), AT&T 254, other 60, EchoStar 17, Verizon 7",
+  "found": "CMR Fig. II.B.16: AT&T 254, EchoStar 17, T-Mobile 335, UScellular 26, Verizon 7, Other 60; DA 25-605 confirms UScellular's 24 GHz went to T-Mobile",
+  "verdict": "confirmed",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+   "https://docs.fcc.gov/public/attachments/DA-25-605A1.pdf"
+  ],
+  "note": "Array->T-Mobile 24 GHz transfer confirmed via FCC order summary (search index of DA-25-605)."
+ },
+ {
+  "country": "us",
+  "band": "26g (28 GHz)",
+  "operator": "all",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "Verizon 618, T-Mobile 123, other 56, EchoStar 29, Array 22",
+  "found": "CMR Fig. II.B.16: Verizon 618, T-Mobile 123, Other 56, EchoStar 29, UScellular 22",
+  "verdict": "confirmed",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "40g (Upper 37 GHz)",
+  "operator": "all",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "Verizon 975, other 9, EchoStar 8, AT&T 4, Array 4",
+  "found": "CMR Fig. II.B.16: identical",
+  "verdict": "confirmed",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "40g (39 GHz)",
+  "operator": "all",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "AT&T 784, T-Mobile 321, other 145, Verizon 124, Array 26 (EchoStar 0.4 omitted)",
+  "found": "CMR Fig. II.B.16: identical (EchoStar 0.4)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "47g (47 GHz)",
+  "operator": "all",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "EchoStar 609, T-Mobile 381, other 10",
+  "found": "CMR Fig. II.B.16: identical",
+  "verdict": "confirmed",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "3500 (C-band 3.7-3.98)",
+  "operator": "all",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "Verizon 160.1, AT&T 79.6, T-Mobile 27.2, Array 4.9, other 7.0",
+  "found": "CMR Fig. II.B.14 3.7 GHz column: identical (UScellular 4.9)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  ],
+  "note": "Largest-MHz entry for the US. Basis labelled as pop-weighted CMR figure."
+ },
+ {
+  "country": "us",
+  "band": "3500 (3.45 GHz)",
+  "operator": "att",
+  "field": "holding (pop-weighted MHz)",
+  "claimed": "74.5 (39.9 + EchoStar 30.8 + Array 3.8)",
+  "found": "CMR: AT&T 39.9, EchoStar 30.8, UScellular 3.8; AT&T closed EchoStar purchase 2026-07-28 ('approximately 30 MHz of nationwide 3.45 GHz')",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf",
+   "https://www.nasdaq.com/press-release/att-closes-acquisition-spectrum-licenses-echostar-2026-07-28",
+   "https://www.telecompetitor.com/att-closes-acquisition-of-echostar-spectrum/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "3500 (3.45 GHz)",
+  "operator": "other",
+  "field": "holding",
+  "claimed": "25.0 (13.0 + T-Mobile's 11.9 sold)",
+  "found": "T-Mobile sold its 3.45 GHz licences: ~7% swapped to SoniqWave, ~93% to Columbia Capital (>$2.7bn)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://insidetowers.com/t-mobile-sells-3-45-ghz-spectrum/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "600",
+  "operator": "att",
+  "field": "holding",
+  "claimed": "8.9 per direction (EchoStar 17.8 total)",
+  "found": "AT&T: 'approximately 20 MHz of nationwide 600 MHz' acquired from EchoStar (closed 2026-07-28); CMR EchoStar 17.8 pop-weighted",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.nasdaq.com/press-release/att-closes-acquisition-spectrum-licenses-echostar-2026-07-28",
+   "https://docs.fcc.gov/public/attachments/FCC-24-136A1.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "3500 (CBRS PAL)",
+  "operator": "verizon/echostar/comcast/charter",
+  "field": "PAL counts underlying estimates",
+  "claimed": "Verizon 557 PALs/157 counties; EchoStar 5,492 PALs; Comcast 830; Charter 210",
+  "found": "Same counts in trade press summaries of Auction 105",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.fierce-network.com/operators/verizon-dish-cable-top-list-cbrs-auction-winners",
+   "https://www.rcrwireless.com/20200914/analyst-angle/the-sunday-brief-market-by-market-cbrs-auction-105-results-is-more-sharing-in-the-works"
+  ],
+  "note": "MHz amounts remain labelled rough estimates, which is appropriate."
+ },
+ {
+  "country": "us",
+  "band": "corporate",
+  "operator": "verizon/array",
+  "field": "Array spectrum sale to Verizon closed",
+  "claimed": "2026-06-01, $1.0bn (AWS/cellular/PCS)",
+  "found": "Array: closed June 1, 2026, $1.0bn; also $168m sales to T-Mobile (600/700 MHz) completed in May",
+  "verdict": "confirmed",
+  "sources": [
+   "https://investors.arrayinc.com/news/news-details/2026/Array-completes-sale-of-select-spectrum-assets-to-Verizon-for-1-0-billion/default.aspx"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "corporate",
+  "operator": "grain/tmobile",
+  "field": "800 MHz sale to Grain",
+  "claimed": "closed 2026-08-10",
+  "found": "T-Mobile: signed 2025-05-30, FCC approval 2026-07-01, closed 2026-08-10 ($2.9bn + Grain's 600 MHz)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://investor.t-mobile.com/news-releases/news-release-details/t-mobile-completes-sale-800-mhz-spectrum-portfolio-grain"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "corporate",
+  "operator": "spacex/echostar",
+  "field": "AWS-4/H-block/AWS-3 unpaired to SpaceX",
+  "claimed": "FCC approval 2026-05-12; licences in trust since 2026-05-22; shown as future",
+  "found": "EchoStar 10-Q: transfer to Spectrum Business Trust 2025-1 on 2026-05-22; acquisition closing expected ~2027-11-30",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0001415404/000110465926089370/sats-20260630x10q.htm"
+  ],
+  "note": ""
+ },
+ {
+  "country": "us",
+  "band": "corporate",
+  "operator": "charter",
+  "field": "Charter-Cox merger status",
+  "claimed": "'Merger with Cox announced 2025' (implies pending)",
+  "found": "Charter closed the Cox acquisition on 2026-08-19; combined company to be renamed Cox Communications within a year, Spectrum brand retained",
+  "verdict": "conflict",
+  "sources": [
+   "https://corporate.charter.com/newsroom/charter-and-cox-communications-complete-transaction",
+   "https://www.fierce-network.com/broadband/charter-closes-its-cox-acquisition-elaborates-immediate-plans"
+  ],
+  "note": "Fix: charter.notes -> 'MVNO on Verizon; holds CBRS PALs used for offload. Acquired Cox Communications (closed 2026-08-19); company to adopt the Cox Communications name, Spectrum brand retained.' Cox's own CBRS PALs (if any) should be folded into this operator."
+ },
+ {
+  "country": "us",
+  "band": "coverage badge",
+  "operator": "-",
+  "field": "coverage",
+  "claimed": "holdings-only",
+  "found": "All US entries are regional-average (plus Band 14 verified); holdings-only is the right badge",
+  "verdict": "confirmed",
+  "sources": [],
+  "note": ""
+ },
+ {
+  "country": "ca",
+  "band": "26g/40g",
+  "operator": "-",
+  "field": "status not-assigned; auction opens 2028-01-25",
+  "claimed": "not-assigned; mmWave (26+38 GHz) auction scheduled 25 Jan 2028, framework 14 May 2026",
+  "found": "ISED key dates: auction start rescheduled to January 25, 2028; framework published May 14, 2026; applications due Aug 31, 2027",
+  "verdict": "confirmed",
+  "sources": [
+   "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/mmwave-auction-table-key-dates"
+  ],
+  "note": ""
+ },
+ {
+  "country": "ca",
+  "band": "47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No 47 GHz licensing in ISED's mmWave auction (26/38 GHz only)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/mmwave-auction-table-key-dates"
+  ],
+  "note": ""
+ },
+ {
+  "country": "ca",
+  "band": "3500 (3500+3800)",
+  "operator": "rogers",
+  "field": "holding (pop-weighted)",
+  "claimed": "3500: 57.9 MHz; 3800: 42.0 MHz (sum 99.9)",
+  "found": "Rogers 2025 AR: 3500 60-80 MHz in large centres (30 MHz Edmonton), 3800 20-40 urban/10-80 rural, 'combined 100 MHz total across 3500 and 3800 MHz in areas covering 99% of Canadians'; +30 residual licences (C$84m) Feb 2026",
+  "verdict": "confirmed",
+  "sources": [
+   "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+  ],
+  "note": "Published operator figure matches the averages; basis labelled 'pop-weighted national average'."
+ },
+ {
+  "country": "ca",
+  "band": "3500 (3800 MHz)",
+  "operator": "telus",
+  "field": "holding (pop-weighted)",
+  "claimed": "76.6 MHz; note: 'TELUS reports an average 72 MHz of 3800 MHz after the 2023 auction' and +C$318m in Jan 2026 residual",
+  "found": "TELUS 2025 AR: residual auction 'acquired 40 MHz of spectrum on average in markets where we successfully bid, total $318 million'; the 72 MHz figure is not in the 2025 AR",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/868675/000110465926039249/tm2610149d2_ex99-1.pdf"
+  ],
+  "note": "C$318m confirmed; the '72 MHz' statement is from an older TELUS report not re-read (unverified)."
+ },
+ {
+  "country": "ca",
+  "band": "all (regional-average check)",
+  "operator": "telus",
+  "field": "national total vs published figure",
+  "claimed": "file total 247.5 MHz (excl. AWS-4 and WCS, entries 'unknown')",
+  "found": "TELUS 2025 AR: 'Licensed gross national mobile spectrum holdings averaging 270 MHz'",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/868675/000110465926039249/tm2610149d2_ex99-1.pdf"
+  ],
+  "note": "The 22.5 MHz gap is consistent with TELUS's AWS-4 and 2300 MHz holdings, which the file does not quantify."
+ },
+ {
+  "country": "ca",
+  "band": "1900 (PCS)",
+  "operator": "rogers",
+  "field": "holding",
+  "claimed": "28.4 per direction pop-weighted",
+  "found": "Rogers AR: 60 MHz in all areas except 40 N. Quebec, 50 S. Ontario, 40 territories -> ~56-57 MHz pop-weighted",
+  "verdict": "confirmed",
+  "sources": [
+   "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "ca",
+  "band": "corporate",
+  "operator": "videotron/rogers",
+  "field": "Freedom to Videotron; Rogers-Shaw",
+  "claimed": "closed 3 Apr 2023",
+  "found": "Consistent with Rogers AR; no later change found",
+  "verdict": "confirmed",
+  "sources": [
+   "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mx",
+  "band": "850",
+  "operator": "telcel/att/movistar",
+  "field": "holding (pop-weighted, both directions)",
+  "claimed": "Telcel 21.51, AT&T 16.93, Telefónica 0.94 (IFT Tabla 9)",
+  "found": "IFT-10 Bases Tabla 9: AMX 21.51, AT&T 16.93, Telefónica 0.94",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mx",
+  "band": "1700 (AWS)",
+  "operator": "telcel/att",
+  "field": "holding",
+  "claimed": "Telcel 40x2, AT&T 25x2",
+  "found": "Tabla 9: AMX 80, AT&T 50 (both directions)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+  ],
+  "note": "Largest-MHz entry for MX."
+ },
+ {
+  "country": "mx",
+  "band": "700",
+  "operator": "altan",
+  "field": "block",
+  "claimed": "758-803/703-748 (2x45)",
+  "found": "Tabla 9: Altán 90 MHz in 700 MHz",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mx",
+  "band": "2600 (2.5 GHz FDD)",
+  "operator": "att",
+  "field": "block 2670-2690/2550-2570 (IFT-7 F3-F4)",
+  "claimed": "held by AT&T (transfer from Telefónica 'inferred' from IFT's AT&T=80)",
+  "found": "Telefónica México returned '40 MHz nacionales de la banda de 2.5 GHz' to the IFT (DPL News, Oct 2022; planned for IFT-12). IFT Tabla 9's AT&T 80 MHz equals F1-F2 FDD (40) + T1-T2 TDD (40), so F3-F4 were not AT&T's.",
+  "verdict": "conflict",
+  "sources": [
+   "https://dplnews.com/espectro-devuelto-por-telefonica-mexico-podria-licitarse-en-2023/",
+   "https://www.ift.org.mx/sites/default/files/industria/espectro-radioelectrico/telecomunicaciones/2021/1/basesdelicitacionift-10.pdf"
+  ],
+  "note": "Fix: change block {op:'att', dl:[2670,2690], ul:[2550,2570]} to op:'unassigned' with notes 'IFT-7 F3-F4 won by Telefónica (Pegaso) 2018, returned to the State by 2022; offered in cancelled IFT-12'. AT&T 2.5 GHz = 2x20 FDD (2650-2670/2530-2550) + 40 TDD = 80 MHz, matching IFT."
+ },
+ {
+  "country": "mx",
+  "band": "1900 / 850",
+  "operator": "movistar",
+  "field": "holding",
+  "claimed": "PCS 21.66x2, 850 0.47x2 (Dec 2020 figures; 'current holding not verified')",
+  "found": "Telefónica México completed the return of 100% of its spectrum ('hemos devuelto el 100% del espectro', J.J. Haro) after migrating traffic to AT&T in June 2022; returned 850/1900/2.5 GHz slated for IFT-12",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.itmastersmag.com/transformacion-digital/telefonica-contenta-de-haber-devuelto-espectro-en-mexico/",
+   "https://dplnews.com/mexico-el-espectro-que-movistar-devolvio-al-ift-ira-a-concurso-en-la-primera-licitacion-5g/"
+  ],
+  "note": "Fix: remove the movistar holdings from the 1900 and 850 entries (PCS total drops from 103.8 to 60.5 MHz; 850 from 39.4 to 38.5) and add a note 'Telefónica returned all spectrum by 2022'. Movistar operator: kind 'other' (MVNO on AT&T)."
+ },
+ {
+  "country": "mx",
+  "band": "corporate",
+  "operator": "movistar",
+  "field": "owner",
+  "claimed": "Telefónica (not mentioned otherwise)",
+  "found": "Telefónica sold Telefónica México/Movistar to Melisa Acquisition (OXIO + Newfoundland Capital Management) for ~US$450m, announced 8 Apr 2026; Movistar brand kept",
+  "verdict": "conflict",
+  "sources": [
+   "https://www.telesemana.com/blog/2026/04/08/telefonica-vende-movistar-mexico-por-us-450-millones-a-un-consorcio-de-telecomunicaciones-en-la-nube/",
+   "https://www.xataka.com.mx/telecomunicaciones/oficial-movistar-tiene-nuevo-dueno-mexico-telefonica-deja-pais"
+  ],
+  "note": "Fix: movistar.notes add 'Sold by Telefónica to Melisa Acquisition (OXIO/Newfoundland Capital), April 2026; holds no spectrum, MVNO on AT&T.' Closing date not confirmed."
+ },
+ {
+  "country": "mx",
+  "band": "26g/40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; CRT 2026 programme lists 37 GHz for fixed wireless only",
+  "found": "CRT 2026 annual programme: 10 GHz and 37 GHz for fixed wireless; 600 MHz for mobile; no 26/28 GHz",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.gob.mx/crt/prensa/la-crt-aprueba-el-programa-anual-de-uso-y-aprovechamiento-de-bandas-de-frecuencias-2026"
+  ],
+  "note": ""
+ },
+ {
+  "country": "mx",
+  "band": "3500",
+  "operator": "telcel/att",
+  "field": "status",
+  "claimed": "unknown",
+  "found": "Not rechecked; no regulator source found",
+  "verdict": "unverifiable",
+  "sources": [],
+  "note": ""
+ },
+ {
+  "country": "br",
+  "band": "26g",
+  "operator": "vivo/claro/tim/algar",
+  "field": "block edges",
+  "claimed": "Vivo 24.3-24.9, Claro 25.3-25.7, TIM 26.1-26.3 + regional 26.3-26.7, Algar 26.5-27.5",
+  "found": "Anatel ATOS_SMP (28 Sep 2026): Vivo 26000_1-3 (centres 24.4/24.6/24.8 GHz), Claro 26000_6-7 (25.4/25.6), TIM 26000_10 (26.2) and R1-R2 (26.4/26.6), Algar R2-R6 (26.6-27.4), 200 MHz each",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+  ],
+  "note": ""
+ },
+ {
+  "country": "br",
+  "band": "26g",
+  "operator": "vivo/claro/tim/algar",
+  "field": "holding",
+  "claimed": "Vivo 600, Claro 400, TIM 200 national + 2x200 regional (S/SE), Algar 1000 in its area",
+  "found": "Teleco auction results: Claro G1-G2, Vivo G3-G5, TIM I6 (10 y) + H19/H25/H31 + J20/J26/J33, Neko J32, Algar H37-H41 (5x200)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://teleco.com.br/5g_licitacao_result.asp"
+  ],
+  "note": "Teleco's 5g_freq.asp page says Algar 800 MHz; its own lot table and Anatel acts show 1000 MHz, so the file is right."
+ },
+ {
+  "country": "br",
+  "band": "3500",
+  "operator": "claro/vivo/tim/regional",
+  "field": "block edges",
+  "claimed": "Claro 3300-3400, Vivo 3400-3500, TIM 3500-3600, regional 3600-3680",
+  "found": "Anatel acts: 3500_1 centre 3350 Claro, 3500_2 3450 Vivo, 3500_3 3550 TIM (100 MHz), 3500_4 centre 3640 80 MHz (regional); Teleco agrees on national blocks",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip",
+   "https://www.teleco.com.br/5g_freq.asp"
+  ],
+  "note": ""
+ },
+ {
+  "country": "br",
+  "band": "3500",
+  "operator": "amazonia5g",
+  "field": "holder of SP+North regional block",
+  "claimed": "Amazônia 5G (transfer from Sercomtel/Ligga)",
+  "found": "Anatel approved the transfer on 12 Feb 2026 (Teletime); Anatel's ATOS dump still lists SERCOMTEL for SP and North",
+  "verdict": "confirmed",
+  "sources": [
+   "https://teletime.com.br/12/02/2026/anatel-aprova-transferencia-de-frequencias-da-sercomtel-para-amazonia-5g/",
+   "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+  ],
+  "note": "Acts not yet re-issued in the open data; not a conflict."
+ },
+ {
+  "country": "br",
+  "band": "700",
+  "operator": "brisanet/amazonia5g/unifique/iez",
+  "field": "2026 auction winners",
+  "claimed": "A1 Amazônia 5G, A2/A3 Brisanet, A4 Unifique, A5 iez (4 May 2026)",
+  "found": "Anatel results: same lots; homologated 21 May 2026. Teletime 16 Sep 2026: operators obtained an injunction that could change the result",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.gov.br/anatel/pt-br/regulado/outorga/leilao-700-mhz-2026",
+   "https://teletime.com.br/16/09/2026/teles-conseguem-cautelar-que-pode-mudar-resultado-do-leilao-de-700-mhz/"
+  ],
+  "note": "Suggest adding the September 2026 injunction as a note."
+ },
+ {
+  "country": "br",
+  "band": "700",
+  "operator": "tim/vivo/claro",
+  "field": "block edges",
+  "claimed": "TIM 773-783, Vivo 783-793, Claro 793-803",
+  "found": "Anatel acts: TIM centre 778 (10+10), Vivo 785.5+790.5 (5+5 each), Claro 798 (10+10)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+  ],
+  "note": ""
+ },
+ {
+  "country": "br",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No Anatel SMP acts above 27.5 GHz in the ATOS dump",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/Autorizacoes_Licenciamento_SMP.zip"
+  ],
+  "note": ""
+ },
+ {
+  "country": "ar",
+  "band": "3500",
+  "operator": "claro/personal/movistar",
+  "field": "block edges",
+  "claimed": "Claro 3300-3400 (by elimination), Personal 3400-3500, Movistar 3550-3600; 3500-3550 unsold (unverified)",
+  "found": "ENACOM: Lote 1 3300-3400 Claro US$350.05m, Lote 2 3400-3500 Telecom US$350.03m, Lote 3B 3550-3600 Telefónica US$175.01m; one 50 MHz block unsold. Telecom 20-F confirms Lot 2 and TMA's Lot 3B",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.enacom.gob.ar/institucional/el-estado-argentino-licito-la-banda-5g-por-mas-de-875-millones-de-dolares_n4578",
+   "https://dplnews.com/subasta-5g-argentina-claro-personal-movistar-espectro/",
+   "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm"
+  ],
+  "note": "Fix: positions 'unverified' -> 'verified' (regulator states the lots); drop 'by elimination' and 'appears unsold (not verified)'. Also the largest-MHz AR entry."
+ },
+ {
+  "country": "ar",
+  "band": "26g/40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "Telecom Argentina 2025 20-F lists 850/1900/700/AWS/900/2600/3500 only; no mmWave",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/932470/000110465926026480/teo-20251231x20f.htm"
+  ],
+  "note": ""
+ },
+ {
+  "country": "ar",
+  "band": "corporate",
+  "operator": "movistar/personal",
+  "field": "Telecom owns TMA since 24 Feb 2025; ANC conditions 17 Jun 2026",
+  "claimed": "as stated",
+  "found": "ANC/Argentina.gob.ar: deal conditioned on divesting 6 million mobile lines + fixed assets in 28 localities within 18 months",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.argentina.gob.ar/noticias/la-anc-condiciona-la-compra-de-telefonica-por-telecom-para-proteger-la-competencia-en-las",
+   "https://www.infobae.com/economia/2026/06/19/el-gobierno-autorizara-la-compra-de-telefonica-por-parte-de-telecom-bajo-ciertas-condiciones/"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cn",
+  "band": "3500",
+  "operator": "ct/cu",
+  "field": "block edges",
+  "claimed": "CT 3400-3500, CU 3500-3600",
+  "found": "MOST/MIIT 2018 notice: CT 3400-3500, CU 3500-3600 (100 MHz each); C114 agrees",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.most.gov.cn/ztzl/zdzx/gzxgz/tx/201812/t20181213_6119.html",
+   "https://m.c114.com.cn/w220-1073494.html"
+  ],
+  "note": "Largest-MHz entry for CN."
+ },
+ {
+  "country": "cn",
+  "band": "2600",
+  "operator": "cmcc",
+  "field": "block edges",
+  "claimed": "2515-2675",
+  "found": "MIIT 2018: China Mobile 2515-2675 and 4800-4900 MHz",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.most.gov.cn/ztzl/zdzx/gzxgz/tx/201812/t20181213_6119.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cn",
+  "band": "4900",
+  "operator": "cmcc/cbn",
+  "field": "block edges",
+  "claimed": "CMCC 4800-4900, CBN 4900-4960",
+  "found": "MIIT 2018 (CMCC); CBN 4900-4960 per search-indexed summaries (Hunan GXT cited)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.most.gov.cn/ztzl/zdzx/gzxgz/tx/201812/t20181213_6119.html",
+   "https://gxt.hunan.gov.cn/gxt/wxd_ycl/hyzx_ycl/kpyd_ycl/202109/t20210907_20534448.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cn",
+  "band": "26g",
+  "operator": "-",
+  "field": "status not-assigned",
+  "claimed": "trial frequencies only (Jan 2025, Asian Winter Games)",
+  "found": "Chinanews 2025-01-24: MIIT approved 26 GHz 5G mmWave '试验频率' for the Asian Winter Games, the first such approval; Sina 2025 same. No commercial licence found",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.chinanews.com.cn/cj/2025/01-24/10359573.shtml",
+   "https://finance.sina.com.cn/tech/roll/2025-01-24/doc-inehaiaa2679930.shtml"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cn",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No assignment found; 2023 Jiemian piece says 26 and 39 GHz are future candidate bands only",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.jiemian.com/article/8893533.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "cn",
+  "band": "coverage badge",
+  "operator": "-",
+  "field": "coverage",
+  "claimed": "holdings-only",
+  "found": "12 assigned entries: 11 have blocks (5 verified, 6 unverified), 1 holdings. 'holdings-only' understates; 'positions-verified' overstates (only 5 verified)",
+  "verdict": "conflict",
+  "sources": [],
+  "note": "Minor: consider 'positions-verified' once the 900/1800/2100/2300/B34/B39 edges get a second source; otherwise leave but add a note."
+ },
+ {
+  "country": "in",
+  "band": "3500 (3300 MHz)",
+  "operator": "all",
+  "field": "holding sum",
+  "claimed": "7,030 MHz assigned (incl. BSNL 70 MHz reservation), 1,110 vacant, 370 MHz per LSA",
+  "found": "TRAI CP 30.09.2025 Table 2.7: total earmarked 8140, assigned 7030, vacant 1110; 'Includes 70 MHz reserved for BSNL 5G in all LSAs'. File holdings x22 LSAs sum to 7030",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+  ],
+  "note": "Published regulator total matches the national averages exactly; basis labelled per holding."
+ },
+ {
+  "country": "in",
+  "band": "26g",
+  "operator": "all",
+  "field": "holding sum",
+  "claimed": "62,800 MHz assigned (incl. BSNL), 8,700 vacant",
+  "found": "TRAI CP Table 2.8: earmarked 71500, assigned 62800, vacant 8700; BSNL 800 MHz reserved in 21 LSAs, 650 in Kerala. File holdings x22 sum to 62800",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+  ],
+  "note": "Largest-MHz entry for IN."
+ },
+ {
+  "country": "in",
+  "band": "26g",
+  "operator": "adani",
+  "field": "holder",
+  "claimed": "Adani 400 MHz (6 LSAs); transfer to Airtel agreed Apr 2025",
+  "found": "Airtel/press: definitive agreement Apr 2025 for 400 MHz (Gujarat 100, Mumbai 100, AP/Rajasthan/Karnataka/TN 50 each), subject to DoT approval; completion not found",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://www.airtel.in/press-release/04-2025/airtel-to-acquire-400-mhz-spectrum-in-26-ghz-band-from-adani-data-networks-limited/",
+   "https://www.rcrwireless.com/20250424/5g/airtel-spectrum-adani-5g"
+  ],
+  "note": "Amounts per LSA confirmed; whether the transfer closed by Sep 2026 could not be established."
+ },
+ {
+  "country": "in",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "TRAI CP deals only with 26 GHz among mmWave for assignment; no 37-43.5/47 GHz assignments",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "jp",
+  "band": "26g (national lot)",
+  "operator": "docomo",
+  "field": "block edges / price",
+  "claimed": "25.8-26.2 GHz, JPY 6.288bn, reserve JPY 3.93bn, auction 11-25 Jun 2026",
+  "found": "MIC results: docomo 25.8-26.2 GHz; 62億8,800万円; reserve 39億3,000万円",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000791.html",
+   "https://www.soumu.go.jp/main_content/001079885.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "jp",
+  "band": "26g (regional lot)",
+  "operator": "jtower/hitec",
+  "field": "holder/price",
+  "claimed": "26.8-27.0 GHz; JTOWER JPY 468.71m (13 areas incl. Tokyo 23 wards JPY 280m); HiTec Inter JPY 8.184m (21 areas)",
+  "found": "MIC: JTOWER total 4億6,871万円, Tokyo 2億8,000万円; HiTec Inter 818万4,000円",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.soumu.go.jp/main_content/001079885.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "jp",
+  "band": "26g (28 GHz)",
+  "operator": "rakuten/docomo/kddi/softbank",
+  "field": "block edges",
+  "claimed": "Rakuten 27.0-27.4, docomo 27.4-27.8, KDDI 27.8-28.2, SoftBank 29.1-29.5",
+  "found": "MIC 2019 assignment notice: identical",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "jp",
+  "band": "3500 (3.7/4.0/4.5 GHz)",
+  "operator": "docomo/kddi/softbank/rakuten",
+  "field": "block edges",
+  "claimed": "docomo 3600-3700 + 4500-4600, KDDI 3700-3800 + 4000-4100, Rakuten 3800-3900, SoftBank 3900-4000",
+  "found": "MIC 2019 notice: identical; MIC 2024 doc: 4.9 GHz assigned to SoftBank Dec 2024",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html",
+   "https://www.soumu.go.jp/main_content/001049832.pdf"
+  ],
+  "note": "3.4/3.5 GHz part not re-read (MIC 2014/2018 notices cited in file)."
+ },
+ {
+  "country": "jp",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "MIC Action Plan draft: 40 GHz early-use survey (May 2025) found no demand; 47.2-48.2 GHz only under study",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.soumu.go.jp/main_content/001092440.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "kr",
+  "band": "26g (28 GHz)",
+  "operator": "skt/kt/lg-u/stage x",
+  "field": "status not-assigned (revoked)",
+  "claimed": "KT & LG U+ revoked Dec 2022, SKT May 2023, Stage X cancelled 31 Jul 2024",
+  "found": "RCR 2024-07-31: MSIT officially cancelled Stage X licence (KRW 43bn refund); MSIT cancelled KT/LG U+ 28 GHz and later SKT's",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.rcrwireless.com/20240731/featured/south-korea-officially-cancels-stagex-mobile-license",
+   "https://www.mobileworldlive.com/regulation/korea-cancels-stage-x-mobile-licence/"
+  ],
+  "note": "The 2018 28 GHz block edges in the note are from background knowledge (flagged in file); irrelevant to totals."
+ },
+ {
+  "country": "kr",
+  "band": "3500",
+  "operator": "lg-u/kt/skt",
+  "field": "amounts / edges",
+  "claimed": "LG U+ 3.40-3.50 (80 + 20 in 2022), KT 3.50-3.60, SKT 3.60-3.70",
+  "found": "2018: SKT and KT 100 MHz each, LG U+ 80 MHz 3.42-3.50 (KRW 809.5bn); 2022: LG U+ won 3.40-3.42",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.rcrwireless.com/20180620/5g/south-korea-completes-5g-pectrum-auction-tag23",
+   "https://rcrwireless.com/20220719/5g/lg-uplus-secures-additional-spectrum-boost-5g-korea"
+  ],
+  "note": "SKT/KT exact edges not in these articles; regulator map cited in file."
+ },
+ {
+  "country": "kr",
+  "band": "other bands",
+  "operator": "skt/kt/lg-u",
+  "field": "2026 re-allocation",
+  "claimed": "not mentioned",
+  "found": "MSIT decided (Jun 2025) to re-allocate all 370 MHz of 3G/LTE spectrum expiring Jun/Dec 2026 to incumbents",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734418"
+  ],
+  "note": "No holdings change; worth a note on expiry dates."
+ },
+ {
+  "country": "kr",
+  "band": "coverage badge",
+  "operator": "-",
+  "field": "coverage",
+  "claimed": "holdings-only",
+  "found": "All assigned entries have blocks (6 unverified, 1 verified), no holdings",
+  "verdict": "conflict",
+  "sources": [],
+  "note": "Minor: badge doesn't match the data shape; 'positions-verified' also doesn't fit. Keep but note, or verify edges and upgrade."
+ },
+ {
+  "country": "id",
+  "band": "700",
+  "operator": "xlsmart/telkomsel/ioh",
+  "field": "holding",
+  "claimed": "XLSmart 2x15, Telkomsel 2x10, Indosat 2x10 (July 2026 selection)",
+  "found": "Komdigi/press: XLSmart 30 MHz (Rp1.06tn), Telkomsel 2x10 (Rp642.5bn), Indosat 2x10 (Rp507.48bn); winners confirmed 14-15 Jul 2026",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.komdigi.go.id/berita/siaran-pers/detail/komdigi-tetapkan-pemenang-seleksi-frekuensi-internet-lebih-cepat-hingga-538-desa-segera-terhubung",
+   "https://www.cnbcindonesia.com/tech/20260715080359-37-750888/komdigi-tetapkan-pemenang-lelang-frekuensi-700-mhz-dan-26-ghz"
+  ],
+  "note": ""
+ },
+ {
+  "country": "id",
+  "band": "2600",
+  "operator": "telkomsel/ioh/xlsmart",
+  "field": "holding",
+  "claimed": "Telkomsel 80, Indosat 60, XLSmart 50",
+  "found": "Komdigi/press: identical (Rp545.84bn / Rp372bn / Rp231.6bn)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.komdigi.go.id/berita/siaran-pers/detail/komdigi-tetapkan-pemenang-seleksi-frekuensi-internet-lebih-cepat-hingga-538-desa-segera-terhubung",
+   "https://teknologi.bisnis.com/read/20260710/101/1987222/hasil-lelang-frekuensi-700-mhz-26-ghz-ini-posisi-telkomsel-indosat-dan-xlsmart"
+  ],
+  "note": "Largest-MHz entry for ID."
+ },
+ {
+  "country": "id",
+  "band": "3500",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; under study",
+  "found": "Antara/CNBC Jul 2026: Komdigi will auction 900 MHz at end-2026 and is still studying 3.5 GHz (shared with satellite)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://m.antaranews.com/amp/berita/5659411/kemkomdigi-lelang-frekuensi-900-mhz-tahun-ini-dan-kaji-lelang-35-ghz",
+   "https://www.cnbcindonesia.com/tech/20260721194543-37-752719/komdigi-kebut-lelang-frekuensi-900-mhz-dan-35-ghz-ini-jadwalnya"
+  ],
+  "note": ""
+ },
+ {
+  "country": "id",
+  "band": "26g/40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No mmWave selection in 2026 news; only 700/2.6 GHz held, 900 MHz next",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.cnbcindonesia.com/tech/20260721194543-37-752719/komdigi-kebut-lelang-frekuensi-900-mhz-dan-35-ghz-ini-jadwalnya"
+  ],
+  "note": ""
+ },
+ {
+  "country": "th",
+  "band": "26g",
+  "operator": "ais/true/nt",
+  "field": "holding",
+  "claimed": "AIS 1200, True 1000 (True 800 + dtac 200), NT 400",
+  "found": "2020 auction: AIS 12 blocks, True 8, TOT 4, dtac 2 (x100 MHz)",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://totaltele.com/thailands-first-5g-spectrum-auction-raises-3-2-bn/",
+   "https://www.lightreading.com/5g/thailand-nets-1-26b-from-ais-and-true-in-mid-band-spectrum-sale"
+  ],
+  "note": "Block counts from search-indexed summaries (full articles paywalled); consistent with cited telecomlead. Positions still unknown -> holdings is correct. Largest-MHz entry for TH."
+ },
+ {
+  "country": "th",
+  "band": "3500",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; 'none found by Sep 2026'",
+  "found": "Thai press (2026): NBTC plans to auction 2100-3500 MHz in advance, target Q4 2026-Q1 2027; not yet held",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.bangkokbiznews.com/tech/ai/1229074",
+   "https://www.thansettakij.com/technology/656182"
+  ],
+  "note": "Suggest updating the note with the Q4 2026-Q1 2027 target."
+ },
+ {
+  "country": "th",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No assignment found",
+  "verdict": "confirmed",
+  "sources": [
+   "https://developingtelecoms.com/telecom-business/telecom-regulation/15738-nbtc-spectrum-roadmap-could-see-3500-mhz-auctions-in-2026.html"
+  ],
+  "note": ""
+ },
+ {
+  "country": "th",
+  "band": "corporate",
+  "operator": "true",
+  "field": "True-dtac merger",
+  "claimed": "1 Mar 2023",
+  "found": "consistent with NBTC research hub paper on the 3-to-2 merger",
+  "verdict": "confirmed",
+  "sources": [
+   "https://researchhub.nbtc.go.th/files/public/file_upload/publication_management/docs/b5c743ce9685c6c5.pdf"
+  ],
+  "note": ""
+ },
+ {
+  "country": "au",
+  "band": "26g",
+  "operator": "tpg/telstra/optus",
+  "field": "block edges",
+  "claimed": "TPG 25.1-25.7, Telstra 25.7-26.7, Optus 26.7-27.5 GHz",
+  "found": "ACMA RRL (29 Sep 2026): Sydney/Bathurst and Melbourne/Ballarat: Mobile JV 25100-25500 + 25500-25700, Telstra 25700-26700, Optus 26700-27500",
+  "verdict": "confirmed",
+  "sources": [
+   "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+  ],
+  "note": "ACMA auction summary: Telstra 150 lots, Optus 116, Mobile JV 86, Dense Air 2, Pentanet 4 (358/360 sold) - consistent."
+ },
+ {
+  "country": "au",
+  "band": "3500 (Melbourne)",
+  "operator": "all",
+  "field": "block edges",
+  "claimed": "NBN 3400-3475, Optus 3475-3575, Telstra 3575-3635, TPG 3635-3695, Dense Air 3695-3700, Telstra 3700-3780, TPG 3780-3800",
+  "found": "ACMA RRL: identical for Melbourne; Sydney: Optus 3475-3575, Telstra 3575-3635, Dense Air 3635-3640, TPG 3640-3700, Telstra 3700-3780, TPG 3780-3800",
+  "verdict": "confirmed",
+  "sources": [
+   "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+  ],
+  "note": ""
+ },
+ {
+  "country": "au",
+  "band": "3500 (note)",
+  "operator": "telstra/tpg/optus/denseair",
+  "field": "Brisbane layout in note",
+  "claimed": "Telstra 3575-3625 + 3720-3780, TPG 3625-3665 + 3780-3800, Optus 3665-3720",
+  "found": "ACMA RRL (Brisbane area): Optus 3475-3542.5, Telstra 3542.5-3605, TPG 3605-3665, Dense Air 3665-3700, TPG 3700-3725, Telstra 3725-3800",
+  "verdict": "conflict",
+  "sources": [
+   "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+  ],
+  "note": "Fix note text: 'Brisbane has Optus 3475-3542.5, Telstra 3542.5-3605 + 3725-3800, TPG 3605-3665 + 3700-3725, Dense Air 3665-3700.' Not in totals."
+ },
+ {
+  "country": "au",
+  "band": "1800 / 2100 (Sydney)",
+  "operator": "all",
+  "field": "block edges",
+  "claimed": "1800: Telstra 1805-1820, TPG 1820-1850, Optus 1850-1865, rail 1865-1880; 2100: TPG 2110-2125, Telstra 2125-2130, Optus 2130-2150, Telstra 2150-2160, TPG 2160-2170",
+  "found": "ACMA RRL: identical (TPG = Vodafone Australia + VHA; rail = Sydney Trains)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+  ],
+  "note": ""
+ },
+ {
+  "country": "au",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No spectrum licences above 27.5 GHz for MNOs in RRL",
+  "verdict": "confirmed",
+  "sources": [
+   "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+  ],
+  "note": ""
+ },
+ {
+  "country": "au",
+  "band": "coverage badge",
+  "operator": "-",
+  "field": "coverage",
+  "claimed": "holdings-only",
+  "found": "700/850/900/2600/26 GHz verified from ACMA; 1800/2100/3500 have verified Sydney/Melbourne views, pop-weighted totals for 1800/2100/2300/3500",
+  "verdict": "conflict",
+  "sources": [],
+  "note": "Minor: 'positions-verified' fits better than 'holdings-only'."
+ },
+ {
+  "country": "nz",
+  "band": "3500",
+  "operator": "spark/onenz/2degrees/maori",
+  "field": "holding",
+  "claimed": "80/80/80 MHz + 100 MHz Māori, from 1 Jul 2023, NZ$24m each",
+  "found": "MBIE/RCR: each MNO 80 MHz, NZ$24m each 2023-2025; Interim Māori Spectrum Commission 100 MHz; long-term rights from 1 Jul 2023",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.mbie.govt.nz/about/news/accelerated-5g-roll-out-to-benefit-rural-new-zealanders",
+   "https://www.rcrwireless.com/20230516/spectrum/new-zealand-telcos-get-3-5-ghz-spectrum-boost-5g-coverage"
+  ],
+  "note": "Largest-MHz entry for NZ."
+ },
+ {
+  "country": "nz",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; assignment of 26 GHz and lower 28 GHz delayed to 2028-2030",
+  "found": "RSM: allocation decision made; 'Delaying the assignment of 26 GHz and lower 28 GHz for mobile until use cases mature (expected in 2028-2030)'",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-24-30-ghz-spectrum"
+  ],
+  "note": ""
+ },
+ {
+  "country": "nz",
+  "band": "40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned",
+  "found": "No assignment in RSM material",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-24-30-ghz-spectrum"
+  ],
+  "note": ""
+ },
+ {
+  "country": "sa",
+  "band": "600/700/3800",
+  "operator": "stc/mobily/zain",
+  "field": "holding",
+  "claimed": "stc 2x20 (600) + 100 (3800); Mobily 2x10 (700) + 100 (3800); Zain 2x15 (600)",
+  "found": "CST: stc 40 MHz @600 + 100 @3800; Mobily 20 @700 + 100 @3800; Zain 30 @600",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.cst.gov.sa/en/media-center/news/CST-Announces-the-Winners-of-the-Spectrum-Auction-in-the-Frequency-Bands-600-700-3800-MHz-for-Mobile"
+  ],
+  "note": ""
+ },
+ {
+  "country": "sa",
+  "band": "3500 (2019)",
+  "operator": "zain",
+  "field": "holding",
+  "claimed": "not verified (only Mobily 100 MHz shown)",
+  "found": "Zain KSA Q1-2019 financial statements (as quoted in search index): Zain acquired 100 MHz of additional spectrum in 3.5 GHz on 17 Mar 2019 for SR 624m",
+  "verdict": "unverifiable",
+  "sources": [
+   "https://sa.zain.com/sites/default/files/media/2020-01/Zain%20KSA%20%20Q-1%202019%20%20%20%20English_.pdf"
+  ],
+  "note": "Lead: PDF not directly retrievable (blocked). If confirmed, add holding {op:'zain', mhz:100, basis:'exact'} to the 2019 3.5 GHz entry."
+ },
+ {
+  "country": "sa",
+  "band": "26g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "unknown",
+  "found": "No reliable source found (spectrum-tracker blocked; secondary site claims 26 GHz assignments without citation)",
+  "verdict": "unverifiable",
+  "sources": [],
+  "note": ""
+ },
+ {
+  "country": "ae",
+  "band": "3500",
+  "operator": "eand/du",
+  "field": "holding/edges",
+  "claimed": "unknown",
+  "found": "CMS Expert Guide: e& 300 MHz (3300-3600), du 200 MHz (3600-3800); TRA issued 100 MHz each in 3.3-3.8 GHz in Nov 2018 (MTN Consulting)",
+  "verdict": "conflict",
+  "sources": [
+   "https://cms.law/en/int/expert-guides/cms-expert-guide-to-5g-regulation-and-law/united-arab-emirates",
+   "https://www.mtn-c.com/uae-the-first-5g-market-in-mena/"
+  ],
+  "note": "Gap fill: set status 'assigned', positions 'unverified', blocks eand 3300-3600, du 3600-3800 (one law-firm source; not regulator). CMS also gives n41: du 2496-2596, e& 2596-2690."
+ },
+ {
+  "country": "ae",
+  "band": "26g",
+  "operator": "eand/du",
+  "field": "holding",
+  "claimed": "unknown (band 26 or 28 GHz not verified)",
+  "found": "TRA (Gulf News, Sep 2020): phase 1 26.5-27.5 GHz from Sep 2020; phase 2 Q3 2021 '1 GHz per operator in 25.5-27.5 GHz'. CMS guide: 'both operators received 1 GHz each of mmWave spectrum in 25.5-27.5 GHz' in 2021",
+  "verdict": "conflict",
+  "sources": [
+   "https://gulfnews.com/amp/business/uaes-telecom-regulatory-authority-allots-new-frequencies-for-5g-network-1.1600164920806",
+   "https://cms.law/en/int/expert-guides/cms-expert-guide-to-5g-regulation-and-law/united-arab-emirates"
+  ],
+  "note": "Gap fill: status 'assigned', positions 'holdings', holdings eand 1000 and du 1000 (basis 'exact', TRA 2020 plan / CMS 2021); two independent sources for amounts, no block edges."
+ },
+ {
+  "country": "ae",
+  "band": "corporate",
+  "operator": "eand",
+  "field": "Etisalat rebranded e& 2022",
+  "claimed": "as stated",
+  "found": "consistent",
+  "verdict": "confirmed",
+  "sources": [
+   "https://cms.law/en/int/expert-guides/cms-expert-guide-to-5g-regulation-and-law/united-arab-emirates"
+  ],
+  "note": ""
+ },
+ {
+  "country": "za",
+  "band": "3500",
+  "operator": "telkom/mtn/vodacom/cellc/liquid",
+  "field": "holding",
+  "claimed": "Telkom 50, MTN 40, Vodacom 10, Cell C 10, Liquid 4 (86 MHz sold in 2022)",
+  "found": "ICASA 17 Mar 2022: 3500 lots Telkom 22, Liquid 4, Cell C 10, MTN 40, Vodacom 10 (=86); Telkom's 50 = 22 + 28 pre-existing",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds"
+  ],
+  "note": ""
+ },
+ {
+  "country": "za",
+  "band": "2600",
+  "operator": "vodacom/mtn/rain",
+  "field": "holding",
+  "claimed": "Vodacom 2x40, MTN 2x20, Rain 2x10",
+  "found": "ICASA: 2600 Vodacom 80, MTN 40, Rain 20 (10 opt-in + 10 main)",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds"
+  ],
+  "note": "Largest assigned entry by MHz (tie with 1800)."
+ },
+ {
+  "country": "za",
+  "band": "700/800",
+  "operator": "vodacom/rain/mtn/telkom",
+  "field": "holding",
+  "claimed": "700: Vodacom 2x10, Rain 2x10; 800: MTN 2x10, Telkom 2x10",
+  "found": "ICASA: 700 Vodacom 20, Rain 20; 800 MTN 20, Telkom 20, 20 unsold",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.icasa.org.za/news/2022/icasa-concludes-successful-spectrum-auction-and-collects-more-than-r14-4-billion-proceeds"
+  ],
+  "note": ""
+ },
+ {
+  "country": "za",
+  "band": "26g/40g/47g",
+  "operator": "-",
+  "field": "status",
+  "claimed": "not-assigned; IMT Roadmap 2026 proposes exclusive geographic areas",
+  "found": "ICASA draft IMT Roadmap (Jul 2026): draft exclusive geographic areas for 24.25-27.5, 37.5-43.5, 45.5-47, 47.2-48.2 GHz; comments due 4 Sep 2026; no ITA",
+  "verdict": "confirmed-independent",
+  "sources": [
+   "https://www.icasa.org.za/news/2026/icasa-publishes-draft-imt-roadmap-and-implementation-plans",
+   "https://www.engineeringnews.co.za/article/icasa-publishes-draft-imt-roadmap-implementation-plans-2026-07-27"
+  ],
+  "note": ""
+ },
+ {
+  "country": "za",
+  "band": "corporate",
+  "operator": "vodacom",
+  "field": "Maziv stake",
+  "claimed": "Vodacom took a stake in Maziv",
+  "found": "Competition Appeal Court approved Vodacom's 30% (up to 40%) Maziv deal in 2025",
+  "verdict": "confirmed",
+  "sources": [
+   "https://www.connectingafrica.com/regulation/vodacom-maziv-deal-finally-gets-green-light"
+  ],
+  "note": ""
+ }
+]
