@@ -1,0 +1,948 @@
+{
+ "code": "fr",
+ "name": "France",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "Four national MNOs (Orange, SFR, Bouygues Telecom, Free Mobile) in metropolitan France; all bands 700 MHz-3.8 GHz are assigned with exact edges published by Arcep. A three-way break-up of SFR was signed in June 2026 but has not closed.",
+ "operators": [
+  {
+   "id": "orange",
+   "name": "Orange",
+   "legal": "Orange SA",
+   "color": "#ff7900",
+   "aliases": [
+    "Orange France"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "sfr",
+   "name": "SFR",
+   "legal": "Société française du radiotéléphone (Altice France)",
+   "color": "#e2001a",
+   "aliases": [
+    "Altice France"
+   ],
+   "kind": "mno",
+   "notes": "Owned by Altice France. On 6 Jun 2026 Bouygues Telecom, Iliad (Free) and Orange signed a protocol to buy and split SFR (EUR 20.35bn); the Autorité de la concurrence opened its review on 15 Jul 2026 and closing is not expected before H2 2027. Not reflected in the data."
+  },
+  {
+   "id": "bouygues",
+   "name": "Bouygues Telecom",
+   "legal": "Bouygues Telecom SA",
+   "color": "#009fe3",
+   "aliases": [
+    "Bytel"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "free",
+   "name": "Free Mobile",
+   "legal": "Free Mobile SAS (Iliad)",
+   "color": "#6d6e71",
+   "aliases": [
+    "Free",
+    "Iliad"
+   ],
+   "kind": "mno",
+   "notes": "Fourth operator, licensed 2010 (launched 2012)."
+  }
+ ],
+ "bands": [
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned Nov 2015 (EUR 2.8bn total), 20-year licences to 7 Dec 2035. 733-736/788-791 and 698-703/753-758 are reserved for the PPDR network (Réseau Radio du Futur), not public mobile.",
+   "sources": [
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+   ],
+   "blocks": [
+    {
+     "op": "sfr",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ],
+     "expiry": "2035-12-07",
+     "notes": "Decision 2015-1569; 2015 auction"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      763,
+      773
+     ],
+     "ul": [
+      708,
+      718
+     ],
+     "expiry": "2035-12-07",
+     "notes": "Decision 2015-1568; 2015 auction"
+    },
+    {
+     "op": "bouygues",
+     "dl": [
+      773,
+      778
+     ],
+     "ul": [
+      718,
+      723
+     ],
+     "expiry": "2035-12-07",
+     "notes": "Decision 2015-1566; 2015 auction"
+    },
+    {
+     "op": "free",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2035-12-07",
+     "notes": "Decision 2015-1567; 2015 auction"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded Jan 2012 for 20 years (expiry 16 Jan 2032). Free Mobile holds no 800 MHz. Re-award of 800/900/1800/2100/2600 is under consultation (Arcep consultations Oct 2025 and 23 Jul 2026).",
+   "sources": [
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+   ],
+   "blocks": [
+    {
+     "op": "bouygues",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2032-01-16",
+     "notes": "Decision 2012-0037"
+    },
+    {
+     "op": "sfr",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2032-01-16",
+     "notes": "Decision 2012-0039"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2032-01-16",
+     "notes": "Decision 2012-0038"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Since 8 Feb 2025 each operator holds 2x8.7 MHz (final step of the 2018 \"New Deal\" redistribution). 100 kHz guard bands at 880-880.1 and 914.9-915 (UL). Block order from the Arcep Nov 2020 chart (\"à partir du 8 février 2025\"); edges derived from the 880.1/914.9 MHz limits and equal 8.7 MHz blocks stated in the Oct 2025 consultation.",
+   "sources": [
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+   ],
+   "blocks": [
+    {
+     "op": "bouygues",
+     "dl": [
+      925.1,
+      933.8
+     ],
+     "ul": [
+      880.1,
+      888.8
+     ],
+     "expiry": "2034-12-08",
+     "notes": "Decisions 2009-0838 / 2018-1390 (\"New Deal\" renewal)"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      933.8,
+      942.5
+     ],
+     "ul": [
+      888.8,
+      897.5
+     ],
+     "expiry": "2031-03-24",
+     "notes": "New Deal renewal (2018)"
+    },
+    {
+     "op": "free",
+     "dl": [
+      942.5,
+      951.2
+     ],
+     "ul": [
+      897.5,
+      906.2
+     ],
+     "expiry": "2030-01-11",
+     "notes": "Free's 8.7 MHz is made up of rights expiring 11 Jan 2030, 24 Mar 2031 and 8 Dec 2034; earliest shown"
+    },
+    {
+     "op": "sfr",
+     "dl": [
+      951.2,
+      959.9
+     ],
+     "ul": [
+      906.2,
+      914.9
+     ],
+     "expiry": "2031-03-24",
+     "notes": "New Deal renewal (2018)"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Orange, SFR and Bouygues 2x20 MHz, Free Mobile 2x15 MHz. Expiries range from 24 Mar 2031 to Dec 2034 (Oct 2025 consultation).",
+   "sources": [
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "expiry": "2031-03-24"
+    },
+    {
+     "op": "sfr",
+     "dl": [
+      1825,
+      1845
+     ],
+     "ul": [
+      1730,
+      1750
+     ],
+     "expiry": "2031-03-24"
+    },
+    {
+     "op": "free",
+     "dl": [
+      1845,
+      1860
+     ],
+     "ul": [
+      1750,
+      1765
+     ],
+     "expiry": "2031-10-11",
+     "notes": "Decision 2014-1542 per Arcep patrimoine page"
+    },
+    {
+     "op": "bouygues",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "expiry": "2034-12-08"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Each operator holds 2x14.8 MHz; guard bands 1920-1920.5 (500 kHz) and 1979.7-1980 (300 kHz). Edges from Arcep Oct 2025 consultation (1920.5/2110.5 to 1979.7/2169.7 MHz) and block order from the Arcep chart. Expiry dates per block summarised from the Arcep patrimoine page (several decisions per operator).",
+   "sources": [
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+   ],
+   "blocks": [
+    {
+     "op": "sfr",
+     "dl": [
+      2110.5,
+      2125.3
+     ],
+     "ul": [
+      1920.5,
+      1935.3
+     ],
+     "expiry": "2031-08-20",
+     "notes": "part (2x5 MHz) expires 7 Jun 2030"
+    },
+    {
+     "op": "bouygues",
+     "dl": [
+      2125.3,
+      2140.1
+     ],
+     "ul": [
+      1935.3,
+      1950.1
+     ],
+     "expiry": "2032-12-11"
+    },
+    {
+     "op": "free",
+     "dl": [
+      2140.1,
+      2154.9
+     ],
+     "ul": [
+      1950.1,
+      1964.9
+     ],
+     "expiry": "2030-01-11",
+     "notes": "2x5 MHz expires 11 Jan 2030, remainder 20 Aug 2031"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2154.9,
+      2169.7
+     ],
+     "ul": [
+      1964.9,
+      1979.7
+     ],
+     "expiry": "2031-08-20",
+     "notes": "part (2x5 MHz) expires 7 Jun 2030"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded Oct 2011 for 20 years (expiry 10 Oct 2031).",
+   "sources": [
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+   ],
+   "blocks": [
+    {
+     "op": "sfr",
+     "dl": [
+      2620,
+      2635
+     ],
+     "ul": [
+      2500,
+      2515
+     ],
+     "expiry": "2031-10-10",
+     "notes": "Decision 2011-1171"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2635,
+      2655
+     ],
+     "ul": [
+      2515,
+      2535
+     ],
+     "expiry": "2031-10-10",
+     "notes": "Decision 2011-1170"
+    },
+    {
+     "op": "bouygues",
+     "dl": [
+      2655,
+      2670
+     ],
+     "ul": [
+      2535,
+      2550
+     ],
+     "expiry": "2031-10-10",
+     "notes": "Decision 2011-1168"
+    },
+    {
+     "op": "free",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2031-10-10",
+     "notes": "Decision 2011-1169"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD (2570-2620)",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned to public mobile operators. Reserved for professional/private very-high-speed networks (PMR THD): Arcep has run a first-come first-served window (guichet) since May 2019 with about 45 local site authorisations (energy, transport, logistics, industry).",
+   "sources": [
+    "https://www.arcep.fr/mes-demarches-et-services/entreprises/fiches-pratiques/transformation-numerique-des-entreprises/guichet-dattribution-des-frequences-de-la-bande-26-ghz-tdd.html",
+    "https://www.arcep.fr/uploads/tx_gspublication/modalites-pratiques-2_6-GHz-TDD_dec2024.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "3500",
+   "label": "3.4-3.8 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3410,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded Oct 2020 (4x50 MHz fixed-price blocks with commitments + 11x10 MHz auctioned; EUR 2.79bn). 15-year licences to 17 Nov 2035, extendable to 17 Nov 2040. 3410-3490 MHz is not awarded to MNOs (Arcep, Apr 2026). 3.8-4.2 GHz is being opened for local private networks (Arcep consultation June 2025), not for national MNOs.",
+   "sources": [
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html",
+    "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/frequences-070426.html"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3410,
+      3490
+     ],
+     "notes": "Local fixed-wireless (BLR/THD Radio) licences expired by 24 Jul 2026; Arcep decided not to award to MNOs for now, band re-planning targeted for 2035"
+    },
+    {
+     "op": "sfr",
+     "f": [
+      3490,
+      3570
+     ],
+     "expiry": "2035-11-17",
+     "notes": "Decision 2020-1257; 80 MHz"
+    },
+    {
+     "op": "bouygues",
+     "f": [
+      3570,
+      3640
+     ],
+     "expiry": "2035-11-17",
+     "notes": "Decision 2020-1254; 70 MHz"
+    },
+    {
+     "op": "free",
+     "f": [
+      3640,
+      3710
+     ],
+     "expiry": "2035-11-17",
+     "notes": "Decision 2020-1255; 70 MHz"
+    },
+    {
+     "op": "orange",
+     "f": [
+      3710,
+      3800
+     ],
+     "expiry": "2035-11-17",
+     "notes": "Decision 2020-1256; 90 MHz"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz SDL (1427-1517)",
+   "names": [
+    "B32",
+    "B75",
+    "B76",
+    "n75",
+    "n76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. Arcep lists the full 1427-1517 MHz band (40 MHz core + 2x25 MHz extensions) as available for a future award (consultations Oct 2025 / Jul 2026).",
+   "sources": [
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   }
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz unpaired TDD (1900-1920)",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned to operators; the 1900-1920 MHz unpaired block is shown empty in Arcep's allocation charts.",
+   "sources": [
+    "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   }
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for public mobile; 2300-2400 MHz is used by the Ministry of the Armed Forces (telemetry) and for mobile video links (2290-2310). LSA sharing was studied (ANFR/CCE report 2015) but never implemented.",
+   "sources": [
+    "https://www.anfr.fr/fileadmin/mediatheque/documents/etudes/15-04-17_CCE_2015_01_Rapport_LSA_VersionDiffusable.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. Only experimental authorisations (4 in force at 30 Jun 2025) under the window opened in Jan 2019; Arcep reports limited operator interest.",
+   "sources": [
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "6g",
+   "label": "Upper 6 GHz (6425-7125)",
+   "names": [
+    "n104"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; EU harmonisation decision (mobile vs Wi-Fi) expected ~2027.",
+   "sources": [
+    "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     6425,
+     7125
+    ]
+   }
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe (ITU Region 1): 470-694 MHz remains allocated to DTT/PMSE; future use on the WRC-31 agenda.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Europe: 824-849/869-894 MHz overlaps the EU 800 MHz (B20) and 900 MHz (B8) plans.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS (1710-1780/2110-2200) is not used in Europe; 1710-1785 is part of the 1800 MHz (B3) plan and 2110-2170 of the 2100 MHz (B1) plan.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS 1900 is not used in Europe; 1850-1910 MHz overlaps the B3 downlink and the B1/B33 plans.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "n79 is not harmonised for mobile in Europe; 4.4-5.0 GHz is used by defence/government systems.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. 40.5-43.5 GHz harmonised in the EU by Decision (EU) 2024/1983 but no national award yet.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences",
+    "https://eur-lex.europa.eu/eli/dec_impl/2024/1983/oj"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47.2-48.2 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; 47.2-48.2 GHz is not harmonised for IMT in the EU.",
+   "sources": [
+    "https://www.anfr.fr/gestion-des-frequences-sites/le-tableau-national-de-repartition-des-bandes-de-frequences"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   }
+  }
+ ],
+ "notes": [
+  "Data covers metropolitan France (Hexagone) only; overseas departments have separate assignments.",
+  "900 MHz edges are derived: Arcep gives the band limits (880.1-914.9 / 925.1-959.9 MHz), equal 8.7 MHz blocks and the block order, not each edge explicitly.",
+  "2100 MHz edges likewise derived from Arcep limits (1920.5-1979.7 / 2110.5-2169.7 MHz, 4x14.8 MHz) and order.",
+  "Licence renewals: no new renewals were decided in 2024-2025. The 2018 New Deal set 900/1800/2100 expiries between 2030 and 2034; Arcep consulted in Oct 2025 and again on 23 Jul 2026 (responses due 23 Sep 2026) on conditional re-awards aligning all expiries (proposed 7 Dec 2035) followed by a competitive procedure.",
+  "SFR sale to Bouygues/Free/Orange (signed 6 Jun 2026) is pending competition review; any spectrum split is not reflected.",
+  "Several operators hold rights in the same band under different decisions with different expiries (Free and 900/2100, Orange/SFR 2100); the block expiry shows the earliest or main date, see block notes."
+ ],
+ "missing": [
+  "EARFCN/NR-ARFCN carrier details not compiled.",
+  "Per-block expiry for multi-decision holdings (Free 900 MHz, Orange/SFR/Free 2100 MHz) not split into sub-blocks."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "Arcep - Les attributions de fréquences aux opérateurs de réseaux mobiles (Nov 2020, incl. layout from 8 Feb 2025)",
+   "url": "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf"
+  },
+  {
+   "title": "Arcep - Consultation publique sur les fréquences mobiles à l'horizon 2030 (Oct 2025)",
+   "url": "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf"
+  },
+  {
+   "title": "Arcep - Le patrimoine de fréquences des opérateurs mobiles",
+   "url": "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+  },
+  {
+   "title": "Arcep - Communiqué fréquences 23 Jul 2026 (2nd consultation on re-awards)",
+   "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/frequences-230726.html"
+  },
+  {
+   "title": "Arcep - Guichet 2,6 GHz TDD",
+   "url": "https://www.arcep.fr/mes-demarches-et-services/entreprises/fiches-pratiques/transformation-numerique-des-entreprises/guichet-dattribution-des-frequences-de-la-bande-26-ghz-tdd.html"
+  },
+  {
+   "title": "Degrouptest - Rachat de SFR (status of the SFR sale)",
+   "url": "https://www.degrouptest.com/actualite/rachat-de-sfr-ce-que-bouygues-free-et-orange-proposent-au-regulateur-pour-finaliser-la-vente"
+  }
+ ]
+}
