@@ -1,0 +1,906 @@
+{
+  "code": "hr",
+  "name": "Croatia",
+  "region": "Europe",
+  "asOf": "2026-09-28",
+  "coverage": "block-level",
+  "licensing": "mixed",
+  "summary": "Three MNOs: Hrvatski Telekom, A1 Hrvatska and Telemach Hrvatska (United Group). The 5G bands (700 MHz, 3.6 GHz, 26 GHz) were auctioned in 2021 to 2036. 800/900/1800/2100/2600 MHz were re-awarded in 2023 (shown in the HAKOM register dated 18 Oct 2024), to 2039. EOLO holds a 26 GHz block, and 3.4–3.48 GHz is licensed regionally.",
+  "operators": [
+    {
+      "id": "ht",
+      "name": "Hrvatski Telekom",
+      "legal": "Hrvatski Telekom d.d.",
+      "color": "#e20074",
+      "aliases": [
+        "HT",
+        "Telekom"
+      ],
+      "kind": "mno",
+      "notes": "Deutsche Telekom group."
+    },
+    {
+      "id": "a1",
+      "name": "A1 Hrvatska",
+      "legal": "A1 Hrvatska d.o.o.",
+      "color": "#da291c",
+      "aliases": [
+        "A1",
+        "Vip"
+      ],
+      "kind": "mno",
+      "notes": "A1 Group; formerly Vipnet."
+    },
+    {
+      "id": "telemach",
+      "name": "Telemach Hrvatska",
+      "legal": "Telemach Hrvatska d.o.o.",
+      "color": "#0072ce",
+      "aliases": [
+        "Telemach",
+        "Tele2 Croatia"
+      ],
+      "kind": "mno",
+      "notes": "United Group; formerly Tele2 Croatia (bought 2020, rebranded Telemach)."
+    },
+    {
+      "id": "eolo",
+      "name": "EOLO",
+      "legal": "EOLO S.p.A",
+      "color": "#00a651",
+      "aliases": [],
+      "kind": "other",
+      "notes": "Italian FWA operator. Holds national 26 GHz (27300–27500 MHz) and regional 3.4–3.48 GHz blocks (Primorje-Gorski Kotar, Zadar, Split-Dalmatia, Istria)."
+    }
+  ],
+  "bands": [
+    {
+      "group": "700",
+      "label": "700 MHz FDD (B28/n28)",
+      "names": [
+        "B28",
+        "n28"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          758,
+          788
+        ],
+        "ul": [
+          703,
+          733
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "From the 2021 5G auction; licences run to 2036.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+      ],
+      "blocks": [
+        {
+          "op": "a1",
+          "dl": [
+            758,
+            768
+          ],
+          "ul": [
+            703,
+            713
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            768,
+            778
+          ],
+          "ul": [
+            713,
+            723
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "ht",
+          "dl": [
+            778,
+            788
+          ],
+          "ul": [
+            723,
+            733
+          ],
+          "expiry": "2036"
+        }
+      ]
+    },
+    {
+      "group": "700",
+      "label": "700 MHz SDL (738–758 MHz)",
+      "names": [
+        "n28"
+      ],
+      "status": "not-assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          738,
+          758
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. HAKOM's national assignment database lists only 700 MHz FDD.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "800",
+      "label": "800 MHz (B20/n20)",
+      "names": [
+        "B20",
+        "n20"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          791,
+          821
+        ],
+        "ul": [
+          832,
+          862
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Re-assigned in 2023 (HAKOM database edition dated 18 Oct 2024); runs to 2039.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "telemach",
+          "dl": [
+            791,
+            801
+          ],
+          "ul": [
+            832,
+            842
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "ht",
+          "dl": [
+            801,
+            811
+          ],
+          "ul": [
+            842,
+            852
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            811,
+            821
+          ],
+          "ul": [
+            852,
+            862
+          ],
+          "expiry": "2039"
+        }
+      ]
+    },
+    {
+      "group": "900",
+      "label": "900 MHz (B8/n8)",
+      "names": [
+        "B8",
+        "n8"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          925,
+          960
+        ],
+        "ul": [
+          880,
+          915
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Re-assigned in 2023 (HAKOM database edition dated 18 Oct 2024); runs to 2039.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "telemach",
+          "dl": [
+            925,
+            930
+          ],
+          "ul": [
+            880,
+            885
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "ht",
+          "dl": [
+            930,
+            945
+          ],
+          "ul": [
+            885,
+            900
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            945,
+            960
+          ],
+          "ul": [
+            900,
+            915
+          ],
+          "expiry": "2039"
+        }
+      ]
+    },
+    {
+      "group": "1400",
+      "label": "1.5 GHz L-band SDL (B32/B75)",
+      "names": [
+        "B32",
+        "B75",
+        "n75"
+      ],
+      "status": "not-assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          1427,
+          1517
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. It is not in HAKOM's national assignment database (Oct 2024 edition).",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1800",
+      "label": "1800 MHz (B3/n3)",
+      "names": [
+        "B3",
+        "n3"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1805,
+          1880
+        ],
+        "ul": [
+          1710,
+          1785
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "ht",
+          "dl": [
+            1805,
+            1835
+          ],
+          "ul": [
+            1710,
+            1740
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            1835,
+            1855
+          ],
+          "ul": [
+            1740,
+            1760
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            1855,
+            1880
+          ],
+          "ul": [
+            1760,
+            1785
+          ],
+          "expiry": "2039"
+        }
+      ]
+    },
+    {
+      "group": "2100",
+      "label": "2100 MHz (B1/n1)",
+      "names": [
+        "B1",
+        "n1"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2170
+        ],
+        "ul": [
+          1920,
+          1980
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "a1",
+          "dl": [
+            2110,
+            2125
+          ],
+          "ul": [
+            1920,
+            1935
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "telemach",
+          "dl": [
+            2125,
+            2145
+          ],
+          "ul": [
+            1935,
+            1955
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "ht",
+          "dl": [
+            2145,
+            2170
+          ],
+          "ul": [
+            1955,
+            1980
+          ],
+          "expiry": "2039"
+        }
+      ]
+    },
+    {
+      "group": "2000tdd",
+      "label": "2 GHz unpaired TDD (B33/B34)",
+      "names": [
+        "B33",
+        "B34"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          1900,
+          1920
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. It is not in HAKOM's national assignment database.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2300",
+      "label": "2300 MHz (B40/n40)",
+      "names": [
+        "B40",
+        "n40"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2300,
+          2400
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. HAKOM's 2026 strategic plan names 2300–2400 MHz as a candidate for MFCN under licensed shared access (LSA).",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz FDD (B7/n7)",
+      "names": [
+        "B7",
+        "n7"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2620,
+          2690
+        ],
+        "ul": [
+          2500,
+          2570
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "telemach",
+          "dl": [
+            2620,
+            2640
+          ],
+          "ul": [
+            2500,
+            2520
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "ht",
+          "dl": [
+            2640,
+            2665
+          ],
+          "ul": [
+            2520,
+            2545
+          ],
+          "expiry": "2039"
+        },
+        {
+          "op": "a1",
+          "dl": [
+            2665,
+            2690
+          ],
+          "ul": [
+            2545,
+            2570
+          ],
+          "expiry": "2039"
+        }
+      ]
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz TDD (B38)",
+      "names": [
+        "B38",
+        "n38"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2570,
+          2620
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "No national assignment. 2575–2615 MHz is set aside for local private broadband networks under the 2500–2690 MHz assignment plan, and HAKOM is studying LSA sharing.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "3500",
+      "label": "3.4–3.8 GHz (n78)",
+      "names": [
+        "n78",
+        "B42",
+        "B43"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          3400,
+          3800
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "National blocks come from the 2021 5G auction. 3400–3480 MHz is licensed regionally (see note) and drawn as grey, not counted.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2025/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_regionalno_20251112.pdf?vel=109451",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "unassigned",
+          "f": [
+            3400,
+            3480
+          ],
+          "notes": "Regional licences in 10 MHz blocks by county (Terrakom, Markoja, Eco Net, Digicom, EOLO), assigned in 2023"
+        },
+        {
+          "op": "ht",
+          "f": [
+            3480,
+            3600
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "telemach",
+          "f": [
+            3600,
+            3700
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "a1",
+          "f": [
+            3700,
+            3800
+          ],
+          "expiry": "2036"
+        }
+      ]
+    },
+    {
+      "group": "26g",
+      "label": "26 GHz (n258)",
+      "names": [
+        "n258"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          24250,
+          27500
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2021 auction. 24.25–26.5 GHz has no assignment plan yet; HAKOM is considering licence-exempt or club use.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": [
+        {
+          "op": "telemach",
+          "f": [
+            26500,
+            26700
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "a1",
+          "f": [
+            26700,
+            26900
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "ht",
+          "f": [
+            26900,
+            27300
+          ],
+          "expiry": "2036"
+        },
+        {
+          "op": "eolo",
+          "f": [
+            27300,
+            27500
+          ],
+          "expiry": "2036"
+        }
+      ]
+    },
+    {
+      "group": "40g",
+      "label": "40 GHz (n259)",
+      "names": [
+        "n259"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          37000,
+          43500
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. It is not in HAKOM's national assignment database.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "600",
+      "label": "600 MHz (B71/n71)",
+      "names": [
+        "n71"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          617,
+          652
+        ],
+        "ul": [
+          663,
+          698
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in Europe; 470–694 MHz remains allocated to terrestrial broadcasting (DTT) under the EU UHF decision (EU) 2017/899.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "850",
+      "label": "850 MHz (B5)",
+      "names": [
+        "B5",
+        "n5"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          869,
+          894
+        ],
+        "ul": [
+          824,
+          849
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in CEPT/EU; 824–894 MHz overlaps the 800 MHz (B20) and E-GSM/GSM-R plans.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1700",
+      "label": "AWS 1.7/2.1 GHz (B4/B66)",
+      "names": [
+        "B66",
+        "n66"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2155
+        ],
+        "ul": [
+          1710,
+          1755
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "AWS pairing not used in Europe; 1710–1785 MHz is the B3 uplink and 2110–2170 MHz is B1.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1900",
+      "label": "PCS 1900 (B2/B25)",
+      "names": [
+        "B2",
+        "n2"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1930,
+          1995
+        ],
+        "ul": [
+          1850,
+          1915
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "PCS pairing not used in Europe; 1880–1900 MHz is DECT, 1900–1920 MHz unpaired and 1980–2010/2170–2200 MHz is 2 GHz MSS.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "4900",
+      "label": "4.4–5.0 GHz (n79)",
+      "names": [
+        "n79"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          4400,
+          5000
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised for MFCN in the EU; no mobile assignments.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "47g",
+      "label": "47 GHz (n262)",
+      "names": [
+        "n262"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          47200,
+          48200
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "No 47 GHz mobile assignments.",
+      "sources": [
+        "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869",
+        "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+      ],
+      "blocks": []
+    }
+  ],
+  "notes": [
+    "No davwheat seed existed for HR; compiled from scratch.",
+    "Primary source: HAKOM 'Baza dodijeljenog RF spektra za pokretne i nepokretne komunikacijske mreže s nacionalnim pokrivanjem od 18.10.2024', which lists every national block with holder and expiry year. HAKOM's Jan 2026 strategic plan confirms that 700 MHz, 3.6 GHz and 26 GHz were assigned in 2021, and 800/900/1800/2100/2600 plus regional 3.6 GHz in 2023.",
+    "Licensing is 'mixed' because 3400–3480 MHz is licensed per county in 10 MHz blocks (HAKOM regional database, Nov 2025: Terrakom, Markoja, Eco Net, Digicom, EOLO). Those regional holders are not modelled as operators.",
+    "Expiry years are given by HAKOM as years only (2036 / 2039)."
+  ],
+  "missing": [
+    "Second independent source for block edges not collected (HAKOM database used alone; it is the regulator's own register)",
+    "Corporate changes after 2024 (e.g. any United Group/Telemach ownership changes) not verified",
+    "Carrier EARFCN/NR-ARFCN not compiled"
+  ],
+  "changes": [],
+  "sources": [
+    {
+      "title": "HAKOM – Baza dodijeljenog RF spektra, nacionalno (18.10.2024)",
+      "url": "https://www.hakom.hr/UserDocsImages/2023/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_nakon_2024.pdf?vel=226869"
+    },
+    {
+      "title": "HAKOM – Baza dodijeljenog RF spektra, regionalno (12.11.2025)",
+      "url": "https://www.hakom.hr/UserDocsImages/2025/radiokomunikacije/Baza%20radiofrekvencijskog%20spektra_hrv_regionalno_20251112.pdf?vel=109451"
+    },
+    {
+      "title": "HAKOM – Strateški plan aktivnosti RF spektar 2026–2029",
+      "url": "https://www.hakom.hr/UserDocsImages/2026/radiokomunikacije/Strate%C5%A1ki_plan_aktivnosti_RF_spektar_20260122.pdf?vel=1738421"
+    },
+    {
+      "title": "HAKOM – Baza podataka RF spektra",
+      "url": "https://www.hakom.hr/hr/baza-podataka-rf-spektra/242"
+    }
+  ]
+}

@@ -1,0 +1,920 @@
+{
+ "code": "id",
+ "name": "Indonesia",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "mixed",
+ "summary": "Three national MNOs after consolidation: Telkomsel, Indosat Ooredoo Hutchison and XLSmart (XL Axiata + Smartfren). The July 2026 auction added 70 MHz of 700 MHz and 190 MHz of 2.6 GHz, raising the total from 452 MHz to 712 MHz (Telkomsel 265, XLSmart 232, falling to 217 after the 900 MHz return, Indosat 215 MHz).",
+ "operators": [
+  {
+   "id": "telkomsel",
+   "name": "Telkomsel",
+   "legal": "PT Telekomunikasi Selular",
+   "color": "#e4002b",
+   "aliases": [
+    "Telkomsel",
+    "by.U"
+   ],
+   "kind": "mno",
+   "notes": "Subsidiary of Telkom Indonesia. Won 2x10 MHz (700 MHz) and 80 MHz (2.6 GHz) in the July 2026 selection."
+  },
+  {
+   "id": "ioh",
+   "name": "Indosat Ooredoo Hutchison",
+   "legal": "PT Indosat Tbk",
+   "color": "#ffc20e",
+   "aliases": [
+    "Indosat",
+    "IM3",
+    "Tri",
+    "3 Indonesia",
+    "IOH"
+   ],
+   "kind": "mno",
+   "notes": "Indosat Ooredoo merged with Hutchison 3 Indonesia in January 2022 (brands IM3 and Tri). As a merger remedy it gave back 2x5 MHz of 2.1 GHz (background knowledge; consistent with Komdigi's 2x25 MHz 2.1 GHz holding). Won 2x10 MHz (700) and 60 MHz (2.6 GHz) in 2026."
+  },
+  {
+   "id": "xlsmart",
+   "name": "XLSmart",
+   "legal": "PT XLSMART Telecom Sejahtera Tbk",
+   "color": "#1d4f91",
+   "aliases": [
+    "XL Axiata",
+    "XL",
+    "AXIS",
+    "Smartfren"
+   ],
+   "kind": "mno",
+   "notes": "Formed by the merger of XL Axiata and Smartfren (completed April 2025); holdings of both are combined here. Merger condition: return 2x7.5 MHz of 900 MHz by 14 Dec 2026. Won 2x15 MHz (700) and 50 MHz (2.6 GHz) in 2026."
+  },
+  {
+   "id": "telemedia",
+   "name": "Telemedia (Surge / WIFI)",
+   "legal": "PT Telemedia Komunikasi Pratama",
+   "color": "#00a19a",
+   "aliases": [
+    "Surge",
+    "Solusi Sinergi Digital",
+    "WIFI"
+   ],
+   "kind": "regional",
+   "notes": "Subsidiary of PT Solusi Sinergi Digital Tbk (Surge). Won the 1.4 GHz BWA licence for Regional I (Java, Maluku, Papua) in Oct 2025; decree Nov 2025. Fixed-wireless access only."
+  },
+  {
+   "id": "myrepublic",
+   "name": "MyRepublic",
+   "legal": "PT Eka Mas Republik",
+   "color": "#7b2d8e",
+   "aliases": [
+    "Eka Mas Republik",
+    "Sinar Mas",
+    "DSSA"
+   ],
+   "kind": "regional",
+   "notes": "Subsidiary of PT Dian Swastatika Sentosa Tbk (Sinar Mas). Won 1.4 GHz BWA licences for Regional II (Sumatra, Bali, Nusa Tenggara) and III (Kalimantan, Sulawesi) in Oct 2025."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not identified for IMT in Indonesia; the UHF band below 694 MHz is used for digital terrestrial TV (from background knowledge, not source-verified).",
+   "sources": [
+    "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzQvMjMvYmJiMmM5YTUtYWFkNS00Nzg2LTg4MTktMmFlZjBlNGNkZDM0LnBkZg"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   }
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned 7 July 2026 (block selection 8-10 July, winners confirmed by ministerial decree July 2026). Object of selection was 703-738 / 758-793 MHz (2x35 MHz), fully sold; 738-748 / 793-803 MHz was not offered. Block positions chosen in the block-selection round were not published in the sources found.",
+   "sources": [
+    "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzQvMjMvYmJiMmM5YTUtYWFkNS00Nzg2LTg4MTktMmFlZjBlNGNkZDM0LnBkZg",
+    "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzcvMTAvYmZjMGEwODYtZGFjNy00ODU2LWFjZDktZDlhYWNhYWNlOTM4LnBkZg==",
+    "https://www.cnnindonesia.com/teknologi/20260713070331-213-1379947/hasil-lelang-frekuensi-xlsmart-unggul-di-700-mhz-telkomsel-26-ghz"
+   ],
+   "holdings": [
+    {
+     "op": "xlsmart",
+     "mhz": 15,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Rp1.06 trillion; 10-year national IPFR from 2026",
+     "source": "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzcvMTAvYmZjMGEwODYtZGFjNy00ODU2LWFjZDktZDlhYWNhYWNlOTM4LnBkZg=="
+    },
+    {
+     "op": "telkomsel",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Rp642.5 billion",
+     "source": "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzcvMTAvYmZjMGEwODYtZGFjNy00ODU2LWFjZDktZDlhYWNhYWNlOTM4LnBkZg=="
+    },
+    {
+     "op": "ioh",
+     "mhz": 10,
+     "paired": true,
+     "basis": "exact",
+     "notes": "Rp507.48 billion",
+     "source": "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzcvMTAvYmZjMGEwODYtZGFjNy00ODU2LWFjZDktZDlhYWNhYWNlOTM4LnBkZg=="
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EU 800 MHz plan (B20) not used in Indonesia; the 800 MHz range is used on the B5-type plan (see 850).",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "800 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Komdigi counts this as the 800 MHz band (2x11 MHz, XLSmart ex-Smartfren). Positions from Spectrum Tracker only; the 2x11 MHz amount is confirmed by Kompas (2021) and detik (2026).",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel",
+    "https://tekno.kompas.com/read/2021/06/24/16020067/daftar-pita-frekuensi-operator-seluler-di-indonesia-dan-alokasinya",
+    "https://inet.detik.com/telecommunication/d-8574578/peta-spektrum-operator-berubah-ini-posisi-telkomsel-xlsmart-indosat"
+   ],
+   "blocks": [
+    {
+     "op": "xlsmart",
+     "dl": [
+      869,
+      880
+     ],
+     "ul": [
+      824,
+      835
+     ],
+     "notes": "Ex-Smartfren 2x11 MHz"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      880,
+      894
+     ],
+     "ul": [
+      835,
+      849
+     ],
+     "notes": "Not listed as assigned; 880-890 MHz overlaps the 900 MHz uplink"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts per Komdigi figures quoted by detik (Telkomsel 30, Indosat 25, XLSmart 15 MHz). Positions from Spectrum Tracker only.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel",
+    "https://inet.detik.com/telecommunication/d-8574578/peta-spektrum-operator-berubah-ini-posisi-telkomsel-xlsmart-indosat",
+    "https://postel.go.id/berita-penataan-ulang-pita-frekuensi-seluler-800-mhz-dan-900-mhz-rampung-26-4138",
+    "https://teknologi.bisnis.com/read/20250418/101/1870121/komdigi-xlsmart-kembalikan-frekuensi-akhir-desember-2026"
+   ],
+   "blocks": [
+    {
+     "op": "telkomsel",
+     "dl": [
+      925,
+      940
+     ],
+     "ul": [
+      880,
+      895
+     ],
+     "notes": "2x15 MHz (includes former 850 MHz/CDMA holding re-arranged in the 2019 800/900 refarming)"
+    },
+    {
+     "op": "ioh",
+     "dl": [
+      940,
+      952.5
+     ],
+     "ul": [
+      895,
+      907.5
+     ],
+     "notes": "2x12.5 MHz"
+    },
+    {
+     "op": "xlsmart",
+     "dl": [
+      952.5,
+      960
+     ],
+     "ul": [
+      907.5,
+      915
+     ],
+     "notes": "2x7.5 MHz, to be returned by 14 Dec 2026 (merger condition)"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz after XLSmart return",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "unverified",
+   "future": {
+    "from": "2026-12-15",
+    "label": "after XLSmart returns 2x7.5 MHz (deadline 14 Dec 2026)"
+   },
+   "excludeFromTotal": true,
+   "note": "XLSmart must return its 2x7.5 MHz of 900 MHz by 14 December 2026 as a condition of the XL-Smartfren merger. Komdigi says it will re-auction the block at the end of 2026.",
+   "sources": [
+    "https://teknologi.bisnis.com/read/20250418/101/1870121/komdigi-xlsmart-kembalikan-frekuensi-akhir-desember-2026",
+    "https://teknologi.bisnis.com/read/20260721/101/1989852/komdigi-berencana-gelar-lelang-frekuensi-900-mhz-bekas-xlsmart-akhir-2026",
+    "https://inet.detik.com/law-and-policy/d-8584403/lelang-frekuensi-900-mhz-disiapkan-tahun-ini-band-3-5-ghz-mulai-dikaji"
+   ],
+   "blocks": [
+    {
+     "op": "telkomsel",
+     "dl": [
+      925,
+      940
+     ],
+     "ul": [
+      880,
+      895
+     ]
+    },
+    {
+     "op": "ioh",
+     "dl": [
+      940,
+      952.5
+     ],
+     "ul": [
+      895,
+      907.5
+     ]
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      952.5,
+      960
+     ],
+     "ul": [
+      907.5,
+      915
+     ],
+     "notes": "Returned by XLSmart; Komdigi plans to auction it at the end of 2026"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz / L-band SDL (mobile)",
+   "names": [
+    "n75",
+    "n76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile. 1432-1512 MHz was licensed in 2025 for fixed broadband wireless access (BWA) only; see the next entry.",
+   "sources": [
+    "https://en.antaranews.com/news/383693/indonesia-opens-14-ghz-spectrum-auction-for-broadband-services"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   }
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz BWA (1432-1512 MHz, regional)",
+   "names": [
+    "n50 (TDD)"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1432,
+     1512
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "80 MHz (1432-1512 MHz) auctioned per region in October 2025 for fixed wireless access (not mobile). Each regional winner holds the full 80 MHz in its region. Population shares are approximate and come from background knowledge.",
+   "sources": [
+    "https://en.antaranews.com/news/383693/indonesia-opens-14-ghz-spectrum-auction-for-broadband-services",
+    "https://www.kompas.id/artikel/en-hasil-lelang-harga-penggunaan-frekuensi-14-ghz-telkom-kalah-harga",
+    "https://teknologi.bisnis.com/read/20251125/101/1931450/lelang-14-ghz-selesai-wifi-sinar-mas-juara-komdigi-setor-rp805-miliar-ke-negara",
+    "https://dssa.co.id/en/press-release/myrepublic-indonesia-menangkan-lelang-pita-frekuensi-14-ghz-di-wilayah-sumatera-bali-nusa-tenggara-kalimantan-dan-sulawesi-1760779720690"
+   ],
+   "holdings": [
+    {
+     "op": "telemedia",
+     "mhz": 47,
+     "paired": false,
+     "basis": "pop-weighted average: 80 MHz in Regional I (Java, Maluku, Papua, about 59% of population)",
+     "notes": "Bid Rp403.76 billion; Kepmen No. 489-491/2025 of 24 Nov 2025"
+    },
+    {
+     "op": "myrepublic",
+     "mhz": 33,
+     "paired": false,
+     "basis": "pop-weighted average: 80 MHz in Regional II (Sumatra, Bali, Nusa Tenggara) and III (Kalimantan, Sulawesi), about 41% of population",
+     "notes": "Bids Rp300.88 billion (II) and Rp100.88 billion (III)"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS / 1.7 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Indonesia.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Contiguous since the 2016-2017 1800 MHz re-arrangement. Amounts confirmed by Komdigi figures (detik 2026) and Kompas (2021). Positions from Spectrum Tracker only.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel",
+    "https://inet.detik.com/telecommunication/d-8574578/peta-spektrum-operator-berubah-ini-posisi-telkomsel-xlsmart-indosat",
+    "https://tekno.kompas.com/read/2021/06/24/16020067/daftar-pita-frekuensi-operator-seluler-di-indonesia-dan-alokasinya"
+   ],
+   "blocks": [
+    {
+     "op": "xlsmart",
+     "dl": [
+      1805,
+      1827.5
+     ],
+     "ul": [
+      1710,
+      1732.5
+     ],
+     "notes": "2x22.5 MHz"
+    },
+    {
+     "op": "ioh",
+     "dl": [
+      1827.5,
+      1857.5
+     ],
+     "ul": [
+      1732.5,
+      1762.5
+     ],
+     "notes": "2x30 MHz (Indosat 2x20 + Tri 2x10)"
+    },
+    {
+     "op": "telkomsel",
+     "dl": [
+      1857.5,
+      1880
+     ],
+     "ul": [
+      1762.5,
+      1785
+     ],
+     "notes": "2x22.5 MHz"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS plan not used; 1880-1920 MHz is not assigned for IMT.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz TDD",
+   "names": [
+    "B33",
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No unpaired 2 GHz TDD assignments to mobile operators found.",
+   "sources": [
+    "https://katadata.co.id/digital/teknologi/6a548c594ae32/lelang-frekuensi-selesai-berikut-peta-kekuatan-telkomsel-xlsmart-dan-indosat"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Amounts from Komdigi figures (detik 2026: Telkomsel 40, XLSmart 30, Indosat 50 MHz). Positions from Spectrum Tracker only.",
+   "sources": [
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel",
+    "https://inet.detik.com/telecommunication/d-8574578/peta-spektrum-operator-berubah-ini-posisi-telkomsel-xlsmart-indosat",
+    "https://tekno.kompas.com/read/2021/06/24/16020067/daftar-pita-frekuensi-operator-seluler-di-indonesia-dan-alokasinya"
+   ],
+   "blocks": [
+    {
+     "op": "ioh",
+     "dl": [
+      2110,
+      2135
+     ],
+     "ul": [
+      1920,
+      1945
+     ],
+     "notes": "2x25 MHz (Indosat 2x15 + Tri 2x15, minus 2x5 returned after the 2022 merger)"
+    },
+    {
+     "op": "xlsmart",
+     "dl": [
+      2135,
+      2150
+     ],
+     "ul": [
+      1945,
+      1960
+     ],
+     "notes": "2x15 MHz"
+    },
+    {
+     "op": "telkomsel",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "notes": "2x20 MHz"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Telkomsel 50 MHz and XLSmart 40 MHz, matching Komdigi 2026 totals. The 2021 blocks (2360-2390) are confirmed by two press sources. The 2017 split (Telkomsel 2300-2330, Smartfren 2330-2360) comes from one source only. Spectrum Tracker shows a different layout (2300-2360 / 2360-2390); treated as outdated.",
+   "sources": [
+    "https://www.komdigi.go.id/berita/sorotan-media/detail/lelang-frekuensi-2-1-ghz-dan-2-3-ghz-dimenangkan-3-operator",
+    "https://teknologi.bisnis.com/read/20210519/101/1395469/tok-telkomsel-dan-smartfren-menang-lelang-23-ghz",
+    "https://www.kompas.id/baca/ekonomi/2021/05/20/telkomsel-dan-smartfren-menangkan-lelang-pita-frekuensi-23-ghz/",
+    "https://inet.detik.com/telecommunication/d-8574578/peta-spektrum-operator-berubah-ini-posisi-telkomsel-xlsmart-indosat",
+    "https://www.spectrum-tracker.com/Indonesia/Telkomsel"
+   ],
+   "blocks": [
+    {
+     "op": "telkomsel",
+     "f": [
+      2300,
+      2330
+     ],
+     "notes": "Won in 2017 auction",
+     "source": "https://www.komdigi.go.id/berita/sorotan-media/detail/lelang-frekuensi-2-1-ghz-dan-2-3-ghz-dimenangkan-3-operator"
+    },
+    {
+     "op": "xlsmart",
+     "f": [
+      2330,
+      2360
+     ],
+     "notes": "Ex-Smartfren (consolidated BWA holding)",
+     "source": "https://www.komdigi.go.id/berita/sorotan-media/detail/lelang-frekuensi-2-1-ghz-dan-2-3-ghz-dimenangkan-3-operator"
+    },
+    {
+     "op": "telkomsel",
+     "f": [
+      2360,
+      2370
+     ],
+     "notes": "Block A, 2021 auction",
+     "source": "https://teknologi.bisnis.com/read/20210519/101/1395469/tok-telkomsel-dan-smartfren-menang-lelang-23-ghz"
+    },
+    {
+     "op": "xlsmart",
+     "f": [
+      2370,
+      2380
+     ],
+     "notes": "Block B, 2021 auction (Smartfren)",
+     "source": "https://teknologi.bisnis.com/read/20210519/101/1395469/tok-telkomsel-dan-smartfren-menang-lelang-23-ghz"
+    },
+    {
+     "op": "telkomsel",
+     "f": [
+      2380,
+      2390
+     ],
+     "notes": "Block C, 2021 auction",
+     "source": "https://teknologi.bisnis.com/read/20210519/101/1395469/tok-telkomsel-dan-smartfren-menang-lelang-23-ghz"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2390,
+      2400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz TDD (n41)",
+   "names": [
+    "n41",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2500,
+     2690
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "190 MHz (2500-2690 MHz) auctioned July 2026 as three blocks (80/60/50 MHz), 10-year national licences. The band was previously used for satellite TV. Block positions not published in the sources found.",
+   "sources": [
+    "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzQvMjMvYmJiMmM5YTUtYWFkNS00Nzg2LTg4MTktMmFlZjBlNGNkZDM0LnBkZg",
+    "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzcvMTAvYmZjMGEwODYtZGFjNy00ODU2LWFjZDktZDlhYWNhYWNlOTM4LnBkZg=="
+   ],
+   "holdings": [
+    {
+     "op": "telkomsel",
+     "mhz": 80,
+     "paired": false,
+     "basis": "exact",
+     "notes": "Rp545.84 billion"
+    },
+    {
+     "op": "ioh",
+     "mhz": 60,
+     "paired": false,
+     "basis": "exact",
+     "notes": "Rp372 billion"
+    },
+    {
+     "op": "xlsmart",
+     "mhz": 50,
+     "paired": false,
+     "basis": "exact",
+     "notes": "Rp231.6 billion"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.3-4.2 GHz",
+   "names": [
+    "n78",
+    "n77"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; 3.5 GHz is still used by satellite (C-band). Komdigi is studying a future release, with no date set as of mid-2026.",
+   "sources": [
+    "https://inet.detik.com/law-and-policy/d-8584403/lelang-frekuensi-900-mhz-disiapkan-tahun-ini-band-3-5-ghz-mulai-dikaji",
+    "https://teknologi.bisnis.com/read/20260528/101/1976768/komdigi-ungkap-rencana-rilis-frekuensi-35-ghz"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   }
+  },
+  {
+   "group": "4900",
+   "label": "4.8-5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://inet.detik.com/law-and-policy/d-8584403/lelang-frekuensi-900-mhz-disiapkan-tahun-ini-band-3-5-ghz-mulai-dikaji"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not yet assigned. PM Kominfo 10/2023 sets the rules for 700 MHz and 26 GHz; Komdigi plans 26 GHz for dense hotspots and enterprise, but no auction had been held by Sep 2026.",
+   "sources": [
+    "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzQvMjMvYmJiMmM5YTUtYWFkNS00Nzg2LTg4MTktMmFlZjBlNGNkZDM0LnBkZg",
+    "https://inet.detik.com/law-and-policy/d-8584403/lelang-frekuensi-900-mhz-disiapkan-tahun-ini-band-3-5-ghz-mulai-dikaji"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://inet.detik.com/law-and-policy/d-8584403/lelang-frekuensi-900-mhz-disiapkan-tahun-ini-band-3-5-ghz-mulai-dikaji"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://inet.detik.com/law-and-policy/d-8584403/lelang-frekuensi-900-mhz-disiapkan-tahun-ini-band-3-5-ghz-mulai-dikaji"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Regulator: Kementerian Komunikasi dan Digital (Komdigi, formerly Kominfo), Directorate General of Digital Infrastructure (DJID/SDPPI).",
+  "Mobile licences are national. The 1.4 GHz BWA licences are regional (3 regions) and for fixed wireless access only.",
+  "Pre-auction totals per Komdigi (Mastel, 9 July 2026): Telkomsel 165, XLSmart 152, Indosat 135 MHz (452 MHz total, counting both directions of paired bands). The per-band amounts in this file add up to these totals.",
+  "Spectrum Tracker's 2.3 GHz layout (one 60 MHz block at 2300-2360) conflicts with the 2017 and 2021 auction results. The auction-based layout is used."
+ ],
+ "missing": [
+  "700 MHz and 2.6 GHz block positions after the July 2026 block-selection round (not found in Komdigi announcements or press).",
+  "900, 1800 and 2100 MHz and B5 positions come from Spectrum Tracker only. They are consistent with the amounts but not regulator-verified.",
+  "Licence expiry dates for 900/1800/2100/2300 MHz IPFR not compiled.",
+  "Population shares for the 1.4 GHz regions are from background knowledge.",
+  "EARFCN/ARFCN data not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "Komdigi – Announcement 1/SP/TIMSEL/KOMDIGI/04/2026 (700 MHz & 2.6 GHz selection)",
+   "url": "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzQvMjMvYmJiMmM5YTUtYWFkNS00Nzg2LTg4MTktMmFlZjBlNGNkZDM0LnBkZg"
+  },
+  {
+   "title": "Komdigi – Announcement 04/SP/TIMSEL/KOMDIGI/07/2026 (selection results)",
+   "url": "https://web.komdigi.go.id/resource/dXBsb2Fkcy8yMDI2LzcvMTAvYmZjMGEwODYtZGFjNy00ODU2LWFjZDktZDlhYWNhYWNlOTM4LnBkZg=="
+  },
+  {
+   "title": "detikINET – Peta spektrum operator berubah (July 2026)",
+   "url": "https://inet.detik.com/telecommunication/d-8574578/peta-spektrum-operator-berubah-ini-posisi-telkomsel-xlsmart-indosat"
+  },
+  {
+   "title": "Katadata – Lelang frekuensi selesai, peta kekuatan operator",
+   "url": "https://katadata.co.id/digital/teknologi/6a548c594ae32/lelang-frekuensi-selesai-berikut-peta-kekuatan-telkomsel-xlsmart-dan-indosat"
+  },
+  {
+   "title": "Spectrum Tracker – Indonesia",
+   "url": "https://www.spectrum-tracker.com/Indonesia/Telkomsel"
+  },
+  {
+   "title": "Kompas – Daftar pita frekuensi operator seluler (2021)",
+   "url": "https://tekno.kompas.com/read/2021/06/24/16020067/daftar-pita-frekuensi-operator-seluler-di-indonesia-dan-alokasinya"
+  },
+  {
+   "title": "Bisnis – Telkomsel dan Smartfren menang lelang 2,3 GHz (2021)",
+   "url": "https://teknologi.bisnis.com/read/20210519/101/1395469/tok-telkomsel-dan-smartfren-menang-lelang-23-ghz"
+  },
+  {
+   "title": "Bisnis – Komdigi: XLSmart kembalikan frekuensi 900 MHz akhir 2026",
+   "url": "https://teknologi.bisnis.com/read/20250418/101/1870121/komdigi-xlsmart-kembalikan-frekuensi-akhir-desember-2026"
+  },
+  {
+   "title": "ANTARA – Indonesia opens 1.4 GHz spectrum auction",
+   "url": "https://en.antaranews.com/news/383693/indonesia-opens-14-ghz-spectrum-auction-for-broadband-services"
+  },
+  {
+   "title": "Kompas.id – 1.4 GHz auction results",
+   "url": "https://www.kompas.id/artikel/en-hasil-lelang-harga-penggunaan-frekuensi-14-ghz-telkom-kalah-harga"
+  }
+ ]
+}
