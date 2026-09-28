@@ -155,7 +155,7 @@ function render(c) {
   // notes
   const li = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join("");
   html.push(`<section class="card notes" id="${c.code}-notes"><h2>Notes</h2>
-    ${c.missing?.length ? `<h3>Missing or unverified</h3><ul>${li(c.missing)}</ul>` : ""}
+    ${(() => { const unk = c.bands.filter((b) => !b.future && b.status === "unknown").map((b) => `${b.label || b.group}: status could not be established${b.note ? " — " + b.note : ""}`); const all = [...unk, ...(c.missing || [])]; return all.length ? `<h3>Missing or unverified</h3><ul>${li(all)}</ul>` : ""; })()}
     ${c.notes?.length ? `<h3>Notes</h3><ul>${li(c.notes)}</ul>` : ""}
     ${c.changes?.length ? `<h3>Changes since the davwheat dataset</h3><ul>${li(c.changes)}</ul>` : ""}
     <h3>Operators</h3><ul>${c.operators.map((o) => `<li><span class="opcell" style="display:inline-flex"><span class="sw" style="background:${o.color}"></span><b>${esc(o.name)}</b></span>${o.legal ? ` — ${esc(o.legal)}` : ""}${o.notes ? `. ${esc(o.notes)}` : ""}</li>`).join("")}</ul>

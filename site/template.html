@@ -144,8 +144,8 @@ td.n, th.n { text-align: right; font-family: var(--mono); font-size: 13px; white
 .tag.warn { background: var(--warn-soft); color: var(--warn); }
 .tag.avg { background: var(--mid-soft); color: var(--mid); }
 .tag.ok { background: var(--ok-soft); color: var(--ok); }
-.tag.fut { background: var(--accent-soft); color: var(--accent); }
-.bnote { margin: 0; color: var(--ink-2); font-size: 13.5px; max-width: 90ch; }
+.tag.fut { white-space: normal; background: var(--accent-soft); color: var(--accent); }
+.bnote { overflow-wrap: anywhere; margin: 0; color: var(--ink-2); font-size: 13.5px; max-width: 90ch; }
 .diag { min-width: 620px; padding: 2px 14px 0 4px; }
 .drow { display: grid; grid-template-columns: 34px 1fr; gap: 6px; align-items: start; }
 .drow + .drow { margin-top: 4px; }
@@ -184,7 +184,8 @@ details.alloct[open] > summary { margin-bottom: 8px; }
 .naitem a { font-size: 12px; overflow-wrap: anywhere; }
 .notes h3 { font-size: 16px; font-weight: 600; margin-top: 4px; }
 .notes ul { margin: 0; padding-left: 20px; display: grid; gap: 5px; max-width: 95ch; }
-.notes li { font-size: 14px; }
+.notes li { font-size: 14px; overflow-wrap: anywhere; min-width: 0; }
+.notes .opcell { white-space: normal; }
 .notes .srcs li { overflow-wrap: anywhere; font-size: 13px; }
 
 /* ---------- overview ---------- */

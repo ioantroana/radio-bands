@@ -37,7 +37,7 @@ for (const [label, vp] of [["desktop", { width: 1280, height: 900 }], ["phone", 
       overflow: document.documentElement.scrollWidth - window.innerWidth,
       nan: /NaN|undefined/.test(document.querySelector("#main").innerText),
     }));
-    const assigned = c.bands.filter((b) => b.status !== "not-assigned").length;
+    const assigned = c.coverage === "not-compiled" ? 0 : c.bands.filter((b) => b.status !== "not-assigned" && b.status !== "unknown").length;
     const issues = [];
     if (assigned && !r.bands) issues.push("no band diagrams rendered");
     if (assigned && !r.blocks) issues.push("no blocks drawn");
