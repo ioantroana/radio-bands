@@ -2,355 +2,191 @@
  "code": "at",
  "name": "Austria",
  "region": "Europe",
- "asOf": "2026-01-09",
+ "asOf": "2026-09-28",
  "coverage": "block-level",
- "licensing": "national",
- "summary": "",
+ "licensing": "mixed",
+ "summary": "Three MNOs: A1, Magenta Telekom (T-Mobile Austria) and Drei (Hutchison). RTR publishes block-level charts for every band; the April 2026 2300/2600 MHz auction re-assigns 2.6 GHz and adds 2300 MHz from 1 Jan 2027.",
  "operators": [
   {
-   "id": "argonet",
-   "name": "ArgoNET",
-   "color": "#f28c00",
-   "aliases": [],
-   "kind": "mno"
-  },
-  {
-   "id": "h3a",
-   "name": "3 AT",
-   "color": "#00a0d2",
-   "aliases": [
-    "Three AT",
-    "H3A"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "a1-at",
-   "name": "A1 AT",
+   "id": "a1",
+   "name": "A1",
+   "legal": "A1 Telekom Austria AG",
    "color": "#da291c",
    "aliases": [
-    "A1 Telekom Austria",
-    "A1 AT"
+    "A1 AT",
+    "A1 TA",
+    "A1 Telekom Austria"
    ],
    "kind": "mno"
   },
   {
    "id": "magenta",
-   "name": "Magenta",
+   "name": "Magenta Telekom",
+   "legal": "T-Mobile Austria GmbH",
    "color": "#e20074",
    "aliases": [
-    "Magenta Telekom",
-    "T-Mobile Austria GmbH"
+    "Magenta",
+    "T-Mobile Austria",
+    "TMA"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Won the only 2300 MHz spectrum (2300–2360 MHz) in the 2026 auction, usable from 2027."
+  },
+  {
+   "id": "drei",
+   "name": "Drei",
+   "legal": "Hutchison Drei Austria GmbH",
+   "color": "#1f1f1f",
+   "aliases": [
+    "3 AT",
+    "H3A",
+    "Hutchison Drei"
+   ],
+   "kind": "mno",
+   "notes": "Took over Orange Austria in 2013 (spectrum incl. 2.6 GHz). Will hold the whole 2.6 GHz TDD band from 2027."
+  },
+  {
+   "id": "argonet",
+   "name": "ArgoNET",
+   "legal": "ArgoNET GmbH",
+   "color": "#f28c00",
+   "aliases": [],
+   "kind": "other"
+  },
+  {
+   "id": "liwest",
+   "name": "LIWEST",
+   "legal": "LIWEST Kabelmedien GmbH",
+   "color": "#7030a0",
+   "aliases": [],
+   "kind": "regional"
+  },
+  {
+   "id": "salzburg-ag",
+   "name": "Salzburg AG",
+   "legal": "Salzburg AG für Energie, Verkehr und Telekommunikation",
+   "color": "#ffc000",
+   "aliases": [],
+   "kind": "regional"
+  },
+  {
+   "id": "holding-graz",
+   "name": "Holding Graz",
+   "legal": "Holding Graz – Kommunale Dienstleistungen GmbH",
+   "color": "#8b0000",
+   "aliases": [
+    "Graz New Radio"
+   ],
+   "kind": "regional"
+  },
+  {
+   "id": "mass-response",
+   "name": "MASS Response",
+   "legal": "MASS Response Service GmbH",
+   "color": "#ed7d31",
+   "aliases": [],
+   "kind": "regional"
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "450",
+   "label": "450 MHz (B31/B72)",
    "names": [
-    "B1",
-    "n1"
+    "B31",
+    "B72"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     461.3,
+     465.74
     ],
     "ul": [
-     1920,
-     1980
+     451.3,
+     455.74
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "ArgoNET GmbH (utilities/IoT). Valid to 31 Dec 2029.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2100MHz/Spectrum2100MHz.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/450MHz/Spektrum450MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
    ],
    "blocks": [
     {
-     "op": "a1-at",
+     "op": "argonet",
      "dl": [
-      2110,
-      2135
+      461.3,
+      465.74
      ],
      "ul": [
-      1920,
-      1945
+      451.3,
+      455.74
      ],
-     "notes": "A1 Telekom Austria AG · Pure n1/20MHz, which is actively being widened to 25MHz. ",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2100MHz/Spectrum2100MHz.en.html"
-    },
-    {
-     "op": "magenta",
-     "dl": [
-      2135,
-      2150
-     ],
-     "ul": [
-      1945,
-      1960
-     ],
-     "notes": "T-Mobile Austria GmbH · Mainly 4G. Very few 5G DSS sites",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2100MHz/Spectrum2100MHz.en.html"
-    },
-    {
-     "op": "h3a",
-     "dl": [
-      2150,
-      2170
-     ],
-     "ul": [
-      1960,
-      1980
-     ],
-     "earfcn": [
-      525
-     ],
-     "notes": "Hutchison Drei Austria GmbH · 4G 2155-2170 MHz · 3G HSPA+ 2150-2155 MHz · According to Drei, the 3G network will be \"gradually shut down and replaced by 4G and 5G starting Q1 2024\". As of late November 2024, only very few 3G sites were disabled and the spectrum wasn't refarmed yet · 11.2024: 5G n1 is already configured in the SIB4 signal block on NR ARFCN 432050, which falls into this spectrum block. It is unknown how wide the config is or when it will go online.",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2100MHz/Spectrum2100MHz.en.html"
+     "expiry": "2029-12-31"
     }
    ]
   },
   {
-   "group": "1800",
-   "label": "1800 MHz (B3)",
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
    "names": [
-    "B3"
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     1805,
-     1880
+     758,
+     788
     ],
     "ul": [
-     1710,
-     1785
+     703,
+     733
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2020 multiband auction; A1 won no 700 MHz. Valid to 31 Dec 2044.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1800MHz/Spectrum1800MHz.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/700MHz/Spectrum700MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/Multibandauktion_700-1500-2100MHz_2020/FRQ5G_2020_Outcome.en.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
    ],
    "blocks": [
     {
-     "op": "magenta",
+     "op": "drei",
      "dl": [
-      1805,
-      1825
+      758,
+      768
      ],
      "ul": [
-      1710,
-      1730
+      703,
+      713
      ],
-     "earfcn": [
-      1300
+     "nrarfcn": [
+      152600
      ],
-     "notes": "T-Mobile Austria GmbH · 4G 1805-1825 MHz · 4G carrier can be used by Drei customers regionally as part of regional roaming · For Drei roaming customers, carrier aggregation with Drei's B3 carrier is enabled if a native cell is within reach of Magenta's roaming cell. As such, B3C/35MHz is possible",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1800MHz/Spectrum1800MHz.en.html"
-    },
-    {
-     "op": "h3a",
-     "dl": [
-      1825,
-      1845
-     ],
-     "ul": [
-      1730,
-      1750
-     ],
-     "earfcn": [
-      1525
-     ],
-     "notes": "Hutchison Drei Austria GmbH · 4G 1830-1845 MHz · 2G 1825-1830 MHz · 4G Band 3+7 and 3+1 are used in ULCA",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1800MHz/Spectrum1800MHz.en.html"
-    },
-    {
-     "op": "a1-at",
-     "dl": [
-      1845,
-      1880
-     ],
-     "ul": [
-      1750,
-      1785
-     ],
-     "earfcn": [
-      1700,
-      1871
-     ],
-     "notes": "A1 Telekom Austria AG · 4G 1845-1880 MHz",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1800MHz/Spectrum1800MHz.en.html"
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
-   "names": [
-    "B7"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     2620,
-     2690
-    ],
-    "ul": [
-     2500,
-     2570
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "Spectrum licences will run in 2026. A new auction is being planned for 2025, it is also expected that 60MHz of band 40 will be auctioned",
-   "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.en.html"
-   ],
-   "blocks": [
-    {
-     "op": "a1-at",
-     "dl": [
-      2620,
-      2640
-     ],
-     "ul": [
-      2500,
-      2520
-     ],
-     "earfcn": [
-      2850
-     ],
-     "notes": "A1 Telekom Austria AG · whole carrier used for pure 4G. often deployed alongside B20 or B3C",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.en.html"
+     "expiry": "2044-12-31",
+     "notes": "5G SA per davwheat"
     },
     {
      "op": "magenta",
      "dl": [
-      2640,
-      2660
+      768,
+      788
      ],
      "ul": [
-      2520,
-      2540
+      713,
+      733
      ],
-     "notes": "T-Mobile Austria GmbH · whole spectrum used for pure 4G",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.en.html"
-    },
-    {
-     "op": "a1-at",
-     "dl": [
-      2660,
-      2665
-     ],
-     "ul": [
-      2540,
-      2545
-     ],
-     "notes": "A1 Telekom Austria AG · Not deployed. Purchased in 2014 (or 2015) after the merger between Drei and Orange. ",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.en.html"
-    },
-    {
-     "op": "h3a",
-     "dl": [
-      2665,
-      2690
-     ],
-     "ul": [
-      2545,
-      2570
-     ],
-     "earfcn": [
-      3225,
-      3350
-     ],
-     "notes": "Hutchison Drei Austria GmbH · 4G 2650-2670 MHz · 4G 2645-2650 MHz · 20MHz 4G carrier is used for ULCA with B3 or B1",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.en.html"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/900MHz/Spectrum900MHz.en.html"
-   ],
-   "blocks": [
-    {
-     "op": "magenta",
-     "dl": [
-      925,
-      940
-     ],
-     "ul": [
-      880,
-      895
-     ],
-     "earfcn": [
-      3500
-     ],
-     "notes": "T-Mobile Austria GmbH · 4G 925-935 MHz · 2G 935-940 MHz · 4G carrier can be used by Drei customers as part of regional roaming · 3G refarmed in July 2024. 4G B8 was widened from 5 to 10MHz shortly afterwards",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/900MHz/Spectrum900MHz.en.html"
-    },
-    {
-     "op": "h3a",
-     "dl": [
-      940,
-      945
-     ],
-     "ul": [
-      895,
-      900
-     ],
-     "earfcn": [
-      3632
-     ],
-     "notes": "Hutchison Drei Austria GmbH · 4G: 941.7-944.7 MHz · 4G carrier is not enabled for CA · On new sites, G900 was deployed until around 2021. Since then, new deployments only have G1800. 4G still isn't widened to 5MHz on new sites without G900",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/900MHz/Spectrum900MHz.en.html"
-    },
-    {
-     "op": "a1-at",
-     "dl": [
-      945,
-      960
-     ],
-     "ul": [
-      900,
-      915
-     ],
-     "notes": "A1 Telekom Austria AG · Dual carrier 3G. In some places they rip down 2G+3G only masts. In some places the RRUs get updated and broadcast 3G and 4G. The whole \"3G shutdown\" is a mess, as only one carrier is actively being refarmed. Whereas \"actively\" is an overstatement",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/900MHz/Spectrum900MHz.en.html"
+     "expiry": "2044-12-31"
     }
    ]
   },
@@ -375,13 +211,14 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2013 multiband auction; Drei holds no 800 MHz. Valid to 31 Dec 2029.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/800MHz/Spektrum800MHz.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/800MHz/Spektrum800MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
    ],
    "blocks": [
     {
-     "op": "a1-at",
+     "op": "a1",
      "dl": [
       791,
       811
@@ -390,8 +227,7 @@
       832,
       852
      ],
-     "notes": "A1 Telekom Austria AG · Used for pure 4G with a 20MHz carrier",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/800MHz/Spektrum800MHz.en.html"
+     "expiry": "2029-12-31"
     },
     {
      "op": "magenta",
@@ -406,161 +242,105 @@
      "earfcn": [
       6400
      ],
-     "notes": "T-Mobile Austria GmbH · Entire licence is used for pure 4G · Can be used by Drei customers as part of regional roaming",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/800MHz/Spektrum800MHz.en.html"
+     "expiry": "2029-12-31"
     }
    ]
   },
   {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
+   "group": "850",
+   "label": "850 MHz (B5)",
    "names": [
-    "B28",
-    "n28"
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for MFCN in Europe; not in RTR's band list.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     758,
-     803
+     925,
+     960
     ],
     "ul": [
-     703,
-     748
+     880,
+     915
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "On 400 base stations, Drei and Magenta have a spectrum sharing agreement named \"active sharing\" on these stations, they broadcast n28/30MHz, n75/50MHz, B20/10Mhz and B3/20MHz. This setup is available to customers of both networks, including MVNO users. Read more here in German: https://www.lteforum.at/mobilfunktarife/active-sharing-drei-magenta",
+   "note": "Rights from 1 Jan 2018 (2013 multiband auction) to 31 Dec 2034.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/700MHz/Spectrum700MHz.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/900MHz/Spectrum900MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
    ],
    "blocks": [
-    {
-     "op": "h3a",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ],
-     "nrarfcn": [
-      152600
-     ],
-     "notes": "Hutchison Drei Austria GmbH · 5G standalone only · CA enabled with n75 and n78 · Every n28 RRU in the Drei network supports 1500MHz, so all n28 sites will automatically broadcast n75 as well.",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/700MHz/Spectrum700MHz.en.html"
-    },
     {
      "op": "magenta",
      "dl": [
-      768,
-      788
+      925,
+      940
      ],
      "ul": [
-      713,
-      733
-     ],
-     "notes": "T-Mobile Austria GmbH · Used as pure 5G",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/700MHz/Spectrum700MHz.en.html"
-    }
-   ]
-  },
-  {
-   "group": "450",
-   "label": "450 MHz (B31)",
-   "names": [
-    "B31"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     461.3,
-     467.5
-    ],
-    "ul": [
-     451.3,
-     457.5
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/700MHz/Spectrum700MHz.en.html"
-   ],
-   "blocks": [
-    {
-     "op": "argonet",
-     "dl": [
-      461.3,
-      465.74
-     ],
-     "ul": [
-      451.3,
-      455.74
-     ],
-     "notes": "Used for IoT communications",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/700MHz/Spectrum700MHz.en.html"
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B38/B41)",
-   "names": [
-    "B38",
-    "B41"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     2570,
-     2620
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "Spectrum licences will run in 2026. A new auction is being planned for 2025, it is also expected that 60MHz of band 40 will be auctioned",
-   "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_TDD/Spectrum2600MHzTDD.en.html"
-   ],
-   "blocks": [
-    {
-     "op": "h3a",
-     "f": [
-      2570,
-      2595
+      880,
+      895
      ],
      "earfcn": [
-      37900,
-      40540
+      3500
      ],
-     "notes": "Hutchison Drei Austria GmbH · 4G 2575-2595 MHz · CA is not allowed with B38 in the Drei network. It acts as a load balancing deployment. · The carrier is broadcast on both B38 and B41 EARFCNs to support a wider audience of devices",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_TDD/Spectrum2600MHzTDD.en.html"
+     "expiry": "2034-12-31"
     },
     {
-     "op": "a1-at",
-     "f": [
-      2595,
-      2620
+     "op": "drei",
+     "dl": [
+      940,
+      945
      ],
-     "notes": "A1 Telekom Austria AG · Currently not deployed",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_TDD/Spectrum2600MHzTDD.en.html"
+     "ul": [
+      895,
+      900
+     ],
+     "earfcn": [
+      3632
+     ],
+     "expiry": "2034-12-31"
+    },
+    {
+     "op": "a1",
+     "dl": [
+      945,
+      960
+     ],
+     "ul": [
+      900,
+      915
+     ],
+     "expiry": "2034-12-31"
     }
    ]
   },
   {
    "group": "1400",
-   "label": "1.4–1.5 GHz (n75/n76)",
+   "label": "1.5 GHz SDL (n75/n76)",
    "names": [
+    "B32",
+    "B75",
     "n75",
     "n76"
    ],
@@ -575,43 +355,585 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2020 multiband auction, valid to 31 Dec 2044; each operator had to run ≥300 base stations in the band by end-2025.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1500MHz/Spectrum1500MHz.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1500MHz/Spectrum1500MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/Multibandauktion_700-1500-2100MHz_2020/FRQ5G_2020_Outcome.en.html"
    ],
    "blocks": [
     {
      "op": "magenta",
      "f": [
       1427,
-      1457
+      1437
      ],
-     "notes": "T-Mobile Austria GmbH · Lower 10MHz of this licence is \"regionally limited\". There is no further information on this limitation.",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1500MHz/Spectrum1500MHz.en.html"
+     "expiry": "2044-12-31",
+     "notes": "Lowest 10 MHz: only usable with considerable restrictions"
     },
     {
-     "op": "h3a",
+     "op": "magenta",
+     "f": [
+      1437,
+      1457
+     ],
+     "expiry": "2044-12-31"
+    },
+    {
+     "op": "drei",
      "f": [
       1457,
       1487
      ],
-     "notes": "Hutchison Drei Austria GmbH · 5G standalone only · CA enabled with n28, but not with n78",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1500MHz/Spectrum1500MHz.en.html"
+     "expiry": "2044-12-31"
     },
     {
-     "op": "a1-at",
+     "op": "a1",
      "f": [
       1487,
       1517
      ],
-     "notes": "A1 Telekom Austria AG",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1500MHz/Spectrum1500MHz.en.html"
+     "expiry": "2044-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS / 1.7 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2013 multiband auction, final positions from 1 Jan 2020 after refarming; valid to 31 Dec 2034.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/1800MHz/Spectrum1800MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": [
+    {
+     "op": "magenta",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "earfcn": [
+      1300
+     ],
+     "expiry": "2034-12-31"
+    },
+    {
+     "op": "drei",
+     "dl": [
+      1825,
+      1845
+     ],
+     "ul": [
+      1730,
+      1750
+     ],
+     "earfcn": [
+      1525
+     ],
+     "expiry": "2034-12-31"
+    },
+    {
+     "op": "a1",
+     "dl": [
+      1845,
+      1880
+     ],
+     "ul": [
+      1750,
+      1785
+     ],
+     "earfcn": [
+      1700,
+      1871
+     ],
+     "expiry": "2034-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz unpaired TDD (B33/B34)",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Mobile assignments from 2000 expired 31 Dec 2020; band no longer 'numerically limited' and not assigned by RTR.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2100MHz_TDD/Spectrum2100MHzTDD.de.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2020 multiband auction (F 1/16 assignment decision), rights from 1 Jan 2021 to 31 Dec 2044.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/Multibandauktion_700-1500-2100MHz_2020/F_1_16_Zuteilungsbescheid.pdf",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/Multibandauktion_700-1500-2100MHz_2020/FRQ5G_2020_Outcome.en.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2100MHz/Spectrum2100MHz.de.html"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      2110,
+      2135
+     ],
+     "ul": [
+      1920,
+      1945
+     ],
+     "expiry": "2044-12-31"
+    },
+    {
+     "op": "magenta",
+     "dl": [
+      2135,
+      2150
+     ],
+     "ul": [
+      1945,
+      1960
+     ],
+     "expiry": "2044-12-31"
+    },
+    {
+     "op": "drei",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "earfcn": [
+      525
+     ],
+     "nrarfcn": [
+      432050
+     ],
+     "expiry": "2044-12-31",
+     "notes": "EARFCNs per davwheat"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40/n40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned today. 2300–2360 MHz was auctioned to Magenta (T-Mobile Austria) in April 2026 with rights from 1 Jan 2027 (see future entry); 2360–2400 MHz not awarded.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2300MHz/Spektrum2300MHz.de.html",
+    "https://www.rtr.at/TKP/presse/pressemitteilungen/presseinformationen_2026/pinfo10042026tkp.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/FRQ_2300_2600_MHz/F_2_24_Ausschreibungsunterlage_2300_MHz_2600_MHz_DE.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (n40) – from 2027",
+   "names": [
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2027-01-01",
+    "label": "from 1 Jan 2027"
+   },
+   "excludeFromTotal": true,
+   "note": "F 2/24 auction (concluded 10 Apr 2026): rights from 1 Jan 2027 to 31 Dec 2050.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2300MHz/Spektrum2300MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/FRQ_2300_2600_MHz/F_2_24_Ausschreibungsunterlage_2300_MHz_2600_MHz_DE.pdf",
+    "https://www.teltarif.de/en/frequenzvergabe-2300mhz-2600mhz-rtr-magenta-drei-a1-hutchison-tmobile/news/102956.html"
+   ],
+   "blocks": [
+    {
+     "op": "magenta",
+     "f": [
+      2300,
+      2360
+     ],
+     "expiry": "2050-12-31",
+     "notes": "Won in F 2/24 auction (April 2026)"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2360,
+      2400
+     ],
+     "notes": "Not awarded"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz FDD (B7) – until end-2026",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2010 award (F 4/08); rights expire 31 Dec 2026.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.de.html",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/AT"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "earfcn": [
+      2850
+     ],
+     "expiry": "2026-12-31"
+    },
+    {
+     "op": "magenta",
+     "dl": [
+      2640,
+      2660
+     ],
+     "ul": [
+      2520,
+      2540
+     ],
+     "expiry": "2026-12-31"
+    },
+    {
+     "op": "a1",
+     "dl": [
+      2660,
+      2665
+     ],
+     "ul": [
+      2540,
+      2545
+     ],
+     "expiry": "2026-12-31",
+     "notes": "Block A9, transferred to A1 in 2012 (TKK F6/12) as an Orange/Hutchison merger remedy"
+    },
+    {
+     "op": "drei",
+     "dl": [
+      2665,
+      2690
+     ],
+     "ul": [
+      2545,
+      2570
+     ],
+     "earfcn": [
+      3225,
+      3350
+     ],
+     "expiry": "2026-12-31",
+     "notes": "Incl. 2665–2670 MHz formerly Orange Austria"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz FDD (n7) – from 2027",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2027-01-01",
+    "label": "from 1 Jan 2027"
+   },
+   "excludeFromTotal": true,
+   "note": "F 2/24 auction (April 2026). Rights from 1 Jan 2027; expiry 2046, 2050 or 2055 depending on a possible future TDD conversion (extension model).",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/FRQ_2300_2600_MHz/F_2_24_Ausschreibungsunterlage_2300_MHz_2600_MHz_DE.pdf",
+    "https://www.teltarif.de/en/frequenzvergabe-2300mhz-2600mhz-rtr-magenta-drei-a1-hutchison-tmobile/news/102956.html"
+   ],
+   "blocks": [
+    {
+     "op": "a1",
+     "dl": [
+      2620,
+      2645
+     ],
+     "ul": [
+      2500,
+      2525
+     ]
+    },
+    {
+     "op": "magenta",
+     "dl": [
+      2645,
+      2665
+     ],
+     "ul": [
+      2525,
+      2545
+     ]
+    },
+    {
+     "op": "drei",
+     "dl": [
+      2665,
+      2690
+     ],
+     "ul": [
+      2545,
+      2570
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz TDD (B38) – until end-2026",
+   "names": [
+    "B38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2010 award; expires 31 Dec 2026.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_TDD/Spectrum2600MHzTDD.de.html",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/AT"
+   ],
+   "blocks": [
+    {
+     "op": "drei",
+     "f": [
+      2570,
+      2595
+     ],
+     "earfcn": [
+      37900,
+      40540
+     ],
+     "expiry": "2026-12-31"
+    },
+    {
+     "op": "a1",
+     "f": [
+      2595,
+      2620
+     ],
+     "expiry": "2026-12-31",
+     "notes": "Not deployed per davwheat"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz TDD (n38) – from 2027",
+   "names": [
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2027-01-01",
+    "label": "from 1 Jan 2027"
+   },
+   "excludeFromTotal": true,
+   "note": "F 2/24 auction: the whole 50 MHz goes to Drei from 2027 (outer 5 MHz blocks are protection blocks towards FDD).",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_TDD/Spectrum2600MHzTDD.de.html",
+    "https://www.rtr.at/TKP/presse/pressemitteilungen/presseinformationen_2026/pinfo10042026tkp.de.html"
+   ],
+   "blocks": [
+    {
+     "op": "drei",
+     "f": [
+      2570,
+      2575
+     ],
+     "notes": "Restricted guard block vs FDD"
+    },
+    {
+     "op": "drei",
+     "f": [
+      2575,
+      2615
+     ]
+    },
+    {
+     "op": "drei",
+     "f": [
+      2615,
+      2620
+     ],
+     "notes": "Restricted guard block vs FDD"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78) — nationwide",
+   "label": "3.4–3.8 GHz (n78) – nationwide",
    "names": [
     "n78"
    ],
@@ -626,28 +948,42 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "The allocation you see here is the nationwide allocation. A1, Magenta and regional operators own regionally more spectrum. Please refer to the \"Data source\" link for a map and a regional spectrum chart to see the whole allocation.",
+   "note": "2019 auction (regional lots) plus 2024 award of regional residual spectrum; rights to 31 Dec 2039. The 3490–3800 MHz blocks are held in all regions.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
    ],
    "blocks": [
     {
-     "op": "a1-at",
+     "op": "unassigned",
+     "f": [
+      3400,
+      3410
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      3410,
+      3490
+     ],
+     "notes": "Regionally licensed (A1, Magenta, LIWEST, Salzburg AG, Holding Graz, MASS Response) – see separate regional entry"
+    },
+    {
+     "op": "a1",
      "f": [
       3490,
       3590
      ],
-     "notes": "A1 Telekom Austria AG",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.en.html"
+     "expiry": "2039-12-31"
     },
     {
-     "op": "h3a",
+     "op": "drei",
      "f": [
       3590,
       3690
      ],
-     "notes": "Hutchison Drei Austria GmbH · 5G 3590-3690 MHz · 5G SA/NSA",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.en.html"
+     "expiry": "2039-12-31"
     },
     {
      "op": "magenta",
@@ -655,14 +991,87 @@
       3690,
       3800
      ],
-     "notes": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.en.html",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.en.html"
+     "expiry": "2039-12-31"
     }
    ]
   },
   {
+   "group": "3500",
+   "label": "3410–3490 MHz – regional licences",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3410,
+     3490
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Held region by region (2019 auction regions A01–A06, some split urban/rural; residual lots auctioned March 2024). RTR chart: A01u Magenta 40 / A1 40; A01r MASS Response 30 / A1 50; A02 LIWEST 80; A03 Salzburg AG 80; A04 A1 80; A05 Magenta 60 / A1 20; A06u Holding Graz 50 / A1 30; A06r Holding Graz 40 / Salzburg AG 40. Amounts below are unweighted averages over the six regions (urban/rural halves weighted 0.5); excluded from totals.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/26G_3600M_2024/Results.de.html"
+   ],
+   "blocks": [],
+   "holdings": [
+    {
+     "op": "a1",
+     "mhz": 26.7,
+     "basis": "unweighted average over 6 regions (A01, A04, A05, A06u)"
+    },
+    {
+     "op": "magenta",
+     "mhz": 13.3,
+     "basis": "unweighted average over 6 regions (A01u, A05)"
+    },
+    {
+     "op": "liwest",
+     "mhz": 13.3,
+     "basis": "region A02 only (80 MHz)"
+    },
+    {
+     "op": "salzburg-ag",
+     "mhz": 16.7,
+     "basis": "regions A03 (80 MHz) and A06r (40 MHz)"
+    },
+    {
+     "op": "holding-graz",
+     "mhz": 7.5,
+     "basis": "region A06 (50 MHz urban / 40 MHz rural)"
+    },
+    {
+     "op": "mass-response",
+     "mhz": 2.5,
+     "basis": "region A01r only (30 MHz)"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile in Austria (not in RTR band list).",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": []
+  },
+  {
    "group": "26g",
-   "label": "24–29 GHz (n258)",
+   "label": "26 GHz (n258)",
    "names": [
     "n258"
    ],
@@ -677,36 +1086,43 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Auction concluded 26 Mar 2024 (A1 400, Drei 600, Magenta 400 MHz); valid to 31 Dec 2046. 24.3–24.9 GHz is for local campus assignments; 24.9–25.5 and 25.9–26.5 GHz not awarded.",
    "sources": [
-    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.en.html"
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/26G_3600M_2024/Results.de.html",
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
    ],
    "blocks": [
     {
-     "op": "a1-at",
+     "op": "unassigned",
+     "f": [
+      24300,
+      24900
+     ],
+     "notes": "Campus band – local assignments"
+    },
+    {
+     "op": "a1",
      "f": [
       25500,
       25900
      ],
-     "notes": "A1 Telekom Austria AG",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.en.html"
+     "expiry": "2046-12-31"
     },
     {
      "op": "unassigned",
      "f": [
       25900,
       26500
-     ],
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.en.html"
+     ]
     },
     {
-     "op": "h3a",
+     "op": "drei",
      "f": [
       26500,
       27100
      ],
-     "notes": "Hutchison Drei Austria GmbH",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.en.html"
+     "expiry": "2046-12-31"
     },
     {
      "op": "magenta",
@@ -714,20 +1130,144 @@
       27100,
       27500
      ],
-     "notes": "T-Mobile Austria GmbH",
-     "source": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.en.html"
+     "expiry": "2046-12-31"
     }
    ]
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259)",
+   "names": [
+    "n259"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. 40.5–43.5 GHz designated by EU Implementing Decision 2024/1983 (national implementation by 31 Dec 2026).",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/40_GHz/40_GHz.de.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; not in RTR band list.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Used for DVB-T2 broadcasting; no 600 MHz mobile plan in Europe.",
+   "sources": [
+    "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+   ],
+   "blocks": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "All positions are from RTR's band pages (charts) and assignment decisions; 2100 MHz edges also from the F 1/16 assignment decision.",
+  "3.6 GHz: 3490–3800 MHz is held nationwide; 3410–3490 MHz is licensed per region (2019 auction regions, residual lots re-auctioned March 2024), partly to regional operators. The regional part is shown as a separate regional-average entry excluded from totals.",
+  "2300/2600 MHz auction F 2/24 (concluded 10 Apr 2026, €39.4m): from 1 Jan 2027 A1 2×25 MHz FDD, Magenta 2×20 MHz FDD + 2300–2360 MHz, Drei 2×25 MHz FDD + all 50 MHz TDD. A1 loses its 25 MHz TDD and the extra 5 MHz FDD block. Shown as future entries.",
+  "Licensing is national except 3410–3490 MHz and campus bands (hence 'mixed')."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "3410–3490 MHz regional holdings are shown as unweighted averages, not population-weighted.",
+  "Carrier ARFCNs are from davwheat and not re-verified.",
+  "Current Drei corporate/ownership changes after 2025 not checked."
+ ],
+ "changes": [
+  "Renamed operators: A1 AT → A1, 3 AT → Drei, Magenta → Magenta Telekom (legal names added).",
+  "Added regional 3.6 GHz licensees (LIWEST, Salzburg AG, Holding Graz, MASS Response) and a regional-average entry for 3410–3490 MHz; corrected Drei's nationwide block to 3590–3690 MHz per RTR chart.",
+  "Added future (1 Jan 2027) entries for 2600 FDD, 2600 TDD and 2300 MHz from the April 2026 auction; current 2.6 GHz entries marked as expiring 31 Dec 2026.",
+  "Added licence expiry dates from RTR's band overview.",
+  "Added not-assigned entries for 600, 850, 1700, 1900, 2000tdd, 2300 (today), 4900, 40g, 47g; 26 GHz campus band marked.",
+  "Positions verified against RTR charts."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "RTR – Frequenzbereiche overview (expiries per band)",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/FRQ_spectrum.de.html"
+  },
+  {
+   "title": "RTR – 3600 MHz band page (usage chart incl. regions)",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/3600MHz/Spectrum3600MHz.de.html"
+  },
+  {
+   "title": "RTR – 2600 MHz FDD band page (2010 and 2027 assignments)",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_FDD/Spectrum2600MHzFDD.de.html"
+  },
+  {
+   "title": "RTR – 2600 MHz TDD band page",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2600MHz_TDD/Spectrum2600MHzTDD.de.html"
+  },
+  {
+   "title": "RTR – 2300 MHz band page",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/2300MHz/Spektrum2300MHz.de.html"
+  },
+  {
+   "title": "RTR – 26 GHz band page",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/26GHz/26GHz-band.de.html"
+  },
+  {
+   "title": "RTR – 700 / 800 / 900 / 1500 / 1800 / 2100 MHz band pages",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/bands/"
+  },
+  {
+   "title": "RTR – F 1/16 Zuteilungsbescheid (700/1500/2100 MHz, 2020)",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/Multibandauktion_700-1500-2100MHz_2020/F_1_16_Zuteilungsbescheid.pdf"
+  },
+  {
+   "title": "RTR – 2020 multiband auction results",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/Multibandauktion_700-1500-2100MHz_2020/FRQ5G_2020_Outcome.en.html"
+  },
+  {
+   "title": "RTR – 26 GHz / residual 3600 MHz auction results (2024)",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/26G_3600M_2024/Results.de.html"
+  },
+  {
+   "title": "RTR press release 10.04.2026 – 2300/2600 MHz auction",
+   "url": "https://www.rtr.at/TKP/presse/pressemitteilungen/presseinformationen_2026/pinfo10042026tkp.de.html"
+  },
+  {
+   "title": "RTR – F 2/24 tender document (2300/2600 MHz)",
+   "url": "https://www.rtr.at/TKP/was_wir_tun/telekommunikation/spectrum/procedures/FRQ_2300_2600_MHz/F_2_24_Ausschreibungsunterlage_2300_MHz_2600_MHz_DE.pdf"
+  },
+  {
+   "title": "teltarif – Austria 2300/2600 MHz auction winners",
+   "url": "https://www.teltarif.de/en/frequenzvergabe-2300mhz-2600mhz-rtr-magenta-drei-a1-hutchison-tmobile/news/102956.html"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0) – carrier ARFCNs",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]

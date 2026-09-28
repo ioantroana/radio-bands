@@ -2,361 +2,142 @@
  "code": "de",
  "name": "Germany",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Four MNOs: Telekom, Vodafone, O2 Telefónica and 1&1 (Open RAN newcomer that roams on Vodafone). In March 2025 BNetzA extended the 800/1800/2600 MHz FDD rights expiring end-2025 to end-2030 instead of auctioning them; 1&1 took up its 2×10 MHz at 2 GHz on 1 Jan 2026.",
  "operators": [
   {
-   "id": "o2",
-   "name": "O2 DE",
-   "color": "#000066",
+   "id": "telekom",
+   "name": "Telekom",
+   "legal": "Telekom Deutschland GmbH",
+   "color": "#e20074",
    "aliases": [
-    "O2",
-    "Telefonica"
+    "Deutsche Telekom",
+    "Telekom DE"
    ],
    "kind": "mno"
   },
   {
    "id": "vodafone",
-   "name": "Vodafone DE",
+   "name": "Vodafone",
+   "legal": "Vodafone GmbH",
    "color": "#e60000",
    "aliases": [
-    "Vodafone",
-    "VF",
+    "Vodafone DE",
     "VF DE"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Provides national roaming to 1&1 (moved from Telefónica, migration completed late 2025)."
   },
   {
-   "id": "telekom",
-   "name": "Telekom",
-   "color": "#e2007a",
-   "aliases": [],
-   "kind": "mno"
+   "id": "o2",
+   "name": "O2 Telefónica",
+   "legal": "Telefónica Germany GmbH & Co. OHG",
+   "color": "#0019a5",
+   "aliases": [
+    "O2",
+    "O2 DE",
+    "Telefónica Deutschland"
+   ],
+   "kind": "mno",
+   "notes": "Holds 2×10 MHz at 2.6 GHz that is leased to 1&1 until end-2030."
   },
   {
    "id": "1-1",
    "name": "1&1",
-   "color": "#174195",
-   "aliases": [],
-   "kind": "mno"
-  },
-  {
-   "id": "regional-licenses",
-   "name": "Regional licenses",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "legal": "1&1 Mobilfunk GmbH",
+   "color": "#5ab4e6",
+   "aliases": [
+    "1&1 Drillisch",
+    "Drillisch Netz AG"
+   ],
+   "kind": "mno",
+   "notes": "Fourth network operator (Open RAN). Spectrum bought as Drillisch Netz AG in 2019. All customers migrated to its own network by Nov 2025, with national roaming on Vodafone outside own coverage."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1)",
+   "group": "700",
+   "label": "700 MHz (B28/n28)",
    "names": [
-    "B1"
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     758,
+     788
     ],
     "ul": [
-     1920,
-     1980
+     703,
+     733
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Assigned in the 2015 auction, valid to end-2033. 733–758 MHz (duplex gap/SDL) is not assigned to MNOs.",
    "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
    ],
    "blocks": [
     {
-     "op": "vodafone",
-     "dl": [
-      2110,
-      2130
-     ],
-     "ul": [
-      1920,
-      1940
-     ],
-     "earfcn": [
-      100
-     ]
-    },
-    {
      "op": "o2",
      "dl": [
-      2130,
-      2150
+      758,
+      768
      ],
      "ul": [
-      1940,
-      1960
+      703,
+      713
      ],
      "earfcn": [
-      300
-     ]
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      2150,
-      2170
-     ],
-     "ul": [
-      1960,
-      1980
-     ],
-     "earfcn": [
-      500
+      9260
      ],
      "nrarfcn": [
-      431070
+      152690
      ],
-     "notes": "Telekom DE · LTE/NR DSS"
-    }
-   ]
-  },
-  {
-   "group": "1800",
-   "label": "1800 MHz (B3)",
-   "names": [
-    "B3"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
-   ],
-   "blocks": [
+     "expiry": "2033-12-31",
+     "notes": "Auction 2015. LTE or NR (no DSS) per davwheat"
+    },
     {
      "op": "telekom",
      "dl": [
-      1805,
-      1835
+      768,
+      778
      ],
      "ul": [
-      1710,
-      1740
-     ],
-     "earfcn": [
-      1300,
-      1444
-     ],
-     "notes": "Telekom DE"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      1835,
-      1855
-     ],
-     "ul": [
-      1740,
-      1760
-     ],
-     "earfcn": [
-      1600
-     ]
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      1855,
-      1880
-     ],
-     "ul": [
-      1760,
-      1785
-     ],
-     "earfcn": [
-      1801
+      713,
+      723
      ],
      "nrarfcn": [
-      372750,
-      375390
+      154570
      ],
-     "notes": "LTE/NR DSS, 20 MHz LTE + 20 or 25 MHz NR"
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
-   "names": [
-    "B7"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     2620,
-     2690
-    ],
-    "ul": [
-     2500,
-     2570
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "dl": [
-      2620,
-      2640
-     ],
-     "ul": [
-      2500,
-      2520
-     ],
-     "earfcn": [
-      2850
-     ]
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      2640,
-      2660
-     ],
-     "ul": [
-      2520,
-      2540
-     ],
-     "earfcn": [
-      3050
-     ],
-     "notes": "Telekom DE"
-    },
-    {
-     "op": "1-1",
-     "dl": [
-      2660,
-      2670
-     ],
-     "ul": [
-      2540,
-      2550
-     ],
-     "earfcn": [
-      3200
-     ]
-    },
-    {
-     "op": "o2",
-     "dl": [
-      2670,
-      2690
-     ],
-     "ul": [
-      2560,
-      2550
-     ],
-     "earfcn": [
-      3350
-     ]
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
-   ],
-   "blocks": [
-    {
-     "op": "o2",
-     "dl": [
-      925,
-      935
-     ],
-     "ul": [
-      880,
-      890
-     ],
-     "earfcn": [
-      3500
-     ],
-     "notes": "Used for 5 MHz LTE and GSM."
+     "expiry": "2033-12-31",
+     "notes": "Auction 2015"
     },
     {
      "op": "vodafone",
      "dl": [
-      935,
-      945
+      778,
+      788
      ],
      "ul": [
-      890,
-      900
+      723,
+      733
      ],
      "earfcn": [
-      3600
+      9460
      ],
-     "notes": "Used for 5 MHz LTE and GSM."
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      945,
-      960
+     "nrarfcn": [
+      156510
      ],
-     "ul": [
-      900,
-      915
-     ],
-     "earfcn": [
-      3749
-     ],
-     "notes": "Telekom DE · Used for 5 MHz LTE and 10 MHz GSM."
+     "expiry": "2033-12-31",
+     "notes": "Auction 2015. LTE/NR DSS per davwheat"
     }
    ]
   },
@@ -378,12 +159,14 @@
      862
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2010 auction; rights expiring 31 Dec 2025 were extended to 31 Dec 2030 by BNetzA decision BK1-22/001 (24 Mar 2025), conditional on negotiating cooperative sub-1 GHz sharing (≥2×5 MHz) with 1&1. No agreement was reached; BNetzA consulted on ordering it (Feb–Mar 2026).",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/Pr%C3%A4sidentenkammerentscheidung2025.pdf",
+    "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2025/20250324_Frequenzen.html"
    ],
    "blocks": [
     {
@@ -398,7 +181,8 @@
      ],
      "earfcn": [
       6200
-     ]
+     ],
+     "expiry": "2030-12-31"
     },
     {
      "op": "vodafone",
@@ -412,7 +196,8 @@
      ],
      "earfcn": [
       6300
-     ]
+     ],
+     "expiry": "2030-12-31"
     },
     {
      "op": "telekom",
@@ -427,109 +212,126 @@
      "earfcn": [
       6400
      ],
-     "notes": "Telekom DE"
+     "expiry": "2030-12-31"
     }
    ]
   },
   {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
+   "group": "850",
+   "label": "850 MHz (B5)",
    "names": [
-    "B28",
-    "n28"
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for MFCN in Europe (870–876/915–921 MHz used for SRD/RMR). Not in BNetzA's wireless network access overview.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     758,
-     803
+     925,
+     960
     ],
     "ul": [
-     703,
-     748
+     880,
+     915
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Assigned in the 2015 auction, valid to end-2033.",
    "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
    ],
    "blocks": [
     {
      "op": "o2",
      "dl": [
-      758,
-      768
+      925,
+      935
      ],
      "ul": [
-      703,
-      713
+      880,
+      890
      ],
      "earfcn": [
-      9260
+      3500
      ],
-     "nrarfcn": [
-      152690
-     ],
-     "notes": "LTE or NR, no DSS"
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "nrarfcn": [
-      154570
-     ],
-     "notes": "Telekom DE"
+     "expiry": "2033-12-31",
+     "notes": "GSM + 5 MHz LTE per davwheat"
     },
     {
      "op": "vodafone",
      "dl": [
-      778,
-      788
+      935,
+      945
      ],
      "ul": [
-      723,
-      733
+      890,
+      900
      ],
      "earfcn": [
-      9460
+      3600
      ],
-     "nrarfcn": [
-      156510
+     "expiry": "2033-12-31",
+     "notes": "GSM + 5 MHz LTE per davwheat"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      945,
+      960
      ],
-     "notes": "LTE/NR DSS"
+     "ul": [
+      900,
+      915
+     ],
+     "earfcn": [
+      3749
+     ],
+     "expiry": "2033-12-31",
+     "notes": "GSM + 5 MHz LTE per davwheat"
     }
    ]
   },
   {
    "group": "1400",
-   "label": "1.4–1.5 GHz (B32)",
+   "label": "1.5 GHz SDL (B32/n75)",
    "names": [
-    "B32"
+    "B32",
+    "n75"
    ],
    "status": "assigned",
    "duplex": "sdl",
    "range": {
     "f": [
      1452,
-     1496
+     1492
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Core L-band (1452–1492 MHz) from the 2015 auction, valid to end-2033. The extension bands 1427–1452 and 1492–1517 MHz are not assigned to MNOs.",
    "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
    ],
    "blocks": [
@@ -542,7 +344,7 @@
      "earfcn": [
       10020
      ],
-     "notes": "Telekom DE · L-Band B32"
+     "expiry": "2033-12-31"
     },
     {
      "op": "vodafone",
@@ -553,17 +355,404 @@
      "earfcn": [
       10220
      ],
-     "notes": "L-Band B32"
+     "expiry": "2033-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS / 1.7 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe; 1710–1785 MHz is part of the 1800 MHz (B3) band.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Positions per BNetzA overview. The March 2025 decision extended all 1800 MHz rights expiring end-2025 to end-2030, and Vodafone's 1760–1785/1855–1880 MHz from end-2033 to end-2036.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/Pr%C3%A4sidentenkammerentscheidung2025.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "telekom",
+     "dl": [
+      1805,
+      1820
+     ],
+     "ul": [
+      1710,
+      1725
+     ],
+     "earfcn": [
+      1300
+     ],
+     "expiry": "2030-12-31",
+     "notes": "2010 auction block; extended 2025→2030"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      1820,
+      1835
+     ],
+     "ul": [
+      1725,
+      1740
+     ],
+     "earfcn": [
+      1444
+     ],
+     "expiry": "2033-12-31",
+     "notes": "2015 auction"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      1835,
+      1845
+     ],
+     "ul": [
+      1740,
+      1750
+     ],
+     "earfcn": [
+      1600
+     ],
+     "expiry": "2030-12-31",
+     "notes": "Extended 2025→2030"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      1845,
+      1855
+     ],
+     "ul": [
+      1750,
+      1760
+     ],
+     "expiry": "2033-12-31",
+     "notes": "2015 auction"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "earfcn": [
+      1801
+     ],
+     "nrarfcn": [
+      372750,
+      375390
+     ],
+     "expiry": "2036-12-31",
+     "notes": "Extended 2033→2036 by the 2025 decision (linked to Vodafone's national-roaming deal with 1&1). LTE/NR DSS per davwheat"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz MSS",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe; 1980–2010/2170–2200 MHz is assigned to MSS (EU-wide selection), not to terrestrial mobile operators.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz unpaired TDD (B33/B34)",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Telefónica's unpaired 1900.1–1905.1 MHz and 2010.5–2024.7 MHz expired on 31 Dec 2025 and were not extended; the band is no longer available for wireless network access (used for PMSE, 1900–1910 MHz harmonised for railway RMR).",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/Pr%C3%A4sidentenkammerentscheidung2025.pdf",
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2100",
+   "label": "2 GHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2019 auction: Telekom 2×20, Vodafone 2×20, Telefónica 2×10, Drillisch/1&1 2×10 MHz, all valid to end-2040. The seed's O2 2×20 MHz reflected the pre-2026 situation.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
+    "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Breitband/MobilesBreitband/Frequenzauktion/2019/Auktion2019-node.html",
+    "https://www.prepaid-wiki.de/technik/11-drillisch-bekommt-frequenzen-von-telefonica-zum-netzausbau/",
+    "https://winfuture.de/news,156084.html"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "earfcn": [
+      100
+     ],
+     "expiry": "2040-12-31",
+     "notes": "2019 auction"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      2130,
+      2140
+     ],
+     "ul": [
+      1940,
+      1950
+     ],
+     "expiry": "2040-12-31",
+     "notes": "2019 auction"
+    },
+    {
+     "op": "1-1",
+     "dl": [
+      2140,
+      2150
+     ],
+     "ul": [
+      1950,
+      1960
+     ],
+     "expiry": "2040-12-31",
+     "notes": "Won by Drillisch in the 2019 auction; usable only from 1 Jan 2026 (used by Telefónica until end-2025). Activated by 1&1 from 1 Jan 2026."
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "earfcn": [
+      500
+     ],
+     "nrarfcn": [
+      431070
+     ],
+     "expiry": "2040-12-31",
+     "notes": "2019 auction. LTE/NR DSS per davwheat"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for wireless network access in Germany (not part of BNetzA's 700 MHz–3.8 GHz assignment overview). From background knowledge, not source-verified: the band is used by other (government/PMSE) services.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz FDD (B7/n7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licence edges are regulator-verified (BNetzA overview: Vodafone 2500–2520, Telekom 2520–2540, Telefónica 2540–2570 MHz uplink). Extended from end-2025 to end-2030. Only the position of the 2×10 MHz leased to 1&1 is unverified.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/Pr%C3%A4sidentenkammerentscheidung2025.pdf",
+    "https://hengeler-news.com/en/articles/hengeler-mueller-advises-11-on-entering-into-2026-2030-spectrum-leasing-agreement-with-telefonica",
+    "https://www.prepaid-wiki.de/technik/11-drillisch-bekommt-frequenzen-von-telefonica-zum-netzausbau/",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
+   ],
+   "blocks": [
+    {
+     "op": "vodafone",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "earfcn": [
+      2850
+     ],
+     "expiry": "2030-12-31"
+    },
+    {
+     "op": "telekom",
+     "dl": [
+      2640,
+      2660
+     ],
+     "ul": [
+      2520,
+      2540
+     ],
+     "earfcn": [
+      3050
+     ],
+     "expiry": "2030-12-31"
+    },
+    {
+     "op": "1-1",
+     "dl": [
+      2660,
+      2670
+     ],
+     "ul": [
+      2540,
+      2550
+     ],
+     "earfcn": [
+      3200
+     ],
+     "expiry": "2030-12-31",
+     "notes": "Part of Telefónica's licensed 2540–2570/2660–2690 MHz, leased to 1&1 (2019 lease to end-2025; new lease 1 Jan 2026–31 Dec 2030 required by the 2025 decision). The exact 2×10 MHz position inside O2's block is from davwheat/EARFCN 3200 only."
+    },
+    {
+     "op": "o2",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "earfcn": [
+      3350
+     ],
+     "expiry": "2030-12-31",
+     "notes": "Seed had the uplink reversed ([2560,2550]); fixed to 2550–2570 MHz."
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2.6 GHz TDD (B38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
-   "status": "assigned",
+   "status": "not-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -571,54 +760,18 @@
      2620
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Unpaired 2570–2620 MHz (formerly O2, Vodafone, Telekom) was deliberately NOT extended beyond 31 Dec 2025 (fragmented, not efficiently used); to be included in a later award procedure, meanwhile only trial/short-term use.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/Pr%C3%A4sidentenkammerentscheidung2025.pdf"
    ],
-   "blocks": [
-    {
-     "op": "o2",
-     "f": [
-      2570,
-      2580
-     ],
-     "notes": "Unused"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      2580,
-      2605
-     ],
-     "earfcn": [
-      37975
-     ],
-     "notes": "Used for FWA, not actively deployed anymore."
-    },
-    {
-     "op": "telekom",
-     "f": [
-      2605,
-      2610
-     ],
-     "notes": "Telekom DE · Unused, bought to prevent Vodafone from having full 30 MHz for 38C."
-    },
-    {
-     "op": "o2",
-     "f": [
-      2610,
-      2620
-     ],
-     "notes": "Unused"
-    }
-   ]
+   "blocks": []
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
@@ -630,12 +783,15 @@
      3800
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "3400–3700 MHz national (2019 auction, to end-2040). 3700–3800 MHz is reserved for local (campus) networks assigned on application by BNetzA; shown grey because it is not a national assignment.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/DE"
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf",
+    "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Breitband/MobilesBreitband/Frequenzauktion/2019/Auktion2019-node.html",
+    "https://bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Frequenzen/OeffentlicheNetze/LokaleNetze/lokalenetze-node.html",
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/LokaleNetze/Zuteilungsinhaber3,7GHz.pdf"
    ],
    "blocks": [
     {
@@ -649,7 +805,8 @@
       629952,
       631968
      ],
-     "notes": "3400-3410 MHz only for indoor use"
+     "expiry": "2040-12-31",
+     "notes": "2019 auction, 90 MHz. 3400–3410 MHz restricted (indoor) per davwheat"
     },
     {
      "op": "1-1",
@@ -659,7 +816,9 @@
      ],
      "nrarfcn": [
       633312
-     ]
+     ],
+     "expiry": "2040-12-31",
+     "notes": "2019 auction (as Drillisch Netz AG), 50 MHz"
     },
     {
      "op": "o2",
@@ -669,7 +828,9 @@
      ],
      "nrarfcn": [
       638304
-     ]
+     ],
+     "expiry": "2040-12-31",
+     "notes": "2019 auction, 70 MHz"
     },
     {
      "op": "telekom",
@@ -680,26 +841,187 @@
      "nrarfcn": [
       641760
      ],
-     "notes": "Telekom DE"
+     "expiry": "2040-12-31",
+     "notes": "2019 auction, 90 MHz"
     },
     {
-     "op": "regional-licenses",
+     "op": "unassigned",
      "f": [
       3700,
       3800
-     ]
+     ],
+     "notes": "Local/campus licences only (assigned on application, up to 10 years, max. 2040); >120 holders. Not national."
     }
    ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile networks in Germany.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Frequenzen/OeffentlicheNetze/Mobilfunknetze/mobilfunknetze.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No national assignment. The whole 24.25–27.5 GHz band is assigned locally on application (VV Lokales Breitband 26 GHz); 23 local assignments had been granted by Q3 2024.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/LokaleNetze/Verwaltungsvorschrift26GHz_pdf.pdf",
+    "https://www.digitale-technologien.de/DT/Redaktion/DE/Downloads/Publikation/5G_Campusnetze/20241108_5G_monitoringbericht.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. 40.5–43.5 GHz harmonised by EU Implementing Decision 2024/1983 (national implementation by end-2026).",
+   "sources": [
+    "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Frequenzen/OeffentlicheNetze/Mobilfunknetze/mobilfunknetze.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile networks.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Frequenzen/OeffentlicheNetze/Mobilfunknetze/mobilfunknetze.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {},
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "470–694 MHz used for DVB-T2 broadcasting; no 600 MHz mobile band plan in Europe.",
+   "sources": [
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+   ],
+   "blocks": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Block positions for 700/800/900/1500/1800/2100/2600/3600 MHz are taken from BNetzA's 'Drahtloser Netzzugang 700 MHz bis 3,8 GHz' chart (Stand 23.08.2021), updated for the March 2025 extension decision (BK1-22/001).",
+  "BNetzA decision of 24 Mar 2025: paired 800/1800/2600 MHz rights expiring 31 Dec 2025 extended to 31 Dec 2030; Vodafone's 1760–1785/1855–1880 MHz extended from 2033 to 2036; unpaired 2.6 GHz (2570–2620 MHz) and unpaired 2 GHz not extended. A larger award of 800/1800/2600 plus the 2033-expiring 700/900/1500/1800 rights is planned for use after 2030.",
+  "Conditions of the extension: incumbents must negotiate cooperative sharing of ≥2×5 MHz sub-1 GHz spectrum with 1&1 in its build-out areas; Telefónica must continue leasing 2×10 MHz at 2.6 GHz to 1&1 (new lease 2026–2030 signed Nov 2025). Negotiations on sub-1 GHz failed by 31 Dec 2025; BNetzA consulted on ordering sharing (deadline 18 Mar 2026). The outcome after that is not reflected here.",
+  "Local licences: 3700–3800 MHz (campus networks, >120 holders) and 24.25–27.5 GHz (local assignments on application) are not national and are not attributed to any operator."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "1&1's 2.6 GHz lease position (2660–2670/2540–2550 MHz) is from davwheat/EARFCN only, not a regulator source.",
+  "Outcome of BNetzA's 2026 proceeding on ordering sub-1 GHz sharing for 1&1 (consultation closed 18 Mar 2026) could not be confirmed.",
+  "450 MHz (450connect, utilities) not compiled (optional group).",
+  "2300 MHz status is from background knowledge (no MFCN assignment), not source-verified.",
+  "EARFCN/NR-ARFCN values are from davwheat and not re-verified; the O2 B1 EARFCN was dropped because O2's B1 block shrank to 2×10 MHz in 2026."
+ ],
+ "changes": [
+  "2100: O2 reduced from 2×20 to 2×10 MHz (2130–2140/1940–1950); 1&1 added at 2140–2150/1950–1960 MHz from 1 Jan 2026 (2019 auction).",
+  "2600 FDD: fixed reversed O2 uplink ([2560,2550] → 2550–2570); noted 1&1 block is a lease from O2; expiry now 2030.",
+  "2600 TDD (B38): changed to not-assigned — rights expired 31 Dec 2025 and were not extended.",
+  "3.7–3.8 GHz: removed the pseudo-operator 'Regional licenses'; now shown as grey unassigned local-licence block (not national).",
+  "1800: split blocks by expiry (2030/2033/2036) per BNetzA; 800 expiry now 2030.",
+  "Operators renamed to current brands/legal entities (O2 Telefónica, 1&1 Mobilfunk GmbH); colours adjusted so O2 and 1&1 are distinguishable.",
+  "Added not-assigned entries for 600, 850, 1700, 1900, 2000tdd, 2300, 4900, 26g, 40g, 47g; 1400 range narrowed to the assigned core band.",
+  "Positions upgraded to 'verified' where they match BNetzA's assignment chart."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "BNetzA – Drahtloser Netzzugang 700 MHz bis 3,8 GHz (assignment chart, Stand 23.08.2021)",
+   "url": "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/DrahtloserNetzzugang/Projekt2018/Frequenzen700bis3600_pdf.pdf"
+  },
+  {
+   "title": "BNetzA – Präsidentenkammerentscheidung BK1-22/001 (24.03.2025) on 800/1800/2600 MHz",
+   "url": "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/Mobilfunk/Pr%C3%A4sidentenkammerentscheidung2025.pdf"
+  },
+  {
+   "title": "BNetzA press release 24.03.2025 – Mobilfunkfrequenzen verlängert",
+   "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2025/20250324_Frequenzen.html"
+  },
+  {
+   "title": "BNetzA press release 17.02.2026 – consultation on ordering sub-1 GHz sharing for 1&1",
+   "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260217_Frequenzen.html"
+  },
+  {
+   "title": "BNetzA – Auktion 2019 results",
+   "url": "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Breitband/MobilesBreitband/Frequenzauktion/2019/Auktion2019-node.html"
+  },
+  {
+   "title": "BNetzA – Lokale Netze (3.7 GHz / 26 GHz)",
+   "url": "https://bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Frequenzen/OeffentlicheNetze/LokaleNetze/lokalenetze-node.html"
+  },
+  {
+   "title": "BNetzA – Holders of 3.7 GHz local assignments",
+   "url": "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/OffentlicheNetze/LokaleNetze/Zuteilungsinhaber3,7GHz.pdf"
+  },
+  {
+   "title": "Hengeler Mueller – 1&1/Telefónica 2.6 GHz lease 2026–2030",
+   "url": "https://hengeler-news.com/en/articles/hengeler-mueller-advises-11-on-entering-into-2026-2030-spectrum-leasing-agreement-with-telefonica"
+  },
+  {
+   "title": "Prepaid-Wiki – Telefónica leases 2.6 GHz to 1&1; 1&1 2 GHz block 1950–1960/2140–2150 MHz",
+   "url": "https://www.prepaid-wiki.de/technik/11-drillisch-bekommt-frequenzen-von-telefonica-zum-netzausbau/"
+  },
+  {
+   "title": "WinFuture – 1&1 activates 2.1 GHz block (Jan 2026)",
+   "url": "https://winfuture.de/news,156084.html"
+  },
+  {
+   "title": "heise – 1&1 customer migration completed, Vodafone roaming",
+   "url": "https://www.heise.de/news/1-1-hat-seine-Handykunden-im-eigenen-Netz-ueberwiegend-mit-Vodafone-Roaming-11073132.html"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0) – carrier ARFCNs",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]

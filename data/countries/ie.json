@@ -2,76 +2,407 @@
  "code": "ie",
  "name": "Ireland",
  "region": "Europe",
- "asOf": "2026-01-09",
+ "asOf": "2026-09-28",
  "coverage": "block-level",
- "licensing": "national",
- "summary": "",
+ "licensing": "mixed",
+ "summary": "Three MNOs — Vodafone, Three (incl. ex-O2) and Eir — hold all active mobile spectrum. Imagine's successor BCP IV exited in 2026, selling 2.3 GHz to Eir and part of its rural 3.6 GHz to Vodafone; 800/900/1800 MHz licences expire in July 2030 and 3.6 GHz in July 2032.",
  "operators": [
   {
-   "id": "eircom",
+   "id": "eir",
    "name": "Eir",
-   "color": "#892ba0",
+   "legal": "Eircom Limited (formerly Meteor Mobile Communications Ltd)",
+   "color": "#6d2077",
    "aliases": [
-    "Eir Ireland",
+    "eir",
     "Eircom",
     "Meteor",
-    "Meteor Ireland"
+    "eir mobile"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Acquired BCP IV's (ex-Imagine) 40 MHz of 2.3 GHz (2360–2400 MHz) effective 8 Apr 2026 (ComReg 26/26), giving it the whole 2.3 GHz band. Notified ComReg of 3G switch-off in H2 2026."
   },
   {
    "id": "vodafone",
-   "name": "Vodafone IE",
+   "name": "Vodafone",
+   "legal": "Vodafone Ireland Limited",
    "color": "#e60000",
    "aliases": [
-    "Vodafone",
-    "VF",
-    "VF IE"
+    "Vodafone Ireland",
+    "Vodafone IE"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Acquired 15 MHz of 3.6 GHz (3560–3575 MHz) in the four rural regions from BCP IV (ex-Imagine), effective 28 May 2026. 3G switched off Oct 2024."
   },
   {
    "id": "three",
-   "name": "Three IE",
+   "name": "Three",
+   "legal": "Three Ireland (Hutchison) Limited",
    "color": "#ee0088",
    "aliases": [
-    "3 IE",
-    "Three",
-    "3"
+    "Three Ireland",
+    "3 Ireland",
+    "Three IE",
+    "O2 Ireland"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Absorbed O2 Ireland (Telefónica) in 2014; holds the former O2 and H3G 800/900/1800 MHz spectrum."
   },
   {
-   "id": "imagine",
-   "name": "Imagine IE",
-   "color": "#1d428a",
+   "id": "bcp-iv",
+   "name": "BCP IV (ex-Imagine)",
+   "legal": "BCP IV Telecommunications OPCO Limited (formerly Imagine Communications Ireland Ltd; Brookfield)",
+   "color": "#00aeef",
    "aliases": [
     "Imagine",
-    "Imagine Communications",
-    "Imagine Communications Ireland"
+    "Imagine IE",
+    "Imagine Communications"
    ],
-   "kind": "mno"
+   "kind": "other",
+   "notes": "Spectrum-holding company. Returned 15 MHz 2.6 GHz TDD (12 Dec 2023); sold 2.3 GHz to Eir (Apr 2026) and 3560–3575 MHz (rural) to Vodafone (May 2026). Remaining rural 3.6 GHz is leased to Imagine Network Services while Imagine retires its FWA network."
   },
   {
-   "id": "airspan",
-   "name": "Airspan IE",
-   "color": "#005b82",
-   "aliases": [
-    "Airspan Networks",
-    "Airspan",
-    "Airspan Networks Ireland"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "state-services",
+   "id": "state",
    "name": "State services",
    "color": "#9aa0a6",
    "aliases": [],
-   "kind": "other"
+   "kind": "government",
+   "notes": "3435–3475 MHz licensed for State services."
   }
  ],
  "bands": [
+  {
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "MBSA2 (Dec 2022/Jan 2023, ~€448m across all bands). 700 MHz SDL (738–758 MHz) was not included in MBSA2 and is unassigned.",
+   "sources": [
+    "https://www.comreg.ie/media/2023/01/ComReg-2306.pdf",
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/",
+    "https://www.siliconrepublic.com/comms/ireland-5g-spectrum-band-auction-comreg"
+   ],
+   "blocks": [
+    {
+     "op": "eir",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "earfcn": [
+      9260
+     ],
+     "expiry": "2042-02-13"
+    },
+    {
+     "op": "three",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "expiry": "2042-02-13"
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "expiry": "2042-02-13"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "MBSA1 (Nov 2012) lots 800/2/A–F; licences expire July 2030 (re-award expected). Lot letters mapped to frequencies in ascending order, consistent with davwheat.",
+   "sources": [
+    "https://www.comreg.ie/media/dlm_uploads/2015/12/ComReg12131.pdf",
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+   ],
+   "blocks": [
+    {
+     "op": "eir",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "expiry": "2030-07"
+    },
+    {
+     "op": "three",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "expiry": "2030-07",
+     "notes": "Won by Telefónica (O2) Ireland in 2012; Three since 2014 merger."
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "expiry": "2030-07"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "MBSA1 lots 900/2/A–G (2×5 MHz each); expire July 2030.",
+   "sources": [
+    "https://www.comreg.ie/media/dlm_uploads/2015/12/ComReg12131.pdf",
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+   ],
+   "blocks": [
+    {
+     "op": "eir",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "expiry": "2030-07"
+    },
+    {
+     "op": "three",
+     "dl": [
+      935,
+      945
+     ],
+     "ul": [
+      890,
+      900
+     ],
+     "expiry": "2030-07",
+     "notes": "Ex-O2 Ireland lots C–D."
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      945,
+      955
+     ],
+     "ul": [
+      900,
+      910
+     ],
+     "expiry": "2030-07"
+    },
+    {
+     "op": "three",
+     "dl": [
+      955,
+      960
+     ],
+     "ul": [
+      910,
+      915
+     ],
+     "expiry": "2030-07",
+     "notes": "Ex-H3G lot G."
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "MBSA1 lots 1800/2/A–O (2×5 MHz each); expire July 2030.",
+   "sources": [
+    "https://www.comreg.ie/media/dlm_uploads/2015/12/ComReg12131.pdf",
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+   ],
+   "blocks": [
+    {
+     "op": "three",
+     "dl": [
+      1805,
+      1820
+     ],
+     "ul": [
+      1710,
+      1725
+     ],
+     "earfcn": [
+      1275
+     ],
+     "nrarfcn": [
+      362170
+     ],
+     "expiry": "2030-07",
+     "notes": "Ex-O2 Ireland lots A–C."
+    },
+    {
+     "op": "vodafone",
+     "dl": [
+      1820,
+      1845
+     ],
+     "ul": [
+      1725,
+      1750
+     ],
+     "earfcn": [
+      1450,
+      1575
+     ],
+     "expiry": "2030-07",
+     "notes": "Lots D–H."
+    },
+    {
+     "op": "three",
+     "dl": [
+      1845,
+      1865
+     ],
+     "ul": [
+      1750,
+      1770
+     ],
+     "earfcn": [
+      1700
+     ],
+     "expiry": "2030-07",
+     "notes": "Ex-H3G lots I–L."
+    },
+    {
+     "op": "eir",
+     "dl": [
+      1865,
+      1880
+     ],
+     "ul": [
+      1770,
+      1785
+     ],
+     "earfcn": [
+      1875
+     ],
+     "expiry": "2030-07",
+     "notes": "Lots M–O."
+    }
+   ]
+  },
   {
    "group": "2100",
    "label": "2100 MHz (B1/n1)",
@@ -96,6 +427,7 @@
    "excludeFromTotal": false,
    "note": "",
    "sources": [
+    "https://www.comreg.ie/media/2023/01/ComReg-2306.pdf",
     "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
    ],
    "blocks": [
@@ -109,8 +441,7 @@
       1920,
       1940
      ],
-     "notes": "Three Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "expiry": "2042-02-13"
     },
     {
      "op": "vodafone",
@@ -122,11 +453,11 @@
       1940,
       1960
      ],
-     "notes": "Vodafone Ireland · LTE/NR DSS",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "expiry": "2042-02-13",
+     "notes": "LTE/NR DSS."
     },
     {
-     "op": "eircom",
+     "op": "eir",
      "dl": [
       2150,
       2170
@@ -135,109 +466,62 @@
       1960,
       1980
      ],
-     "notes": "Eircom Limited",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "expiry": "2042-02-13"
     }
    ]
   },
   {
-   "group": "1800",
-   "label": "1800 MHz (B3/n3)",
+   "group": "2300",
+   "label": "2300 MHz (B40/n40)",
    "names": [
-    "B3",
-    "n3"
+    "B40",
+    "n40"
    ],
    "status": "assigned",
-   "duplex": "fdd",
+   "duplex": "tdd",
    "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
+    "f": [
+     2300,
+     2400
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
+    "https://www.comreg.ie/media/2023/01/ComReg-2306.pdf",
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://www.comreg.ie/industry/radio-spectrum/licensing/search-licence-type/spectrum-lease-licences/"
    ],
    "blocks": [
     {
-     "op": "three",
-     "dl": [
-      1805,
-      1820
+     "op": "eir",
+     "f": [
+      2300,
+      2360
      ],
-     "ul": [
-      1710,
-      1725
-     ],
-     "earfcn": [
-      1275
-     ],
-     "nrarfcn": [
-      362170
-     ],
-     "notes": "Three Ireland · LTE or NR, no DSS"
+     "expiry": "2042-02-13",
+     "notes": "Won in MBSA2."
     },
     {
-     "op": "vodafone",
-     "dl": [
-      1820,
-      1845
+     "op": "eir",
+     "f": [
+      2360,
+      2400
      ],
-     "ul": [
-      1725,
-      1750
-     ],
-     "earfcn": [
-      1450,
-      1575
-     ],
-     "notes": "Vodafone Ireland"
-    },
-    {
-     "op": "three",
-     "dl": [
-      1845,
-      1865
-     ],
-     "ul": [
-      1750,
-      1770
-     ],
-     "earfcn": [
-      1700
-     ],
-     "notes": "Three Ireland"
-    },
-    {
-     "op": "eircom",
-     "dl": [
-      1865,
-      1880
-     ],
-     "ul": [
-      1770,
-      1785
-     ],
-     "earfcn": [
-      1875
-     ],
-     "notes": "Eircom Limited · LTE/NR DSS"
+     "expiry": "2042-02-13",
+     "notes": "Won by Imagine in MBSA2; transferred from BCP IV to Eircom (ComReg 26/26, determination 2 Apr 2026, effective 8 Apr 2026). Remains a separate licence (LU1005).",
+     "source": "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
+   "label": "2.6 GHz FDD (B7/n7)",
    "names": [
-    "B7"
+    "B7",
+    "n7"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -256,6 +540,7 @@
    "excludeFromTotal": false,
    "note": "",
    "sources": [
+    "https://www.comreg.ie/media/2023/01/ComReg-2306.pdf",
     "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
    ],
    "blocks": [
@@ -269,8 +554,7 @@
       2500,
       2535
      ],
-     "notes": "Three Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "expiry": "2042-02-13"
     },
     {
      "op": "vodafone",
@@ -282,244 +566,18 @@
       2535,
       2570
      ],
-     "notes": "Vodafone Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
-   ],
-   "blocks": [
-    {
-     "op": "eircom",
-     "dl": [
-      925,
-      935
-     ],
-     "ul": [
-      880,
-      890
-     ],
-     "notes": "Eircom Limited"
-    },
-    {
-     "op": "three",
-     "dl": [
-      935,
-      945
-     ],
-     "ul": [
-      890,
-      900
-     ],
-     "notes": "Three Ireland · 2G operates only on O2 IE's PLMN (272 02)"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      945,
-      955
-     ],
-     "ul": [
-      900,
-      910
-     ],
-     "notes": "Vodafone Ireland"
-    },
-    {
-     "op": "three",
-     "dl": [
-      955,
-      960
-     ],
-     "ul": [
-      910,
-      915
-     ],
-     "notes": "Three Ireland · 2G operates only on O2 IE's PLMN (272 02)"
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/IE"
-   ],
-   "blocks": [
-    {
-     "op": "eircom",
-     "dl": [
-      791,
-      801
-     ],
-     "ul": [
-      832,
-      842
-     ],
-     "earfcn": [
-      6200
-     ],
-     "notes": "Eircom Limited"
-    },
-    {
-     "op": "three",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300
-     ],
-     "notes": "Three Ireland"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6400
-     ],
-     "notes": "Vodafone Ireland"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-   ],
-   "blocks": [
-    {
-     "op": "eircom",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ],
-     "earfcn": [
-      9260
-     ],
-     "notes": "Eircom Limited",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-    },
-    {
-     "op": "three",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ],
-     "notes": "Three Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      778,
-      788
-     ],
-     "ul": [
-      723,
-      733
-     ],
-     "earfcn": [
-      9460
-     ],
-     "notes": "Vodafone Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "expiry": "2042-02-13"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2.6 GHz TDD (B38/n38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -532,17 +590,18 @@
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+    "https://www.comreg.ie/media/2023/01/ComReg-2306.pdf",
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf"
    ],
    "blocks": [
     {
-     "op": "imagine",
+     "op": "unassigned",
      "f": [
       2570,
       2585
      ],
-     "notes": "Imagine Communications Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "notes": "Won by Imagine in MBSA2; returned to ComReg by BCP IV on 12 Dec 2023.",
+     "source": "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf"
     },
     {
      "op": "vodafone",
@@ -550,68 +609,23 @@
       2585,
       2615
      ],
-     "notes": "Vodafone Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     "expiry": "2042-02-13"
     },
     {
      "op": "unassigned",
      "f": [
       2615,
       2620
-     ],
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-    }
-   ]
-  },
-  {
-   "group": "2300",
-   "label": "2300 MHz (B40)",
-   "names": [
-    "B40"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     2300,
-     2400
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-   ],
-   "blocks": [
-    {
-     "op": "eircom",
-     "f": [
-      2300,
-      2360
-     ],
-     "notes": "Eircom Limited",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
-    },
-    {
-     "op": "imagine",
-     "f": [
-      2360,
-      2400
-     ],
-     "notes": "Imagine Communications Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+     ]
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (B42/B43/n78) — large cities",
+   "label": "3.6 GHz (n78) — rural regions",
    "names": [
-    "B42",
-    "B43",
-    "n78"
+    "n78",
+    "B42"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -624,9 +638,12 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "Spectrum allocation visualisation for 3500 MHz within Dublin, Cork, Limerick, Galway, Waterford and their suburbs.",
+   "note": "Borders-Midlands-West, South-West, East and South-East regions (outside the five cities). Positions per ComReg's June 2026 assignment graphic. Licences expire July 2032.",
    "sources": [
-    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    "https://www.comreg.ie/media/2026/06/3.6-GHz-Band-Assignments-Graphic-June-2026_2.bmp",
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/",
+    "https://www.comreg.ie/media/dlm_uploads/2017/05/ComReg-1738.pdf",
+    "https://www.comreg.ie/industry/radio-spectrum/licensing/search-licence-type/spectrum-lease-licences/"
    ],
    "blocks": [
     {
@@ -634,55 +651,49 @@
      "f": [
       3400,
       3410
-     ],
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     ]
     },
     {
-     "op": "airspan",
+     "op": "unassigned",
      "f": [
       3410,
       3435
      ],
-     "notes": "Airspan Networks Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "notes": "A-lot won by Airspan/Dense Air in 2017; surrendered 31 Jul 2024."
     },
     {
-     "op": "state-services",
+     "op": "state",
      "f": [
       3435,
       3475
      ],
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "notes": "State services."
     },
     {
      "op": "vodafone",
      "f": [
       3475,
-      3580
+      3575
      ],
-     "nrarfcn": [
-      631968
-     ],
-     "notes": "Vodafone Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "expiry": "2032-07",
+     "notes": "85 MHz from 2017 award + 3560–3575 MHz from BCP IV (effective 28 May 2026, ComReg 26/31)."
     },
     {
-     "op": "airspan",
+     "op": "bcp-iv",
      "f": [
-      3580,
-      3615
+      3575,
+      3620
      ],
-     "notes": "Airspan Networks Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "expiry": "2032-07",
+     "notes": "Ex-Imagine; leased to Imagine Network Services (FWA being retired)."
     },
     {
-     "op": "eircom",
+     "op": "eir",
      "f": [
-      3615,
+      3620,
       3700
      ],
-     "notes": "Eircom Limited",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "expiry": "2032-07"
     },
     {
      "op": "three",
@@ -693,18 +704,16 @@
      "nrarfcn": [
       647424
      ],
-     "notes": "Three Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "expiry": "2032-07"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (B42/B43/n78) — rural",
+   "label": "3.6 GHz (n78) — city regions",
    "names": [
-    "B42",
-    "B43",
-    "n78"
+    "n78",
+    "B42"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -717,9 +726,11 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": true,
-   "note": "Spectrum allocation visualisation for 3500 MHz within the Border Midlands, West, South West, East and South East regions.",
+   "note": "Dublin, Cork, Limerick, Galway and Waterford cities and suburbs. Alternative regional view (excluded from totals).",
    "sources": [
-    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+    "https://www.comreg.ie/media/2026/06/3.6-GHz-Band-Assignments-Graphic-June-2026_2.bmp",
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/",
+    "https://www.comreg.ie/media/dlm_uploads/2017/05/ComReg-1738.pdf"
    ],
    "blocks": [
     {
@@ -727,52 +738,49 @@
      "f": [
       3400,
       3410
-     ],
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     ]
     },
     {
-     "op": "airspan",
+     "op": "unassigned",
      "f": [
       3410,
       3435
      ],
-     "notes": "Airspan Networks Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "notes": "Returned by Dense Air (31 Jul 2024)."
     },
     {
-     "op": "state-services",
+     "op": "state",
      "f": [
       3435,
       3475
-     ],
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     ]
     },
     {
      "op": "vodafone",
      "f": [
       3475,
-      3560
+      3580
      ],
-     "notes": "Vodafone Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "nrarfcn": [
+      631968
+     ],
+     "expiry": "2032-07"
     },
     {
-     "op": "imagine",
+     "op": "unassigned",
      "f": [
-      3560,
-      3620
+      3580,
+      3615
      ],
-     "notes": "Imagine Communications Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "notes": "Returned by Dense Air (31 Jul 2024)."
     },
     {
-     "op": "eircom",
+     "op": "eir",
      "f": [
-      3620,
+      3615,
       3700
      ],
-     "notes": "Eircom Limited",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "expiry": "2032-07"
     },
     {
      "op": "three",
@@ -783,20 +791,284 @@
      "nrarfcn": [
       647424
      ],
-     "notes": "Three Ireland",
-     "source": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+     "expiry": "2032-07"
     }
    ]
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "470–694 MHz used for DTT; 600 MHz band plan not used in Europe.",
+   "sources": [
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe.",
+   "sources": [
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz (B32/B75/B76)",
+   "names": [
+    "B32",
+    "n75",
+    "n76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not yet awarded. ComReg's MFCN work plan (2025–2028) is to consider the 1.4 GHz band together with the July 2030 MBSA1 expiry.",
+   "sources": [
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS (B4/B66)",
+   "names": [
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe.",
+   "sources": [
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe; 2 GHz MSS (1980–2010/2170–2200 MHz) is licensed EU-wide to MSS operators.",
+   "sources": [
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "Unpaired 2 GHz TDD (B33/B39)",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile; MBSA2 covered only the paired 2.1 GHz band.",
+   "sources": [
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not designated for mobile in Ireland.",
+   "sources": [
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile (MFCN) award. The 2018 ComReg 26 GHz award licensed blocks for point-to-point fixed links; ComReg will consider 26 GHz for MFCN only on clear evidence of demand (work plan 2025–2028).",
+   "sources": [
+    "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/26-ghz-spectrum-award/",
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "40g",
+   "label": "40/42 GHz (n259)",
+   "names": [
+    "n259"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not awarded; 42 GHz to be considered in ComReg's 2025–2028 MFCN consultation.",
+   "sources": [
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not awarded or planned.",
+   "sources": [
+    "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf",
+    "https://www.comreg.ie/media/2022/12/ComReg-20-58R4-1.pdf"
+   ],
+   "blocks": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Licensing is national except the 3.6 GHz band, which ComReg awarded in 2017 in nine regions (four rural, five cities). Two diagrams are shown; totals use the rural-region view.",
+  "ComReg 26/26 notes 80 MHz of unassigned spectrum in the MWBB bands (2570–2585 MHz returned by BCP IV, and Dense Air's returned 3.6 GHz spectrum).",
+  "Dense Air (Airspan) surrendered its 3.6 GHz rights (3410–3435 MHz nationally, 3580–3615 MHz in the cities) with effect from 31 Jul 2024.",
+  "MBSA1 (800/900/1800 MHz) lot letters in ComReg 12/131 were mapped to frequencies in ascending order; this matches the davwheat seed and the 2×5 MHz lot structure.",
+  "No Irish mmWave (26/40/47 GHz) mobile award as of Sep 2026."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "ComReg 26/31 (3.6 GHz BCP IV→Vodafone transfer determination) not read directly; details from ComReg's transfer/lease page and 26/26 (3560–3575 MHz, four rural regions, effective 28 May 2026).",
+  "Carrier ARFCNs carried over from the davwheat seed; not re-checked.",
+  "Exact expiry day of MBSA1 licences (July 2030) and 3.6 GHz licences (July 2032) not confirmed."
+ ],
+ "changes": [
+  "2.3 GHz: 2360–2400 MHz moved from Imagine to Eir (transfer effective 8 Apr 2026).",
+  "2.6 GHz TDD: 2570–2585 MHz marked unassigned (returned by Imagine/BCP IV 12 Dec 2023).",
+  "3.6 GHz: removed Airspan/Dense Air (surrendered 31 Jul 2024; now unassigned); Vodafone rural extended to 3475–3575 MHz (BCP IV transfer May 2026); Imagine renamed BCP IV with 3575–3620 MHz rural; rural view now counted in totals, city view excluded.",
+  "Operator ids eircom → eir, imagine → bcp-iv, state-services → state; removed Airspan.",
+  "800/900/1800 upgraded to verified against ComReg 12/131; added licence expiries.",
+  "700 MHz FDD range corrected to 703–733/758–788 MHz.",
+  "Added not-assigned entries for 600, 850, 1400, AWS, PCS, unpaired 2 GHz, n79, 26/40/47 GHz."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "ComReg 23/06 – MBSA2 final assignment plan",
+   "url": "https://www.comreg.ie/media/2023/01/ComReg-2306.pdf"
+  },
+  {
+   "title": "ComReg – Multi Band Spectrum Award 2022 (MBSA2)",
+   "url": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/proposed-multi-band-spectrum-award/"
+  },
+  {
+   "title": "ComReg 12/131 – Frequency arrangements and results of the Multi-Band Spectrum Award",
+   "url": "https://www.comreg.ie/media/dlm_uploads/2015/12/ComReg12131.pdf"
+  },
+  {
+   "title": "ComReg 17/38 – Results of the 3.6 GHz Band Spectrum Award",
+   "url": "https://www.comreg.ie/media/dlm_uploads/2017/05/ComReg-1738.pdf"
+  },
+  {
+   "title": "ComReg – 3.6 GHz band transition (assignment graphic June 2026)",
+   "url": "https://www.comreg.ie/industry/radio-spectrum/spectrum-awards/3-6-ghz-band-transition/"
+  },
+  {
+   "title": "ComReg 26/26 – Spectrum transfer determination, 2.3 GHz BCP IV → Eircom",
+   "url": "https://www.comreg.ie/media/2026/04/ComReg-2626.pdf"
+  },
+  {
+   "title": "ComReg – Spectrum transfer and lease framework (register of transfers)",
+   "url": "https://www.comreg.ie/industry/radio-spectrum/licensing/search-licence-type/spectrum-lease-licences/"
+  },
+  {
+   "title": "Silicon Republic – Irish operators pay €448m in 5G spectrum auction",
+   "url": "https://www.siliconrepublic.com/comms/ireland-5g-spectrum-band-auction-comreg"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0), seed",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]
