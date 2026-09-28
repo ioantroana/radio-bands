@@ -1,0 +1,922 @@
+{
+ "code": "in",
+ "name": "India",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "regional",
+ "summary": "Spectrum is auctioned per Licensed Service Area (22 LSAs); Jio, Airtel and Vi are the private operators, and state-owned BSNL/MTNL gets administrative reservations. The last auctions were in 2022 (5G) and June 2024; TRAI recommended the next auction in Feb 2026.",
+ "operators": [
+  {
+   "id": "jio",
+   "name": "Jio",
+   "legal": "Reliance Jio Infocomm Ltd",
+   "color": "#0f3cc9",
+   "aliases": [
+    "Reliance Jio"
+   ],
+   "kind": "mno",
+   "notes": "Acquired RCom's 800/1800 MHz spectrum by trading (2017–2019)."
+  },
+  {
+   "id": "airtel",
+   "name": "Airtel",
+   "legal": "Bharti Airtel Ltd / Bharti Hexacom Ltd",
+   "color": "#e40000",
+   "aliases": [
+    "Bharti Airtel"
+   ],
+   "kind": "mno",
+   "notes": "Bharti Hexacom holds the licences in Rajasthan and North East."
+  },
+  {
+   "id": "vi",
+   "name": "Vi",
+   "legal": "Vodafone Idea Ltd",
+   "color": "#ffcb05",
+   "aliases": [
+    "Vodafone Idea"
+   ],
+   "kind": "mno",
+   "notes": "Formed by the Vodafone India–Idea Cellular merger (Aug 2018); rebranded Vi in 2020."
+  },
+  {
+   "id": "bsnl",
+   "name": "BSNL / MTNL",
+   "legal": "Bharat Sanchar Nigam Ltd; Mahanagar Telephone Nigam Ltd",
+   "color": "#f7941d",
+   "aliases": [
+    "BSNL",
+    "MTNL"
+   ],
+   "kind": "mno",
+   "notes": "State-owned. MTNL covers Delhi and Mumbai; BSNL the other 20 LSAs. BSNL gets administrative (non-auction) reservations in 700 MHz, 3300 MHz and 26 GHz for 4G/5G."
+  },
+  {
+   "id": "adani",
+   "name": "Adani Data Networks",
+   "legal": "Adani Data Networks Ltd",
+   "color": "#6f2c91",
+   "aliases": [
+    "ADNL"
+   ],
+   "kind": "private",
+   "notes": "Won 400 MHz of 26 GHz in 2022 for captive use; agreed in April 2025 to transfer it to Airtel."
+  },
+  {
+   "id": "rcom",
+   "name": "Reliance Communications",
+   "legal": "Reliance Communications Ltd / Reliance Telecom Ltd",
+   "color": "#a0522d",
+   "aliases": [
+    "RCom"
+   ],
+   "kind": "other",
+   "notes": "Ceased mobile service in 2017–2019; in insolvency (IBC). Residual spectrum still recorded against it."
+  },
+  {
+   "id": "aircel",
+   "name": "Aircel",
+   "legal": "Aircel Ltd / Dishnet Wireless Ltd",
+   "color": "#00a3e0",
+   "kind": "other",
+   "notes": "Shut down in 2018; in insolvency (IBC). Residual spectrum still recorded against it."
+  },
+  {
+   "id": "railways",
+   "name": "Indian Railways",
+   "color": "#555555",
+   "kind": "government"
+  },
+  {
+   "id": "ncrtc",
+   "name": "NCRTC (RRTS)",
+   "color": "#777777",
+   "kind": "government"
+  },
+  {
+   "id": "govt",
+   "name": "Government user",
+   "color": "#999999",
+   "kind": "government",
+   "notes": "Unnamed 'Government User' in TRAI's 700 MHz table."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz (n105)",
+   "names": [
+    "n105",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Offered in the 2022 auction with no bids; not offered in 2024. TRAI (Feb 2026) recommends auctioning it as n105 in 2×5 MHz blocks in the next auction, which had not been held as of the last sources found.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/PR_No.25of2026.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "dl": [
+     612,
+     652
+    ],
+    "ul": [
+     663,
+     703
+    ]
+   }
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The same frequencies apply in all 22 LSAs (TRAI Table 1.3). Jio bought 2×10 MHz pan-India in 2022; BSNL's 2×10 MHz is an administrative reservation for the PSU operator.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "govt",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "notes": "'Government User' per TRAI"
+    },
+    {
+     "op": "railways",
+     "dl": [
+      768,
+      773
+     ],
+     "ul": [
+      713,
+      718
+     ],
+     "notes": "Indian Railways (ETCS L2/LTE-R)"
+    },
+    {
+     "op": "ncrtc",
+     "dl": [
+      773,
+      778
+     ],
+     "ul": [
+      718,
+      723
+     ],
+     "notes": "NCRTC/RRTS, provisionally assigned 2023"
+    },
+    {
+     "op": "jio",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "notes": "2022 auction, all 22 LSAs",
+     "expiry": "2042"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      788,
+      793
+     ],
+     "ul": [
+      733,
+      738
+     ],
+     "notes": "Vacant; Indian Railways has asked for it (TRAI rec. 20-12-2024 under DoT examination)"
+    },
+    {
+     "op": "bsnl",
+     "dl": [
+      793,
+      803
+     ],
+     "ul": [
+      738,
+      748
+     ],
+     "notes": "Reserved/allotted to BSNL (PSU) for 4G/5G"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (EU B20 / Japan B18/19/26)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Band 20 is not used in India. India's '800 MHz band' is 3GPP Band 5 and is shown under 850 MHz.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "800 MHz band (B5/n5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     889
+    ],
+    "ul": [
+     824,
+     844
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Indian '800 MHz' band (824–844/869–889 MHz, 3GPP B5). Licences per LSA; amounts are sums over the 22 LSAs divided by 22. TRAI: 306.25 MHz assigned and 118.75 MHz vacant across LSAs (matches these holdings exactly). Defence also holds 15 MHz (summed) in some LSAs, not shown.",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "jio",
+     "mhz": 10.227,
+     "paired": true,
+     "basis": "national average across 22 LSAs (225 MHz summed over LSAs per direction)",
+     "notes": "Includes spectrum traded from Reliance Communications (2017-2019) and 2021/2022 auction purchases"
+    },
+    {
+     "op": "rcom",
+     "mhz": 2.557,
+     "paired": true,
+     "basis": "national average across 22 LSAs (56.25 MHz summed over LSAs per direction)",
+     "notes": "Held by Reliance Communications, which is in insolvency (IBC); TRAI (Feb 2026) asked DoT to take it back for auction"
+    },
+    {
+     "op": "airtel",
+     "mhz": 0.909,
+     "paired": true,
+     "basis": "national average across 22 LSAs (20 MHz summed over LSAs per direction)"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 0.227,
+     "paired": true,
+     "basis": "national average across 22 LSAs (5 MHz summed over LSAs per direction)"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8/n8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     935,
+     960
+    ],
+    "ul": [
+     890,
+     915
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "TRAI: 466.8 MHz assigned (incl. 12.8 MHz reserved for BSNL in Delhi/Mumbai) and 56.4 MHz vacant across 22 LSAs; holdings above sum to 466.8. Indian Railways' GSM-R (22.4 MHz summed) is not included.",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "airtel",
+     "mhz": 7.573,
+     "paired": true,
+     "basis": "national average across 22 LSAs (166.6 MHz summed over LSAs per direction)"
+    },
+    {
+     "op": "vi",
+     "mhz": 6.791,
+     "paired": true,
+     "basis": "national average across 22 LSAs (149.4 MHz summed over LSAs per direction)"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 6.4,
+     "paired": true,
+     "basis": "national average across 22 LSAs (140.8 MHz summed over LSAs per direction)",
+     "notes": "BSNL 128 MHz summed + 6.4 MHz each in Delhi and Mumbai reserved for BSNL (ex-MTNL areas) per TRAI"
+    },
+    {
+     "op": "rcom",
+     "mhz": 0.455,
+     "paired": true,
+     "basis": "national average across 22 LSAs (10 MHz summed over LSAs per direction)",
+     "notes": "In insolvency (IBC)"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1427–1518 MHz",
+   "names": [
+    "n75",
+    "n76",
+    "n50"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. DoT has identified 67 MHz of 1427–1518 MHz for IMT (24 MHz kept for a government user), to be re-farmed only after 2026; band plan (TRAI suggested SDL/SUL options) not finalised and not in the next auction.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/PR_No.25of2026.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in India; 1710–1785 MHz is the Band 3 uplink.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3/n3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Only 54.8–69.8 MHz per LSA is earmarked for IMT (the rest is defence). TRAI gives 1094.8 MHz assigned across LSAs; the holdings above sum to 1085.65 MHz (9.15 MHz difference unexplained). Some administratively assigned spectrum (88.2 MHz summed) is released when service licences expire in 2026–2027.",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "airtel",
+     "mhz": 16.02,
+     "paired": true,
+     "basis": "national average across 22 LSAs (352.45 MHz summed over LSAs per direction)",
+     "notes": "Incl. 2024 auction purchases"
+    },
+    {
+     "op": "vi",
+     "mhz": 15.945,
+     "paired": true,
+     "basis": "national average across 22 LSAs (350.8 MHz summed over LSAs per direction)"
+    },
+    {
+     "op": "jio",
+     "mhz": 13.427,
+     "paired": true,
+     "basis": "national average across 22 LSAs (295.4 MHz summed over LSAs per direction)",
+     "notes": "Incl. spectrum traded from RCom"
+    },
+    {
+     "op": "aircel",
+     "mhz": 2.709,
+     "paired": true,
+     "basis": "national average across 22 LSAs (59.6 MHz summed over LSAs per direction)",
+     "notes": "Aircel/Dishnet Wireless are in insolvency (IBC); TRAI asked DoT to take back the spectrum"
+    },
+    {
+     "op": "rcom",
+     "mhz": 0.791,
+     "paired": true,
+     "basis": "national average across 22 LSAs (17.4 MHz summed over LSAs per direction)",
+     "notes": "In insolvency (IBC)"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 0.455,
+     "paired": true,
+     "basis": "national average across 22 LSAs (10 MHz summed over LSAs per direction)"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / AWS-4",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS/AWS-4 band plans not used in India.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD (B33/B34/B39)",
+   "names": [
+    "B33",
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for IMT in India; 1980–2010 MHz is MSS (S-band) per TRAI.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Only 40 MHz (paired) per LSA is for IMT; 19 MHz is assigned to the Government and 1 MHz is a guard band next to MSS. TRAI: 775 MHz assigned, 105 MHz vacant across LSAs (holdings sum to 775).",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "airtel",
+     "mhz": 10.682,
+     "paired": true,
+     "basis": "national average across 22 LSAs (235 MHz summed over LSAs per direction)",
+     "notes": "Incl. 2024 auction purchases"
+    },
+    {
+     "op": "vi",
+     "mhz": 9.091,
+     "paired": true,
+     "basis": "national average across 22 LSAs (200 MHz summed over LSAs per direction)"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 9.545,
+     "paired": true,
+     "basis": "national average across 22 LSAs (210 MHz summed over LSAs per direction)",
+     "notes": "BSNL 200 MHz + MTNL 10 MHz summed (3G, administratively assigned)"
+    },
+    {
+     "op": "rcom",
+     "mhz": 2.955,
+     "paired": true,
+     "basis": "national average across 22 LSAs (65 MHz summed over LSAs per direction)",
+     "notes": "In insolvency (IBC)"
+    },
+    {
+     "op": "aircel",
+     "mhz": 2.955,
+     "paired": true,
+     "basis": "national average across 22 LSAs (65 MHz summed over LSAs per direction)",
+     "notes": "In insolvency (IBC)"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz TDD (B40/n40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "80 MHz per LSA earmarked. TRAI: 1700 MHz assigned, 60 MHz vacant across LSAs (holdings sum to 1700).",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "jio",
+     "mhz": 40.0,
+     "paired": false,
+     "basis": "national average across 22 LSAs (880 MHz summed over LSAs)"
+    },
+    {
+     "op": "airtel",
+     "mhz": 35.909,
+     "paired": false,
+     "basis": "national average across 22 LSAs (790 MHz summed over LSAs)"
+    },
+    {
+     "op": "vi",
+     "mhz": 1.364,
+     "paired": false,
+     "basis": "national average across 22 LSAs (30 MHz summed over LSAs)"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2500 MHz TDD (B41/n41)",
+   "names": [
+    "B41",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2500,
+     2690
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "60 MHz per LSA earmarked. TRAI: 820 MHz assigned, 500 MHz vacant across LSAs.",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "vi",
+     "mhz": 18.182,
+     "paired": false,
+     "basis": "national average across 22 LSAs (400 MHz summed over LSAs)"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 19.091,
+     "paired": false,
+     "basis": "national average across 22 LSAs (420 MHz summed over LSAs)",
+     "notes": "Administrative 20 MHz block from 2009 (surrendered in 6 LSAs) plus reserved spectrum; MTNL surrendered its Delhi/Mumbai blocks"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3300 MHz TDD (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3670
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "370 MHz (3300–3670) earmarked per LSA. TRAI: 7030 MHz assigned (incl. BSNL's 70 MHz reservation) and 1110 MHz vacant; the 2024 auction drew no bids in this band. Holdings sum to 7030.",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "jio",
+     "mhz": 110.909,
+     "paired": false,
+     "basis": "pan-India (all 22 LSAs): 100 MHz in 14 LSAs, 130 MHz in 8 LSAs (Karnataka, Kerala, MP, Rajasthan, UP-W, HP, J&K, NE)",
+     "notes": "2022 auction, expiry 2042"
+    },
+    {
+     "op": "airtel",
+     "mhz": 100.0,
+     "paired": false,
+     "basis": "pan-India (all 22 LSAs), 100 MHz in each"
+    },
+    {
+     "op": "vi",
+     "mhz": 38.636,
+     "paired": false,
+     "basis": "50 MHz in 17 LSAs (not Assam, Odisha, HP, J&K, NE); national average over 22"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 70.0,
+     "paired": false,
+     "basis": "pan-India (all 22 LSAs), 70 MHz reserved for BSNL 5G in each",
+     "source": "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not identified or assigned for IMT in India (not among the IMT bands DoT referred to TRAI in 2025).",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "6g",
+   "label": "Upper 6 GHz (n104)",
+   "names": [
+    "n104"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     6425,
+     7125
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Identified for IMT: 6425–6725 and 7025–7125 MHz available now, 6725–7025 MHz by Dec 2030. TRAI (Feb 2026) recommends keeping it reserved for IMT but not auctioning it in the next auction.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://www.trai.gov.in/sites/default/files/2026-02/PR_No.25of2026.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "3250 MHz (24.25–27.5 GHz) earmarked per LSA. 2022 auction; no bids in 2024. TRAI: 62,800 MHz assigned (incl. BSNL reservation), 8,700 MHz vacant; holdings sum to 62,800.",
+   "sources": [
+    "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview",
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf",
+    "https://telecomtalk.info/timeline-the-journey-of-india-26ghz-spectrum/1000243/",
+    "https://www.airtel.in/press-release/04-2025/airtel-to-acquire-400-mhz-spectrum-in-26-ghz-band-from-adani-data-networks-limited/"
+   ],
+   "holdings": [
+    {
+     "op": "jio",
+     "mhz": 1000.0,
+     "paired": false,
+     "basis": "pan-India (all 22 LSAs), 1000 MHz in each"
+    },
+    {
+     "op": "airtel",
+     "mhz": 800.0,
+     "paired": false,
+     "basis": "pan-India (all 22 LSAs), 800 MHz in each"
+    },
+    {
+     "op": "vi",
+     "mhz": 243.182,
+     "paired": false,
+     "basis": "16 LSAs (200–800 MHz each); national average over 22"
+    },
+    {
+     "op": "bsnl",
+     "mhz": 793.182,
+     "paired": false,
+     "basis": "reserved for BSNL 5G: 800 MHz in 21 LSAs, 650 MHz in Kerala",
+     "source": "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+    },
+    {
+     "op": "adani",
+     "mhz": 18.182,
+     "paired": false,
+     "basis": "6 LSAs: Gujarat 100, Mumbai 100, AP 50, Karnataka 50, Rajasthan 50, Tamil Nadu 50",
+     "notes": "Airtel/Bharti Hexacom agreed in April 2025 to take over this spectrum by spectrum trade; completion not confirmed from a primary source (a crowd-sourced chart already shows it under Airtel).",
+     "source": "https://www.airtel.in/press-release/04-2025/airtel-to-acquire-400-mhz-spectrum-in-26-ghz-band-from-adani-data-networks-limited/"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "37–43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. TRAI consulted separately on auctioning 37–37.5, 37.5–40 and 42.5–43.5 GHz; no auction held.",
+   "sources": [
+    "https://www.trai.gov.in/node/4803"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not identified or assigned for IMT in India.",
+   "sources": [
+    "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Licensing is regional: every band except the pan-India 700 MHz frequency plan is licensed per LSA, with different amounts in each. Holdings are shown as the sum over the 22 LSAs divided by 22 (paired amounts per direction), with the pattern given in each basis. Per-LSA amounts come from a crowd-sourced LSA-by-LSA chart (onlytech.com Google Sheet) and were checked against the regulator's per-band totals of assigned and vacant spectrum in TRAI's Sept 2025 consultation paper: they match exactly for 800, 900 (with BSNL's reservation added), 2100, 2300, 2500, 3300 and 26 GHz; 1800 MHz differs by 9.15 MHz summed across LSAs.",
+  "The crowd chart puts BSNL's 3300 MHz holding at 350 MHz; TRAI says 70 MHz is reserved for BSNL 5G in every LSA (1540 MHz). The TRAI figure is used.",
+  "Reliance Communications and Aircel (both in insolvency) still have spectrum recorded against them. It is not in use, and TRAI (Feb 2026) recommended that DoT take it back and auction it.",
+  "Auctions: 2022 (600 MHz unsold; 700/3300/26 GHz sold in all LSAs; Adani Data Networks entered with 26 GHz); June 2024 (about 141 MHz sold, mainly Airtel, no bids for 3300 MHz or 26 GHz). TRAI's 24 Feb 2026 recommendations cover 600 MHz to 26 GHz; DoT was still reviewing them in the last sources found (spring 2026).",
+  "Some administratively assigned 1800 MHz spectrum is released as service licences expire in 2026–2027 (TRAI Annex II); which operator-LSAs are affected by 2026-09-28 was not compiled.",
+  "Non-IMT users in IMT bands are excluded from holdings: defence in 800/1800 MHz, Government in 2100 MHz (19 MHz per LSA), Indian Railways GSM-R in 900 MHz. In 700 MHz the TRAI table's government users are drawn because the plan is national."
+ ],
+ "missing": [
+  "Adani→Airtel 26 GHz trade (April 2025): closing not confirmed from a primary source; kept under Adani.",
+  "No auction between the June 2024 auction and 2026-09-28 was found, but results after about April 2026 could not be checked because the web-search budget ran out.",
+  "Per-LSA frequency positions (block edges) for 800–2500 MHz, 3300 MHz and 26 GHz: not compiled; averages only.",
+  "Per-operator figures rest on a crowd-sourced chart (matched to TRAI band totals), not on a DoT operator-by-LSA holdings register.",
+  "Licence expiry dates per LSA, and the 2026–2027 expiry of administratively assigned spectrum: not compiled.",
+  "EARFCN/NR-ARFCN data not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "TRAI – Consultation Paper on Auction of Spectrum in IMT bands (30 Sept 2025): 700 MHz table, per-band assigned/vacant totals",
+   "url": "https://www.trai.gov.in/sites/default/files/2025-09/CP_30092025.pdf"
+  },
+  {
+   "title": "TRAI – Recommendations on Auction of Spectrum in IMT bands (24 Feb 2026)",
+   "url": "https://www.trai.gov.in/sites/default/files/2026-02/Recommendation_24022026.pdf"
+  },
+  {
+   "title": "TRAI – Press Release No. 25/2026",
+   "url": "https://www.trai.gov.in/sites/default/files/2026-02/PR_No.25of2026.pdf"
+  },
+  {
+   "title": "OnlyTech – Pan-India telecom spectrum holding chart (LSA-wise Google Sheet)",
+   "url": "https://onlytech.com/india-telecom-spectrum-chart/"
+  },
+  {
+   "title": "LSA-wise spectrum chart (Google Sheet behind OnlyTech chart)",
+   "url": "https://docs.google.com/spreadsheets/d/1DtnWo0Az5h0io265Aaxdk5n7l4LztfmSfnLN8_HWw2A/htmlview"
+  },
+  {
+   "title": "Airtel press release – acquiring 400 MHz of 26 GHz from Adani Data Networks (Apr 2025)",
+   "url": "https://www.airtel.in/press-release/04-2025/airtel-to-acquire-400-mhz-spectrum-in-26-ghz-band-from-adani-data-networks-limited/"
+  },
+  {
+   "title": "TelecomTalk – Timeline of India's 26 GHz allocation",
+   "url": "https://telecomtalk.info/timeline-the-journey-of-india-26ghz-spectrum/1000243/"
+  },
+  {
+   "title": "TRAI – consultation on 37–43.5 GHz auction",
+   "url": "https://www.trai.gov.in/node/4803"
+  }
+ ]
+}
