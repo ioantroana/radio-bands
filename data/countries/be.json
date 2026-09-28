@@ -1,0 +1,998 @@
+{
+ "code": "be",
+ "name": "Belgium",
+ "region": "Europe",
+ "asOf": "2026-09-28",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "Three incumbents (Proximus, Orange Belgium, Telenet/BASE) plus Digi, which operates the spectrum won by Citymesh Mobile in the 2022 multiband auction. All bands 700 MHz-3.8 GHz have exact edges in BIPT decisions; 26 GHz is not assigned.",
+ "operators": [
+  {
+   "id": "proximus",
+   "name": "Proximus",
+   "legal": "Proximus SA",
+   "color": "#5c2d91",
+   "aliases": [
+    "Belgacom"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "orange",
+   "name": "Orange Belgium",
+   "legal": "Orange Belgium SA",
+   "color": "#ff7900",
+   "aliases": [
+    "Mobistar"
+   ],
+   "kind": "mno",
+   "notes": "Formerly Mobistar. Acquired cable operator VOO (fixed network, no mobile spectrum) in 2023 (from background knowledge, not source-verified)."
+  },
+  {
+   "id": "telenet",
+   "name": "Telenet (BASE)",
+   "legal": "Telenet Group SA",
+   "color": "#ffd200",
+   "aliases": [
+    "BASE",
+    "KPN Group Belgium",
+    "Telenet"
+   ],
+   "kind": "mno",
+   "notes": "Mobile network formerly KPN Group Belgium / BASE, acquired by Telenet (Liberty Global) in 2016."
+  },
+  {
+   "id": "digi",
+   "name": "Digi",
+   "legal": "Citymesh Mobile SA / Digi Communications Belgium SA",
+   "color": "#1f5bd8",
+   "aliases": [
+    "Citymesh Mobile",
+    "Digi Communications Belgium"
+   ],
+   "kind": "mno",
+   "notes": "Fourth operator: licences won in 2022 by Citymesh Mobile (Citymesh/Digi JV). On 3 Jun 2025 BIPT approved leasing all Citymesh Mobile rights to Digi Communications Belgium, with Citymesh Mobile becoming a 100% Digi subsidiary. Digi launched commercially in Belgium in Dec 2024 (launch date from background knowledge, not source-verified)."
+  },
+  {
+   "id": "citymesh",
+   "name": "Citymesh Air",
+   "legal": "Citymesh Air SA",
+   "color": "#2bb673",
+   "aliases": [
+    "BUCD",
+    "Dense Air Belgium"
+   ],
+   "kind": "private",
+   "notes": "Holds 2575-2620 MHz TDD (ex BUCD/Dense Air)."
+  }
+ ],
+ "bands": [
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2022 multiband auction; rights valid 1 Sep 2022 - 31 Aug 2042. Positions agreed jointly by winners and accepted by BIPT (Table 2 of the decisions).",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/a739d37d88f6363d8a6c3b73b03c44fefa435249/spec-11-decisions-autorisation-700mhz-orange-fr.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf",
+    "https://www.bipt.be/operators/results-of-the-2022-multi-band-auction"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ],
+     "expiry": "2042-08-31",
+     "notes": "Citymesh Mobile SA rights, leased to Digi Communications Belgium (BIPT approval 3 Jun 2025)"
+    },
+    {
+     "op": "telenet",
+     "dl": [
+      763,
+      768
+     ],
+     "ul": [
+      708,
+      713
+     ],
+     "expiry": "2042-08-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "expiry": "2042-08-31"
+    },
+    {
+     "op": "proximus",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2042-08-31"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz FDD",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Awarded 2013; valid until 29 Nov 2033, extendable by 5-year periods (BIPT auction memorandum, Jan 2022). Digi has no 800 MHz.",
+   "sources": [
+    "https://auction2022.be/sites/default/files/2022-01/Memorandum_EN.pdf",
+    "https://www.spectrum-tracker.com/Belgium"
+   ],
+   "blocks": [
+    {
+     "op": "telenet",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "expiry": "2033-11-29"
+    },
+    {
+     "op": "proximus",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "expiry": "2033-11-29"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "expiry": "2033-11-29"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz FDD",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Re-auctioned in the 2022 multiband auction (2G/3G procedure); new plan in force 1 Jan 2023, valid to 31 Dec 2042. Before 2023 Proximus/Orange/Telenet held 62/58/51 GSM channels in a fragmented layout.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/498888bc3897b338b96eef71b27367c9d18d8ce4/autorisation-2gg-orange.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/f16717acd8b0b071449384c626c4832cdc682b2c/toewijzing-2gg-orange.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "telenet",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "expiry": "2042-12-31"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      935,
+      940
+     ],
+     "ul": [
+      890,
+      895
+     ],
+     "expiry": "2042-12-31",
+     "notes": "Citymesh Mobile SA rights, leased to Digi Communications Belgium (BIPT approval 3 Jun 2025)"
+    },
+    {
+     "op": "proximus",
+     "dl": [
+      940,
+      950
+     ],
+     "ul": [
+      895,
+      905
+     ],
+     "expiry": "2042-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      950,
+      960
+     ],
+     "ul": [
+      905,
+      915
+     ],
+     "expiry": "2042-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz FDD",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2022 auction; valid 1 Jan 2023 - 31 Dec 2042. Orange Belgium went from 2x25 to 2x15 MHz, Telenet from 2x25 to 2x20 MHz.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/498888bc3897b338b96eef71b27367c9d18d8ce4/autorisation-2gg-orange.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/f16717acd8b0b071449384c626c4832cdc682b2c/toewijzing-2gg-orange.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "proximus",
+     "dl": [
+      1805,
+      1830
+     ],
+     "ul": [
+      1710,
+      1735
+     ],
+     "expiry": "2042-12-31"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      1830,
+      1845
+     ],
+     "ul": [
+      1735,
+      1750
+     ],
+     "expiry": "2042-12-31"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      1845,
+      1860
+     ],
+     "ul": [
+      1750,
+      1765
+     ],
+     "expiry": "2042-12-31",
+     "notes": "Citymesh Mobile SA rights, leased to Digi Communications Belgium (BIPT approval 3 Jun 2025)"
+    },
+    {
+     "op": "telenet",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "expiry": "2042-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz FDD",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2022 auction; valid 1 Jan 2023 - 31 Dec 2042.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/498888bc3897b338b96eef71b27367c9d18d8ce4/autorisation-2gg-orange.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/f16717acd8b0b071449384c626c4832cdc682b2c/toewijzing-2gg-orange.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "proximus",
+     "dl": [
+      2110,
+      2135
+     ],
+     "ul": [
+      1920,
+      1945
+     ],
+     "expiry": "2042-12-31"
+    },
+    {
+     "op": "telenet",
+     "dl": [
+      2135,
+      2150
+     ],
+     "ul": [
+      1945,
+      1960
+     ],
+     "expiry": "2042-12-31"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      2150,
+      2155
+     ],
+     "ul": [
+      1960,
+      1965
+     ],
+     "expiry": "2042-12-31",
+     "notes": "Citymesh Mobile SA rights, leased to Digi Communications Belgium (BIPT approval 3 Jun 2025)"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2155,
+      2170
+     ],
+     "ul": [
+      1965,
+      1980
+     ],
+     "expiry": "2042-12-31"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2011 auction (15-year rights from 1 Jul 2012 to 30 Jun 2027); BIPT decided on 7 Jan 2025 to renew them to 30 Jun 2032, with alignment to 30 Sep 2035 foreseen.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/d09d8848919f1ad3ede10d754ce389f2fc6db09c/decision-prolongation-droits-utilisation-bande-frequences-2600-mhz-2025-01-07.pdf",
+    "https://auction2022.be/sites/default/files/2022-01/Memorandum_EN.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "proximus",
+     "dl": [
+      2620,
+      2640
+     ],
+     "ul": [
+      2500,
+      2520
+     ],
+     "expiry": "2032-06-30",
+     "notes": "renewed to 30 Jun 2032 (BIPT 7 Jan 2025); further renewal to 30 Sep 2035 planned"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      2640,
+      2655
+     ],
+     "ul": [
+      2520,
+      2535
+     ],
+     "expiry": "2035-09-30",
+     "notes": "Citymesh block (2020), transferred to Citymesh Mobile and leased to Digi"
+    },
+    {
+     "op": "telenet",
+     "dl": [
+      2655,
+      2670
+     ],
+     "ul": [
+      2535,
+      2550
+     ],
+     "expiry": "2032-06-30",
+     "notes": "renewed to 30 Jun 2032"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2032-06-30",
+     "notes": "renewed to 30 Jun 2032"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz TDD",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "45 MHz unpaired held by Citymesh Air (Citymesh group, not part of the Digi deal); used for private/fixed-wireless networks rather than a public mobile network.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/d09d8848919f1ad3ede10d754ce389f2fc6db09c/decision-prolongation-droits-utilisation-bande-frequences-2600-mhz-2025-01-07.pdf",
+    "https://auction2022.be/sites/default/files/2022-01/Memorandum_EN.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "guard",
+     "f": [
+      2570,
+      2575
+     ],
+     "notes": "guard band"
+    },
+    {
+     "op": "citymesh",
+     "f": [
+      2575,
+      2620
+     ],
+     "expiry": "2032-06-30",
+     "notes": "Citymesh Air SA (ex BUCD / Dense Air Belgium); renewed to 30 Jun 2032"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz SDL (1427-1517)",
+   "names": [
+    "B32",
+    "B75",
+    "B76",
+    "n75",
+    "n76"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2022 auction; rights valid 1 Jul 2023 - 30 Jun 2043. The whole 90 MHz is assigned.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/a74f68ff39dd1ce8572935459f9d4c92a4d271e5/autorisation-1400mhz-orange.pdf",
+    "https://www.bipt.be/operators/results-of-the-2022-multi-band-auction"
+   ],
+   "blocks": [
+    {
+     "op": "orange",
+     "f": [
+      1427,
+      1457
+     ],
+     "expiry": "2043-06-30",
+     "notes": "25 MHz specific block + 5 MHz generic"
+    },
+    {
+     "op": "telenet",
+     "f": [
+      1457,
+      1472
+     ],
+     "expiry": "2043-06-30"
+    },
+    {
+     "op": "proximus",
+     "f": [
+      1472,
+      1517
+     ],
+     "expiry": "2043-06-30",
+     "notes": "25 MHz specific block + 4x5 MHz generic"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4-3.8 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2022 auction; rights 1 Sep 2022 - 6 May 2040. Proximus holds 120 MHz (spectrum cap) after acquiring NRB's 20 MHz. 3.8-4.2 GHz is open for local private networks (BIPT decision 19 Dec 2023, amended 7 Apr 2026).",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/9ca995354937f90bd4436b040a50c41908c89719/spec-11-decisions-autorisation-3600mhz-orange-fr.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/477eb64bcbfb6dbcba1537badb2c226ba4a2c276/decision-demande-cession-droits-utilisation-bande-3600-mhz-nrb-proximus-2024-04-16.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf",
+    "https://www.bipt.be/operators/results-of-the-2022-multi-band-auction"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3430
+     ],
+     "notes": "3410-3430 formerly local BWA rights (Citymesh/Gridmax), expired 6 May 2025"
+    },
+    {
+     "op": "digi",
+     "f": [
+      3430,
+      3480
+     ],
+     "expiry": "2040-05-06",
+     "notes": "Citymesh Mobile SA rights, leased to Digi Communications Belgium (BIPT approval 3 Jun 2025)"
+    },
+    {
+     "op": "telenet",
+     "f": [
+      3480,
+      3580
+     ],
+     "expiry": "2040-05-06"
+    },
+    {
+     "op": "proximus",
+     "f": [
+      3580,
+      3600
+     ],
+     "expiry": "2040-05-06",
+     "notes": "Won by Network Research Belgium (NRB) in 2022; transferred to Proximus (BIPT 16 Apr 2024). Part leased to e-BO Enterprises in 15 Westhoek municipalities until end 2026"
+    },
+    {
+     "op": "orange",
+     "f": [
+      3600,
+      3700
+     ],
+     "expiry": "2040-05-06"
+    },
+    {
+     "op": "proximus",
+     "f": [
+      3700,
+      3800
+     ],
+     "expiry": "2040-05-06"
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz unpaired TDD (1900-1920)",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. The former unpaired 2 GHz rights (Proximus 1914.9-1920.3, Telenet 1899.9-1904.9, Orange 1909.9-1914.9) were only extended until the start of the 2022-auction rights; the 2022 procedure covered the paired band only.",
+   "sources": [
+    "https://auction2022.be/sites/default/files/2022-01/Memorandum_EN.pdf",
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/498888bc3897b338b96eef71b27367c9d18d8ce4/autorisation-2gg-orange.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   }
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile in Belgium.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   }
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. BIPT consulted on two royal decrees (Sep-Nov 2025) but concluded on 6 Jan 2026 that there is no immediate market demand (only Proximus interested, not at proposed prices); market to be re-consulted by 2029. Existing 26 GHz rights are fixed links only.",
+   "sources": [
+    "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/704244b899f138e6486551f4b4f96cef48db2870/communication-bande-26-ghz.pdf"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe (ITU Region 1): 470-694 MHz remains allocated to DTT/PMSE; future use on the WRC-31 agenda.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Europe: 824-849/869-894 MHz overlaps the EU 800 MHz (B20) and 900 MHz (B8) plans.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS (1710-1780/2110-2200) is not used in Europe; 1710-1785 is part of the 1800 MHz (B3) plan and 2110-2170 of the 2100 MHz (B1) plan.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS 1900 is not used in Europe; 1850-1910 MHz overlaps the B3 downlink and the B1/B33 plans.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "n79 is not harmonised for mobile in Europe; 4.4-5.0 GHz is used by defence/government systems.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. 40.5-43.5 GHz harmonised in the EU by Decision (EU) 2024/1983 but no national award yet.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan",
+    "https://eur-lex.europa.eu/eli/dec_impl/2024/1983/oj"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47.2-48.2 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; 47.2-48.2 GHz is not harmonised for IMT in the EU.",
+   "sources": [
+    "https://www.bipt.be/consumers/radio-frequencies/frequency-plan"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   }
+  }
+ ],
+ "notes": [
+  "900/1800/2100 were fully re-auctioned in 2022 and re-planned from 1 Jan 2023; the pre-2023 layout is not shown.",
+  "Digi's spectrum is legally held by Citymesh Mobile SA and leased to Digi Communications Belgium (BIPT decision 3 Jun 2025).",
+  "The 800 MHz edges come from the BIPT 2022 auction memorandum (existing rights) and match spectrum-tracker.com.",
+  "Proximus and Orange Belgium share their RAN (MWingz JV); spectrum remains licensed separately (from background knowledge, not source-verified)."
+ ],
+ "missing": [
+  "EARFCN/NR-ARFCN carrier details not compiled.",
+  "Orange Belgium/VOO closing date, Digi launch date and the MWingz RAN-sharing note are from background knowledge, not source-verified.",
+  "2 GHz unpaired (1900-1920): lapse of the old TDD rights is inferred from the 2022 memorandum (rights extended only until the 2022-auction rights started); no explicit BIPT withdrawal decision found."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "BIPT - Results of the 2022 multi-band auction (with decisions)",
+   "url": "https://www.bipt.be/operators/results-of-the-2022-multi-band-auction"
+  },
+  {
+   "title": "BIPT - Décision 2G3G Orange Belgium (positions of all operators in 900/1800/2100)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/498888bc3897b338b96eef71b27367c9d18d8ce4/autorisation-2gg-orange.pdf"
+  },
+  {
+   "title": "BIPT - Décision 700 MHz Orange Belgium (positions table)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/a739d37d88f6363d8a6c3b73b03c44fefa435249/spec-11-decisions-autorisation-700mhz-orange-fr.pdf"
+  },
+  {
+   "title": "BIPT - Décision 3600 MHz Orange Belgium (positions table)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/9ca995354937f90bd4436b040a50c41908c89719/spec-11-decisions-autorisation-3600mhz-orange-fr.pdf"
+  },
+  {
+   "title": "BIPT - Décision 1400 MHz Orange Belgium (positions table)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/a74f68ff39dd1ce8572935459f9d4c92a4d271e5/autorisation-1400mhz-orange.pdf"
+  },
+  {
+   "title": "BIPT - Transfer of 3600 MHz rights from NRB to Proximus (16 Apr 2024)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/477eb64bcbfb6dbcba1537badb2c226ba4a2c276/decision-demande-cession-droits-utilisation-bande-3600-mhz-nrb-proximus-2024-04-16.pdf"
+  },
+  {
+   "title": "BIPT - Lease of Citymesh Mobile rights to Digi Communications Belgium (3 Jun 2025)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/12dab4a29cfc88676751d1d2c8ce974e42266eee/decision-demande-location-droits-utilisation-citymesh-mobile-digi-communications-belgium-2025-06-03.pdf"
+  },
+  {
+   "title": "BIPT - Renewal of 2600 MHz rights (7 Jan 2025)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/d09d8848919f1ad3ede10d754ce389f2fc6db09c/decision-prolongation-droits-utilisation-bande-frequences-2600-mhz-2025-01-07.pdf"
+  },
+  {
+   "title": "BIPT - Information memorandum, 2022 auction (existing rights incl. 800 MHz)",
+   "url": "https://auction2022.be/sites/default/files/2022-01/Memorandum_EN.pdf"
+  },
+  {
+   "title": "BIPT - Communication on the 26 GHz band (6 Jan 2026)",
+   "url": "https://www.bipt.be/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/704244b899f138e6486551f4b4f96cef48db2870/communication-bande-26-ghz.pdf"
+  },
+  {
+   "title": "spectrum-tracker.com - Belgium",
+   "url": "https://www.spectrum-tracker.com/Belgium"
+  }
+ ]
+}

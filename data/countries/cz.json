@@ -1,0 +1,1073 @@
+{
+  "code": "cz",
+  "name": "Czechia",
+  "region": "Europe",
+  "asOf": "2026-09-28",
+  "coverage": "positions-verified",
+  "licensing": "national",
+  "summary": "Three national MNOs: O2 (PPF), T-Mobile and Vodafone. PODA holds 40 MHz in 3.6 GHz. The 700 MHz and 3.4–3.6 GHz auction ran in 2020; 900/1800 were renewed in 2024–25, 2100 runs to 2041, and 800/1800/2600 renewals from 2029 are under consultation.",
+  "operators": [
+    {
+      "id": "o2",
+      "name": "O2",
+      "legal": "O2 Czech Republic a.s.",
+      "color": "#0019a5",
+      "aliases": [
+        "O2 Czech Republic",
+        "O2 CZ"
+      ],
+      "kind": "mno",
+      "notes": "PPF group. Took over Nordic Telecom 5G's 3700–3800 MHz assignment in 2024, before PPF bought Nordic Telecom in 2025."
+    },
+    {
+      "id": "tmobile",
+      "name": "T-Mobile",
+      "legal": "T-Mobile Czech Republic a.s.",
+      "color": "#e20074",
+      "aliases": [
+        "T-Mobile CZ",
+        "T-Mobile Czech Republic"
+      ],
+      "kind": "mno",
+      "notes": "Deutsche Telekom. In 2023 it bought the 3400–3480 MHz block that CentroNet won in the 2020 auction (held by then by Kaprain's Incrate s.r.o.)."
+    },
+    {
+      "id": "vodafone",
+      "name": "Vodafone",
+      "legal": "Vodafone Czech Republic a.s.",
+      "color": "#e60000",
+      "aliases": [
+        "Vodafone CZ"
+      ],
+      "kind": "mno"
+    },
+    {
+      "id": "poda",
+      "name": "PODA",
+      "legal": "PODA a.s.",
+      "color": "#f39200",
+      "aliases": [],
+      "kind": "other",
+      "notes": "Regional fixed/wireless operator; won 3.7 GHz in the 2017 tender and holds 3600–3640 MHz after the 2021 re-arrangement."
+    }
+  ],
+  "bands": [
+    {
+      "group": "700",
+      "label": "700 MHz FDD (B28/n28)",
+      "names": [
+        "B28",
+        "n28"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          758,
+          788
+        ],
+        "ul": [
+          703,
+          733
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Auction ended 13 Nov 2020 and was assigned 18 Jan 2021. ČTÚ confirms the blocks, and spectrum-tracker matches them.",
+      "sources": [
+        "https://www.itpoint.cz/ctu/?i=prideleni-kmitoctu-aukce-5g-14030",
+        "https://ctu.gov.cz/tiskova-zprava-cesky-telekomunikacni-urad-vydrazil-kmitocty-v-pasmech-700-mhz-3400-3600-mhz",
+        "https://www.spectrum-tracker.com/Czech-Republic"
+      ],
+      "blocks": [
+        {
+          "op": "o2",
+          "dl": [
+            758,
+            768
+          ],
+          "ul": [
+            703,
+            713
+          ],
+          "notes": "Block A3 from the 2020 auction, with a national-roaming obligation"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            768,
+            778
+          ],
+          "ul": [
+            713,
+            723
+          ]
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            778,
+            788
+          ],
+          "ul": [
+            723,
+            733
+          ]
+        }
+      ]
+    },
+    {
+      "group": "700",
+      "label": "700 MHz SDL (738–758 MHz)",
+      "names": [
+        "n28"
+      ],
+      "status": "not-assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          738,
+          758
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "The 738–758 MHz duplex gap is not assigned for SDL. ČTÚ's list of harmonised bands in use (700/800/900/1800/2100/2600/3600) does not include it.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "800",
+      "label": "800 MHz (B20/n20)",
+      "names": [
+        "B20",
+        "n20"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          791,
+          821
+        ],
+        "ul": [
+          832,
+          862
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "From the 2014 auction. ČTÚ's Aug 2026 review plans new 20-year assignments for the same blocks from 1 Jul 2029 to 30 Jun 2049; this was out for consultation on 28 Sep 2026.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf",
+        "https://www.spectrum-tracker.com/Czech-Republic"
+      ],
+      "blocks": [
+        {
+          "op": "tmobile",
+          "dl": [
+            791,
+            801
+          ],
+          "ul": [
+            832,
+            842
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "o2",
+          "dl": [
+            801,
+            811
+          ],
+          "ul": [
+            842,
+            852
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            811,
+            821
+          ],
+          "ul": [
+            852,
+            862
+          ],
+          "expiry": "2029-06-30"
+        }
+      ]
+    },
+    {
+      "group": "900",
+      "label": "900 MHz (B8/n8)",
+      "names": [
+        "B8",
+        "n8"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          925,
+          960
+        ],
+        "ul": [
+          880,
+          915
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "GSM-R uses 876–880/921–925 MHz below this band. The 900 MHz band was consolidated into contiguous blocks in April 2020.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20240430-Zavery_prezkoumani_900_a_1800_MHz.pdf",
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf",
+        "https://www.spectrum-tracker.com/Czech-Republic"
+      ],
+      "blocks": [
+        {
+          "op": "guard",
+          "dl": [
+            925,
+            925.1
+          ],
+          "ul": [
+            880,
+            880.1
+          ],
+          "notes": "100 kHz edge guard"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            925.1,
+            935.1
+          ],
+          "ul": [
+            880.1,
+            890.1
+          ],
+          "expiry": "2049-06-30",
+          "notes": "Renewed in 2025 until 30 Jun 2049"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            935.1,
+            947.5
+          ],
+          "ul": [
+            890.1,
+            902.5
+          ],
+          "expiry": "2044-12-31",
+          "notes": "Renewed in 2024 until 31 Dec 2044"
+        },
+        {
+          "op": "o2",
+          "dl": [
+            947.5,
+            959.9
+          ],
+          "ul": [
+            902.5,
+            914.9
+          ],
+          "expiry": "2044-12-31",
+          "notes": "Renewed in 2024 until 31 Dec 2044"
+        },
+        {
+          "op": "guard",
+          "dl": [
+            959.9,
+            960
+          ],
+          "ul": [
+            914.9,
+            915
+          ],
+          "notes": "100 kHz edge guard"
+        }
+      ]
+    },
+    {
+      "group": "1400",
+      "label": "1.5 GHz L-band SDL (B32/B75)",
+      "names": [
+        "B32",
+        "B75",
+        "n75"
+      ],
+      "status": "not-assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          1427,
+          1517
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. ČTÚ lists the harmonised bands in use for public mobile networks as 700, 800, 900, 1800, 2100, 2600 and 3600 MHz; 1427–1517 MHz is not among them.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1800",
+      "label": "1800 MHz (B3/n3)",
+      "names": [
+        "B3",
+        "n3"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1805,
+          1880
+        ],
+        "ul": [
+          1710,
+          1785
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "O2 holds 2×27.8 MHz, T-Mobile 2×20 MHz and Vodafone 2×27 MHz, with 100 kHz guards at the band edges. Parts from the 2014/2016 auctions expire 30 Jun 2029; ČTÚ proposes renewing them to 2049.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf",
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20240430-Zavery_prezkoumani_900_a_1800_MHz.pdf"
+      ],
+      "blocks": [
+        {
+          "op": "guard",
+          "dl": [
+            1805,
+            1805.1
+          ],
+          "ul": [
+            1710,
+            1710.1
+          ]
+        },
+        {
+          "op": "o2",
+          "dl": [
+            1805.1,
+            1806.3
+          ],
+          "ul": [
+            1710.1,
+            1711.3
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "o2",
+          "dl": [
+            1806.3,
+            1816.9
+          ],
+          "ul": [
+            1711.3,
+            1721.9
+          ],
+          "expiry": "2044-12-31"
+        },
+        {
+          "op": "o2",
+          "dl": [
+            1816.9,
+            1818.9
+          ],
+          "ul": [
+            1721.9,
+            1723.9
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "o2",
+          "dl": [
+            1818.9,
+            1822.3
+          ],
+          "ul": [
+            1723.9,
+            1727.3
+          ],
+          "expiry": "2044-12-31"
+        },
+        {
+          "op": "o2",
+          "dl": [
+            1822.3,
+            1832.9
+          ],
+          "ul": [
+            1727.3,
+            1737.9
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            1832.9,
+            1834.9
+          ],
+          "ul": [
+            1737.9,
+            1739.9
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            1834.9,
+            1852.9
+          ],
+          "ul": [
+            1739.9,
+            1757.9
+          ],
+          "expiry": "2044-12-31"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            1852.9,
+            1875.9
+          ],
+          "ul": [
+            1757.9,
+            1780.9
+          ],
+          "expiry": "2049-06-30"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            1875.9,
+            1879.9
+          ],
+          "ul": [
+            1780.9,
+            1784.9
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "guard",
+          "dl": [
+            1879.9,
+            1880
+          ],
+          "ul": [
+            1784.9,
+            1785
+          ]
+        }
+      ]
+    },
+    {
+      "group": "2100",
+      "label": "2100 MHz (B1/n1)",
+      "names": [
+        "B1",
+        "n1"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2170
+        ],
+        "ul": [
+          1920,
+          1980
+        ]
+      },
+      "positions": "unverified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Three 2×20 MHz blocks. ČTÚ confirms the arrangement (PVRS 6) and the 2041 expiry. The block-to-operator mapping comes only from gsmweb.cz. The renewed assignments drop the old 300 kHz edge guards (1920.3–1979.7 MHz).",
+      "sources": [
+        "https://gsmweb.cz/clanky/freq2.htm",
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/sdeleni-o-vydani-opatreni-obecne-povahy-casti-planu-vyuziti-radioveho-spektra-c.pv-p/6/06.2021-6-pro-kmitoctove-pasmo-1900-2200-mhz/obrazky/20210608pvrs6p.pdf",
+        "https://ctu.gov.cz/vydani-pridelu-vodafone-2100-mhz",
+        "https://ctu.gov.cz/ctu-obnovil-o2-pridel-spektra-2100-mhz-zajisti-tim-provoz-site-i-pro-starsi-telefony"
+      ],
+      "blocks": [
+        {
+          "op": "o2",
+          "dl": [
+            2110,
+            2130
+          ],
+          "ul": [
+            1920,
+            1940
+          ],
+          "expiry": "2041-12-31"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            2130,
+            2150
+          ],
+          "ul": [
+            1940,
+            1960
+          ],
+          "expiry": "2041-12-31"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            2150,
+            2170
+          ],
+          "ul": [
+            1960,
+            1980
+          ],
+          "expiry": "2041-12-31"
+        }
+      ]
+    },
+    {
+      "group": "2000tdd",
+      "label": "2 GHz unpaired TDD (B33/B34)",
+      "names": [
+        "B33",
+        "B34"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          1900,
+          1920
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. 1900–1920 MHz is available only for short-term or experimental use and is earmarked for FRMCS (1900–1910 MHz); 2010–2025 MHz is used for PMSE.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/sdeleni-o-vydani-opatreni-obecne-povahy-casti-planu-vyuziti-radioveho-spektra-c.pv-p/6/06.2021-6-pro-kmitoctove-pasmo-1900-2200-mhz/obrazky/20210608pvrs6p.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2300",
+      "label": "2300 MHz (B40/n40)",
+      "names": [
+        "B40",
+        "n40"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2300,
+          2400
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned for public mobile networks; the band is not among ČTÚ's harmonised mobile bands in use.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz FDD (B7/n7)",
+      "names": [
+        "B7",
+        "n7"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2620,
+          2690
+        ],
+        "ul": [
+          2500,
+          2570
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "From the 2014 and 2016 tenders. Renewal to 2049 is under consultation.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf",
+        "https://gsmweb.cz/clanky/freq2.htm"
+      ],
+      "blocks": [
+        {
+          "op": "o2",
+          "dl": [
+            2620,
+            2640
+          ],
+          "ul": [
+            2500,
+            2520
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            2640,
+            2660
+          ],
+          "ul": [
+            2520,
+            2540
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            2660,
+            2680
+          ],
+          "ul": [
+            2540,
+            2560
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "tmobile",
+          "dl": [
+            2680,
+            2690
+          ],
+          "ul": [
+            2560,
+            2570
+          ],
+          "expiry": "2029-06-30"
+        }
+      ]
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz TDD (B38/n38)",
+      "names": [
+        "B38",
+        "n38"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2570,
+          2620
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "From the 2016 tender.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": [
+        {
+          "op": "tmobile",
+          "f": [
+            2570,
+            2595
+          ],
+          "expiry": "2029-06-30"
+        },
+        {
+          "op": "o2",
+          "f": [
+            2595,
+            2620
+          ],
+          "expiry": "2029-06-30"
+        }
+      ]
+    },
+    {
+      "group": "3500",
+      "label": "3.4–3.8 GHz (n78)",
+      "names": [
+        "n78",
+        "B42",
+        "B43"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          3400,
+          3800
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Block edges come from ČTÚ's re-arrangement decision, final on 11 Aug 2021. Later transfers are reported by Lupa.cz, and gsmweb.cz lists T-Mobile at 3400–3540 and O2 at 3640–3800.",
+      "sources": [
+        "https://ctu.gov.cz/refarming-3600/rozhodnuti",
+        "https://www.lupa.cz/aktuality/prazakuv-kaprain-se-zbavil-5g-frekvence-3-5-ghz-ziskal-ji-t-mobile/",
+        "https://www.lupa.cz/aktuality/nordic-telecom-prodan-o2/",
+        "https://gsmweb.cz/clanky/freq2.htm",
+        "https://www.itpoint.cz/ctu/?i=prideleni-kmitoctu-aukce-5g-14030"
+      ],
+      "blocks": [
+        {
+          "op": "tmobile",
+          "f": [
+            3400,
+            3480
+          ],
+          "notes": "Won by CentroNet in 2020, moved to Incrate s.r.o. and bought by T-Mobile in 2023"
+        },
+        {
+          "op": "tmobile",
+          "f": [
+            3480,
+            3540
+          ],
+          "notes": "T-Mobile, 2020 auction"
+        },
+        {
+          "op": "vodafone",
+          "f": [
+            3540,
+            3600
+          ],
+          "notes": "20 MHz from 2020 plus 40 MHz from the 2017 3.7 GHz tender, consolidated in 2021"
+        },
+        {
+          "op": "poda",
+          "f": [
+            3600,
+            3640
+          ],
+          "notes": "From the 2017 3.7 GHz tender"
+        },
+        {
+          "op": "o2",
+          "f": [
+            3640,
+            3700
+          ],
+          "notes": "O2's own 2017 and 2020 spectrum"
+        },
+        {
+          "op": "o2",
+          "f": [
+            3700,
+            3800
+          ],
+          "notes": "Nordic Telecom 5G's block (2017 and 2020 awards); transferred to O2 in 2024"
+        }
+      ]
+    },
+    {
+      "group": "26g",
+      "label": "26 GHz (n258)",
+      "names": [
+        "n258"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          24250,
+          27500
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "No national assignments. ČTÚ opened 24.25–27.5 GHz on 1 Jul 2026 for individual (local, campus and FWA) authorisations, with 26.5–27.3 GHz reserved for 5G/campus use. A national award of 25.1–27.5 GHz is planned for about 2032.",
+      "sources": [
+        "https://ctu.gov.cz/tiskova-zprava-cesky-telekomunikacni-urad-zpristupnuje-pasmo-26-ghz",
+        "https://ctu.gov.cz/sites/default/files/obsah/pvrs/PVRS-2%20clean.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "40g",
+      "label": "40 GHz (n259/n260)",
+      "names": [
+        "n259",
+        "n260"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          37000,
+          43500
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned for mobile networks.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "600",
+      "label": "600 MHz (B71/n71)",
+      "names": [
+        "n71"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          617,
+          652
+        ],
+        "ul": [
+          663,
+          698
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in Europe; 470–694 MHz remains allocated to terrestrial broadcasting (DTT) under the EU UHF decision (EU) 2017/899.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "850",
+      "label": "850 MHz (B5)",
+      "names": [
+        "B5",
+        "n5"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          869,
+          894
+        ],
+        "ul": [
+          824,
+          849
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in CEPT/EU; 824–894 MHz overlaps the 800 MHz (B20) and E-GSM/GSM-R plans.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1700",
+      "label": "AWS 1.7/2.1 GHz (B4/B66)",
+      "names": [
+        "B66",
+        "n66"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2155
+        ],
+        "ul": [
+          1710,
+          1755
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "AWS pairing not used in Europe; 1710–1785 MHz is the B3 uplink and 2110–2170 MHz is B1.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1900",
+      "label": "PCS 1900 (B2/B25)",
+      "names": [
+        "B2",
+        "n2"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1930,
+          1995
+        ],
+        "ul": [
+          1850,
+          1915
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "PCS pairing not used in Europe; 1880–1900 MHz is DECT, 1900–1920 MHz unpaired and 1980–2010/2170–2200 MHz is 2 GHz MSS.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "4900",
+      "label": "4.4–5.0 GHz (n79)",
+      "names": [
+        "n79"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          4400,
+          5000
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised for MFCN in the EU; no mobile assignments.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "47g",
+      "label": "47 GHz (n262)",
+      "names": [
+        "n262"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          47200,
+          48200
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "No 47 GHz mobile assignments.",
+      "sources": [
+        "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+      ],
+      "blocks": []
+    }
+  ],
+  "notes": [
+    "No davwheat seed existed for CZ; compiled from scratch.",
+    "ČTÚ's review conclusions of 13 Aug 2026 give exact block edges and validity for 800, 1800 and 2600 MHz. It proposes new 20-year assignments for the same blocks from 1 Jul 2029 to 30 Jun 2049; this is a draft for consultation and is not drawn as a future entry.",
+    "900 MHz edges come from ČTÚ's 2024 review. O2 and T-Mobile renewed 900/1800 in 2024 until 31 Dec 2044; Vodafone renewed in 2025 until 30 Jun 2049. The 2026 ČTÚ document confirms the 1800 split.",
+    "3.4–3.8 GHz: ČTÚ fixed the layout on 11 Aug 2021 (Incrate 3400–3480, T-Mobile 3480–3540, Vodafone 3540–3600, PODA 3600–3640, O2 3640–3700, Nordic Telecom 5G 3700–3800). Two transfers followed: Incrate's block went to T-Mobile (Lupa.cz, Jul 2023), and Nordic's block went to O2 in 2024 before PPF/O2 bought Nordic Telecom in 2025 (Lupa.cz).",
+    "2100 MHz: three 2×20 MHz blocks renewed until 31 Dec 2041 (O2 in Dec 2021, Vodafone from 24 Feb 2025). The operator order comes from gsmweb.cz only.",
+    "spectrum-tracker lists Vodafone 900 as 880.1–890 MHz (2×9.9). ČTÚ says 880.1–890.1 MHz (2×10); ČTÚ is used.",
+    "Expiry dates for 700 MHz and 3.4–3.8 GHz were not found and are left out."
+  ],
+  "missing": [
+    "700 MHz and 3.4–3.8 GHz licence expiry dates",
+    "2100 MHz block-to-operator mapping confirmed by only one non-regulator source (gsmweb.cz)",
+    "Status of PODA's 3600–3640 MHz in 2026 not re-confirmed after 2021",
+    "Carrier EARFCN/NR-ARFCN not compiled"
+  ],
+  "changes": [],
+  "sources": [
+    {
+      "title": "ČTÚ – Závěry přezkoumání 800/1800/2600 MHz (13 Aug 2026)",
+      "url": "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20260813-zavery_prezkoumani.pdf"
+    },
+    {
+      "title": "ČTÚ – Závěry přezkoumání 900 a 1800 MHz (2024)",
+      "url": "https://ctu.gov.cz/sites/default/files/obsah/ctu/vyzva-k-uplatneni-pripominek-k-zameru-ceskeho-telekomunikacniho-uradu-udelit-pridely-radiovych/obrazky/20240430-Zavery_prezkoumani_900_a_1800_MHz.pdf"
+    },
+    {
+      "title": "ČTÚ – Změna přídělů 3400–3800 MHz (2021)",
+      "url": "https://ctu.gov.cz/refarming-3600/rozhodnuti"
+    },
+    {
+      "title": "ČTÚ – aukce 700 MHz a 3400–3600 MHz (2020)",
+      "url": "https://ctu.gov.cz/tiskova-zprava-cesky-telekomunikacni-urad-vydrazil-kmitocty-v-pasmech-700-mhz-3400-3600-mhz"
+    },
+    {
+      "title": "ČTÚ – PVRS 1900–2200 MHz",
+      "url": "https://ctu.gov.cz/sites/default/files/obsah/ctu/sdeleni-o-vydani-opatreni-obecne-povahy-casti-planu-vyuziti-radioveho-spektra-c.pv-p/6/06.2021-6-pro-kmitoctove-pasmo-1900-2200-mhz/obrazky/20210608pvrs6p.pdf"
+    },
+    {
+      "title": "ČTÚ – příděl 2100 MHz Vodafone",
+      "url": "https://ctu.gov.cz/vydani-pridelu-vodafone-2100-mhz"
+    },
+    {
+      "title": "ČTÚ – zpřístupnění pásma 26 GHz (2026)",
+      "url": "https://ctu.gov.cz/tiskova-zprava-cesky-telekomunikacni-urad-zpristupnuje-pasmo-26-ghz"
+    },
+    {
+      "title": "itpoint.cz – příděly z aukce 5G",
+      "url": "https://www.itpoint.cz/ctu/?i=prideleni-kmitoctu-aukce-5g-14030"
+    },
+    {
+      "title": "gsmweb.cz – Frekvenční příděly",
+      "url": "https://gsmweb.cz/clanky/freq2.htm"
+    },
+    {
+      "title": "Lupa.cz – T-Mobile získal 3,5 GHz od Kaprainu",
+      "url": "https://www.lupa.cz/aktuality/prazakuv-kaprain-se-zbavil-5g-frekvence-3-5-ghz-ziskal-ji-t-mobile/"
+    },
+    {
+      "title": "Lupa.cz – Nordic Telecom prodán O2",
+      "url": "https://www.lupa.cz/aktuality/nordic-telecom-prodan-o2/"
+    },
+    {
+      "title": "spectrum-tracker – Czech Republic",
+      "url": "https://www.spectrum-tracker.com/Czech-Republic"
+    }
+  ]
+}

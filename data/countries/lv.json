@@ -2,40 +2,671 @@
  "code": "lv",
  "name": "Latvia",
  "region": "Europe",
- "asOf": "2026-01-09",
+ "asOf": "2026-09-28",
  "coverage": "block-level",
  "licensing": "national",
- "summary": "",
+ "summary": "Three MNOs – LMT, Tele2 and Bite – hold national rights issued by the regulator SPRK; 700 MHz, 1.5 GHz SDL and extra 3.6 GHz spectrum were auctioned in 2021–2023, and 26 GHz is still unassigned.",
  "operators": [
   {
    "id": "lmt",
-   "name": "Latvijas Mobilais Telefons",
-   "color": "#e45329",
+   "name": "LMT",
+   "legal": "Latvijas Mobilais Telefons SIA",
+   "color": "#e4002b",
    "aliases": [
+    "Latvijas Mobilais Telefons",
     "LMT"
    ],
    "kind": "mno"
   },
   {
-   "id": "bite-latvija",
-   "name": "Bite Latvija",
-   "color": "#00aa14",
+   "id": "tele2",
+   "name": "Tele2",
+   "legal": "SIA Tele2",
+   "color": "#1d1d1b",
    "aliases": [
-    "Bite LV"
+    "Tele2 Latvija",
+    "Tele2 LV"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Subsidiary of Tele2 AB."
   },
   {
-   "id": "tele2-latvija",
-   "name": "Tele2 Latvija",
-   "color": "#000000",
+   "id": "bite",
+   "name": "Bite",
+   "legal": "SIA BITE Latvija",
+   "color": "#00aa14",
    "aliases": [
-    "Tele2 LV"
+    "Bite Latvija",
+    "Bite LV"
    ],
    "kind": "mno"
   }
  ],
  "bands": [
+  {
+   "group": "450",
+   "label": "450 MHz",
+   "names": [
+    "B31",
+    "B72",
+    "B87"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "SPRK's Feb-2026 summary lists 450.0–457.5/460.0–467.5 MHz as not assigned. (A 2024 SPRK report covered one 1.25 MHz channel in 453–457.5/463–467.5 MHz held by AS Telekom Baltija until 22.12.2026.)",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/media/447/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "dl": [
+     460,
+     467.5
+    ],
+    "ul": [
+     450,
+     457.5
+    ]
+   }
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned 16–17 Dec 2021 together with the 738–758 MHz SDL band; coverage obligations (300 sites by 2022, 400 by Feb 2027) are listed in SPRK's summary.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-izsoles",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "tele2",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "expiry": "2042-01-31",
+     "notes": "Dec 2021 auction; rights from 1.2.2022"
+    },
+    {
+     "op": "lmt",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "expiry": "2042-01-31",
+     "notes": "Dec 2021 auction"
+    },
+    {
+     "op": "bite",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "expiry": "2042-01-31",
+     "notes": "Dec 2021 auction"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz SDL (B67)",
+   "names": [
+    "B67"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     738,
+     758
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Duplex-gap SDL, licensed with the 700 MHz FDD blocks.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-izsoles",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "tele2",
+     "f": [
+      738,
+      748
+     ],
+     "expiry": "2042-01-31",
+     "notes": "Dec 2021 auction"
+    },
+    {
+     "op": "lmt",
+     "f": [
+      748,
+      758
+     ],
+     "expiry": "2042-01-31",
+     "notes": "Dec 2021 auction"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-izsoles"
+   ],
+   "blocks": [
+    {
+     "op": "bite",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ],
+     "expiry": "2033-06-30",
+     "notes": "Oct 2013 auction"
+    },
+    {
+     "op": "lmt",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ],
+     "expiry": "2033-06-30",
+     "notes": "Oct 2013 auction"
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "expiry": "2033-06-30",
+     "notes": "Oct 2013 auction"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a European mobile band.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 470–694 MHz is used for DTT broadcasting; the US 600 MHz plan is not used in Europe.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Tele2 2×11.6 MHz in three pieces, matching Tele2's investor table.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/media/13507/download?attachment",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      925.2
+     ],
+     "ul": [
+      880,
+      880.2
+     ]
+    },
+    {
+     "op": "bite",
+     "dl": [
+      925.2,
+      934.8
+     ],
+     "ul": [
+      880.2,
+      889.8
+     ],
+     "expiry": "2030-06-28"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      934.8,
+      935
+     ],
+     "ul": [
+      889.8,
+      890
+     ]
+    },
+    {
+     "op": "lmt",
+     "dl": [
+      935,
+      948.2
+     ],
+     "ul": [
+      890,
+      903.2
+     ],
+     "expiry": "2036-01-09"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      948.2,
+      948.3
+     ],
+     "ul": [
+      903.2,
+      903.3
+     ]
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      948.3,
+      949.1
+     ],
+     "ul": [
+      903.3,
+      904.1
+     ],
+     "expiry": "2028-09-10",
+     "notes": "0.8 MHz from a 2008 competition; SPRK's Sept-2026 report supports extension to 29.2.2036"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      949.1,
+      949.2
+     ],
+     "ul": [
+      904.1,
+      904.2
+     ]
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      949.2,
+      959
+     ],
+     "ul": [
+      904.2,
+      914
+     ],
+     "expiry": "2036-02-29"
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      959,
+      960
+     ],
+     "ul": [
+      914,
+      915
+     ],
+     "expiry": "2036-02-29",
+     "notes": "2010 auction"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz L-band SDL (B75/B32)",
+   "names": [
+    "B75",
+    "B32",
+    "n75"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "SDL. SPRK auctioned 1432–1472 and 1492–1512 MHz in Jan 2021; 1472–1492 MHz was not offered.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-izsoles",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      1427,
+      1432
+     ]
+    },
+    {
+     "op": "bite",
+     "f": [
+      1432,
+      1452
+     ],
+     "expiry": "2042-02-07",
+     "notes": "Jan 2021 auction"
+    },
+    {
+     "op": "lmt",
+     "f": [
+      1452,
+      1472
+     ],
+     "expiry": "2042-02-07",
+     "notes": "Jan 2021 auction"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1472,
+      1492
+     ],
+     "notes": "Not auctioned"
+    },
+    {
+     "op": "tele2",
+     "f": [
+      1492,
+      1512
+     ],
+     "expiry": "2042-02-07",
+     "notes": "Jan 2021 auction"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1512,
+      1517
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a European band plan.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "The 0.2 MHz slivers between blocks were auctioned to LMT and Tele2 in March 2024, closing the gaps.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "lmt",
+     "dl": [
+      1805,
+      1830
+     ],
+     "ul": [
+      1710,
+      1735
+     ],
+     "earfcn": [
+      1300,
+      1417
+     ],
+     "expiry": "2036-01-09",
+     "notes": "24.8 MHz plus 0.2 MHz added by 28.3.2024 auction"
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      1830,
+      1855
+     ],
+     "ul": [
+      1735,
+      1760
+     ],
+     "earfcn": [
+      1574
+     ],
+     "expiry": "2036-02-29",
+     "notes": "24.6 MHz plus two 0.2 MHz slivers (28.3.2024 auction)"
+    },
+    {
+     "op": "bite",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "earfcn": [
+      1820
+     ],
+     "expiry": "2030-06-28"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a European band plan (SPRK's '1900 MHz' label refers to the B1 2 GHz band).",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD (B33/B34)",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: SPRK's summary of restricted-band rights lists no 1900–1920 or 2010–2025 MHz assignments.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   }
+  },
   {
    "group": "2100",
    "label": "2100 MHz (B1/n1)",
@@ -55,12 +686,15 @@
      1980
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "SPRK's Dec-2025 report found no obstacle to extending the LMT and Tele2 rights (ending 31.12.2027) by up to 10 years; Tele2 expects 2037.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/media/444/download?attachment",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
    ],
    "blocks": [
     {
@@ -75,10 +709,11 @@
      ],
      "earfcn": [
       100
-     ]
+     ],
+     "expiry": "2027-12-31"
     },
     {
-     "op": "bite-latvija",
+     "op": "bite",
      "dl": [
       2130,
       2150
@@ -89,10 +724,11 @@
      ],
      "earfcn": [
       350
-     ]
+     ],
+     "expiry": "2030-06-28"
     },
     {
-     "op": "tele2-latvija",
+     "op": "tele2",
      "dl": [
       2150,
       2170
@@ -103,88 +739,76 @@
      ],
      "earfcn": [
       500
-     ]
+     ],
+     "expiry": "2027-12-31"
     }
    ]
   },
   {
-   "group": "1800",
-   "label": "1800 MHz (B3/n3)",
+   "group": "2300",
+   "label": "2300 MHz (B40/n40)",
    "names": [
-    "B3",
-    "n3"
+    "B40",
+    "n40"
    ],
    "status": "assigned",
-   "duplex": "fdd",
+   "duplex": "tdd",
    "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
+    "f": [
+     2300,
+     2400
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/media/444/download?attachment"
    ],
    "blocks": [
     {
      "op": "lmt",
-     "dl": [
-      1805,
-      1829.8
-     ],
-     "ul": [
-      1710,
-      1734.8
+     "f": [
+      2300,
+      2330
      ],
      "earfcn": [
-      1300,
-      1417
+      38800
      ],
-     "notes": "1st Carrier at 20Mhz · 2nd Carrier at 5Mhz"
+     "expiry": "2027-12-05",
+     "notes": "2012 auction; extension possible (SPRK Dec-2025 report)"
     },
     {
-     "op": "tele2-latvija",
-     "dl": [
-      1829.8,
-      1854.9
-     ],
-     "ul": [
-      1734.8,
-      1759.9
+     "op": "bite",
+     "f": [
+      2330,
+      2360
      ],
      "earfcn": [
-      1574
-     ]
+      39150
+     ],
+     "expiry": "2037-12-05",
+     "notes": "2012 auction; extended to 5.12.2037"
     },
     {
-     "op": "bite-latvija",
-     "dl": [
-      1854.9,
-      1880
+     "op": "unassigned",
+     "f": [
+      2360,
+      2400
      ],
-     "ul": [
-      1759.9,
-      1785
-     ],
-     "earfcn": [
-      1820
-     ]
+     "notes": "Not assigned (SPRK's restricted 2.3 GHz band covers 2300–2370 MHz)"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
+   "label": "2600 MHz FDD (B7/n7)",
    "names": [
-    "B7"
+    "B7",
+    "n7"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -198,12 +822,14 @@
      2570
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
    ],
    "blocks": [
     {
@@ -218,10 +844,12 @@
      ],
      "earfcn": [
       2850
-     ]
+     ],
+     "expiry": "2028-12-31",
+     "notes": "2012 auction"
     },
     {
-     "op": "tele2-latvija",
+     "op": "tele2",
      "dl": [
       2640,
       2660
@@ -232,10 +860,12 @@
      ],
      "earfcn": [
       3050
-     ]
+     ],
+     "expiry": "2028-12-31",
+     "notes": "2012 auction"
     },
     {
-     "op": "bite-latvija",
+     "op": "bite",
      "dl": [
       2660,
       2680
@@ -246,263 +876,30 @@
      ],
      "earfcn": [
       3250
-     ]
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
-   ],
-   "blocks": [
-    {
-     "op": "bite-latvija",
-     "dl": [
-      925.2,
-      934.9
      ],
-     "ul": [
-      880.2,
-      889.9
-     ]
-    },
-    {
-     "op": "lmt",
-     "dl": [
-      934.9,
-      948.25
-     ],
-     "ul": [
-      889.9,
-      903.25
-     ]
-    },
-    {
-     "op": "tele2-latvija",
-     "dl": [
-      948.25,
-      960
-     ],
-     "ul": [
-      903.25,
-      915
-     ]
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
-   ],
-   "blocks": [
-    {
-     "op": "bite-latvija",
-     "dl": [
-      791,
-      801
-     ],
-     "ul": [
-      832,
-      842
-     ],
-     "earfcn": [
-      6200
-     ]
-    },
-    {
-     "op": "lmt",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300
-     ]
-    },
-    {
-     "op": "tele2-latvija",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6400
-     ]
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
-   ],
-   "blocks": [
-    {
-     "op": "tele2-latvija",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ]
-    },
-    {
-     "op": "lmt",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ]
-    },
-    {
-     "op": "bite-latvija",
-     "dl": [
-      778,
-      788
-     ],
-     "ul": [
-      723,
-      733
-     ]
-    }
-   ]
-  },
-  {
-   "group": "1400",
-   "label": "1.4–1.5 GHz (B32)",
-   "names": [
-    "B32"
-   ],
-   "status": "assigned",
-   "duplex": "sdl",
-   "range": {
-    "f": [
-     1432,
-     1512
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
-   ],
-   "blocks": [
-    {
-     "op": "bite-latvija",
-     "f": [
-      1432,
-      1452
-     ]
-    },
-    {
-     "op": "lmt",
-     "f": [
-      1452,
-      1472
-     ]
-    },
-    {
-     "op": "tele2-latvija",
-     "f": [
-      1492,
-      1512
-     ]
+     "expiry": "2028-12-31",
+     "notes": "2012 auction"
     },
     {
      "op": "unassigned",
-     "f": [
-      1472,
-      1496
-     ]
+     "dl": [
+      2680,
+      2690
+     ],
+     "ul": [
+      2560,
+      2570
+     ],
+     "notes": "Not assigned"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz TDD (B38/n38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -512,12 +909,14 @@
      2620
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-izsoles"
    ],
    "blocks": [
     {
@@ -529,71 +928,15 @@
      "earfcn": [
       37900,
       38098
-     ]
-    }
-   ]
-  },
-  {
-   "group": "2300",
-   "label": "2300 MHz (B40)",
-   "names": [
-    "B40"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     2300,
-     2400
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "f": [
-      2300,
-      2330
-     ]
-    },
-    {
-     "op": "lmt",
-     "f": [
-      2300,
-      2330
      ],
-     "earfcn": [
-      38800
-     ]
-    },
-    {
-     "op": "bite-latvija",
-     "f": [
-      2330,
-      2360
-     ],
-     "earfcn": [
-      39150
-     ]
-    },
-    {
-     "op": "unassigned",
-     "f": [
-      2360,
-      2400
-     ]
+     "expiry": "2028-12-31",
+     "notes": "Sept 2013 auction"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
@@ -601,16 +944,19 @@
    "duplex": "tdd",
    "range": {
     "f": [
-     3300,
+     3400,
      3800
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Totals: LMT 125 MHz, Tele2 125 MHz, Bite 150 MHz (of which 50 MHz is Rīga only). SPRK's roadmap (16.07.2026) re-arranges the band into one contiguous 130 MHz block per operator from 1.1.2029 (or earlier by agreement), with rights extended to end-2043; the new block positions are not yet fixed.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LV"
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment",
+    "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs",
+    "https://www.sprk.gov.lv/lv/media/12597/download?attachment",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
    ],
    "blocks": [
     {
@@ -618,54 +964,221 @@
      "f": [
       3400,
       3450
-     ]
+     ],
+     "expiry": "2028-12-31",
+     "notes": "2017 auction"
     },
     {
-     "op": "bite-latvija",
+     "op": "bite",
      "f": [
       3450,
       3500
-     ]
+     ],
+     "expiry": "2028-12-31"
     },
     {
-     "op": "tele2-latvija",
+     "op": "tele2",
      "f": [
       3500,
-      3600
-     ]
+      3550
+     ],
+     "expiry": "2028-12-31"
     },
     {
-     "op": "bite-latvija",
+     "op": "tele2",
+     "f": [
+      3550,
+      3600
+     ],
+     "expiry": "2028-12-31",
+     "notes": "2018 auction"
+    },
+    {
+     "op": "bite",
      "f": [
       3600,
       3650
-     ]
+     ],
+     "expiry": "2028-12-31",
+     "notes": "Rīga only; unassigned in the rest of Latvia. SPRK: cannot be extended after 2028"
     },
     {
      "op": "lmt",
      "f": [
       3650,
       3700
-     ]
+     ],
+     "expiry": "2028-12-31",
+     "notes": "2017 auction"
     },
     {
-     "op": "bite-latvija",
+     "op": "bite",
      "f": [
       3700,
       3750
-     ]
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "lmt",
+     "f": [
+      3750,
+      3775
+     ],
+     "expiry": "2043-12-31",
+     "notes": "Nov 2023 auction"
+    },
+    {
+     "op": "tele2",
+     "f": [
+      3775,
+      3800
+     ],
+     "expiry": "2043-12-31",
+     "notes": "Nov 2023 auction"
     }
    ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; not harmonised for mobile in Europe.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: SPRK lists 25.1–27.5 GHz as not assigned (Feb 2026). Bite holds regional 28 GHz fixed-wireless channels (27.83–28.44 / 28.95–29.45 GHz, to 2029), which are not IMT mobile licences.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259)",
+   "names": [
+    "n259"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: SPRK lists 40.5–43.5 GHz as not assigned (Feb 2026).",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: not a restricted mobile band in SPRK's summary.",
+   "sources": [
+    "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "All block edges, auction/decision references and expiry dates come from SPRK's 'Summary of restricted radio-frequency band rights' spreadsheet (frekvencu_pieskirumu_kopsavilkums_27feb2026.xlsx, page updated 23.04.2026). Tele2's amounts match its investor spectrum table (Dec 2025).",
+  "3.4–3.8 GHz is fragmented: each operator holds two or three 25–50 MHz pieces. Bite's 3600–3650 MHz is Rīga only. SPRK's July-2026 roadmap consolidates the band into contiguous 130 MHz blocks from 1.1.2029, with rights extended to end-2043. A future layout is not drawn because the positions are not yet decided.",
+  "Upcoming expiries: 2100 MHz for LMT and Tele2 on 31.12.2027 (SPRK sees no obstacle to extension); LMT 2.3 GHz on 5.12.2027; 2.6 GHz and most 3.6 GHz rights on 31.12.2028; Tele2's 0.8 MHz 900 MHz sliver on 10.9.2028 (SPRK proposes extension to 29.2.2036).",
+  "Bite's 28 GHz rights (regional fixed wireless access channels) are not counted as mobile spectrum."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Final post-2029 3.6 GHz block positions (not yet decided by SPRK).",
+  "Auction prices not recorded."
+ ],
+ "changes": [
+  "All bands upgraded from unverified to verified against SPRK's Feb-2026 rights summary.",
+  "Fixed the seed's 2300 MHz overlap: LMT 2300–2330 and Bite 2330–2360 MHz; 2360–2400 MHz unassigned (the seed double-listed 2300–2330).",
+  "Fixed the seed's L-band overlap: Tele2 1492–1512 MHz and unassigned 1472–1492 MHz (the seed had 1472–1496); widened the diagram to 1427–1517 MHz (B75).",
+  "Corrected 900 MHz edges (Bite 925.2–934.8, LMT 935.0–948.2, Tele2 948.3–949.1 + 949.2–960.0 MHz) and 1800 MHz edges (LMT 1805–1830, Tele2 1830–1855 after the 2024 sliver auction).",
+  "3.6 GHz: added LMT 3750–3775 and Tele2 3775–3800 MHz (Nov 2023 auction), marked Bite 3600–3650 MHz as Rīga only, and noted the 2029 re-arrangement.",
+  "2600 MHz FDD: 2680–2690/2560–2570 MHz shown as unassigned.",
+  "Added the 700 MHz SDL entry (Tele2 738–748, LMT 748–758 MHz), expiry dates, and not-assigned entries for 450/600/850/1700/1900/2000 TDD/4900/26/40/47 GHz.",
+  "Renamed operators to brands (LMT, Tele2, Bite) with legal names."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "SPRK – Radiofrekvenču spektrs (rights, reports)",
+   "url": "https://www.sprk.gov.lv/lv/radiofrekvencu-spektrs"
+  },
+  {
+   "title": "SPRK – Summary of assigned restricted-band rights (xlsx, 27.02.2026)",
+   "url": "https://www.sprk.gov.lv/lv/media/11534/download?attachment"
+  },
+  {
+   "title": "SPRK – Roadmap for 3600 MHz re-arrangement (16.07.2026)",
+   "url": "https://www.sprk.gov.lv/lv/media/12597/download?attachment"
+  },
+  {
+   "title": "SPRK – Report on extending Tele2 900 MHz rights (03.09.2026)",
+   "url": "https://www.sprk.gov.lv/lv/media/13507/download?attachment"
+  },
+  {
+   "title": "SPRK – Report on extending 1900 (2.1 GHz) and 2300 MHz rights (18.12.2025)",
+   "url": "https://www.sprk.gov.lv/lv/media/444/download?attachment"
+  },
+  {
+   "title": "SPRK – Report on 450 MHz rights (12.12.2024)",
+   "url": "https://www.sprk.gov.lv/lv/media/447/download?attachment"
+  },
+  {
+   "title": "SPRK – Radio-frequency auctions",
+   "url": "https://www.sprk.gov.lv/lv/radiofrekvencu-izsoles"
+  },
+  {
+   "title": "Tele2 AB – Spectrum portfolio (Dec 2025)",
+   "url": "https://www.tele2.com/investors/spectrum-portfolio/"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0), seed",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]

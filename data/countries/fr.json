@@ -227,11 +227,12 @@
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "Since 8 Feb 2025 each operator holds 2x8.7 MHz (final step of the 2018 \"New Deal\" redistribution). 100 kHz guard bands at 880-880.1 and 914.9-915 (UL). Block order from the Arcep Nov 2020 chart (\"à partir du 8 février 2025\"); edges derived from the 880.1/914.9 MHz limits and equal 8.7 MHz blocks stated in the Oct 2025 consultation.",
+   "note": "Since 8 Feb 2025 each operator holds 2x8.7 MHz (final step of the 2018 \"New Deal\" redistribution). 100 kHz guard bands at 880-880.1 and 914.9-915 (UL). Block order from the Arcep Nov 2020 chart (\"à partir du 8 février 2025\"); edges derived from the 880.1/914.9 MHz limits and equal 8.7 MHz blocks stated in the Oct 2025 consultation; identical edges listed by spectrum-tracker.com.",
    "sources": [
     "https://www.arcep.fr/uploads/tx_gspublication/consultation-frequences-2030_oct2025.pdf",
     "https://www.arcep.fr/fileadmin/reprise/dossiers/frequences/attributions-frequences-operateurs-mobiles-metropole-novembre2020.pdf",
-    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html"
+    "https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/la-couverture-mobile-en-metropole/le-patrimoine-de-frequences-des-operateurs-mobiles.html",
+    "https://www.spectrum-tracker.com/France"
    ],
    "blocks": [
     {
@@ -939,6 +940,10 @@
   {
    "title": "Arcep - Guichet 2,6 GHz TDD",
    "url": "https://www.arcep.fr/mes-demarches-et-services/entreprises/fiches-pratiques/transformation-numerique-des-entreprises/guichet-dattribution-des-frequences-de-la-bande-26-ghz-tdd.html"
+  },
+  {
+   "title": "spectrum-tracker.com - France (cross-check)",
+   "url": "https://www.spectrum-tracker.com/France"
   },
   {
    "title": "Degrouptest - Rachat de SFR (status of the SFR sale)",
