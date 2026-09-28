@@ -2,397 +2,181 @@
  "code": "ro",
  "name": "Romania",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Three MNO groups since Telekom Romania Mobile was split between Vodafone and Digi (closed 30 Sep 2025): Orange, Vodafone and Digi. The 2022 ANCOM multiband auction awarded 700, 1500, 2600 and 3.4-3.8 GHz (3.4-3.8 GHz rights started 1 Jan 2026). Most 800/900/1800/2600 licences expire on 5 Apr 2029.",
  "operators": [
   {
    "id": "orange",
-   "name": "Orange Romania",
+   "name": "Orange",
+   "legal": "Orange România S.A.",
    "color": "#ff7900",
    "aliases": [
-    "Orange",
+    "Orange Romania",
     "Orange RO"
    ],
    "kind": "mno"
   },
   {
    "id": "vodafone",
-   "name": "Vodafone Romania",
-   "color": "#e51a21",
+   "name": "Vodafone",
+   "legal": "Vodafone Romania S.A.",
+   "color": "#e60000",
    "aliases": [
-    "Vodafone"
+    "Vodafone Romania",
+    "Telekom Romania Mobile Communications",
+    "Telekom Mobile",
+    "TKRM",
+    "Cosmote Romania"
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "telekom",
-   "name": "Telekom Romania",
-   "color": "#e20074",
-   "aliases": [
-    "Telekom"
-   ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Took sole control of Telekom Romania Mobile Communications (TKRM, ex-Cosmote) when the Vodafone/Digi deal closed on 30 Sep 2025 (Competition Council clearance with conditions 25 Jul 2025). ANCOM amended the licences on 8 Oct 2025: TKRM assigned part of its spectrum to Digi and kept the rest, and temporary sharing let Vodafone+TKRM re-arrange to contiguous holdings. TKRM is reported to have been absorbed into Vodafone by merger on 1 Jul 2026 (Wikipedia; not confirmed by ANCOM here). TKRM's remaining spectrum is shown under Vodafone."
   },
   {
    "id": "digi",
-   "name": "RCS & RDS",
-   "color": "#00a6ff",
+   "name": "Digi",
+   "legal": "Digi Romania S.A. (formerly RCS & RDS S.A.)",
+   "color": "#0067b1",
    "aliases": [
-    "Digi",
-    "Digi Romania"
+    "RCS & RDS",
+    "RCS&RDS",
+    "Digi Romania",
+    "Digi Mobil"
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "snr",
-   "name": "SNR Radiocom",
-   "color": "#009763",
-   "aliases": [
-    "SNR"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "vf",
-   "name": "VF",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "kind": "mno",
+   "notes": "Acquired TKRM's prepaid business, part of its towers and the 900/1800/2100/2600 MHz sub-bands listed by ANCOM on 8 Oct 2025; also leases 2x2 MHz at 900 MHz (893-895/938-940) from TKRM from 1 Dec 2025 to 5 Apr 2029."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "600",
+   "label": "600 MHz",
    "names": [
-    "B1",
-    "n1"
+    "n71"
    ],
-   "status": "assigned",
+   "status": "not-assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     617,
+     652
     ],
     "ul": [
-     1920,
-     1980
+     663,
+     698
     ]
    },
-   "positions": "unverified",
+   "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Not a mobile band in Europe; 470-694 MHz is used for DTT.",
    "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz FDD",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "partially-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2022 ANCOM auction: Orange 2 blocks, Vodafone 1 block (2x5 MHz each); blocks A1-A3 (703-718/758-773) unsold. Rights valid 25 years from 1 Jan 2023.",
+   "sources": [
+    "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
    ],
    "blocks": [
     {
-     "op": "digi",
+     "op": "unassigned",
      "dl": [
-      2110.3,
-      2125.3
+      758,
+      773
      ],
      "ul": [
-      1920.3,
-      1935.3
+      703,
+      718
      ],
-     "earfcn": [
-      78,
-      103
-     ],
-     "notes": "B1 3G UMTS was removed in favour of B1 LTE"
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      2125.3,
-      2140.1
-     ],
-     "ul": [
-      1935.3,
-      1950.1
-     ],
-     "earfcn": [
-      228,
-      251
-     ],
-     "nrarfcn": [
-      427010
-     ],
-     "notes": "LTE B1 is 10 MHz (251) or 15 MHz (228) · 5G DSS in select areas"
+     "notes": "Blocks A1-A3 unsold in 2022"
     },
     {
      "op": "orange",
      "dl": [
-      2140.1,
-      2154.9
+      773,
+      783
      ],
      "ul": [
-      1950.1,
-      1964.9
+      718,
+      728
      ],
-     "earfcn": [
-      400
-     ],
-     "nrarfcn": [
-      429424
-     ],
-     "notes": "LTE B1 is 10 MHz where available · 5G NR operating as non-DSS n1"
+     "expiry": "2047-12-31",
+     "notes": "Blocks A4-A5"
     },
     {
      "op": "vodafone",
      "dl": [
-      2154.9,
-      2169.7
+      783,
+      788
      ],
      "ul": [
-      1964.9,
-      1979.7
+      728,
+      733
      ],
-     "earfcn": [
-      498
-     ],
-     "nrarfcn": [
-      431960
-     ],
-     "notes": "LTE B1 is always 10 MHz · 5G NR operating as DSS n1 · 3G is always 5 MHz"
+     "expiry": "2047-12-31",
+     "notes": "Block A6"
     }
    ]
   },
   {
-   "group": "1800",
-   "label": "1800 MHz (B3)",
+   "group": "700",
+   "label": "700 MHz SDL (738–753 MHz)",
    "names": [
-    "B3"
+    "B67"
    ],
-   "status": "assigned",
-   "duplex": "fdd",
+   "status": "not-assigned",
+   "duplex": "sdl",
    "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
+    "f": [
+     738,
+     753
     ]
    },
-   "positions": "unverified",
+   "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Three 5 MHz SDL blocks (B1-B3) offered in the 2022 auction attracted no bids.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+    "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf"
    ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "dl": [
-      1805,
-      1835
-     ],
-     "ul": [
-      1710,
-      1740
-     ],
-     "earfcn": [
-      1256,
-      1283,
-      1400
-     ],
-     "notes": "Primary B3 carrier 20 MHz - 1400 · Secondary B3 carrier in a contiguous configuration - usually 10 MHz on 1256, rarely 5 MHz on 1283 with 5 MHz 2G"
-    },
-    {
-     "op": "orange",
-     "dl": [
-      1835,
-      1855
-     ],
-     "ul": [
-      1740,
-      1760
-     ],
-     "earfcn": [
-      1600
-     ]
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      1855,
-      1880
-     ],
-     "ul": [
-      1760,
-      1785
-     ],
-     "earfcn": [
-      1798
-     ],
-     "notes": "LTE presents as 20 MHz but uses less resource blocks (about 19 MHz in use as 4G) · 2G with no BCCH except on metro lines and cells with no low-band"
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
-   "names": [
-    "B7"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     2620,
-     2690
-    ],
-    "ul": [
-     2500,
-     2570
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
-   ],
-   "blocks": [
-    {
-     "op": "telekom",
-     "dl": [
-      2620,
-      2630
-     ],
-     "ul": [
-      2500,
-      2510
-     ],
-     "notes": "Not deployed anywhere"
-    },
-    {
-     "op": "orange",
-     "dl": [
-      2630,
-      2650
-     ],
-     "ul": [
-      2510,
-      2530
-     ],
-     "earfcn": [
-      2950
-     ]
-    },
-    {
-     "op": "digi",
-     "dl": [
-      2650,
-      2690
-     ],
-     "ul": [
-      2530,
-      2570
-     ],
-     "earfcn": [
-      3150,
-      3348
-     ],
-     "notes": "Two 2x20 MHz B7 carrier in a contiguous configuration"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "dl": [
-      925,
-      935
-     ],
-     "ul": [
-      880,
-      890
-     ]
-    },
-    {
-     "op": "digi",
-     "dl": [
-      935,
-      940
-     ],
-     "ul": [
-      890,
-      895
-     ],
-     "earfcn": [
-      3578
-     ],
-     "notes": "B8 3 MHz LTE in the process of being decommissioned in favour of B20 LTE and B8 2G"
-    },
-    {
-     "op": "telekom",
-     "dl": [
-      940,
-      950
-     ],
-     "ul": [
-      895,
-      905
-     ],
-     "earfcn": [
-      3650
-     ],
-     "notes": "2G 5 MHz · B8 LTE 5 MHz"
-    },
-    {
-     "op": "orange",
-     "dl": [
-      950,
-      960
-     ],
-     "ul": [
-      905,
-      915
-     ],
-     "notes": "B8 3G not always deployed in urban areas"
-    }
-   ]
+   "blocks": [],
+   "holdings": []
   },
   {
    "group": "800",
    "label": "800 MHz (B20)",
    "names": [
-    "B20"
+    "B20",
+    "n20"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -409,9 +193,11 @@
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Amounts match ANCOM's 2022 totals (Orange 2x10, Vodafone 2x10, TKRM 2x5 from the 2012 auction; Digi 2x5 from the 2021 procedure). Edges are from the seed only. TKRM's block stayed with the Vodafone group. Licences valid to 5 Apr 2029.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf",
+    "https://www.ancom.ro/uncategorized/licitatia-de-spectru-s-a-finalizat-cu-succes/"
    ],
    "blocks": [
     {
@@ -424,9 +210,8 @@
       832,
       837
      ],
-     "earfcn": [
-      6175
-     ]
+     "expiry": "2029-04-05",
+     "notes": "2021 procedure"
     },
     {
      "op": "vodafone",
@@ -438,9 +223,7 @@
       837,
       847
      ],
-     "earfcn": [
-      6250
-     ]
+     "expiry": "2029-04-05"
     },
     {
      "op": "orange",
@@ -452,12 +235,10 @@
       847,
       857
      ],
-     "earfcn": [
-      6350
-     ]
+     "expiry": "2029-04-05"
     },
     {
-     "op": "telekom",
+     "op": "vodafone",
      "dl": [
       816,
       821
@@ -466,99 +247,114 @@
       857,
       862
      ],
-     "earfcn": [
-      6425
-     ]
+     "expiry": "2029-04-05",
+     "notes": "TKRM licence (Vodafone group)"
     }
    ]
   },
   {
-   "group": "700",
-   "label": "700 MHz (B28)",
+   "group": "850",
+   "label": "850 MHz",
    "names": [
-    "B28"
+    "B5",
+    "B26"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised for mobile in Europe (800 MHz follows B20).",
+   "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     758,
-     803
+     925,
+     960
     ],
     "ul": [
-     703,
-     748
+     880,
+     915
     ]
    },
-   "positions": "verified",
+   "positions": "holdings",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Before Oct 2025 (seed): Vodafone 880-890, Digi 890-895, TKRM 895-905, Orange 905-915 (UL). ANCOM (8 Oct 2025): TKRM assigned 895-900/940-945 to Digi and keeps a 2x5 MHz block that includes 893-895/938-940, which Digi leases until 5 Apr 2029; this implies TKRM's remaining block moved next to Vodafone's, but the new edges are not published, so holdings are shown.",
    "sources": [
-    "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-emite-noi-licente-pentru-vodafone-digi-si-telekom-romania-mobile-communications/",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
    ],
-   "blocks": [
+   "holdings": [
     {
-     "op": "unassigned",
-     "dl": [
-      758,
-      773
-     ],
-     "ul": [
-      703,
-      718
-     ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "op": "vodafone",
+     "mhz": 15,
+     "paired": true,
+     "expiry": "2029-04-05",
+     "notes": "2x10 Vodafone + 2x5 TKRM (2x2 of it leased to Digi to 2029)"
+    },
+    {
+     "op": "digi",
+     "mhz": 10,
+     "paired": true,
+     "expiry": "2029-04-05",
+     "notes": "2x5 own + 2x5 from TKRM (895-900/940-945); plus 2x2 leased"
     },
     {
      "op": "orange",
-     "dl": [
-      773,
-      783
-     ],
-     "ul": [
-      718,
-      728
-     ],
-     "earfcn": [
-      9410
-     ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      783,
-      788
-     ],
-     "ul": [
-      728,
-      733
-     ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "mhz": 10,
+     "paired": true,
+     "expiry": "2029-04-05"
     }
    ]
   },
   {
    "group": "1400",
-   "label": "1.4–1.5 GHz (B32)",
+   "label": "1.5 GHz SDL",
    "names": [
-    "B32"
+    "B32",
+    "n75"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "sdl",
    "range": {
     "f": [
-     1452,
-     1496
+     1427,
+     1517
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Orange won all eight 5 MHz blocks (1452-1492 MHz) in 2022; valid 25 years from 1 Jan 2023. Deployed as two 20 MHz carriers (seed).",
    "sources": [
-    "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
    ],
    "blocks": [
     {
@@ -567,23 +363,315 @@
       1452,
       1492
      ],
-     "earfcn": [
-      10020,
-      10220
+     "expiry": "2047-12-31"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe.",
+   "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2012 auction: Vodafone 2x30, TKRM (Cosmote) 2x25, Orange 2x20. On 8 Oct 2025 TKRM assigned 1770-1785/1865-1880 to Digi. Seed layout before the deal: Vodafone 1710-1740, Orange 1740-1760, TKRM 1760-1785 (UL); post-deal re-arrangement edges not published.",
+   "sources": [
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-emite-noi-licente-pentru-vodafone-digi-si-telekom-romania-mobile-communications/",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf",
+    "https://www.ancom.ro/uncategorized/licitatia-de-spectru-s-a-finalizat-cu-succes/",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "holdings": [
+    {
+     "op": "vodafone",
+     "mhz": 40,
+     "paired": true,
+     "expiry": "2029-04-05",
+     "notes": "2x30 Vodafone + 2x10 retained by TKRM"
+    },
+    {
+     "op": "orange",
+     "mhz": 20,
+     "paired": true,
+     "expiry": "2029-04-05"
+    },
+    {
+     "op": "digi",
+     "mhz": 15,
+     "paired": true,
+     "expiry": "2029-04-05",
+     "notes": "1770-1785/1865-1880 from TKRM (ANCOM)"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1990
+    ],
+    "ul": [
+     1850,
+     1910
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS band plan not used in Europe; 1880-1900 MHz is DECT.",
+   "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz unpaired TDD",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignment in the 2 GHz unpaired bands.",
+   "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Four similar ~2x15 MHz licences (2004/2006 tenders), all extended to 31 Dec 2031. Seed layout before the deal: Digi 2110.3-2125.3, TKRM 2125.3-2140.1, Orange 2140.1-2154.9, Vodafone 2154.9-2169.7 (DL). On 8 Oct 2025 TKRM assigned 1940-1950/2130-2140 to Digi. Amounts are approximate (the licences use ~14.8-15 MHz blocks).",
+   "sources": [
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-propune-prelungirea-valabilitatii-licentelor-existente-in-banda-de-2100-mhz/",
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-emite-noi-licente-pentru-vodafone-digi-si-telekom-romania-mobile-communications/",
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
+   ],
+   "holdings": [
+    {
+     "op": "digi",
+     "mhz": 25,
+     "paired": true,
+     "expiry": "2031-12-31",
+     "basis": "approximate",
+     "notes": "~2x15 own + 2x10 from TKRM"
+    },
+    {
+     "op": "vodafone",
+     "mhz": 20,
+     "paired": true,
+     "expiry": "2031-12-31",
+     "basis": "approximate",
+     "notes": "~2x15 Vodafone + ~2x5 retained by TKRM"
+    },
+    {
+     "op": "orange",
+     "mhz": 15,
+     "paired": true,
+     "expiry": "2031-12-31",
+     "basis": "approximate"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for MFCN; 2300-2335 MHz is used for MMDS, PMSE and other applications (ANCOM consulted on broadband use in Oct 2020).",
+   "sources": [
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-consulta-utilizarea-viitoare-a-frecventelor-radio-in-subbanda-2300-2335-mhz/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2600",
+   "label": "2600 MHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2012 auction (TKRM 2x10, Orange 2x20), 2021 procedure (Digi 2530-2550) and 2022 auction (Digi 2550-2570). TKRM's 2500-2510/2620-2630 was assigned to Digi on 8 Oct 2025. All valid to 5 Apr 2029.",
+   "sources": [
+    "https://www.ancom.ro/wp-content/uploads/ancom/links_files/Caiet_de_sarcini_procedura_de_selectie_2022_2.pdf",
+    "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf",
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-emite-noi-licente-pentru-vodafone-digi-si-telekom-romania-mobile-communications/"
+   ],
+   "blocks": [
+    {
+     "op": "digi",
+     "dl": [
+      2620,
+      2630
      ],
-     "notes": "Supplemental downlink (must be aggregated with another carrier) · Deployed as two 20 MHz carriers in a non-contiguous configuration",
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "ul": [
+      2500,
+      2510
+     ],
+     "expiry": "2029-04-05",
+     "notes": "Ex-TKRM, assigned Oct 2025"
+    },
+    {
+     "op": "orange",
+     "dl": [
+      2630,
+      2650
+     ],
+     "ul": [
+      2510,
+      2530
+     ],
+     "expiry": "2029-04-05"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      2650,
+      2670
+     ],
+     "ul": [
+      2530,
+      2550
+     ],
+     "expiry": "2029-04-05",
+     "notes": "2021 procedure"
+    },
+    {
+     "op": "digi",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2029-04-05",
+     "notes": "2022 auction blocks D1-D4"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38/n41)",
+   "label": "2600 MHz TDD (B38)",
    "names": [
     "B38",
+    "n38",
     "n41"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -591,11 +679,13 @@
      2620
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Digi holds 2570-2600 (2012 auction) and 2600-2615 MHz (2021 procedure); 2615-2620 is unassigned.",
    "sources": [
+    "https://www.ancom.ro/wp-content/uploads/ancom/links_files/Caiet_de_sarcini_procedura_de_selectie_2022_2.pdf",
+    "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf",
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
    ],
    "blocks": [
@@ -605,16 +695,8 @@
       2570,
       2615
      ],
-     "earfcn": [
-      37800,
-      37902,
-      37950,
-      38100
-     ],
-     "nrarfcn": [
-      519000
-     ],
-     "notes": "37800 10 MHz and 37950 20 MHz in Huawei areas · 37902 20 MHz and 38100 20 MHz in Nokia and Ericsson areas (contiguous configuration) · n41 40 MHz in some areas"
+     "expiry": "2029-04-05",
+     "notes": "LTE 2x20 MHz / n41 40 MHz in some areas (seed)"
     },
     {
      "op": "unassigned",
@@ -627,101 +709,26 @@
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
-   "status": "assigned",
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
-     3300,
-     3800
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/RO"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "f": [
-      3400,
-      3490
-     ]
-    },
-    {
-     "op": "vf",
-     "f": [
-      3490,
-      3530
-     ],
-     "nrarfcn": [
-      634000
-     ]
-    },
-    {
-     "op": "orange",
-     "f": [
-      3530,
-      3645
-     ],
-     "nrarfcn": [
-      636096,
-      639648
-     ],
-     "notes": "Huawei n78 100MHz on 639648 · Ericsson n78 both 100MHz and 80MHz on 636096"
-    },
-    {
-     "op": "unassigned",
-     "f": [
-      3645,
-      3700
-     ]
-    },
-    {
-     "op": "digi",
-     "f": [
-      3700,
-      3750
-     ],
-     "nrarfcn": [
-      648334
-     ]
-    },
-    {
-     "op": "snr",
-     "f": [
-      3750,
-      3800
-     ]
-    }
-   ]
-  },
-  {
-   "group": "3500",
-   "label": "3.3–4.2 GHz (n78) — in 2026",
-   "names": [
-    "n78"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     3300,
+     3400,
      3800
     ]
    },
    "positions": "verified",
    "future": null,
-   "excludeFromTotal": true,
-   "note": "Band 78 will be refarmed from 2026 onwards.",
+   "excludeFromTotal": false,
+   "note": "2022 auction rights, valid 22 years from 1 Jan 2026 (to 31 Dec 2047). All earlier 3.4-3.8 GHz licences (incl. the 2015 BWA licences, 55 MHz held by others) ended on 31 Dec 2025. 3710-3800 MHz (9 blocks) is unassigned.",
    "sources": [
-    "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+    "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf",
+    "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf",
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/licitatia-de-spectru-din-acest-an-s-a-finalizat/"
    ],
    "blocks": [
     {
@@ -730,15 +737,17 @@
       3400,
       3450
      ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "expiry": "2047-12-31",
+     "notes": "Blocks E01-E05"
     },
     {
-     "op": "vf",
+     "op": "vodafone",
      "f": [
       3450,
       3550
      ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "expiry": "2047-12-31",
+     "notes": "Blocks E06-E15"
     },
     {
      "op": "orange",
@@ -746,7 +755,8 @@
       3550,
       3710
      ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "expiry": "2047-12-31",
+     "notes": "Blocks E16-E31"
     },
     {
      "op": "unassigned",
@@ -754,19 +764,168 @@
       3710,
       3800
      ],
-     "source": "https://www.ancom.ro/uploads/links_files/Pozitionare_blocuri_procedura_selectie_2022_(002).pdf"
+     "notes": "Blocks E32-E40 unsold"
     }
    ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4400,
+     5000
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile.",
+   "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. ANCOM launched a questionnaire (4 Mar 2026) on demand for 26 GHz and 42 GHz in 2026-2028 or 2029-2031, and on 28 GHz for FWA.",
+   "sources": [
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-solicita-opinii-privind-utilizarea-viitoare-a-benzilor-de-26-ghz-si-de-42-ghz-armonizate-la-nivel-unional-respectiv-a-benzii-de-28-ghz/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; ANCOM questionnaire on 42 GHz demand opened 4 Mar 2026.",
+   "sources": [
+    "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-solicita-opinii-privind-utilizarea-viitoare-a-benzilor-de-26-ghz-si-de-42-ghz-armonizate-la-nivel-unional-respectiv-a-benzii-de-28-ghz/"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.ancom.ro/reglementare-ro-10001/spectru-radio-ro/tnabf-3/"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "2022 auction results (ANCOM): Orange EUR 264.6m (700 2x10, 1500 40 MHz, 3.4-3.8 GHz 160 MHz), Vodafone EUR 122.5m (700 2x5, 100 MHz), RCS&RDS EUR 45.5m (2600 2x20, 50 MHz).",
+  "Telekom Romania Mobile: the transaction closed 30 Sep 2025. ANCOM's licence changes (8 Oct 2025) list only the sub-bands assigned to Digi; the positions of TKRM's remaining blocks after the in-band re-arrangement with Vodafone are not published, so 900/1800/2100 MHz are shown as holdings.",
+  "Totals follow ANCOM's 2022 per-operator figures adjusted for the 2025 transfers: sub-1 GHz Orange 2x30, Vodafone 2x35 (2x25 own incl. 700 MHz + 2x10 retained by TKRM), Digi 2x15 (+2x2 leased at 900 MHz, not counted); 1-3 GHz Orange 2x55+40 SDL, Vodafone 2x60, Digi 2x90+45 TDD.",
+  "Licence expiries: 800/900/1800/2600 MHz 5 Apr 2029; 2100 MHz 31 Dec 2031; 700/1500 MHz 31 Dec 2047; 3.4-3.8 GHz 31 Dec 2047."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Exact 900, 1800 and 2100 MHz block edges after the Oct 2025 TKRM transfer and re-arrangement (holdings only).",
+  "800 MHz edges are from the seed only (amounts verified against ANCOM totals).",
+  "Confirmation from ANCOM of TKRM's legal merger into Vodafone (reported by Wikipedia as 1 Jul 2026).",
+  "Carrier EARFCN/NR-ARFCN details beyond seed notes."
+ ],
+ "changes": [
+  "Removed Telekom Romania as a separate operator: its spectrum went partly to Digi (ANCOM, 8 Oct 2025) and the rest stayed in TKRM under Vodafone control.",
+  "Removed the 'SNR Radiocom' and 'VF' operators: their 3.4-3.8 GHz rights ended on 31 Dec 2025; the former 'in 2026' 3.5 GHz entry (2022 auction layout) is now the current one.",
+  "2600 MHz FDD: moved 2500-2510/2620-2630 from Telekom to Digi; confirmed edges from the ANCOM 2022 tender document.",
+  "900, 1800 and 2100 MHz changed from seed blocks to holdings reflecting the transfers.",
+  "RCS & RDS renamed to Digi (Digi Romania S.A.).",
+  "Added the unsold 700 MHz SDL entry and expiry dates; 1500 MHz range widened to 1427-1517 MHz.",
+  "Added not-assigned entries for 600, 850, 1700, 1900, 2000tdd, 2300, 4900, 26g, 40g, 47g."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "ANCOM – block positions from the 2022 selection procedure",
+   "url": "https://www.ancom.ro/wp-content/uploads/2025/11/Pozitionare_blocuri_procedura_selectie_2022_002.pdf"
+  },
+  {
+   "title": "ANCOM – 2022 auction results presentation",
+   "url": "https://www.ancom.ro/wp-content/uploads/2026/04/rezultate-licitatie-spectru-2022.pdf"
+  },
+  {
+   "title": "ANCOM – 2022 auction concluded (press release)",
+   "url": "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/licitatia-de-spectru-din-acest-an-s-a-finalizat/"
+  },
+  {
+   "title": "ANCOM – 2022 tender documents (current 2600/3400-3800 MHz licensing tables)",
+   "url": "https://www.ancom.ro/wp-content/uploads/ancom/links_files/Caiet_de_sarcini_procedura_de_selectie_2022_2.pdf"
+  },
+  {
+   "title": "ANCOM – new licences for Vodafone, Digi and Telekom Romania Mobile (8 Oct 2025)",
+   "url": "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-emite-noi-licente-pentru-vodafone-digi-si-telekom-romania-mobile-communications/"
+  },
+  {
+   "title": "ANCOM – 2012 multiband auction results",
+   "url": "https://www.ancom.ro/uncategorized/licitatia-de-spectru-s-a-finalizat-cu-succes/"
+  },
+  {
+   "title": "ANCOM – 2100 MHz licence extension to 2031",
+   "url": "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-propune-prelungirea-valabilitatii-licentelor-existente-in-banda-de-2100-mhz/"
+  },
+  {
+   "title": "ANCOM – questionnaire on 26/42/28 GHz (Mar 2026)",
+   "url": "https://www.ancom.ro/despre-noi/media/comunicate-de-presa/ancom-solicita-opinii-privind-utilizarea-viitoare-a-benzilor-de-26-ghz-si-de-42-ghz-armonizate-la-nivel-unional-respectiv-a-benzii-de-28-ghz/"
+  },
+  {
+   "title": "Wikipedia – Telekom Romania Mobile",
+   "url": "https://en.wikipedia.org/wiki/Telekom_Romania_Mobile"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (seed, LGPL-3.0)",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]
