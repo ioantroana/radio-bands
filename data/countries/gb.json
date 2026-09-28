@@ -2,112 +2,190 @@
  "code": "gb",
  "name": "United Kingdom",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Three national MNOs since the Vodafone–Three merger (VodafoneThree, 31 May 2025): EE (BT), O2 (Virgin Media O2) and VodafoneThree. Merger remedies moved 78.8 MHz from Vodafone to O2 in stages (2025–2031); Ofcom's 2025 mmWave auction gave each MNO 800 MHz at 26 GHz and 1 GHz at 40 GHz.",
  "operators": [
   {
-   "id": "o2",
-   "name": "O2 UK",
-   "color": "#000066",
+   "id": "ee",
+   "name": "EE",
+   "legal": "EE Limited (BT Group)",
+   "color": "#007b85",
    "aliases": [
-    "O2",
-    "VMO2"
+    "BT",
+    "EE (BT)",
+    "MBNL"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Formed 2010 from Orange UK + T-Mobile UK; owned by BT Group since 2016. Also carries the Emergency Services Network (ESN) RAN."
   },
   {
-   "id": "vodafone",
-   "name": "Vodafone UK",
+   "id": "o2",
+   "name": "O2",
+   "legal": "Telefónica UK Limited (Virgin Media O2)",
+   "color": "#0019a5",
+   "aliases": [
+    "O2 UK",
+    "VMO2",
+    "Virgin Media O2",
+    "Telefonica UK"
+   ],
+   "kind": "mno",
+   "notes": "Virgin Media O2 JV (Liberty Global/Telefónica) since June 2021. Acquired 78.8 MHz from Vodafone (VodafoneThree) for £343m as part of the VodafoneThree merger package (announced 30 Jun 2025; Ofcom consent 3 Jul 2025): 20 MHz 1400 SDL, 2×9.4 MHz 2100, 20 MHz 2.6 GHz TDD, 20 MHz 3.4 GHz, transferred in stages 2025–2031 (concurrent then outright transfers)."
+  },
+  {
+   "id": "vodafonethree",
+   "name": "VodafoneThree",
+   "legal": "Vodafone Limited / Hutchison 3G UK Limited / UK Broadband Limited (VodafoneThree Holdings)",
    "color": "#e60000",
    "aliases": [
     "Vodafone",
-    "VF",
-    "VF UK"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "three",
-   "name": "Three UK",
-   "color": "#ff7c69",
-   "aliases": [
-    "3 UK",
+    "Vodafone UK",
     "Three",
-    "3"
+    "Three UK",
+    "3 UK",
+    "H3G",
+    "VF-3",
+    "VodafoneThree"
    ],
-   "kind": "mno"
-  },
-  {
-   "id": "vf-3",
-   "name": "Vodafone-Three",
-   "color": "#e0006c",
-   "aliases": [
-    "VF-3"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "bt",
-   "name": "EE",
-   "color": "#007b85",
-   "aliases": [
-    "BT"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "esn",
-   "name": "ESN",
-   "color": "#c63847",
-   "aliases": [
-    "Emergency Services Network",
-    "Emergency Services Network (EE)",
-    "ESN (EE)"
-   ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Merger of Vodafone UK and Three UK completed 31 May 2025 (Vodafone 51% / CK Hutchison 49%). Licences remain in the names of Vodafone Ltd, Hutchison 3G UK Ltd and UK Broadband Ltd; both Vodafone and Three brands continue. Vodafone's 1400/2100/2.6 TDD/3.4 GHz spectrum partly transferred to O2 as a merger commitment."
   },
   {
    "id": "sal",
-   "name": "SAL",
+   "name": "Shared Access",
    "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "aliases": [
+    "SAL",
+    "Ofcom Shared Access Licence"
+   ],
+   "kind": "other",
+   "notes": "Ofcom Shared Access licences (local low/medium power, first-come-first-served)."
   },
   {
-   "id": "mod",
-   "name": "MoD",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "id": "frmcs",
+   "name": "Rail (FRMCS)",
+   "color": "#6b7280",
+   "aliases": [
+    "Network Rail"
+   ],
+   "kind": "other",
+   "notes": "Future FRMCS operational rail licences (1900–1910 MHz) from 4 Apr 2029."
   },
   {
-   "id": "private",
-   "name": "Private",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "id": "esn",
+   "name": "ESN (Home Office)",
+   "color": "#8d6e63",
+   "aliases": [
+    "Emergency Services Network",
+    "ESMCP"
+   ],
+   "kind": "government",
+   "notes": "Emergency Services Network gateway use of 1910–1915 MHz (GB) decided by Ofcom in 2025."
   }
  ],
  "bands": [
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1)",
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
    "names": [
-    "B1",
-    "n1"
+    "B28",
+    "n28"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     758,
+     788
     ],
     "ul": [
-     1920,
-     1980
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Ofcom 2021 auction; licences indefinite. Centre gap 733–758 MHz; 738–758 MHz SDL shown separately.",
+   "sources": [
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/221959/SA-700-LICENCE-Telefonica-1248094.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0031/221899/SA-700-LICENCE-H3G-1248067-18-05-21.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/221965/SA-700-LICENCE-EE-1248065.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "o2",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "earfcn": [
+      9260
+     ],
+     "nrarfcn": [
+      152210,
+      152690
+     ],
+     "notes": "Won in 2021 auction. NR first, LTE in some areas."
+    },
+    {
+     "op": "vodafonethree",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "nrarfcn": [
+      154570
+     ],
+     "notes": "Won by Three in 2021 auction. Post-merger seen as MOCN (Vodafone+Three PLMNs)."
+    },
+    {
+     "op": "ee",
+     "dl": [
+      778,
+      788
+     ],
+     "ul": [
+      723,
+      733
+     ],
+     "earfcn": [
+      9460
+     ],
+     "nrarfcn": [
+      156510
+     ],
+     "notes": "Won in 2021 auction. Mainly n28 NR."
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz SDL (B67)",
+   "names": [
+    "B67",
+    "n28 SDL"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     738,
+     758
     ]
    },
    "positions": "verified",
@@ -115,588 +193,356 @@
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/249137/SA-2100-LICENCE-Telefonica-UK-1268476-11-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/249145/SA-2100-LICENCE-Vodafone-1268478-15-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/221965/SA-700-LICENCE-EE-1248065.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
    ],
    "blocks": [
     {
-     "op": "three",
-     "dl": [
-      2110.3,
-      2114.9
+     "op": "ee",
+     "f": [
+      738,
+      758
      ],
-     "ul": [
-      1920.3,
-      1924.9
-     ],
-     "earfcn": [
-      76
-     ],
-     "nrarfcn": [
-      423610
-     ],
-     "notes": "EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with upper block",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    },
-    {
-     "op": "three",
-     "dl": [
-      2114.9,
-      2124.9
-     ],
-     "ul": [
-      1924.9,
-      1934.9
-     ],
-     "earfcn": [
-      99,
-      98,
-      97,
-      76
-     ],
-     "nrarfcn": [
-      424130,
-      423610
-     ],
-     "notes": "UARFCN 10588 is being refarmed for B1 LTE. · EARFCN 98 is used in areas where low-band priorities have been adjusted · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with lower block · NRARFCN 424130 starting to be used for n1 DSS deployments as of early 2023.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      2124.9,
-      2134.9
-     ],
-     "ul": [
-      1934.9,
-      1944.9
-     ],
-     "earfcn": [
-      199
-     ],
-     "nrarfcn": [
-      425980
-     ],
-     "notes": "B1 3G UMTS is being removed in favour of B1 LTE. 5G NR operating as DSS n1.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/249137/SA-2100-LICENCE-Telefonica-UK-1268476-11-11-22.pdf"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      2134.9,
-      2149.7
-     ],
-     "ul": [
-      1944.9,
-      1959.7
-     ],
-     "earfcn": [
-      323
-     ],
-     "nrarfcn": [
-      427470,
-      428190
-     ],
-     "notes": "5G NR operating as DSS n1. · For 3G: -687 means max 10 MHz B1 LTE; -712 means max 5 MHz; -736 means no LTE B1. · 15 MHz LTE B1 is in use due to LTE's 0.5 MHz guard on either side of the carrier, meaning that there is only 0.3 MHz of guard spectrum between Vodafone and EE's spectrum.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/249145/SA-2100-LICENCE-Vodafone-1268478-15-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2149.7,
-      2154.7
-     ],
-     "ul": [
-      1959.7,
-      1964.7
-     ],
-     "earfcn": [
-      497
-     ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2154.7,
-      2169.7
-     ],
-     "ul": [
-      1964.7,
-      1979.7
-     ],
-     "earfcn": [
-      497,
-      522
-     ],
-     "nrarfcn": [
-      431810,
-      433250,
-      432530
-     ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier · 5G NR operating primarily as DSS n1, with some deployments as pure NR. · Was used for B1 3G UMTS, but this has been refarmed to B1 LTE.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+     "notes": "Won by EE in 2021 auction (only bidder for SDL). Little or no known use."
     }
    ]
   },
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1) — from 2025-08-01",
+   "group": "800",
+   "label": "800 MHz (B20)",
    "names": [
-    "B1",
-    "n1"
+    "B20",
+    "n20"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     791,
+     821
     ],
     "ul": [
-     1920,
-     1980
+     832,
+     862
     ]
    },
    "positions": "verified",
-   "future": {
-    "from": "2025-08-01",
-    "label": "from 2025-08-01"
-   },
-   "excludeFromTotal": true,
+   "future": null,
+   "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf",
-    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0035/83897/SA-800-LICENCE-H3G-0943535.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/83872/SA-800-LICENCE-Telefonica-UK-0943537.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
    ],
    "blocks": [
     {
-     "op": "vf-3",
+     "op": "vodafonethree",
      "dl": [
-      2110.3,
-      2114.9
+      791,
+      796
      ],
      "ul": [
-      1920.3,
-      1924.9
+      832,
+      837
      ],
      "earfcn": [
-      76
+      6175
      ],
-     "nrarfcn": [
-      423610
-     ],
-     "notes": "Vodafone/Three UK · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with upper block",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
+     "notes": "Ex-Three (H3G) 2×5 MHz from 2013 auction; MOCN post-merger."
     },
     {
-     "op": "vf-3",
+     "op": "ee",
      "dl": [
-      2114.9,
-      2124.9
+      796,
+      801
      ],
      "ul": [
-      1924.9,
-      1934.9
+      837,
+      842
      ],
      "earfcn": [
-      99,
-      98,
-      97,
-      76
+      6225
+     ]
+    },
+    {
+     "op": "vodafonethree",
+     "dl": [
+      801,
+      811
      ],
-     "nrarfcn": [
-      424130,
-      423610
+     "ul": [
+      842,
+      852
      ],
-     "notes": "Vodafone/Three UK · UARFCN 10588 is being refarmed for B1 LTE. · EARFCN 98 is used in areas where low-band priorities have been adjusted · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with lower block · NRARFCN 424130 starting to be used for n1 DSS deployments as of early 2023.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
+     "earfcn": [
+      6300
+     ],
+     "notes": "Ex-Vodafone 2×10 MHz from 2013 auction."
     },
     {
      "op": "o2",
      "dl": [
-      2124.9,
-      2134.9
+      811,
+      821
      ],
      "ul": [
-      1934.9,
-      1944.9
-     ],
-     "notes": "O2 UK / Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      2134.9,
-      2149.7
-     ],
-     "ul": [
-      1944.9,
-      1959.7
-     ],
-     "notes": "O2 UK / Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2149.7,
-      2154.7
-     ],
-     "ul": [
-      1959.7,
-      1964.7
+      852,
+      862
      ],
      "earfcn": [
-      497
+      6400
      ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2154.7,
-      2169.7
-     ],
-     "ul": [
-      1964.7,
-      1979.7
-     ],
-     "earfcn": [
-      497,
-      522
-     ],
-     "nrarfcn": [
-      431810,
-      433250,
-      432530
-     ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier · 5G NR operating primarily as DSS n1, with some deployments as pure NR. · Was used for B1 3G UMTS, but this has been refarmed to B1 LTE.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+     "notes": "Carries 98% indoor coverage obligation (2013 auction)."
     }
    ]
   },
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1) — from 2026-01-01",
+   "group": "850",
+   "label": "850 MHz (B5)",
    "names": [
-    "B1",
-    "n1"
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not harmonised in Europe; 870–876/915–921 MHz used for SRD/RFID and rail (GSM-R adjacent). No mobile licences.",
+   "sources": [
+    "https://static.ofcom.org.uk/static/spectrum/map.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "UK 470–694 MHz remains allocated to DTT and PMSE; the 600 MHz band plan (B71) is not used in Europe.",
+   "sources": [
+    "https://static.ofcom.org.uk/static/spectrum/map.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8/n8)",
+   "names": [
+    "B8",
+    "n8"
    ],
    "status": "assigned",
    "duplex": "fdd",
    "range": {
     "dl": [
-     2110,
-     2170
+     925,
+     960
     ],
     "ul": [
-     1920,
-     1980
+     880,
+     915
     ]
    },
    "positions": "verified",
-   "future": {
-    "from": "2026-01-01",
-    "label": "from 2026-01-01"
-   },
-   "excludeFromTotal": true,
-   "note": "",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Defragmented layout (Vodafone lower half, O2 upper half) took effect across large parts of the UK from 1 July 2024. 925.0–925.1/959.9–960.0 MHz edge guards.",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf",
-    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+    "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-telefonica-vodafone-1351815.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
    ],
    "blocks": [
     {
-     "op": "vf-3",
+     "op": "vodafonethree",
      "dl": [
-      2110.3,
-      2114.9
+      925.1,
+      942.5
      ],
      "ul": [
-      1920.3,
-      1924.9
+      880.1,
+      897.5
      ],
      "earfcn": [
-      76
+      3500,
+      3501
      ],
      "nrarfcn": [
-      423610
+      188450
      ],
-     "notes": "Vodafone/Three UK · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with upper block",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    },
-    {
-     "op": "vf-3",
-     "dl": [
-      2114.9,
-      2124.9
-     ],
-     "ul": [
-      1924.9,
-      1934.9
-     ],
-     "earfcn": [
-      99,
-      98,
-      97,
-      76
-     ],
-     "nrarfcn": [
-      424130,
-      423610
-     ],
-     "notes": "Vodafone/Three UK · UARFCN 10588 is being refarmed for B1 LTE. · EARFCN 98 is used in areas where low-band priorities have been adjusted · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with lower block · NRARFCN 424130 starting to be used for n1 DSS deployments as of early 2023.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    },
-    {
-     "op": "vf-3",
-     "dl": [
-      2124.9,
-      2130.3
-     ],
-     "ul": [
-      1934.9,
-      1940.3
-     ],
-     "notes": "Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+     "notes": "Vodafone's 2×17.4 MHz, contiguous after the Vodafone/O2 900 MHz defragmentation (from 1 July 2024). 10 MHz LTE ± NR plus GSM ch. 1–22; 15 MHz NR on the London Underground."
     },
     {
      "op": "o2",
      "dl": [
-      2130.3,
-      2134.9
+      942.5,
+      959.9
      ],
      "ul": [
-      1940.3,
-      1944.9
-     ],
-     "notes": "O2 UK / Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      2134.9,
-      2139.7
-     ],
-     "ul": [
-      1944.9,
-      1949.7
-     ],
-     "notes": "O2 UK / VodafoneThree",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      2139.7,
-      2149.7
-     ],
-     "ul": [
-      1949.7,
-      1959.7
-     ],
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2149.7,
-      2154.7
-     ],
-     "ul": [
-      1959.7,
-      1964.7
+      897.5,
+      914.9
      ],
      "earfcn": [
-      497
-     ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2154.7,
-      2169.7
-     ],
-     "ul": [
-      1964.7,
-      1979.7
-     ],
-     "earfcn": [
-      497,
-      522
+      3725
      ],
      "nrarfcn": [
-      431810,
-      433250,
-      432530
+      190590
      ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier · 5G NR operating primarily as DSS n1, with some deployments as pure NR. · Was used for B1 3G UMTS, but this has been refarmed to B1 LTE.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+     "notes": "O2's 2×17.4 MHz after the defragmentation; up to 15 MHz NR plus 2.4 MHz GSM."
     }
    ]
   },
   {
-   "group": "2100",
-   "label": "2100 MHz (B1/n1) — from 2031-09-30",
+   "group": "1400",
+   "label": "1.4 GHz SDL (B32/n75)",
    "names": [
-    "B1",
-    "n1"
+    "B32",
+    "n75"
+   ],
+   "status": "partially-assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1452,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "1427–1452 MHz (lower extension) is not available for mobile in the UK.",
+   "sources": [
+    "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/sa-1452-1472-licence-telefonica-1392084-1.pdf?v=401768",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum",
+    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
+    "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/1.4-ghz-band-available-for-mobile",
+    "https://bratby.law/ofcom-1-4-ghz-spectrum-auction-mobile/"
+   ],
+   "blocks": [
+    {
+     "op": "o2",
+     "f": [
+      1452,
+      1472
+     ],
+     "earfcn": [
+      10020
+     ],
+     "nrarfcn": [
+      291650
+     ],
+     "notes": "Ex-Vodafone (acquired 2015). Concurrent total transfer: licence held jointly by Vodafone Ltd and Telefónica UK Ltd from 1 Aug 2025 to 30 Sep 2027, outright to Telefónica from 30 Sep 2027. O2 already uses it widely (LTE 10020 / NR 291650).",
+     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/sa-1452-1472-licence-telefonica-1392084-1.pdf?v=401768"
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      1472,
+      1492
+     ],
+     "earfcn": [
+      10170,
+      10195,
+      10220
+     ],
+     "notes": "Ex-Three (acquired 2015). MOCN use post-merger.",
+     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1492,
+      1517
+     ],
+     "notes": "Upper 1.4 GHz extension band: Ofcom statement 11 Jun 2026 to auction 25 MHz SDL (single lot, sealed bid, £5m reserve); applications mid-Jan 2027, award by end-Feb 2027, no use before 11 Jun 2027.",
+     "source": "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/1.4-ghz-band-available-for-mobile"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz SDL (B32/n75) — from 30 Sep 2027",
+   "names": [
+    "B32",
+    "n75"
    ],
    "status": "assigned",
-   "duplex": "fdd",
+   "duplex": "sdl",
    "range": {
-    "dl": [
-     2110,
-     2170
-    ],
-    "ul": [
-     1920,
-     1980
+    "f": [
+     1452,
+     1517
     ]
    },
    "positions": "verified",
    "future": {
-    "from": "2031-09-30",
-    "label": "from 2031-09-30"
+    "from": "2027-09-30",
+    "label": "from 30 Sep 2027"
    },
    "excludeFromTotal": true,
    "note": "",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum",
     "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+    "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/1.4-ghz-band-available-for-mobile",
+    "https://bratby.law/ofcom-1-4-ghz-spectrum-auction-mobile/"
    ],
    "blocks": [
     {
-     "op": "vf-3",
-     "dl": [
-      2110.3,
-      2114.9
-     ],
-     "ul": [
-      1920.3,
-      1924.9
-     ],
-     "earfcn": [
-      76
-     ],
-     "nrarfcn": [
-      423610
-     ],
-     "notes": "Vodafone/Three UK · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with upper block",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    },
-    {
-     "op": "vf-3",
-     "dl": [
-      2114.9,
-      2124.9
-     ],
-     "ul": [
-      1924.9,
-      1934.9
-     ],
-     "earfcn": [
-      99,
-      98,
-      97,
-      76
-     ],
-     "nrarfcn": [
-      424130,
-      423610
-     ],
-     "notes": "Vodafone/Three UK · UARFCN 10588 is being refarmed for B1 LTE. · EARFCN 98 is used in areas where low-band priorities have been adjusted · EARFCN 76 and NRARFCN 423610 for 15 MHz carrier in conjunction with lower block · NRARFCN 424130 starting to be used for n1 DSS deployments as of early 2023.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    },
-    {
-     "op": "vf-3",
-     "dl": [
-      2124.9,
-      2130.3
-     ],
-     "ul": [
-      1934.9,
-      1940.3
-     ],
-     "notes": "Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
      "op": "o2",
-     "dl": [
-      2130.3,
-      2139.7
+     "f": [
+      1452,
+      1472
      ],
-     "ul": [
-      1940.3,
-      1949.7
-     ],
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+     "notes": "Outright transfer to Telefónica UK completes."
     },
     {
-     "op": "o2",
-     "dl": [
-      2139.7,
-      2149.7
-     ],
-     "ul": [
-      1949.7,
-      1959.7
-     ],
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+     "op": "vodafonethree",
+     "f": [
+      1472,
+      1492
+     ]
     },
     {
-     "op": "bt",
-     "dl": [
-      2149.7,
-      2154.7
+     "op": "unassigned",
+     "f": [
+      1492,
+      1517
      ],
-     "ul": [
-      1959.7,
-      1964.7
-     ],
-     "earfcn": [
-      497
-     ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2154.7,
-      2169.7
-     ],
-     "ul": [
-      1964.7,
-      1979.7
-     ],
-     "earfcn": [
-      497,
-      522
-     ],
-     "nrarfcn": [
-      431810,
-      433250,
-      432530
-     ],
-     "notes": "Some LTE/NR deployments utilise a 20 MHz carrier · 5G NR operating primarily as DSS n1, with some deployments as pure NR. · Was used for B1 3G UMTS, but this has been refarmed to B1 LTE.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
+     "notes": "To be auctioned Jan–Feb 2027 (winner unknown)."
     }
    ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B66",
+    "B4"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS band plan not used in Europe; 1710–1785 MHz is the B3 uplink.",
+   "sources": [
+    "https://static.ofcom.org.uk/static/spectrum/map.html"
+   ],
+   "blocks": []
   },
   {
    "group": "1800",
@@ -724,7 +570,8 @@
    "sources": [
     "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/84045/Cellular-LICENCE-Telefonica-UK-0249663.pdf",
     "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/249130/Cellular-LICENCE-EE-0249666-09-11-22.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/shared-access"
+    "https://www.ofcom.org.uk/spectrum/frequencies/shared-access",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
    ],
    "blocks": [
     {
@@ -740,104 +587,36 @@
      "earfcn": [
       1226,
       1228
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/84045/Cellular-LICENCE-Telefonica-UK-0249663.pdf"
+     ]
     },
     {
-     "op": "vf-3",
+     "op": "vodafonethree",
      "dl": [
       1810.9,
-      1811.3
+      1831.7
      ],
      "ul": [
       1715.9,
-      1716.3
-     ],
-     "notes": "Unused"
-    },
-    {
-     "op": "vf-3",
-     "dl": [
-      1811.3,
-      1831.3
-     ],
-     "ul": [
-      1716.3,
-      1736.3
+      1736.7
      ],
      "earfcn": [
       1363
      ],
-     "notes": "Post-merger 20 MHz deployment for 234-20 (3 UK). · Some trial sites use MOCN, with both Vodafone and 3 UK broadcasting B3 on this spectrum."
+     "notes": "Vodafone 2×5.8 MHz + Three 2×15 MHz (ex-EE divestment 2013) now combined; 20 MHz LTE (EARFCN 1363) incl. MOCN."
     },
     {
-     "op": "vf-3",
-     "dl": [
-      1831.3,
-      1831.7
-     ],
-     "ul": [
-      1736.3,
-      1736.7
-     ],
-     "notes": "Unused"
-    },
-    {
-     "op": "bt",
+     "op": "ee",
      "dl": [
       1831.7,
-      1836.7
-     ],
-     "ul": [
-      1736.7,
-      1741.7
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/249130/Cellular-LICENCE-EE-0249666-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      1836.7,
-      1856.7
-     ],
-     "ul": [
-      1741.7,
-      1761.7
-     ],
-     "earfcn": [
-      1617
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/249130/Cellular-LICENCE-EE-0249666-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      1856.7,
-      1866.7
-     ],
-     "ul": [
-      1761.7,
-      1771.7
-     ],
-     "earfcn": [
-      1761,
-      1791,
-      1815
-     ],
-     "notes": "EARFCN 1791 (small cell deployment) and 1788 utilises this block, and half of next block. · EARFCN 1815 split across this and next block. · Used in conjuction with the next spectrum block for rural n3 20 MHz deployment.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/249130/Cellular-LICENCE-EE-0249666-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      1866.7,
       1876.7
      ],
      "ul": [
-      1771.7,
+      1736.7,
       1781.7
      ],
      "earfcn": [
+      1617,
+      1761,
       1788,
       1791,
       1815
@@ -847,8 +626,7 @@
       374210,
       374280
      ],
-     "notes": "EARFCN 1791 (small cell deployment) and 1788 utilises first half of this block, and all of previous block. · EARFCN 1815 split across this and previous block. · Used on its own for EE's n3 10 MHz deployment, or in conjuction with the previous block for rural n3 20 MHz deployment.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/249130/Cellular-LICENCE-EE-0249666-09-11-22.pdf"
+     "notes": "2×45 MHz: 5 MHz GSM, up to 40 MHz LTE/NR."
     },
     {
      "op": "sal",
@@ -860,14 +638,377 @@
       1781.7,
       1785
      ],
-     "notes": "Shared Access Licence · Available for licensing by private operators through Ofcom's Shared Access License programme. · Suitable for private 3 MHz FDD LTE/NR deployments (like my own!). · Used by Telet Research for private LTE and multi-operator neutral host deployments.",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/shared-access"
+     "notes": "Ofcom Shared Access (low power, local), e.g. private LTE."
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz AWS-4 (B2/B25/n70)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "range": null,
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS/AWS-4 band plans not used in Europe. 1980–2010/2170–2200 MHz is the 2 GHz MSS band (Inmarsat/EchoStar, EU-wide MSS licences), not mobile IMT.",
+   "sources": [
+    "https://static.ofcom.org.uk/static/spectrum/map.html"
+   ],
+   "blocks": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "Unpaired 2100 MHz TDD (B33/B39)",
+   "names": [
+    "B33",
+    "B39"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1899.9,
+     1920
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unused since 3G launch. Ofcom (27 Mar 2024) varied the licences to remove 1899.9–1920 MHz with effect from 3 Apr 2029.",
+   "sources": [
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/249137/SA-2100-LICENCE-Telefonica-UK-1268476-11-11-22.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf",
+    "https://www.ofcom.org.uk/spectrum/frequencies/future-use-of-the-unpaired-2100-MHz-spectrum",
+    "https://www.ofcom.org.uk/spectrum/frequencies/future-authorisation-of-the-19001920-mhz-band",
+    "https://www.ispreview.co.uk/index.php/2024/06/ofcom-to-revoke-all-licences-for-unpaired-2100mhz-uk-mobile-band-by-2029.html"
+   ],
+   "blocks": [
+    {
+     "op": "ee",
+     "f": [
+      1899.9,
+      1909.9
+     ],
+     "notes": "Held under EE's 2100 MHz licence (ex-Orange + T-Mobile 3G TDD lots). Unused commercially."
+    },
+    {
+     "op": "o2",
+     "f": [
+      1909.9,
+      1914.9
+     ],
+     "notes": "Unused."
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      1914.9,
+      1920
+     ],
+     "notes": "Held under H3G's 2100 MHz licence. Unused."
+    }
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900–1920 MHz — from 4 Apr 2029",
+   "names": [
+    "n39"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     1899.9,
+     1920
+    ]
+   },
+   "positions": "unverified",
+   "future": {
+    "from": "2029-04-04",
+    "label": "from 4 Apr 2029"
+   },
+   "excludeFromTotal": true,
+   "note": "Ofcom statement (Oct 2025) on future authorisation of 1900–1920 MHz; edges from trade press summary.",
+   "sources": [
+    "https://www.ofcom.org.uk/spectrum/frequencies/future-authorisation-of-the-19001920-mhz-band",
+    "https://www.ispreview.co.uk/index.php/2024/06/ofcom-to-revoke-all-licences-for-unpaired-2100mhz-uk-mobile-band-by-2029.html"
+   ],
+   "blocks": [
+    {
+     "op": "frmcs",
+     "f": [
+      1900,
+      1910
+     ],
+     "notes": "FRMCS operational rail communications licences (GB fee £1.458m/yr; NI £42k/yr), from 4 Apr 2029."
+    },
+    {
+     "op": "esn",
+     "f": [
+      1910,
+      1915
+     ],
+     "notes": "ESN vehicle gateways (Great Britain)."
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1915,
+      1920
+     ],
+     "notes": "Not yet authorised (guard vs 1920 MHz mobile)."
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Layout after the VodafoneThree/O2 2100 MHz swap and retune (Nov 2025 – early 2026): VodafoneThree 2×20, O2 2×19.4, EE 2×20 MHz. 2110.0–2110.3 and 2169.7–2170.0 MHz are guard.",
+   "sources": [
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf",
+    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum",
+    "https://www.rcrwireless.com/20250630/5g/virgin-media-o2-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "vodafonethree",
+     "dl": [
+      2110.3,
+      2130.3
+     ],
+     "ul": [
+      1920.3,
+      1940.3
+     ],
+     "earfcn": [
+      76,
+      97,
+      98,
+      99
+     ],
+     "nrarfcn": [
+      423610,
+      424130
+     ],
+     "notes": "Three's 2×14.6 MHz plus 2×5.4 MHz from O2 (2124.9–2130.3) after the Nov 2025 retune; 20 MHz LTE ± NR.",
+     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      2130.3,
+      2139.7
+     ],
+     "ul": [
+      1940.3,
+      1949.7
+     ],
+     "notes": "Held jointly by Telefónica UK and VodafoneThree (concurrent transfer) until the outright transfer to Telefónica on 30 Sep 2031; used by O2.",
+     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+    },
+    {
+     "op": "o2",
+     "dl": [
+      2139.7,
+      2149.7
+     ],
+     "ul": [
+      1949.7,
+      1959.7
+     ],
+     "notes": "O2 (outright). O2 runs 19.4 MHz 2130.3–2149.7 (LTE).",
+     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+    },
+    {
+     "op": "ee",
+     "dl": [
+      2149.7,
+      2154.7
+     ],
+     "ul": [
+      1959.7,
+      1964.7
+     ],
+     "earfcn": [
+      497
+     ]
+    },
+    {
+     "op": "ee",
+     "dl": [
+      2154.7,
+      2169.7
+     ],
+     "ul": [
+      1964.7,
+      1979.7
+     ],
+     "earfcn": [
+      497,
+      522
+     ],
+     "nrarfcn": [
+      431810,
+      432530,
+      433250
+     ],
+     "notes": "EE runs 20 MHz NR (2149.7–2169.7)."
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1/n1) — from 30 Sep 2031",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": {
+    "from": "2031-09-30",
+    "label": "from 30 Sep 2031"
+   },
+   "excludeFromTotal": true,
+   "note": "",
+   "sources": [
+    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "vodafonethree",
+     "dl": [
+      2110.3,
+      2130.3
+     ],
+     "ul": [
+      1920.3,
+      1940.3
+     ]
+    },
+    {
+     "op": "o2",
+     "dl": [
+      2130.3,
+      2149.7
+     ],
+     "ul": [
+      1940.3,
+      1959.7
+     ],
+     "notes": "Outright transfer of 2130.3–2139.7 MHz to Telefónica UK completes."
+    },
+    {
+     "op": "ee",
+     "dl": [
+      2149.7,
+      2169.7
+     ],
+     "ul": [
+      1959.7,
+      1979.7
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40/n40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/114267/SA-2.3-GHz-LICENCE-Telefonica-1151571.pdf",
+    "https://www.ofcom.org.uk/spectrum/frequencies/shared-access",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      2300,
+      2350
+     ],
+     "notes": "MoD / public-sector use (davwheat notes 2340–2350 MHz for ESN air-to-ground; not independently verified)."
+    },
+    {
+     "op": "o2",
+     "f": [
+      2350,
+      2390
+     ],
+     "earfcn": [
+      39250,
+      39448
+     ],
+     "notes": "Won in 2018 auction. 2×20 MHz LTE carriers; Great Britain only (not Northern Ireland)."
+    },
+    {
+     "op": "sal",
+     "f": [
+      2390,
+      2400
+     ],
+     "notes": "Ofcom Shared Access (low power)."
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7/n7)",
+   "label": "2.6 GHz FDD (B7/n7)",
    "names": [
     "B7",
     "n7"
@@ -891,11 +1032,12 @@
    "sources": [
     "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf",
     "https://www.ofcom.org.uk/__data/assets/pdf_file/0020/249131/SA-2.6-GHz-LICENCE-EE-1191194-09-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf"
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
    ],
    "blocks": [
     {
-     "op": "vodafone",
+     "op": "vodafonethree",
      "dl": [
       2620,
       2640
@@ -907,10 +1049,10 @@
      "earfcn": [
       2850
      ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf"
+     "notes": "Ex-Vodafone (2013 auction)."
     },
     {
-     "op": "bt",
+     "op": "ee",
      "dl": [
       2640,
       2655
@@ -920,572 +1062,38 @@
       2535
      ],
      "earfcn": [
-      3029,
-      3026
+      3026,
+      3029
      ],
      "nrarfcn": [
       529490
      ],
-     "notes": "Tertiary B7 carrier, accessed via BT's ownership of EE · 3026 used for EE B7 on small cells. · In use for initial EE n7 deployment at 15 MHz, to increase to 30 MHz then 50 MHz in the future.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0020/249131/SA-2.6-GHz-LICENCE-EE-1191194-09-11-22.pdf"
+     "notes": "Ex-BT 2×15 MHz (2013), EE since BT acquisition."
     },
     {
-     "op": "bt",
+     "op": "ee",
      "dl": [
       2655,
-      2670
-     ],
-     "ul": [
-      2535,
-      2550
-     ],
-     "earfcn": [
-      3179
-     ],
-     "notes": "Secondary B7 carrier",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      2670,
       2690
      ],
      "ul": [
-      2550,
+      2535,
       2570
      ],
      "earfcn": [
+      3179,
       3350
      ],
-     "notes": "Primary B7 carrier",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8/n8)",
-   "names": [
-    "B8",
-    "n8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-vodafone-0249664.pdf",
-    "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence--telefonica-uk-0249663.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "dl": [
-      925.1,
-      930.1
-     ],
-     "ul": [
-      880.1,
-      885.1
-     ],
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-vodafone-0249664.pdf"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      930.1,
-      935.1
-     ],
-     "ul": [
-      885.1,
-      890.1
-     ],
-     "notes": "Standard 3G 900 MHz band",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-vodafone-0249664.pdf"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      935.1,
-      937.5
-     ],
-     "ul": [
-      890.1,
-      892.5
-     ],
-     "notes": "Standard 2G 900 MHz band · Some 4G deployments overlap into this spectrum, such as EARFCN 3610",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-vodafone-0249664.pdf"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      937.5,
-      947.5
-     ],
-     "ul": [
-      892.5,
-      902.5
-     ],
-     "earfcn": [
-      3610,
-      3620,
-      3623,
-      3624,
-      3625
-     ],
-     "nrarfcn": [
-      188450
-     ],
-     "notes": "2G/3G is being refarmed into 4G, with 3G moving to the lower 5 MHz block and 2G to the 2.4 MHz block · Many different 4G EARFCNs to cover the same spectrum · Also now being used for Vodafone's private 5G SA network",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-vodafone-0249664.pdf"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      947.5,
-      957.5
-     ],
-     "ul": [
-      902.5,
-      912.5
-     ],
-     "earfcn": [
-      3725
-     ],
-     "nrarfcn": [
-      190590
-     ],
-     "notes": "3G is being refarmed into 4G, with 3G moving to the lower 5 MHz block · Many different 4G EARFCNs to cover the same spectrum",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence--telefonica-uk-0249663.pdf"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      957.5,
-      959.9
-     ],
-     "ul": [
-      912.5,
-      914.9
-     ],
-     "notes": "Standard 2G 900 MHz band",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence--telefonica-uk-0249663.pdf"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8/n8) — defragmented",
-   "names": [
-    "B8",
-    "n8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": true,
-   "note": "Spectrum allocation visualisation for post 900 MHz spectrum swap to defragment allocations. This took effect across large swathes of the UK on 1 July 2024.",
-   "sources": [
-    "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-telefonica-vodafone-1351815.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "dl": [
-      925.1,
-      942.5
-     ],
-     "ul": [
-      880.1,
-      897.5
-     ],
-     "earfcn": [
-      3501,
-      3500
-     ],
-     "notes": "Post-900 MHz defragmentation spectrum",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-telefonica-vodafone-1351815.pdf"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      942.5,
-      959.9
-     ],
-     "ul": [
-      897.5,
-      914.9
-     ],
-     "earfcn": [
-      3725
-     ],
-     "notes": "Post-900 MHz defragmentation spectrum · UARFCN 3025 is a 5MHz block, 3050 is a 10MHz block",
-     "source": "https://www.ofcom.org.uk/siteassets/resources/documents/manage-your-licence/mobile-wireless-and-broadband/cellular/licences/cellular-licence-telefonica-vodafone-1351815.pdf"
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0035/83897/SA-800-LICENCE-H3G-0943535.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/83872/SA-800-LICENCE-Telefonica-UK-0943537.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "three",
-     "dl": [
-      791,
-      796
-     ],
-     "ul": [
-      832,
-      837
-     ],
-     "earfcn": [
-      6175
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0035/83897/SA-800-LICENCE-H3G-0943535.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      796,
-      801
-     ],
-     "ul": [
-      837,
-      842
-     ],
-     "earfcn": [
-      6225
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/249132/SA-800-2.6-LICENCE-EE-0943533-09-11-22.pdf"
-    },
-    {
-     "op": "vodafone",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf"
-    },
-    {
-     "op": "o2",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6400
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/83872/SA-800-LICENCE-Telefonica-UK-0943537.pdf"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/221959/SA-700-LICENCE-Telefonica-1248094.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0031/221899/SA-700-LICENCE-H3G-1248067-18-05-21.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/221965/SA-700-LICENCE-EE-1248065.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "o2",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ],
-     "earfcn": [
-      9260
-     ],
-     "nrarfcn": [
-      152210,
-      152690
-     ],
-     "notes": "Limited LTE use, primarily in central London and in Northern Ireland · Mainly being used for new suburban and rural 5G NR deployments",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/221959/SA-700-LICENCE-Telefonica-1248094.pdf"
-    },
-    {
-     "op": "three",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ],
-     "nrarfcn": [
-      154570
-     ],
-     "notes": "Limited n28 DSS deployment",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0031/221899/SA-700-LICENCE-H3G-1248067-18-05-21.pdf"
-    },
-    {
-     "op": "bt",
-     "dl": [
-      778,
-      788
-     ],
-     "ul": [
-      723,
-      733
-     ],
-     "earfcn": [
-      9460
-     ],
-     "nrarfcn": [
-      156510
-     ],
-     "notes": "Limited 4G LTE use in rural areas, spotted in Caerphilly and in Shropshire",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/221965/SA-700-LICENCE-EE-1248065.pdf"
-    }
-   ]
-  },
-  {
-   "group": "1400",
-   "label": "1.4–1.5 GHz (B32)",
-   "names": [
-    "B32"
-   ],
-   "status": "assigned",
-   "duplex": "sdl",
-   "range": {
-    "f": [
-     1452,
-     1496
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0018/85005/SA-1452-1472-LICENCE-Vodafone-1053632.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "f": [
-      1452,
-      1472
-     ],
-     "earfcn": [
-      10020
-     ],
-     "notes": "Supplemental downlink (must be aggregated with another carrier)",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0018/85005/SA-1452-1472-LICENCE-Vodafone-1053632.pdf"
-    },
-    {
-     "op": "three",
-     "f": [
-      1472,
-      1492
-     ],
-     "earfcn": [
-      10170,
-      10195,
-      10220
-     ],
-     "notes": "Supplemental downlink (must be aggregated with another carrier)",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
-    }
-   ]
-  },
-  {
-   "group": "1400",
-   "label": "1.4–1.5 GHz (B32) — from 2025-08-01",
-   "names": [
-    "B32"
-   ],
-   "status": "assigned",
-   "duplex": "sdl",
-   "range": {
-    "f": [
-     1452,
-     1496
-    ]
-   },
-   "positions": "verified",
-   "future": {
-    "from": "2025-08-01",
-    "label": "from 2025-08-01"
-   },
-   "excludeFromTotal": true,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "f": [
-      1452,
-      1472
-     ],
-     "notes": "Vodafone UK / O2 UK · Supplemental downlink (must be aggregated with another carrier)",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "vf-3",
-     "f": [
-      1472,
-      1492
-     ],
-     "earfcn": [
-      10170,
-      10195,
-      10220
-     ],
-     "notes": "Vodafone/Three UK · Supplemental downlink (must be aggregated with another carrier)",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
-    }
-   ]
-  },
-  {
-   "group": "1400",
-   "label": "1.4–1.5 GHz (B32) — from 2027-09-30",
-   "names": [
-    "B32"
-   ],
-   "status": "assigned",
-   "duplex": "sdl",
-   "range": {
-    "f": [
-     1452,
-     1496
-    ]
-   },
-   "positions": "verified",
-   "future": {
-    "from": "2027-09-30",
-    "label": "from 2027-09-30"
-   },
-   "excludeFromTotal": true,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "o2",
-     "f": [
-      1452,
-      1472
-     ],
-     "notes": "Supplemental downlink (must be aggregated with another carrier)",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "vf-3",
-     "f": [
-      1472,
-      1492
-     ],
-     "earfcn": [
-      10170,
-      10195,
-      10220
-     ],
-     "notes": "Vodafone/Three UK · Supplemental downlink (must be aggregated with another carrier)",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84826/SA-1472-1492-LICENCE-H3G-1053624-18-05-18.pdf"
+     "notes": "EE 2×35 MHz (2013 auction). EE runs up to 30 MHz n7."
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2.6 GHz TDD (B38/n38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -1501,89 +1109,19 @@
    "note": "",
    "sources": [
     "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "vodafone",
-     "f": [
-      2570,
-      2575
-     ],
-     "notes": "Unused TDD spectrum",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      2575,
-      2595
-     ],
-     "earfcn": [
-      37900
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/83546/SA-800-2.6-LICENCE-Vodafone-0943538.pdf"
-    },
-    {
-     "op": "o2",
-     "f": [
-      2595,
-      2615
-     ],
-     "earfcn": [
-      38100,
-      38125
-     ],
-     "nrarfcn": [
-      521090
-     ],
-     "notes": "LTE on 38100/NR on 521090 uses full 20 MHz spectrum and is used for B38 small cells · 38125 is 15 MHz, skipping the first 5 MHz of this block, primarily used for initial deployments in Northern Ireland",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
-    },
-    {
-     "op": "o2",
-     "f": [
-      2615,
-      2620
-     ],
-     "notes": "Unused TDD spectrum",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
-    }
-   ]
-  },
-  {
-   "group": "2600",
-   "label": "2.5/2.6 GHz (B38) — from 2025-08-01",
-   "names": [
-    "B38"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     2570,
-     2620
-    ]
-   },
-   "positions": "verified",
-   "future": {
-    "from": "2025-08-01",
-    "label": "from 2025-08-01"
-   },
-   "excludeFromTotal": true,
-   "note": "",
-   "sources": [
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf",
     "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum",
+    "https://www.rcrwireless.com/20250630/5g/virgin-media-o2-spectrum"
    ],
    "blocks": [
     {
-     "op": "vodafone",
+     "op": "o2",
      "f": [
       2570,
       2595
      ],
-     "notes": "Vodafone UK / O2 UK",
+     "notes": "Ex-Vodafone 25 MHz (2570–2575 restricted-power). Concurrent total transfer: held jointly by Vodafone Ltd and Telefónica UK from 1 Aug 2025; outright to Telefónica on 30 Sep 2026. O2 already runs 40 MHz NR (2575–2615).",
      "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
     },
     {
@@ -1598,9 +1136,7 @@
      ],
      "nrarfcn": [
       521090
-     ],
-     "notes": "LTE on 38100/NR on 521090 uses full 20 MHz spectrum and is used for B38 small cells · 38125 is 15 MHz, skipping the first 5 MHz of this block, primarily used for initial deployments in Northern Ireland",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
+     ]
     },
     {
      "op": "o2",
@@ -1608,16 +1144,16 @@
       2615,
       2620
      ],
-     "notes": "Unused TDD spectrum",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
+     "notes": "Restricted-power upper edge block."
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38) — from 2026-09-30",
+   "label": "2.6 GHz TDD (B38/n38) — from 30 Sep 2026",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -1630,220 +1166,171 @@
    "positions": "verified",
    "future": {
     "from": "2026-09-30",
-    "label": "from 2026-09-30"
+    "label": "from 30 Sep 2026"
    },
    "excludeFromTotal": true,
    "note": "",
    "sources": [
     "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
    ],
    "blocks": [
     {
      "op": "o2",
      "f": [
       2570,
-      2595
-     ],
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
-    },
-    {
-     "op": "o2",
-     "f": [
-      2595,
-      2615
-     ],
-     "earfcn": [
-      38100,
-      38125
-     ],
-     "nrarfcn": [
-      521090
-     ],
-     "notes": "LTE on 38100/NR on 521090 uses full 20 MHz spectrum and is used for B38 small cells · 38125 is 15 MHz, skipping the first 5 MHz of this block, primarily used for initial deployments in Northern Ireland",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
-    },
-    {
-     "op": "o2",
-     "f": [
-      2615,
       2620
      ],
-     "notes": "Unused TDD spectrum",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/206920/SA-2.6-LICENCE-Telefonica-1238565.pdf"
-    }
-   ]
-  },
-  {
-   "group": "2000tdd",
-   "label": "1.9/2.0 GHz TDD (B39)",
-   "names": [
-    "B39"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     1880,
-     1920
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/249137/SA-2100-LICENCE-Telefonica-UK-1268476-11-11-22.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "esn",
-     "f": [
-      1899.9,
-      1909.9
-     ],
-     "notes": "Emergency Services Network (EE) · Spectrum held by EE, utilised for Emergency Services Network gateway coverage with LTE-TDD. · Was historically used by Orange PCS for a UMTS-TDD trial in cooperation with Vodafone and H3G in Bristol.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/249133/SA-2100-LICENCE-EE-1268473-09-11-22.pdf"
-    },
-    {
-     "op": "o2",
-     "f": [
-      1909.9,
-      1914.9
-     ],
-     "notes": "Only permitted for use with 3G technologies, as per UK IR 2019.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/249137/SA-2100-LICENCE-Telefonica-UK-1268476-11-11-22.pdf"
-    },
-    {
-     "op": "three",
-     "f": [
-      1914.9,
-      1920
-     ],
-     "notes": "Only permitted for use with 3G technologies, as per UK IR 2019.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0023/249134/SA-2100-LICENCE-H3G-1268475-18-11-22.pdf"
-    }
-   ]
-  },
-  {
-   "group": "2300",
-   "label": "2300 MHz (B40)",
-   "names": [
-    "B40"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     2300,
-     2400
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://static.ofcom.org.uk/static/spectrum/map.html",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/114267/SA-2.3-GHz-LICENCE-Telefonica-1151571.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "mod",
-     "f": [
-      2300,
-      2310
-     ],
-     "notes": "Ministry of Defence",
-     "source": "https://static.ofcom.org.uk/static/spectrum/map.html"
-    },
-    {
-     "op": "mod",
-     "f": [
-      2310,
-      2340
-     ],
-     "notes": "Ministry of Defence · Spectrum earmarked for use within the Emergency Services Network.",
-     "source": "https://static.ofcom.org.uk/static/spectrum/map.html"
-    },
-    {
-     "op": "esn",
-     "f": [
-      2340,
-      2350
-     ],
-     "earfcn": [
-      39100
-     ],
-     "notes": "Emergency Services Network · Spectrum used for Emergency Services Network Air-to-Ground coverage. · B40 5 MHz LTE carrier centred on 2345 MHz currently deployed. · Vehicle-mounted gateway small cells are being considered for use within this spectrum.",
-     "source": "https://static.ofcom.org.uk/static/spectrum/map.html"
-    },
-    {
-     "op": "o2",
-     "f": [
-      2350,
-      2390
-     ],
-     "earfcn": [
-      39250,
-      39448
-     ],
-     "notes": "Split into two 20 MHz carriers.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0021/114267/SA-2.3-GHz-LICENCE-Telefonica-1151571.pdf"
-    },
-    {
-     "op": "mod",
-     "f": [
-      2390,
-      2400
-     ],
-     "notes": "Ministry of Defence · Vehicle-mounted gateway small cells for Emergency Services Network are being considered for use within this spectrum.",
-     "source": "https://static.ofcom.org.uk/static/spectrum/map.html"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B67)",
-   "names": [
-    "B67"
-   ],
-   "status": "assigned",
-   "duplex": "sdl",
-   "range": {
-    "f": [
-     738,
-     758
-    ]
-   },
-   "positions": "verified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/221965/SA-700-LICENCE-EE-1248065.pdf"
-   ],
-   "blocks": [
-    {
-     "op": "bt",
-     "f": [
-      738,
-      758
-     ],
-     "notes": "Unused supplemental downlink spectrum",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0025/221965/SA-700-LICENCE-EE-1248065.pdf"
+     "notes": "Outright transfer of 2570–2595 MHz to Telefónica UK."
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n77)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
+    "n78",
     "n77"
    ],
    "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Totals: VodafoneThree 210 MHz (VodafoneThree runs 2×100 MHz carriers), O2 100 MHz, EE 80 MHz (pedroc.co.uk Sep 2026 agrees). Exact 3500–3540 split after the O2 transfer is from davwheat only (Ofcom trade notices not reachable).",
+   "sources": [
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf",
+    "https://www.ofcom.org.uk/__data/assets/pdf_file/0020/221960/SA-3.6-GHz-LICENCE-Telefonica-1248095.pdf",
+    "https://www.ofcom.org.uk/spectrum/frequencies/below-5ghz",
+    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
+    "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum",
+    "https://www.rcrwireless.com/20250630/5g/virgin-media-o2-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      3400,
+      3410
+     ],
+     "notes": "Guard / MoD."
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      3410,
+      3460
+     ],
+     "nrarfcn": [
+      627648,
+      627932,
+      628032,
+      628320,
+      628588,
+      629332
+     ],
+     "notes": "Vodafone (2018 auction)."
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      3460,
+      3500
+     ],
+     "nrarfcn": [
+      631392,
+      632666
+     ],
+     "notes": "Three (UK Broadband 3.4 GHz + 2018 auction)."
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      3500,
+      3520
+     ],
+     "notes": "Ex-Vodafone (after 2022 O2/Vodafone swap); retained by VodafoneThree."
+    },
+    {
+     "op": "o2",
+     "f": [
+      3520,
+      3540
+     ],
+     "nrarfcn": [
+      634080
+     ],
+     "notes": "20 MHz from Vodafone (VodafoneThree→O2 transfer, effective 2026). O2 runs 80+20 MHz n78 on some sites."
+    },
+    {
+     "op": "ee",
+     "f": [
+      3540,
+      3580
+     ],
+     "nrarfcn": [
+      636334,
+      636344,
+      636384,
+      636960,
+      637334
+     ],
+     "notes": "EE (2018 auction)."
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      3580,
+      3680
+     ],
+     "nrarfcn": [
+      640548,
+      641376
+     ],
+     "notes": "Three (UK Broadband 3.6 GHz)."
+    },
+    {
+     "op": "ee",
+     "f": [
+      3680,
+      3720
+     ],
+     "nrarfcn": [
+      646272,
+      646656
+     ],
+     "notes": "EE (2021 auction)."
+    },
+    {
+     "op": "o2",
+     "f": [
+      3720,
+      3800
+     ],
+     "nrarfcn": [
+      650592,
+      650976,
+      651360
+     ],
+     "notes": "O2 (2021 auction + 2022 swap with Vodafone)."
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.8–4.2 GHz (n77)",
+   "names": [
+    "n77"
+   ],
+   "status": "partially-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
@@ -1856,461 +1343,292 @@
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/shared-access",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0018/249120/SA-3.9-GHz-LICENCE-UK-Broadband-1295901-01-11-22.pdf"
+    "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/statement-optimal-use-of-3.9-ghz-spectrum",
+    "https://www.ispreview.co.uk/index.php/2025/07/ofcom-uk-confirm-changes-to-3-9ghz-band-for-5g-mobile-and-wireless-broadband.html",
+    "https://www.ofcom.org.uk/spectrum/frequencies/shared-access"
    ],
    "blocks": [
     {
-     "op": "private",
+     "op": "vodafonethree",
      "f": [
       3800,
-      3925
+      3884
      ],
-     "notes": "Available for licensing by private operators through Ofcom's Shared Access License programme. · Used by Telet Research for private and multi-operator neutral host deployments.",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/shared-access"
+     "notes": "UK Broadband (Three) 3.9 GHz licence, FWA-only, moved from 3925–4009 MHz to 3800–3884 MHz by Ofcom statement (Jul 2025); use-it-or-lose-it phase-in clause. Shared Access users in 3800–3884 MHz retune within 18 months."
     },
     {
-     "op": "three",
+     "op": "sal",
      "f": [
-      3925,
-      4009
-     ],
-     "notes": "Three (license inherited from UK Broadband) · Spectrum is not yet used for commerical n77 5G NR. · Issued for compliance with IR 2015.1 and IR 2015.2.",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0018/249120/SA-3.9-GHz-LICENCE-UK-Broadband-1295901-01-11-22.pdf"
-    },
-    {
-     "op": "private",
-     "f": [
-      4009,
+      3884,
       4200
      ],
-     "notes": "Available for licensing by private operators through Ofcom's Shared Access License programme. · Used by Telet Research for private and multi-operator neutral host deployments.",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/shared-access"
+     "notes": "Ofcom Shared Access (low/medium power), shared with fixed links and satellite earth stations."
     }
    ]
   },
   {
-   "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
    "names": [
-    "n78"
+    "n79"
    ],
-   "status": "assigned",
+   "status": "not-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
-     3400,
-     3800
+     4400,
+     5000
     ]
    },
    "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Military (MoD) band in the UK; no mobile licences.",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0015/114270/SA-3.4-GHz-LICENCE-Telefonica-1257246.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz#table62973",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/221755/SA-3.6-GHz-LICENCE-Vodafone-1257250.pdf",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0020/221960/SA-3.6-GHz-LICENCE-Telefonica-1248095.pdf"
+    "https://static.ofcom.org.uk/static/spectrum/map.html"
    ],
-   "blocks": [
-    {
-     "op": "mod",
-     "f": [
-      3400,
-      3410
-     ],
-     "notes": "Ministry of Defence"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      3410,
-      3460
-     ],
-     "nrarfcn": [
-      627648,
-      627932,
-      628032,
-      628320,
-      628588,
-      629332
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf"
-    },
-    {
-     "op": "three",
-     "f": [
-      3460,
-      3500
-     ],
-     "nrarfcn": [
-      631392,
-      632666
-     ],
-     "notes": "Second half inherited from UK Broadband aquisition · This 40 MHz now being used for NR CA alongside Three's 100 MHz spectrum",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz"
-    },
-    {
-     "op": "o2",
-     "f": [
-      3500,
-      3540
-     ],
-     "nrarfcn": [
-      633696,
-      634080,
-      634366,
-      634656,
-      634666
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0015/114270/SA-3.4-GHz-LICENCE-Telefonica-1257246.pdf"
-    },
-    {
-     "op": "bt",
-     "f": [
-      3540,
-      3580
-     ],
-     "nrarfcn": [
-      636334,
-      636344,
-      636384,
-      636960,
-      637334
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf"
-    },
-    {
-     "op": "three",
-     "f": [
-      3580,
-      3680
-     ],
-     "nrarfcn": [
-      640548,
-      641376
-     ],
-     "notes": "Three (license inherited from UK Broadband)",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz#table62973"
-    },
-    {
-     "op": "bt",
-     "f": [
-      3680,
-      3720
-     ],
-     "nrarfcn": [
-      646272,
-      646656
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      3720,
-      3760
-     ],
-     "notes": "Unused pending spectrum swap",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/221755/SA-3.6-GHz-LICENCE-Vodafone-1257250.pdf"
-    },
-    {
-     "op": "o2",
-     "f": [
-      3760,
-      3800
-     ],
-     "notes": "Unused pending spectrum swap",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0020/221960/SA-3.6-GHz-LICENCE-Telefonica-1248095.pdf"
-    }
-   ]
+   "blocks": []
   },
   {
-   "group": "3500",
-   "label": "3.3–4.2 GHz (n78) — post spectrum swap",
+   "group": "6g",
+   "label": "Upper 6 GHz (6425–7125 MHz)",
    "names": [
-    "n78"
+    "n104"
    ],
-   "status": "assigned",
+   "status": "not-assigned",
    "duplex": "tdd",
    "range": {
     "f": [
-     3400,
-     3800
+     6425,
+     7125
     ]
    },
    "positions": "verified",
    "future": null,
-   "excludeFromTotal": true,
-   "note": "Spectrum allocation visualisation for after completion of Vodafone and O2's n78 spectrum swap.",
+   "excludeFromTotal": false,
+   "note": "Ofcom statement (2026): split at 6585 MHz — Wi-Fi priority below, mobile priority 6585–7125 MHz (Wi-Fi early access under AFC). No mobile licences issued yet.",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz#table62973",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf"
+    "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/consultation-expanding-access-to-the-6-ghz-band-for-commercial-mobile-and-wi-fi-services",
+    "https://www.ispreview.co.uk/index.php/2026/07/ofcom-adopt-shared-upper-6ghz-band-for-uk-mobile-and-wi-fi-networks.html",
+    "https://www.rcrwireless.com/20260109/policy/ofcom-6-ghz"
    ],
-   "blocks": [
-    {
-     "op": "mod",
-     "f": [
-      3400,
-      3410
-     ],
-     "notes": "Ministry of Defence"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      3410,
-      3460
-     ],
-     "nrarfcn": [
-      627648,
-      627932,
-      628032,
-      628320,
-      628588,
-      629332
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf"
-    },
-    {
-     "op": "three",
-     "f": [
-      3460,
-      3500
-     ],
-     "nrarfcn": [
-      631392,
-      632666
-     ],
-     "notes": "Second half inherited from UK Broadband aquisition · This 40 MHz now being used for NR CA alongside Three's 100 MHz spectrum",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz"
-    },
-    {
-     "op": "bt",
-     "f": [
-      3540,
-      3580
-     ],
-     "nrarfcn": [
-      636334,
-      636344,
-      636384,
-      636960,
-      637334
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf"
-    },
-    {
-     "op": "three",
-     "f": [
-      3580,
-      3680
-     ],
-     "nrarfcn": [
-      640548,
-      641376
-     ],
-     "notes": "Three (license inherited from UK Broadband)",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz#table62973"
-    },
-    {
-     "op": "bt",
-     "f": [
-      3680,
-      3720
-     ],
-     "nrarfcn": [
-      646272,
-      646656
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf"
-    },
-    {
-     "op": "vodafone",
-     "f": [
-      3500,
-      3540
-     ],
-     "nrarfcn": [
-      634080
-     ],
-     "notes": "Swapped spectrum with O2",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz"
-    },
-    {
-     "op": "o2",
-     "f": [
-      3720,
-      3800
-     ],
-     "nrarfcn": [
-      650592,
-      650976,
-      651360
-     ],
-     "notes": "New 80 MHz contiguous spectrum after spectrum swap with Vodafone · For live deployment find, see: https://twitter.com/davwheat_/status/1545377169286860806",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz"
-    }
-   ]
+   "blocks": []
   },
   {
-   "group": "3500",
-   "label": "3.3–4.2 GHz (n78) — from 2026-01-01",
+   "group": "26g",
+   "label": "26 GHz (n258)",
    "names": [
-    "n78"
+    "n258"
    ],
    "status": "assigned",
    "duplex": "tdd",
    "range": {
     "f": [
-     3400,
-     3800
+     24250,
+     27500
     ]
    },
    "positions": "verified",
-   "future": {
-    "from": "2026-01-01",
-    "label": "from 2026-01-01"
-   },
-   "excludeFromTotal": true,
-   "note": "",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Principal stage: each of EE, O2, VodafoneThree won 800 MHz at 26 GHz + 1 GHz at 40 GHz for £13m (total £39m); no assignment-stage payments. Results finalised 24 Oct 2025.",
    "sources": [
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz",
-    "https://www.ofcom.org.uk/spectrum/frequencies/trades",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf",
-    "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz#table62973",
-    "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf"
+    "https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced",
+    "https://www.ispreview.co.uk/index.php/2025/10/ofcom-publish-final-results-of-uk-5g-mobile-auction-for-26ghz-and-40ghz.html",
+    "https://www.advanced-television.com/2025/10/24/ofcom-spectrum-auction-results-finalised/",
+    "https://www.ofcom.org.uk/spectrum/frequencies/mmwave-spectrum-for-new-uses"
    ],
    "blocks": [
     {
-     "op": "mod",
+     "op": "sal",
      "f": [
-      3400,
-      3410
+      24250,
+      25100
      ],
-     "notes": "Ministry of Defence"
-    },
-    {
-     "op": "vf-3",
-     "f": [
-      3410,
-      3460
-     ],
-     "nrarfcn": [
-      627648,
-      627932,
-      628032,
-      628320,
-      628588,
-      629332
-     ],
-     "notes": "Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0016/114271/SA-3.4-GHz-LICENCE-Vodafone-1151573-16-11-22.pdf"
-    },
-    {
-     "op": "vf-3",
-     "f": [
-      3460,
-      3500
-     ],
-     "nrarfcn": [
-      631392,
-      632666
-     ],
-     "notes": "Vodafone/Three UK · Second half inherited from UK Broadband aquisition · This 40 MHz now being used for NR CA alongside Three's 100 MHz spectrum",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz"
-    },
-    {
-     "op": "vf-3",
-     "f": [
-      3500,
-      3520
-     ],
-     "notes": "Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+     "notes": "Lower 26 GHz: Ofcom Shared Access (indoor low-power; medium power outside High Density Areas)."
     },
     {
      "op": "o2",
      "f": [
-      3520,
-      3540
+      25100,
+      25900
      ],
-     "source": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+     "notes": "800 MHz won in Oct 2025 mmWave auction (£13m incl. 40 GHz). Licence covers the 68 High Density Areas (towns/cities); elsewhere shared access."
     },
     {
-     "op": "bt",
+     "op": "vodafonethree",
      "f": [
-      3540,
-      3580
+      25900,
+      26700
      ],
-     "nrarfcn": [
-      636334,
-      636344,
-      636384,
-      636960,
-      637334
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0022/114268/SA-3.4-GHz-LICENCE-EE-1151563.pdf"
+     "notes": "800 MHz, Oct 2025 auction."
     },
     {
-     "op": "vf-3",
+     "op": "ee",
      "f": [
-      3580,
-      3680
+      26700,
+      27500
      ],
-     "nrarfcn": [
-      640548,
-      641376
-     ],
-     "notes": "Vodafone/Three UK",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz#table62973"
-    },
-    {
-     "op": "bt",
-     "f": [
-      3680,
-      3720
-     ],
-     "nrarfcn": [
-      646272,
-      646656
-     ],
-     "source": "https://www.ofcom.org.uk/__data/assets/pdf_file/0026/221966/SA-3.6-GHz-LICENCE-EE-1248066.pdf"
-    },
-    {
-     "op": "o2",
-     "f": [
-      3720,
-      3800
-     ],
-     "nrarfcn": [
-      650592,
-      650976,
-      651360
-     ],
-     "notes": "New 80 MHz contiguous spectrum after spectrum swap with Vodafone · For live deployment find, see: https://twitter.com/davwheat_/status/1545377169286860806",
-     "source": "https://www.ofcom.org.uk/manage-your-licence/radiocommunication-licences/mobile-wireless-broadband/below-5ghz"
+     "notes": "800 MHz, Oct 2025 auction."
     }
    ]
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259)",
+   "names": [
+    "n259"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     40500,
+     43500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Licences apply in High Density Areas; other areas licensed locally.",
+   "sources": [
+    "https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced",
+    "https://www.ispreview.co.uk/index.php/2025/10/ofcom-publish-final-results-of-uk-5g-mobile-auction-for-26ghz-and-40ghz.html",
+    "https://www.advanced-television.com/2025/10/24/ofcom-spectrum-auction-results-finalised/"
+   ],
+   "blocks": [
+    {
+     "op": "o2",
+     "f": [
+      40500,
+      41500
+     ],
+     "notes": "1 GHz, Oct 2025 auction."
+    },
+    {
+     "op": "ee",
+     "f": [
+      41500,
+      42500
+     ],
+     "notes": "1 GHz, Oct 2025 auction."
+    },
+    {
+     "op": "vodafonethree",
+     "f": [
+      42500,
+      43500
+     ],
+     "notes": "1 GHz, Oct 2025 auction."
+    }
+   ]
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not made available for mobile in the UK; Ofcom's mmWave award covered 26 GHz and 40 GHz only.",
+   "sources": [
+    "https://www.ofcom.org.uk/spectrum/frequencies/mmwave-spectrum-for-new-uses",
+    "https://www.ispreview.co.uk/index.php/2025/10/ofcom-publish-final-results-of-uk-5g-mobile-auction-for-26ghz-and-40ghz.html"
+   ],
+   "blocks": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "Ofcom's website (ofcom.org.uk incl. licence PDFs and the spectrum-trades page) returned HTTP 403 (bot protection) throughout this check. Ofcom licence URLs are kept from the davwheat seed; edges were cross-checked against pedroc.co.uk (Sep 2026) and trade press. Where only davwheat and one other non-regulator source agree, 'verified' reflects two-source agreement.",
+  "VodafoneThree → O2 transfer (£343m, 78.8 MHz): 1452–1472 MHz (concurrent 1 Aug 2025 – 30 Sep 2027, then outright), 2.1 GHz (retune Nov 2025; 2130.3–2139.7 MHz concurrent until 30 Sep 2031), 2570–2595 MHz TDD (concurrent from 1 Aug 2025, outright 30 Sep 2026), 3520–3540 MHz (from 2026). Concurrently held blocks are counted for O2, which uses them. Ofcom consented on 3 Jul 2025.",
+  "The 2.1 GHz '18.8 MHz' in the VMO2 announcement is O2's net gain counted both directions (2×9.4 MHz).",
+  "26/40 GHz licences cover High Density Areas only (68 towns and cities); outside them the same frequencies are available through shared access.",
+  "Upper 1.4 GHz (1492–1517 MHz): single 25 MHz SDL lot auction scheduled for Jan–Feb 2027; no use before 11 Jun 2027.",
+  "Unpaired 2100 MHz (1899.9–1920 MHz) licences are removed from the MNO licences from 3 Apr 2029 (Ofcom decision Mar 2024); then 1900–1910 FRMCS and 1910–1915 ESN gateways.",
+  "Totals include Shared Access (SAL) blocks under the 'Shared Access' pseudo-operator; these are not MNO holdings."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "Ofcom Wireless Telegraphy Register and trade notices could not be read directly (HTTP 403); exact dates of 2100 MHz and 3.4 GHz transfer steps come from the davwheat seed and pedroc.co.uk.",
+  "3.4 GHz: 3500–3520 (VodafoneThree) / 3520–3540 (O2) split is from a single source (davwheat PR #70/#72, citing Ofcom trades page).",
+  "2300 MHz: 2300–2350 MHz public-sector/ESN use not verified; Ofcom SAL page snippets also list 2320–2340 MHz for shared access (not verified, not drawn).",
+  "1900–1920 MHz post-2029 FRMCS/ESN edges from trade-press summaries of the Oct 2025 Ofcom statement.",
+  "Carrier ARFCNs carried over from the davwheat seed; not re-checked."
+ ],
+ "changes": [
+  "Merged Vodafone UK and Three UK into one operator 'VodafoneThree' (merger completed 31 May 2025); renamed operator id bt → ee; dropped separate vodafone/three/vf-3/mod/private/esn operators.",
+  "2100 MHz: made the seed's 'from 2026-01-01' layout current (VodafoneThree 2110.3–2130.3, O2 2130.3–2149.7, EE 2149.7–2169.7); dropped the superseded pre-transfer and 'from 2025-08-01' views; kept 30 Sep 2031 outright transfer as future.",
+  "1400 MHz: 1452–1472 MHz now O2 (joint licence from 1 Aug 2025), dropped 'from 2025-08-01' view, kept 30 Sep 2027 as future; extended range to 1517 MHz and added the 1492–1517 MHz 2027 auction.",
+  "2.6 GHz TDD: 2570–2595 MHz now O2 (concurrent from 1 Aug 2025); kept outright transfer 30 Sep 2026 as future.",
+  "3.4–3.8 GHz: made the seed's 'from 2026-01-01' layout current; dropped pre-swap and 'post swap' views.",
+  "900 MHz: made the defragmented layout (from 1 Jul 2024) current and dropped the old fragmented view.",
+  "1800 MHz: merged Vodafone and Three blocks into one VodafoneThree block (1810.9–1831.7 MHz).",
+  "700 MHz FDD range corrected to 703–733/758–788 MHz.",
+  "3.8–4.2 GHz: UK Broadband 3.9 GHz licence moved from 3925–4009 to 3800–3884 MHz (Ofcom statement Jul 2025); remainder shown as Shared Access.",
+  "2000 TDD: attributed 1899.9–1909.9 MHz to EE (licensee) instead of 'ESN'; added Ofcom revocation (3 Apr 2029) and future FRMCS/ESN-gateway entry.",
+  "2300 MHz: removed MoD/ESN blocks as operators (shown unassigned), added SAL 2390–2400 MHz.",
+  "Added 26 GHz and 40 GHz mmWave auction results (Oct 2025), upper 6 GHz decision, and not-assigned entries for 600, 850, AWS, PCS, n79 and 47 GHz."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "Ofcom – mmWave auction final results (Oct 2025)",
+   "url": "https://www.ofcom.org.uk/spectrum/spectrum-awards/ofcom-spectrum-auction-final-results-announced"
+  },
+  {
+   "title": "ISPreview – Ofcom publish final results of 26 GHz and 40 GHz auction (24 Oct 2025)",
+   "url": "https://www.ispreview.co.uk/index.php/2025/10/ofcom-publish-final-results-of-uk-5g-mobile-auction-for-26ghz-and-40ghz.html"
+  },
+  {
+   "title": "Advanced Television – Ofcom spectrum auction results finalised",
+   "url": "https://www.advanced-television.com/2025/10/24/ofcom-spectrum-auction-results-finalised/"
+  },
+  {
+   "title": "Ofcom – Spectrum trades",
+   "url": "https://www.ofcom.org.uk/spectrum/frequencies/trades"
+  },
+  {
+   "title": "Peter Clarke – Commercial mobile frequency deployment in the UK (Sep 2026)",
+   "url": "https://pedroc.co.uk/content/uk-commercial-mobile-spectrum"
+  },
+  {
+   "title": "RCR Wireless – Virgin Media O2 secures new spectrum from Vodafone (30 Jun 2025)",
+   "url": "https://www.rcrwireless.com/20250630/5g/virgin-media-o2-spectrum"
+  },
+  {
+   "title": "Ofcom – Statement: 1.4 GHz spectrum auction (Jun 2026)",
+   "url": "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/1.4-ghz-band-available-for-mobile"
+  },
+  {
+   "title": "Bratby Law – 1.4 GHz spectrum auction: Ofcom's decision",
+   "url": "https://bratby.law/ofcom-1-4-ghz-spectrum-auction-mobile/"
+  },
+  {
+   "title": "Ofcom – Statement: Optimal use of 3.9 GHz spectrum",
+   "url": "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/statement-optimal-use-of-3.9-ghz-spectrum"
+  },
+  {
+   "title": "Ofcom – Future authorisation of the 1900–1920 MHz band",
+   "url": "https://www.ofcom.org.uk/spectrum/frequencies/future-authorisation-of-the-19001920-mhz-band"
+  },
+  {
+   "title": "Ofcom – Shared access licences",
+   "url": "https://www.ofcom.org.uk/spectrum/frequencies/shared-access"
+  },
+  {
+   "title": "Ofcom – Expanding access to the 6 GHz band (statement)",
+   "url": "https://www.ofcom.org.uk/spectrum/innovative-use-of-spectrum/consultation-expanding-access-to-the-6-ghz-band-for-commercial-mobile-and-wi-fi-services"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0), seed",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]
