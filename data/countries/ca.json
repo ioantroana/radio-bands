@@ -1,0 +1,1268 @@
+{
+ "code": "ca",
+ "name": "Canada",
+ "region": "Americas",
+ "asOf": "2026-09-28",
+ "coverage": "holdings-only",
+ "licensing": "regional",
+ "summary": "Three national operators (Rogers, Bell, TELUS — Bell and TELUS share a RAN) plus Vidéotron/Freedom (Quebecor), which took over Freedom Mobile's network and spectrum as the Rogers–Shaw merger remedy in April 2023, and regional carriers (Eastlink, SaskTel, TbayTel, Xplore). All licences are regional (ISED Tier 1–5 service areas), so holdings are shown as population-weighted national averages.",
+ "operators": [
+  {
+   "id": "rogers",
+   "name": "Rogers",
+   "legal": "Rogers Communications Canada Inc.",
+   "color": "#da291c",
+   "aliases": [
+    "Fido",
+    "Chatr",
+    "Shaw Mobile"
+   ],
+   "kind": "mno",
+   "notes": "Acquired Shaw Communications on 3 Apr 2023 (Shaw's own spectrum incl. the AWS-1 licences it had sold to Rogers earlier stayed with Rogers; Freedom Mobile was divested to Vidéotron). Also holds former Mobilicity (DAVE Wireless) AWS-1 licences (2015)."
+  },
+  {
+   "id": "bell",
+   "name": "Bell",
+   "legal": "Bell Mobility Inc.",
+   "color": "#00549a",
+   "aliases": [
+    "Virgin Plus",
+    "Lucky Mobile",
+    "Bell MTS"
+   ],
+   "kind": "mno",
+   "notes": "Includes Bell MTS (Manitoba Telecom Services, acquired 2017) and Northwestel. Shares its RAN with TELUS nationally; site-data uploads for the shared network are therefore not a guide to each partner's licences."
+  },
+  {
+   "id": "telus",
+   "name": "TELUS",
+   "legal": "TELUS Communications Inc.",
+   "color": "#4b286d",
+   "aliases": [
+    "Koodo",
+    "Public Mobile"
+   ],
+   "kind": "mno",
+   "notes": "Reports licensed gross national mobile spectrum holdings averaging 270 MHz (2025 annual report). Includes former Public Mobile PCS-G licences (2013)."
+  },
+  {
+   "id": "videotron",
+   "name": "Vidéotron / Freedom",
+   "legal": "Vidéotron ltée (Quebecor)",
+   "color": "#ffc400",
+   "aliases": [
+    "Freedom Mobile",
+    "Fizz",
+    "Vidéotron"
+   ],
+   "kind": "mno",
+   "notes": "Bought Freedom Mobile (incl. all Freedom/Wind spectrum licences) from Shaw/Rogers as the Rogers–Shaw merger remedy, closed 3 Apr 2023; ISED site data (Sep 2026) lists the former Freedom 600 MHz, 700 MHz and AWS-3 licences under Vidéotron ltée. The Freedom licences carry a 10-year transfer restriction imposed by ISED."
+  },
+  {
+   "id": "eastlink",
+   "name": "Eastlink",
+   "legal": "Bragg Communications Inc.",
+   "color": "#00a19a",
+   "aliases": [
+    "Bragg"
+   ],
+   "kind": "regional"
+  },
+  {
+   "id": "sasktel",
+   "name": "SaskTel",
+   "legal": "Saskatchewan Telecommunications",
+   "color": "#2e9c46",
+   "aliases": [],
+   "kind": "regional"
+  },
+  {
+   "id": "xplore",
+   "name": "Xplore",
+   "legal": "Xplore Inc.",
+   "color": "#f58220",
+   "aliases": [
+    "Xplornet"
+   ],
+   "kind": "regional",
+   "notes": "Formerly Xplornet; rural fixed-wireless and satellite ISP."
+  },
+  {
+   "id": "tbaytel",
+   "name": "TbayTel",
+   "legal": "TBayTel",
+   "color": "#00677f",
+   "aliases": [],
+   "kind": "regional"
+  },
+  {
+   "id": "cogeco",
+   "name": "Cogeco",
+   "legal": "Cogeco Connexion Inc.",
+   "color": "#7ab800",
+   "aliases": [
+    "oxio"
+   ],
+   "kind": "regional",
+   "notes": "Cable operator; won 3500 MHz licences in 2021 and 2500 MHz residual licences in 2018."
+  },
+  {
+   "id": "elite",
+   "name": "Elite GP",
+   "legal": "Elite General Partnership",
+   "color": "#b07cc6",
+   "aliases": [],
+   "kind": "other",
+   "notes": "Won 3800 MHz licences in 2023; affiliation not checked."
+  },
+  {
+   "id": "other",
+   "name": "Other regional licensees",
+   "color": "#9aa0a6",
+   "aliases": [
+    "Sogetel",
+    "Ecotel",
+    "SSI Micro",
+    "Iristel",
+    "Iris",
+    "NE&W",
+    "Novus",
+    "Netfox",
+    "CCI Wireless"
+   ],
+   "kind": "other"
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz (B71/n71)",
+   "names": [
+    "n71",
+    "B71"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2019 auction (Tier 2, seven 2×5 MHz blocks A–G, 43 MHz set aside for regional/new entrants). Freedom's set-aside blocks (ON/AB/BC) now held by Vidéotron. Bell won block G in three areas in the 2024 residual auction. Rogers holds 2×10–2×20 everywhere (Rogers AR: '20 to 40 MHz across Canada').",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/600-mhz-auction-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2024-auction-residual-spectrum-licences-provisional-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "rogers",
+     "mhz": 14.4,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "videotron",
+     "mhz": 12.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
+     "notes": "Own QC blocks + ex-Freedom blocks in ON/AB/BC"
+    },
+    {
+     "op": "telus",
+     "mhz": 5.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 0.5,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "xplore",
+     "mhz": 0.5,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.5,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "tbaytel",
+     "mhz": 0.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 0.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
+     "notes": "2024 residual (block G)"
+    },
+    {
+     "op": "other",
+     "mhz": 0.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
+     "notes": "Iris Technologies (Yukon, NL)"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz lower A/B/C (B12)",
+   "names": [
+    "B12",
+    "B17"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     728,
+     746
+    ],
+    "ul": [
+     698,
+     716
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2014 auction (Tier 2): A 698–704/728–734, B 704–710/734–740, C 710–716/740–746. Rogers holds A+B (2×12) in all major markets (Rogers AR: 24 MHz covering 99.7%).",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/final-results-700-mhz-auction-2014",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "rogers",
+     "mhz": 11.4,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "telus",
+     "mhz": 4.0,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 2.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz upper C1/C2 (B13)",
+   "names": [
+    "B13"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     746,
+     756
+    ],
+    "ul": [
+     776,
+     786
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2014 auction: C1 746–751/776–781 (set-aside), C2 751–756/781–786. Vidéotron's C1 licences in ON/AB/BC went to Shaw (2017) and came back with Freedom (2023). MTS C1 now Bell. Territory C1 went to Iris/Ecotel in 2018 residual auction.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/final-results-700-mhz-auction-2014",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-residual-spectrum-licences-700-mhz-and-aws-3-bands-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-residual-spectrum-licences-700-mhz-2500-mhz-2300-mhz-and-pcs-g-bands-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data"
+   ],
+   "holdings": [
+    {
+     "op": "videotron",
+     "mhz": 4.2,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 3.2,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
+     "notes": "incl. ex-MTS C1 in Manitoba"
+    },
+    {
+     "op": "telus",
+     "mhz": 2.0,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 0.5,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.2,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "700",
+   "label": "700 MHz unpaired D/E (716–728)",
+   "names": [
+    "B29"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     716,
+     728
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unpaired lower-700 blocks D (716–722) and E (722–728) won by Bell and TELUS in 2014.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/final-results-700-mhz-auction-2014"
+   ],
+   "holdings": [
+    {
+     "op": "telus",
+     "mhz": 7.2,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 4.8,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (EU B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EU 800 MHz plan not used in the Americas; 806–824/851–869 MHz is used for land-mobile/public-safety, and 824–894 MHz is the cellular band (see 850).",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz cellular (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Legacy cellular licences: Rogers holds the A block (869–880 + 890–891.5, 2×12.5) nationwide; the B block (880–890 + 891.5–894, 2×12.5) is held by the incumbent telco in each area. Bell/TELUS/SaskTel/TbayTel split is an estimate by province population from ISED licence site data.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "rogers",
+     "mhz": 12.5,
+     "paired": true,
+     "basis": "national (A block in all areas)",
+     "notes": "Rogers AR: 25 MHz across Canada"
+    },
+    {
+     "op": "bell",
+     "mhz": 8.7,
+     "paired": true,
+     "basis": "estimate: B block in Atlantic, QC (except TELUS Québec area), ON, MB, territories"
+    },
+    {
+     "op": "telus",
+     "mhz": 3.3,
+     "paired": true,
+     "basis": "estimate: B block in BC, AB and eastern Quebec"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.4,
+     "paired": true,
+     "basis": "estimate: B block in Saskatchewan"
+    },
+    {
+     "op": "tbaytel",
+     "mhz": 0.1,
+     "paired": true,
+     "basis": "estimate: Thunder Bay area"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not an IMT band in Canada; 896–901/935–940 MHz is narrowband land mobile.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz L-band",
+   "names": [
+    "B75",
+    "B76"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not licensed for mobile in Canada (1427–1518 MHz under study in the Spectrum Outlook).",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": [],
+   "range": {
+    "f": [
+     1427,
+     1518
+    ]
+   }
+  },
+  {
+   "group": "1700",
+   "label": "AWS-1 (B4/B66)",
+   "names": [
+    "B4",
+    "B66",
+    "n66"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2155
+    ],
+    "ul": [
+     1710,
+     1755
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2008 auction: A (2×10, Tier 3), B (2×10, Tier 2), C/D/E (2×5), F (2×10). Current holder mapping: Shaw (1380057 Alberta) and Mobilicity (DAVE) → Rogers; Globalive/Wind → Freedom → Vidéotron; Quebecor (9193-2962) → Vidéotron (its Toronto D block went via Shaw/Freedom and back); MTS (6934242) → Bell; Bragg = Eastlink.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-aws-1-and-2-ghz-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "rogers",
+     "mhz": 16.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
+     "notes": "own A block + ex-Shaw + ex-Mobilicity; Rogers AR: 2×20 in BC/AB, 2×15 S. Ontario (+2×5 GTA), 2×10 elsewhere"
+    },
+    {
+     "op": "videotron",
+     "mhz": 11.7,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
+     "notes": "own + ex-Wind/Freedom"
+    },
+    {
+     "op": "telus",
+     "mhz": 8.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 6.9,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
+     "notes": "incl. ex-MTS"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 1.8,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.5,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "other",
+     "mhz": 0.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS-3 (B66)",
+   "names": [
+    "B66",
+    "n66"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2155,
+     2180
+    ],
+    "ul": [
+     1755,
+     1780
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2015 auction (Tier 2): G/H/I 2×15 set-aside, J 2×10 (split J1/J2 in Southern Ontario). Wind's set-aside licences (S. Ontario, AB, BC) now held by Vidéotron; unsold MB/SK set-aside blocks went to TELUS and territorial ones to Bell in the 2015 residual auction.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/aws-3-auction-final-results-and-prices-service-area",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-residual-spectrum-licences-700-mhz-and-aws-3-bands-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data"
+   ],
+   "holdings": [
+    {
+     "op": "videotron",
+     "mhz": 12.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)",
+     "notes": "own QC/E. Ontario + ex-Freedom"
+    },
+    {
+     "op": "telus",
+     "mhz": 8.5,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 2.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 1.4,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2 results, 2011 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used in Canada: 1710–1780 MHz is the AWS uplink.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 incl. G block (B2/B25)",
+   "names": [
+    "B2",
+    "B25",
+    "n25"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1930,
+     1995
+    ],
+    "ul": [
+     1850,
+     1915
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Legacy PCS licences (1995–2001) plus the 2008 G block (1910–1915/1990–1995). Rogers' amount is from its 2025 annual report (2×30 in most areas, 2×25 S. Ontario, 2×20 N. Quebec/territories), pop-weighted here. Bell and TELUS split of the remainder is an estimate (see missing).",
+   "sources": [
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-aws-1-and-2-ghz-results",
+    "https://www.sec.gov/Archives/edgar/data/868675/000110465926039249/tm2610149d2_ex99-1.pdf",
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data"
+   ],
+   "holdings": [
+    {
+     "op": "rogers",
+     "mhz": 28.4,
+     "paired": true,
+     "basis": "pop-weighted from Rogers AR regional statement"
+    },
+    {
+     "op": "telus",
+     "mhz": 18,
+     "paired": true,
+     "basis": "estimate (derived from TELUS's 270 MHz national average minus other bands); incl. ex-Public Mobile G block",
+     "notes": "not source-verified"
+    },
+    {
+     "op": "bell",
+     "mhz": 16,
+     "paired": true,
+     "basis": "estimate (remainder); not source-verified",
+     "notes": "not source-verified"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.6,
+     "paired": true,
+     "basis": "estimate: Saskatchewan"
+    },
+    {
+     "op": "other",
+     "mhz": 0.5,
+     "paired": true,
+     "basis": "estimate: Sogetel, Ecotel, TbayTel, Novus PCS-G"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "2 GHz AWS-4 (2000–2020/2180–2200)",
+   "names": [
+    "B66 SDL",
+    "n70",
+    "B23"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2180,
+     2200
+    ],
+    "ul": [
+     2000,
+     2020
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "ISED licence site data (Sep 2026) shows AWS-4 licences with deployed sites for TELUS (23 service areas incl. Montréal, Ottawa, Calgary, Vancouver-area; used as 2180–2200 downlink), Xplore (33 rural Tier 3/4 areas) and Bell (8 areas). Licensed amounts per area not compiled.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data"
+   ]
+  },
+  {
+   "group": "2000tdd",
+   "label": "1900/2000 MHz unpaired TDD",
+   "names": [
+    "B33",
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No unpaired TDD assignments at 1.9/2 GHz; 1910–1930 MHz is licence-exempt (UPCS) and 2000–2020 MHz is AWS-4 uplink.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "B1 not used as such in Canada: 2110–2155 MHz is AWS-1 downlink and 1920–1980 MHz is part of the PCS band.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz WCS (B30)",
+   "names": [
+    "B30"
+   ],
+   "status": "unknown",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2345,
+     2360
+    ],
+    "ul": [
+     2305,
+     2320
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "WCS licences: TELUS (78 areas with sites, mostly 2350/2355–2360 MHz), Orion Wireless Partnership (Bell/Rogers 50:50 JV, fixed-wireless LTE; Rogers AR: 30 MHz FDD of which 20 usable, mainly eastern Canada) and Xplore. Residual 2300 MHz licences sold to Bell in the Jan 2026 residual auction (38 Tier 4 areas, block W). Pop-weighted amounts not compiled.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2026-auction-residual-spectrum-licences-results"
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2500 MHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Seven 2×10 MHz blocks per Tier 3 area (2015 auction plus pre-auction BRS holdings). MTS → Bell, Xplornet → Xplore, Corridor (CCI) in 'other'. Cogeco bought unsold G blocks in 2018 (Kingston, Guelph/Kitchener, Niagara, London, Victoria).",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2500-mhz-auction-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-residual-spectrum-licences-700-mhz-2500-mhz-2300-mhz-and-pcs-g-bands-final-results",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "bell",
+     "mhz": 20.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "telus",
+     "mhz": 20.0,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "rogers",
+     "mhz": 19.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
+     "notes": "Rogers AR: 40 MHz FDD across most of Canada, 20 MHz in parts of Quebec"
+    },
+    {
+     "op": "videotron",
+     "mhz": 6.6,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 1.0,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "cogeco",
+     "mhz": 0.8,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.7,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "other",
+     "mhz": 0.8,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)",
+     "notes": "CCI Wireless, SSI Micro"
+    },
+    {
+     "op": "xplore",
+     "mhz": 0.2,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "tbaytel",
+     "mhz": 0.1,
+     "paired": true,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2500 MHz TDD centre gap (B38/B41)",
+   "names": [
+    "B38",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Unpaired centre gap (2575–2615 MHz plus 5 MHz guards). In the largest markets Bell and Rogers hold 20 MHz each (Rogers AR: 20 MHz TDD in key QC/ON/BC areas); in rural areas Xplore holds 20 MHz. Guard blocks (Inukshuk) excluded.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2500-mhz-auction-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-residual-spectrum-licences-700-mhz-2500-mhz-2300-mhz-and-pcs-g-bands-final-results",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "bell",
+     "mhz": 12.0,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "rogers",
+     "mhz": 12.0,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "xplore",
+     "mhz": 9.2,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 0.8,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 2/3 results, 2006 census pops)"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3500 MHz (3450–3650, n77/n78)",
+   "names": [
+    "n77",
+    "n78",
+    "B42"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3450,
+     3650
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2021 auction (Tier 4, 20×10 MHz blocks A–V, incl. transitioned incumbent licences; 50 MHz set-aside). 2024 residual: Bell +small amounts. 3500+3800 subject to a 100 MHz cross-band cap until ~2028/29.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/3500-mhz-auction-final-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2024-auction-residual-spectrum-licences-provisional-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "rogers",
+     "mhz": 57.9,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)",
+     "notes": "Rogers AR: 60–80 MHz in large centres (30 MHz in Edmonton)"
+    },
+    {
+     "op": "bell",
+     "mhz": 48.1,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "videotron",
+     "mhz": 27.5,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "telus",
+     "mhz": 24.8,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "xplore",
+     "mhz": 23.8,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "cogeco",
+     "mhz": 8.9,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 2.0,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 1.6,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "other",
+     "mhz": 2.0,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)",
+     "notes": "Sogetel, Comcentric, Broadpoint, Iristel, Valley Fiber, TbayTel etc."
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3800 MHz (3650–3900, n77)",
+   "names": [
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3650,
+     3900
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2023 auction (Tier 4, 25×10 MHz blocks W–AW; bidding 24 Oct–24 Nov 2023) plus 2024 and Jan 2026 residual auctions (TELUS +C$318m, Rogers +C$84m, Bell +C$13m). TELUS reports an average 72 MHz of 3800 MHz after the 2023 auction.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/3800-mhz-auction-provisional-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2024-auction-residual-spectrum-licences-provisional-results",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2026-auction-residual-spectrum-licences-results",
+    "https://www.sec.gov/Archives/edgar/data/868675/000110465926039249/tm2610149d2_ex99-1.pdf",
+    "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+   ],
+   "holdings": [
+    {
+     "op": "telus",
+     "mhz": 76.6,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "bell",
+     "mhz": 51.1,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "videotron",
+     "mhz": 43.1,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "rogers",
+     "mhz": 42.0,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)",
+     "notes": "Rogers: 40.5 MHz avg in 2023 + residual"
+    },
+    {
+     "op": "elite",
+     "mhz": 19.6,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "eastlink",
+     "mhz": 4.6,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "sasktel",
+     "mhz": 1.5,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)"
+    },
+    {
+     "op": "other",
+     "mhz": 6.5,
+     "paired": false,
+     "basis": "pop-weighted national average (ISED Tier 4 results, 2016 census pops)",
+     "notes": "NE&W, Sogetel, Novus, Netfox, Chief & Council, ABC Internet, others"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT licensing in 4.4–5.0 GHz (government/fixed use).",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258) / 28 GHz",
+   "names": [
+    "n258",
+    "n261"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "mmWave auction (25.1–27.5 GHz, 100 MHz Tier 5 blocks) scheduled to open 25 Jan 2028 (framework published 14 May 2026). 28 GHz moved to non-competitive local licensing (2025 NCLL decision). Existing 24 GHz fixed licences expire 31 Mar 2029.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/mmwave-auction-table-key-dates",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/policy-and-licensing-framework-spectrum-26-ghz-and-38-ghz-bands",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/decision-non-competitive-local-licensing-framework-including-spectrum-3900-3980-mhz-band-and"
+   ],
+   "holdings": [],
+   "range": {
+    "f": [
+     25100,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "38 GHz (37.6–40 GHz, n260)",
+   "names": [
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Included in the mmWave auction opening 25 Jan 2028 (24×100 MHz blocks); legacy 38 GHz fixed licences can transition into 39.4–40.0 GHz.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/mmwave-auction-table-key-dates",
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/policy-and-licensing-framework-spectrum-26-ghz-and-38-ghz-bands"
+   ],
+   "holdings": [],
+   "range": {
+    "f": [
+     37600,
+     40000
+    ]
+   }
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No IMT licensing planned in 47.2–48.2 GHz.",
+   "sources": [
+    "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-outlook-2023-2027"
+   ],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Licensing is regional: auctioned bands use ISED Tier 2 (14 areas: 600, 700, AWS-3, AWS-1 B/C), Tier 3 (59: 2500, AWS-1 A/D/E/F), Tier 4 (172: 3500, 3800) or Tier 5 (mmWave) service areas. Holdings are pop-weighted national averages computed here from ISED's published auction results (per-licence tables and xlsx files) using the census populations in those files (2006, 2011 or 2016). They are approximations: later transfers are applied only where known (see operator notes) and populations differ by census year.",
+  "Ownership changes applied to auction results: Shaw → Rogers (3 Apr 2023); Freedom Mobile/Wind → Vidéotron (3 Apr 2023, merger remedy; ISED site data Sep 2026 confirms Vidéotron ltée as licensee of the former Freedom 600/700/AWS-3 licences); Mobilicity (DAVE Wireless) → Rogers (2015); Shaw AWS-1 → Rogers (2013–15); MTS → Bell (2017); Public Mobile → TELUS (2013); Xplornet → Xplore; Bragg = Eastlink.",
+  "Cross-checks: Rogers' 2025 annual report (600: 20–40 MHz; 700: 24 MHz; 850: 25 MHz; 2500: 40 MHz FDD; 3500: 60–80 MHz in large centres; 3500+3800: 100 MHz combined) matches the computed averages. TELUS reports 270 MHz gross national average; the computed TELUS total here (incl. PCS estimate, excl. AWS-4/WCS) is ~250 MHz.",
+  "3800 MHz: the 3500+3800 cross-band cap of 100 MHz per licensee per Tier 4 area applies for five years from 3800 licence issuance. 3900–3980 MHz and parts of 26/28/38 GHz are reserved for non-competitive local licensing (NCLL).",
+  "Band edges: licences within a band are assigned per service area, so block positions differ between areas; no national block positions are drawn."
+ ],
+ "missing": [
+  "PCS 1900: Bell and TELUS amounts are estimates (combined ≈2×34 MHz remainder after Rogers and minor licensees); no source gives their pop-weighted PCS holdings. from background knowledge / derivation, not source-verified.",
+  "850 MHz B-block split between Bell, TELUS, SaskTel and TbayTel is an estimate by province population, not a licence-by-licence computation.",
+  "AWS-4 (2000–2020/2180–2200) and WCS 2300: licensees identified from ISED site data, amounts not compiled (status 'unknown').",
+  "2500 MHz: 2015 table used with 2006 Tier 3 populations; later residual sales (2018 H blocks) only partly applied; unassigned remainder ≈1–8 MHz.",
+  "ISED Spectrum Management System licence search (sms-sgs.ic.gc.ca) was unreachable; transfers after the auctions were checked only via the Sep 2026 site-data extract and operator reports.",
+  "Elite General Partnership (3800 MHz) affiliation not established.",
+  "No EARFCN/NR-ARFCN data compiled."
+ ],
+ "sources": [
+  {
+   "title": "ISED – 600 MHz auction final results (2019)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/600-mhz-auction-final-results"
+  },
+  {
+   "title": "ISED – 700 MHz auction final results (2014)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/final-results-700-mhz-auction-2014"
+  },
+  {
+   "title": "ISED – AWS-1 and 2 GHz auction results (2008, xlsx)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-aws-1-and-2-ghz-results"
+  },
+  {
+   "title": "ISED – AWS-3 auction final results by service area (2015)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/aws-3-auction-final-results-and-prices-service-area"
+  },
+  {
+   "title": "ISED – 2500 MHz auction final results (2015)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2500-mhz-auction-final-results"
+  },
+  {
+   "title": "ISED – 3500 MHz auction final results (2021, xlsx)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/3500-mhz-auction-final-results"
+  },
+  {
+   "title": "ISED – 3800 MHz auction final results (2023, xlsx)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/3800-mhz-auction-provisional-results"
+  },
+  {
+   "title": "ISED – 2024 residual auction results",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2024-auction-residual-spectrum-licences-provisional-results"
+  },
+  {
+   "title": "ISED – 2026 residual auction results",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/2026-auction-residual-spectrum-licences-results"
+  },
+  {
+   "title": "ISED – residual auctions 2015 and 2018",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/auction-residual-spectrum-licences-700-mhz-2500-mhz-2300-mhz-and-pcs-g-bands-final-results"
+  },
+  {
+   "title": "ISED – mmWave auction key dates",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/mmwave-auction-table-key-dates"
+  },
+  {
+   "title": "ISED – Policy and licensing framework for 26 and 38 GHz (May 2026)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/spectrum-allocation/spectrum-auctions/spectrum-auction-publications/policy-and-licensing-framework-spectrum-26-ghz-and-38-ghz-bands"
+  },
+  {
+   "title": "ISED – Spectrum Management System data download (site data extract, Sep 2026)",
+   "url": "https://ised-isde.canada.ca/site/spectrum-management-system/en/download-sms-data"
+  },
+  {
+   "title": "Rogers 2025 Annual Report – spectrum holdings table",
+   "url": "https://about.rogers.com/wp-content/uploads/Rogers-2025-Annual-Report.pdf"
+  },
+  {
+   "title": "TELUS 2025 Annual Report (SEC 6-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/868675/000110465926039249/tm2610149d2_ex99-1.pdf"
+  }
+ ]
+}
