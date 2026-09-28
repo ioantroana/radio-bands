@@ -1,0 +1,1020 @@
+{
+  "code": "gr",
+  "name": "Greece",
+  "region": "Europe",
+  "asOf": "2026-09-28",
+  "coverage": "block-level",
+  "licensing": "national",
+  "summary": "Three MNOs: COSMOTE (OTE/Deutsche Telekom), Vodafone and Nova (ex-WIND Hellas, United Group). The Dec 2020 5G auction awarded 700 MHz, extra 2 GHz FDD blocks, 3.4–3.8 GHz and 26 GHz. 900 MHz and part of 1800 MHz expire in 2027.",
+  "operators": [
+    {
+      "id": "cosmote",
+      "name": "COSMOTE",
+      "color": "#6ab023",
+      "aliases": [
+        "Cosmote",
+        "OTE",
+        "OTE Group"
+      ],
+      "kind": "mno",
+      "notes": "OTE Group (Deutsche Telekom). OTE's legacy 3540–3600 MHz right (to 30 Apr 2029) is shared with COSMOTE's 2020 assignment of the same block."
+    },
+    {
+      "id": "vodafone",
+      "name": "Vodafone",
+      "legal": "Vodafone-Panafon S.A.",
+      "color": "#e60000",
+      "aliases": [
+        "Vodafone Greece",
+        "Vodafone GR"
+      ],
+      "kind": "mno"
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "color": "#7b2fbe",
+      "aliases": [
+        "WIND",
+        "Wind Hellas",
+        "Nova Mobile"
+      ],
+      "kind": "mno",
+      "notes": "United Group bought WIND Hellas in 2022 and merged it with Nova (pay-TV). The mobile network now trades as Nova. EETT's register still names the licensee 'WIND'."
+    }
+  ],
+  "bands": [
+    {
+      "group": "700",
+      "label": "700 MHz FDD (B28/n28)",
+      "names": [
+        "B28",
+        "n28"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          758,
+          788
+        ],
+        "ul": [
+          703,
+          733
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2020 5G auction; rights from 16 Dec 2020. The 15 Dec 2035 expiry is nominal: EETT says the term runs 15 years from when the sub-band is fully cleared of broadcasting and state networks.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+        "https://www.spectrum-tracker.com/Greece"
+      ],
+      "blocks": [
+        {
+          "op": "nova",
+          "dl": [
+            758,
+            768
+          ],
+          "ul": [
+            703,
+            713
+          ],
+          "expiry": "2035-12-15"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            768,
+            778
+          ],
+          "ul": [
+            713,
+            723
+          ],
+          "expiry": "2035-12-15"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            778,
+            788
+          ],
+          "ul": [
+            723,
+            733
+          ],
+          "expiry": "2035-12-15"
+        }
+      ]
+    },
+    {
+      "group": "700",
+      "label": "700 MHz SDL (738–758 MHz)",
+      "names": [
+        "n28"
+      ],
+      "status": "not-assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          738,
+          758
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. It is not in EETT's table of spectrum rights awarded by competitive procedures.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "800",
+      "label": "800 MHz (B20/n20)",
+      "names": [
+        "B20",
+        "n20"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          791,
+          821
+        ],
+        "ul": [
+          832,
+          862
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2014 auction; valid 1 Nov 2014 to 28 Feb 2030.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+        "https://www.spectrum-tracker.com/Greece"
+      ],
+      "blocks": [
+        {
+          "op": "nova",
+          "dl": [
+            791,
+            801
+          ],
+          "ul": [
+            832,
+            842
+          ],
+          "expiry": "2030-02-28"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            801,
+            811
+          ],
+          "ul": [
+            842,
+            852
+          ],
+          "expiry": "2030-02-28"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            811,
+            821
+          ],
+          "ul": [
+            852,
+            862
+          ],
+          "expiry": "2030-02-28"
+        }
+      ]
+    },
+    {
+      "group": "900",
+      "label": "900 MHz (B8/n8)",
+      "names": [
+        "B8",
+        "n8"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          925,
+          960
+        ],
+        "ul": [
+          880,
+          915
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Rights expire 29 Sep 2027. No renewal or award procedure was found in the sources.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+        "https://www.spectrum-tracker.com/Greece"
+      ],
+      "blocks": [
+        {
+          "op": "cosmote",
+          "dl": [
+            925,
+            930
+          ],
+          "ul": [
+            880,
+            885
+          ],
+          "expiry": "2027-09-29"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            930,
+            935
+          ],
+          "ul": [
+            885,
+            890
+          ],
+          "expiry": "2027-09-29",
+          "notes": "Added 9 Sep 2017"
+        },
+        {
+          "op": "nova",
+          "dl": [
+            935,
+            945
+          ],
+          "ul": [
+            890,
+            900
+          ],
+          "expiry": "2027-09-29"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            945,
+            950
+          ],
+          "ul": [
+            900,
+            905
+          ],
+          "expiry": "2027-09-29",
+          "notes": "Added 6 Aug 2016"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            950,
+            960
+          ],
+          "ul": [
+            905,
+            915
+          ],
+          "expiry": "2027-09-29"
+        }
+      ]
+    },
+    {
+      "group": "1400",
+      "label": "1.5 GHz L-band SDL (B32/B75)",
+      "names": [
+        "B32",
+        "B75",
+        "n75"
+      ],
+      "status": "not-assigned",
+      "duplex": "sdl",
+      "range": {
+        "f": [
+          1427,
+          1517
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. It is not in EETT's table of competitively awarded mobile spectrum.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1800",
+      "label": "1800 MHz (B3/n3)",
+      "names": [
+        "B3",
+        "n3"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1805,
+          1880
+        ],
+        "ul": [
+          1710,
+          1785
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Mixed expiries: the 2012 blocks expire 14 Nov 2027, and the 2018/2020 blocks 5 Dec 2035.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+        "https://www.spectrum-tracker.com/Greece"
+      ],
+      "blocks": [
+        {
+          "op": "nova",
+          "dl": [
+            1805,
+            1820
+          ],
+          "ul": [
+            1710,
+            1725
+          ],
+          "expiry": "2035-12-05"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            1820,
+            1830
+          ],
+          "ul": [
+            1725,
+            1735
+          ],
+          "expiry": "2027-11-14"
+        },
+        {
+          "op": "vodafone",
+          "dl": [
+            1830,
+            1845
+          ],
+          "ul": [
+            1735,
+            1750
+          ],
+          "expiry": "2035-12-05"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            1845,
+            1855
+          ],
+          "ul": [
+            1750,
+            1760
+          ],
+          "expiry": "2027-11-14"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            1855,
+            1880
+          ],
+          "ul": [
+            1760,
+            1785
+          ],
+          "expiry": "2035-12-05",
+          "notes": "Former DCS licence renewed 6 Dec 2020"
+        }
+      ]
+    },
+    {
+      "group": "2100",
+      "label": "2100 MHz (B1/n1)",
+      "names": [
+        "B1",
+        "n1"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2170
+        ],
+        "ul": [
+          1920,
+          1980
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "The 2001 UMTS rights were renewed from 6 Aug 2021 to 5 Aug 2036. The remaining blocks were sold in the 2020 multiband auction.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": [
+        {
+          "op": "vodafone",
+          "dl": [
+            2110,
+            2130
+          ],
+          "ul": [
+            1920,
+            1940
+          ],
+          "expiry": "2036-08-05"
+        },
+        {
+          "op": "nova",
+          "dl": [
+            2130,
+            2140
+          ],
+          "ul": [
+            1940,
+            1950
+          ],
+          "expiry": "2036-08-05"
+        },
+        {
+          "op": "nova",
+          "dl": [
+            2140,
+            2150
+          ],
+          "ul": [
+            1950,
+            1960
+          ],
+          "expiry": "2036-08-05",
+          "notes": "Won in the Dec 2020 auction"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            2150,
+            2165
+          ],
+          "ul": [
+            1960,
+            1975
+          ],
+          "expiry": "2036-08-05"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            2165,
+            2170
+          ],
+          "ul": [
+            1975,
+            1980
+          ],
+          "expiry": "2036-08-05",
+          "notes": "Won in the Dec 2020 auction"
+        }
+      ]
+    },
+    {
+      "group": "2000tdd",
+      "label": "2 GHz unpaired TDD (B33/B34)",
+      "names": [
+        "B33",
+        "B34"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          1900,
+          1920
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned. EETT's table has no unpaired 2 GHz rights; the 2020 '2 GHz' lots were the paired 1950–1960 and 1975–1980 MHz blocks.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2300",
+      "label": "2300 MHz (B40/n40)",
+      "names": [
+        "B40",
+        "n40"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2300,
+          2400
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned for public mobile networks.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz FDD (B7/n7)",
+      "names": [
+        "B7",
+        "n7"
+      ],
+      "status": "assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2620,
+          2690
+        ],
+        "ul": [
+          2500,
+          2570
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2014 auction.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": [
+        {
+          "op": "vodafone",
+          "dl": [
+            2620,
+            2640
+          ],
+          "ul": [
+            2500,
+            2520
+          ],
+          "expiry": "2030-02-28"
+        },
+        {
+          "op": "cosmote",
+          "dl": [
+            2640,
+            2670
+          ],
+          "ul": [
+            2520,
+            2550
+          ],
+          "expiry": "2030-02-28"
+        },
+        {
+          "op": "nova",
+          "dl": [
+            2670,
+            2690
+          ],
+          "ul": [
+            2550,
+            2570
+          ],
+          "expiry": "2030-02-28"
+        }
+      ]
+    },
+    {
+      "group": "2600",
+      "label": "2600 MHz TDD (B38/n38)",
+      "names": [
+        "B38",
+        "n38"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          2570,
+          2620
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2014 auction.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": [
+        {
+          "op": "guard",
+          "f": [
+            2570,
+            2575
+          ]
+        },
+        {
+          "op": "cosmote",
+          "f": [
+            2575,
+            2595
+          ],
+          "expiry": "2030-02-28"
+        },
+        {
+          "op": "vodafone",
+          "f": [
+            2595,
+            2615
+          ],
+          "expiry": "2030-02-28"
+        },
+        {
+          "op": "guard",
+          "f": [
+            2615,
+            2620
+          ]
+        }
+      ]
+    },
+    {
+      "group": "3500",
+      "label": "3.4–3.8 GHz (n78)",
+      "names": [
+        "n78",
+        "B42",
+        "B43"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          3400,
+          3800
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2020 5G auction. COSMOTE holds 150 MHz (3450–3600), of which 20 MHz is geographically restricted. Vodafone holds 140 MHz (3410–3450 restricted, 3600–3700 national). Nova holds 100 MHz.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+        "https://www.spectrum-tracker.com/Greece"
+      ],
+      "blocks": [
+        {
+          "op": "unassigned",
+          "f": [
+            3400,
+            3410
+          ]
+        },
+        {
+          "op": "vodafone",
+          "f": [
+            3410,
+            3420
+          ],
+          "expiry": "2035-12-15",
+          "notes": "Indoor only, in specific geographic areas"
+        },
+        {
+          "op": "vodafone",
+          "f": [
+            3420,
+            3450
+          ],
+          "expiry": "2035-12-15",
+          "notes": "Only in specific geographic areas"
+        },
+        {
+          "op": "cosmote",
+          "f": [
+            3450,
+            3470
+          ],
+          "expiry": "2035-12-15",
+          "notes": "Only in specific geographic areas"
+        },
+        {
+          "op": "cosmote",
+          "f": [
+            3470,
+            3540
+          ],
+          "expiry": "2035-12-15"
+        },
+        {
+          "op": "cosmote",
+          "f": [
+            3540,
+            3600
+          ],
+          "expiry": "2035-12-15",
+          "notes": "Shared with OTE's legacy right until 30 Apr 2029"
+        },
+        {
+          "op": "vodafone",
+          "f": [
+            3600,
+            3700
+          ],
+          "expiry": "2035-12-15"
+        },
+        {
+          "op": "nova",
+          "f": [
+            3700,
+            3800
+          ],
+          "expiry": "2035-12-15"
+        }
+      ]
+    },
+    {
+      "group": "26g",
+      "label": "26 GHz (n258)",
+      "names": [
+        "n258"
+      ],
+      "status": "assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          24250,
+          27500
+        ]
+      },
+      "positions": "verified",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "2020 5G auction. Separately, all three hold small paired FWA rights (Fixed Wireless Access, 2017–2032) around 24.5–26.1 GHz; these are not IMT and are not drawn.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/",
+        "https://www.spectrum-tracker.com/Greece"
+      ],
+      "blocks": [
+        {
+          "op": "nova",
+          "f": [
+            26500,
+            26700
+          ],
+          "expiry": "2035-12-15"
+        },
+        {
+          "op": "cosmote",
+          "f": [
+            26700,
+            27100
+          ],
+          "expiry": "2035-12-15"
+        },
+        {
+          "op": "vodafone",
+          "f": [
+            27100,
+            27500
+          ],
+          "expiry": "2035-12-15"
+        }
+      ]
+    },
+    {
+      "group": "40g",
+      "label": "40 GHz (n259)",
+      "names": [
+        "n259"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          37000,
+          43500
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not assigned.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "600",
+      "label": "600 MHz (B71/n71)",
+      "names": [
+        "n71"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          617,
+          652
+        ],
+        "ul": [
+          663,
+          698
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in Europe; 470–694 MHz remains allocated to terrestrial broadcasting (DTT) under the EU UHF decision (EU) 2017/899.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "850",
+      "label": "850 MHz (B5)",
+      "names": [
+        "B5",
+        "n5"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          869,
+          894
+        ],
+        "ul": [
+          824,
+          849
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised in CEPT/EU; 824–894 MHz overlaps the 800 MHz (B20) and E-GSM/GSM-R plans.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1700",
+      "label": "AWS 1.7/2.1 GHz (B4/B66)",
+      "names": [
+        "B66",
+        "n66"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          2110,
+          2155
+        ],
+        "ul": [
+          1710,
+          1755
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "AWS pairing not used in Europe; 1710–1785 MHz is the B3 uplink and 2110–2170 MHz is B1.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "1900",
+      "label": "PCS 1900 (B2/B25)",
+      "names": [
+        "B2",
+        "n2"
+      ],
+      "status": "not-assigned",
+      "duplex": "fdd",
+      "range": {
+        "dl": [
+          1930,
+          1995
+        ],
+        "ul": [
+          1850,
+          1915
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "PCS pairing not used in Europe; 1880–1900 MHz is DECT, 1900–1920 MHz unpaired and 1980–2010/2170–2200 MHz is 2 GHz MSS.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "4900",
+      "label": "4.4–5.0 GHz (n79)",
+      "names": [
+        "n79"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          4400,
+          5000
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "Not harmonised for MFCN in the EU; no mobile assignments.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    },
+    {
+      "group": "47g",
+      "label": "47 GHz (n262)",
+      "names": [
+        "n262"
+      ],
+      "status": "not-assigned",
+      "duplex": "tdd",
+      "range": {
+        "f": [
+          47200,
+          48200
+        ]
+      },
+      "positions": "holdings",
+      "future": null,
+      "excludeFromTotal": false,
+      "note": "No 47 GHz mobile assignments.",
+      "sources": [
+        "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+      ],
+      "blocks": []
+    }
+  ],
+  "notes": [
+    "No davwheat seed existed for GR; compiled from scratch.",
+    "Primary source: EETT's table 'Δικαιώματα με διαγωνιστική διαδικασία' (rights awarded by competitive procedure), which lists every block with start and end dates. spectrum-tracker (Oct 2024) matches it for 700/800/900/1800.",
+    "spectrum-tracker gives 3.5 GHz and 26 GHz validity as 28 Feb 2022–28 Feb 2040; EETT gives 16 Dec 2020–15 Dec 2035. EETT is used.",
+    "EETT's register still names the licensee WIND. The brand is Nova after United Group combined WIND Hellas and Nova (2022).",
+    "3.5 GHz: some Vodafone and COSMOTE blocks (3410–3470 MHz) are restricted to specific areas or indoor use, as footnoted by EETT. 3400–3410 MHz is not assigned."
+  ],
+  "missing": [
+    "900 MHz (expires 29 Sep 2027) and the 2012 1800 MHz blocks (expire 14 Nov 2027): any 2026 renewal or auction decision was not found",
+    "Date of the EETT table's last update not shown on the page",
+    "Carrier EARFCN/NR-ARFCN not compiled"
+  ],
+  "changes": [],
+  "sources": [
+    {
+      "title": "EETT – Δικαιώματα με διαγωνιστική διαδικασία",
+      "url": "https://www.eett.gr/parochoi/fasma-radiosychnotiton/adeiodotisi-radiosychnotiton/dikaiomata-me-diagonistiki-diadikasia/"
+    },
+    {
+      "title": "EETT – Rights granted through tender process (EN)",
+      "url": "https://www.eett.gr/en/operators/radio-frequency-spectrum/radiospectrum-licensing/rights-granted-through-tender-process/"
+    },
+    {
+      "title": "spectrum-tracker – Greece",
+      "url": "https://www.spectrum-tracker.com/Greece"
+    }
+  ]
+}
