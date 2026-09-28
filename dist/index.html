@@ -1,0 +1,844 @@
+<meta charset="utf-8">
+<title>Mobile Spectrum Atlas</title>
+<meta name="description" content="Who holds which mobile spectrum, band by band, in 46 countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root {
+  --bg: #f3f5f4;
+  --surface: #ffffff;
+  --surface-2: #e9edec;
+  --ink: #151a1d;
+  --ink-2: #4c575e;
+  --ink-3: #78848b;
+  --line: #d3dad9;
+  --line-2: #bcc6c5;
+  --accent: #0f5f8c;
+  --accent-soft: #dcebf3;
+  --marker: #d4340f;
+  --ok: #1c7a45;  --ok-soft: #dcf0e3;
+  --mid: #8a6100; --mid-soft: #f7ebcc;
+  --warn: #a8430f; --warn-soft: #fbe3d6;
+  --bad: #9a1b3a;  --bad-soft: #f7dbe3;
+  --unassigned: #cfd6d6;
+  --stripe: rgba(21, 26, 29, .06);
+  --shadow: 0 1px 2px rgba(21, 26, 29, .06), 0 4px 16px rgba(21, 26, 29, .05);
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --cond: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0e1215; --surface: #161b1f; --surface-2: #1d2328;
+    --ink: #e5eaec; --ink-2: #a9b4ba; --ink-3: #7b878e;
+    --line: #2a3238; --line-2: #3a444b;
+    --accent: #6cb6e0; --accent-soft: #15303f; --marker: #ff7a52;
+    --ok: #6fd39a; --ok-soft: #133524; --mid: #e7c064; --mid-soft: #3a2f10;
+    --warn: #f4a06c; --warn-soft: #40220f; --bad: #f28aa3; --bad-soft: #3d1621;
+    --unassigned: #353e44; --stripe: rgba(229, 234, 236, .07);
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e1215; --surface: #161b1f; --surface-2: #1d2328;
+  --ink: #e5eaec; --ink-2: #a9b4ba; --ink-3: #7b878e;
+  --line: #2a3238; --line-2: #3a444b;
+  --accent: #6cb6e0; --accent-soft: #15303f; --marker: #ff7a52;
+  --ok: #6fd39a; --ok-soft: #133524; --mid: #e7c064; --mid-soft: #3a2f10;
+  --warn: #f4a06c; --warn-soft: #40220f; --bad: #f28aa3; --bad-soft: #3d1621;
+  --unassigned: #353e44; --stripe: rgba(229, 234, 236, .07);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 150px; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); -webkit-text-size-adjust: 100%; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--cond); text-wrap: balance; margin: 0; letter-spacing: .005em; }
+.num, td.n { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--mono); font-size: .86em; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; }
+
+/* ---------- top bar ---------- */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: end; gap: 10px 14px; padding-block: 10px; }
+.brand { display: flex; flex-direction: column; margin-right: auto; min-width: 0; }
+.brand b { font: 700 19px/1.1 var(--cond); letter-spacing: .01em; }
+.brand span { font-size: 12px; color: var(--ink-3); }
+.ctl { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ctl label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); }
+select, input[type="text"], button { font: inherit; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line-2); border-radius: 6px; padding: 6px 9px; min-height: 36px; }
+select { max-width: 100%; }
+button { cursor: pointer; }
+button:hover { border-color: var(--accent); }
+.hl { display: flex; gap: 6px; flex-wrap: wrap; }
+.hl input { width: 150px; font-family: var(--mono); }
+.hl select { width: auto; }
+#themeBtn { min-width: 36px; padding: 6px; }
+.hlmsg { flex-basis: 100%; font-size: 13px; color: var(--ink-2); min-height: 0; }
+.hlmsg:empty { display: none; }
+.hlmsg b { color: var(--marker); }
+@media (max-width: 640px) {
+  .bar .wrap { gap: 8px; }
+  .brand { flex-basis: 100%; flex-direction: row; align-items: baseline; gap: 8px; }
+  .ctl { flex: 1 1 40%; }
+  .ctl.hlc { flex-basis: 100%; }
+  .hl input { flex: 1; width: auto; min-width: 0; }
+  html { scroll-padding-top: 210px; }
+}
+
+/* ---------- country head ---------- */
+main { padding-block: 22px 60px; display: flex; flex-direction: column; gap: 26px; }
+.head { display: grid; gap: 10px; }
+.head h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.05; font-weight: 700; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; color: var(--ink-2); font-size: 13.5px; }
+.summary { max-width: 72ch; color: var(--ink-2); margin: 0; }
+.badge { display: inline-flex; align-items: center; gap: 6px; font: 600 12px/1 var(--sans); text-transform: uppercase; letter-spacing: .07em; padding: 5px 9px; border-radius: 99px; white-space: nowrap; }
+.badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.cov-block-level { color: var(--ok); background: var(--ok-soft); }
+.cov-positions-verified { color: var(--accent); background: var(--accent-soft); }
+.cov-holdings-only { color: var(--mid); background: var(--mid-soft); }
+.cov-partial { color: var(--warn); background: var(--warn-soft); }
+.cov-not-compiled { color: var(--bad); background: var(--bad-soft); }
+
+/* ---------- band index ---------- */
+.index { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: baseline; gap: 5px; border: 1px solid var(--line-2); background: var(--surface); border-radius: 6px; padding: 4px 9px; font: 500 13px/1.3 var(--sans); color: var(--ink); text-decoration: none; cursor: pointer; }
+.chip small { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+.chip.mmw { border-color: var(--accent); }
+.chip.mmw::before { content: "mmW"; font: 600 9.5px/1 var(--mono); color: var(--accent); align-self: center; }
+.chip.na { color: var(--ink-3); background: transparent; border-style: dashed; }
+.chip.na small { text-decoration: none; }
+.chip.fut { border-style: dotted; }
+.chip:hover { border-color: var(--accent); }
+.idxlegend { font-size: 12px; color: var(--ink-3); }
+
+/* ---------- sections ---------- */
+section.card, .band, .head { grid-template-columns: minmax(0, 1fr); }
+section.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 14px; min-width: 0; }
+section h2 { font-size: 24px; font-weight: 700; }
+.sech { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.sech p { margin: 0; color: var(--ink-3); font-size: 13px; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th { text-align: left; font: 600 11px/1.2 var(--sans); text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); padding: 8px 10px; border-bottom: 1px solid var(--line-2); white-space: nowrap; }
+td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.n, th.n { text-align: right; font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+.opcell { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-weight: 500; }
+.sw { width: 12px; height: 12px; border-radius: 3px; flex: none; box-shadow: inset 0 0 0 1px rgba(0,0,0,.15); }
+.totals td.n.total { font-weight: 600; color: var(--ink); }
+.totals td.zero { color: var(--ink-3); }
+.tbar { height: 4px; border-radius: 2px; margin-top: 4px; margin-left: auto; }
+.foot { font-size: 12.5px; color: var(--ink-3); margin: 0; }
+
+/* ---------- band blocks ---------- */
+.band { display: grid; gap: 12px; padding-top: 18px; border-top: 1px solid var(--line); scroll-margin-top: 150px; }
+.band:first-of-type { border-top: 0; padding-top: 0; }
+.bandh { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.bandh h3 { font-size: 20px; font-weight: 600; }
+.tag { font: 500 11.5px/1 var(--mono); padding: 4px 6px; border-radius: 4px; background: var(--surface-2); color: var(--ink-2); white-space: nowrap; }
+.tag.warn { background: var(--warn-soft); color: var(--warn); }
+.tag.avg { background: var(--mid-soft); color: var(--mid); }
+.tag.ok { background: var(--ok-soft); color: var(--ok); }
+.tag.fut { background: var(--accent-soft); color: var(--accent); }
+.bnote { margin: 0; color: var(--ink-2); font-size: 13.5px; max-width: 90ch; }
+.diag { min-width: 620px; padding: 2px 14px 0 4px; }
+.drow { display: grid; grid-template-columns: 34px 1fr; gap: 6px; align-items: start; }
+.drow + .drow { margin-top: 4px; }
+.dlab { font: 600 11px/44px var(--mono); color: var(--ink-3); text-align: right; }
+.track { position: relative; height: 44px; background: repeating-linear-gradient(135deg, var(--stripe) 0 4px, transparent 4px 9px); border-radius: 4px; }
+.blk { position: absolute; top: 0; bottom: 0; border-radius: 3px; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; text-align: center; font: 600 12px/1.15 var(--cond); padding: 0 2px; cursor: pointer; border: 1px solid rgba(0,0,0,.18); transition: box-shadow .12s, filter .12s; }
+.blk small { font: 500 10.5px/1.1 var(--mono); opacity: .85; }
+.blk.unassigned { background: var(--unassigned) !important; color: var(--ink-3) !important; border-color: transparent; }
+.blk.guard { background: repeating-linear-gradient(90deg, var(--line-2) 0 1px, transparent 1px 4px) !important; color: var(--ink-3) !important; border-color: transparent; }
+.blk.dash { border: 2px dashed currentColor; background-clip: padding-box; }
+.blk.hold { opacity: .92; }
+.blk.sel, .blk:hover { box-shadow: 0 0 0 2px var(--ink), 0 0 0 4px var(--surface); z-index: 2; }
+.blk.hit { box-shadow: 0 0 0 3px var(--marker); z-index: 3; }
+.edges { position: relative; height: 54px; margin-left: 40px; }
+.edges span { position: absolute; top: 3px; transform: translateX(-50%); writing-mode: vertical-rl; rotate: 180deg; font: 400 10.5px/1 var(--mono); color: var(--ink-2); white-space: nowrap; }
+.edges span.end { color: var(--ink); font-weight: 500; }
+.edges i { position: absolute; top: -3px; height: 5px; border-left: 1px solid var(--ink-3); }
+.mark { position: absolute; top: -4px; bottom: -4px; width: 0; border-left: 2px solid var(--marker); z-index: 4; pointer-events: none; }
+.mark::after { content: ""; position: absolute; top: -5px; left: -6px; border: 5px solid transparent; border-top-color: var(--marker); }
+.alloc tbody tr { cursor: pointer; }
+.alloc tbody tr:hover td { background: var(--surface-2); }
+.alloc tr.sel td { background: var(--accent-soft); }
+.alloc tr.hit td { background: var(--warn-soft); }
+.alloc td.notes { min-width: 220px; max-width: 420px; color: var(--ink-2); font-size: 13px; }
+.alloc td.arf { font-family: var(--mono); font-size: 12px; max-width: 170px; word-break: break-word; }
+.alloc td.dim { color: var(--ink-3); }
+details.alloct > summary { cursor: pointer; font-size: 13px; color: var(--accent); font-weight: 500; }
+details.alloct[open] > summary { margin-bottom: 8px; }
+.src { font-size: 12.5px; color: var(--ink-3); margin: 0; overflow-wrap: anywhere; }
+
+/* ---------- not assigned + notes ---------- */
+.nalist { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.naitem { border: 1px dashed var(--line-2); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; scroll-margin-top: 150px; }
+.naitem b { font-family: var(--cond); font-size: 16px; font-weight: 600; }
+.naitem p { margin: 0; font-size: 13px; color: var(--ink-2); }
+.naitem a { font-size: 12px; overflow-wrap: anywhere; }
+.notes h3 { font-size: 16px; font-weight: 600; margin-top: 4px; }
+.notes ul { margin: 0; padding-left: 20px; display: grid; gap: 5px; max-width: 95ch; }
+.notes li { font-size: 14px; }
+.notes .srcs li { overflow-wrap: anywhere; font-size: 13px; }
+
+/* ---------- overview ---------- */
+.ov td .badge { font-size: 10.5px; padding: 4px 7px; }
+.ov tr.cur td { background: var(--accent-soft); }
+.ov a { font-weight: 500; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 12.5px; color: var(--ink-2); align-items: center; }
+.legend .lk { display: inline-block; width: 26px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 5px; }
+.lk.solid { background: var(--ink-3); }
+.lk.dashed { border: 2px dashed var(--ink-3); }
+.lk.free { background: var(--unassigned); }
+.err { padding: 18px; border-radius: 10px; background: var(--bad-soft); color: var(--bad); }
+footer { color: var(--ink-3); font-size: 12.5px; }
+footer p { margin: 0 0 6px; max-width: 95ch; }
+@media (max-width: 640px) { section.card { padding: 14px; } .diag { min-width: 560px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="brand"><b>Mobile Spectrum Atlas</b><span id="asof">loading…</span></div>
+    <div class="ctl"><label for="region">Region</label><select id="region"></select></div>
+    <div class="ctl"><label for="country">Country</label><select id="country"></select></div>
+    <div class="ctl hlc"><label for="hlv">Highlight EARFCN / NR-ARFCN / MHz</label>
+      <div class="hl">
+        <select id="hlk" aria-label="Value type"><option value="earfcn">EARFCN</option><option value="nr">NR-ARFCN</option><option value="mhz">MHz</option></select>
+        <input id="hlv" type="text" inputmode="decimal" placeholder="e.g. 1300" autocomplete="off">
+        <button id="hlclear" type="button" title="Clear highlight">Clear</button>
+        <button id="themeBtn" type="button" title="Switch light / dark theme" aria-label="Switch theme">◐</button>
+      </div>
+    </div>
+    <div class="hlmsg" id="hlmsg" aria-live="polite"></div>
+  </div>
+</header>
+<main class="wrap" id="main"><p>Loading spectrum data…</p></main>
+
+<script>
+// Shared logic for the spectrum atlas: band groups, totals, ARFCN maths and validation.
+// Used by the page (inlined at build time) and by the Node scripts.
+
+const REGIONS = ["Europe", "Asia-Pacific", "Americas", "Middle East & Africa"];
+
+const COVERAGE = {
+  "block-level": "Block-level",
+  "positions-verified": "Positions verified",
+  "holdings-only": "Holdings only",
+  "partial": "Partial",
+  "not-compiled": "Not compiled",
+};
+
+const GROUPS = [
+  { id: "450", label: "450 MHz", required: false },
+  { id: "600", label: "600 MHz", required: true },
+  { id: "700", label: "700 MHz", required: true },
+  { id: "800", label: "800 MHz", required: true },
+  { id: "850", label: "850 MHz", required: true },
+  { id: "900", label: "900 MHz", required: true },
+  { id: "1400", label: "1.4–1.5 GHz", required: true },
+  { id: "1700", label: "AWS / 1.7 GHz", required: true },
+  { id: "1800", label: "1800 MHz", required: true },
+  { id: "1900", label: "PCS 1900 / 2 GHz", required: true },
+  { id: "2000tdd", label: "1.9/2.0 GHz TDD", required: true },
+  { id: "2100", label: "2100 MHz", required: true },
+  { id: "2300", label: "2300 MHz", required: true },
+  { id: "2600", label: "2.5/2.6 GHz", required: true },
+  { id: "3500", label: "3.3–4.2 GHz", required: true },
+  { id: "4900", label: "4.4–5.0 GHz", required: true },
+  { id: "6g", label: "6 GHz", required: false },
+  { id: "26g", label: "24–29 GHz", required: true, mmwave: true },
+  { id: "40g", label: "37–43 GHz", required: true, mmwave: true },
+  { id: "47g", label: "47 GHz", required: true, mmwave: true },
+  { id: "other", label: "Other", required: false },
+];
+const GROUP_IDS = GROUPS.map((g) => g.id);
+
+const TOTAL_COLS = [
+  { id: "sub1", label: "<1 GHz" },
+  { id: "low", label: "1–3 GHz" },
+  { id: "mid", label: "3–6 GHz" },
+  { id: "mmw", label: ">6 GHz" },
+  { id: "total", label: "Total" },
+  { id: "sub6", label: "Sub-6" },
+];
+
+const NON_OPERATORS = new Set(["unassigned", "guard"]);
+const isRealOp = (op) => !NON_OPERATORS.has(op);
+
+const round = (x, d = 1) => {
+  const f = 10 ** d;
+  return Math.round(x * f) / f;
+};
+const width = (r) => round(r[1] - r[0], 3);
+
+// The lowest (downlink / TDD) frequency of a band entry, used to bucket totals.
+function entryAnchor(entry) {
+  const r = entry.range || {};
+  if (r.dl) return r.dl[0];
+  if (r.f) return r.f[0];
+  const b = (entry.blocks || [])[0];
+  if (b) return (b.dl || b.f)[0];
+  return null;
+}
+
+function bucketOf(freq) {
+  if (freq == null) return null;
+  if (freq < 1000) return "sub1";
+  if (freq < 3000) return "low";
+  if (freq < 6000) return "mid";
+  return "mmw";
+}
+
+const countsInTotals = (entry) =>
+  !entry.future && !entry.excludeFromTotal && entry.status !== "not-assigned";
+
+// MHz held by an operator in one entry, counting both directions of paired spectrum.
+function entryHoldings(entry) {
+  const out = {};
+  const add = (op, mhz) => {
+    if (!isRealOp(op)) return;
+    out[op] = round((out[op] || 0) + mhz, 3);
+  };
+  for (const b of entry.blocks || []) {
+    if (b.dl) add(b.op, width(b.dl) + (b.ul ? width(b.ul) : 0));
+    else if (b.f) add(b.op, width(b.f));
+  }
+  for (const h of entry.holdings || []) add(h.op, h.mhz * (h.paired ? 2 : 1));
+  return out;
+}
+
+function computeTotals(country) {
+  const rows = {};
+  for (const op of country.operators) rows[op.id] = { sub1: 0, low: 0, mid: 0, mmw: 0, total: 0, sub6: 0, approx: false };
+  for (const e of country.bands) {
+    if (!countsInTotals(e)) continue;
+    const bucket = bucketOf(entryAnchor(e));
+    if (!bucket) continue;
+    for (const [op, mhz] of Object.entries(entryHoldings(e))) {
+      const r = rows[op];
+      if (!r) continue;
+      r[bucket] = round(r[bucket] + mhz, 3);
+      r.total = round(r.total + mhz, 3);
+      if (bucket !== "mmw") r.sub6 = round(r.sub6 + mhz, 3);
+      if (e.positions === "regional-average") r.approx = true;
+    }
+  }
+  return rows;
+}
+
+// ---------- ARFCN maths ----------
+
+function earfcnToFreq(n, lte) {
+  for (const b of Object.values(lte)) {
+    const opts =
+      b.duplexMode === "FDD"
+        ? [
+            [b.downlinkArfcnOffset, b.downlinkStartFrequency, b.downlinkEndFrequency, "dl"],
+            [b.uplinkArfcnOffset, b.uplinkStartFrequency, b.uplinkEndFrequency, "ul"],
+          ]
+        : [[b.arfcnOffset, b.startFrequency, b.endFrequency, b.duplexMode === "SDL" ? "dl" : "tdd"]];
+    for (const [off, lo, hi, dir] of opts) {
+      if (off == null) continue;
+      if (n >= off && n < off + Math.round((hi - lo) * 10)) {
+        return { freq: round(lo + 0.1 * (n - off), 3), band: b.band, dir };
+      }
+    }
+  }
+  return null;
+}
+
+function nrarfcnToFreq(n) {
+  if (n < 0 || n > 3279165) return null;
+  if (n < 600000) return round(0.005 * n, 3);
+  if (n < 2016667) return round(3000 + 0.015 * (n - 600000), 3);
+  return round(24250.08 + 0.06 * (n - 2016667), 3);
+}
+
+// ---------- validation ----------
+
+const overlaps = (a, b) => a[0] < b[1] - 1e-6 && b[0] < a[1] - 1e-6;
+const inside = (a, r) => a[0] >= r[0] - 1e-6 && a[1] <= r[1] + 1e-6;
+const isRange = (r) => Array.isArray(r) && r.length === 2 && r.every((x) => typeof x === "number") && r[0] < r[1];
+const isUrl = (s) => typeof s === "string" && /^https?:\/\/\S+$/.test(s);
+
+function validateCountry(c) {
+  const errors = [];
+  const warnings = [];
+  const E = (m) => errors.push(`${c.code}: ${m}`);
+  const W = (m) => warnings.push(`${c.code}: ${m}`);
+
+  for (const k of ["code", "name", "region", "asOf", "coverage", "operators", "bands"]) if (c[k] == null) E(`missing field ${k}`);
+  if (c.region && !REGIONS.includes(c.region)) E(`bad region ${c.region}`);
+  if (c.coverage && !COVERAGE[c.coverage]) E(`bad coverage ${c.coverage}`);
+  if (!Array.isArray(c.operators) || !Array.isArray(c.bands)) return { errors, warnings };
+
+  const ops = new Set();
+  for (const o of c.operators) {
+    if (!/^[a-z0-9-]+$/.test(o.id || "")) E(`bad operator id ${o.id}`);
+    if (ops.has(o.id)) E(`duplicate operator ${o.id}`);
+    ops.add(o.id);
+    if (!/^#[0-9a-fA-F]{6}$/.test(o.color || "")) E(`operator ${o.id} bad colour ${o.color}`);
+    if (!o.name) E(`operator ${o.id} has no name`);
+  }
+  const used = new Set();
+
+  const present = new Set(c.bands.map((b) => b.group));
+  for (const g of GROUPS) if (g.required && !present.has(g.id)) E(`required band group ${g.id} missing (add a not-assigned entry)`);
+
+  c.bands.forEach((e, i) => {
+    const tag = `band[${i}] ${e.group} "${e.label || ""}"${e.future ? " (future)" : ""}`;
+    if (!GROUP_IDS.includes(e.group)) E(`${tag}: unknown group`);
+    if (!["assigned", "partially-assigned", "not-assigned", "unknown"].includes(e.status)) E(`${tag}: bad status ${e.status}`);
+    if (!["fdd", "tdd", "sdl", "mixed"].includes(e.duplex)) E(`${tag}: bad duplex ${e.duplex}`);
+    if (!Array.isArray(e.sources) || e.sources.length === 0) E(`${tag}: no sources`);
+    else for (const s of e.sources) if (!isUrl(s)) E(`${tag}: bad source url ${s}`);
+    const r = e.range || {};
+    if (e.status !== "not-assigned" && !r.dl && !r.f) E(`${tag}: no range`);
+    if (r.dl && (!isRange(r.dl) || (r.ul && !isRange(r.ul)))) E(`${tag}: bad range`);
+    if (r.f && !isRange(r.f)) E(`${tag}: bad range`);
+    if (r.dl && r.ul && Math.abs(width(r.dl) - width(r.ul)) > 1e-6) W(`${tag}: DL range ${width(r.dl)} != UL range ${width(r.ul)}`);
+    if (e.future && !e.future.from) E(`${tag}: future without from date`);
+    if (e.future && !(e.future.from > c.asOf)) W(`${tag}: future.from ${e.future.from} is not after asOf ${c.asOf} — should this be current?`);
+
+    const blocks = e.blocks || [];
+    const holdings = e.holdings || [];
+    const pos = e.positions;
+    if (e.status === "not-assigned") {
+      if (blocks.some((b) => isRealOp(b.op)) || holdings.length) E(`${tag}: not-assigned but has holdings`);
+      if (!e.note) W(`${tag}: not-assigned without a note explaining why`);
+      return;
+    }
+    if (!["verified", "unverified", "holdings", "regional-average"].includes(pos)) E(`${tag}: bad positions ${pos}`);
+    if ((pos === "verified" || pos === "unverified") && holdings.length) E(`${tag}: ${pos} entry should use blocks, not holdings`);
+    if ((pos === "holdings" || pos === "regional-average") && blocks.some((b) => isRealOp(b.op))) E(`${tag}: ${pos} entry should use holdings, not blocks`);
+    if (e.status !== "unknown" && blocks.length + holdings.length === 0) E(`${tag}: assigned but no blocks or holdings`);
+
+    // blocks
+    const dls = [], fs_ = [], uls = [];
+    for (const b of blocks) {
+      if (isRealOp(b.op)) { if (!ops.has(b.op)) E(`${tag}: unknown operator ${b.op}`); used.add(b.op); }
+      const btag = `${tag} block ${b.op} ${JSON.stringify(b.dl || b.f)}`;
+      if (b.dl) {
+        if (!isRange(b.dl)) { E(`${btag}: bad dl`); continue; }
+        if (r.dl && !inside(b.dl, r.dl)) E(`${btag}: DL outside band range ${JSON.stringify(r.dl)}`);
+        if (b.ul) {
+          if (!isRange(b.ul)) E(`${btag}: bad ul`);
+          else {
+            if (Math.abs(width(b.dl) - width(b.ul)) > 1e-6) E(`${btag}: DL width ${width(b.dl)} != UL width ${width(b.ul)}`);
+            if (r.ul && !inside(b.ul, r.ul)) E(`${btag}: UL outside band range ${JSON.stringify(r.ul)}`);
+            uls.push([b.ul, b.op]);
+          }
+        } else if (e.duplex === "fdd" && isRealOp(b.op)) E(`${btag}: FDD block without ul`);
+        dls.push([b.dl, b.op]);
+      } else if (b.f) {
+        if (!isRange(b.f)) { E(`${btag}: bad f`); continue; }
+        const rr = r.f || r.dl;
+        if (rr && !inside(b.f, rr)) E(`${btag}: outside band range ${JSON.stringify(rr)}`);
+        fs_.push([b.f, b.op]);
+      } else E(`${btag}: block has neither dl nor f`);
+      if (b.source && !isUrl(b.source)) E(`${btag}: bad source`);
+      for (const k of ["earfcn", "nrarfcn"]) if (b[k] != null && !Array.isArray(b[k])) E(`${btag}: ${k} must be an array`);
+    }
+    for (const list of [dls, uls, fs_]) {
+      for (let a = 0; a < list.length; a++)
+        for (let b = a + 1; b < list.length; b++)
+          if (overlaps(list[a][0], list[b][0])) E(`${tag}: overlap ${list[a][1]} ${JSON.stringify(list[a][0])} vs ${list[b][1]} ${JSON.stringify(list[b][0])}`);
+    }
+
+    // holdings
+    let sum = 0;
+    for (const h of holdings) {
+      if (!ops.has(h.op)) E(`${tag}: unknown operator ${h.op} in holdings`);
+      used.add(h.op);
+      if (!(typeof h.mhz === "number" && h.mhz > 0)) E(`${tag}: holding ${h.op} bad mhz ${h.mhz}`);
+      if (e.duplex === "fdd" && h.paired !== true) W(`${tag}: FDD holding ${h.op} not marked paired`);
+      if (h.source && !isUrl(h.source)) E(`${tag}: holding ${h.op} bad source`);
+      if (pos === "regional-average" && !h.basis) E(`${tag}: regional-average holding ${h.op} needs a basis`);
+      sum += h.mhz;
+    }
+    const size = r.dl ? width(r.dl) : r.f ? width(r.f) : null;
+    if (size != null && sum > size + 1e-6) E(`${tag}: holdings ${round(sum, 3)} MHz exceed band size ${size} MHz (paired amounts must be per direction)`);
+    const blockSum = (e.duplex === "fdd" ? dls : dls.length ? dls : fs_).filter(([, op]) => isRealOp(op)).reduce((s, [x]) => s + width(x), 0);
+    if (size != null && blockSum > size + 1e-6) E(`${tag}: blocks ${round(blockSum, 3)} MHz exceed band size ${size} MHz`);
+  });
+
+  for (const o of c.operators) if (!used.has(o.id) && o.kind !== "other") W(`operator ${o.id} holds nothing in any band`);
+  if (!Array.isArray(c.sources) || c.sources.length === 0) W(`no country-level sources list`);
+  return { errors, warnings };
+}
+
+// Page logic. Relies on the helpers from core.js, which the build inlines above this file.
+
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const fmt = (x) => {
+  if (x == null) return "";
+  const r = round(x, 3);
+  return (Number.isInteger(r) ? r.toFixed(1) : String(r));
+};
+const fmtW = (x) => { const r = round(x, 3); return Number.isInteger(r) ? String(r) : String(r); };
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+
+let DATA = null;
+let COUNTRY = null;
+let HL = null; // { freq, label }
+
+function textColor(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  const [r, g, b] = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; });
+  const L = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return L > 0.4 ? "#111" : "#fff";
+}
+
+// ---------- boot ----------
+fetch("spectrum.json")
+  .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then((d) => { DATA = d; init(); })
+  .catch((e) => { $("#main").innerHTML = `<div class="err">Could not load spectrum.json (${esc(e.message)}). Reload the page to try again.</div>`; });
+
+function init() {
+  $("#asof").textContent = `Data as of ${DATA.asOf} · ${DATA.countries.length} countries`;
+  const theme = store.get("theme");
+  if (theme) document.documentElement.dataset.theme = theme;
+  $("#themeBtn").addEventListener("click", () => {
+    const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const next = cur === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    store.set("theme", next);
+  });
+  const reg = $("#region");
+  reg.innerHTML = `<option value="">All regions</option>` + REGIONS.map((r) => `<option>${esc(r)}</option>`).join("");
+  reg.addEventListener("change", () => {
+    fillCountries();
+    const first = $("#country").value;
+    if (first && (!COUNTRY || (reg.value && COUNTRY.region !== reg.value))) go(first);
+  });
+  $("#country").addEventListener("change", (e) => go(e.target.value));
+  $("#hlk").addEventListener("change", runHighlight);
+  $("#hlv").addEventListener("input", runHighlight);
+  $("#hlclear").addEventListener("click", () => { $("#hlv").value = ""; runHighlight(); });
+  window.addEventListener("hashchange", fromHash);
+  fromHash();
+}
+
+function fillCountries() {
+  const r = $("#region").value;
+  const list = DATA.countries.filter((c) => !r || c.region === r).sort((a, b) => a.name.localeCompare(b.name));
+  $("#country").innerHTML = list.map((c) => `<option value="${c.code}">${esc(c.name)}</option>`).join("");
+  if (COUNTRY && list.some((c) => c.code === COUNTRY.code)) $("#country").value = COUNTRY.code;
+}
+
+function fromHash() {
+  const h = decodeURIComponent(location.hash.slice(1)).toLowerCase();
+  const [cc, ...rest] = h.split("-");
+  const c = DATA.countries.find((x) => x.code === cc) || DATA.countries.find((x) => x.code === (store.get("country") || "gb")) || DATA.countries[0];
+  render(c);
+  const anchor = rest.length ? `${c.code}-${rest.join("-")}` : null;
+  if (anchor) requestAnimationFrame(() => document.getElementById(anchor)?.scrollIntoView());
+}
+
+function go(cc) {
+  if (location.hash.slice(1) === cc) return;
+  location.hash = cc;
+}
+
+// ---------- render country ----------
+function render(c) {
+  COUNTRY = c;
+  store.set("country", c.code);
+  if ($("#region").value && $("#region").value !== c.region) $("#region").value = c.region;
+  fillCountries();
+  $("#country").value = c.code;
+  document.title = `${c.name} · Mobile Spectrum Atlas`;
+  const opById = Object.fromEntries(c.operators.map((o) => [o.id, o]));
+  const current = c.bands.filter((b) => !b.future && b.status !== "not-assigned");
+  const future = c.bands.filter((b) => b.future);
+  const na = c.bands.filter((b) => !b.future && b.status === "not-assigned");
+  const order = (a, b) => GROUP_IDS.indexOf(a.group) - GROUP_IDS.indexOf(b.group) || (entryAnchor(a) ?? 0) - (entryAnchor(b) ?? 0);
+  current.sort(order); future.sort(order); na.sort(order);
+  c.bands.forEach((b, i) => (b._id = `${c.code}-b${i}`));
+
+  const html = [];
+  html.push(`<div class="head">
+    <h1>${esc(c.name)}</h1>
+    <div class="meta"><span class="badge cov-${c.coverage}">${esc(COVERAGE[c.coverage])}</span>
+      <span>${esc(c.region)}</span><span>Checked ${esc(c.asOf)}</span>
+      <span>${c.licensing === "national" ? "National licences" : c.licensing === "regional" ? "Regional licences — figures are averages" : "Mixed national / regional licences"}</span>
+      <a href="#${c.code}-notes">Notes &amp; sources</a></div>
+    ${c.summary ? `<p class="summary">${esc(c.summary)}</p>` : ""}
+  </div>`);
+
+  // band index
+  const chips = [];
+  for (const g of GROUPS) {
+    const cur = current.filter((b) => b.group === g.id);
+    const fut = future.filter((b) => b.group === g.id);
+    const nas = na.filter((b) => b.group === g.id);
+    for (const b of cur) chips.push(chip(b, g, ""));
+    if (!cur.length && nas.length) chips.push(`<a class="chip na${g.mmwave ? " mmw" : ""}" data-go="${nas[0]._id}" title="Not assigned">${esc(g.label)} <small>not assigned</small></a>`);
+    for (const b of fut) chips.push(chip(b, g, " fut"));
+  }
+  function chip(b, g, cls) {
+    const names = (b.names || []).slice(0, 3).join("/");
+    const sub = b.future ? `from ${b.future.from}` : names;
+    const lbl = b.duplex === "fdd" || b.duplex === "sdl" || b.duplex === "tdd" ? (b.duplex === "tdd" ? " TDD" : b.duplex === "sdl" ? " SDL" : "") : "";
+    const sameGroup = current.filter((x) => x.group === b.group).length > 1;
+    return `<a class="chip${g.mmwave ? " mmw" : ""}${cls}" data-go="${b._id}">${esc(g.label)}${sameGroup ? esc(lbl) : ""} <small>${esc(sub)}</small></a>`;
+  }
+  html.push(`<section class="card" aria-label="Band index"><div class="sech"><h2>Bands</h2><p>Jump to a band. Dashed chips are bands with no assignment; dotted chips are scheduled changes.</p></div><nav class="index">${chips.join("")}</nav></section>`);
+
+  // totals
+  const t = computeTotals(c);
+  const isMno = (o) => !o.kind || o.kind === "mno";
+  const byTotal = (a, b) => t[b.id].total - t[a.id].total;
+  const mnoRows = c.operators.filter((o) => isMno(o) && t[o.id].total > 0).sort(byTotal);
+  const otherRows = c.operators.filter((o) => !isMno(o) && t[o.id].total > 0).sort(byTotal);
+  const rows = [...mnoRows, ...otherRows];
+  const max = Math.max(1, ...rows.map((o) => t[o.id].total));
+  const anyApprox = rows.some((o) => t[o.id].approx);
+  html.push(`<section class="card"><div class="sech"><h2>Spectrum totals</h2><p>MHz held today. Paired spectrum counts both directions (2×10 MHz = 20 MHz). Scheduled changes are excluded.</p></div>
+  <div class="scroll"><table class="totals"><thead><tr><th>Operator</th>${TOTAL_COLS.map((k) => `<th class="n">${k.label}</th>`).join("")}</tr></thead><tbody>
+  ${rows.map((o, ix) => { const r = t[o.id]; return `${ix === mnoRows.length && ix > 0 ? `<tr><th colspan="7" style="padding-top:14px">Other licensees (regional, private, government)</th></tr>` : ""}<tr><td><span class="opcell"><span class="sw" style="background:${o.color}"></span>${esc(o.name)}${r.approx ? " ≈" : ""}</span></td>${TOTAL_COLS.map((k) => `<td class="n${k.id === "total" ? " total" : ""}${r[k.id] ? "" : " zero"}">${fmtW(r[k.id])}${k.id === "total" ? `<div class="tbar" style="width:${(r.total / max) * 100}%;background:${o.color}"></div>` : ""}</td>`).join("")}</tr>`; }).join("")}
+  </tbody></table></div>
+  ${anyApprox ? `<p class="foot">≈ includes population-weighted or national averages for regionally licensed bands; see each band for the basis.</p>` : ""}
+  ${rows.length === 0 ? `<p class="foot">No holdings compiled yet.</p>` : ""}
+  </section>`);
+
+  // legend + bands
+  html.push(`<section class="card"><div class="sech"><h2>Band allocations</h2><p>Each diagram is to scale within its band. Click a block or a table row to link the two.</p></div>
+    <div class="legend"><span><i class="lk solid"></i>Exact position, verified</span><span><i class="lk dashed"></i>Position not verified or amount only</span><span><i class="lk free"></i>Unassigned</span><span class="tag avg">avg</span><span>Regional licences, averaged</span></div>
+    ${current.map((b) => bandHTML(b, opById)).join("") || `<p class="foot">No assigned bands compiled.</p>`}
+  </section>`);
+
+  if (future.length) {
+    html.push(`<section class="card"><div class="sech"><h2>Scheduled changes</h2><p>Announced assignments that take effect after ${esc(c.asOf)}. Not counted in the totals.</p></div>${future.map((b) => bandHTML(b, opById)).join("")}</section>`);
+  }
+
+  html.push(`<section class="card"><div class="sech"><h2>Not assigned</h2><p>Bands with no mobile licence in ${esc(c.name)}, and why.</p></div>
+    ${na.length ? `<div class="nalist">${na.map((b) => `<div class="naitem" id="${b._id}"><b>${esc(b.label || GROUPS.find((g) => g.id === b.group)?.label)}</b>${b.names?.length ? `<span class="mono">${esc(b.names.join(" / "))}${b.range ? " · " + rangeText(b.range) : ""}</span>` : ""}<p>${esc(b.note || "Not assigned.")}</p>${(b.sources || []).map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(host(s))}</a>`).join(" ")}</div>`).join("")}</div>` : `<p class="foot">Every band group has at least one assignment.</p>`}
+  </section>`);
+
+  // notes
+  const li = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join("");
+  html.push(`<section class="card notes" id="${c.code}-notes"><h2>Notes</h2>
+    ${c.missing?.length ? `<h3>Missing or unverified</h3><ul>${li(c.missing)}</ul>` : ""}
+    ${c.notes?.length ? `<h3>Notes</h3><ul>${li(c.notes)}</ul>` : ""}
+    ${c.changes?.length ? `<h3>Changes since the davwheat dataset</h3><ul>${li(c.changes)}</ul>` : ""}
+    <h3>Operators</h3><ul>${c.operators.map((o) => `<li><span class="opcell" style="display:inline-flex"><span class="sw" style="background:${o.color}"></span><b>${esc(o.name)}</b></span>${o.legal ? ` — ${esc(o.legal)}` : ""}${o.notes ? `. ${esc(o.notes)}` : ""}</li>`).join("")}</ul>
+    <h3>Sources</h3><ul class="srcs">${(c.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title || s.url)}</a></li>`).join("")}</ul>
+  </section>`);
+
+  html.push(overviewHTML(c));
+  html.push(`<footer><p>Seeded from <a href="https://github.com/davwheat/mobile-spectrum-data" target="_blank" rel="noopener">davwheat/mobile-spectrum-data</a> (LGPL-3.0) for the countries it covers, then re-checked and extended from regulator documents and trade press. Layout modelled on <a href="https://mastdatabase.co.uk/gb/spectrum/" target="_blank" rel="noopener">mastdatabase.co.uk</a>. Block positions are only drawn solid when a regulator document or two independent sources confirm them.</p></footer>`);
+
+  $("#main").innerHTML = html.join("");
+  wire();
+  runHighlight();
+}
+
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
+const rangeText = (r) => r.dl ? `DL ${fmt(r.dl[0])}–${fmt(r.dl[1])} / UL ${fmt(r.ul?.[0])}–${fmt(r.ul?.[1])} MHz` : r.f ? `${fmt(r.f[0])}–${fmt(r.f[1])} MHz` : "";
+
+function bandHTML(b, opById) {
+  const r = b.range || {};
+  const isHold = b.positions === "holdings" || b.positions === "regional-average";
+  const tags = [];
+  if (b.names?.length) tags.push(`<span class="tag">${esc(b.names.join(" / "))}</span>`);
+  tags.push(`<span class="tag">${b.duplex.toUpperCase()}</span>`);
+  if (b.positions === "verified") tags.push(`<span class="tag ok">positions verified</span>`);
+  else if (b.positions === "regional-average") tags.push(`<span class="tag avg">avg · regional licences</span><span class="tag warn">positions not verified</span>`);
+  else tags.push(`<span class="tag warn">positions not verified</span>`);
+  if (b.status === "partially-assigned") tags.push(`<span class="tag">partly assigned</span>`);
+  if (b.status === "unknown") tags.push(`<span class="tag warn">status unknown</span>`);
+  if (b.future) tags.push(`<span class="tag fut">${esc(b.future.label || "from " + b.future.from)}</span>`);
+  else if (b.excludeFromTotal) tags.push(`<span class="tag">not in totals</span>`);
+
+  // Build drawable items: [{op, rows:{dl|ul|f:[a,b]}, idx, kind}]
+  const items = [];
+  (b.blocks || []).forEach((k, i) => items.push({ k, i, dl: k.dl, ul: k.ul, f: k.f, hold: false }));
+  if (isHold) {
+    // Lay holdings out side by side from the bottom of the band, to scale.
+    const base = r.dl || r.f;
+    let pos = base ? base[0] : 0;
+    let upos = r.ul ? r.ul[0] : 0;
+    (b.holdings || []).forEach((h, i) => {
+      const it = { k: h, i: `h${i}`, hold: true };
+      if (r.dl) { it.dl = [pos, pos + h.mhz]; if (r.ul) it.ul = [upos, upos + h.mhz]; }
+      else it.f = [pos, pos + h.mhz];
+      pos += h.mhz; upos += h.mhz;
+      items.push(it);
+    });
+  }
+
+  const rowsSpec = r.dl ? [["DL", r.dl, "dl"], ...(r.ul ? [["UL", r.ul, "ul"]] : [])] : r.f ? [[b.duplex === "sdl" ? "SDL" : "TDD", r.f, "f"]] : [];
+  const diag = rowsSpec.map(([lab, rr, key]) => {
+    const span = rr[1] - rr[0];
+    const pct = (x) => ((x - rr[0]) / span) * 100;
+    const blocks = items.filter((it) => it[key] || (key === "f" && it.dl)).map((it) => {
+      const seg = it[key] || it.dl;
+      const o = opById[it.k.op];
+      const special = it.k.op === "unassigned" || it.k.op === "guard";
+      const w = pct(seg[1]) - pct(seg[0]);
+      const name = special ? (it.k.op === "guard" ? "guard" : "free") : (o?.short || o?.name || it.k.op);
+      const mhz = fmtW(seg[1] - seg[0]);
+      const col = o?.color || "#999";
+      const dashed = it.hold || b.positions === "unverified";
+      const inner = w >= 9 ? `${esc(name)}<small>${it.hold && it.k.paired ? "2×" : ""}${mhz}</small>` : w >= 4.5 ? `<small>${mhz}</small>` : "";
+      const style = special ? "" : dashed ? `background:color-mix(in srgb, ${col} 55%, var(--surface));color:${textColor(col) === "#fff" ? "var(--ink)" : "#111"};border-color:${col}` : `background:${col};color:${textColor(col)}`;
+      const title = `${special ? name : o?.name || it.k.op}: ${fmt(seg[0])}–${fmt(seg[1])} MHz (${mhz} MHz)${it.hold ? " — amount only, position not verified" : ""}`;
+      return `<div class="blk${special ? " " + it.k.op : ""}${dashed ? " dash" : ""}${it.hold ? " hold" : ""}" data-b="${b._id}" data-i="${it.i}" style="left:${pct(seg[0])}%;width:${w}%;${style}" title="${esc(title)}">${inner}</div>`;
+    }).join("");
+    return `<div class="drow"><div class="dlab">${lab}</div><div class="track" data-lo="${rr[0]}" data-hi="${rr[1]}" data-row="${key}" data-b="${b._id}">${blocks}</div></div>
+      <div class="edges">${edgeLabels(rr, items, key)}</div>`;
+  }).join("");
+
+  // allocation table
+  const trs = items.map((it) => {
+    const k = it.k, o = opById[k.op];
+    const special = k.op === "unassigned" || k.op === "guard";
+    const nm = special ? (k.op === "guard" ? "Guard band" : "Unassigned") : o?.name || k.op;
+    let dl = "", ul = "", wid = "";
+    if (it.hold) {
+      wid = `${k.paired ? "2×" : ""}${fmtW(k.mhz)}`;
+      dl = `<span class="dim">${k.basis && k.basis !== "exact" ? esc(k.basis) : "position not published"}</span>`;
+    } else if (k.dl) {
+      dl = `${fmt(k.dl[0])}–${fmt(k.dl[1])}`; ul = k.ul ? `${fmt(k.ul[0])}–${fmt(k.ul[1])}` : "";
+      wid = `${k.ul ? "2×" : ""}${fmtW(k.dl[1] - k.dl[0])}`;
+    } else if (k.f) {
+      dl = `${fmt(k.f[0])}–${fmt(k.f[1])}`; wid = fmtW(k.f[1] - k.f[0]);
+    }
+    const notes = [k.notes, k.source && !(b.sources || []).includes(k.source) ? `<a href="${esc(k.source)}" target="_blank" rel="noopener">source</a>` : ""].filter(Boolean);
+    return `<tr data-b="${b._id}" data-i="${it.i}"><td><span class="opcell"><span class="sw" style="background:${special ? "var(--unassigned)" : o?.color || "#999"}"></span>${esc(nm)}</span></td>
+      <td class="n">${dl}</td><td class="n">${ul}</td><td class="n">${wid}</td>
+      <td class="arf">${(k.earfcn || []).join(", ")}</td><td class="arf">${(k.nrarfcn || []).join(", ")}</td>
+      <td class="n">${esc(k.expiry || "")}</td><td class="notes">${notes.map((n) => (n.startsWith("<a") ? n : esc(n))).join(" · ")}</td></tr>`;
+  }).join("");
+  const hasUL = items.some((it) => it.ul);
+  const table = `<details class="alloct" open><summary>Allocation table (${items.length})</summary><div class="scroll"><table class="alloc"><thead><tr><th>Operator</th><th class="n">${r.f ? "Frequency" : "Downlink"} (MHz)</th><th class="n">${hasUL ? "Uplink (MHz)" : ""}</th><th class="n">Width (MHz)</th><th>EARFCN</th><th>NR-ARFCN</th><th class="n">Expiry</th><th>Notes</th></tr></thead><tbody>${trs}</tbody></table></div></details>`;
+
+  const srcs = (b.sources || []).map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(host(s))}</a>`).join(", ");
+  const sameLabel = b.label || GROUPS.find((g) => g.id === b.group)?.label;
+  return `<div class="band" id="${b._id}">
+    <div class="bandh"><h3>${esc(sameLabel)}</h3>${tags.join("")}</div>
+    ${b.note ? `<p class="bnote">${esc(b.note)}</p>` : ""}
+    ${diag ? `<div class="scroll"><div class="diag">${diag}</div></div>` : ""}
+    ${table}
+    <p class="src">Sources: ${srcs || "none recorded"}</p>
+  </div>`;
+}
+
+function edgeLabels(rr, items, key) {
+  const span = rr[1] - rr[0];
+  const pts = new Set([rr[0], rr[1]]);
+  for (const it of items) {
+    if (it.hold) continue;
+    const seg = it[key] || (key === "f" ? it.dl : null);
+    if (seg) { pts.add(round(seg[0], 3)); pts.add(round(seg[1], 3)); }
+  }
+  const sorted = [...pts].filter((x) => x >= rr[0] - 1e-6 && x <= rr[1] + 1e-6).sort((a, b) => a - b);
+  const out = [];
+  let last = -99;
+  const minGap = 2.1; // % of track width between labels
+  sorted.forEach((x, i) => {
+    const p = ((x - rr[0]) / span) * 100;
+    const isEnd = i === 0 || i === sorted.length - 1;
+    if (!isEnd && (p - last < minGap || 100 - p < minGap)) return;
+    last = p;
+    out.push(`<i style="left:${p}%"></i><span class="${isEnd ? "end" : ""}" style="left:${p}%">${fmt(x)}</span>`);
+  });
+  return out.join("");
+}
+
+function wire() {
+  $("#main").addEventListener("click", onClick);
+}
+function onClick(e) {
+  const go_ = e.target.closest("[data-go]");
+  if (go_) { e.preventDefault(); document.getElementById(go_.dataset.go)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); return; }
+  const el = e.target.closest(".blk[data-i], tr[data-i]");
+  if (!el || e.target.closest("a")) return;
+  const { b, i } = el.dataset;
+  const was = el.classList.contains("sel");
+  document.querySelectorAll(".sel").forEach((x) => x.classList.remove("sel"));
+  if (was) return;
+  document.querySelectorAll(`[data-b="${b}"][data-i="${i}"]`).forEach((x) => x.classList.add("sel"));
+  const partner = el.tagName === "TR" ? document.querySelector(`.blk[data-b="${b}"][data-i="${i}"]`) : document.querySelector(`tr[data-b="${b}"][data-i="${i}"]`);
+  if (partner && el.tagName !== "TR") {
+    partner.closest("details")?.setAttribute("open", "");
+    partner.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+}
+
+// ---------- highlighter ----------
+function runHighlight() {
+  document.querySelectorAll(".mark").forEach((m) => m.remove());
+  document.querySelectorAll(".hit").forEach((m) => m.classList.remove("hit"));
+  const kind = $("#hlk").value;
+  const raw = $("#hlv").value.trim();
+  const msg = $("#hlmsg");
+  $("#hlv").placeholder = kind === "earfcn" ? "e.g. 1300" : kind === "nr" ? "e.g. 632628" : "e.g. 3550.5";
+  if (!raw) { msg.textContent = ""; return; }
+  const n = Number(raw.replace(",", "."));
+  if (!Number.isFinite(n)) { msg.textContent = "Enter a number."; return; }
+  let freq, desc;
+  if (kind === "earfcn") {
+    if (!Number.isInteger(n)) { msg.textContent = "An EARFCN is a whole number."; return; }
+    const r = earfcnToFreq(n, DATA.lte);
+    if (!r) { msg.textContent = `EARFCN ${n} is not in any LTE band this atlas knows.`; return; }
+    freq = r.freq; desc = `EARFCN ${n} = Band ${r.band.replace(/^B/, "")} ${r.dir === "ul" ? "uplink" : r.dir === "tdd" ? "TDD" : "downlink"} ${fmt(freq)} MHz`;
+  } else if (kind === "nr") {
+    if (!Number.isInteger(n)) { msg.textContent = "An NR-ARFCN is a whole number."; return; }
+    freq = nrarfcnToFreq(n);
+    if (freq == null) { msg.textContent = "NR-ARFCN must be between 0 and 3279165."; return; }
+    desc = `NR-ARFCN ${n} = ${fmt(freq)} MHz`;
+  } else { freq = n; desc = `${fmt(n)} MHz`; }
+
+  const hits = [];
+  document.querySelectorAll(".track").forEach((t) => {
+    const lo = +t.dataset.lo, hi = +t.dataset.hi;
+    if (freq < lo || freq > hi) return;
+    const m = document.createElement("div");
+    m.className = "mark";
+    m.style.left = `${((freq - lo) / (hi - lo)) * 100}%`;
+    t.appendChild(m);
+    t.querySelectorAll(".blk").forEach((bk) => {
+      const l = parseFloat(bk.style.left), w = parseFloat(bk.style.width);
+      const p = ((freq - lo) / (hi - lo)) * 100;
+      if (p >= l - 1e-9 && p <= l + w + 1e-9 && !bk.classList.contains("hold")) {
+        bk.classList.add("hit");
+        document.querySelector(`tr[data-b="${bk.dataset.b}"][data-i="${bk.dataset.i}"]`)?.classList.add("hit");
+        hits.push(bk.title.split(":")[0]);
+      }
+    });
+  });
+  const first = document.querySelector(".mark");
+  const where = hits.length ? ` — inside ${[...new Set(hits)].map(esc).join(", ")}` : first ? " — inside a drawn band, no exact block matches" : ` — no band in ${esc(COUNTRY.name)} covers this frequency`;
+  msg.innerHTML = `<b>▼</b> ${esc(desc)}${where}`;
+  if (first && document.activeElement === $("#hlv")) first.closest(".band")?.scrollIntoView({ block: "nearest" });
+}
+
+// ---------- overview ----------
+function overviewHTML(cur) {
+  const rows = REGIONS.map((reg) => {
+    const cs = DATA.countries.filter((c) => c.region === reg).sort((a, b) => a.name.localeCompare(b.name));
+    return `<tr><th colspan="6" style="padding-top:14px">${esc(reg)}</th></tr>` + cs.map((c) => {
+      const assigned = new Set(c.bands.filter((b) => !b.future && b.status !== "not-assigned").map((b) => b.group));
+      const mmw = ["26g", "40g", "47g"].filter((g) => assigned.has(g)).map((g) => GROUPS.find((x) => x.id === g).label);
+      return `<tr class="${c.code === cur.code ? "cur" : ""}"><td><a href="#${c.code}">${esc(c.name)}</a></td><td><span class="badge cov-${c.coverage}">${esc(COVERAGE[c.coverage])}</span></td><td class="n">${c.operators.filter((o) => o.kind === "mno" || !o.kind).length}</td><td class="n">${assigned.size}</td><td>${mmw.length ? esc(mmw.join(", ")) : `<span class="dim" style="color:var(--ink-3)">none</span>`}</td><td class="n">${esc(c.asOf)}</td></tr>`;
+    }).join("");
+  }).join("");
+  return `<section class="card ov"><div class="sech"><h2>All countries</h2><p>Coverage of the atlas. Band groups counts assigned groups (of ${GROUPS.length}).</p></div>
+  <div class="scroll"><table><thead><tr><th>Country</th><th>Coverage</th><th class="n">MNOs</th><th class="n">Band groups</th><th>mmWave assigned</th><th class="n">Checked</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+}
+
+</script>
