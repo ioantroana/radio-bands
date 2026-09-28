@@ -1,0 +1,1099 @@
+{
+ "code": "au",
+ "name": "Australia",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
+ "licensing": "mixed",
+ "summary": "Three MNOs: Telstra, Optus and TPG Telecom (Vodafone). Low bands (700 MHz, and 850/900 MHz since 2024) are national spectrum licences. 1800 MHz, 2 GHz, 2.3 GHz, 3.4-3.8 GHz and 26 GHz are area-based licences whose holdings differ between capitals and regional areas.",
+ "operators": [
+  {
+   "id": "telstra",
+   "name": "Telstra",
+   "legal": "Telstra Limited / Telstra 3G Spectrum Holdings Pty Ltd",
+   "color": "#0064d2",
+   "aliases": [
+    "Telstra Corporation"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "optus",
+   "name": "Optus",
+   "legal": "Optus Mobile Pty Limited",
+   "color": "#ffc72c",
+   "aliases": [
+    "Singtel Optus"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "tpg",
+   "name": "TPG Telecom (Vodafone)",
+   "legal": "Vodafone Australia Pty Ltd / Vodafone Hutchison Australia Pty Ltd / TPG Internet Pty Ltd / Mobile JV Pty Ltd",
+   "color": "#e60000",
+   "aliases": [
+    "Vodafone",
+    "VHA",
+    "TPG",
+    "Mobile JV"
+   ],
+   "kind": "mno",
+   "notes": "Vodafone Hutchison Australia merged with TPG in July 2020 to form TPG Telecom. Licences are still registered to the legacy entities (Vodafone Australia, VHA, TPG Internet, Mobile JV); combined here."
+  },
+  {
+   "id": "nbn",
+   "name": "NBN Co",
+   "legal": "NBN Co Limited",
+   "color": "#6b2c91",
+   "aliases": [
+    "nbn"
+   ],
+   "kind": "other",
+   "notes": "Wholesale national broadband network; uses 2.3 and 3.4 GHz for fixed wireless."
+  },
+  {
+   "id": "denseair",
+   "name": "Dense Air",
+   "legal": "Dense Air Australia Pty Ltd",
+   "color": "#7a7a7a",
+   "aliases": [],
+   "kind": "other"
+  },
+  {
+   "id": "delta",
+   "name": "Delta Networks",
+   "legal": "Delta Networks Pty Ltd",
+   "color": "#9e9e9e",
+   "aliases": [],
+   "kind": "other",
+   "notes": "Holds area-limited 2.5 GHz licences (2500-2510/2620-2630 MHz)."
+  },
+  {
+   "id": "rail",
+   "name": "Rail operators",
+   "legal": "Sydney Trains, Victorian Rail Track, Queensland Rail, PTA WA, SA DPTI",
+   "color": "#8d6e63",
+   "aliases": [],
+   "kind": "other",
+   "notes": "State rail operators hold 1770-1785 / 1865-1880 MHz spectrum licences in capital cities."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not planned for mobile; UHF 520-694 MHz used for broadcasting TV.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "National spectrum licences. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
+    "https://www.spectrum-tracker.com/Australia/Telstra"
+   ],
+   "blocks": [
+    {
+     "op": "optus",
+     "dl": [
+      758,
+      768
+     ],
+     "ul": [
+      703,
+      713
+     ],
+     "expiry": "2029-12-31",
+     "notes": "2013 digital dividend auction"
+    },
+    {
+     "op": "telstra",
+     "dl": [
+      768,
+      788
+     ],
+     "ul": [
+      713,
+      733
+     ],
+     "expiry": "2029-12-31",
+     "notes": "2013 auction"
+    },
+    {
+     "op": "tpg",
+     "dl": [
+      788,
+      793
+     ],
+     "ul": [
+      733,
+      738
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Registered to Vodafone Hutchison Australia (2017 residual auction)"
+    },
+    {
+     "op": "tpg",
+     "dl": [
+      793,
+      803
+     ],
+     "ul": [
+      738,
+      748
+     ],
+     "expiry": "2029-12-31",
+     "notes": "Registered to TPG Internet (2017 residual auction)"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EU 800 plan not used; Australia uses the B5/B26 850 MHz plan.",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5/B26)",
+   "names": [
+    "B5",
+    "B26",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     859,
+     894
+    ],
+    "ul": [
+     814,
+     849
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Drawn for capital cities (exact per the ACMA register). In the regional/remote area the 825-845 MHz split is TPG 2x5 / Telstra 2x15. The 850 expansion (814-824) and 900 MHz lots were sold in the 2021 auction; licences started 1 July 2024. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
+    "https://www.acma.gov.au/auction-summary-850900-mhz-band-2021"
+   ],
+   "blocks": [
+    {
+     "op": "telstra",
+     "dl": [
+      859,
+      869
+     ],
+     "ul": [
+      814,
+      824
+     ],
+     "expiry": "2044-06-30",
+     "notes": "850 MHz expansion band, national, from 1 Jul 2024"
+    },
+    {
+     "op": "optus",
+     "dl": [
+      869,
+      870
+     ],
+     "ul": [
+      824,
+      825
+     ],
+     "expiry": "2028-06-17",
+     "notes": "1 MHz downshift block (metro + regional), from 1 Jul 2024"
+    },
+    {
+     "op": "tpg",
+     "dl": [
+      870,
+      880
+     ],
+     "ul": [
+      825,
+      835
+     ],
+     "expiry": "2028-06-17",
+     "notes": "Capital cities. In regional/remote areas TPG has 825-830/870-875 only"
+    },
+    {
+     "op": "telstra",
+     "dl": [
+      880,
+      890
+     ],
+     "ul": [
+      835,
+      845
+     ],
+     "expiry": "2028-06-17",
+     "notes": "Capital cities. In regional/remote areas Telstra has 830-845/875-890"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      890,
+      894
+     ],
+     "ul": [
+      845,
+      849
+     ],
+     "notes": "Guard to 900 MHz"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Since 1 July 2024 the 900 MHz band (890-915/935-960) is one national spectrum licence held by Optus. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
+    "https://www.acma.gov.au/auction-summary-850900-mhz-band-2021"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "notes": "Not spectrum-licensed for mobile"
+    },
+    {
+     "op": "optus",
+     "dl": [
+      935,
+      960
+     ],
+     "ul": [
+      890,
+      915
+     ],
+     "expiry": "2044-06-30",
+     "notes": "National, from 1 Jul 2024 (2021 auction, metro + regional lots)"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz",
+   "names": [
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not allocated to mobile (fixed links).",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS plan not used.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3) – population-weighted",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Spectrum licences by area (8 capitals + about 15 regional areas). Averages are approximate: capital cities are weighted about 65%, regional licence areas about 35%. Remote areas use apparatus licences and are not included. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "holdings": [
+    {
+     "op": "telstra",
+     "mhz": 24,
+     "paired": true,
+     "basis": "pop-weighted avg (capitals 15-20, regional 35-40)",
+     "expiry": "2028-06-17"
+    },
+    {
+     "op": "optus",
+     "mhz": 17.5,
+     "paired": true,
+     "basis": "pop-weighted avg (capitals 15, regional 20-25)",
+     "expiry": "2028-06-17"
+    },
+    {
+     "op": "tpg",
+     "mhz": 22,
+     "paired": true,
+     "basis": "pop-weighted avg (capitals 25-30, regional 5-15)",
+     "expiry": "2028-06-17"
+    },
+    {
+     "op": "rail",
+     "mhz": 10,
+     "paired": true,
+     "basis": "capital cities only (1770-1785), about 65% population",
+     "notes": "State rail operators"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3) – Sydney",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Exact layout in the Sydney licence area (excluded from totals). Melbourne is identical. Brisbane, Perth and Adelaide have Telstra 1710-1730, TPG 1730-1755 and Optus 1755-1770. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "blocks": [
+    {
+     "op": "telstra",
+     "dl": [
+      1805,
+      1820
+     ],
+     "ul": [
+      1710,
+      1725
+     ]
+    },
+    {
+     "op": "tpg",
+     "dl": [
+      1820,
+      1850
+     ],
+     "ul": [
+      1725,
+      1755
+     ],
+     "notes": "Vodafone Australia 1725-1740 + VHA 1740-1755"
+    },
+    {
+     "op": "optus",
+     "dl": [
+      1850,
+      1865
+     ],
+     "ul": [
+      1755,
+      1770
+     ]
+    },
+    {
+     "op": "rail",
+     "dl": [
+      1865,
+      1880
+     ],
+     "ul": [
+      1770,
+      1785
+     ],
+     "notes": "Sydney Trains"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz TDD",
+   "names": [
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignments.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2 GHz (B1) – capital cities",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Spectrum licences cover capitals and regional SE Australia/WA (in regional areas only 1960-1980 MHz: Optus 5, Telstra 10, TPG 5; the rest is apparatus-licensed). Holdings are capital-city averages. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "holdings": [
+    {
+     "op": "telstra",
+     "mhz": 17,
+     "paired": true,
+     "basis": "pop-weighted avg over capital cities (Syd/Mel 15, others 20)",
+     "expiry": "2032-10-11"
+    },
+    {
+     "op": "optus",
+     "mhz": 20,
+     "paired": true,
+     "basis": "all capital cities",
+     "expiry": "2032-10-11"
+    },
+    {
+     "op": "tpg",
+     "mhz": 23,
+     "paired": true,
+     "basis": "pop-weighted avg over capital cities (Syd/Mel 25, others 20)",
+     "expiry": "2032-10-11"
+    }
+   ]
+  },
+  {
+   "group": "2100",
+   "label": "2 GHz (B1) – Sydney",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Sydney and Melbourne layout (excluded from totals). From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "blocks": [
+    {
+     "op": "tpg",
+     "dl": [
+      2110,
+      2125
+     ],
+     "ul": [
+      1920,
+      1935
+     ],
+     "notes": "VHA"
+    },
+    {
+     "op": "telstra",
+     "dl": [
+      2125,
+      2130
+     ],
+     "ul": [
+      1935,
+      1940
+     ]
+    },
+    {
+     "op": "optus",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ]
+    },
+    {
+     "op": "telstra",
+     "dl": [
+      2150,
+      2160
+     ],
+     "ul": [
+      1960,
+      1970
+     ]
+    },
+    {
+     "op": "tpg",
+     "dl": [
+      2160,
+      2170
+     ],
+     "ul": [
+      1970,
+      1980
+     ],
+     "notes": "Vodafone Australia"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2.3 GHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2302,
+     2400
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Area-based spectrum licences with complex boundaries. The averages come from an area-overlap analysis of the ACMA register and are approximate. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "holdings": [
+    {
+     "op": "optus",
+     "mhz": 42,
+     "paired": false,
+     "basis": "rough pop-weighted estimate: about 91-98 MHz in Sydney, Melbourne, Adelaide and Canberra-area licences",
+     "expiry": "2030-07-24"
+    },
+    {
+     "op": "nbn",
+     "mhz": 42,
+     "paired": false,
+     "basis": "rough pop-weighted estimate: 98 MHz in Brisbane, Perth, Hobart, Darwin and much of regional Australia",
+     "expiry": "2030-07-24"
+    },
+    {
+     "op": "telstra",
+     "mhz": 12,
+     "paired": false,
+     "basis": "rough estimate: 35 MHz (2365-2400) in several regional areas",
+     "expiry": "2030-07-24"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2570-2620 MHz (mid-band gap) is licensed to the ABC, Seven, Nine and Ten for broadcast outside-broadcast links, not mobile. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
+    "https://www.spectrum-tracker.com/Australia/Telstra"
+   ],
+   "blocks": [
+    {
+     "op": "delta",
+     "dl": [
+      2620,
+      2630
+     ],
+     "ul": [
+      2500,
+      2510
+     ],
+     "expiry": "2029-09-30",
+     "notes": "Area-limited licences (2021)"
+    },
+    {
+     "op": "telstra",
+     "dl": [
+      2630,
+      2670
+     ],
+     "ul": [
+      2510,
+      2550
+     ],
+     "expiry": "2029-09-30",
+     "notes": "2013 auction"
+    },
+    {
+     "op": "optus",
+     "dl": [
+      2670,
+      2690
+     ],
+     "ul": [
+      2550,
+      2570
+     ],
+     "expiry": "2029-09-30",
+     "notes": "2013 auction"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4-3.8 GHz (n78) – metro",
+   "names": [
+    "n78",
+    "B42"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Area-based licences from the 2018 3.6 GHz auction, the 2023 3.4/3.7 GHz auction (3.7 GHz licences from 19 Jan 2024 to 2044) and earlier 3.4 GHz licences. Other capitals differ: Brisbane has Telstra 3575-3625 + 3720-3780, TPG 3625-3665 + 3780-3800, Optus 3665-3720. 3.8-4.0 GHz is area-wide licensed (AWL) for local and private networks and is not included. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
+    "https://www.acma.gov.au/auction-summary-34-ghz-and-37-ghz-bands-2023"
+   ],
+   "holdings": [
+    {
+     "op": "telstra",
+     "mhz": 140,
+     "paired": false,
+     "basis": "Sydney/Melbourne metro: 60 MHz (3.6 GHz) + 80 MHz (3.7 GHz, 3700-3780)",
+     "expiry": "2030-12-13 / 2044-01-18"
+    },
+    {
+     "op": "optus",
+     "mhz": 100,
+     "paired": false,
+     "basis": "Sydney/Melbourne metro: 3475-3575",
+     "expiry": "2030-12-13"
+    },
+    {
+     "op": "tpg",
+     "mhz": 80,
+     "paired": false,
+     "basis": "Sydney/Melbourne metro: 60 MHz (3.6 GHz) + 20 MHz (3780-3800)",
+     "expiry": "2030-12-13 / 2044-01-18"
+    },
+    {
+     "op": "nbn",
+     "mhz": 75,
+     "paired": false,
+     "basis": "3400-3475 in most capital and regional areas",
+     "expiry": "2030-12-13"
+    },
+    {
+     "op": "denseair",
+     "mhz": 5,
+     "paired": false,
+     "basis": "small metro slivers (3635-3640 Sydney, 3695-3700 Melbourne)",
+     "expiry": "2030-12-13"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4-3.8 GHz – Melbourne",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     3800
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "Melbourne layout (excluded from totals); Sydney is almost the same (TPG 3640-3700, Dense Air 3635-3640). From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+   ],
+   "blocks": [
+    {
+     "op": "nbn",
+     "f": [
+      3400,
+      3475
+     ]
+    },
+    {
+     "op": "optus",
+     "f": [
+      3475,
+      3575
+     ]
+    },
+    {
+     "op": "telstra",
+     "f": [
+      3575,
+      3635
+     ]
+    },
+    {
+     "op": "tpg",
+     "f": [
+      3635,
+      3695
+     ],
+     "notes": "Mobile JV"
+    },
+    {
+     "op": "denseair",
+     "f": [
+      3695,
+      3700
+     ]
+    },
+    {
+     "op": "telstra",
+     "f": [
+      3700,
+      3780
+     ],
+     "notes": "3.7 GHz, 2024-2044"
+    },
+    {
+     "op": "tpg",
+     "f": [
+      3780,
+      3800
+     ],
+     "notes": "3.7 GHz, Mobile JV"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not allocated to mobile.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2021 auction, spectrum licences in 29 metro and regional-centre areas with the same layout in all of them except Greater Perth, Hobart and Margaret River (for example Perth lower: Telstra 25.1-26.1, Optus 26.1-26.9, TPG 26.9-27.0; Pentanet holds 27.3-27.5 GHz in Perth). The rest of Australia uses area-wide licences. The 27.5-29.5 GHz range (28 GHz) is used by satellite AWLs and a few NBN AWLs, not for mobile. From the ACMA Register of Radiocommunications Licences (RRL spectrum-licence dump, 28 Sep 2026).",
+   "sources": [
+    "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip",
+    "https://www.acma.gov.au/auction-summary-26-ghz-band-2021"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      24250,
+      25100
+     ],
+     "notes": "24.7-25.1 GHz area-wide licensed (AWL) for local use"
+    },
+    {
+     "op": "tpg",
+     "f": [
+      25100,
+      25700
+     ],
+     "expiry": "2036-07-14",
+     "notes": "Mobile JV"
+    },
+    {
+     "op": "telstra",
+     "f": [
+      25700,
+      26700
+     ],
+     "expiry": "2036-07-14"
+    },
+    {
+     "op": "optus",
+     "f": [
+      26700,
+      27500
+     ],
+     "expiry": "2036-07-14"
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not allocated to mobile operators.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not allocated.",
+   "sources": [
+    "https://www.acma.gov.au/five-year-spectrum-outlook"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Regulator: ACMA. All data here come from the ACMA Register of Radiocommunications Licences (spectrum-licence dump downloaded 28 Sep 2026), not from press reports.",
+  "Licensing is mixed: national spectrum licences in 700/850/900 MHz and 2.5 GHz; area-based spectrum licences elsewhere; apparatus licences in remote areas (not compiled). For area-based bands, a regional-average entry feeds the totals and a city block view is shown excluded from totals.",
+  "The 850 MHz expansion and 900 MHz lots from the 2021 auction started on 1 July 2024 (Telstra 814-824 national, Optus 890-915 national, to 2044). Optus also has 1 MHz at 824-825 until 2028.",
+  "800 MHz (825-845) and 1800 MHz spectrum licences expire on 17 June 2028, 2.5 GHz on 30 Sep 2029, 700 MHz on 31 Dec 2029, 2.3 GHz on 24 Jul 2030, 3.4-3.7 GHz on 13 Dec 2030 and 2 GHz on 11 Oct 2032. ACMA's decisions on renewing these expiring licences were not compiled."
+ ],
+ "missing": [
+  "Apparatus-licensed mobile spectrum in regional and remote areas (for example regional 1800/2100 MHz) not included.",
+  "2.3 GHz and 3.4-3.8 GHz averages are approximate (derived from an area-overlap analysis of the register, not an official table).",
+  "Outcome of ACMA's expiring spectrum licence (ESL) renewal process for the 2028-2032 expiries not checked.",
+  "Delta Networks' 2.5 GHz licence area not identified.",
+  "ACMA web pages were not reachable (403); auction-summary URLs are cited as secondary references only. EARFCN data not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "ACMA – Register of Radiocommunications Licences, spectrum licence data dump (spectra_rrl.zip)",
+   "url": "https://web.acma.gov.au/rrl-updates/spectra_rrl.zip"
+  },
+  {
+   "title": "ACMA – RRL search",
+   "url": "https://web.acma.gov.au/rrl/register_search.main_page"
+  },
+  {
+   "title": "ACMA – Auction summary 26 GHz band 2021",
+   "url": "https://www.acma.gov.au/auction-summary-26-ghz-band-2021"
+  },
+  {
+   "title": "ACMA – Auction summary 3.4/3.7 GHz 2023",
+   "url": "https://www.acma.gov.au/auction-summary-34-ghz-and-37-ghz-bands-2023"
+  },
+  {
+   "title": "ACMA – Auction summary 850/900 MHz band 2021",
+   "url": "https://www.acma.gov.au/auction-summary-850900-mhz-band-2021"
+  },
+  {
+   "title": "Spectrum Tracker – Australia",
+   "url": "https://www.spectrum-tracker.com/Australia/Telstra"
+  }
+ ]
+}

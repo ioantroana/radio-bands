@@ -1,0 +1,874 @@
+{
+ "code": "nz",
+ "name": "New Zealand",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
+ "licensing": "national",
+ "summary": "Three MNOs: Spark, One NZ (formerly Vodafone) and 2degrees. Spectrum is held as tradable national management rights. 3.5 GHz long-term rights (80 MHz per MNO plus 100 MHz for Māori) started in July 2023; 2300/2600 MHz renewals are due in 2027-28, and mmWave is delayed to 2028-2030.",
+ "operators": [
+  {
+   "id": "spark",
+   "name": "Spark",
+   "legal": "Spark New Zealand Trading Limited",
+   "color": "#6d2077",
+   "aliases": [
+    "Telecom New Zealand"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "onenz",
+   "name": "One NZ",
+   "legal": "One New Zealand Group Limited (formerly Vodafone New Zealand Limited)",
+   "color": "#e4002b",
+   "aliases": [
+    "Vodafone NZ",
+    "Vodafone New Zealand"
+   ],
+   "kind": "mno",
+   "notes": "Vodafone New Zealand rebranded as One NZ in 2023. Management rights are registered to Vodafone New Zealand Limited in the 2022 register extract."
+  },
+  {
+   "id": "2degrees",
+   "name": "2degrees",
+   "legal": "Two Degrees Networks Limited",
+   "color": "#00a3e0",
+   "aliases": [
+    "Two Degrees"
+   ],
+   "kind": "mno",
+   "notes": "Merged with Vocus NZ in 2022 under the 2degrees brand. It uses 2100 MHz spectrum whose management right is held by Hautaki Ltd (see Hautaki)."
+  },
+  {
+   "id": "hautaki",
+   "name": "Hautaki (used by 2degrees)",
+   "legal": "Hautaki Limited",
+   "color": "#4fc3f7",
+   "aliases": [
+    "Hautaki Trust"
+   ],
+   "kind": "other",
+   "notes": "Māori trust company holding the 1955-1970/2145-2160 MHz management right. The spectrum is used by 2degrees' network (from background knowledge, not source-verified)."
+  },
+  {
+   "id": "denseair",
+   "name": "Dense Air",
+   "legal": "Dense Air New Zealand Limited",
+   "color": "#7a7a7a",
+   "aliases": [],
+   "kind": "other",
+   "notes": "Held 2.5 GHz FDD management rights (2500-2535/2620-2655) per the 2022 register. Its current status was not verified. Withdrew from the long-term 3.5 GHz process in 2023."
+  },
+  {
+   "id": "maori",
+   "name": "Māori spectrum (IMSC)",
+   "legal": "Interim Māori Spectrum Commission (on behalf of Māori)",
+   "color": "#9c2a1c",
+   "aliases": [
+    "Te Huarahi Tika"
+   ],
+   "kind": "other",
+   "notes": "Received 100 MHz of 3.5 GHz long-term rights from 1 July 2023."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. RSM's work on 600 MHz for mobile is paused. 622-703 MHz is Crown-managed (DTT rights expire 30 Nov 2033).",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-600-mhz-spectrum-paused-and-not-active"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "dl": [
+     617,
+     652
+    ],
+    "ul": [
+     663,
+     698
+    ]
+   }
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     803
+    ],
+    "ul": [
+     703,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auction 12 (2013-14): 9 lots of 2x5 MHz. Management-right edges from the RSM Register of Radio Frequencies (Spectrum Search Lite PRISM database, last updated 5 Dec 2022).",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip",
+    "https://www.rsm.govt.nz/projects-and-auctions/auctions/completed-spectrum-auctions-1996-present/auction-12",
+    "https://www.spectrum-tracker.com/New-Zealand/Spark"
+   ],
+   "blocks": [
+    {
+     "op": "spark",
+     "dl": [
+      758,
+      778
+     ],
+     "ul": [
+      703,
+      723
+     ],
+     "expiry": "2031-11-28"
+    },
+    {
+     "op": "onenz",
+     "dl": [
+      778,
+      793
+     ],
+     "ul": [
+      723,
+      738
+     ],
+     "expiry": "2031-11-28"
+    },
+    {
+     "op": "2degrees",
+     "dl": [
+      793,
+      803
+     ],
+     "ul": [
+      738,
+      748
+     ],
+     "expiry": "2031-11-28"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "EU 800 plan not used; the B5 850 MHz plan is used.",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/table-of-radio-spectrum-usage-in-new-zealand-pib-21.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5",
+    "n5"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     869,
+     894
+    ],
+    "ul": [
+     824,
+     849
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Management-right edges from the RSM Register of Radio Frequencies (Spectrum Search Lite PRISM database, last updated 5 Dec 2022).",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip",
+    "https://www.spectrum-tracker.com/New-Zealand/Spark"
+   ],
+   "blocks": [
+    {
+     "op": "spark",
+     "dl": [
+      870,
+      885
+     ],
+     "ul": [
+      825,
+      840
+     ],
+     "expiry": "2031-11-28",
+     "notes": "Registered as 825.015-840 / 870.015-885 MHz"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      885,
+      894
+     ],
+     "ul": [
+      840,
+      849
+     ],
+     "notes": "No management right in the 2022 register"
+    }
+   ]
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Management-right edges from the RSM Register of Radio Frequencies (Spectrum Search Lite PRISM database, last updated 5 Dec 2022).",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip",
+    "https://www.spectrum-tracker.com/New-Zealand/Spark"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      935
+     ],
+     "ul": [
+      880,
+      890
+     ],
+     "notes": "E-GSM part, not assigned"
+    },
+    {
+     "op": "2degrees",
+     "dl": [
+      935,
+      944.8
+     ],
+     "ul": [
+      890,
+      899.8
+     ],
+     "expiry": "2031-11-28"
+    },
+    {
+     "op": "onenz",
+     "dl": [
+      944.8,
+      960
+     ],
+     "ul": [
+      899.8,
+      915
+     ],
+     "expiry": "2031-11-28"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz",
+   "names": [
+    "n75"
+   ],
+   "status": "not-assigned",
+   "duplex": "sdl",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned for mobile.",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/table-of-radio-spectrum-usage-in-new-zealand-pib-21.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1700",
+   "label": "AWS",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS plan not used.",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/table-of-radio-spectrum-usage-in-new-zealand-pib-21.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Renewed management rights from 1 April 2021 (RSM). In the 2022 register 2degrees' right showed a 31 Mar 2023 expiry; it is assumed to have been extended (2degrees still operates the band). Not verified.",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/completed-projects/renewal-of-management-rights-in-1800-and-2100-mhz-bands",
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip"
+   ],
+   "blocks": [
+    {
+     "op": "2degrees",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ]
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      1825,
+      1835
+     ],
+     "ul": [
+      1730,
+      1740
+     ],
+     "notes": "Reserved for emergency services (Next Generation Critical Communications)"
+    },
+    {
+     "op": "spark",
+     "dl": [
+      1835,
+      1855
+     ],
+     "ul": [
+      1740,
+      1760
+     ],
+     "expiry": "2041-03-31"
+    },
+    {
+     "op": "onenz",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "expiry": "2041-03-31"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900",
+   "names": [
+    "B2"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used.",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/table-of-radio-spectrum-usage-in-new-zealand-pib-21.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "2 GHz TDD",
+   "names": [
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No mobile assignments.",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/table-of-radio-spectrum-usage-in-new-zealand-pib-21.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2100 MHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Renewed management rights from 1 April 2021 (RSM table).",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/completed-projects/renewal-of-management-rights-in-1800-and-2100-mhz-bands",
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip"
+   ],
+   "blocks": [
+    {
+     "op": "onenz",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ],
+     "expiry": "2041-03-31"
+    },
+    {
+     "op": "spark",
+     "dl": [
+      2130,
+      2145
+     ],
+     "ul": [
+      1940,
+      1955
+     ],
+     "expiry": "2041-03-31"
+    },
+    {
+     "op": "hautaki",
+     "dl": [
+      2145,
+      2160
+     ],
+     "ul": [
+      1955,
+      1970
+     ],
+     "notes": "Hautaki Ltd; used by 2degrees"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      2160,
+      2170
+     ],
+     "ul": [
+      1970,
+      1980
+     ],
+     "notes": "Reserved (Crown)"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2300 MHz (B40)",
+   "names": [
+    "B40",
+    "n40"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "In June 2026 Cabinet agreed to create 20-year rights when the current ones expire, renew about 70% of Spark's and One NZ's 2300/2600 MHz holdings, and set aside up to 20 MHz of 2300 MHz for defence. Allocation is planned for 2027. Management-right edges from the RSM Register of Radio Frequencies (Spectrum Search Lite PRISM database, last updated 5 Dec 2022).",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip",
+    "https://www.rsm.govt.nz/projects-and-auctions/auctions/completed-spectrum-auctions-1996-present/auction-9",
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-allocations-of-2300-mhz-and-2600-mhz-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "spark",
+     "f": [
+      2300,
+      2370
+     ],
+     "expiry": "2030-11-25",
+     "notes": "Auction 9 (2007) lots bought by Kordia and Woosh, now held by Spark"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2370,
+      2400
+     ]
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz FDD (B7)",
+   "names": [
+    "B7",
+    "n7"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2620,
+     2690
+    ],
+    "ul": [
+     2500,
+     2570
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Rights expire 31 Dec 2028. Under the June 2026 Cabinet decisions, about 70% of Spark's and One NZ's holdings will be renewed, 30 MHz will be offered to 2degrees, and the rest auctioned (planned for 2027). Management-right edges from the RSM Register of Radio Frequencies (Spectrum Search Lite PRISM database, last updated 5 Dec 2022).",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip",
+    "https://www.rsm.govt.nz/projects-and-auctions/auctions/completed-spectrum-auctions-1996-present/auction-9",
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-allocations-of-2300-mhz-and-2600-mhz-spectrum"
+   ],
+   "blocks": [
+    {
+     "op": "denseair",
+     "dl": [
+      2620,
+      2655
+     ],
+     "ul": [
+      2500,
+      2535
+     ],
+     "expiry": "2028-12-31",
+     "notes": "Current status not verified"
+    },
+    {
+     "op": "spark",
+     "dl": [
+      2655,
+      2675
+     ],
+     "ul": [
+      2535,
+      2555
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "onenz",
+     "dl": [
+      2675,
+      2690
+     ],
+     "ul": [
+      2555,
+      2570
+     ],
+     "expiry": "2028-12-31",
+     "notes": "Its management right also includes 2570-2575 MHz"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.6 GHz centre gap (TDD)",
+   "names": [
+    "B38",
+    "n38"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2570,
+     2620
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Management-right edges from the RSM Register of Radio Frequencies (Spectrum Search Lite PRISM database, last updated 5 Dec 2022).",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/prism/prism.zip"
+   ],
+   "blocks": [
+    {
+     "op": "onenz",
+     "f": [
+      2570,
+      2575
+     ],
+     "expiry": "2028-12-31"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2575,
+      2620
+     ],
+     "notes": "Crown management right (non-national/Māori use)"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.5 GHz (n78)",
+   "names": [
+    "n78"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3300,
+     3800
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Long-term management rights in 3460-3800 MHz from 1 July 2023 (to June 2043); each MNO paid NZ$24m. 3300-3340 MHz is licensed to regional broadband providers, and RSM is consulting on 3340-3460 MHz. Exact positions of the long-term rights were not found (the interim 2022 layout differed).",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/completed-projects/preparing-for-5g-in-new-zealand",
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/assignment-of-3340-3460-mhz-radio-spectrum"
+   ],
+   "holdings": [
+    {
+     "op": "spark",
+     "mhz": 80,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2043-06-30"
+    },
+    {
+     "op": "onenz",
+     "mhz": 80,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2043-06-30"
+    },
+    {
+     "op": "2degrees",
+     "mhz": 80,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2043-06-30"
+    },
+    {
+     "op": "maori",
+     "mhz": 100,
+     "paired": false,
+     "basis": "exact",
+     "expiry": "2043-06-30",
+     "notes": "Managed on behalf of Māori"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4-5.0 GHz",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.rsm.govt.nz/assets/Uploads/documents/pibs/table-of-radio-spectrum-usage-in-new-zealand-pib-21.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "24-30 GHz",
+   "names": [
+    "n258",
+    "n257"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. In April 2026 the Government decided to delay assigning 26 GHz and lower 28 GHz to mobile until use cases mature (expected 2028-2030), using non-national licensing. 27.5-28.35 GHz will be shared with satellite by geography.",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-24-30-ghz-spectrum"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     29500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "37-43.5 GHz",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-24-30-ghz-spectrum"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned.",
+   "sources": [
+    "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-24-30-ghz-spectrum"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Regulator: Radio Spectrum Management (RSM), part of MBIE.",
+  "Band edges for 700/850/900/1800/2100/2300/2600 MHz come from RSM's register extract (PRISM.MDB, 5 Dec 2022), the latest public bulk data. 1800/2100 MHz are also confirmed by RSM's renewal table. Changes after Dec 2022 (for example transfers of Dense Air's 2.5 GHz rights) may be missing.",
+  "Hautaki Ltd holds 2x15 MHz of 2100 MHz used by 2degrees. Shown as a separate holder, so 2degrees' own total excludes it.",
+  "In June 2026 Cabinet decided how the expiring 2300 MHz (2030) and 2600 MHz (2028) rights will be handled: 20-year rights, about 70% renewed to Spark and One NZ, 30 MHz of 2600 MHz offered to 2degrees, and the rest auctioned (planned for 2027)."
+ ],
+ "missing": [
+  "Exact positions of the 3.5 GHz long-term rights (3460-3800 MHz); holdings only.",
+  "Current (post-2022) status of Dense Air's 2.5 GHz rights, and of the 2degrees 1800 MHz and Hautaki 2100 MHz rights that showed a 2023 expiry in the 2022 register.",
+  "Name of the current Māori 3.5 GHz rights-holding entity (shown as Interim Māori Spectrum Commission).",
+  "EARFCN data not compiled."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "RSM – Spectrum Search Lite / PRISM register database (Dec 2022)",
+   "url": "https://www.rsm.govt.nz/engineers-and-examiners/resources-for-engineers-and-certifiers/spectrum-search-lite"
+  },
+  {
+   "title": "RSM – Renewal of management rights in 1800 and 2100 MHz bands",
+   "url": "https://www.rsm.govt.nz/projects-and-auctions/completed-projects/renewal-of-management-rights-in-1800-and-2100-mhz-bands"
+  },
+  {
+   "title": "RSM – Preparing for 5G in New Zealand (3.5 GHz long-term rights)",
+   "url": "https://www.rsm.govt.nz/projects-and-auctions/completed-projects/preparing-for-5g-in-new-zealand"
+  },
+  {
+   "title": "RSM – Future allocations of 2300 MHz & 2600 MHz spectrum",
+   "url": "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-allocations-of-2300-mhz-and-2600-mhz-spectrum"
+  },
+  {
+   "title": "RSM – Future use of the 24-30 GHz spectrum",
+   "url": "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-24-30-ghz-spectrum"
+  },
+  {
+   "title": "RSM – Future use of the 600 MHz spectrum",
+   "url": "https://www.rsm.govt.nz/projects-and-auctions/current-projects/future-use-of-the-600-mhz-spectrum-paused-and-not-active"
+  },
+  {
+   "title": "RSM – Auction 9 (2.3/2.5 GHz) and Auction 12 (700 MHz)",
+   "url": "https://www.rsm.govt.nz/projects-and-auctions/auctions/completed-spectrum-auctions-1996-present/auction-9"
+  },
+  {
+   "title": "Spectrum Tracker – New Zealand",
+   "url": "https://www.spectrum-tracker.com/New-Zealand/Spark"
+  }
+ ]
+}
