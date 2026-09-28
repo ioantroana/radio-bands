@@ -1,0 +1,1218 @@
+{
+ "code": "jp",
+ "name": "Japan",
+ "region": "Asia-Pacific",
+ "asOf": "2026-09-28",
+ "coverage": "block-level",
+ "licensing": "national",
+ "summary": "Four MNOs (NTT docomo, KDDI/au, SoftBank, Rakuten Mobile) plus two national BWA operators owned by KDDI (UQ) and SoftBank (WCP). MIC assigns spectrum by beauty contest through certified base-station plans (開設計画). Japan held its first spectrum auction in June 2026 (26 GHz: docomo national lot, JTOWER and HiTec Inter regional lots).",
+ "operators": [
+  {
+   "id": "docomo",
+   "name": "NTT docomo",
+   "legal": "NTT DOCOMO, INC.",
+   "color": "#cc0033",
+   "aliases": [
+    "docomo",
+    "NTT Docomo"
+   ],
+   "kind": "mno"
+  },
+  {
+   "id": "kddi",
+   "name": "KDDI (au)",
+   "legal": "KDDI Corporation / Okinawa Cellular Telephone Company",
+   "color": "#eb5505",
+   "aliases": [
+    "au",
+    "KDDI",
+    "Okinawa Cellular"
+   ],
+   "kind": "mno",
+   "notes": "Licences are held jointly with Okinawa Cellular for Okinawa. UQ Communications (2.5 GHz BWA) is a KDDI subsidiary; MIC groups them as 'KDDI group' (880 MHz incl. UQ)."
+  },
+  {
+   "id": "softbank",
+   "name": "SoftBank",
+   "legal": "SoftBank Corp.",
+   "color": "#231815",
+   "aliases": [
+    "Y!mobile",
+    "SoftBank Mobile",
+    "LINEMO"
+   ],
+   "kind": "mno",
+   "notes": "Absorbed eAccess/eMobile (1.7 GHz, 700 MHz High) and Ymobile. Wireless City Planning (2.5 GHz BWA) is a SoftBank subsidiary."
+  },
+  {
+   "id": "rakuten",
+   "name": "Rakuten Mobile",
+   "legal": "Rakuten Mobile, Inc.",
+   "color": "#e4007f",
+   "aliases": [
+    "Rakuten"
+   ],
+   "kind": "mno",
+   "notes": "MNO since 2019 (1.7 GHz 2018; 3.7/28 GHz 2019; 1.7 GHz outside TNO 2021; 700 MHz 2×3 MHz 2023). Roams on KDDI's network (incl. 800 MHz)."
+  },
+  {
+   "id": "uq",
+   "name": "UQ Communications",
+   "legal": "UQ Communications Inc.",
+   "color": "#0068b7",
+   "aliases": [
+    "UQ WiMAX"
+   ],
+   "kind": "mno",
+   "notes": "National BWA licensee, KDDI group."
+  },
+  {
+   "id": "wcp",
+   "name": "Wireless City Planning",
+   "legal": "Wireless City Planning Inc.",
+   "color": "#8a8c8e",
+   "aliases": [
+    "WCP",
+    "AXGP"
+   ],
+   "kind": "mno",
+   "notes": "National BWA licensee, SoftBank group."
+  },
+  {
+   "id": "jtower",
+   "name": "JTOWER",
+   "legal": "JTOWER Inc.",
+   "color": "#00508f",
+   "aliases": [],
+   "kind": "regional",
+   "notes": "Tower/infrastructure-sharing company; won 26 GHz regional lots in 2026."
+  },
+  {
+   "id": "hitec",
+   "name": "HiTec Inter",
+   "legal": "ハイテクインター株式会社",
+   "color": "#2e9e5b",
+   "aliases": [
+    "Hitec Inter"
+   ],
+   "kind": "regional",
+   "notes": "Won 26 GHz regional lots in 21 municipalities in 2026."
+  }
+ ],
+ "bands": [
+  {
+   "group": "600",
+   "label": "600 MHz",
+   "names": [
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not used for mobile in Japan: 470–710 MHz is terrestrial digital TV.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/000774493.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "700",
+   "label": "700 MHz APT (B28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     770,
+     803
+    ],
+    "ul": [
+     715,
+     748
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "2012 awards: 2×10 MHz each to KDDI (Low), SoftBank (High, via eAccess) and docomo (Middle). On 23 Oct 2023 MIC assigned Rakuten Mobile its first 'platinum band', 2×3 MHz at 715–718 / 770–773 MHz, found between the mobile band and ITS/radio mics. Rakuten was the only applicant; the certification runs 10 years and commercial service began 27 June 2024. MIC totals: 66 MHz in the band (Sep 2025). MIC plans rules in 2026 for 700 MHz direct-to-satellite (NTN) service.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://k-tai.watch.impress.co.jp/docs/news/1541327.html",
+    "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%83%81%E3%83%8A%E3%83%90%E3%83%B3%E3%83%89",
+    "https://jp-tower.com/freqency-allocation-japan/",
+    "https://www.soumu.go.jp/main_content/001092440.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "rakuten",
+     "dl": [
+      770,
+      773
+     ],
+     "ul": [
+      715,
+      718
+     ],
+     "notes": "Certified 23 Oct 2023 (10-year plan); service launched 27 Jun 2024",
+     "source": "https://k-tai.watch.impress.co.jp/docs/news/1541327.html"
+    },
+    {
+     "op": "kddi",
+     "dl": [
+      773,
+      783
+     ],
+     "ul": [
+      718,
+      728
+     ],
+     "notes": "700 MHz Low band (2012)"
+    },
+    {
+     "op": "softbank",
+     "dl": [
+      783,
+      793
+     ],
+     "ul": [
+      728,
+      738
+     ],
+     "notes": "700 MHz High band (2012, originally eAccess)"
+    },
+    {
+     "op": "docomo",
+     "dl": [
+      793,
+      803
+     ],
+     "ul": [
+      738,
+      748
+     ],
+     "notes": "700 MHz Middle band (2012)"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B18/B19/B26)",
+   "names": [
+    "B18",
+    "B19",
+    "B26",
+    "n18",
+    "n5",
+    "n26"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     860,
+     890
+    ],
+    "ul": [
+     815,
+     845
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "KDDI holds 815–830 / 860–875 MHz (B18) and docomo holds 830–845 / 875–890 MHz (B19), 2×15 MHz each (MIC: 30 MHz each). KDDI's top 5 MHz carried CDMA2000 until 3G shutdown in March 2022; MIC tracks refarming of 870–875 MHz to 4G. Rakuten does not hold 800 MHz: it roams on KDDI's 800 MHz network, and no 800 MHz re-allocation to Rakuten has taken place (it took the 700 MHz 2×3 MHz block instead).",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%83%81%E3%83%8A%E3%83%90%E3%83%B3%E3%83%89",
+    "https://jp-tower.com/freqency-allocation-japan/",
+    "https://k-tai.watch.impress.co.jp/docs/column/mca/1500037.html"
+   ],
+   "blocks": [
+    {
+     "op": "kddi",
+     "dl": [
+      860,
+      875
+     ],
+     "ul": [
+      815,
+      830
+     ],
+     "notes": "B18; 3G (CDMA2000) ended Mar 2022, 870–875 MHz refarmed to 4G"
+    },
+    {
+     "op": "docomo",
+     "dl": [
+      875,
+      890
+     ],
+     "ul": [
+      830,
+      845
+     ],
+     "notes": "B19 (within B5/n5); FOMA 3G shuts down end of March 2026"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Japan's 800 MHz band (B18/B19/B26, including docomo's B19, which sits inside B5) is shown under 800 MHz.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     945,
+     960
+    ],
+    "ul": [
+     900,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "SoftBank holds 2×15 MHz (the 'platinum band', assigned 2012). Its lower 5 MHz (945–950 MHz) carried 3G until the July 2024 shutdown and is being refarmed to 4G. Below 900/945 MHz there is MCA-Advance and 920 MHz RFID/LPWA, not IMT.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%83%81%E3%83%8A%E3%83%90%E3%83%B3%E3%83%89",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "softbank",
+     "dl": [
+      945,
+      960
+     ],
+     "ul": [
+      900,
+      915
+     ],
+     "notes": "Assigned 2012; ex-3G 945–950 MHz refarmed to LTE after July 2024"
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.5 GHz (B11/B21)",
+   "names": [
+    "B11",
+    "B21",
+    "n74"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1475.9,
+     1510.9
+    ],
+    "ul": [
+     1427.9,
+     1462.9
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Japan-only 1.5 GHz FDD band (B11/B21), re-planned after 2G. SoftBank and KDDI hold 2×10 MHz each and docomo 2×15 MHz (MIC: 20/20/30 MHz).",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/1.5GHz%E5%B8%AF",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "softbank",
+     "dl": [
+      1475.9,
+      1485.9
+     ],
+     "ul": [
+      1427.9,
+      1437.9
+     ],
+     "notes": "B11"
+    },
+    {
+     "op": "kddi",
+     "dl": [
+      1485.9,
+      1495.9
+     ],
+     "ul": [
+      1437.9,
+      1447.9
+     ],
+     "notes": "B11"
+    },
+    {
+     "op": "docomo",
+     "dl": [
+      1495.9,
+      1510.9
+     ],
+     "ul": [
+      1447.9,
+      1462.9
+     ],
+     "notes": "B21"
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "AWS is not used in Japan. MIC's '1.7 GHz band' (1710–1785 / 1805–1880 MHz, full B3) is shown under 1800 MHz for cross-country comparison.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/1800MHz%E5%B8%AF"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1.7 GHz band (B3) – nationwide view",
+   "names": [
+    "B3",
+    "n3",
+    "B9"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "MIC calls this the '1.7 GHz band'; it is the full 3GPP B3 range. KDDI 1710–1730 / 1805–1825 and Rakuten 1730–1750 / 1825–1845 MHz were assigned in April 2018. SoftBank's 2×15 MHz came from eMobile (B9 raster). The top 2×20 MHz (1765–1785 / 1860–1880) is split by region: docomo holds it only in Tokyo, Nagoya and Osaka, and Rakuten holds it everywhere else (see the next diagram). MIC totals: docomo 40 MHz (TNO only), KDDI 40, SoftBank 30, Rakuten 80 (40 of it outside TNO).",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html",
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000500.html",
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/1800MHz%E5%B8%AF",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "kddi",
+     "dl": [
+      1805,
+      1825
+     ],
+     "ul": [
+      1710,
+      1730
+     ],
+     "notes": "Assigned Apr 2018",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html"
+    },
+    {
+     "op": "rakuten",
+     "dl": [
+      1825,
+      1845
+     ],
+     "ul": [
+      1730,
+      1750
+     ],
+     "notes": "Assigned Apr 2018 (nationwide)",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html"
+    },
+    {
+     "op": "softbank",
+     "dl": [
+      1845,
+      1860
+     ],
+     "ul": [
+      1750,
+      1765
+     ],
+     "notes": "Ex-eMobile nationwide band (B9 1749.9–1764.9 raster)"
+    },
+    {
+     "op": "docomo",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "notes": "Tokyo/Nagoya/Osaka only ('東名阪バンド')"
+    }
+   ]
+  },
+  {
+   "group": "1800",
+   "label": "1.7 GHz band (B3) – 1765–1785/1860–1880 MHz outside Tokyo/Nagoya/Osaka",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1860,
+     1880
+    ],
+    "ul": [
+     1765,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Outside the Tokyo/Nagoya/Osaka areas, 1765–1785 / 1860–1880 MHz was assigned to Rakuten Mobile on 14 April 2021 (4 applicants). docomo uses the same block inside those areas.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000500.html",
+    "https://www.soumu.go.jp/main_content/001049832.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "rakuten",
+     "dl": [
+      1860,
+      1880
+     ],
+     "ul": [
+      1765,
+      1785
+     ],
+     "notes": "Assigned 14 Apr 2021, all areas except Tokyo/Nagoya/Osaka",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000500.html"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 / 2 GHz",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "PCS is not used in Japan. 1880–1920 MHz is PHS/sXGP/DECT (licence-exempt), not IMT licences.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD",
+   "names": [
+    "B34",
+    "B39"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No unpaired 2 GHz TDD licence is in use; the 2010–2025 MHz TDD band is not assigned (MIC allocation table lists no holder).",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2100",
+   "label": "2 GHz (B1)",
+   "names": [
+    "B1",
+    "n1"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     2110,
+     2170
+    ],
+    "ul": [
+     1920,
+     1980
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "KDDI, docomo and SoftBank each hold 2×20 MHz (MIC: 40 MHz each). docomo splits its block 10 MHz LTE / 10 MHz NR. Since 2025 KDDI uses part of its B1 block outside city centres for direct-to-cell satellite service with Starlink.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/2GHz%E5%B8%AF",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "kddi",
+     "dl": [
+      2110,
+      2130
+     ],
+     "ul": [
+      1920,
+      1940
+     ]
+    },
+    {
+     "op": "docomo",
+     "dl": [
+      2130,
+      2150
+     ],
+     "ul": [
+      1940,
+      1960
+     ],
+     "notes": "FOMA 3G ends March 2026"
+    },
+    {
+     "op": "softbank",
+     "dl": [
+      2150,
+      2170
+     ],
+     "ul": [
+      1960,
+      1980
+     ],
+     "notes": "3G ended July 2024"
+    }
+   ]
+  },
+  {
+   "group": "2300",
+   "label": "2.3 GHz (n40)",
+   "names": [
+    "n40",
+    "B40"
+   ],
+   "status": "partially-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2300,
+     2400
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "KDDI (with Okinawa Cellular) was certified for 2330–2370 MHz on 18 May 2022, the only applicant. It uses dynamic spectrum sharing with broadcast FPU and public systems.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000545.html",
+    "https://www.soumu.go.jp/main_content/001049832.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      2300,
+      2330
+     ],
+     "notes": "Other systems"
+    },
+    {
+     "op": "kddi",
+     "f": [
+      2330,
+      2370
+     ],
+     "notes": "Certified 18 May 2022; dynamic sharing with FPU"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2370,
+      2400
+     ],
+     "notes": "Other systems"
+    }
+   ]
+  },
+  {
+   "group": "2600",
+   "label": "2.5 GHz BWA (B41/n41)",
+   "names": [
+    "B41",
+    "n41"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     2545,
+     2645
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "National BWA licences: Wireless City Planning (SoftBank group, AXGP) holds 2545–2575 MHz and UQ Communications (KDDI group, WiMAX 2+) holds 2595–2645 MHz; MIC: 30 and 50 MHz. 2575–2595 MHz is for regional/private BWA. Band 7 FDD is not used in Japan (2500–2535 and 2655–2690 MHz are mobile-satellite).",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/2.5GHz%E5%B8%AF",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "wcp",
+     "f": [
+      2545,
+      2575
+     ],
+     "notes": "AXGP"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      2575,
+      2595
+     ],
+     "notes": "Regional BWA (地域BWA) / private BWA licences"
+    },
+    {
+     "op": "uq",
+     "f": [
+      2595,
+      2645
+     ],
+     "notes": "WiMAX 2+; lower 30 MHz partly refarmed to n41"
+    }
+   ]
+  },
+  {
+   "group": "3500",
+   "label": "3.4–4.1 GHz (B42/n78/n77)",
+   "names": [
+    "B42",
+    "n78",
+    "n77"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     3400,
+     4100
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "3.4/3.5 GHz: 3480–3600 MHz assigned in Dec 2014 (docomo, KDDI, SoftBank 40 MHz each), 3400–3480 MHz in Apr 2018 (SoftBank 3400–3440, docomo 3440–3480). 3.7/4.0 GHz (5G, 10 April 2019): docomo 3600–3700, KDDI 3700–3800 and 4000–4100, Rakuten 3800–3900, SoftBank 3900–4000 MHz. (jp-tower.com gives KDDI's second block as 4100–4200 MHz, which contradicts MIC; MIC is used.)",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html",
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html",
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/3.4GHz%E5%B8%AF",
+    "https://ja.wikipedia.org/wiki/%E7%AC%AC5%E4%B8%96%E4%BB%A3%E7%A7%BB%E5%8B%95%E9%80%9A%E4%BF%A1%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "softbank",
+     "f": [
+      3400,
+      3440
+     ],
+     "notes": "Apr 2018",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html"
+    },
+    {
+     "op": "docomo",
+     "f": [
+      3440,
+      3480
+     ],
+     "notes": "Apr 2018",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html"
+    },
+    {
+     "op": "docomo",
+     "f": [
+      3480,
+      3520
+     ],
+     "notes": "Dec 2014"
+    },
+    {
+     "op": "kddi",
+     "f": [
+      3520,
+      3560
+     ],
+     "notes": "Dec 2014"
+    },
+    {
+     "op": "softbank",
+     "f": [
+      3560,
+      3600
+     ],
+     "notes": "Dec 2014"
+    },
+    {
+     "op": "docomo",
+     "f": [
+      3600,
+      3700
+     ],
+     "notes": "5G, Apr 2019",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+    },
+    {
+     "op": "kddi",
+     "f": [
+      3700,
+      3800
+     ],
+     "notes": "5G, Apr 2019",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+    },
+    {
+     "op": "rakuten",
+     "f": [
+      3800,
+      3900
+     ],
+     "notes": "5G, Apr 2019",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+    },
+    {
+     "op": "softbank",
+     "f": [
+      3900,
+      4000
+     ],
+     "notes": "5G, Apr 2019",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+    },
+    {
+     "op": "kddi",
+     "f": [
+      4000,
+      4100
+     ],
+     "notes": "5G, Apr 2019 ('4.0 GHz band')",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+    }
+   ]
+  },
+  {
+   "group": "4900",
+   "label": "4.5/4.9 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     4500,
+     5000
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "docomo was certified for 4500–4600 MHz in April 2019. 4600–4900 MHz is local 5G (private licences). SoftBank was certified for 4900–5000 MHz on 13 December 2024 (the only applicant). The existing 5 GHz FWA users there must move out by the end of FY2035, and SoftBank pays for their early exit.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html",
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000673.html",
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://www.soumu.go.jp/main_content/001092440.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "docomo",
+     "f": [
+      4500,
+      4600
+     ],
+     "notes": "Apr 2019",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      4600,
+      4900
+     ],
+     "notes": "Local 5G (private licences)"
+    },
+    {
+     "op": "softbank",
+     "f": [
+      4900,
+      5000
+     ],
+     "notes": "Certified 13 Dec 2024; incumbent 5 GHz FWA to vacate by end FY2035",
+     "source": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000673.html"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz national lot (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     25800,
+     27000
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Japan's first spectrum auction (価額競争) ran 11–25 June 2026 among docomo, KDDI/Okinawa Cellular and SoftBank for the national lot. docomo won 25.8–26.2 GHz for JPY 6.288bn (10 years; reserve price JPY 3.93bn) and it was assigned in July 2026. The regional lot 26.8–27.0 GHz went to JTOWER and HiTec Inter by municipality (next diagrams). Existing systems in the rest of the 26 GHz band may stay until the end of May 2031.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000791.html",
+    "https://www.soumu.go.jp/main_content/001079885.pdf",
+    "https://www.soumu.go.jp/main_content/001092440.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "docomo",
+     "f": [
+      25800,
+      26200
+     ],
+     "notes": "Auction June 2026, JPY 6.288bn / 10 years; assigned July 2026",
+     "source": "https://www.soumu.go.jp/main_content/001079885.pdf"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      26200,
+      26800
+     ],
+     "notes": "Existing systems (use limited to end-May 2031); 5G assignment timing to be decided"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      26800,
+      27000
+     ],
+     "notes": "Regional lot – see regional entries"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz regional lot 26.8–27.0 GHz – JTOWER",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     26800,
+     27000
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "JTOWER won the regional lot in 13 areas, including the Tokyo special wards (JPY 280m), Yokohama, Nagoya, Osaka, Fukuoka, Chiba and Chitose. It paid JPY 468.71m in total over 10 years. Excluded from totals because the licences are local.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000791.html",
+    "https://www.soumu.go.jp/main_content/001079885.pdf"
+   ],
+   "blocks": [],
+   "holdings": [
+    {
+     "op": "jtower",
+     "mhz": 200,
+     "paired": false,
+     "basis": "licensed in 13 municipalities only (incl. Tokyo 23 wards, Yokohama, Nagoya, Osaka, Fukuoka)",
+     "notes": "Auction June 2026, 10-year term",
+     "source": "https://www.soumu.go.jp/main_content/001079885.pdf"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz regional lot 26.8–27.0 GHz – HiTec Inter",
+   "names": [
+    "n258"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     26800,
+     27000
+    ]
+   },
+   "positions": "regional-average",
+   "future": null,
+   "excludeFromTotal": true,
+   "note": "HiTec Inter won the regional lot in 21 mostly rural municipalities (Hokkaido, Yamanashi, Shizuoka, Shiga, Nagasaki, Oita, Okinawa), paying JPY 8.184m in total over 10 years. Excluded from totals because the licences are local. MIC will decide later on the areas that went unsold.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000791.html",
+    "https://www.soumu.go.jp/main_content/001079885.pdf"
+   ],
+   "blocks": [],
+   "holdings": [
+    {
+     "op": "hitec",
+     "mhz": 200,
+     "paired": false,
+     "basis": "licensed in 21 municipalities only (mostly rural)",
+     "notes": "Auction June 2026, 10-year term",
+     "source": "https://www.soumu.go.jp/main_content/001079885.pdf"
+    }
+   ]
+  },
+  {
+   "group": "26g",
+   "label": "28 GHz (n257)",
+   "names": [
+    "n257"
+   ],
+   "status": "assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     27000,
+     29500
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Assigned 10 April 2019, 400 MHz each: Rakuten 27.0–27.4, docomo 27.4–27.8, KDDI 27.8–28.2, SoftBank 29.1–29.5 GHz. 28.2–29.1 GHz is local 5G.",
+   "sources": [
+    "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html",
+    "https://www.soumu.go.jp/main_content/001049832.pdf",
+    "https://ja.wikipedia.org/wiki/%E7%AC%AC5%E4%B8%96%E4%BB%A3%E7%A7%BB%E5%8B%95%E9%80%9A%E4%BF%A1%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0",
+    "https://jp-tower.com/freqency-allocation-japan/"
+   ],
+   "blocks": [
+    {
+     "op": "rakuten",
+     "f": [
+      27000,
+      27400
+     ]
+    },
+    {
+     "op": "docomo",
+     "f": [
+      27400,
+      27800
+     ]
+    },
+    {
+     "op": "kddi",
+     "f": [
+      27800,
+      28200
+     ]
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      28200,
+      29100
+     ],
+     "notes": "Local 5G (private licences)"
+    },
+    {
+     "op": "softbank",
+     "f": [
+      29100,
+      29500
+     ]
+    }
+   ]
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     37000,
+     43500
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. MIC's May 2025 demand survey found no request for early 5G use of 40 GHz, so the timing will be reviewed later (Action Plan FY2026 draft).",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001092440.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "range": {
+    "f": [
+     47200,
+     48200
+    ]
+   },
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned. MIC is studying whether 47.2–48.2 GHz could be used for 5G; nothing is planned.",
+   "sources": [
+    "https://www.soumu.go.jp/main_content/001092440.pdf"
+   ],
+   "blocks": [],
+   "holdings": []
+  }
+ ],
+ "notes": [
+  "Per-operator totals match MIC's allocation table as of September 2025: docomo 840 MHz, KDDI 830, SoftBank 820, Rakuten 586, UQ 50, WCP 30 (FDD counted both directions). docomo's 400 MHz at 26 GHz (July 2026) is added on top.",
+  "MIC's 1.7 GHz band is the full B3 band; it is filed under group 1800 (with a second, region-split diagram for 1765–1785/1860–1880 MHz), not 1700.",
+  "Regional split: docomo's 1765–1785/1860–1880 MHz is Tokyo/Nagoya/Osaka only; Rakuten holds it everywhere else. Both are counted in totals, as MIC does.",
+  "Conflict: jp-tower.com lists KDDI's second 5G block as 4100–4200 MHz; MIC's April 2019 certification says 4000–4100 MHz, which is used here. jp-tower's docomo 1.7 GHz uplink '1765–1780' is a typo for 1765–1785 (Wikipedia and MIC agree).",
+  "Rakuten's platinum band: MIC certified 715–718/770–773 MHz on 23 Oct 2023 (not 2025); service started June 2024. No 800 MHz spectrum has been re-allocated to Rakuten: under the 2023 re-allocation rules it asked for 3×5 MHz from the incumbents but took the 700 MHz block instead.",
+  "Japan has no fixed licence expiries: the 開設計画 certifications run for set periods, and radio licences are renewed together. A simultaneous re-licensing of all mobile base stations is due in Oct 2027, and MIC is reviewing its re-licensing and re-allocation rules (Action Plan FY2026 draft).",
+  "3G shutdowns: KDDI March 2022, SoftBank July 2024, docomo FOMA end of March 2026 (from operator announcements, background knowledge)."
+ ],
+ "missing": [
+  "EARFCN/NR-ARFCN of carriers not compiled.",
+  "The exact date the 26 GHz regional licences were certified (after the June 2026 auction) was not seen; the Action Plan draft says the band was assigned in July 2026.",
+  "docomo FOMA shutdown date (31 Mar 2026): from background knowledge, not source-verified.",
+  "2.5 GHz: regional BWA licensees in 2575–2595 MHz are not listed individually.",
+  "Local 5G (4.6–4.9 GHz, 28.2–29.1 GHz) licensees are not listed individually; drawn as grey gaps."
+ ],
+ "changes": [],
+ "sources": [
+  {
+   "title": "MIC – 令和7年度携帯電話及び全国BWA等に係る電波の利用状況調査 (allocation table, Sep 2025)",
+   "url": "https://www.soumu.go.jp/main_content/001049832.pdf"
+  },
+  {
+   "title": "MIC – 5G certification 3.7/4.5/28 GHz (10 Apr 2019)",
+   "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000378.html"
+  },
+  {
+   "title": "MIC – 4G certification 1.7/3.4 GHz (6 Apr 2018)",
+   "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000333.html"
+  },
+  {
+   "title": "MIC – 1.7 GHz outside Tokyo/Nagoya/Osaka to Rakuten (14 Apr 2021)",
+   "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000500.html"
+  },
+  {
+   "title": "MIC – 2.3 GHz certification to KDDI (18 May 2022)",
+   "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000545.html"
+  },
+  {
+   "title": "MIC – 4.9 GHz certification to SoftBank (13 Dec 2024)",
+   "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000673.html"
+  },
+  {
+   "title": "MIC – 26 GHz auction results (30 Jun 2026)",
+   "url": "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000791.html"
+  },
+  {
+   "title": "MIC – 26 GHz auction results annex",
+   "url": "https://www.soumu.go.jp/main_content/001079885.pdf"
+  },
+  {
+   "title": "MIC – Frequency Reorganisation Action Plan FY2026 (draft, Sep 2026)",
+   "url": "https://www.soumu.go.jp/main_content/001092440.pdf"
+  },
+  {
+   "title": "MIC – 我が国の携帯電話用周波数の割当てについて (Oct 2021)",
+   "url": "https://www.soumu.go.jp/main_content/000774493.pdf"
+  },
+  {
+   "title": "K-tai Watch – Rakuten 700 MHz platinum band (23 Oct 2023)",
+   "url": "https://k-tai.watch.impress.co.jp/docs/news/1541327.html"
+  },
+  {
+   "title": "jp-tower.com – Japanese carrier frequency assignments (FY2024 survey)",
+   "url": "https://jp-tower.com/freqency-allocation-japan/"
+  },
+  {
+   "title": "Wikipedia (ja) – プラチナバンド / 1800MHz帯 / 1.5GHz帯 / 2GHz帯 / 2.5GHz帯 / 3.4GHz帯 / 第5世代移動通信システム",
+   "url": "https://ja.wikipedia.org/wiki/%E7%AC%AC5%E4%B8%96%E4%BB%A3%E7%A7%BB%E5%8B%95%E9%80%9A%E4%BF%A1%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0"
+  }
+ ]
+}
