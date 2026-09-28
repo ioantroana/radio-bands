@@ -2,47 +2,557 @@
  "code": "lt",
  "name": "Lithuania",
  "region": "Europe",
- "asOf": "2026-01-09",
- "coverage": "block-level",
+ "asOf": "2026-09-28",
+ "coverage": "positions-verified",
  "licensing": "national",
- "summary": "",
+ "summary": "Three MNOs – Telia Lietuva, Bitė Lietuva and Tele2 – licensed by RRT. A 2026 multi-band auction re-awarded 2.1 GHz and added the remaining 700 MHz and the first 1.5 GHz SDL licences (to Oct 2042). 3.4–3.7 GHz was auctioned in 2022, and 26 GHz has not been awarded.",
  "operators": [
   {
-   "id": "tele2-lt",
-   "name": "Tele2 LT",
-   "color": "#000000",
+   "id": "telia",
+   "name": "Telia",
+   "legal": "Telia Lietuva, AB",
+   "color": "#990ae3",
    "aliases": [
-    "UAB Tele2 Lietuva"
+    "Telia LT",
+    "AB Telia Lietuva",
+    "Omnitel"
    ],
-   "kind": "mno"
+   "kind": "mno",
+   "notes": "Formed from the merger of TEO LT and mobile operator Omnitel (2017, background knowledge). The 2016 900/1800 MHz licences were won by Omnitel."
   },
   {
-   "id": "telia-lt",
-   "name": "Telia LT",
-   "color": "#663989",
-   "aliases": [
-    "AB Telia Lietuva"
-   ],
-   "kind": "mno"
-  },
-  {
-   "id": "bite-lt",
-   "name": "Bite LT",
+   "id": "bite",
+   "name": "Bitė",
+   "legal": "UAB „Bitė Lietuva“",
    "color": "#00aa14",
    "aliases": [
+    "Bite LT",
     "UAB Bite Lietuva"
    ],
    "kind": "mno"
   },
   {
-   "id": "ministry-of-defence",
-   "name": "Ministry of Defence",
-   "color": "#9aa0a6",
-   "aliases": [],
-   "kind": "other"
+   "id": "tele2",
+   "name": "Tele2",
+   "legal": "UAB „Tele2“",
+   "color": "#1d1d1b",
+   "aliases": [
+    "Tele2 LT",
+    "UAB Tele2 Lietuva"
+   ],
+   "kind": "mno",
+   "notes": "Subsidiary of Tele2 AB."
   }
  ],
  "bands": [
+  {
+   "group": "700",
+   "label": "700 MHz FDD (B28/n28)",
+   "names": [
+    "B28",
+    "n28"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     758,
+     788
+    ],
+    "ul": [
+     703,
+     733
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "713–733/768–788 MHz was auctioned in 2022 (RRT TN-28). 703–713/758–768 MHz, previously kept for the Ministry of Defence because of interference from Russian TV, was auctioned in 2026. The 2026 rules let RRT swap 700 MHz blocks after the auction to make each operator's spectrum contiguous; any swap decision was not found, so Tele2's and Bitė's blocks are drawn as awarded.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai",
+    "https://www.rrt.lt/upload/files/2026/02/21/t700mhz-1500mhz-2100mhz-aukciono-aprasas-2026-02-03.pdf",
+    "https://www.rrt.lt/upload/files/2025/11/13/t20220908-tn-28-del-aukciono-laimetoju-patvirtinimo-700-mhz.pdf",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "tele2",
+     "dl": [
+      758,
+      763
+     ],
+     "ul": [
+      703,
+      708
+     ],
+     "expiry": "2042-10-31",
+     "notes": "2026 auction (winners approved 9.7.2026)"
+    },
+    {
+     "op": "bite",
+     "dl": [
+      763,
+      768
+     ],
+     "ul": [
+      708,
+      713
+     ],
+     "expiry": "2042-10-31",
+     "notes": "2026 auction (winners approved 9.7.2026)"
+    },
+    {
+     "op": "telia",
+     "dl": [
+      768,
+      778
+     ],
+     "ul": [
+      713,
+      723
+     ],
+     "earfcn": [
+      9360
+     ],
+     "nrarfcn": [
+      154570
+     ],
+     "notes": "2022 auction, €23.0m"
+    },
+    {
+     "op": "bite",
+     "dl": [
+      778,
+      783
+     ],
+     "ul": [
+      723,
+      728
+     ],
+     "notes": "2022 auction, €3.0m"
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      783,
+      788
+     ],
+     "ul": [
+      728,
+      733
+     ],
+     "expiry": "2042-09",
+     "notes": "2022 auction, €3.9m"
+    }
+   ]
+  },
+  {
+   "group": "800",
+   "label": "800 MHz (B20)",
+   "names": [
+    "B20",
+    "n20"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     791,
+     821
+    ],
+    "ul": [
+     832,
+     862
+    ]
+   },
+   "positions": "unverified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Auctioned Oct 2013 (RRT order 1V-1562, not retrieved). Edges from the davwheat seed; Tele2's 2×10 MHz (to July 2030) is confirmed by its investor table.",
+   "sources": [
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT",
+    "https://www.tele2.com/investors/spectrum-portfolio/",
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [
+    {
+     "op": "bite",
+     "dl": [
+      791,
+      801
+     ],
+     "ul": [
+      832,
+      842
+     ],
+     "earfcn": [
+      6200
+     ]
+    },
+    {
+     "op": "telia",
+     "dl": [
+      801,
+      811
+     ],
+     "ul": [
+      842,
+      852
+     ],
+     "earfcn": [
+      6300
+     ]
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      811,
+      821
+     ],
+     "ul": [
+      852,
+      862
+     ],
+     "earfcn": [
+      6400
+     ],
+     "expiry": "2030-07"
+    }
+   ]
+  },
+  {
+   "group": "850",
+   "label": "850 MHz (B5)",
+   "names": [
+    "B5"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a European mobile band.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "600",
+   "label": "600 MHz (B71)",
+   "names": [
+    "B71",
+    "n71"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: 470–694 MHz is used for DTT broadcasting; the US 600 MHz plan is not used in Europe.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "900",
+   "label": "900 MHz (B8)",
+   "names": [
+    "B8",
+    "n8"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     925,
+     960
+    ],
+    "ul": [
+     880,
+     915
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "RRT order 1V-141 (8 Feb 2016) awarded combined 900+1800 lots: Omnitel €14.3m, Tele2 €13.7m, Bitė €10.1m.",
+   "sources": [
+    "https://www.rrt.lt/upload/files/2025/11/13/t2016isakymas141.pdf",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "dl": [
+      925,
+      925.1
+     ],
+     "ul": [
+      880,
+      880.1
+     ]
+    },
+    {
+     "op": "bite",
+     "dl": [
+      925.1,
+      936.7
+     ],
+     "ul": [
+      880.1,
+      891.7
+     ],
+     "expiry": "2032-10",
+     "notes": "2016 auction (block A1, with 1800 B3)"
+    },
+    {
+     "op": "telia",
+     "dl": [
+      936.7,
+      948.3
+     ],
+     "ul": [
+      891.7,
+      903.3
+     ],
+     "earfcn": [
+      3616
+     ],
+     "expiry": "2032-10",
+     "notes": "2016 auction, won by Omnitel (now Telia Lietuva)"
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      948.3,
+      959.9
+     ],
+     "ul": [
+      903.3,
+      914.9
+     ],
+     "expiry": "2032-10",
+     "notes": "2016 auction"
+    },
+    {
+     "op": "unassigned",
+     "dl": [
+      959.9,
+      960
+     ],
+     "ul": [
+      914.9,
+      915
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1400",
+   "label": "1.4 GHz L-band SDL (B75/B32)",
+   "names": [
+    "B75",
+    "B32",
+    "n75"
+   ],
+   "status": "assigned",
+   "duplex": "sdl",
+   "range": {
+    "f": [
+     1427,
+     1517
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "First Lithuanian L-band award (RRT band plan TN-27, Jan 2026). Bitė won no L-band spectrum.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai",
+    "https://www.rrt.lt/upload/files/2026/02/21/t700mhz-1500mhz-2100mhz-aukciono-aprasas-2026-02-03.pdf"
+   ],
+   "blocks": [
+    {
+     "op": "unassigned",
+     "f": [
+      1427,
+      1432
+     ]
+    },
+    {
+     "op": "telia",
+     "f": [
+      1432,
+      1472
+     ],
+     "expiry": "2042-10-31",
+     "notes": "Blocks B1+B2, 2026 auction (winners approved 18.6.2026)"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1472,
+      1492
+     ],
+     "notes": "Not offered"
+    },
+    {
+     "op": "tele2",
+     "f": [
+      1492,
+      1512
+     ],
+     "expiry": "2042-10-31",
+     "notes": "Block B3, 2026 auction"
+    },
+    {
+     "op": "unassigned",
+     "f": [
+      1512,
+      1517
+     ]
+    }
+   ]
+  },
+  {
+   "group": "1700",
+   "label": "AWS 1.7/2.1 GHz (B4/B66)",
+   "names": [
+    "B4",
+    "B66"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a European band plan.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "1800",
+   "label": "1800 MHz (B3)",
+   "names": [
+    "B3",
+    "n3"
+   ],
+   "status": "assigned",
+   "duplex": "fdd",
+   "range": {
+    "dl": [
+     1805,
+     1880
+    ],
+    "ul": [
+     1710,
+     1785
+    ]
+   },
+   "positions": "verified",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "",
+   "sources": [
+    "https://www.rrt.lt/upload/files/2025/11/13/t2016isakymas141.pdf",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
+   ],
+   "blocks": [
+    {
+     "op": "telia",
+     "dl": [
+      1805,
+      1830
+     ],
+     "ul": [
+      1710,
+      1735
+     ],
+     "earfcn": [
+      1348
+     ],
+     "expiry": "2032-10",
+     "notes": "2016 auction (Omnitel)"
+    },
+    {
+     "op": "tele2",
+     "dl": [
+      1830,
+      1855
+     ],
+     "ul": [
+      1735,
+      1760
+     ],
+     "expiry": "2032-10",
+     "notes": "2016 auction"
+    },
+    {
+     "op": "bite",
+     "dl": [
+      1855,
+      1880
+     ],
+     "ul": [
+      1760,
+      1785
+     ],
+     "expiry": "2032-10",
+     "notes": "2016 auction"
+    }
+   ]
+  },
+  {
+   "group": "1900",
+   "label": "PCS 1900 (B2/B25)",
+   "names": [
+    "B2",
+    "B25"
+   ],
+   "status": "not-assigned",
+   "duplex": "fdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not a European band plan.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "2000tdd",
+   "label": "1.9/2.0 GHz TDD (B33/B34)",
+   "names": [
+    "B33",
+    "B34"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "No unpaired 2 GHz assignment found; RRT's auction list contains no award for these bands.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     1900,
+     1920
+    ]
+   }
+  },
   {
    "group": "2100",
    "label": "2100 MHz (B1/n1)",
@@ -62,150 +572,113 @@
      1980
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "The original 3G licences expired in March 2026 (per Tele2) and the band was re-auctioned in 2026 as three 2×20 MHz blocks, valid to 31.10.2042. Each operator won the block matching its old position. 3G is fully switched off in Lithuania (RRT).",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai",
+    "https://www.rrt.lt/upload/files/2026/02/21/t700mhz-1500mhz-2100mhz-aukciono-aprasas-2026-02-03.pdf",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
    ],
    "blocks": [
     {
-     "op": "unassigned",
+     "op": "bite",
      "dl": [
       2110,
-      2110.3
+      2130
      ],
      "ul": [
       1920,
-      1920.3
-     ]
+      1940
+     ],
+     "expiry": "2042-10-31",
+     "notes": "Block A1, 2026 re-auction (winners approved 15.6.2026)"
     },
     {
-     "op": "bite-lt",
+     "op": "telia",
      "dl": [
-      2110.3,
-      2130.1
+      2130,
+      2150
      ],
      "ul": [
-      1920.3,
-      1940.1
-     ],
-     "notes": "UAB Bite Lietuva · 15 MHz Deployed"
-    },
-    {
-     "op": "telia-lt",
-     "dl": [
-      2130.1,
-      2149.9
-     ],
-     "ul": [
-      1940.1,
-      1959.9
+      1940,
+      1960
      ],
      "earfcn": [
       300
      ],
-     "notes": "AB Telia Lietuva · 20 MHz Nationwide"
+     "expiry": "2042-10-31",
+     "notes": "Block A2, 2026 re-auction"
     },
     {
-     "op": "tele2-lt",
+     "op": "tele2",
      "dl": [
-      2149.9,
-      2169.7
-     ],
-     "ul": [
-      1959.9,
-      1979.7
-     ],
-     "notes": "UAB Tele2 Lietuva"
-    },
-    {
-     "op": "unassigned",
-     "dl": [
-      2169.7,
+      2150,
       2170
      ],
      "ul": [
-      1979.7,
+      1960,
       1980
-     ]
+     ],
+     "expiry": "2042-10-31",
+     "notes": "Block A3, 2026 re-auction"
     }
    ]
   },
   {
-   "group": "1800",
-   "label": "1800 MHz (B3/n3)",
+   "group": "2300",
+   "label": "2300 MHz (B40/n40)",
    "names": [
-    "B3",
-    "n3"
+    "B40",
+    "n40"
    ],
    "status": "assigned",
-   "duplex": "fdd",
+   "duplex": "tdd",
    "range": {
-    "dl": [
-     1805,
-     1880
-    ],
-    "ul": [
-     1710,
-     1785
+    "f": [
+     2300,
+     2400
     ]
    },
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "Edges and holder from the davwheat seed only; not found in RRT's auction list (probably assigned without an auction).",
    "sources": [
     "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
    ],
    "blocks": [
     {
-     "op": "telia-lt",
-     "dl": [
-      1805,
-      1830
-     ],
-     "ul": [
-      1710,
-      1735
-     ],
-     "earfcn": [
-      1348
-     ],
-     "notes": "AB Telia Lietuva · 20 MHz Nationwide"
+     "op": "unassigned",
+     "f": [
+      2300,
+      2310
+     ]
     },
     {
-     "op": "tele2-lt",
-     "dl": [
-      1830,
-      1855
+     "op": "bite",
+     "f": [
+      2310,
+      2390
      ],
-     "ul": [
-      1735,
-      1760
-     ],
-     "notes": "UAB Tele2 Lietuva"
+     "notes": "From the davwheat seed; no regulator or second source found"
     },
     {
-     "op": "bite-lt",
-     "dl": [
-      1855,
-      1880
-     ],
-     "ul": [
-      1760,
-      1785
-     ],
-     "notes": "UAB Bite Lietuva"
+     "op": "unassigned",
+     "f": [
+      2390,
+      2400
+     ]
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B7)",
+   "label": "2600 MHz FDD (B7/n7)",
    "names": [
-    "B7"
+    "B7",
+    "n7"
    ],
    "status": "assigned",
    "duplex": "fdd",
@@ -222,13 +695,16 @@
    "positions": "unverified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "2500–2560/2620–2680 MHz was awarded by contest in 2012; 2560–2570/2680–2690 MHz and 2570–2620 MHz went to Telecentras in 2014. Edges from the seed; Tele2's 2×20 MHz (to Aug 2027) is confirmed by its investor table.",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT",
+    "https://www.tele2.com/investors/spectrum-portfolio/",
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai",
+    "https://www.rrt.lt/upload/files/2025/11/13/t2014isakymas949.pdf"
    ],
    "blocks": [
     {
-     "op": "tele2-lt",
+     "op": "tele2",
      "dl": [
       2620,
       2640
@@ -237,10 +713,11 @@
       2500,
       2520
      ],
-     "notes": "UAB Tele2 Lietuva"
+     "expiry": "2027-08",
+     "notes": "2012 contest (RRT 1V-442)"
     },
     {
-     "op": "telia-lt",
+     "op": "telia",
      "dl": [
       2640,
       2660
@@ -249,272 +726,40 @@
       2520,
       2540
      ],
-     "notes": "AB Telia LT"
+     "notes": "2012 contest"
     },
     {
-     "op": "bite-lt",
+     "op": "bite",
      "dl": [
       2660,
-      2690
+      2680
      ],
      "ul": [
       2540,
+      2560
+     ],
+     "notes": "2012 contest"
+    },
+    {
+     "op": "bite",
+     "dl": [
+      2680,
+      2690
+     ],
+     "ul": [
+      2560,
       2570
      ],
-     "notes": "UAB Bite Lietuva"
-    }
-   ]
-  },
-  {
-   "group": "900",
-   "label": "900 MHz (B8)",
-   "names": [
-    "B8"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     925,
-     960
-    ],
-    "ul": [
-     880,
-     915
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "dl": [
-      925,
-      925.1
-     ],
-     "ul": [
-      880,
-      880.1
-     ]
-    },
-    {
-     "op": "bite-lt",
-     "dl": [
-      925.1,
-      936.7
-     ],
-     "ul": [
-      880.1,
-      891.7
-     ],
-     "notes": "UAB Bite Lietuva"
-    },
-    {
-     "op": "telia-lt",
-     "dl": [
-      936.7,
-      948.3
-     ],
-     "ul": [
-      891.7,
-      903.3
-     ],
-     "earfcn": [
-      3616
-     ],
-     "notes": "AB Telia Lietuva · 5 MHz Deployment Nationwide"
-    },
-    {
-     "op": "tele2-lt",
-     "dl": [
-      948.3,
-      959.9
-     ],
-     "ul": [
-      903.3,
-      914.9
-     ],
-     "notes": "UAB Tele2 Lietuva"
-    },
-    {
-     "op": "unassigned",
-     "dl": [
-      959.9,
-      960
-     ],
-     "ul": [
-      914.9,
-      915
-     ]
-    }
-   ]
-  },
-  {
-   "group": "800",
-   "label": "800 MHz (B20)",
-   "names": [
-    "B20"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     791,
-     821
-    ],
-    "ul": [
-     832,
-     862
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
-   ],
-   "blocks": [
-    {
-     "op": "bite-lt",
-     "dl": [
-      791,
-      801
-     ],
-     "ul": [
-      832,
-      842
-     ],
-     "earfcn": [
-      6200
-     ],
-     "notes": "UAB Bite Lietuva"
-    },
-    {
-     "op": "telia-lt",
-     "dl": [
-      801,
-      811
-     ],
-     "ul": [
-      842,
-      852
-     ],
-     "earfcn": [
-      6300
-     ],
-     "notes": "AB Telia Lietuva"
-    },
-    {
-     "op": "tele2-lt",
-     "dl": [
-      811,
-      821
-     ],
-     "ul": [
-      852,
-      862
-     ],
-     "earfcn": [
-      6400
-     ],
-     "notes": "UAB Tele2 Lietuva"
-    }
-   ]
-  },
-  {
-   "group": "700",
-   "label": "700 MHz (B28/n28)",
-   "names": [
-    "B28",
-    "n28"
-   ],
-   "status": "assigned",
-   "duplex": "fdd",
-   "range": {
-    "dl": [
-     758,
-     803
-    ],
-    "ul": [
-     703,
-     748
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
-   ],
-   "blocks": [
-    {
-     "op": "ministry-of-defence",
-     "dl": [
-      758,
-      768
-     ],
-     "ul": [
-      703,
-      713
-     ],
-     "notes": "Ministry of Defence · Russian TV interference"
-    },
-    {
-     "op": "telia-lt",
-     "dl": [
-      768,
-      778
-     ],
-     "ul": [
-      713,
-      723
-     ],
-     "earfcn": [
-      9360
-     ],
-     "nrarfcn": [
-      154570
-     ],
-     "notes": "AB Telia Lietuva · 4G/5G (LTE/NR) · Nationwide"
-    },
-    {
-     "op": "bite-lt",
-     "dl": [
-      778,
-      783
-     ],
-     "ul": [
-      723,
-      728
-     ],
-     "notes": "UAB Bite Lietuva"
-    },
-    {
-     "op": "tele2-lt",
-     "dl": [
-      783,
-      788
-     ],
-     "ul": [
-      728,
-      733
-     ],
-     "notes": "UAB Tele2 Lietuva"
+     "notes": "2014 auction won by Telecentras (LRTC), per RRT 1V-949; now held by Bitė per the seed (background: Bitė acquired Telecentras' Mezon business, not source-verified)"
     }
    ]
   },
   {
    "group": "2600",
-   "label": "2.5/2.6 GHz (B38)",
+   "label": "2600 MHz TDD (B38/n38)",
    "names": [
-    "B38"
+    "B38",
+    "n38"
    ],
    "status": "assigned",
    "duplex": "tdd",
@@ -529,68 +774,23 @@
    "excludeFromTotal": false,
    "note": "",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT",
+    "https://www.rrt.lt/upload/files/2025/11/13/t2014isakymas949.pdf"
    ],
    "blocks": [
     {
-     "op": "bite-lt",
+     "op": "bite",
      "f": [
       2570,
       2620
      ],
-     "notes": "UAB Bite Lietuva"
-    }
-   ]
-  },
-  {
-   "group": "2300",
-   "label": "2300 MHz (B40)",
-   "names": [
-    "B40"
-   ],
-   "status": "assigned",
-   "duplex": "tdd",
-   "range": {
-    "f": [
-     2300,
-     2400
-    ]
-   },
-   "positions": "unverified",
-   "future": null,
-   "excludeFromTotal": false,
-   "note": "",
-   "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
-   ],
-   "blocks": [
-    {
-     "op": "unassigned",
-     "f": [
-      2300,
-      2310
-     ]
-    },
-    {
-     "op": "bite-lt",
-     "f": [
-      2310,
-      2390
-     ],
-     "notes": "UAB Bite Lietuva"
-    },
-    {
-     "op": "unassigned",
-     "f": [
-      2390,
-      2400
-     ]
+     "notes": "Won by Telecentras (LRTC) in 2014 (RRT 1V-949); Bitė holder per the seed"
     }
    ]
   },
   {
    "group": "3500",
-   "label": "3.3–4.2 GHz (n78)",
+   "label": "3.4–3.8 GHz (n78)",
    "names": [
     "n78"
    ],
@@ -598,35 +798,31 @@
    "duplex": "tdd",
    "range": {
     "f": [
-     3300,
+     3400,
      3800
     ]
    },
-   "positions": "unverified",
+   "positions": "verified",
    "future": null,
    "excludeFromTotal": false,
-   "note": "",
+   "note": "RRT auctioned only 3400–3700 MHz (Aug 2022, resolution TN-26).",
    "sources": [
-    "https://github.com/davwheat/mobile-spectrum-data/tree/main/src/LT"
+    "https://www.rrt.lt/upload/files/2025/11/13/rrt-2022-08-18-nutarimas-nr-tn-26.pdf",
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai",
+    "https://www.tele2.com/investors/spectrum-portfolio/"
    ],
    "blocks": [
     {
-     "op": "unassigned",
-     "f": [
-      3300,
-      3400
-     ]
-    },
-    {
-     "op": "tele2-lt",
+     "op": "tele2",
      "f": [
       3400,
       3500
      ],
-     "notes": "UAB Tele2 Lietuva"
+     "expiry": "2042-09",
+     "notes": "Block 1, 2022 auction, €3.0m"
     },
     {
-     "op": "telia-lt",
+     "op": "telia",
      "f": [
       3500,
       3600
@@ -634,35 +830,164 @@
      "nrarfcn": [
       634080
      ],
-     "notes": "AB Telia Lietuva"
+     "notes": "Block 2, 2022 auction, €7.0m"
     },
     {
-     "op": "bite-lt",
+     "op": "bite",
      "f": [
       3600,
       3700
      ],
-     "notes": "UAB Bite Lietuva"
+     "notes": "Block 3, 2022 auction, €3.0m"
     },
     {
-     "op": "ministry-of-defence",
+     "op": "unassigned",
      "f": [
       3700,
       3800
      ],
-     "notes": "Radijo Rysio Tarnyba"
+     "notes": "Not auctioned (the seed attributed it to the Ministry of Defence)"
     }
    ]
+  },
+  {
+   "group": "4900",
+   "label": "4.4–5.0 GHz (n79)",
+   "names": [
+    "n79"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned; not harmonised for mobile in Europe.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "26g",
+   "label": "26 GHz (n258)",
+   "names": [
+    "n258"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: RRT's list of spectrum auctions (to 2026) contains no 26 GHz award.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": [],
+   "range": {
+    "f": [
+     24250,
+     27500
+    ]
+   }
+  },
+  {
+   "group": "40g",
+   "label": "40 GHz (n259/n260)",
+   "names": [
+    "n259",
+    "n260"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no 40 GHz award in RRT's auction list.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
+  },
+  {
+   "group": "47g",
+   "label": "47 GHz (n262)",
+   "names": [
+    "n262"
+   ],
+   "status": "not-assigned",
+   "duplex": "tdd",
+   "positions": "holdings",
+   "future": null,
+   "excludeFromTotal": false,
+   "note": "Not assigned: no 47 GHz award in RRT's auction list.",
+   "sources": [
+    "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+   ],
+   "blocks": [],
+   "holdings": []
   }
  ],
  "notes": [
-  "Seeded from davwheat/mobile-spectrum-data (LGPL-3.0), commit dc0d2d3 (2026-01-09); must be re-checked."
+  "2026 auction (announced 5.2.2026): 2100 MHz winners approved 15.6.2026 (Bitė A1, Telia A2, Tele2 A3); 1500 MHz on 18.6.2026 (Telia 1432–1472, Tele2 1492–1512 MHz); 700 MHz on 9.7.2026 (Tele2 703–708/758–763, Bitė 708–713/763–768 MHz). All rights run to 31.10.2042. The rules allow RRT to swap 700 MHz blocks afterwards to make holdings contiguous; no such decision was found.",
+  "The 758–768/703–713 MHz block that the seed showed as Ministry of Defence (because of Russian TV interference) was auctioned in 2026. The seed's MoD 3700–3800 MHz block is shown as unassigned: RRT auctioned only 3400–3700 MHz.",
+  "Expiry dates for Tele2 come from Tele2's investor table (Dec 2025). Other operators' 800/2600 MHz expiries were not found.",
+  "The 2.6 GHz 2014 lot (2560–2570/2680–2690 + 2570–2620 MHz) was won by Telecentras (LRTC). The seed attributes it to Bitė; the transfer is not source-verified here."
  ],
- "missing": [],
- "changes": [],
+ "missing": [
+  "800 MHz, 2.3 GHz and 2.6 GHz block edges are from the seed only (RRT's 2013/2012 winner orders were not retrieved).",
+  "2.3 GHz: holder and edges (Bitė 2310–2390 MHz per the seed) have no second source.",
+  "Transfer of Telecentras' 2.6 GHz spectrum to Bitė: from background knowledge, not source-verified.",
+  "Whether RRT swapped any 700 MHz blocks after the July 2026 auction.",
+  "Licence expiry dates for Telia and Bitė in 800/2600 MHz."
+ ],
+ "changes": [
+  "2100 MHz: replaced with the 2026 re-auction result (clean 2×20 MHz blocks 2110–2130/2130–2150/2150–2170, to 31.10.2042); verified.",
+  "700 MHz: replaced the Ministry of Defence 758–768 MHz block with the 2026 winners (Tele2 758–763, Bitė 763–768 MHz); 2022 blocks verified against RRT TN-28.",
+  "Added 1.4 GHz SDL (Telia 1432–1472, Tele2 1492–1512 MHz; 2026 auction).",
+  "900/1800 MHz upgraded to verified (RRT order 1V-141, 2016).",
+  "3.5 GHz upgraded to verified (RRT TN-26, 2022); 3700–3800 MHz changed from Ministry of Defence to unassigned; range narrowed to 3400–3800 MHz.",
+  "2.6 GHz FDD: split Bitė's block into the 2012 part and the 2014 Telecentras-origin part.",
+  "Removed the Ministry of Defence operator; renamed operators to brands (Telia, Bitė, Tele2) with legal names.",
+  "Added not-assigned entries for 600/850/1700/1900/2000 TDD/4900/26/40/47 GHz."
+ ],
  "sources": [
   {
-   "title": "davwheat/mobile-spectrum-data (LGPL-3.0)",
+   "title": "RRT – Public competitions and auctions (radio frequencies)",
+   "url": "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/viesieji-konkursai-ir-aukcionai"
+  },
+  {
+   "title": "RRT – 2026 auction conditions (700 MHz, 1500 MHz, 2100 MHz)",
+   "url": "https://www.rrt.lt/upload/files/2026/02/21/t700mhz-1500mhz-2100mhz-aukciono-aprasas-2026-02-03.pdf"
+  },
+  {
+   "title": "RRT – Resolution TN-26 (3400–3700 MHz winners, 2022)",
+   "url": "https://www.rrt.lt/upload/files/2025/11/13/rrt-2022-08-18-nutarimas-nr-tn-26.pdf"
+  },
+  {
+   "title": "RRT – Resolution TN-28 (700 MHz winners, 2022)",
+   "url": "https://www.rrt.lt/upload/files/2025/11/13/t20220908-tn-28-del-aukciono-laimetoju-patvirtinimo-700-mhz.pdf"
+  },
+  {
+   "title": "RRT – Order 1V-141 (900/1800 MHz winners, 2016)",
+   "url": "https://www.rrt.lt/upload/files/2025/11/13/t2016isakymas141.pdf"
+  },
+  {
+   "title": "RRT – Order 1V-949 (2.6 GHz winner, 2014)",
+   "url": "https://www.rrt.lt/upload/files/2025/11/13/t2014isakymas949.pdf"
+  },
+  {
+   "title": "RRT – Radio frequency use / coverage (3G switch-off)",
+   "url": "https://www.rrt.lt/veiklos-sritys/elektroniniai-rysiai/radijo-spektras/radijo-dazniu-naudojimas"
+  },
+  {
+   "title": "Tele2 AB – Spectrum portfolio (Dec 2025)",
+   "url": "https://www.tele2.com/investors/spectrum-portfolio/"
+  },
+  {
+   "title": "davwheat/mobile-spectrum-data (LGPL-3.0), seed",
    "url": "https://github.com/davwheat/mobile-spectrum-data"
   }
  ]
